@@ -2,8 +2,6 @@
 title: "corpus"
 ---
 
-# corpus
-
 ## tipo
 
 concepto teórico  

@@ -1,4 +1,6 @@
-# Brown Corpus
+---
+title: "corpus Brown"
+---
 
 ## tipo
 
@@ -6,7 +8,7 @@
 
 ## definición
 
-El **Brown Corpus** es un corpus electrónico de inglés americano escrito, compilado en 1961 en la Universidad de Brown por Henry Kučera y W. Nelson Francis. Está compuesto por aproximadamente un millón de palabras distribuidas en 500 textos de unas 2.000 palabras cada uno, seleccionados de publicaciones impresas de 1961.
+El **corpus Brown** es un corpus electrónico de inglés americano escrito, compilado en 1961 en la Universidad de Brown por Henry Kučera y W. Nelson Francis. Está compuesto por aproximadamente un millón de palabras distribuidas en 500 textos de unas 2.000 palabras cada uno, seleccionados de publicaciones impresas de 1961.
 
 Se trata de un corpus de referencia diseñado mediante muestreo estratificado, organizado en 15 categorías textuales (por ejemplo, prensa, ensayo académico, ficción, religión), con el objetivo de representar el inglés americano estándar escrito de la época.
 
