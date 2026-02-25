@@ -1,0 +1,26 @@
+---
+layout: default
+title: Glosario
+---
+
+<h1>Glosario</h1>
+
+<h2>Español</h2>
+<ul>
+  {% assign es_pages = site.pages | where_exp:"p","p.path contains 'es/'" %}
+  {% for p in es_pages %}
+    {% if p.name != "index.md" and p.name != "index.html" %}
+      <li><a href="{{ site.baseurl }}{{ p.url }}">{{ p.title | default: p.name }}</a></li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+<h2>English</h2>
+<ul>
+  {% assign en_pages = site.pages | where_exp:"p","p.path contains 'en/'" %}
+  {% for p in en_pages %}
+    {% if p.name != "index.md" and p.name != "index.html" %}
+      <li><a href="{{ site.baseurl }}{{ p.url }}">{{ p.title | default: p.name }}</a></li>
+    {% endif %}
+  {% endfor %}
+</ul>
