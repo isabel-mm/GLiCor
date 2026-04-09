@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Corpus | GLiCor</title>
+
+<style>
+:root {
+  --primary-gradient: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #f43f5e 100%);
+  --bg-page: #fdfcfe;
+  --surface: #ffffff;
+  --text-main: #1e1b4b;
+  --text-muted: #64748b;
+  --border: #e2e8f0;
+  --radius-lg: 16px;
+  --radius-md: 12px;
+  --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --font-main: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: var(--font-main); background-color: var(--bg-page); color: var(--text-main); line-height: 1.7; }
+
+.hero {
+  background: #1e1b4b;
+  background-image: radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.15) 0px, transparent 50%), radial-gradient(at 100% 100%, rgba(244, 63, 94, 0.1) 0px, transparent 50%);
+  color: #fff; padding: 7rem 1.5rem 4rem; text-align: center;
+  border-bottom: 4px solid; border-image: var(--primary-gradient) 1;
+}
+.hero h1 { font-size: 2.5rem; font-weight: 800; margin-bottom: 0.5rem; }
+
+.content-container {
+  max-width: 850px;
+  margin: -2rem auto 0;
+  padding: 3rem 2.5rem;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  border-radius: var(--radius-lg);
+  position: relative;
+  z-index: 10;
+}
+
+.panel {
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.section-title {
+  font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.1em;
+  color: #a855f7; font-weight: 800; margin-bottom: 1rem; display: block;
+}
+
+p { margin-bottom: 1rem; text-align: justify; color: #334155; }
+p:last-child { margin-bottom: 0; }
+
+.minimal-table { width: 100%; margin: 2.5rem 0; border-top: 2px solid #f1f5f9; }
+.minimal-table td { padding: 12px 0; border-bottom: 1px solid #f1f5f9; font-size: 0.95rem; }
+.label { font-weight: 700; color: #1e1b4b; width: 35%; }
+.value { color: #64748b; }
+
+.stats-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin: 2.5rem 0;
+}
+.lang-card {
+  background: #f8fafc; padding: 1.5rem; border-radius: var(--radius-md);
+  border: 1px solid var(--border); text-align: center;
+}
+.lang-title { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; color: #1e1b4b; font-weight: 800; margin-bottom: 1rem; display: block; }
+.stat-row { display: flex; justify-content: space-around; align-items: center; }
+.stat-group { display: flex; flex-direction: column; }
+.stat-value { font-size: 1.6rem; font-weight: 800; color: #6366f1; line-height: 1; }
+.stat-label { font-size: 0.65rem; text-transform: uppercase; color: #64748b; font-weight: 700; margin-top: 5px; }
+
+.theme-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 12px; margin: 2.5rem 0;
+}
+.theme-box {
+  background: #fdf2f8; padding: 14px 18px; border-radius: 10px;
+  font-size: 0.9rem; color: #be185d; border: 1px solid #fbcfe8;
+  display: flex; align-items: center;
+}
+.theme-box b { margin-right: 12px; opacity: 0.4; font-size: 1.1rem; }
+
+</style>
+</head>
+
+<body data-page="corpus">
+<script src="navbar.js"></script>
+
+<header class="hero">
+  <h1 data-es="Sobre el corpus" data-en="About the corpus">Sobre el corpus</h1>
+</header>
+
+<main class="content-container">
+
+  <section class="panel">
+    <span class="section-title">
+      <span class="lang-es">Sobre el corpus</span><span class="lang-en" hidden>About the corpus</span>
+    </span>
+    <p>
+      <span class="lang-es">La terminología de orientación lingüística moderna se fundamenta en la evidencia del uso real del lenguaje. Por este motivo, los términos, definiciones y contextos que conforman este glosario proceden íntegramente de un <b>análisis basado en corpus</b>. Este enfoque asegura que el recurso sea un reflejo fiel de la reflexión metalingüística actual, permitiendo <b>observar cómo los especialistas emplean el léxico en la práctica científica</b>.</span>
+      <span class="lang-en" hidden>Modern linguistic terminology is grounded in evidence from real language use. For this reason, the terms, definitions and contexts that make up this glossary come entirely from a <b>corpus-based analysis</b>. This approach ensures that the resource is a faithful reflection of current metalinguistic thought, allowing us to <b>observe how specialists use vocabulary in scientific practice</b>.</span>
+    </p>
+    <table class="minimal-table">
+      <tr>
+        <td class="label"><span class="lang-es">Temática</span><span class="lang-en" hidden>Theme</span></td>
+        <td class="value"><span class="lang-es">Metalingüístico</span><span class="lang-en" hidden>Metalinguistic</span></td>
+      </tr>
+      <tr>
+        <td class="label"><span class="lang-es">Nivel de especialización</span><span class="lang-en" hidden>Level of specialisation</span></td>
+        <td class="value"><span class="lang-es">Especializado-técnico</span><span class="lang-en" hidden>Specialised-technical</span></td>
+      </tr>
+      <tr>
+        <td class="label"><span class="lang-es">Relación entre lenguas</span><span class="lang-en" hidden>Language relationship</span></td>
+        <td class="value"><span class="lang-es">Bilingüe comparable (Inglés-Español)</span><span class="lang-en" hidden>Comparable bilingual (English-Spanish)</span></td>
+      </tr>
+      <tr>
+        <td class="label"><span class="lang-es">Temporalidad</span><span class="lang-en" hidden>Temporality</span></td>
+        <td class="value"><span class="lang-es">Sincrónico (Uso actual)</span><span class="lang-en" hidden>Synchronic (Current use)</span></td>
+      </tr>
+      <tr>
+        <td class="label"><span class="lang-es">Género</span><span class="lang-en" hidden>Genre</span></td>
+        <td class="value"><span class="lang-es">Multigénero académico (Libros, artículos, manuales)</span><span class="lang-en" hidden>Multi-genre academic (Books, articles, manuals)</span></td>
+      </tr>
+      <tr>
+        <td class="label"><span class="lang-es">Acceso</span><span class="lang-en" hidden>Access</span></td>
+        <td class="value"><span class="lang-es">Digital en Acceso Abierto</span><span class="lang-en" hidden>Digital Open Access</span></td>
+      </tr>
+    </table>
+  </section>
+
+  <section class="panel">
+    <span class="section-title">
+      <span class="lang-es">Composición</span><span class="lang-en" hidden>Composition</span>
+    </span>
+    <p>
+      <span class="lang-es">Para la confección de este recurso, se ha diseñado un corpus que alcanza los 100 textos especializados. La distribución por lenguas garantiza un equilibrio documental que sustenta la descripción terminológica en ambas lenguas:</span>
+      <span class="lang-en" hidden>For the compilation of this resource, a corpus of 100 specialised texts has been designed. The distribution by language ensures a documentary balance that supports the terminological description in both languages:</span>
+    </p>
+    <div class="stats-grid">
+      <div class="lang-card">
+        <span class="lang-title lang-es">Subcorpus Inglés</span>
+        <span class="lang-title lang-en" hidden>English Subcorpus</span>
+        <div class="stat-row">
+          <div class="stat-group">
+            <span class="stat-value">50</span>
+            <span class="stat-label lang-es">Documentos</span>
+            <span class="stat-label lang-en" hidden>Documents</span>
+          </div>
+          <div class="stat-group">
+            <span class="stat-value">1.316.890</span>
+            <span class="stat-label">Tokens</span>
+          </div>
+        </div>
+      </div>
+      <div class="lang-card">
+        <span class="lang-title lang-es">Subcorpus Español</span>
+        <span class="lang-title lang-en" hidden>Spanish Subcorpus</span>
+        <div class="stat-row">
+          <div class="stat-group">
+            <span class="stat-value">50</span>
+            <span class="stat-label lang-es">Documentos</span>
+            <span class="stat-label lang-en" hidden>Documents</span>
+          </div>
+          <div class="stat-group">
+            <span class="stat-value">837.638</span>
+            <span class="stat-label">Tokens</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel">
+    <span class="section-title">
+      <span class="lang-es">Líneas temáticas</span><span class="lang-en" hidden>Thematic lines</span>
+    </span>
+    <p>
+      <span class="lang-es">La selección de los textos ha seguido una concepción estricta de la disciplina, centrándose exclusivamente en <b>investigaciones metalingüísticas donde el corpus es el objeto central del estudio</b>. Esta delimitación conceptual abarca las siguientes líneas temáticas fundamentales:</span>
+      <span class="lang-en" hidden>The selection of texts has followed a strict disciplinary framework, focusing exclusively on <b>metalinguistic research where the corpus is the central object of study</b>. This conceptual delimitation covers the following fundamental thematic lines:</span>
+    </p>
+    <div class="theme-grid">
+      <div class="theme-box"><b>01</b><span class="lang-es">Historiografía y antecedentes</span><span class="lang-en" hidden>History and background</span></div>
+      <div class="theme-box"><b>02</b><span class="lang-es">Bases teóricas y fundamentos</span><span class="lang-en" hidden>Theoretical bases and foundations</span></div>
+      <div class="theme-box"><b>03</b><span class="lang-es">Muestreo y representatividad</span><span class="lang-en" hidden>Sampling and representativeness</span></div>
+      <div class="theme-box"><b>04</b><span class="lang-es">Diseño y construcción de corpus</span><span class="lang-en" hidden>Corpus design and construction</span></div>
+      <div class="theme-box"><b>05</b><span class="lang-es">Documentación y presentación</span><span class="lang-en" hidden>Documentation and presentation</span></div>
+      <div class="theme-box"><b>06</b><span class="lang-es">Tipología de corpus</span><span class="lang-en" hidden>Corpus typology</span></div>
+      <div class="theme-box"><b>07</b><span class="lang-es">Problemas y soluciones metodológicas</span><span class="lang-en" hidden>Methodological problems and solutions</span></div>
+      <div class="theme-box"><b>08</b><span class="lang-es">Herramientas y procesamiento</span><span class="lang-en" hidden>Tools and processing</span></div>
+    </div>
+  </section>
+
+</main>
+
+<script>
+let lang = localStorage.getItem('glicor-lang') || 'es';
+
+function applyLang() {
+  document.querySelectorAll('.lang-es').forEach(el => el.hidden = (lang === 'en'));
+  document.querySelectorAll('.lang-en').forEach(el => el.hidden = (lang === 'es'));
+  if (window.syncNavbar) window.syncNavbar(lang);
+  const h1 = document.querySelector('.hero h1');
+  h1.textContent = h1.dataset[lang];
+}
+
+function toggleLang() {
+  lang = lang === 'es' ? 'en' : 'es';
+  localStorage.setItem('glicor-lang', lang);
+  applyLang();
+}
+
+applyLang();
+</script>
+<script src="footer.js"></script>
+</body>
+</html>

@@ -1,26 +1,466 @@
----
-layout: default
-title: Glosario
----
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GLiCor | Isabel Moyano Moreno</title>
+<style>
+/* ── Variables y Base ── */
+:root {
+  --primary-gradient: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #f43f5e 100%);
+  --bg-page: #fdfcfe;
+  --surface: #ffffff;
+  --text-main: #1e1b4b;
+  --text-muted: #64748b;
+  --border: #e2e8f0;
+  --radius-lg: 16px;
+  --radius-md: 12px;
+  --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --font-main: 'Inter', system-ui, -apple-system, sans-serif;
+}
 
-<h1>Glosario</h1>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: var(--font-main); background-color: var(--bg-page); color: var(--text-main); line-height: 1.6; }
 
-<h2>Español</h2>
-<ul>
-  {% assign es_pages = site.pages | where_exp:"p","p.path contains 'es/'" %}
-  {% for p in es_pages %}
-    {% if p.name != "index.md" and p.name != "index.html" %}
-      <li><a href="{{ site.baseurl }}{{ p.url }}">{{ p.title | default: p.name }}</a></li>
-    {% endif %}
-  {% endfor %}
-</ul>
+/* ── Hero ── */
+.hero {
+  background: #1e1b4b;
+  background-image: radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.15) 0px, transparent 50%), radial-gradient(at 100% 100%, rgba(244, 63, 94, 0.1) 0px, transparent 50%);
+  color: #fff; padding: 7rem 1.5rem 4rem; text-align: center; border-bottom: 4px solid; border-image: var(--primary-gradient) 1;
+}
+.hero-logo {
+  display: block;
+  width: min(340px, 72vw);
+  height: auto;
+  margin: 0 auto 1rem;
+  filter: drop-shadow(0 18px 28px rgba(15, 23, 42, 0.28));
+}
+.hero .author { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.2em; color: #94a3b8; margin-bottom: 2rem; }
 
-<h2>English</h2>
-<ul>
-  {% assign en_pages = site.pages | where_exp:"p","p.path contains 'en/'" %}
-  {% for p in en_pages %}
-    {% if p.name != "index.md" and p.name != "index.html" %}
-      <li><a href="{{ site.baseurl }}{{ p.url }}">{{ p.title | default: p.name }}</a></li>
-    {% endif %}
-  {% endfor %}
-</ul>
+/* ── Buscador y Categorías ── */
+.filter-area { max-width: 600px; margin: 0 auto; }
+#search {
+  width: 100%; padding: 1.2rem 1.5rem; border-radius: var(--radius-md);
+  border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.08);
+  color: white; font-size: 1.1rem; backdrop-filter: blur(10px); margin-bottom: 1rem; outline: none; transition: 0.3s;
+}
+#search:focus { background: rgba(255,255,255,0.15); border-color: #a855f7; }
+.search-mode {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.search-mode-label {
+  color: #94a3b8;
+  font-size: 0.74rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.search-mode-btn {
+  padding: 0.38rem 0.8rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.18);
+  background: rgba(255,255,255,0.06);
+  color: #cbd5e1;
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.25s;
+}
+.search-mode-btn.active {
+  background: rgba(255,255,255,0.16);
+  color: white;
+  border-color: rgba(255,255,255,0.3);
+}
+
+.cat-dropdown {
+  position: relative;
+  width: 100%;
+}
+.cat-trigger {
+  width: 100%;
+  padding: 0.95rem 1.1rem;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.08);
+  color: #cbd5e1;
+  font-size: 0.92rem;
+  backdrop-filter: blur(10px);
+  outline: none;
+  transition: 0.3s;
+  cursor: pointer;
+  text-align: left;
+}
+.cat-trigger:hover,
+.cat-trigger[aria-expanded="true"] {
+  background: rgba(255,255,255,0.15);
+  border-color: #a855f7;
+}
+.cat-menu {
+  position: absolute;
+  top: calc(100% + 0.45rem);
+  left: 0;
+  right: 0;
+  display: none;
+  max-height: 280px;
+  overflow-y: auto;
+  padding: 0.45rem;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(30,27,75,0.96);
+  box-shadow: var(--shadow);
+  z-index: 200;
+}
+.cat-menu.open {
+  display: block;
+}
+.cat-option {
+  width: 100%;
+  padding: 0.8rem 0.9rem;
+  border: none;
+  border-radius: 10px;
+  background: transparent;
+  color: #cbd5e1;
+  font-size: 0.88rem;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.cat-option:hover,
+.cat-option.active {
+  background: rgba(255,255,255,0.1);
+  color: white;
+}
+
+/* ── Alfabeto ── */
+.alpha-strip { display: flex; justify-content: center; flex-wrap: wrap; gap: 0.4rem; background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(10px); padding: 8px; border-radius: 50px; box-shadow: var(--shadow); max-width: fit-content; margin: -25px auto 2rem; border: 1px solid var(--border); }
+.alpha-btn { width: 32px; height: 32px; border-radius: 50%; border: none; background: transparent; color: var(--text-muted); font-weight: 600; cursor: pointer; transition: 0.2s; }
+.alpha-btn:hover { background: #fef2f2; color: #f43f5e; }
+.alpha-btn.active { background: var(--primary-gradient); color: white; }
+
+/* ── Tarjetas de Términos ── */
+.page { max-width: 1000px; margin: 0 auto; padding: 1rem 1.5rem 5rem; }
+details.entry { background: var(--surface); border-radius: var(--radius-lg); border: 1px solid var(--border); margin-bottom: 1.2rem; overflow: hidden; transition: 0.3s; scroll-margin-top: 130px; }
+summary.entry-header { list-style: none; padding: 1.25rem 1.5rem; cursor: pointer; display: flex; align-items: center; justify-content: space-between; }
+.entry-term { font-size: 1.25rem; font-weight: 700; color: #1e1b4b; }
+.entry-term-es { font-size: 1.25rem; font-weight: 700; font-style: italic; color: #a855f7; margin-left: 0.5rem; }
+.cat-badge { font-size: 0.7rem; text-transform: uppercase; font-weight: 700; padding: 0.35rem 0.8rem; border-radius: 20px; background: #fdf2f8; color: #db2777; border: 1px solid #fbcfe8; }
+
+.entry-body { padding: 1.5rem 2rem 2rem; border-top: 1px solid #f1f5f9; font-size: 0.95rem; color: #475569; }
+.entry-body h3 { font-size: 0.75rem; color: #a855f7; text-transform: uppercase; letter-spacing: 0.05em; margin: 1rem 0 0.5rem; border-bottom: 2px solid #f3e8ff; padding-bottom: 4px; }
+.related-list { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; margin-top: 10px; }
+.related-list li { background: #f5f3ff; color: #7c3aed; padding: 4px 12px; border-radius: 50px; font-weight: 600; font-size: 0.8rem; cursor: pointer; border: 1px solid #ddd6fe; transition: 0.2s; }
+.related-list li:hover { background: #7c3aed; color: white; }
+
+/* Mensaje de estado vacío */
+.placeholder-msg { text-align: center; padding: 5rem 2rem; color: var(--text-muted); opacity: 0.6; font-style: italic; }
+
+@media (max-width: 768px) { .entry-body { display: block; } }
+</style>
+</head>
+<body data-page="index">
+<script src="navbar.js"></script>
+
+<header class="hero">
+  <img src="logo3.png" alt="GLiCor" class="hero-logo">
+  <p class="author">
+    <span class="lang-es">Glosario de Lingüística de Corpus</span>
+    <span class="lang-en" hidden>Corpus Linguistics Glossary</span>
+  </p>
+  
+  <div class="filter-area">
+    <input type="search" id="search" placeholder="Buscar término..." autocomplete="off">
+    <div class="search-mode" id="search-mode">
+      <span class="search-mode-label" id="search-mode-label">Lengua de búsqueda</span>
+      <button class="search-mode-btn active" data-mode="es" type="button">ES</button>
+      <button class="search-mode-btn" data-mode="en" type="button">EN</button>
+    </div>
+    <div class="cat-dropdown" id="cat-dropdown">
+      <button class="cat-trigger" id="cat-trigger" type="button" aria-expanded="false">Filtrar por categoría: Todas</button>
+      <div class="cat-menu" id="cat-nav" role="listbox" aria-label="Filtrar por categoría"></div>
+    </div>
+  </div>
+</header>
+
+<nav class="alpha-strip" id="alpha-nav"></nav>
+
+<main class="page">
+  <div id="entries-container">
+    </div>
+  <p id="no-results" style="display:none; text-align:center; padding:3rem; color:var(--text-muted);">No se encontraron términos.</p>
+</main>
+
+<script>
+const STRINGS = {
+  es: {
+    searchPlaceholder: 'Buscar término...',
+    searchModeLabel:   'Lengua de búsqueda',
+    filterLabel:       'Filtrar por categoría',
+    allCategories:     'Todas',
+    emptyMsg:          'Escribe en el buscador o selecciona una categoría para explorar el glosario.',
+    noResults:         'No se encontraron términos.',
+    catKey:            'category',
+  },
+  en: {
+    searchPlaceholder: 'Search term...',
+    searchModeLabel:   'Search language',
+    filterLabel:       'Filter by category',
+    allCategories:     'All',
+    emptyMsg:          'Type in the search box or select a category to browse the glossary.',
+    noResults:         'No terms found.',
+    catKey:            'category_en',
+  },
+};
+
+let lang = localStorage.getItem('glicor-lang') || 'es';
+let ALL_ENTRIES = [];
+let currentCat = 'All';
+let searchMode = 'es';
+const container = document.getElementById('entries-container');
+const searchInput = document.getElementById('search');
+const catTrigger = document.getElementById('cat-trigger');
+const catMenu = document.getElementById('cat-nav');
+
+function t(key) { return STRINGS[lang][key]; }
+
+function getMsgEmpty() {
+  return `<div class="placeholder-msg">${t('emptyMsg')}</div>`;
+}
+
+function getDisplayTerm(entry) {
+  return lang === 'es' ? entry.term_es : entry.term_en;
+}
+
+function getEntryLetter(entry) {
+  return (searchMode === 'es' ? entry.term_es : entry.term_en).trim().charAt(0).toUpperCase();
+}
+
+function sortEntries(list) {
+  return [...list].sort((a, b) => getDisplayTerm(a).localeCompare(getDisplayTerm(b), lang));
+}
+
+async function loadGlossary() {
+  try {
+    const response = await fetch('entries.json?v=' + Date.now());
+    ALL_ENTRIES = await response.json();
+    applyLang();
+  } catch (error) {
+    container.innerHTML = "<p style='text-align:center'>Error al cargar datos.</p>";
+  }
+}
+
+function applyLang() {
+  const s = STRINGS[lang];
+  if (window.syncNavbar) window.syncNavbar(lang);
+  document.querySelectorAll('.lang-es').forEach(el => el.hidden = (lang === 'en'));
+  document.querySelectorAll('.lang-en').forEach(el => el.hidden = (lang === 'es'));
+  searchInput.placeholder = s.searchPlaceholder;
+  document.getElementById('search-mode-label').textContent = s.searchModeLabel;
+  catMenu.setAttribute('aria-label', s.filterLabel);
+  document.getElementById('no-results').textContent = s.noResults;
+  container.innerHTML = getMsgEmpty();
+  currentCat = 'All';
+  renderAlphabet();
+  renderCategoryButtons();
+}
+
+function toggleLang() {
+  lang = lang === 'es' ? 'en' : 'es';
+  localStorage.setItem('glicor-lang', lang);
+  applyLang();
+}
+
+function renderCategoryButtons() {
+    const catKey = t('catKey');
+    catMenu.innerHTML = '';
+    const seen = new Set();
+    ALL_ENTRIES.forEach(e => seen.add(e[catKey]));
+    const categories = ['All', ...[...seen].sort()];
+    categories.forEach(cat => {
+        const option = document.createElement('button');
+        option.type = 'button';
+        option.className = `cat-option${cat === currentCat ? ' active' : ''}`;
+        option.dataset.value = cat;
+        option.textContent = cat === 'All' ? t('allCategories') : cat;
+        option.addEventListener('click', () => {
+          filterCat(cat);
+          closeCategoryMenu();
+        });
+        catMenu.appendChild(option);
+    });
+    updateCategoryTrigger();
+}
+
+function filterCat(cat) {
+    currentCat = cat;
+    updateCategoryTrigger();
+    renderCategoryButtons();
+    applyFilters();
+}
+
+function updateCategoryTrigger() {
+    const label = currentCat === 'All' ? t('allCategories') : currentCat;
+    catTrigger.textContent = `${t('filterLabel')}: ${label}`;
+}
+
+function openCategoryMenu() {
+    catMenu.classList.add('open');
+    catTrigger.setAttribute('aria-expanded', 'true');
+}
+
+function closeCategoryMenu() {
+    catMenu.classList.remove('open');
+    catTrigger.setAttribute('aria-expanded', 'false');
+}
+
+function toggleCategoryMenu() {
+    if (catMenu.classList.contains('open')) closeCategoryMenu();
+    else openCategoryMenu();
+}
+
+function applyFilters() {
+    const query = searchInput.value.toLowerCase();
+    
+    // Si no hay nada escrito y no hay filtro de categoría, volvemos al estado oculto
+    if (query === '' && currentCat === 'All') {
+        container.innerHTML = getMsgEmpty();
+        document.querySelectorAll('.alpha-btn').forEach(b => b.classList.remove('active'));
+        return;
+    }
+
+    const catKey = t('catKey');
+    const filtered = ALL_ENTRIES.filter(e => {
+        const matchesSearch = searchMode === 'es'
+          ? e.term_es.toLowerCase().includes(query)
+          : e.term_en.toLowerCase().includes(query);
+        const matchesCat = currentCat === 'All' || e[catKey] === currentCat;
+        return matchesSearch && matchesCat;
+    });
+    renderEntries(sortEntries(filtered));
+}
+
+function setSearchMode(mode, btn) {
+    searchMode = mode;
+    document.querySelectorAll('.search-mode-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    renderAlphabet();
+    applyFilters();
+}
+
+function renderEntries(list) {
+  container.innerHTML = '';
+  document.getElementById('no-results').style.display = list.length === 0 ? 'block' : 'none';
+  
+  list.forEach(e => {
+    const card = document.createElement('details');
+    card.className = 'entry';
+    card.id = `term-${e.slug}`;
+    
+    let cleanHtml = e.html;
+
+    // 0. Eliminar encabezado redundante (h2 con el término y párrafo de categoría)
+    cleanHtml = cleanHtml.replace(/^<h2>.*?<\/h2>\s*/s, '');
+    cleanHtml = cleanHtml.replace(/^<p><strong>Category \/ Categoría:.*?<\/p>\s*/s, '');
+    cleanHtml = cleanHtml.replace(/<h3[^>]*>Fuentes del corpus \/ Corpus sources<\/h3>/g, `<h3>${lang === 'es' ? 'Fuentes del corpus' : 'Corpus sources'}</h3>`);
+    cleanHtml = cleanHtml.replace(/<h3[^>]*>Nota terminológica \/ Terminological note<\/h3>[\s\S]*$/s, '');
+
+    // 1. Mostrar solo la definición correspondiente a la lengua de búsqueda
+    const enMatch = cleanHtml.match(/<h3[^>]*>Definition \(EN\)<\/h3>([\s\S]*?)(?=<h3)/);
+    const esMatch = cleanHtml.match(/<h3[^>]*>Definición \(ES\)<\/h3>([\s\S]*?)(?=<h3)/);
+    if (enMatch && esMatch) {
+        const before  = cleanHtml.substring(0, cleanHtml.indexOf(enMatch[0]));
+        const afterEs = cleanHtml.substring(cleanHtml.indexOf(esMatch[0]) + esMatch[0].length);
+        const definitionHtml = searchMode === 'en'
+          ? `<h3>Definition (EN)</h3>${enMatch[1]}`
+          : `<h3>Definición (ES)</h3>${esMatch[1]}`;
+        cleanHtml = before
+            + definitionHtml
+            + afterEs;
+    }
+
+    // 2. Términos relacionados como tags clicables
+    if (cleanHtml.includes('Relación con otros términos')) {
+        const parts = cleanHtml.split(/<h3.*?>Relación con otros términos.*?<\/h3>/);
+        const nextHeader = parts[1].indexOf('<h3');
+        const relationsSection = parts[1].substring(0, nextHeader !== -1 ? nextHeader : parts[1].length);
+        const items = relationsSection.match(/<li><strong>(.*?)<\/strong>/g);
+        if (items) {
+            const relLabel = lang === 'es' ? 'Términos relacionados' : 'Related terms';
+            let tagsHtml = `<h3>${relLabel}</h3><ul class="related-list">`;
+            items.forEach(item => {
+                const termName = item.replace('<li><strong>', '').replace('</strong>', '').trim();
+                const termSlug = termName.toLowerCase().replace(/\s+/g, '_');
+                const relEntry = ALL_ENTRIES.find(x => x.slug === termSlug);
+                const displayName = relEntry ? (lang === 'es' ? relEntry.term_es : relEntry.term_en) : termName;
+                tagsHtml += `<li onclick="goToTerm('${termSlug}')">${displayName}</li>`;
+            });
+            tagsHtml += '</ul>';
+            cleanHtml = parts[0] + tagsHtml + (nextHeader !== -1 ? parts[1].substring(nextHeader) : '');
+        }
+    }
+
+    const primary = searchMode === 'en' ? e.term_en : e.term_es;
+    card.innerHTML = `
+      <summary class="entry-header">
+        <span class="entry-term">${primary}</span>
+        <span class="cat-badge">${e[t('catKey')]}</span>
+      </summary>
+      <div class="entry-body">${cleanHtml}</div>`;
+    container.appendChild(card);
+  });
+}
+
+function goToTerm(slug) {
+    const target = document.getElementById(`term-${slug}`);
+    if (target) {
+        target.open = true;
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        target.style.borderColor = '#a855f7';
+        setTimeout(() => target.style.borderColor = '#e2e8f0', 2000);
+    } else {
+        const entry = ALL_ENTRIES.find(e => e.slug === slug);
+        if (!entry) return;
+        currentCat = 'All';
+        renderCategoryButtons();
+        searchInput.value = lang === 'es' ? entry.term_es : entry.term_en;
+        applyFilters();
+        setTimeout(() => goToTerm(slug), 200);
+    }
+}
+
+function renderAlphabet() {
+  const nav = document.getElementById('alpha-nav');
+  nav.innerHTML = '';
+  const letters = [...new Set(ALL_ENTRIES.map(getEntryLetter))].sort((a, b) => a.localeCompare(b, lang));
+  letters.forEach(l => {
+    const btn = document.createElement('button');
+    btn.className = 'alpha-btn';
+    btn.innerText = l;
+    btn.onclick = () => {
+      document.querySelectorAll('.alpha-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      // Al pulsar una letra, forzamos la vista de esos términos
+      renderEntries(sortEntries(ALL_ENTRIES.filter(e => getEntryLetter(e) === l)));
+    };
+    nav.appendChild(btn);
+  });
+}
+
+searchInput.addEventListener('input', applyFilters);
+document.querySelectorAll('.search-mode-btn').forEach(btn => {
+  btn.addEventListener('click', () => setSearchMode(btn.dataset.mode, btn));
+});
+catTrigger.addEventListener('click', toggleCategoryMenu);
+document.addEventListener('click', event => {
+  if (!document.getElementById('cat-dropdown').contains(event.target)) closeCategoryMenu();
+});
+loadGlossary();
+</script>
+
+<script src="footer.js"></script>
+</body>
+</html>

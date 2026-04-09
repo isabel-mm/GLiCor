@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stats | GLiCor</title>
+
+<style>
+:root {
+  --primary-gradient: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #f43f5e 100%);
+  --bg-page: #fdfcfe;
+  --surface: #ffffff;
+  --text-main: #1e1b4b;
+  --text-muted: #64748b;
+  --border: #e2e8f0;
+  --radius-lg: 16px;
+  --radius-md: 12px;
+  --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --font-main: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: var(--font-main); background-color: var(--bg-page); color: var(--text-main); line-height: 1.7; }
+
+.hero {
+  background: #1e1b4b;
+  background-image: radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.15) 0px, transparent 50%), radial-gradient(at 100% 100%, rgba(244, 63, 94, 0.1) 0px, transparent 50%);
+  color: #fff; padding: 7rem 1.5rem 4rem; text-align: center;
+  border-bottom: 4px solid; border-image: var(--primary-gradient) 1;
+}
+.hero h1 { font-size: 2.5rem; font-weight: 800; margin-bottom: 0.5rem; }
+.hero p { max-width: 760px; margin: 0 auto; color: #cbd5e1; font-size: 0.98rem; }
+
+.content-container {
+  max-width: 850px;
+  margin: -2rem auto 0;
+  padding: 3rem 2.5rem;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  border-radius: var(--radius-lg);
+  position: relative;
+  z-index: 10;
+}
+
+.panel {
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.intro {
+  font-size: 1rem;
+  color: #475569;
+  text-align: justify;
+}
+
+.section-title {
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #a855f7;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+.kpi-card {
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 1.35rem 1.2rem;
+}
+.kpi-value {
+  display: block;
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: 800;
+  color: #6366f1;
+  margin-bottom: 0.45rem;
+}
+.kpi-label {
+  display: block;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #64748b;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+.kpi-note {
+  color: #475569;
+  font-size: 0.87rem;
+}
+.panel-note {
+  margin-top: 1rem;
+  color: #64748b;
+  font-size: 0.84rem;
+  text-align: center;
+}
+
+.dual-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.category-list {
+  display: grid;
+  gap: 0.9rem;
+}
+.category-row {
+  display: grid;
+  grid-template-columns: minmax(0, 220px) 1fr;
+  gap: 0.9rem;
+  align-items: center;
+}
+.category-name {
+  font-size: 0.9rem;
+  color: #334155;
+  font-weight: 600;
+}
+.bar-track {
+  height: 12px;
+  border-radius: 999px;
+  background: #eef2ff;
+  overflow: hidden;
+}
+.bar-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: var(--primary-gradient);
+}
+.loading, .error {
+  text-align: center;
+  color: #64748b;
+  padding: 3rem 1rem;
+}
+
+@media (max-width: 900px) {
+  .dual-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 680px) {
+  .navbar { gap: 1.2rem; padding: 0.8rem 1rem; overflow-x: auto; }
+  .hero h1 { font-size: 2rem; }
+  .content-container { padding: 2rem 1rem; }
+  .panel { padding: 1.4rem; }
+  .kpi-grid { grid-template-columns: 1fr; }
+  .category-row {
+    grid-template-columns: 1fr;
+    gap: 0.45rem;
+  }
+}
+</style>
+</head>
+
+<body data-page="stats">
+<script src="navbar.js"></script>
+
+<header class="hero">
+  <h1 data-es="Estadísticas del glosario" data-en="Glossary statistics">Estadísticas del glosario</h1>
+</header>
+
+<main class="content-container">
+  <section class="panel">
+    <span class="section-title">
+      <span class="lang-es">Panorámica general</span>
+      <span class="lang-en" hidden>General overview</span>
+    </span>
+    <div id="kpi-grid" class="kpi-grid">
+      <div class="loading">Cargando...</div>
+    </div>
+    <p id="panel-note" class="panel-note"></p>
+  </section>
+
+  <section class="panel">
+    <span class="section-title">
+      <span class="lang-es">Distribución por categorías</span>
+      <span class="lang-en" hidden>Distribution by category</span>
+    </span>
+    <div class="dual-grid">
+      <div id="category-list" class="category-list"></div>
+    </div>
+  </section>
+
+</main>
+
+<script>
+const TEXT = {
+  es: {
+    totalEntries: 'Entradas',
+    totalEntriesNote: 'Términos documentados en el glosario.',
+    totalCategories: 'Categorías',
+    totalCategoriesNote: 'Campos temáticos actualmente representados.',
+    activeLetters: 'Letras activas',
+    activeLettersNote: 'Iniciales con al menos una entrada.',
+    avgRelations: 'Media de relaciones',
+    avgRelationsNote: 'Términos relacionados por entrada.',
+    panelNote: 'Datos generados automáticamente a partir de entries.json.',
+    loading: 'Cargando estadísticas...',
+    error: 'No se pudieron cargar las estadísticas.',
+  },
+  en: {
+    totalEntries: 'Entries',
+    totalEntriesNote: 'Terms currently documented in the glossary.',
+    totalCategories: 'Categories',
+    totalCategoriesNote: 'Thematic fields currently represented.',
+    activeLetters: 'Active letters',
+    activeLettersNote: 'Initial letters with at least one entry.',
+    avgRelations: 'Average relations',
+    avgRelationsNote: 'Related terms per entry.',
+    panelNote: 'Automatically generated from entries.json.',
+    loading: 'Loading statistics...',
+    error: 'Statistics could not be loaded.',
+  }
+};
+
+let lang = localStorage.getItem('glicor-lang') || 'es';
+let glossaryData = [];
+
+function t(key) {
+  return TEXT[lang][key];
+}
+
+function applyLang() {
+  document.querySelectorAll('.lang-es').forEach(el => el.hidden = (lang === 'en'));
+  document.querySelectorAll('.lang-en').forEach(el => el.hidden = (lang === 'es'));
+  if (window.syncNavbar) window.syncNavbar(lang);
+  const h1 = document.querySelector('.hero h1');
+  h1.textContent = h1.dataset[lang];
+  if (glossaryData.length) renderStats(glossaryData);
+}
+
+function toggleLang() {
+  lang = lang === 'es' ? 'en' : 'es';
+  localStorage.setItem('glicor-lang', lang);
+  applyLang();
+}
+
+function formatNumber(value) {
+  return new Intl.NumberFormat(lang === 'es' ? 'es-ES' : 'en-US', {
+    minimumFractionDigits: Number.isInteger(value) ? 0 : 2,
+    maximumFractionDigits: Number.isInteger(value) ? 0 : 2
+  }).format(value);
+}
+
+function categoryKey() {
+  return lang === 'es' ? 'category' : 'category_en';
+}
+
+function buildMetrics(entries) {
+  const categories = new Map();
+  const letters = new Map();
+  let totalRelated = 0;
+  entries.forEach(entry => {
+    const cat = entry[categoryKey()];
+    categories.set(cat, (categories.get(cat) || 0) + 1);
+    letters.set(entry.letter, (letters.get(entry.letter) || 0) + 1);
+
+    totalRelated += (entry.html.match(/<li>/g) || []).length;
+  });
+
+  const categoryList = [...categories.entries()]
+    .map(([name, count]) => ({ name, count, percent: +(count / entries.length * 100).toFixed(1) }))
+    .sort((a, b) => b.count - a.count || a.name.localeCompare(b.name));
+
+  return {
+    totalEntries: entries.length,
+    totalCategories: categories.size,
+    totalLetters: letters.size,
+    avgRelations: +(totalRelated / entries.length).toFixed(2),
+    categoryList
+  };
+}
+
+function renderStats(entries) {
+  const metrics = buildMetrics(entries);
+  const kpiGrid = document.getElementById('kpi-grid');
+  const panelNote = document.getElementById('panel-note');
+  const categoryList = document.getElementById('category-list');
+
+  kpiGrid.innerHTML = `
+    <article class="kpi-card">
+      <span class="kpi-label">${t('totalEntries')}</span>
+      <span class="kpi-value">${formatNumber(metrics.totalEntries)}</span>
+      <p class="kpi-note">${t('totalEntriesNote')}</p>
+    </article>
+    <article class="kpi-card">
+      <span class="kpi-label">${t('totalCategories')}</span>
+      <span class="kpi-value">${formatNumber(metrics.totalCategories)}</span>
+      <p class="kpi-note">${t('totalCategoriesNote')}</p>
+    </article>
+    <article class="kpi-card">
+      <span class="kpi-label">${t('activeLetters')}</span>
+      <span class="kpi-value">${formatNumber(metrics.totalLetters)}</span>
+      <p class="kpi-note">${t('activeLettersNote')}</p>
+    </article>
+    <article class="kpi-card">
+      <span class="kpi-label">${t('avgRelations')}</span>
+      <span class="kpi-value">${formatNumber(metrics.avgRelations)}</span>
+      <p class="kpi-note">${t('avgRelationsNote')}</p>
+    </article>
+  `;
+  panelNote.textContent = t('panelNote');
+
+  categoryList.innerHTML = metrics.categoryList.map(item => `
+    <div class="category-row">
+      <div class="category-name">${item.name}</div>
+      <div class="bar-track"><div class="bar-fill" style="width:${item.percent}%"></div></div>
+    </div>
+  `).join('');
+}
+
+async function loadStats() {
+  const kpiGrid = document.getElementById('kpi-grid');
+  try {
+    const response = await fetch('entries.json?v=' + Date.now());
+    glossaryData = await response.json();
+    renderStats(glossaryData);
+  } catch (error) {
+    kpiGrid.innerHTML = `<div class="error">${t('error')}</div>`;
+    document.getElementById('category-list').innerHTML = '';
+  }
+}
+
+applyLang();
+loadStats();
+</script>
+<script src="footer.js"></script>
+</body>
+</html>
