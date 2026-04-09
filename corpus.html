@@ -69,6 +69,11 @@ p:last-child { margin-bottom: 0; }
 .lang-card {
   background: #f8fafc; padding: 1.5rem; border-radius: var(--radius-md);
   border: 1px solid var(--border); text-align: center;
+  transition: background 0.2s, border-color 0.2s; cursor: default;
+}
+.lang-card:hover {
+  background: linear-gradient(180deg, #fff0f3 0%, #fce7f3 100%);
+  border-color: #fbcfe8;
 }
 .lang-title { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; color: #1e1b4b; font-weight: 800; margin-bottom: 1rem; display: block; }
 .stat-row { display: flex; justify-content: space-around; align-items: center; }
