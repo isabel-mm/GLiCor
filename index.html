@@ -163,10 +163,10 @@ summary.entry-header { list-style: none; padding: 1.25rem 1.5rem; cursor: pointe
 </style>
 </head>
 <body data-page="index">
-<script src="navbar.js"></script>
+<script src="assets/js/navbar.js"></script>
 
 <header class="hero">
-  <img src="logo3.png" alt="GLiCor" class="hero-logo">
+  <img src="assets/img/logo3.png" alt="GLiCor" class="hero-logo">
   <p class="author">
     <span class="lang-es">Glosario de Lingüística de Corpus</span>
     <span class="lang-en" hidden>Corpus Linguistics Glossary</span>
@@ -245,7 +245,7 @@ function sortEntries(list) {
 
 async function loadGlossary() {
   try {
-    const response = await fetch('entries.json?v=' + Date.now());
+    const response = await fetch('assets/data/entries.json?v=' + Date.now());
     ALL_ENTRIES = await response.json();
     applyLang();
   } catch (error) {
@@ -461,6 +461,6 @@ document.addEventListener('click', event => {
 loadGlossary();
 </script>
 
-<script src="footer.js"></script>
+<script src="assets/js/footer.js"></script>
 </body>
 </html>

@@ -163,7 +163,7 @@ body { font-family: var(--font-main); background-color: var(--bg-page); color: v
 </head>
 
 <body data-page="stats">
-<script src="navbar.js"></script>
+<script src="assets/js/navbar.js"></script>
 
 <header class="hero">
   <h1 data-es="Estadísticas del glosario" data-en="Glossary statistics">Estadísticas del glosario</h1>
@@ -322,7 +322,7 @@ function renderStats(entries) {
 async function loadStats() {
   const kpiGrid = document.getElementById('kpi-grid');
   try {
-    const response = await fetch('entries.json?v=' + Date.now());
+    const response = await fetch('assets/data/entries.json?v=' + Date.now());
     glossaryData = await response.json();
     renderStats(glossaryData);
   } catch (error) {
@@ -334,6 +334,6 @@ async function loadStats() {
 applyLang();
 loadStats();
 </script>
-<script src="footer.js"></script>
+<script src="assets/js/footer.js"></script>
 </body>
 </html>
