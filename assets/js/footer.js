@@ -68,7 +68,7 @@
   footer.innerHTML = `
     <div class="footer-inner">
       <div class="footer-brand">
-        <img src="assets/img/logo3.png" alt="GLiCor">
+        <img src="assets/img/logo.png" alt="GLiCor">
       </div>
       <div class="footer-copy">
         <p>Isabel Moyano Moreno · Universidad de Cádiz</p>

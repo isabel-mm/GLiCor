@@ -77,6 +77,12 @@ body { font-family: var(--font-main); background-color: var(--bg-page); color: v
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
   padding: 1.35rem 1.2rem;
+  transition: background 0.2s, border-color 0.2s;
+  cursor: default;
+}
+.kpi-card:hover {
+  background: linear-gradient(180deg, #fff0f3 0%, #fce7f3 100%);
+  border-color: #fbcfe8;
 }
 .kpi-value {
   display: block;
@@ -131,12 +137,35 @@ body { font-family: var(--font-main); background-color: var(--bg-page); color: v
   height: 12px;
   border-radius: 999px;
   background: #eef2ff;
-  overflow: hidden;
+  overflow: visible;
+  position: relative;
+  cursor: pointer;
 }
 .bar-fill {
   height: 100%;
   border-radius: 999px;
   background: var(--primary-gradient);
+  position: relative;
+}
+.bar-fill::after {
+  content: attr(data-percent);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(calc(100% + 8px), -50%);
+  background: #1e1b4b;
+  color: white;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.2rem 0.5rem;
+  border-radius: 6px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+}
+.bar-track:hover .bar-fill::after {
+  opacity: 1;
 }
 .loading, .error {
   text-align: center;
@@ -204,7 +233,7 @@ const TEXT = {
     activeLettersNote: 'Iniciales con al menos una entrada.',
     avgRelations: 'Media de relaciones',
     avgRelationsNote: 'Términos relacionados por entrada.',
-    panelNote: 'Datos generados automáticamente a partir de entries.json.',
+    panelNote: 'Estadísticas calculadas sobre el total de entradas del glosario.',
     loading: 'Cargando estadísticas...',
     error: 'No se pudieron cargar las estadísticas.',
   },
@@ -217,7 +246,7 @@ const TEXT = {
     activeLettersNote: 'Initial letters with at least one entry.',
     avgRelations: 'Average relations',
     avgRelationsNote: 'Related terms per entry.',
-    panelNote: 'Automatically generated from entries.json.',
+    panelNote: 'Statistics calculated from all glossary entries.',
     loading: 'Loading statistics...',
     error: 'Statistics could not be loaded.',
   }
@@ -298,23 +327,13 @@ function renderStats(entries) {
       <span class="kpi-value">${formatNumber(metrics.totalCategories)}</span>
       <p class="kpi-note">${t('totalCategoriesNote')}</p>
     </article>
-    <article class="kpi-card">
-      <span class="kpi-label">${t('activeLetters')}</span>
-      <span class="kpi-value">${formatNumber(metrics.totalLetters)}</span>
-      <p class="kpi-note">${t('activeLettersNote')}</p>
-    </article>
-    <article class="kpi-card">
-      <span class="kpi-label">${t('avgRelations')}</span>
-      <span class="kpi-value">${formatNumber(metrics.avgRelations)}</span>
-      <p class="kpi-note">${t('avgRelationsNote')}</p>
-    </article>
   `;
   panelNote.textContent = t('panelNote');
 
   categoryList.innerHTML = metrics.categoryList.map(item => `
     <div class="category-row">
       <div class="category-name">${item.name}</div>
-      <div class="bar-track"><div class="bar-fill" style="width:${item.percent}%"></div></div>
+      <div class="bar-track"><div class="bar-fill" style="width:${item.percent}%" data-percent="${item.percent}%"></div></div>
     </div>
   `).join('');
 }
