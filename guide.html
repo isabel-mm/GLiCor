@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guía | GLiCor</title>
+
+<style>
+:root {
+  --primary-gradient: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #f43f5e 100%);
+  --bg-page: #fdfcfe;
+  --surface: #ffffff;
+  --text-main: #1e1b4b;
+  --text-muted: #64748b;
+  --border: #e2e8f0;
+  --radius-lg: 16px;
+  --radius-md: 12px;
+  --shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+  --font-main: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: var(--font-main); background-color: var(--bg-page); color: var(--text-main); line-height: 1.7; }
+
+/* ── Hero ── */
+.hero {
+  background: #1e1b4b;
+  background-image: radial-gradient(at 0% 0%, rgba(99,102,241,0.15) 0px, transparent 50%),
+                    radial-gradient(at 100% 100%, rgba(244,63,94,0.1) 0px, transparent 50%);
+  color: #fff; padding: 7rem 1.5rem 4rem; text-align: center;
+  border-bottom: 4px solid; border-image: var(--primary-gradient) 1;
+}
+.hero h1 { font-size: 2.5rem; font-weight: 800; margin-bottom: 0.5rem; }
+.hero p { font-size: 0.95rem; color: #94a3b8; margin-top: 0.4rem; }
+
+/* ── Layout ── */
+.content-container {
+  max-width: 850px;
+  margin: -2rem auto 0;
+  padding: 3rem 2.5rem;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  border-radius: var(--radius-lg);
+  position: relative;
+  z-index: 10;
+}
+
+/* ── Panel ── */
+.panel {
+  background: var(--surface); border-radius: var(--radius-lg);
+  border: 1px solid var(--border); padding: 2rem;
+  margin-bottom: 1.5rem; box-shadow: var(--shadow);
+}
+.section-title {
+  font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.1em;
+  color: #a855f7; font-weight: 800; margin-bottom: 1rem; display: block;
+}
+.panel p { font-size: 0.93rem; color: #475569; margin-bottom: 0.9rem; text-align: justify; }
+.panel p:last-child { margin-bottom: 0; }
+
+/* ── Steps ── */
+.steps { list-style: none; padding: 0; margin-top: 0.8rem; }
+.steps li {
+  display: flex; gap: 1rem; align-items: flex-start;
+  padding: 0.7rem 0; border-bottom: 1px solid #f1f5f9; font-size: 0.93rem; color: #475569;
+}
+.steps li:last-child { border-bottom: none; }
+.step-num {
+  min-width: 26px; height: 26px; border-radius: 50%;
+  background: var(--primary-gradient); color: white;
+  font-size: 0.75rem; font-weight: 800;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+  margin-top: 1px;
+}
+
+/* ── Entry anatomy ── */
+.anatomy {
+  border: 1.5px dashed #ddd6fe; border-radius: var(--radius-md);
+  overflow: hidden; margin: 1rem 0;
+}
+.anatomy-header {
+  background: #1e1b4b; color: white; padding: 0.7rem 1.2rem;
+  display: flex; align-items: center; gap: 0.8rem;
+}
+.anatomy-header .a-term { font-size: 1rem; font-weight: 700; }
+.anatomy-header .a-badge {
+  font-size: 0.65rem; font-weight: 700; padding: 0.2rem 0.6rem;
+  border-radius: 20px; background: #fdf2f8; color: #db2777;
+}
+.anatomy-body { padding: 1rem 1.2rem; }
+.anatomy-row {
+  display: flex; gap: 0.8rem; align-items: flex-start;
+  padding: 0.55rem 0; border-bottom: 1px solid #f8fafc; font-size: 0.87rem;
+}
+.anatomy-row:last-child { border-bottom: none; }
+.anatomy-label {
+  min-width: 130px; font-size: 0.68rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.07em; color: #a855f7; padding-top: 2px;
+}
+.anatomy-desc { color: #475569; }
+
+/* ── Chip demo ── */
+.chip-demo { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 0.8rem; }
+.chip {
+  background: #f5f3ff; color: #7c3aed; padding: 4px 12px;
+  border-radius: 50px; font-weight: 600; font-size: 0.8rem;
+  border: 1px solid #ddd6fe;
+}
+
+/* ── Cite box ── */
+.cite-box {
+  background: #f8fafc; border-left: 4px solid #6366f1;
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  padding: 1rem 1.2rem; font-size: 0.88rem; color: #334155;
+  font-family: 'Georgia', serif; line-height: 1.7; margin-top: 0.8rem;
+}
+
+/* ── Toggle demo ── */
+.toggle-demo {
+  display: inline-flex; gap: 0.5rem; align-items: center;
+  background: rgba(30,27,75,0.06); padding: 0.5rem 1rem;
+  border-radius: 30px; margin-top: 0.8rem;
+}
+.toggle-btn {
+  padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.8rem; font-weight: 700;
+  border: 1px solid rgba(255,255,255,0.25); cursor: default;
+}
+.toggle-btn.on  { background: #6366f1; color: white; }
+.toggle-btn.off { background: rgba(30,27,75,0.08); color: #64748b; border-color: #cbd5e1; }
+</style>
+</head>
+
+<body data-page="guide">
+<script src="navbar.js"></script>
+
+<header class="hero">
+  <h1 data-es="Cómo usar GLiCor" data-en="How to use GLiCor">Cómo usar GLiCor</h1>
+</header>
+
+<main class="content-container">
+
+  <!-- SECCIÓN 1: BUSCAR -->
+  <section class="panel">
+    <span class="section-title">
+      <span class="lang-es">Buscar un término</span><span class="lang-en" hidden>Searching for a term</span>
+    </span>
+    <p>
+      <span class="lang-es">GLiCor ofrece tres formas de encontrar un término:</span>
+      <span class="lang-en" hidden>GLiCor offers three ways to find a term:</span>
+    </p>
+    <ol class="steps">
+      <li>
+        <span class="step-num">1</span>
+        <span>
+          <strong><span class="lang-es">Buscador libre</span><span class="lang-en" hidden>Free search</span></strong> —
+          <span class="lang-es">Escribe cualquier término en el campo de búsqueda y selecciona la lengua de consulta (<strong>ES</strong> o <strong>EN</strong>). La lengua de búsqueda es independiente del lengua de la interfaz.</span>
+          <span class="lang-en" hidden>Type any term in the search field and choose the search language (<strong>ES</strong> or <strong>EN</strong>). The search language is independent from the interface language.</span>
+        </span>
+      </li>
+      <li>
+        <span class="step-num">2</span>
+        <span>
+          <strong><span class="lang-es">Filtro por categoría</span><span class="lang-en" hidden>Category filter</span></strong> —
+          <span class="lang-es">Despliega el menú de categorías y haz clic en una para ver todos los términos que pertenecen a ese campo temático (p. ej., <em>Frecuencia y estadística</em>, <em>Léxico y fraseología</em>).</span>
+          <span class="lang-en" hidden>Open the category menu and click on one to see all terms belonging to that thematic field (e.g., <em>Frequency and statistics</em>, <em>Lexicon and phraseology</em>).</span>
+        </span>
+      </li>
+      <li>
+        <span class="step-num">3</span>
+        <span>
+          <strong><span class="lang-es">Navegación alfabética</span><span class="lang-en" hidden>Alphabetical navigation</span></strong> —
+          <span class="lang-es">Haz clic en una letra de la barra alfabética para ver todos los términos que empiezan por esa letra.</span>
+          <span class="lang-en" hidden>Click a letter in the alphabet bar to see all terms beginning with that letter.</span>
+        </span>
+      </li>
+    </ol>
+  </section>
+
+  <!-- SECCIÓN 2: ESTRUCTURA -->
+  <section class="panel">
+    <span class="section-title">
+      <span class="lang-es">Estructura de cada entrada</span><span class="lang-en" hidden>Structure of each entry</span>
+    </span>
+    <p>
+      <span class="lang-es">Cada entrada del glosario está organizada en cuatro secciones visibles. Haz clic sobre el término para desplegarla:</span>
+      <span class="lang-en" hidden>Each glossary entry is organised into four visible sections. Click on the term to expand it:</span>
+    </p>
+
+    <div class="anatomy">
+      <div class="anatomy-header">
+        <span class="a-term">concordance</span>
+        <span class="a-badge"><span class="lang-es">Búsqueda y consulta</span><span class="lang-en" hidden>Search and retrieval</span></span>
+      </div>
+      <div class="anatomy-body">
+        <div class="anatomy-row">
+          <span class="anatomy-label"><span class="lang-es">Definición</span><span class="lang-en" hidden>Definition</span></span>
+          <span class="anatomy-desc lang-es">Se muestra una única definición, en español o en inglés, según la lengua de búsqueda seleccionada.</span>
+          <span class="anatomy-desc lang-en" hidden>A single definition is shown, in Spanish or English, depending on the selected search language.</span>
+        </div>
+        <div class="anatomy-row">
+          <span class="anatomy-label"><span class="lang-es">Términos relacionados</span><span class="lang-en" hidden>Related terms</span></span>
+          <span class="anatomy-desc lang-es">Chips clicables que llevan directamente a otros términos del glosario relacionados conceptualmente.</span>
+          <span class="anatomy-desc lang-en" hidden>Clickable chips that link directly to other conceptually related glossary terms.</span>
+        </div>
+        <div class="anatomy-row">
+          <span class="anatomy-label"><span class="lang-es">Fuentes del corpus</span><span class="lang-en" hidden>Corpus sources</span></span>
+          <span class="anatomy-desc lang-es">Citas textuales extraídas del corpus especializado que documentan el uso real del término.</span>
+          <span class="anatomy-desc lang-en" hidden>Textual citations from the specialised corpus documenting real use of the term.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN 3: TÉRMINOS RELACIONADOS -->
+  <section class="panel">
+    <span class="section-title">
+      <span class="lang-es">Navegar entre términos relacionados</span><span class="lang-en" hidden>Navigating related terms</span>
+    </span>
+    <p>
+      <span class="lang-es">Dentro de cada entrada encontrarás una lista de términos relacionados en forma de etiquetas. Al hacer clic en una, el glosario salta automáticamente a esa entrada, abriéndola y destacándola brevemente con un borde de color.</span>
+      <span class="lang-en" hidden>Inside each entry you will find a list of related terms as clickable chips. Clicking on one automatically takes you to that entry, opening it and briefly highlighting it with a coloured border.</span>
+    </p>
+    <div class="chip-demo">
+      <span class="chip">KWIC</span>
+      <span class="chip">collocate</span>
+      <span class="chip">query</span>
+      <span class="chip">corpus</span>
+      <span class="chip">annotation</span>
+    </div>
+  </section>
+
+  <!-- SECCIÓN 4: IDIOMA -->
+  <section class="panel">
+    <span class="section-title">
+      <span class="lang-es">Cambio de lengua</span><span class="lang-en" hidden>Switching language</span>
+    </span>
+    <p>
+      <span class="lang-es">El botón <strong>EN / ES</strong> de la barra de navegación alterna el lengua de la interfaz. En modo español los términos aparecen en español como título de la entrada; en modo inglés, en inglés. La preferencia se guarda automáticamente para tu próxima visita.</span>
+      <span class="lang-en" hidden>The <strong>EN / ES</strong> button in the navigation bar switches the interface language. In Spanish mode, terms appear in Spanish as the entry title; in English mode, in English. Your preference is saved automatically for your next visit.</span>
+    </p>
+    <div class="toggle-demo">
+      <span class="lang-es" style="font-size:0.85rem;color:#475569">Modo activo:</span>
+      <span class="lang-en" hidden style="font-size:0.85rem;color:#475569">Active mode:</span>
+      <span class="toggle-btn on lang-es">ES</span>
+      <span class="toggle-btn on lang-en" hidden>EN</span>
+      <span class="toggle-btn off">→</span>
+      <span class="toggle-btn off lang-es">EN</span>
+      <span class="toggle-btn off lang-en" hidden>ES</span>
+    </div>
+  </section>
+
+  <!-- SECCIÓN 5: CITAR -->
+  <section class="panel">
+    <span class="section-title">
+      <span class="lang-es">Cómo citar este glosario</span><span class="lang-en" hidden>How to cite this glossary</span>
+    </span>
+    <p>
+      <span class="lang-es">Si utilizas GLiCor en tu investigación, te agradecemos que lo cites de la siguiente manera:</span>
+      <span class="lang-en" hidden>If you use GLiCor in your research, we kindly ask you to cite it as follows:</span>
+    </p>
+    <div class="cite-box lang-es">
+      Moyano Moreno, I. (2026). <em>GLiCor: Glosario de Lingüística de Corpus</em>. Universidad de Cádiz. Disponible en: [URL]
+    </div>
+    <div class="cite-box lang-en" hidden>
+      Moyano Moreno, I. (2026). <em>GLiCor: Corpus Linguistics Glossary</em>. University of Cádiz. Available at: [URL]
+    </div>
+  </section>
+
+</main>
+
+<script>
+let lang = localStorage.getItem('glicor-lang') || 'es';
+
+function applyLang() {
+  document.querySelectorAll('.lang-es').forEach(el => el.hidden = (lang === 'en'));
+  document.querySelectorAll('.lang-en').forEach(el => el.hidden = (lang === 'es'));
+  if (window.syncNavbar) window.syncNavbar(lang);
+  const h1 = document.querySelector('.hero h1');
+  h1.textContent = h1.dataset[lang];
+}
+
+function toggleLang() {
+  lang = lang === 'es' ? 'en' : 'es';
+  localStorage.setItem('glicor-lang', lang);
+  applyLang();
+}
+
+applyLang();
+</script>
+<script src="footer.js"></script>
+</body>
+</html>

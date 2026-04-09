@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About | GLiCor</title>
+
+<style>
+:root {
+  --primary-gradient: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #f43f5e 100%);
+  --bg-page: #fdfcfe;
+  --surface: #ffffff;
+  --text-main: #1e1b4b;
+  --text-muted: #64748b;
+  --border: #e2e8f0;
+  --radius-lg: 16px;
+  --radius-md: 12px;
+  --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --font-main: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: var(--font-main); background-color: var(--bg-page); color: var(--text-main); line-height: 1.7; }
+
+.hero {
+  background: #1e1b4b;
+  background-image: radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.15) 0px, transparent 50%), radial-gradient(at 100% 100%, rgba(244, 63, 94, 0.1) 0px, transparent 50%);
+  color: #fff; padding: 7rem 1.5rem 4rem; text-align: center;
+  border-bottom: 4px solid; border-image: var(--primary-gradient) 1;
+}
+.hero h1 { font-size: 2.5rem; font-weight: 800; margin-bottom: 0.5rem; }
+
+.content-container {
+  max-width: 850px;
+  margin: -2rem auto 0;
+  padding: 3rem 2.5rem;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  border-radius: var(--radius-lg);
+  position: relative;
+  z-index: 10;
+}
+
+.panel {
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+p { margin-bottom: 1rem; text-align: justify; color: #334155; }
+p:last-child { margin-bottom: 0; }
+
+.section-title {
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #a855f7;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.highlight-box {
+  background: #f5f3ff; border-radius: var(--radius-md); padding: 1.5rem;
+  margin-top: 1rem; font-size: 0.95rem; color: #5b21b6; border: 1px solid #ddd6fe;
+}
+
+@media (max-width: 680px) {
+  .hero h1 { font-size: 2rem; }
+  .content-container { padding: 2rem 1rem; }
+  .panel { padding: 1.4rem; }
+}
+</style>
+</head>
+
+<body data-page="about">
+<script src="navbar.js"></script>
+
+<header class="hero">
+  <h1 data-es="Sobre el glosario" data-en="About the glossary">Sobre el glosario</h1>
+</header>
+
+<main class="content-container">
+
+  <section class="panel">
+    <span class="section-title">
+      <span class="lang-es">Qué es GLiCor</span>
+      <span class="lang-en" hidden>What GLiCor is</span>
+    </span>
+    <p>
+      <span class="lang-es">GLiCor es un glosario bilingüe especializado que reúne y organiza la terminología central de la lingüística de corpus en inglés y en español. Está pensado como un recurso de consulta y exploración. Cada entrada reúne el término en ambas lenguas, sus definiciones, relaciones con otros conceptos del glosario y ejemplos de uso que ayudan a situarlo dentro del campo.</span>
+      <span class="lang-en" hidden>GLiCor is a specialised bilingual glossary that gathers and organises core corpus linguistics terminology in English and Spanish. It is designed as a resource for consultation and exploration. Each entry brings together the term in both languages, its definitions, its relations to other glossary concepts, and usage examples that help situate it within the field.</span>
+    </p>
+    <p>
+      <span class="lang-es">No se trata de una lista cerrada de equivalencias, sino de una herramienta para comprender cómo circulan y se definen los conceptos en la práctica académica real de la disciplina.</span>
+      <span class="lang-en" hidden>It is not a closed list of equivalents, but a tool for understanding how concepts circulate and are defined in the real academic practice of the discipline.</span>
+    </p>
+  </section>
+
+  <section class="panel">
+    <span class="section-title">
+      <span class="lang-es">Origen del recurso</span>
+      <span class="lang-en" hidden>Origin of the resource</span>
+    </span>
+    <p>
+      <span class="lang-es">GLiCor es uno de los resultados de una investigación sobre terminología, corpus especializados y representatividad. El glosario nace de ese trabajo, pero se presenta aquí como un recurso autónomo y reutilizable, pensado para facilitar la consulta, la comparación entre lenguas y la navegación conceptual.</span>
+      <span class="lang-en" hidden>GLiCor is one of the outcomes of a research project on terminology, specialised corpora and representativeness. The glossary emerges from that work, but is presented here as an autonomous, reusable resource designed to support consultation, cross-linguistic comparison and conceptual navigation.</span>
+    </p>
+    <div class="highlight-box">
+      <span class="lang-es">La base documental del glosario procede de un corpus especializado bilingüe. Si quieres conocer la procedencia de los datos, la composición del corpus y los criterios de selección de fuentes, consulta la sección <a href="corpus.html" style="color:#4f46e5; font-weight:700;">Corpus</a>.</span>
+      <span class="lang-en" hidden>The glossary's documentary basis comes from a specialised bilingual corpus. If you want to know where the data comes from, how the corpus is composed, and which source-selection criteria were used, see the <a href="corpus.html" style="color:#4f46e5; font-weight:700;">Corpus</a> section.</span>
+    </div>
+  </section>
+
+  <section class="panel">
+    <span class="section-title">
+      <span class="lang-es">Cómo se ha construido</span>
+      <span class="lang-en" hidden>How it was built</span>
+    </span>
+    <p>
+      <span class="lang-es">La elaboración de GLiCor combina procedimientos automáticos de extracción y organización terminológica con revisión manual. Ese equilibrio permite mantener una base empírica sólida sin renunciar a la precisión descriptiva que requiere un recurso de este tipo.</span>
+      <span class="lang-en" hidden>The development of GLiCor combines automatic procedures for term extraction and organisation with manual revision. That balance makes it possible to maintain a strong empirical basis without giving up the descriptive precision required by this kind of resource.</span>
+    </p>
+    <p>
+      <span class="lang-es">Por eso GLiCor puede leerse tanto como una herramienta de apoyo a la investigación y a la docencia como un punto de partida para futuros recursos terminológicos, lingüísticos o computacionales.</span>
+      <span class="lang-en" hidden>For that reason, GLiCor can be read both as a support tool for research and teaching and as a starting point for future terminological, linguistic or computational resources.</span>
+    </p>
+  </section>
+
+</main>
+
+<script>
+let lang = localStorage.getItem('glicor-lang') || 'es';
+
+function applyLang() {
+  document.querySelectorAll('.lang-es').forEach(el => el.hidden = (lang === 'en'));
+  document.querySelectorAll('.lang-en').forEach(el => el.hidden = (lang === 'es'));
+  if (window.syncNavbar) window.syncNavbar(lang);
+  const h1 = document.querySelector('.hero h1');
+  h1.textContent = h1.dataset[lang];
+}
+
+function toggleLang() {
+  lang = lang === 'es' ? 'en' : 'es';
+  localStorage.setItem('glicor-lang', lang);
+  applyLang();
+}
+
+applyLang();
+</script>
+<script src="footer.js"></script>
+</body>
+</html>
