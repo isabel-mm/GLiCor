@@ -159,6 +159,22 @@ summary.entry-header { list-style: none; padding: 1.25rem 1.5rem; cursor: pointe
 /* Mensaje de estado vacío */
 .placeholder-msg { text-align: center; padding: 5rem 2rem; color: var(--text-muted); opacity: 0.6; font-style: italic; }
 
+/* ── Contador de resultados ── */
+#results-count { text-align: center; font-size: 0.82rem; color: var(--text-muted); margin-bottom: 1.2rem; font-weight: 600; letter-spacing: 0.03em; }
+
+/* ── Botón volver arriba ── */
+#back-to-top {
+  position: fixed; bottom: 2rem; right: 2rem; z-index: 999;
+  width: 42px; height: 42px; border-radius: 50%;
+  background: var(--primary-gradient); color: white;
+  border: none; cursor: pointer; font-size: 1.1rem;
+  box-shadow: var(--shadow); opacity: 0; pointer-events: none;
+  transition: opacity 0.3s, transform 0.3s;
+  display: flex; align-items: center; justify-content: center;
+}
+#back-to-top.visible { opacity: 1; pointer-events: auto; }
+#back-to-top:hover { transform: translateY(-3px); }
+
 @media (max-width: 768px) { .entry-body { display: block; } }
 </style>
 </head>
@@ -189,10 +205,12 @@ summary.entry-header { list-style: none; padding: 1.25rem 1.5rem; cursor: pointe
 <nav class="alpha-strip" id="alpha-nav"></nav>
 
 <main class="page">
-  <div id="entries-container">
-    </div>
+  <p id="results-count" style="display:none;"></p>
+  <div id="entries-container"></div>
   <p id="no-results" style="display:none; text-align:center; padding:3rem; color:var(--text-muted);">No se encontraron términos.</p>
 </main>
+
+<button id="back-to-top" aria-label="Volver arriba">↑</button>
 
 <script>
 const STRINGS = {
@@ -204,6 +222,7 @@ const STRINGS = {
     emptyMsg:          'Escribe en el buscador o selecciona una categoría para explorar el glosario.',
     noResults:         'No se encontraron términos.',
     catKey:            'category',
+    results:           n => n === 1 ? '1 término encontrado' : `${n} términos encontrados`,
   },
   en: {
     searchPlaceholder: 'Search term...',
@@ -213,6 +232,7 @@ const STRINGS = {
     emptyMsg:          'Type in the search box or select a category to browse the glossary.',
     noResults:         'No terms found.',
     catKey:            'category_en',
+    results:           n => n === 1 ? '1 term found' : `${n} terms found`,
   },
 };
 
@@ -354,6 +374,13 @@ function setSearchMode(mode, btn) {
 function renderEntries(list) {
   container.innerHTML = '';
   document.getElementById('no-results').style.display = list.length === 0 ? 'block' : 'none';
+  const countEl = document.getElementById('results-count');
+  if (list.length > 0) {
+    countEl.textContent = t('results')(list.length);
+    countEl.style.display = 'block';
+  } else {
+    countEl.style.display = 'none';
+  }
   
   list.forEach(e => {
     const card = document.createElement('details');
@@ -451,6 +478,24 @@ function renderAlphabet() {
 }
 
 searchInput.addEventListener('input', applyFilters);
+
+// Atajo teclado: "/" enfoca el buscador
+document.addEventListener('keydown', e => {
+  if (e.key === '/' && document.activeElement !== searchInput) {
+    e.preventDefault();
+    searchInput.focus();
+    searchInput.select();
+  }
+});
+
+// Botón volver arriba
+const backToTop = document.getElementById('back-to-top');
+window.addEventListener('scroll', () => {
+  backToTop.classList.toggle('visible', window.scrollY > 400);
+});
+backToTop.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
 document.querySelectorAll('.search-mode-btn').forEach(btn => {
   btn.addEventListener('click', () => setSearchMode(btn.dataset.mode, btn));
 });

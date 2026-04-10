@@ -12,6 +12,12 @@
 
   const style = document.createElement('style');
   style.textContent = `
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(8px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    body { animation: fadeIn 0.35s ease both; }
+    body.fade-out { opacity: 0; transform: translateY(-8px); transition: opacity 0.25s ease, transform 0.25s ease; }
     .navbar {
       position: fixed; top: 0; width: 100%; z-index: 1000;
       background: rgba(30, 27, 75, 0.8); backdrop-filter: blur(10px);
@@ -52,4 +58,14 @@
       if (typeof window.toggleLang === 'function') window.toggleLang();
     });
   }
+
+  document.querySelectorAll('.navbar a[href]').forEach(link => {
+    const href = link.getAttribute('href');
+    if (!href || href === '#') return;
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      document.body.classList.add('fade-out');
+      setTimeout(() => { window.location.href = href; }, 250);
+    });
+  });
 })();

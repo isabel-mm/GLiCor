@@ -2,7 +2,7 @@
 
 A bilingual (Spanish/English) specialised glossary of corpus linguistics terminology, built from a corpus-based analysis of academic literature in both languages.
 
-**Live site:** [glicor URL]
+**Live site:** [isabel-mm.github.io/GLiCor](https://isabel-mm.github.io/GLiCor)
 
 ---
 
