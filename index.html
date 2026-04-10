@@ -175,6 +175,31 @@ summary.entry-header { list-style: none; padding: 1.25rem 1.5rem; cursor: pointe
 #back-to-top.visible { opacity: 1; pointer-events: auto; }
 #back-to-top:hover { transform: translateY(-3px); }
 
+/* ── Equivalente en otra lengua ── */
+.equiv-section { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 0.5rem; }
+.equiv-label { font-size: 0.72rem; color: #a855f7; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700; }
+.equiv-chip { background: #fdf2f8; color: #db2777; padding: 4px 12px; border-radius: 50px; font-weight: 600; font-size: 0.8rem; cursor: pointer; border: 1px solid #fbcfe8; transition: 0.2s; }
+.equiv-chip:hover { background: #db2777; color: white; }
+
+/* ── Fuentes desplegable ── */
+.sources-details { margin-top: 1rem; border: 1px solid #e9d5ff; border-radius: 10px; overflow: hidden; }
+.sources-summary { padding: 0.6rem 1rem; cursor: pointer; list-style: none; font-size: 0.74rem; color: #a855f7; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700; display: flex; align-items: center; gap: 0.5rem; background: #faf5ff; }
+.sources-summary::-webkit-details-marker { display: none; }
+.sources-summary::before { content: '▸'; font-size: 0.65rem; transition: transform 0.2s; display: inline-block; }
+.sources-details[open] .sources-summary::before { transform: rotate(90deg); }
+.sources-inner { padding: 0.6rem 1rem 1rem; }
+.src-panel { list-style: none; padding: 0; margin: 0; }
+.src-panel li { margin-bottom: 1rem; font-size: 0.88rem; line-height: 1.6; }
+.src-attr { display: block; color: #94a3b8; font-size: 0.8rem; font-style: italic; margin-top: 0.2rem; }
+.kwic-line { color: #475569; }
+.kwic-key { color: #7c3aed; font-weight: 700; background: rgba(124,58,237,0.08); border-radius: 3px; padding: 1px 3px; }
+
+/* ── Tabla de frecuencias ── */
+.freq-table { width: 100%; border-collapse: collapse; margin-top: 0.4rem; font-size: 0.85rem; }
+.freq-table th { text-align: left; padding: 0.35rem 0.7rem; background: #f8f5ff; color: #7c3aed; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.04em; font-weight: 700; }
+.freq-table td { padding: 0.35rem 0.7rem; border-top: 1px solid #f1f5f9; color: #475569; }
+.freq-table tr:hover td { background: #fdf9ff; }
+
 @media (max-width: 768px) { .entry-body { display: block; } }
 </style>
 </head>
@@ -238,6 +263,7 @@ const STRINGS = {
 
 let lang = localStorage.getItem('glicor-lang') || 'es';
 let ALL_ENTRIES = [];
+let ALL_CONCORDANCES = {};
 let currentCat = 'All';
 let searchMode = 'es';
 const container = document.getElementById('entries-container');
@@ -265,8 +291,13 @@ function sortEntries(list) {
 
 async function loadGlossary() {
   try {
-    const response = await fetch('assets/data/entries.json?v=' + Date.now());
-    ALL_ENTRIES = await response.json();
+    const v = Date.now();
+    const [entriesRes, concRes] = await Promise.all([
+      fetch('assets/data/entries.json?v=' + v),
+      fetch('assets/data/concordances.json?v=' + v),
+    ]);
+    ALL_ENTRIES       = await entriesRes.json();
+    ALL_CONCORDANCES  = await concRes.json();
     applyLang();
   } catch (error) {
     container.innerHTML = "<p style='text-align:center'>Error al cargar datos.</p>";
@@ -392,7 +423,7 @@ function renderEntries(list) {
     // 0. Eliminar encabezado redundante (h2 con el término y párrafo de categoría)
     cleanHtml = cleanHtml.replace(/^<h2>.*?<\/h2>\s*/s, '');
     cleanHtml = cleanHtml.replace(/^<p><strong>Category \/ Categoría:.*?<\/p>\s*/s, '');
-    cleanHtml = cleanHtml.replace(/<h3[^>]*>Fuentes del corpus \/ Corpus sources<\/h3>/g, `<h3>${lang === 'es' ? 'Fuentes del corpus' : 'Corpus sources'}</h3>`);
+    // (fuentes EN/ES handled in step 3 below)
     cleanHtml = cleanHtml.replace(/<h3[^>]*>Nota terminológica \/ Terminological note<\/h3>[\s\S]*$/s, '');
 
     // 1. Mostrar solo la definición correspondiente a la lengua de búsqueda
@@ -430,15 +461,109 @@ function renderEntries(list) {
         }
     }
 
-    const primary = searchMode === 'en' ? e.term_en : e.term_es;
+    // 3. Fuentes de la definición (extraídas del HTML de la entrada)
+    const enSrcM = cleanHtml.match(/<h3[^>]*>Fuentes del corpus \(EN\) \/ Corpus sources \(EN\)<\/h3>\s*(<ul>[\s\S]*?<\/ul>)/);
+    const esSrcM = cleanHtml.match(/<h3[^>]*>Fuentes del corpus \(ES\) \/ Corpus sources \(ES\)<\/h3>\s*(<ul>[\s\S]*?<\/ul>)/);
+    cleanHtml = cleanHtml.replace(/<h3[^>]*>Fuentes del corpus \((?:EN|ES)\) \/ Corpus sources \((?:EN|ES)\)<\/h3>\s*<ul>[\s\S]*?<\/ul>/g, '');
+
+    const parseBiblio = (ulHtml) => {
+      const refs = [], seen = new Set();
+      ulHtml.replace(/<li>([\s\S]*?)<\/li>/g, (_, li) => {
+        const attrM = li.match(/<em>\(([^)]+)\)<\/em>/);
+        if (!attrM || seen.has(attrM[1])) return;
+        seen.add(attrM[1]);
+        const parts = attrM[1].split('_');
+        const authors = parts[1] || '', year = parts[0] || '', title = parts.slice(2).join(': ') || '';
+        let entry = authors ? `${authors} (${year})` : `(${year})`;
+        if (title) entry += `. <em>${title}</em>`;
+        refs.push(`<li>${entry}</li>`);
+      });
+      return refs;
+    };
+    const biblioItems = [
+      ...(enSrcM ? parseBiblio(enSrcM[1]) : []),
+      ...(esSrcM ? parseBiblio(esSrcM[1]) : []),
+    ];
+    // Deduplicar por texto completo
+    const biblioUniq = [...new Map(biblioItems.map(x => [x, x])).values()];
+
+    // 4. Concordancias KWIC desde concordances.json
+    const conc       = ALL_CONCORDANCES[e.slug] || {};
+    const activeLang = searchMode === 'en' ? 'en' : 'es';
+    const concData   = (conc[activeLang] || []);
+
+    const makeConcItem = c =>
+      `<li><span class="kwic-line">${c.left}<strong class="kwic-key">${c.keyword}</strong>${c.right}</span><br><span class="src-attr">${c.source}</span></li>`;
+
+    const uid          = e.slug;
+    const fuentesLabel = lang === 'es' ? 'Fuentes de la definición' : 'Definition sources';
+    const concordLabel = lang === 'es' ? 'Concordancias' : 'Concordances';
+
+    if (biblioUniq.length > 0) {
+      cleanHtml += `<details class="sources-details" id="biblio-${uid}">
+        <summary class="sources-summary">${fuentesLabel}</summary>
+        <div class="sources-inner"><ul class="src-panel">${biblioUniq.join('')}</ul></div>
+      </details>`;
+    }
+    if (concData.length > 0) {
+      cleanHtml += `<details class="sources-details" id="conc-${uid}">
+        <summary class="sources-summary">${concordLabel}</summary>
+        <div class="sources-inner"><ul class="src-panel">${concData.map(makeConcItem).join('')}</ul></div>
+      </details>`;
+    }
+
+    // ── Equivalente en la otra lengua ──
+    const primary   = searchMode === 'en' ? e.term_en : e.term_es;
+    const equivTerm = searchMode === 'en' ? (e.equiv_es || '') : (e.equiv_en || '');
+    const equivLang = searchMode === 'en' ? 'es' : 'en';
+    const showEquiv = equivTerm && equivTerm.toLowerCase() !== primary.toLowerCase();
+    let equivHtml = '';
+    if (showEquiv) {
+      const equivLabelText = searchMode === 'en' ? 'Equivalente en español' : 'English equivalent';
+      const safeEquiv = equivTerm.replace(/'/g, "\\'");
+      equivHtml = `<div class="equiv-section">
+        <span class="equiv-label">${equivLabelText}</span>
+        <span class="equiv-chip" onclick="goToEquiv('${e.slug}','${equivLang}','${safeEquiv}')">${equivTerm}</span>
+      </div>`;
+    }
+
+    // ── Tabla de frecuencias ──
+    let freqHtml = '';
+    if (e.freq && (e.freq.en || e.freq.es)) {
+      const freqTitle = searchMode === 'es' ? 'Frecuencia en corpus' : 'Corpus frequency';
+      const colAbs = searchMode === 'es' ? 'Frec. abs.' : 'Abs. freq.';
+      const colRel = searchMode === 'es' ? 'Frec. rel.' : 'Rel. freq.';
+      const colPmw = searchMode === 'es' ? 'Por millón' : 'Per million';
+      const row = (label, d) => d
+        ? `<tr><td>${label}</td><td>${d.abs}</td><td>${d.rel}</td><td>${d.pmw}</td></tr>`
+        : '';
+      freqHtml = `<h3>${freqTitle}</h3>
+        <table class="freq-table">
+          <thead><tr><th>Subcorpus</th><th>${colAbs}</th><th>${colRel}</th><th>${colPmw}</th></tr></thead>
+          <tbody>${row('EN', e.freq.en)}${row('ES', e.freq.es)}</tbody>
+        </table>`;
+    }
+
+    cleanHtml = equivHtml + cleanHtml + freqHtml;
+
+    const equivInHeader = showEquiv ? `<span class="entry-term-es">${equivTerm}</span>` : '';
     card.innerHTML = `
       <summary class="entry-header">
-        <span class="entry-term">${primary}</span>
+        <span><span class="entry-term">${primary}</span>${equivInHeader}</span>
         <span class="cat-badge">${e[t('catKey')]}</span>
       </summary>
       <div class="entry-body">${cleanHtml}</div>`;
     container.appendChild(card);
   });
+}
+
+
+function goToEquiv(slug, targetMode, equivTerm) {
+    const targetBtn = document.querySelector(`.search-mode-btn[data-mode="${targetMode}"]`);
+    if (targetBtn) setSearchMode(targetMode, targetBtn);
+    searchInput.value = equivTerm;
+    applyFilters();
+    setTimeout(() => goToTerm(slug), 200);
 }
 
 function goToTerm(slug) {
