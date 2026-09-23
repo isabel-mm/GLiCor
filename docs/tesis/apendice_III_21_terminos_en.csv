@@ -1,0 +1,146 @@
+categoria,termino,frecuencia,doc_freq,frecuencia_tesis,doc_freq_tesis,diferencia_frecuencia,entrada_glosario
+MET-DI,corpus,13762,50,13767,50,-5,corpus
+MET-DI,type,1048,41,1048,41,0,type
+MET-DI,corpus linguistics,1770,47,2138,47,-368,corpus_linguistics
+MET-DI,corpus-based,416,38,416,38,0,corpus_based
+MET-DI,corpus-driven,31,9,31,9,0,corpus_driven
+MET-DI,representativeness,591,22,555,22,36,representativeness
+MET-DI,speech corpus,152,6,151,6,1,speech_corpus
+MET-DI,text type,80,18,266,24,-186,text_type
+MET-DI,corpus design,317,20,319,20,-2,corpus_design
+MET-DI,genre,296,33,297,33,-1,genre
+MET-DI,sampling frame,79,5,91,5,-12,sampling_frame
+MET-DI,corpus size,95,12,104,13,-9,corpus_size
+MET-DI,reference corpus,114,19,113,20,1,reference_corpus
+MET-DI,national corpus,194,26,189,26,5,national_corpus
+MET-DI,general corpus,87,7,85,7,2,general_corpus
+MET-DI,corpus building,94,8,93,7,1,corpus_building
+MET-DI,multimodal corpus,33,3,33,3,0,multimodal_corpus
+MET-DI,learner corpus,66,9,64,9,2,learner_corpus
+MET-DI,monitor corpus,42,7,42,7,0,monitor_corpus
+MET-DI,training corpus,31,6,31,6,0,training_corpus
+MET-DI,subcorpus,85,17,84,16,1,subcorpus
+MET-DI,web corpus,28,6,32,6,-4,web_corpus
+MET-DI,comparable corpus,39,7,38,7,1,comparable_corpus
+MET-DI,annotated corpus,57,10,70,10,-13,annotated_corpus
+MET-DI,multilingual corpus,40,8,41,8,-1,multilingual_corpus
+MET-DI,corpus compilation,43,16,43,15,0,corpus_building
+MET-DI,spoken corpus,63,15,63,15,0,speech_corpus
+MET-DI,monolingual corpus,31,3,30,3,1,monolingual_corpus
+MET-DI,diachronic corpus,29,11,29,11,0,diachronic_corpus
+MET-DI,mega corpora,39,3,39,3,0,mega_corpus
+MET-DI,historical corpus,19,10,19,10,0,historical_corpus
+MET-DI,specialized corpus,16,6,27,12,-11,specialised_corpus
+MET-DI,balanced corpus,30,9,31,10,-1,balanced_corpus
+MET-DI,web crawling,6,3,5,3,1,web_crawling
+MET-DI,synchronic,94,16,94,16,0,synchronic
+MET-DI,parallel corpus,149,8,145,8,4,parallel_corpus
+MET-DI,written corpus,15,9,15,9,0,written_corpus
+MET-DI,sample size,198,9,217,9,-19,sample_size
+MET-DI,stratified sampling,5,1,5,1,0,stratified_sampling
+MET-DI,query,422,19,422,19,0,query
+MET-DI,concordance,161,18,161,18,0,concordance
+MET-DI,concordance lines,11,5,16,6,-5,concordance
+MET-DI,wildcard,16,2,16,2,0,wildcard
+MET-DI,KWIC,41,6,41,6,0,kwic
+MET-DI,corpus queries,46,5,45,5,1,query
+MET-DI,natural language processing,92,24,90,24,2,natural_language_processing
+MET-DI,computational linguistics,131,25,136,26,-5,computational_linguistics
+PROC-LIN,annotation,1516,38,1513,38,3,annotation
+PROC-LIN,annotation scheme,91,14,126,16,-35,annotation_scheme
+PROC-LIN,tagset,155,13,155,13,0,tagset
+PROC-LIN,word class,37,8,37,8,0,word_class
+PROC-LIN,accuracy,167,29,165,29,2,accuracy
+PROC-LIN,corpus annotation,122,18,132,18,-10,annotation
+PROC-LIN,recall,107,17,107,17,0,recall
+PROC-LIN,POS tagging,74,12,72,11,2,pos_tagging
+PROC-LIN,treebank,105,13,105,13,0,treebank
+PROC-LIN,parts of speech,39,11,75,16,-36,word_class
+PROC-LIN,annotation tools,39,6,51,8,-12,annotation_tool
+PROC-LIN,markup language,35,10,40,9,-5,markup_language
+PROC-LIN,syntactic annotation,29,7,32,7,-3,syntactic_annotation
+PROC-LIN,semantic annotation,34,12,34,12,0,semantic_annotation
+PROC-LIN,gold standard,13,5,13,5,0,gold_standard
+PROC-LIN,morphological annotation,7,2,7,2,0,morphological_annotation
+PROC-LIN,part-of-speech tagging,77,14,77,15,0,pos_tagging
+PROC-LIN,inter-annotator agreement,21,5,21,5,0,inter_annotator_agreement
+PROC-LIN,inter-rater reliability,1,1,1,1,0,inter_annotator_agreement
+PROC-LIN,inline annotation,2,1,2,1,0,inline_annotation
+PROC-LIN,token,279,20,279,20,0,token
+PROC-LIN,alignment,153,16,153,16,0,alignment
+PROC-LIN,tagger,142,22,142,22,0,tagger
+PROC-LIN,concordancer,21,6,21,6,0,concordancer
+PROC-LIN,dataset,122,25,122,25,0,dataset
+PROC-LIN,regular expression,55,7,148,11,-93,regular_expression
+PROC-LIN,stem,40,10,40,10,0,stem
+PROC-LIN,lemma,89,10,89,10,0,lemma
+PROC-LIN,lexeme,40,5,40,5,0,lexeme
+PROC-LIN,clustering,73,4,73,4,0,clustering
+PROC-LIN,parsing,54,17,54,17,0,parsing
+PROC-LIN,lemmatisation,34,5,34,5,0,lemmatisation
+PROC-LIN,tokenisation,25,5,25,5,0,tokenization
+PROC-LIN,word sense disambiguation,16,4,15,4,1,word_sense_disambiguation
+PROC-LIN,segmentation,28,14,28,14,0,segmentation
+PROC-LIN,text mining,12,6,12,6,0,text_mining
+PROC-LIN,dependency parsing,5,4,5,4,0,dependency_parsing
+PROC-LIN,named entity recognition,3,3,3,3,0,named_entity_recognition
+EST-LEX,frequency,1667,40,1667,40,0,frequency
+EST-LEX,sample,1129,31,1127,31,2,sample
+EST-LEX,probability,385,17,380,17,5,probability
+EST-LEX,range,584,37,584,37,0,range
+EST-LEX,dispersion,329,16,329,16,0,dispersion
+EST-LEX,occurrence,308,24,308,24,0,occurrence
+EST-LEX,population,286,16,286,16,0,population
+EST-LEX,association measures,82,6,102,6,-20,association_measure
+EST-LEX,descriptive statistics,56,8,55,8,1,descriptive_statistics
+EST-LEX,relative frequency,25,9,28,9,-3,relative_frequency
+EST-LEX,raw frequency,10,3,10,3,0,raw_frequency
+EST-LEX,mutual information,33,9,31,9,2,mutual_information
+EST-LEX,inferential statistics,19,6,22,6,-3,inferential_statistics
+EST-LEX,absolute frequency,5,2,5,2,0,raw_frequency
+EST-LEX,chi-squared,43,7,46,8,-3,chi_squared
+EST-LEX,log-likelihood,39,12,39,12,0,log_likelihood
+EST-LEX,standard deviation,102,13,121,14,-19,standard_deviation
+EST-LEX,statistical significance,43,12,34,10,9,statistical_significance
+EST-LEX,confidence interval,43,3,46,6,-3,confidence_interval
+EST-LEX,t-score,15,3,15,3,0,t_score
+EST-LEX,mean score,56,2,77,2,-21,mean_score
+EST-LEX,z-score,1,1,1,1,0,z_score
+EST-LEX,deviation of proportions,2,2,2,2,0,deviation_of_proportions
+EST-LEX,normalized frequency,5,3,10,5,-5,normalized_frequency
+EST-LEX,effect size,47,6,60,8,-13,effect_size
+EST-LEX,keyword,337,16,337,16,0,keyword
+EST-LEX,collocation,265,19,260,19,5,collocation
+EST-LEX,collocate,95,9,95,9,0,collocate
+EST-LEX,frequency list,105,9,201,15,-96,frequency_list
+EST-LEX,grammar,424,29,423,29,1,grammar
+EST-LEX,keyword analysis,117,10,139,12,-22,keyword_analysis
+EST-LEX,word list,53,9,96,14,-43,frequency_list
+EST-LEX,word frequency,61,15,61,15,0,word_frequency
+EST-LEX,function word,9,5,88,13,-79,function_word
+EST-LEX,hapax legomena,67,7,67,7,0,hapax_legomenon
+EST-LEX,content words,31,10,38,10,-7,content_word
+EST-LEX,keyness,86,8,86,8,0,keyness
+EST-LEX,lexical bundles,45,5,47,5,-2,lexical_bundle
+EST-LEX,node word,17,5,18,5,-1,node_word
+EST-LEX,semantic prosody,29,3,29,3,0,semantic_prosody
+EST-LEX,colligation,15,4,15,4,0,colligation
+EST-LEX,collocational strength,2,2,6,4,-4,collocational_strength
+EST-LEX,stopword,4,2,4,2,0,stopword
+EST-LEX,phraseology,13,7,13,7,0,phraseology
+EST-LEX,formulaic language,8,4,8,4,0,formulaic_language
+EST-LEX,n-gram,37,6,37,6,0,n_gram
+EST-LEX,type-token ratio,11,3,11,3,0,ttr
+EST-LEX,lexico-grammar,4,3,4,3,0,lexico_grammar
+EST-LEX,semantic preference,2,1,2,1,0,semantic_preference
+EST-LEX,multiword expression,1,1,1,1,0,multiword_expression
+TEC-FOR,XML,567,23,567,23,0,xml
+TEC-FOR,metadata,251,24,251,24,0,metadata
+TEC-FOR,header,94,7,94,7,0,header
+TEC-FOR,encoding,143,16,143,16,0,encoding
+TEC-FOR,HTML,221,27,221,27,0,html
+TEC-FOR,plain text,36,10,42,10,-6,plain_text
+TEC-FOR,UTF-8,75,6,75,6,0,utf_8
+TEC-FOR,SGML,64,9,64,9,0,sgml
+TEC-FOR,TEI,60,12,60,12,0,tei
+TEC-FOR,unicode,59,10,59,10,0,unicode

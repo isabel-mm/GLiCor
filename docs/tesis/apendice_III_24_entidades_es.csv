@@ -1,0 +1,94 @@
+categoria,termino,frecuencia,doc_freq,frecuencia_tesis,doc_freq_tesis,diferencia_frecuencia,entrada_glosario
+REC-COR,CREA,376,36,377,36,-1,crea
+REC-COR,CORDE,324,27,324,27,0,corde
+REC-COR,CDH,104,12,104,12,0,cdh
+REC-COR,PRESEEA,101,14,99,14,2,preseea
+REC-COR,CAES,90,8,90,8,0,caes
+REC-COR,CORPES XXI,77,15,76,15,1,corpes_xxi
+REC-COR,IULA,76,12,69,12,7,iula
+REC-COR,Brown Corpus,55,15,54,15,1,brown_corpus
+REC-COR,Val.Es.Co,51,11,51,11,0,valesco
+REC-COR,CEMC,44,10,44,10,0,cemc
+REC-COR,BNC,40,12,40,12,0,bnc
+REC-COR,WordNet,39,5,39,5,0,wordnet
+REC-COR,COBUILD,35,15,35,15,0,cobuild
+REC-COR,CHARTA,33,10,33,10,0,charta
+REC-COR,CORLEC,32,10,32,10,0,corlec
+REC-COR,Survey of English Usage,17,9,16,9,1,seu
+REC-COR,CEDEL2,27,9,27,9,0,cedel2
+REC-COR,CODEA+ 2015,24,4,24,4,0,
+REC-COR,C-ORAL-ROM,21,8,21,8,0,c_oral_rom
+REC-COR,OPUS,19,6,19,6,0,opus
+REC-COR,CLEAE,15,1,15,1,0,cleae
+REC-COR,Europarl,15,6,15,6,0,europarl
+REC-COR,esTenTen18,14,5,14,5,0,estenten
+REC-COR,SPLLOC,14,5,14,5,0,splloc
+REC-COR,MUST,13,7,13,7,0,must
+REC-COR,ODE,10,2,10,2,0,ode
+REC-COR,London-Lund Corpus,10,6,10,6,0,llc
+REC-COR,Survey of Spoken English,5,4,5,4,0,sse
+REC-COR,ACTRES,9,3,9,3,0,actres
+REC-COR,SPT,9,2,9,2,0,spt
+REC-COR,CORLEXIN,9,2,9,2,0,corlexin
+REC-COR,MULTINOT,8,3,7,3,1,multinot
+REC-COR,ECPC,6,2,6,2,0,ecpc
+REC-COR,GENTT,6,4,6,4,0,gentt
+REC-COR,MELLANGE,6,2,6,2,0,mellange
+REC-COR,BIDTEA,6,2,6,2,0,bidtea
+REC-COR,COHA,5,3,5,3,0,coha
+REC-COR,CATE,4,3,5,4,-1,cate
+REC-COR,LETRAC,4,2,4,2,0,letrac
+REC-COR,CdE-Web,3,1,3,1,0,cde_web
+REC-COR,CORANE,3,2,3,2,0,corane
+REC-COR,Global Voices,3,2,3,2,0,global_voices
+REC-COR,COCA,3,3,3,3,0,coca
+REC-COR,CdE-NOW,2,1,2,1,0,cde_now
+REC-COR,COWS-L2H,2,1,2,1,0,cows_l2h
+REC-COR,FonoELE,2,2,2,2,0,fono_ele
+REC-COR,GloWbE,2,2,2,2,0,glowbe
+REC-COR,LANGSNAP,2,1,2,1,0,langsnap
+REC-COR,CORESPI,1,1,1,1,0,corespi
+REC-COR,ELEACTAR,1,1,1,1,0,eleactar
+REC-COR,Lancaster-Oslo-Bergen Corpus,1,1,1,1,0,lob
+REC-COR,Macrocorpus sociolingüístico,1,1,1,1,0,
+HER-SOFT,FreeLing,121,13,119,13,2,freeling
+HER-SOFT,Sketch Engine,118,16,113,16,5,sketch_engine
+HER-SOFT,BootCaT,61,5,61,5,0,bootcat
+HER-SOFT,TreeTagger,59,9,59,9,0,treetagger
+HER-SOFT,AntConc,36,10,36,10,0,antconc
+HER-SOFT,Gensim,34,2,32,2,2,gensim
+HER-SOFT,WordSmith Tools,29,6,28,6,1,wordsmith_tools
+HER-SOFT,GRAMPAL,24,2,24,2,0,grampal
+HER-SOFT,IMS Open Corpus Workbench,12,2,12,2,0,cwb
+HER-SOFT,Stanza,20,2,20,2,0,stanza
+HER-SOFT,SDL Trados Studio,16,1,11,1,5,trados
+HER-SOFT,MALLET,18,2,16,2,2,mallet
+HER-SOFT,Trados,24,4,24,5,0,trados
+HER-SOFT,TagAnt,11,3,11,3,0,tagant
+HER-SOFT,taggers,13,3,11,3,2,
+HER-SOFT,CQP,10,2,10,2,0,cqp
+HER-SOFT,IXA,8,2,8,2,0,ixa_pipes
+HER-SOFT,Xbench,8,1,8,1,0,xbench
+HER-SOFT,rtweet,6,1,6,1,0,rtweet
+HER-SOFT,Wmatrix,6,3,6,3,0,wmatrix
+HER-SOFT,LF Aligner,5,3,5,3,0,lf_aligner
+HER-SOFT,T-Hoarder,5,1,5,1,0,t_hoarder
+HER-SOFT,NLTK,4,4,4,4,0,nltk
+HER-SOFT,Transit,5,3,5,3,0,transit
+HER-SOFT,Bitext2tmx,3,2,3,2,0,bitext2tmx
+HER-SOFT,ChoRus,3,1,3,1,0,chorus
+HER-SOFT,Gephi,3,1,3,1,0,gephi
+HER-SOFT,ConcGram,2,1,2,1,0,concgram
+HER-SOFT,DMI-TCAT,2,1,2,1,0,dmi_tcat
+HER-SOFT,GDEX,2,1,2,1,0,gdex
+HER-SOFT,GenEx,2,1,2,1,0,genex
+HER-SOFT,MultiTrans,2,2,2,2,0,multitrans
+HER-SOFT,Star Transit,2,2,2,2,0,transit
+HER-SOFT,Tweepy,2,1,2,1,0,tweepy
+HER-SOFT,Wordfast,2,2,2,2,0,wordfast
+HER-SOFT,align,2,2,2,2,0,
+HER-SOFT,AntPConc,2,2,2,2,0,antpconc
+HER-SOFT,Notepad++,5,3,1,1,4,notepad_plus_plus
+HER-SOFT,Pencil,1,1,1,1,0,pencil
+HER-SOFT,Stanford Parser,1,1,1,1,0,stanford_parser
+HER-SOFT,Stingray,1,1,1,1,0,stingray

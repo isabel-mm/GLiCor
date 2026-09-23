@@ -1,0 +1,40 @@
+termino,consulta_lemas,ocurr_tesis,docs_tesis,ocurr_texto_sin_reparar,ocurr,docs,densidad_pct
+Corpus,corpus,12650,50,13552,13552,50,0.8725
+Text,text,5893,48,6222,6223,48,0.4006
+Type,type,2019,46,2097,2099,46,0.1351
+Sample,sample,2001,36,2076,2081,36,0.134
+Annotation,annotation,1651,38,1726,1729,38,0.1113
+Keyword,keyword,683,28,743,741,34,0.0477
+Token,token,586,29,601,600,29,0.0386
+Representativeness,representativeness,526,22,553,589,22,0.0379
+Collocation,collocation,365,22,378,383,22,0.0247
+XML,xml,356,22,362,362,22,0.0233
+Tagging,tagging,299,26,327,324,26,0.0209
+Concordance,concordance,242,23,254,258,23,0.0166
+Metadata,metadata,239,23,250,250,23,0.0161
+Node,node,209,10,211,211,10,0.0136
+Markup,markup,209,13,213,213,13,0.0137
+Diachronic,diachronic,206,24,219,219,24,0.0141
+Frequency list,frequency list,189,15,195,195,15,0.0126
+Balance,balance,159,26,164,162,26,0.0104
+Encoding,encoding,122,16,127,127,15,0.0082
+Reference corpus,reference corpus,105,19,114,114,19,0.0073
+Lemma,lemma,105,13,108,109,13,0.007
+Synchronic,synchronic,87,16,93,93,16,0.006
+Sampling frame,sample frame,46,4,44,44,3,0.0028
+Monitor corpus,monitor corpus,40,7,42,42,7,0.0027
+Markup language,markup language,39,10,41,41,10,0.0026
+Concordancer,concordancer,36,8,36,36,8,0.0023
+Statistical significance,statistical significance,33,9,36,42,11,0.0027
+Lemmatisation,lemmatisation,33,5,34,34,5,0.0022
+Lexis,lexis,28,17,29,30,18,0.0019
+Comparability,comparability,26,14,27,27,15,0.0017
+Significance test,significance test,26,4,30,30,4,0.0019
+Colligation,colligation,24,4,26,25,4,0.0016
+Corpus construction,corpus construction,19,8,21,21,10,0.0014
+Sample corpus,sample corpus,14,3,17,17,4,0.0011
+Corpus-based,corpus - base,5,4,395,392,38,0.0252
+Corpus-driven,corpus - drive,2,1,24,24,9,0.0015
+Type-token ratio,type - token ratio,2,1,16,16,4,0.001
+Key word in context (KWIC),key word in context | kwic,1,1,41,41,6,0.0026
+Total,,29275,,31444,31496,,2.03

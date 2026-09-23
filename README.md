@@ -58,10 +58,32 @@ Glossary entries are stored in `assets/data/entries.json`. Each entry contains:
 | `term_en` | English term |
 | `slug` | URL-safe identifier |
 | `category` / `category_en` | Thematic category |
+| `type` | `term` (shown in the glossary, `index.html`) or `entity` (named corpora and tools, shown in the resource index, `recursos.html`) |
 | `letter` | Initial letter (Spanish) |
 | `html` | Rendered entry content |
+| `aliases` | Former slugs merged into or renamed to this entry (old links still resolve) |
+| `forms` | All counted forms per language: main form first, then variants (`form`, relation `rel`, `n`, `docs`, `consolidated`, counted `strings`) |
+| `docs` | Number of documents per subcorpus in which the entry occurs |
+| `notes` | Conceptual notes shown in the entry |
+| `norm` | Normalisation applied: `variante_formal`, `sinonimia` or `lema_singular` |
 
-The entries were extracted from a specialised bilingual corpus of 100 academic texts (50 English, 50 Spanish) on corpus linguistics methodology.
+### Normalisation and frequencies
+
+Formal variants (acronyms, spelling variants), synonyms and plural forms are merged into a single entry per concept. Every decision, with its rationale, is recorded in `assets/data/normalizacion.json` and shown on `normalizacion.html`; `docs/decisiones_glosario.md` explains all the structural decisions for the thesis.
+
+All frequencies are recounted from the subcorpora by `_dev/recount_variants.py` and written to `assets/data/frecuencias.json` (per entry, per form and per counted string, with document frequency). `_dev/convert.py` applies both files when building `entries.json`. `docs/comparacion_apendice_III.csv` compares the figures in Appendix III of the thesis with the recount.
+
+```
+cd _dev
+python3 recount_variants.py      # frequencies and main forms (frecuencias.json)
+python3 generate_concordances.py # KWIC lines with the same forms (concordances.json)
+python3 convert.py               # entries.json
+python3 compare_appendix.py      # docs/comparacion_apendice_III.csv
+python3 build_tesis_tables.py    # docs/tesis/: recalculated tables for the thesis
+python3 lemmatise_corpus.py es es_core_news_sm limpio   # (and en/bruto variants) lemma cache for Appendix II
+python3 recount_appendix_II.py   # docs/tesis/apendice_II_*.csv (Tables II.19 and II.20)
+python3 build_decisiones_md.py   # docs/decisiones_glosario.md
+```
 
 ## Author
 
