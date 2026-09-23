@@ -5,6 +5,7 @@
   const items = [
     { key: 'index', href: 'index.html', es: 'Inicio', en: 'Home' },
     { key: 'about', href: 'about.html', es: 'Acerca de', en: 'About' },
+    { key: 'recursos', href: 'recursos.html', es: 'Recursos', en: 'Resources' },
     { key: 'corpus', href: 'corpus.html', es: 'Corpus', en: 'Corpus' },
     { key: 'guide', href: 'guide.html', es: 'Guía', en: 'Guide' },
     { key: 'stats', href: 'stats.html', es: 'Estadísticas', en: 'Stats' }

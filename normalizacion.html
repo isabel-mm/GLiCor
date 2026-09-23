@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Normalización | GLiCor</title>
+
+<style>
+:root {
+  --primary-gradient: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #f43f5e 100%);
+  --bg-page: #fdfcfe;
+  --surface: #ffffff;
+  --text-main: #1e1b4b;
+  --text-muted: #64748b;
+  --border: #e2e8f0;
+  --radius-lg: 16px;
+  --radius-md: 12px;
+  --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --font-main: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: var(--font-main); background-color: var(--bg-page); color: var(--text-main); line-height: 1.7; }
+
+.hero {
+  background: #1e1b4b;
+  background-image: radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.15) 0px, transparent 50%), radial-gradient(at 100% 100%, rgba(244, 63, 94, 0.1) 0px, transparent 50%);
+  color: #fff; padding: 7rem 1.5rem 4rem; text-align: center;
+  border-bottom: 4px solid; border-image: var(--primary-gradient) 1;
+}
+.hero h1 { font-size: 2.5rem; font-weight: 800; margin-bottom: 0.5rem; }
+
+.content-container {
+  max-width: 980px;
+  margin: -2rem auto 0;
+  padding: 3rem 2.5rem;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  border-radius: var(--radius-lg);
+  position: relative;
+  z-index: 10;
+}
+
+.panel {
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+p { margin-bottom: 1rem; text-align: justify; color: #334155; }
+p:last-child { margin-bottom: 0; }
+ul.plain { margin: 0 0 1rem 1.2rem; color: #334155; }
+ul.plain li { margin-bottom: 0.4rem; }
+
+.section-title {
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #a855f7;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.highlight-box {
+  background: #f5f3ff; border-radius: var(--radius-md); padding: 1.2rem 1.5rem;
+  margin-top: 1rem; font-size: 0.92rem; color: #5b21b6; border: 1px solid #ddd6fe;
+}
+
+.group-title { font-size: 1.05rem; font-weight: 800; margin: 1.8rem 0 0.8rem; color: #1e1b4b; }
+.group-title:first-child { margin-top: 0; }
+
+.table-wrap { overflow-x: auto; }
+table.decisions { width: 100%; border-collapse: collapse; font-size: 0.86rem; }
+table.decisions th {
+  text-align: left; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.06em;
+  color: #64748b; border-bottom: 2px solid var(--border); padding: 0.5rem 0.6rem;
+}
+table.decisions td { border-bottom: 1px solid var(--border); padding: 0.7rem 0.6rem; vertical-align: top; color: #334155; }
+table.decisions tr:target td { background: #fdf4ff; }
+.entry-link { font-weight: 700; color: #4f46e5; text-decoration: none; }
+.entry-link:hover { text-decoration: underline; }
+.forms { list-style: none; }
+.forms li { white-space: nowrap; }
+.forms .main { font-weight: 700; }
+.forms .rel { color: #94a3b8; font-size: 0.75rem; }
+.forms .n { color: #6366f1; font-weight: 700; font-variant-numeric: tabular-nums; }
+.total { font-size: 0.75rem; color: #64748b; margin-top: 0.2rem; }
+.old-slugs { font-size: 0.72rem; color: #94a3b8; margin-top: 0.3rem; }
+.loading { text-align: center; color: #64748b; padding: 2rem; }
+
+@media (max-width: 680px) {
+  .hero h1 { font-size: 2rem; }
+  .content-container { padding: 2rem 1rem; }
+  .panel { padding: 1.4rem; }
+  .forms li { white-space: normal; }
+}
+</style>
+</head>
+
+<body data-page="normalizacion">
+<script src="assets/js/navbar.js"></script>
+
+<header class="hero">
+  <h1 data-es="Criterios de normalización" data-en="Normalisation criteria">Criterios de normalización</h1>
+</header>
+
+<main class="content-container">
+
+  <section class="panel">
+    <span class="section-title">
+      <span class="lang-es">Una entrada por concepto</span>
+      <span class="lang-en" hidden>One entry per concept</span>
+    </span>
+    <p>
+      <span class="lang-es">El inventario extraído del corpus recoge formas, no conceptos: la misma noción puede aparecer con una sigla y con su forma desarrollada, en singular y en plural, o con dos denominaciones sinónimas. Para que cada concepto tenga una sola ficha, el glosario aplica el criterio de variación formal de la metodología de la tesis (capítulo 3): las variantes de un mismo término se agrupan cuando se reconoce su equivalencia conceptual. Se distinguen tres tipos de decisiones:</span>
+      <span class="lang-en" hidden>The inventory extracted from the corpus records forms, not concepts: the same notion may appear as an acronym and as its full form, in the singular and the plural, or under two synonymous names. So that each concept has a single entry, the glossary applies the formal-variation criterion of the thesis methodology (chapter 3): variants of the same term are grouped when their conceptual equivalence is recognised. Three types of decision are distinguished:</span>
+    </p>
+    <ul class="plain">
+      <li>
+        <span class="lang-es"><strong>Variantes formales.</strong> Siglas y formas desarrolladas (<em>BNC</em> / <em>British National Corpus</em>), variantes ortográficas (<em>POS tagging</em> / <em>POS-tagging</em>) y formas con o sin núcleo (<em>LOB</em> / <em>LOB Corpus</em>).</span>
+        <span class="lang-en" hidden><strong>Formal variants.</strong> Acronyms and full forms (<em>BNC</em> / <em>British National Corpus</em>), spelling variants (<em>POS tagging</em> / <em>POS-tagging</em>) and forms with or without a head noun (<em>LOB</em> / <em>LOB Corpus</em>).</span>
+      </li>
+      <li>
+        <span class="lang-es"><strong>Sinonimia y parasinonimia.</strong> Denominaciones distintas para el mismo concepto (<em>speech corpus</em> / <em>spoken corpus</em>). Se conserva una entrada y el resto de denominaciones figuran en ella como sinónimos.</span>
+        <span class="lang-en" hidden><strong>Synonymy and near-synonymy.</strong> Different names for the same concept (<em>speech corpus</em> / <em>spoken corpus</em>). One entry is kept and the other names are listed in it as synonyms.</span>
+      </li>
+      <li>
+        <span class="lang-es"><strong>Lema en singular.</strong> El lema de cada entrada es la forma singular (<em>hapax legomenon</em>, <em>grupo léxico</em>); el plural se trata como forma flexiva.</span>
+        <span class="lang-en" hidden><strong>Singular lemma.</strong> Each entry's lemma is the singular form (<em>hapax legomenon</em>, <em>lexical bundle</em>); the plural is treated as an inflected form.</span>
+      </li>
+    </ul>
+    <p>
+      <span class="lang-es">En cada ficha afectada, las demás formas aparecen en el apartado <em>Variantes y sinónimos</em> con su frecuencia y el número de documentos que las usan. <strong>Si buscas un término por una de sus variantes o sinónimos, el buscador te remite a la entrada principal</strong> y la ficha indica por qué forma la has encontrado (por ejemplo, al buscar <em>spoken corpus</em> aparece <em>speech corpus</em>). Los enlaces antiguos también siguen funcionando.</span>
+      <span class="lang-en" hidden>In each affected entry, the other forms are listed under <em>Variants and synonyms</em> with their frequency and the number of documents that use them. <strong>If you search for a term by one of its variants or synonyms, the search takes you to the main entry</strong>, and the entry shows which form you found it by (for example, searching for <em>spoken corpus</em> shows <em>speech corpus</em>). Old links also still work.</span>
+    </p>
+  </section>
+
+  <section class="panel">
+    <span class="section-title">
+      <span class="lang-es">Elección de la denominación principal</span>
+      <span class="lang-en" hidden>Choosing the main form</span>
+    </span>
+    <ul class="plain">
+      <li>
+        <span class="lang-es">La denominación principal se elige de forma automática en cada lengua. Primero se descartan las formas reducidas (<em>hapax</em>) y las no documentadas. En español, si hay una forma española documentada se prefiere a los préstamos (<em>guiado por corpus</em> antes que <em>corpus-driven</em>); si solo está documentado el préstamo, se usa el préstamo (<em>token</em>); y si no hay ninguna forma documentada, se usa la propuesta del glosario (<em>puntuación z</em>). Entre una sigla y su forma desarrollada se prefiere la sigla, que es la forma lexicalizada con la que se cita (<em>BNC</em>, <em>XML</em>). Entre las demás, se elige <strong>la que aparece en más documentos del subcorpus</strong>, porque la dispersión indica consenso entre autores mejor que la repetición en un solo texto; a igualdad de documentos, la más frecuente.</span>
+        <span class="lang-en" hidden>The main form is chosen automatically in each language. First, reduced forms (<em>hapax</em>) and unattested forms are excluded. In Spanish, an attested Spanish form is preferred over loanwords (<em>guiado por corpus</em> over <em>corpus-driven</em>); if only the loanword is attested, the loanword is used (<em>token</em>); and if no form is attested, the glossary's proposal is used (<em>puntuación z</em>). Between an acronym and its full form, the acronym is preferred, as the lexicalised form used in citation (<em>BNC</em>, <em>XML</em>). Among the rest, <strong>the one used in the most documents of the subcorpus</strong> is chosen, because dispersion reflects consensus among authors better than repetition within a single text; with equal documents, the most frequent.</span>
+      </li>
+      <li>
+        <span class="lang-es">Las excepciones son decisiones expresas y se justifican en el registro: <em>type-token ratio</em> en lugar de <em>TTR</em>, por ser más transparente, y <em>hápax</em> en español, que es la única forma documentada y la forma académica.</span>
+        <span class="lang-en" hidden>Exceptions are explicit decisions, justified in the log: <em>type-token ratio</em> instead of <em>TTR</em>, because it is more transparent, and <em>hápax</em> in Spanish, the only attested form and the academic one.</span>
+      </li>
+      <li>
+        <span class="lang-es">Por este criterio puede haber asimetrías entre lenguas: <em>raw frequency</em> predomina en inglés y <em>frecuencia absoluta</em> en español.</span>
+        <span class="lang-en" hidden>This criterion allows asymmetries between languages: <em>raw frequency</em> prevails in English and <em>frecuencia absoluta</em> in Spanish.</span>
+      </li>
+      <li>
+        <span class="lang-es">La denominación principal es solo el punto de entrada de la ficha, no una recomendación. Cuando la otra denominación también está consolidada en la comunidad experta, se marca como <strong>variante denominativa</strong> y aparece junto a la principal, en la cabecera de la ficha (<em>part of speech · word class</em>). Se considera consolidada si su frecuencia es al menos la mitad de la de la principal o si la usan al menos 5 de los 50 documentos de su subcorpus (10 %). Si no, se muestra como sinónimo o préstamo.</span>
+        <span class="lang-en" hidden>The main form is only the entry point of the entry, not a recommendation. When the other name is also consolidated in the expert community, it is marked as a <strong>denominative variant</strong> and shown next to the main form in the entry header (<em>part of speech · word class</em>). It counts as consolidated if its frequency is at least half that of the main form, or if at least 5 of the 50 documents in its subcorpus use it (10%). Otherwise it is shown as a synonym or loanword.</span>
+      </li>
+      <li>
+        <span class="lang-es"><strong>Equivalentes propuestos.</strong> Cuando ninguna denominación de una lengua aparece en el corpus, el equivalente es una propuesta del glosario y se marca como tal en la ficha (<em>anotación en línea</em>). Las formas alternativas que no aparecen en el corpus se marcan como <em>no documentadas</em>. Todo lo que se da por no documentado se ha comprobado con búsquedas ampliadas (con artículo, en plural, con o sin guion, siglas, préstamos y reformulaciones).</span>
+        <span class="lang-en" hidden><strong>Proposed equivalents.</strong> When no name in one language is attested in the corpus, the equivalent is a proposal of the glossary and is marked as such in the entry (<em>anotación en línea</em>). Alternative forms not attested in the corpus are marked as <em>not attested</em>. Everything reported as unattested has been checked with extended searches (with article, plural, with or without hyphen, acronyms, loanwords and paraphrases).</span>
+      </li>
+      <li>
+        <span class="lang-es"><strong>Lagunas terminológicas.</strong> Hay laguna en una lengua cuando su subcorpus no documenta ninguna denominación propia del concepto: o no aparece ninguna forma (el glosario da una propuesta) o solo aparece el préstamo de la otra lengua (<em>token</em>, <em>keyness</em>). Es un criterio de uso, aplicado sobre el corpus. Las siglas internacionales y los términos latinos compartidos (<em>corpus</em>, <em>XML</em>) no cuentan como préstamos.</span>
+        <span class="lang-en" hidden><strong>Terminological gaps.</strong> There is a gap in a language when its subcorpus attests no native name for the concept: either no form appears (the glossary gives a proposal) or only the loanword from the other language appears (<em>token</em>, <em>keyness</em>). It is a usage criterion, applied to the corpus. International acronyms and shared Latin terms (<em>corpus</em>, <em>XML</em>) do not count as loanwords.</span>
+      </li>
+      <li>
+        <span class="lang-es"><strong>Siglas.</strong> Cada ficha de una sigla indica su desarrollo (<em>NLTK</em>: Natural Language Toolkit), que también se cuenta como forma desarrollada.</span>
+        <span class="lang-en" hidden><strong>Acronyms.</strong> Each acronym entry gives its full form (<em>NLTK</em>: Natural Language Toolkit), which is also counted as the full form.</span>
+      </li>
+      <li>
+        <span class="lang-es">No se fuerza el singular en sustantivos no contables del inglés (<em>metadata</em>, <em>descriptive statistics</em>) ni en nombres propios (<em>WordSmith Tools</em>).</span>
+        <span class="lang-en" hidden>The singular is not forced on English uncountable nouns (<em>metadata</em>, <em>descriptive statistics</em>) or on proper names (<em>WordSmith Tools</em>).</span>
+      </li>
+    </ul>
+  </section>
+
+  <section class="panel" id="fichas">
+    <span class="section-title">
+      <span class="lang-es">Origen de las fichas</span>
+      <span class="lang-en" hidden>Origin of the entries</span>
+    </span>
+    <p>
+      <span class="lang-es">El glosario cubre todo el inventario de términos y entidades validados de la tesis, tanto de origen inglés como español. Las fichas de las unidades del inventario inglés se generaron con GPT-4o-mini mediante recuperación de fragmentos del corpus (RAG). Las de las unidades que faltaban —las de origen español y algunas inglesas— las redactó Claude a partir de los contextos del corpus, y sus citas de evidencia se extrajeron automáticamente del corpus. Cada ficha indica al final cómo se redactó.</span>
+      <span class="lang-en" hidden>The glossary covers the whole inventory of validated terms and entities of the thesis, of both English and Spanish origin. Entries for the units of the English inventory were generated with GPT-4o-mini through retrieval of corpus excerpts (RAG). Entries for the missing units —those of Spanish origin and some English ones— were written by Claude from corpus contexts, and their evidence quotations were extracted automatically from the corpus. Each entry states at the end how it was written.</span>
+    </p>
+  </section>
+
+  <section class="panel" id="frecuencias">
+    <span class="section-title">
+      <span class="lang-es">Recuento de frecuencias</span>
+      <span class="lang-en" hidden>Frequency counts</span>
+    </span>
+    <p>
+      <span class="lang-es">Todas las frecuencias del glosario se recuentan directamente en los subcorpus con el mismo método de las tablas del Apéndice III de la tesis. La frecuencia de una entrada es la del lema: la suma de todas sus formas (flexivas, ortográficas, siglas, sinónimos y préstamos). El Apéndice III cuenta cada forma por separado; el glosario las agrupa, y cada ficha muestra el desglose de las formas contadas, así que cualquier cifra del apéndice se puede localizar en el glosario.</span>
+      <span class="lang-en" hidden>All glossary frequencies are recounted directly in the subcorpora with the same method as the tables in Appendix III of the thesis. An entry's frequency is the lemma frequency: the sum of all its forms (inflected, spelling variants, acronyms, synonyms and loanwords). Appendix III counts each form separately; the glossary groups them, and each entry shows the breakdown of counted forms, so any figure in the appendix can be traced in the glossary.</span>
+    </p>
+    <ul class="plain">
+      <li>
+        <span class="lang-es">Coincidencia exacta de la cadena, sin distinguir mayúsculas (ni tildes, en español) y con límites de palabra. Antes de contar se reparan los artefactos de la conversión desde PDF: palabras partidas a final de línea, ligaduras (<em>ﬁ</em> → <em>fi</em>), tildes separadas de su letra (<em>Introducci´on</em> → <em>Introducción</em>) y saltos de línea dentro de un término. Las siglas que en minúscula son palabras comunes (<em>NOW</em>) se cuentan distinguiendo mayúsculas.</span>
+        <span class="lang-en" hidden>Exact string match, case-insensitive (and accent-insensitive in Spanish), with word boundaries. PDF-conversion artefacts are repaired first: words split at line ends, ligatures (<em>ﬁ</em> → <em>fi</em>), accents detached from their letter (<em>Introducci´on</em> → <em>Introducción</em>) and line breaks inside a term. Acronyms that are common words in lower case (<em>NOW</em>) are counted case-sensitively.</span>
+      </li>
+      <li>
+        <span class="lang-es">Sin solapamientos: todas las formas de una entrada se buscan en una sola pasada, de la más larga a la más corta, y cada aparición cuenta una sola vez. Por ejemplo, una aparición de <em>LOB Corpus</em> no suma también como <em>LOB</em>. Por eso la suma no coincide con la de las antiguas fichas por separado.</span>
+        <span class="lang-en" hidden>No overlaps: all forms of an entry are searched in a single pass, from longest to shortest, and each occurrence counts only once. For example, an occurrence of <em>LOB Corpus</em> does not also count as <em>LOB</em>. This is why the total differs from adding up the former separate entries.</span>
+      </li>
+      <li>
+        <span class="lang-es">Se excluyen expresamente las cadenas que contienen la forma pero designan otro concepto (<em>hapax dislegomena</em>).</span>
+        <span class="lang-en" hidden>Strings that contain the form but name another concept (<em>hapax dislegomena</em>) are explicitly excluded.</span>
+      </li>
+      <li>
+        <span class="lang-es">La frecuencia relativa y por millón se calculan sobre el tamaño de cada subcorpus en tokens de spaCy (sin espacios en blanco), la misma unidad de la Tabla 3.8 de la tesis: <strong id="tok-en">…</strong> tokens en inglés y <strong id="tok-es">…</strong> en español.</span>
+        <span class="lang-en" hidden>Relative and per-million frequencies are computed on the size of each subcorpus in spaCy tokens (excluding whitespace), the same unit as Table 3.8 of the thesis: <strong id="tok-en-en">…</strong> tokens in English and <strong id="tok-es-en">…</strong> in Spanish.</span>
+      </li>
+    </ul>
+    <p>
+      <span class="lang-es">La tabla <a href="docs/comparacion_apendice_III.csv">comparacion_apendice_III.csv</a> compara cada cifra del Apéndice III con el recuento de su forma exacta y con el de su forma en el glosario (con flexión).</span>
+      <span class="lang-en" hidden>The table <a href="docs/comparacion_apendice_III.csv">comparacion_apendice_III.csv</a> compares each figure in Appendix III with the count of its exact form and with that of its form in the glossary (inflections included).</span>
+    </p>
+    <div class="highlight-box">
+      <span class="lang-es">Limitaciones: como en el Apéndice III, no se descuentan las apariciones dentro de otros términos más largos del glosario, y las formas que también existen en la lengua general (<em>consulta</em>) pueden tener una frecuencia inflada.</span>
+      <span class="lang-en" hidden>Limitations: as in Appendix III, occurrences inside other, longer glossary terms are not discounted, and forms that also exist in general language (<em>consulta</em>) may have an inflated frequency.</span>
+    </div>
+  </section>
+
+  <section class="panel">
+    <span class="section-title">
+      <span class="lang-es">Registro de decisiones</span>
+      <span class="lang-en" hidden>Decision log</span>
+    </span>
+    <div id="decisions"><div class="loading">…</div></div>
+  </section>
+
+  <section class="panel">
+    <span class="section-title">
+      <span class="lang-es">Notas conceptuales</span>
+      <span class="lang-en" hidden>Conceptual notes</span>
+    </span>
+    <p>
+      <span class="lang-es">Relaciones entre conceptos que no justifican unificar las entradas, pero que conviene hacer explícitas. Se muestran también en las fichas afectadas.</span>
+      <span class="lang-en" hidden>Relations between concepts that do not justify merging the entries but are worth making explicit. They are also shown in the affected entries.</span>
+    </p>
+    <div id="notes"></div>
+  </section>
+
+  <section class="panel">
+    <span class="section-title">
+      <span class="lang-es">Relacionados, pero no unificados</span>
+      <span class="lang-en" hidden>Related but not merged</span>
+    </span>
+    <p>
+      <span class="lang-es">Estos términos son cercanos, pero se mantienen como entradas separadas, enlazadas entre sí, porque no designan exactamente el mismo concepto:</span>
+      <span class="lang-en" hidden>These terms are close, but they are kept as separate, cross-linked entries because they do not name exactly the same concept:</span>
+    </p>
+    <div id="not-merged"></div>
+  </section>
+
+</main>
+
+<script>
+let lang = localStorage.getItem('glicor-lang') || 'es';
+let NORM = null;
+let FREQ = null;
+let ENTRIES = {};
+
+const L = {
+  es: { entry: 'Entrada', forms: 'Formas y frecuencia', criterion: 'Criterio', terms: 'Términos', reason: 'Motivo',
+        total: 'Total del lema', old: 'Antes', error: 'No se pudo cargar el registro.' },
+  en: { entry: 'Entry', forms: 'Forms and frequency', criterion: 'Criterion', terms: 'Terms', reason: 'Reason',
+        total: 'Lemma total', old: 'Formerly', error: 'The log could not be loaded.' },
+};
+
+function esc(s) {
+  return String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+}
+
+function fmt(n) {
+  return new Intl.NumberFormat(lang === 'es' ? 'es-ES' : 'en-US').format(n);
+}
+
+function entryHref(slug) {
+  const e = ENTRIES[slug];
+  const page = e && e.type === 'entity' ? 'recursos.html' : 'index.html';
+  return `${page}#${slug}`;
+}
+
+function entryName(slug) {
+  const e = ENTRIES[slug];
+  if (!e) return slug.replace(/_/g, ' ');
+  return lang === 'es' ? e.term_es : e.term_en;
+}
+
+function formsList(slug, lng) {
+  const counted = ((((FREQ || {}).entradas || {})[slug] || {})[lng] || {}).formas || [];
+  const rel = c => {
+    if (c.principal) return (lang === 'es' ? 'denominación principal' : 'main form') + (c.forzada ? (lang === 'es' ? ' (decisión expresa)' : ' (explicit decision)') : '');
+    if (c.consolidada) return lang === 'es' ? 'variante denominativa' : 'denominative variant';
+    return (NORM.relaciones[c.relacion] || {})[lang] || c.relacion;
+  };
+  const docs = lang === 'es' ? 'doc.' : 'docs';
+  return `<ul class="forms">${counted.map(c => {
+    const num = c.n ? `${fmt(c.n)} <span class="rel">(${c.docs} ${docs})</span>` : `<span class="rel">${lang === 'es' ? 'no documentada' : 'not attested'}</span>`;
+    return `<li><span class="${c.principal ? 'main' : ''}">${esc(c.forma)}</span>
+      <span class="rel">· ${esc(rel(c))}</span> <span class="n">${num}</span></li>`;
+  }).join('')}</ul>`;
+}
+
+function total(slug, lng) {
+  const r = ((((FREQ || {}).entradas || {})[slug] || {})[lng]);
+  return r ? fmt(r.total) : '—';
+}
+
+function renderDecisions() {
+  const t = L[lang];
+  const box = document.getElementById('decisions');
+  box.innerHTML = Object.keys(NORM.tipos).map(tipo => {
+    const rows = NORM.entradas.filter(e => e.tipo === tipo);
+    if (!rows.length) return '';
+    return `<h3 class="group-title">${esc(NORM.tipos[tipo][lang])} (${rows.length})</h3>
+      <div class="table-wrap"><table class="decisions">
+        <thead><tr><th>${t.entry}</th><th>EN</th><th>ES</th><th>${t.criterion}</th></tr></thead>
+        <tbody>${rows.map(r => {
+          const old = [r.fuente, ...r.absorbe].filter(s => s !== r.slug);
+          return `<tr id="${r.slug}">
+            <td><a class="entry-link" href="${entryHref(r.slug)}">${esc(entryName(r.slug))}</a>
+              ${old.length ? `<div class="old-slugs">${t.old}: ${old.map(esc).join(', ')}</div>` : ''}</td>
+            <td>${formsList(r.slug, 'en')}<div class="total">${t.total}: ${total(r.slug, 'en')}</div></td>
+            <td>${formsList(r.slug, 'es')}<div class="total">${t.total}: ${total(r.slug, 'es')}</div></td>
+            <td>${esc(lang === 'es' ? r.criterio : (r.criterio_en || r.criterio))}${r.motivo_principal ? `<br><em>${esc(r.motivo_principal[lang] || r.motivo_principal.es)}</em>` : ''}</td>
+          </tr>`;
+        }).join('')}</tbody>
+      </table></div>`;
+  }).join('');
+
+  document.getElementById('notes').innerHTML = (NORM.notas || []).map(n => `<p>
+      ${n.slugs.map(s => `<a class="entry-link" href="${entryHref(s)}">${esc(entryName(s))}</a>`).join(' · ')}:
+      ${esc(n[lang])}</p>`).join('');
+
+  document.getElementById('not-merged').innerHTML = `<div class="table-wrap"><table class="decisions">
+    <thead><tr><th>${t.terms}</th><th>${t.reason}</th></tr></thead>
+    <tbody>${NORM.no_unificados.map(u => `<tr>
+      <td>${u.slugs.map(s => `<a class="entry-link" href="${entryHref(s)}">${esc(entryName(s))}</a>`).join(' · ')}</td>
+      <td>${esc(lang === 'es' ? u.motivo : (u.motivo_en || u.motivo))}</td>
+    </tr>`).join('')}</tbody></table></div>`;
+
+  if (FREQ && FREQ.tokens) {
+    ['', '-en'].forEach(suf => {
+      const en = document.getElementById('tok-en' + suf), es = document.getElementById('tok-es' + suf);
+      if (en) en.textContent = fmt(FREQ.tokens.en);
+      if (es) es.textContent = fmt(FREQ.tokens.es);
+    });
+  }
+
+  if (location.hash) {
+    const row = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+    if (row) row.scrollIntoView({ block: 'center' });
+  }
+}
+
+function applyLang() {
+  document.querySelectorAll('.lang-es').forEach(el => el.hidden = (lang === 'en'));
+  document.querySelectorAll('.lang-en').forEach(el => el.hidden = (lang === 'es'));
+  if (window.syncNavbar) window.syncNavbar(lang);
+  const h1 = document.querySelector('.hero h1');
+  h1.textContent = h1.dataset[lang];
+  if (NORM) renderDecisions();
+}
+
+function toggleLang() {
+  lang = lang === 'es' ? 'en' : 'es';
+  localStorage.setItem('glicor-lang', lang);
+  applyLang();
+}
+
+async function load() {
+  try {
+    const v = Date.now();
+    const [n, e, f] = await Promise.all([
+      fetch('assets/data/normalizacion.json?v=' + v).then(r => r.json()),
+      fetch('assets/data/entries.json?v=' + v).then(r => r.json()),
+      fetch('assets/data/frecuencias.json?v=' + v).then(r => r.json()),
+    ]);
+    NORM = n;
+    FREQ = f;
+    e.forEach(x => { ENTRIES[x.slug] = x; });
+    renderDecisions();
+  } catch (err) {
+    document.getElementById('decisions').innerHTML = `<div class="loading">${L[lang].error}</div>`;
+  }
+}
+
+applyLang();
+load();
+</script>
+<script src="assets/js/footer.js"></script>
+</body>
+</html>

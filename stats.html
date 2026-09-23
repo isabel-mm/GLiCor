@@ -227,26 +227,30 @@ const TEXT = {
   es: {
     totalEntries: 'Entradas',
     totalEntriesNote: 'Términos documentados en el glosario.',
+    totalResources: 'Recursos',
+    totalResourcesNote: 'Corpus y herramientas del índice de recursos.',
     totalCategories: 'Categorías',
     totalCategoriesNote: 'Campos temáticos actualmente representados.',
     activeLetters: 'Letras activas',
     activeLettersNote: 'Iniciales con al menos una entrada.',
     avgRelations: 'Media de relaciones',
     avgRelationsNote: 'Términos relacionados por entrada.',
-    panelNote: 'Estadísticas calculadas sobre el total de entradas del glosario.',
+    panelNote: 'Estadísticas calculadas sobre los términos del glosario; los recursos (corpus y herramientas) se cuentan aparte.',
     loading: 'Cargando estadísticas...',
     error: 'No se pudieron cargar las estadísticas.',
   },
   en: {
     totalEntries: 'Entries',
     totalEntriesNote: 'Terms currently documented in the glossary.',
+    totalResources: 'Resources',
+    totalResourcesNote: 'Corpora and tools in the resource index.',
     totalCategories: 'Categories',
     totalCategoriesNote: 'Thematic fields currently represented.',
     activeLetters: 'Active letters',
     activeLettersNote: 'Initial letters with at least one entry.',
     avgRelations: 'Average relations',
     avgRelationsNote: 'Related terms per entry.',
-    panelNote: 'Statistics calculated from all glossary entries.',
+    panelNote: 'Statistics calculated from the glossary terms; resources (corpora and tools) are counted separately.',
     loading: 'Loading statistics...',
     error: 'Statistics could not be loaded.',
   }
@@ -310,7 +314,9 @@ function buildMetrics(entries) {
   };
 }
 
-function renderStats(entries) {
+function renderStats(all) {
+  const entries = all.filter(e => (e.type || 'term') === 'term');
+  const resourceCount = all.length - entries.length;
   const metrics = buildMetrics(entries);
   const kpiGrid = document.getElementById('kpi-grid');
   const panelNote = document.getElementById('panel-note');
@@ -326,6 +332,11 @@ function renderStats(entries) {
       <span class="kpi-label">${t('totalCategories')}</span>
       <span class="kpi-value">${formatNumber(metrics.totalCategories)}</span>
       <p class="kpi-note">${t('totalCategoriesNote')}</p>
+    </article>
+    <article class="kpi-card">
+      <span class="kpi-label">${t('totalResources')}</span>
+      <span class="kpi-value">${formatNumber(resourceCount)}</span>
+      <p class="kpi-note">${t('totalResourcesNote')}</p>
     </article>
   `;
   panelNote.textContent = t('panelNote');

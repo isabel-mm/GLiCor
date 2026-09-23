@@ -1,0 +1,91 @@
+termino,consulta_lemas,ocurr_tesis,docs_tesis,ocurr_texto_sin_reparar,ocurr,docs,densidad_pct
+forma (ortográfica),forma ortografico | forma,2260,50,2207,2207,50,0.2311
+anotación o etiquetación,etiquetacion | anotacion,668,40,551,669,40,0.0701
+lema,lema,601,27,599,598,27,0.0626
+frecuencia general o total,frecuencia general | frecuencia total,545,40,86,86,7,0.009
+corpus paralelo,corpus paralelo,271,25,271,274,25,0.0287
+tipo de texto (género textual),genero textual | tipo de texto,247,39,243,248,39,0.026
+representatividad,representatividad,223,34,223,229,34,0.024
+coapariciones o colocaciones,coaparicion | colocacion,213,20,197,218,20,0.0228
+corpus oral,corpus oral,209,23,209,209,23,0.0219
+XML (Extended Generalized Mark-up Language),extended generalized mark-up language | xml,202,17,202,202,17,0.0212
+corpus de referencia,corpus de referencia,170,32,170,167,32,0.0175
+corpus diacrónico,corpus diacronico,161,30,156,162,30,0.017
+frecuencia normalizada,frecuencia normalizado,125,6,125,125,6,0.0131
+entidad,entidad,123,13,123,123,13,0.0129
+palabra clave,palabra clave,113,35,113,115,36,0.012
+codificación,codificacion,111,27,111,260,29,0.0272
+etiqueta,etiquetar,109,25,115,116,26,0.0121
+precisión,precision,101,17,83,102,17,0.0107
+alineación,alineacion,100,14,93,100,14,0.0105
+lematización,lematizacion,100,23,93,101,23,0.0106
+equilibrio,equilibrio,96,23,96,96,23,0.0101
+metadatos,metadato,93,21,93,94,21,0.0098
+corpus de aprendices/aprendientes,corpus de aprendient | corpus de aprendiz,72,12,72,68,12,0.0071
+corpus especializado,corpus especializado,64,18,64,65,18,0.0068
+corpus comparable,corpus comparable,61,15,61,64,15,0.0067
+desambiguación,desambiguacion,54,13,51,54,13,0.0057
+frecuencia de uso,frecuencia de uso,51,17,51,51,17,0.0053
+lexicón,lexicon,45,11,44,46,11,0.0048
+type-token ratio (TTR),type-token ratio | ttr,45,4,45,45,4,0.0047
+expresión regular,expresion regular,44,9,44,46,9,0.0048
+Web as Corpus,web as corpus,44,9,44,44,9,0.0046
+información mutua (IM),informacion mutuo | im,43,10,31,41,9,0.0043
+texto plano,texto plano,43,11,43,43,11,0.0045
+diccionario de frecuencias,diccionario de frecuencia,36,6,36,36,6,0.0038
+type,type,35,21,35,35,21,0.0037
+TEI (Text Encoding Initiative),text encoding initiative | tei,33,8,33,33,8,0.0035
+token,token,33,11,32,32,11,0.0034
+hápax (legomenon),hapax legomenon | hapax,31,2,30,30,2,0.0031
+lemario,lemario,31,4,31,31,4,0.0032
+TTR,ttr,31,3,31,31,3,0.0032
+ambigüedad,ambiguedad,29,14,27,29,14,0.003
+corpus multimodal,corpus multimodal,28,10,28,28,9,0.0029
+SGML (Standard Generalized Mark-up Language),standard generalized mark-up language | sgml,27,6,29,29,6,0.003
+corpus abierto,corpus abierto,26,9,26,26,9,0.0027
+etiquetación,etiquetacion,26,8,26,26,8,0.0027
+frecuencia de inventario,frecuencia de inventario,23,2,23,23,2,0.0024
+parsing,parsing,23,9,23,25,9,0.0026
+comodín,comodin,22,10,22,22,10,0.0023
+corpus multilingüe,corpus multilingue,22,11,21,23,12,0.0024
+corpus cerrado,corpus cerrado,21,8,21,20,8,0.0021
+granularidad,granularidad,21,6,21,21,6,0.0022
+corpus técnico,corpus tecnico,19,7,12,19,7,0.002
+metacarácter,metacaracter,18,2,18,19,2,0.002
+operadores booleanos,operador booleano,17,2,17,17,2,0.0018
+corpus de entrenamiento,corpus de entrenamiento,16,7,16,16,7,0.0017
+corpus sincrónico,corpus sincronico,16,9,14,16,9,0.0017
+entidades nombradas,entidad nombrado,14,5,14,14,5,0.0015
+sensibilidad,sensibilidad,14,6,14,14,6,0.0015
+investigación basada en corpus,investigacion basado en corpus,13,8,13,13,8,0.0014
+ley de Zipf,ley de zipf,13,4,13,13,4,0.0014
+tokenización,tokenizacion,13,6,13,13,6,0.0014
+corpus monitor,corpus monitor,11,6,11,11,6,0.0012
+POS tagging,pos tagging,11,4,11,11,4,0.0012
+verosimilitud,verosimilitud,11,5,11,11,5,0.0012
+csv,csv,10,4,10,10,4,0.001
+análisis contrastivo de interlenguas (ACI),analisis contrastivo de interlengua | aci,9,3,9,9,3,0.0009
+CES (Corpus Encoding Standard),corpus encoding standard | ces,9,5,9,8,4,0.0008
+corpus monolingüe,corpus monolingue,8,4,5,9,5,0.0009
+índice de dispersión,indice de dispersion,7,3,7,8,4,0.0008
+ley de Pareto (ley del 80/20),ley de pareto | ley del 80/20,7,2,7,7,2,0.0007
+tsv,tsv,7,1,7,7,1,0.0007
+unidades multipalabra,unidad multipalabra,7,3,7,7,3,0.0007
+anonimización,anonimizacion,6,3,6,6,3,0.0006
+cabecera,cabecero,6,2,6,6,2,0.0006
+t-score,t-score,6,4,6,6,4,0.0006
+formato tsv,formato tsv,5,1,5,5,1,0.0005
+ROC (reconocimiento óptico de caracteres),reconocimiento optico de caracter | roc,5,1,22,26,7,0.0027
+corpus muestral,corpus muestral,4,1,4,4,1,0.0004
+formato csv,formato csv,4,2,4,4,2,0.0004
+log-verosimilitud,log-verosimilitud,4,1,4,4,1,0.0004
+puntuación t,puntuacion t,4,1,4,4,1,0.0004
+formario,formario,3,1,3,3,1,0.0003
+corpus total,corpus total,2,2,2,2,2,0.0002
+investigación guiada por corpus,investigacion guiado por corpus,2,1,2,2,1,0.0002
+tree-bank,tree-bank,2,2,2,2,2,0.0002
+chi cuadrado,chi cuadrado,1,1,1,1,1,0.0001
+n-grama,n-gramar,1,1,1,1,1,0.0001
+ji cuadrado,ji cuadrar,0,0,0,0,0,0.0
+𝜒 cuadrado (𝜒2),𝜒 cuadrado | 𝜒2,0,0,0,0,0,0.0
+Total,,8210,,7514,7896,,0.83

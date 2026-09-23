@@ -3,29 +3,33 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>GLiCor | Isabel Moyano Moreno</title>
+<title>GLiCor | Recursos</title>
 <link rel="stylesheet" href="assets/css/glossary.css">
 </head>
-<body data-page="index" data-view="term">
+<body data-page="recursos" data-view="entity">
 <script src="assets/js/navbar.js"></script>
 
 <header class="hero">
   <img src="assets/img/logo.png" alt="GLiCor" class="hero-logo">
   <p class="author">
-    <span class="lang-es">Glosario de Lingüística de Corpus</span>
-    <span class="lang-en" hidden>Corpus Linguistics Glossary</span>
+    <span class="lang-es">Índice de recursos</span>
+    <span class="lang-en" hidden>Resource index</span>
+  </p>
+  <p class="resource-intro">
+    <span class="lang-es">Corpus de referencia y herramientas citados en el corpus. Son nombres propios de recursos concretos, no términos, por eso se recogen aparte del glosario.</span>
+    <span class="lang-en" hidden>Reference corpora and tools cited in the corpus. These are proper names of specific resources rather than terms, so they are listed separately from the glossary.</span>
   </p>
   
   <div class="filter-area">
-    <input type="search" id="search" placeholder="Buscar término..." autocomplete="off">
+    <input type="search" id="search" placeholder="Buscar recurso..." autocomplete="off">
     <div class="search-mode" id="search-mode">
       <span class="search-mode-label" id="search-mode-label">Lengua de búsqueda</span>
       <button class="search-mode-btn active" data-mode="es" type="button">ES</button>
       <button class="search-mode-btn" data-mode="en" type="button">EN</button>
     </div>
     <div class="cat-dropdown" id="cat-dropdown">
-      <button class="cat-trigger" id="cat-trigger" type="button" aria-expanded="false">Filtrar por categoría: Todas</button>
-      <div class="cat-menu" id="cat-nav" role="listbox" aria-label="Filtrar por categoría"></div>
+      <button class="cat-trigger" id="cat-trigger" type="button" aria-expanded="false">Filtrar por tipo: Todos</button>
+      <div class="cat-menu" id="cat-nav" role="listbox" aria-label="Filtrar por tipo"></div>
     </div>
   </div>
 </header>
@@ -35,7 +39,7 @@
 <main class="page">
   <p id="results-count" style="display:none;"></p>
   <div id="entries-container"></div>
-  <p id="no-results" style="display:none; text-align:center; padding:3rem; color:var(--text-muted);">No se encontraron términos.</p>
+  <p id="no-results" style="display:none; text-align:center; padding:3rem; color:var(--text-muted);">No se encontraron recursos.</p>
 </main>
 
 <button id="back-to-top" aria-label="Volver arriba">↑</button>
