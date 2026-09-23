@@ -14,8 +14,8 @@ function STRINGS_ENTITY() {
     es: {
       searchPlaceholder: 'Buscar recurso...',
       searchModeLabel:   'Lengua de búsqueda',
-      filterLabel:       'Filtrar por tipo',
-      allCategories:     'Todos',
+      filterLabel:       'Tipo de recurso',
+      allCategories:     'Todos los tipos',
       emptyMsg:          'Escribe en el buscador o selecciona un tipo para explorar el índice de recursos.',
       noResults:         'No se encontraron recursos.',
       catKey:            'category',
@@ -24,8 +24,8 @@ function STRINGS_ENTITY() {
     en: {
       searchPlaceholder: 'Search resource...',
       searchModeLabel:   'Search language',
-      filterLabel:       'Filter by type',
-      allCategories:     'All',
+      filterLabel:       'Resource type',
+      allCategories:     'All types',
       emptyMsg:          'Type in the search box or select a type to browse the resource index.',
       noResults:         'No resources found.',
       catKey:            'category_en',
@@ -58,6 +58,16 @@ function STRINGS_TERM() { return {
 }; }
 
 const STRINGS = STRINGS_BY_VIEW[VIEW];
+const ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+const RESOURCE_GROUPS = [
+  { id: 'corpora', es: 'Corpus y colecciones', en: 'Corpora and collections', slugs: 'actres bank_of_english bidtea bnc bncweb brown_corpus c_oral_rom caes cate cde_now cde_web cdh cedel2 cemc charta cleae cobuild coca codea coha corane corde corespi corlec corlexin corpes_xxi cows_l2h crea ecpc eleactar estenten europarl fono_ele gentt global_voices glowbe helsinki_corpus international_corpus_of_english iula langsnap letrac llc lob mellange micase must multinot now_corpus ode opus penn_treebank preseea seu splloc spt sse valesco'.split(' ') },
+  { id: 'lexical', es: 'Recursos léxicos', en: 'Lexical resources', slugs: ['wordnet'] },
+  { id: 'query', es: 'Consulta y análisis de corpus', en: 'Corpus querying and analysis', slugs: 'antconc antpconc chorus concgram cqp cqpweb cwb gdex genex sketch_engine wmatrix wordsmith_tools'.split(' ') },
+  { id: 'nlp', es: 'Anotación y procesamiento lingüístico', en: 'Annotation and language processing', slugs: 'claws freeling grampal ixa_pipes mallet nltk pencil stanford_parser stanza tagant treetagger ukb'.split(' ') },
+  { id: 'collection', es: 'Recopilación y construcción', en: 'Corpus collection and building', slugs: 'bootcat dmi_tcat rtweet t_hoarder tweepy'.split(' ') },
+  { id: 'translation', es: 'Traducción y alineación', en: 'Translation and alignment', slugs: 'bitext2tmx lf_aligner multitrans plus_align stingray trados transit wordfast xbench'.split(' ') },
+  { id: 'development', es: 'Programación y bibliotecas', en: 'Programming and libraries', slugs: 'gensim gephi ixa_pipes mallet nltk notepad_plus_plus perl rtweet stanza tweepy'.split(' ') },
+];
 
 let lang = localStorage.getItem('glicor-lang') || 'es';
 let ALL_ENTRIES = [];      // solo las de esta vista
@@ -111,6 +121,7 @@ function fmtNum(n) {
 }
 let currentCat = 'All';
 let searchMode = 'es';
+let currentLetter = null;
 const container = document.getElementById('entries-container');
 const searchInput = document.getElementById('search');
 const catTrigger = document.getElementById('cat-trigger');
@@ -122,7 +133,6 @@ function getMsgEmpty() {
   return `<div class="placeholder-msg">${t('emptyMsg')}</div>`;
 }
 
-// El índice de recursos es corto: se muestra completo por defecto.
 function showDefault() {
   if (VIEW === 'entity') {
     renderEntries(sortEntries(ALL_ENTRIES));
@@ -133,11 +143,16 @@ function showDefault() {
 }
 
 function getDisplayTerm(entry) {
-  return lang === 'es' ? entry.term_es : entry.term_en;
+  return cleanTerm(entry, lang === 'es' ? entry.term_es : entry.term_en);
+}
+
+function cleanTerm(entry, value) {
+  return entry.slug === 'plus_align' ? String(value).replace(/^\s*\+\s*/, '') : value;
 }
 
 function getEntryLetter(entry) {
-  return (searchMode === 'es' ? entry.term_es : entry.term_en).trim().charAt(0).toUpperCase();
+  return cleanTerm(entry, searchMode === 'es' ? entry.term_es : entry.term_en)
+    .trim().charAt(0).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toUpperCase();
 }
 
 function sortEntries(list) {
@@ -174,9 +189,15 @@ function applyLang() {
   catMenu.setAttribute('aria-label', s.filterLabel);
   document.getElementById('no-results').textContent = s.noResults;
   currentCat = 'All';
+  currentLetter = null;
+  const groupHash = decodeURIComponent(window.location.hash.replace(/^#/, '')).replace(/^group-/, '');
+  if (VIEW === 'entity' && window.location.hash.startsWith('#group-')) {
+    if (groupHash !== 'all' && RESOURCE_GROUPS.some(g => g.id === groupHash)) currentCat = groupHash;
+  }
   showDefault();
   renderAlphabet();
   renderCategoryButtons();
+  if (VIEW === 'entity' && currentCat !== 'All') applyFilters();
 }
 
 function toggleLang() {
@@ -186,17 +207,22 @@ function toggleLang() {
 }
 
 function renderCategoryButtons() {
-    const catKey = t('catKey');
     catMenu.innerHTML = '';
-    const seen = new Set();
-    ALL_ENTRIES.forEach(e => seen.add(e[catKey]));
-    const categories = ['All', ...[...seen].sort()];
+    let categories;
+    if (VIEW === 'entity') {
+      categories = ['All', ...RESOURCE_GROUPS.map(group => group.id)];
+    } else {
+      const seen = new Set();
+      ALL_ENTRIES.forEach(e => seen.add(e[t('catKey')]));
+      categories = ['All', ...[...seen].sort()];
+    }
     categories.forEach(cat => {
         const option = document.createElement('button');
         option.type = 'button';
         option.className = `cat-option${cat === currentCat ? ' active' : ''}`;
         option.dataset.value = cat;
-        option.textContent = cat === 'All' ? t('allCategories') : cat;
+        const resourceGroup = VIEW === 'entity' && RESOURCE_GROUPS.find(group => group.id === cat);
+        option.textContent = cat === 'All' ? t('allCategories') : resourceGroup ? resourceGroup[lang] : cat;
         option.addEventListener('click', () => {
           filterCat(cat);
           closeCategoryMenu();
@@ -214,7 +240,8 @@ function filterCat(cat) {
 }
 
 function updateCategoryTrigger() {
-    const label = currentCat === 'All' ? t('allCategories') : currentCat;
+    const resourceGroup = VIEW === 'entity' && RESOURCE_GROUPS.find(group => group.id === currentCat);
+    const label = currentCat === 'All' ? t('allCategories') : resourceGroup ? resourceGroup[lang] : currentCat;
     catTrigger.textContent = `${t('filterLabel')}: ${label}`;
 }
 
@@ -236,8 +263,13 @@ function toggleCategoryMenu() {
 function applyFilters() {
     const query = searchInput.value.toLowerCase();
     
-    // Si no hay nada escrito y no hay filtro de categoría, volvemos al estado oculto
-    if (query === '' && currentCat === 'All') {
+    if (VIEW === 'entity' && query === '' && currentCat === 'All' && !currentLetter) {
+        showDefault();
+        return;
+    }
+
+    // Si no hay búsqueda ni categoría activa, volvemos al estado vacío del glosario.
+    if (VIEW !== 'entity' && query === '' && currentCat === 'All' && !currentLetter) {
         showDefault();
         document.querySelectorAll('.alpha-btn').forEach(b => b.classList.remove('active'));
         return;
@@ -246,9 +278,12 @@ function applyFilters() {
     const catKey = t('catKey');
     const filtered = ALL_ENTRIES.filter(e => {
         const names = [searchMode === 'es' ? e.term_es : e.term_en, ...variantForms(e, searchMode)];
-        const matchesSearch = names.some(n => n.toLowerCase().includes(query));
-        const matchesCat = currentCat === 'All' || e[catKey] === currentCat;
-        return matchesSearch && matchesCat;
+        const normalizedQuery = query.replace(/^\s*\+\s*/, '');
+        const matchesSearch = names.some(n => cleanTerm(e, n).toLowerCase().includes(normalizedQuery));
+        const resourceGroup = VIEW === 'entity' && RESOURCE_GROUPS.find(group => group.id === currentCat);
+        const matchesCat = currentCat === 'All' || (resourceGroup ? resourceGroup.slugs.includes(e.slug) : e[catKey] === currentCat);
+        const matchesLetter = !currentLetter || getEntryLetter(e) === currentLetter;
+        return matchesSearch && matchesCat && matchesLetter;
     });
     renderEntries(sortEntries(filtered));
 }
@@ -263,6 +298,7 @@ function setSearchMode(mode, btn) {
 
 function renderEntries(list) {
   container.innerHTML = '';
+  container.classList.toggle('resource-card-grid', VIEW === 'entity');
   document.getElementById('no-results').style.display = list.length === 0 ? 'block' : 'none';
   const countEl = document.getElementById('results-count');
   if (list.length > 0) {
@@ -379,10 +415,16 @@ function renderEntries(list) {
     }
 
     // ── Equivalente en la otra lengua ──
-    const primary   = searchMode === 'en' ? e.term_en : e.term_es;
+    const primary   = cleanTerm(e, searchMode === 'en' ? e.term_en : e.term_es);
     const equivTerm = searchMode === 'en' ? (e.equiv_es || '') : (e.equiv_en || '');
     const equivLang = searchMode === 'en' ? 'es' : 'en';
     const showEquiv = equivTerm && equivTerm.toLowerCase() !== primary.toLowerCase();
+    const proposed = l => (e.proposed || {})[l];
+    const proposedLbl = lang === 'es' ? 'propuesta' : 'proposed';
+    const proposedTitle = lang === 'es'
+      ? 'Equivalente propuesto en el glosario: no aparece en el corpus'
+      : 'Equivalent proposed by the glossary: not attested in the corpus';
+    const proposedBadge = l => proposed(l) ? ` <span class="proposed-badge" title="${proposedTitle}">${proposedLbl}</span>` : '';
     let equivHtml = '';
     if (showEquiv) {
       const equivLabelText = lang === 'es'
@@ -391,7 +433,7 @@ function renderEntries(list) {
       const safeEquiv = equivTerm.replace(/'/g, "\\'");
       equivHtml = `<div class="equiv-section">
         <span class="equiv-label">${equivLabelText}</span>
-        <span class="equiv-chip" onclick="goToEquiv('${e.slug}','${equivLang}','${safeEquiv}')">${equivTerm}</span>
+        <span class="equiv-chip" onclick="goToEquiv('${e.slug}','${equivLang}','${safeEquiv}')">${equivTerm}</span>${proposedBadge(equivLang)}
       </div>`;
     }
 
@@ -405,7 +447,9 @@ function renderEntries(list) {
       const row = (label, d) => d
         ? `<tr><td>${label}</td><td>${d.abs}</td><td>${d.rel}</td><td>${d.pmw}</td></tr>`
         : '';
-      freqHtml = `<h3>${freqTitle}</h3>
+      freqHtml = `<details class="sources-details frequency-details">
+        <summary class="sources-summary">${freqTitle}</summary>
+        <div class="sources-inner">
         <table class="freq-table">
           <thead><tr><th>Subcorpus</th><th>${colAbs}</th><th>${colRel}</th><th>${colPmw}</th></tr></thead>
           <tbody>${row('EN', e.freq.en)}${row('ES', e.freq.es)}</tbody>
@@ -442,10 +486,11 @@ function renderEntries(list) {
       const title = lang === 'es' ? 'Variantes y sinónimos' : 'Variants and synonyms';
       const docsLbl = lang === 'es' ? 'doc.' : 'docs';
       const undocumented = lang === 'es' ? 'no documentada en el corpus' : 'not attested in the corpus';
-      variantsHtml = `<div class="equiv-section variants-section">
+      variantsHtml = `<div class="variants-section">
         <span class="equiv-label">${title}</span>
-        ${vars.map(v => `<span class="variant-chip${isConsolidated(v) ? ' consolidated' : ''}">${v.form} <span class="variant-rel">${relationLabel(v)} · ${
-          v.n ? `${fmtNum(v.n)} · ${v.docs} ${docsLbl}` : undocumented}</span></span>`).join('')}
+        <div class="variant-list">${vars.map(v => `<button type="button" class="variant-chip${isConsolidated(v) ? ' consolidated' : ''}" onclick="searchForVariant('${encodeURIComponent(v.form).replace(/'/g, '%27')}')">${v.form} <span class="variant-rel">${relationLabel(v)} · ${
+          v.n ? `${fmtNum(v.n)} · ${v.docs} ${docsLbl}` : undocumented}</span></button>`).join('')}
+        </div>
       </div>`;
     }
 
@@ -459,25 +504,12 @@ function renderEntries(list) {
       const lbl = lang === 'es' ? 'Formas contadas' : 'Counted forms';
       const more = lang === 'es' ? 'Criterios' : 'Criteria';
       freqHtml += `<p class="freq-note">${lbl}: ${strings.map(([s, n]) => `${s} (${fmtNum(n)})`).join(' · ') || '—'}.
-        <a href="normalizacion.html${e.norm ? '#' + e.slug : '#frecuencias'}">${more} ↗</a></p>`;
+        ${e.norm ? `<a href="normalizacion.html#${e.slug}">${more} ↗</a>` : ''}</p>`;
     }
+    if (freqHtml) freqHtml += '</div></details>';
 
-    // ── Equivalente propuesto (sin apariciones en el corpus) ──
-    const proposed = l => (e.proposed || {})[l];
-    const proposedLbl = lang === 'es' ? 'propuesta' : 'proposed';
-    const proposedTitle = lang === 'es'
-      ? 'Equivalente propuesto en el glosario: no aparece en el corpus'
-      : 'Equivalent proposed by the glossary: not attested in the corpus';
-    const proposedBadge = l => proposed(l) ? ` <span class="proposed-badge" title="${proposedTitle}">${proposedLbl}</span>` : '';
     const expansionHtml = e.expansion
       ? `<p class="expansion">${lang === 'es' ? 'Sigla de' : 'Acronym for'} <em>${e.expansion[lang] || e.expansion.es}</em></p>` : '';
-    const proposedLangs = ['es', 'en'].filter(proposed);
-    const proposedHtml = proposedLangs.length
-      ? `<p class="proposed-note">${lang === 'es'
-          ? `«${proposedLangs.map(l => l === 'es' ? e.term_es : e.term_en).join('», «')}» es un equivalente propuesto en el glosario: no aparece en el corpus${proposedLangs.includes('es') ? ' español' : ' inglés'}.`
-          : `«${proposedLangs.map(l => l === 'es' ? e.term_es : e.term_en).join('», «')}» is an equivalent proposed by the glossary: it is not attested in the ${proposedLangs.includes('es') ? 'Spanish' : 'English'} corpus.`}</p>`
-      : '';
-
     // ── Laguna terminológica en español cubierta solo por el préstamo ──
     const loanGapHtml = (e.gap || {}).es === 'prestamo'
       ? `<p class="proposed-note">${lang === 'es'
@@ -485,24 +517,23 @@ function renderEntries(list) {
           : 'Terminological gap: only the loanword is attested in the Spanish corpus.'}</p>`
       : '';
 
-    cleanHtml = foundByHtml + loanGapHtml + expansionHtml + linkHtml + equivHtml + proposedHtml + variantsHtml + notesHtml + cleanHtml + freqHtml;
+    cleanHtml = foundByHtml + loanGapHtml + expansionHtml + linkHtml + equivHtml + variantsHtml + notesHtml + cleanHtml + freqHtml;
 
-    const equivInHeader = showEquiv ? `<span class="entry-term-es">${equivTerm}${proposedBadge(equivLang)}</span>` : '';
-    const consolidatedInHeader = vars.filter(isConsolidated).map(v => `<span class="entry-variant"> · ${v.form}</span>`).join('');
-    // ── Procedencia de la ficha ──
-    const provenance = e.model === 'claude'
-      ? (lang === 'es' ? 'Ficha redactada con Claude a partir de contextos del corpus.' : 'Entry written with Claude from corpus contexts.')
-      : (lang === 'es' ? 'Ficha redactada con GPT-4o-mini a partir de fragmentos del corpus (RAG).' : 'Entry written with GPT-4o-mini from corpus excerpts (RAG).');
-    cleanHtml += `<p class="provenance">${provenance} <a href="normalizacion.html#fichas">${lang === 'es' ? 'Método' : 'Method'} ↗</a></p>`;
-
+    const cleanEquiv = cleanTerm(e, equivTerm);
+    const equivInHeader = showEquiv ? `<span class="entry-translation">${cleanEquiv}</span>` : '';
     card.innerHTML = `
       <summary class="entry-header">
-        <span><span class="entry-term">${primary}</span>${proposedBadge(activeLang)}${consolidatedInHeader}${equivInHeader}</span>
+        <span class="entry-terms"><span class="entry-term">${primary}${proposedBadge(activeLang)}</span>${equivInHeader}</span>
         <span class="cat-badge">${e[t('catKey')]}</span>
       </summary>
       <div class="entry-body">${cleanHtml}</div>`;
     container.appendChild(card);
   });
+}
+
+function searchForVariant(encodedForm) {
+    searchInput.value = decodeURIComponent(encodedForm);
+    applyFilters();
 }
 
 
@@ -531,7 +562,15 @@ function goToTerm(slug) {
             return;
         }
         currentCat = 'All';
+        currentLetter = null;
+        document.querySelectorAll('.alpha-btn').forEach(b => b.classList.remove('active'));
         renderCategoryButtons();
+        const modeButton = document.querySelector(`.search-mode-btn[data-mode="${lang}"]`);
+        if (modeButton && searchMode !== lang) {
+            searchMode = lang;
+            document.querySelectorAll('.search-mode-btn').forEach(b => b.classList.toggle('active', b === modeButton));
+            renderAlphabet();
+        }
         searchInput.value = lang === 'es' ? entry.term_es : entry.term_en;
         applyFilters();
         setTimeout(() => goToTerm(slug), 200);
@@ -539,24 +578,29 @@ function goToTerm(slug) {
 }
 
 function openFromHash() {
-    const raw = decodeURIComponent(window.location.hash.replace(/^#/, ''));
-    const slug = raw && resolveSlug(raw);
+  const raw = decodeURIComponent(window.location.hash.replace(/^#/, ''));
+  if (VIEW === 'entity' && raw.startsWith('group-')) {
+    const groupId = raw.slice('group-'.length);
+    currentCat = groupId === 'all' || !RESOURCE_GROUPS.some(g => g.id === groupId) ? 'All' : groupId;
+    renderCategoryButtons();
+    applyFilters();
+    return;
+  }
+  const slug = raw && resolveSlug(raw);
     if (slug && ALL_ENTRIES.some(e => e.slug === slug)) goToTerm(slug);
 }
 
 function renderAlphabet() {
   const nav = document.getElementById('alpha-nav');
   nav.innerHTML = '';
-  const letters = [...new Set(ALL_ENTRIES.map(getEntryLetter))].sort((a, b) => a.localeCompare(b, lang));
-  letters.forEach(l => {
+  ALPHABET.forEach(l => {
     const btn = document.createElement('button');
     btn.className = 'alpha-btn';
     btn.innerText = l;
     btn.onclick = () => {
-      document.querySelectorAll('.alpha-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      // Al pulsar una letra, forzamos la vista de esos términos
-      renderEntries(sortEntries(ALL_ENTRIES.filter(e => getEntryLetter(e) === l)));
+      currentLetter = currentLetter === l ? null : l;
+      document.querySelectorAll('.alpha-btn').forEach(b => b.classList.toggle('active', b.textContent === currentLetter));
+      applyFilters();
     };
     nav.appendChild(btn);
   });

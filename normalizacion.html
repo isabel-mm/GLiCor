@@ -180,54 +180,6 @@ table.decisions tr:target td { background: #fdf4ff; }
     </ul>
   </section>
 
-  <section class="panel" id="fichas">
-    <span class="section-title">
-      <span class="lang-es">Origen de las fichas</span>
-      <span class="lang-en" hidden>Origin of the entries</span>
-    </span>
-    <p>
-      <span class="lang-es">El glosario cubre todo el inventario de términos y entidades validados de la tesis, tanto de origen inglés como español. Las fichas de las unidades del inventario inglés se generaron con GPT-4o-mini mediante recuperación de fragmentos del corpus (RAG). Las de las unidades que faltaban —las de origen español y algunas inglesas— las redactó Claude a partir de los contextos del corpus, y sus citas de evidencia se extrajeron automáticamente del corpus. Cada ficha indica al final cómo se redactó.</span>
-      <span class="lang-en" hidden>The glossary covers the whole inventory of validated terms and entities of the thesis, of both English and Spanish origin. Entries for the units of the English inventory were generated with GPT-4o-mini through retrieval of corpus excerpts (RAG). Entries for the missing units —those of Spanish origin and some English ones— were written by Claude from corpus contexts, and their evidence quotations were extracted automatically from the corpus. Each entry states at the end how it was written.</span>
-    </p>
-  </section>
-
-  <section class="panel" id="frecuencias">
-    <span class="section-title">
-      <span class="lang-es">Recuento de frecuencias</span>
-      <span class="lang-en" hidden>Frequency counts</span>
-    </span>
-    <p>
-      <span class="lang-es">Todas las frecuencias del glosario se recuentan directamente en los subcorpus con el mismo método de las tablas del Apéndice III de la tesis. La frecuencia de una entrada es la del lema: la suma de todas sus formas (flexivas, ortográficas, siglas, sinónimos y préstamos). El Apéndice III cuenta cada forma por separado; el glosario las agrupa, y cada ficha muestra el desglose de las formas contadas, así que cualquier cifra del apéndice se puede localizar en el glosario.</span>
-      <span class="lang-en" hidden>All glossary frequencies are recounted directly in the subcorpora with the same method as the tables in Appendix III of the thesis. An entry's frequency is the lemma frequency: the sum of all its forms (inflected, spelling variants, acronyms, synonyms and loanwords). Appendix III counts each form separately; the glossary groups them, and each entry shows the breakdown of counted forms, so any figure in the appendix can be traced in the glossary.</span>
-    </p>
-    <ul class="plain">
-      <li>
-        <span class="lang-es">Coincidencia exacta de la cadena, sin distinguir mayúsculas (ni tildes, en español) y con límites de palabra. Antes de contar se reparan los artefactos de la conversión desde PDF: palabras partidas a final de línea, ligaduras (<em>ﬁ</em> → <em>fi</em>), tildes separadas de su letra (<em>Introducci´on</em> → <em>Introducción</em>) y saltos de línea dentro de un término. Las siglas que en minúscula son palabras comunes (<em>NOW</em>) se cuentan distinguiendo mayúsculas.</span>
-        <span class="lang-en" hidden>Exact string match, case-insensitive (and accent-insensitive in Spanish), with word boundaries. PDF-conversion artefacts are repaired first: words split at line ends, ligatures (<em>ﬁ</em> → <em>fi</em>), accents detached from their letter (<em>Introducci´on</em> → <em>Introducción</em>) and line breaks inside a term. Acronyms that are common words in lower case (<em>NOW</em>) are counted case-sensitively.</span>
-      </li>
-      <li>
-        <span class="lang-es">Sin solapamientos: todas las formas de una entrada se buscan en una sola pasada, de la más larga a la más corta, y cada aparición cuenta una sola vez. Por ejemplo, una aparición de <em>LOB Corpus</em> no suma también como <em>LOB</em>. Por eso la suma no coincide con la de las antiguas fichas por separado.</span>
-        <span class="lang-en" hidden>No overlaps: all forms of an entry are searched in a single pass, from longest to shortest, and each occurrence counts only once. For example, an occurrence of <em>LOB Corpus</em> does not also count as <em>LOB</em>. This is why the total differs from adding up the former separate entries.</span>
-      </li>
-      <li>
-        <span class="lang-es">Se excluyen expresamente las cadenas que contienen la forma pero designan otro concepto (<em>hapax dislegomena</em>).</span>
-        <span class="lang-en" hidden>Strings that contain the form but name another concept (<em>hapax dislegomena</em>) are explicitly excluded.</span>
-      </li>
-      <li>
-        <span class="lang-es">La frecuencia relativa y por millón se calculan sobre el tamaño de cada subcorpus en tokens de spaCy (sin espacios en blanco), la misma unidad de la Tabla 3.8 de la tesis: <strong id="tok-en">…</strong> tokens en inglés y <strong id="tok-es">…</strong> en español.</span>
-        <span class="lang-en" hidden>Relative and per-million frequencies are computed on the size of each subcorpus in spaCy tokens (excluding whitespace), the same unit as Table 3.8 of the thesis: <strong id="tok-en-en">…</strong> tokens in English and <strong id="tok-es-en">…</strong> in Spanish.</span>
-      </li>
-    </ul>
-    <p>
-      <span class="lang-es">La tabla <a href="docs/comparacion_apendice_III.csv">comparacion_apendice_III.csv</a> compara cada cifra del Apéndice III con el recuento de su forma exacta y con el de su forma en el glosario (con flexión).</span>
-      <span class="lang-en" hidden>The table <a href="docs/comparacion_apendice_III.csv">comparacion_apendice_III.csv</a> compares each figure in Appendix III with the count of its exact form and with that of its form in the glossary (inflections included).</span>
-    </p>
-    <div class="highlight-box">
-      <span class="lang-es">Limitaciones: como en el Apéndice III, no se descuentan las apariciones dentro de otros términos más largos del glosario, y las formas que también existen en la lengua general (<em>consulta</em>) pueden tener una frecuencia inflada.</span>
-      <span class="lang-en" hidden>Limitations: as in Appendix III, occurrences inside other, longer glossary terms are not discounted, and forms that also exist in general language (<em>consulta</em>) may have an inflated frequency.</span>
-    </div>
-  </section>
-
   <section class="panel">
     <span class="section-title">
       <span class="lang-es">Registro de decisiones</span>
