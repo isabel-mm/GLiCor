@@ -6,6 +6,7 @@
     { key: 'index', href: 'index.html', es: 'Inicio', en: 'Home' },
     { key: 'about', href: 'about.html', es: 'Acerca de', en: 'About' },
     { key: 'recursos', href: 'recursos.html', es: 'Recursos', en: 'Resources' },
+    { key: 'redes', href: 'redes.html', es: 'Redes', en: 'Networks' },
     { key: 'corpus', href: 'corpus.html', es: 'Corpus', en: 'Corpus' },
     { key: 'guide', href: 'guide.html', es: 'Guía', en: 'Guide' },
     { key: 'stats', href: 'stats.html', es: 'Estadísticas', en: 'Stats' }
@@ -16,6 +17,7 @@
     { id: 'lexical', es: 'Recursos léxicos', en: 'Lexical resources' },
     { id: 'query', es: 'Consulta y análisis de corpus', en: 'Corpus querying and analysis' },
     { id: 'nlp', es: 'Anotación y procesamiento lingüístico', en: 'Annotation and language processing' },
+    { id: 'standards', es: 'Estándares y formatos técnicos', en: 'Technical standards and formats' },
     { id: 'collection', es: 'Recopilación y construcción', en: 'Corpus collection and building' },
     { id: 'translation', es: 'Traducción y alineación', en: 'Translation and alignment' },
     { id: 'development', es: 'Programación y bibliotecas', en: 'Programming and libraries' },
@@ -47,6 +49,10 @@
     .navbar .nav-dropdown-panel a:hover { color: white; background: rgba(255,255,255,0.1); }
     .nav-dropdown-divider { height: 1px; margin: 0.35rem 0; background: rgba(255,255,255,0.14); }
     @media (max-width: 720px) { .nav-dropdown-panel { left: auto; right: -0.5rem; } }
+    @media (max-width: 850px) {
+      .navbar { gap: 1rem; padding: 0.75rem 1rem; }
+      .navbar a { font-size: 0.72rem; letter-spacing: 0.055em; }
+    }
     #lang-toggle {
       margin-left: auto; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.25);
       color: #cbd5e1; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em;

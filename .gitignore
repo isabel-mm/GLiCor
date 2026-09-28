@@ -2,4 +2,9 @@
 __pycache__/
 *.pyc
 .DS_Store
+.vscode/
+
+# Todo lo que no es la web
 _dev/
+_archivo/
+_documentacion/

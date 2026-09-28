@@ -3830,8 +3830,22 @@
     "docs": 0,
     "formas": [
      {
-      "forma": "Lesk algorithm",
+      "forma": "Lesk",
       "relacion": "lema",
+      "n": 0,
+      "docs": 0,
+      "cadenas": [
+       {
+        "cadena": "Lesk",
+        "n": 0
+       }
+      ],
+      "principal": true,
+      "forzada": true
+     },
+     {
+      "forma": "Lesk algorithm",
+      "relacion": "variante_denominativa",
       "n": 0,
       "docs": 0,
       "cadenas": [
@@ -3844,7 +3858,7 @@
         "n": 0
        }
       ],
-      "principal": true
+      "consolidada": false
      }
     ]
    },
@@ -3853,8 +3867,22 @@
     "docs": 2,
     "formas": [
      {
+      "forma": "Lesk",
+      "relacion": "lema",
+      "n": 2,
+      "docs": 2,
+      "cadenas": [
+       {
+        "cadena": "Lesk",
+        "n": 2
+       }
+      ],
+      "principal": true,
+      "forzada": true
+     },
+     {
       "forma": "algoritmo de Lesk",
-      "relacion": "sinonimo",
+      "relacion": "variante_denominativa",
       "n": 2,
       "docs": 2,
       "cadenas": [
@@ -3863,19 +3891,7 @@
         "n": 2
        }
       ],
-      "principal": true
-     },
-     {
-      "forma": "Lesk",
-      "relacion": "reduccion",
-      "n": 2,
-      "docs": 2,
-      "cadenas": [
-       {
-        "cadena": "Lesk",
-        "n": 2
-       }
-      ]
+      "consolidada": true
      }
     ]
    }
@@ -5807,19 +5823,6 @@
     "docs": 1,
     "formas": [
      {
-      "forma": "MUltilingual Student Translation",
-      "relacion": "forma_desarrollada",
-      "n": 1,
-      "docs": 1,
-      "cadenas": [
-       {
-        "cadena": "MUltilingual Student Translation",
-        "n": 1
-       }
-      ],
-      "principal": true
-     },
-     {
       "forma": "MUST",
       "relacion": "sigla",
       "n": 0,
@@ -5828,6 +5831,20 @@
        {
         "cadena": "MUST",
         "n": 0
+       }
+      ],
+      "principal": true,
+      "forzada": true
+     },
+     {
+      "forma": "Multilingual Student Translation",
+      "relacion": "forma_desarrollada",
+      "n": 1,
+      "docs": 1,
+      "cadenas": [
+       {
+        "cadena": "Multilingual Student Translation",
+        "n": 1
        }
       ]
      }

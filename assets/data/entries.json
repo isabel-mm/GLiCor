@@ -6994,14 +6994,14 @@
     "slug": "eagles",
     "term_en": "EAGLES",
     "term_es": "EAGLES",
-    "category": "Tecnología y formatos",
-    "category_en": "Technology and formats",
-    "type": "term",
-    "url": "",
+    "category": "Estándares y formatos técnicos",
+    "category_en": "Technical standards and formats",
+    "type": "entity",
+    "url": "https://www.cs.vassar.edu/CES/",
     "model": "claude",
     "origin": "es",
     "letter": "E",
-    "html": "<h2>EAGLES</h2>\n<p><strong>Category / Categoría:</strong> Tecnología y formatos</p>\n<h3>Definition (EN)</h3>\n<p>European initiative that issued recommendations for the design, encoding and annotation of language resources, including a corpus typology and a set of morphosyntactic tags. Its tag recommendations are implemented, for example, in FreeLing.</p>\n<h3>Definición (ES)</h3>\n<p>Iniciativa europea que publicó recomendaciones para el diseño, la codificación y la anotación de recursos lingüísticos, entre ellas una tipología de corpus y un conjunto de etiquetas morfosintácticas. Sus etiquetas se aplican, por ejemplo, en FreeLing.</p>\n<h3>Relación con otros términos del glosario / Relation to other glossary terms</h3>\n<ul>\n<li><strong>tagset</strong> — EAGLES recommended a morphosyntactic tagset.</li>\n<li><strong>TEI</strong> — TEI is another standardisation initiative for text encoding.</li>\n<li><strong>annotation scheme</strong> — It proposed standard annotation schemes.</li>\n<li><strong>FreeLing</strong> — FreeLing implements the EAGLES tags.</li>\n</ul>\n<h3>Fuentes del corpus (EN) / Corpus sources (EN)</h3>\n<ul>\n<li>\n<p>One of the most prominent of these is the EAGLES standard for PoS tagging in different languages which yields basically comparable annotations (cf. e.g. <em>(2023_Barth, D., Schnell, S._Understanding Corpus Linguistics)</em></p>\n</li>\n<li>\n<p>EAGLES Preliminary recommendations on corpus typology. <em>(2020_Stefanowitsch, A._Corpus Linguistics A guide to the methodology)</em></p>\n</li>\n</ul>\n<h3>Fuentes del corpus (ES) / Corpus sources (ES)</h3>\n<ul>\n<li>\n<p>Preliminary recommendations on Corpus Typology (EAGLES Document EAG-TCWG-CTYP). <em>(2018_Leiva Rojo, J._Diseño y compilación de corpus paralelos alineados. Dificultades y algunas soluciones_Revista de Lingüística y Lenguas Aplicadas)</em></p>\n</li>\n<li>\n<p>Preliminary Recomendations on Corpus Typology (EAGLES Document eag-tcwg-ctyp/p). <em>(2021_Rojo, G._Introducción a la lingüística de corpus en español)</em></p>\n</li>\n<li>\n<p>En: Expert Advisory Group on Language Engineering Standards (EAGLES), 1996, pp. 1-13. <em>(2023_Hernández García, V._Tipología de corpus. Hacia una propuesta integradora_Alfinge)</em></p>\n</li>\n<li>\n<p>EAGLES es un consorcio europeo, que intento hacer la anotación para todas las lenguas europeas. <em>(2015_Sierra Martínez, G. E._Introducción a los corpus lingüísticos)</em></p>\n</li>\n<li>\n<p>Eagles (Expert Advisory Group on Language Engineering Standards5) http://www.ilc.cnr.it/EAGLES/browse.html. <em>(2018_Bernal Chávez, J. A. . Hincapié Moreno, D. A._Lingüística de corpus)</em></p>\n</li>\n</ul>\n<h3>Nota terminológica / Terminological note</h3>\n<p>Entry written by Claude from corpus contexts.</p>",
+    "html": "<h2>EAGLES</h2>\n<p><strong>Category / Categoría:</strong> Estándares y formatos técnicos</p>\n<h3>Definition (EN)</h3>\n<p>European initiative that issued recommendations for the design, encoding and annotation of language resources, including a corpus typology and a set of morphosyntactic tags. Its tag recommendations are implemented, for example, in FreeLing.</p>\n<h3>Definición (ES)</h3>\n<p>Iniciativa europea que publicó recomendaciones para el diseño, la codificación y la anotación de recursos lingüísticos, entre ellas una tipología de corpus y un conjunto de etiquetas morfosintácticas. Sus etiquetas se aplican, por ejemplo, en FreeLing.</p>\n<h3>Relación con otros términos del glosario / Relation to other glossary terms</h3>\n<ul>\n<li><strong>tagset</strong> — EAGLES recommended a morphosyntactic tagset.</li>\n<li><strong>TEI</strong> — TEI is another standardisation initiative for text encoding.</li>\n<li><strong>annotation scheme</strong> — It proposed standard annotation schemes.</li>\n<li><strong>FreeLing</strong> — FreeLing implements the EAGLES tags.</li>\n</ul>\n<h3>Fuentes del corpus (EN) / Corpus sources (EN)</h3>\n<ul>\n<li>\n<p>One of the most prominent of these is the EAGLES standard for PoS tagging in different languages which yields basically comparable annotations (cf. e.g. <em>(2023_Barth, D., Schnell, S._Understanding Corpus Linguistics)</em></p>\n</li>\n<li>\n<p>EAGLES Preliminary recommendations on corpus typology. <em>(2020_Stefanowitsch, A._Corpus Linguistics A guide to the methodology)</em></p>\n</li>\n</ul>\n<h3>Fuentes del corpus (ES) / Corpus sources (ES)</h3>\n<ul>\n<li>\n<p>Preliminary recommendations on Corpus Typology (EAGLES Document EAG-TCWG-CTYP). <em>(2018_Leiva Rojo, J._Diseño y compilación de corpus paralelos alineados. Dificultades y algunas soluciones_Revista de Lingüística y Lenguas Aplicadas)</em></p>\n</li>\n<li>\n<p>Preliminary Recomendations on Corpus Typology (EAGLES Document eag-tcwg-ctyp/p). <em>(2021_Rojo, G._Introducción a la lingüística de corpus en español)</em></p>\n</li>\n<li>\n<p>En: Expert Advisory Group on Language Engineering Standards (EAGLES), 1996, pp. 1-13. <em>(2023_Hernández García, V._Tipología de corpus. Hacia una propuesta integradora_Alfinge)</em></p>\n</li>\n<li>\n<p>EAGLES es un consorcio europeo, que intento hacer la anotación para todas las lenguas europeas. <em>(2015_Sierra Martínez, G. E._Introducción a los corpus lingüísticos)</em></p>\n</li>\n<li>\n<p>Eagles (Expert Advisory Group on Language Engineering Standards5) http://www.ilc.cnr.it/EAGLES/browse.html. <em>(2018_Bernal Chávez, J. A. . Hincapié Moreno, D. A._Lingüística de corpus)</em></p>\n</li>\n</ul>\n<h3>Nota terminológica / Terminological note</h3>\n<p>Entry written by Claude from corpus contexts.</p>",
     "freq": {
       "en": {
         "abs": "8",
@@ -9397,14 +9397,14 @@
     "slug": "html",
     "term_en": "HTML",
     "term_es": "HTML",
-    "category": "Tecnología y formatos",
-    "category_en": "Technology and formats",
-    "type": "term",
-    "url": "",
+    "category": "Estándares y formatos técnicos",
+    "category_en": "Technical standards and formats",
+    "type": "entity",
+    "url": "https://html.spec.whatwg.org/multipage/",
     "model": "gpt-4o-mini",
     "origin": "en",
     "letter": "H",
-    "html": "<h2>HTML</h2>\n<p><strong>Category / Categoría:</strong> Tecnología y formatos</p>\n<h3>Definition (EN)</h3>\n<p>A markup language designed for structuring content on the web, which includes a fixed set of elements and attributes for defining document structure and formatting. HTML allows for the incorporation of hyperlinks, enabling navigation between related documents, and is recognized for its standardization and ease of use in presenting linguistic content. In contrast to XML, which is more extensible and user-defined, HTML has a more limited scope in terms of customization.</p>\n<h3>Definición (ES)</h3>\n<p>Un lenguaje de marcado específico para estructurar contenido en la web, que incluye un conjunto fijo de elementos y atributos para definir la estructura y el formato de los documentos. HTML permite la incorporación de hiperenlaces, facilitando la navegación entre documentos relacionados, y es reconocido por su estandarización y facilidad de uso en la presentación de contenido lingüístico. A diferencia de XML, que es más extensible y permite definiciones personalizadas, HTML tiene un alcance más limitado en términos de personalización.</p>\n<h3>Relación con otros términos del glosario / Relation to other glossary terms</h3>\n<ul>\n<li><strong>XML</strong> — HTML is less versatile than XML, which allows users to define their own tags and structures.</li>\n<li><strong>SGML</strong> — HTML is based on the SGML standard, which provides the foundational rules for markup languages.</li>\n<li><strong>metadata</strong> — HTML can include metadata elements that provide information about the content of the document.</li>\n<li><strong>markup language</strong> — HTML is a specific type of markup language used primarily for web documents.</li>\n<li><strong>plain text</strong> — HTML documents can be converted to plain text, losing their formatting but retaining the core content.</li>\n<li><strong>HTML</strong> — HTML incorporates hyperlinks, which are essential for navigating between different web documents.</li>\n</ul>\n<h3>Fuentes del corpus (EN) / Corpus sources (EN)</h3>\n<ul>\n<li>\"HTML itself defines a rather limited set of options for specifying structural properties of documents, such as elements for paragraphs (<p>), different levels of headings (<h1> – <h6>), larger textual divisions (<div>), smaller – inline – textual sequences (<span>), different types of lists...\" <em>(source)</em></li>\n<li>\"HTML itself is largely standardised and also technically extensible via CSS to some extent, so that it’s already quite useful for the presentation and visualisation of some linguistic content.\" <em>(source)</em></li>\n<li>\"The option to include dynamic content via client-side scripting, which can be achieved with relative ease, can also be seen as an advantage...\" <em>(source)</em></li>\n</ul>\n<h3>Fuentes del corpus (ES) / Corpus sources (ES)</h3>\n<ul>\n<li>\"HTML incorporates los hiperenlaces o vínculos, a fin de navegar entre distintos documentos con información relacionada.\" <em>(fuente)</em></li>\n<li>\"Este lenguaje de marcado específico para compartir documentos en Internet contiene un conjunto de elementos y atributos fijos a los cuales hay que sujetarse.\" <em>(fuente)</em></li>\n<li>\"HTML creció de una manera descontrolada y no cubrió todos los problemas que planteaba la sociedad global de Internet.\" <em>(fuente)</em></li>\n<li>\"Los textos codificados en HTML (prensa digital, blogs, etc.) están mucho más cerca de lo que se necesita en un corpus...\" <em>(fuente)</em></li>\n</ul>\n<h3>Nota terminológica / Terminological note</h3>\n<p>HTML is widely used in web development and is essential for creating structured documents on the internet. Its limitations in extensibility compared to XML have led to the development of more flexible markup languages, but its foundational role in web content remains significant. </p>\n<p>HTML es ampliamente utilizado en el desarrollo web y es esencial para crear documentos estructurados en Internet. Sus limitaciones en extensibilidad en comparación con XML han llevado al desarrollo de lenguajes de marcado más flexibles, pero su papel fundamental en el contenido web sigue siendo significativo.</p>",
+    "html": "<h2>HTML</h2>\n<p><strong>Category / Categoría:</strong> Estándares y formatos técnicos</p>\n<h3>Definition (EN)</h3>\n<p>A markup language designed for structuring content on the web, which includes a fixed set of elements and attributes for defining document structure and formatting. HTML allows for the incorporation of hyperlinks, enabling navigation between related documents, and is recognized for its standardization and ease of use in presenting linguistic content. In contrast to XML, which is more extensible and user-defined, HTML has a more limited scope in terms of customization.</p>\n<h3>Definición (ES)</h3>\n<p>Un lenguaje de marcado específico para estructurar contenido en la web, que incluye un conjunto fijo de elementos y atributos para definir la estructura y el formato de los documentos. HTML permite la incorporación de hiperenlaces, facilitando la navegación entre documentos relacionados, y es reconocido por su estandarización y facilidad de uso en la presentación de contenido lingüístico. A diferencia de XML, que es más extensible y permite definiciones personalizadas, HTML tiene un alcance más limitado en términos de personalización.</p>\n<h3>Relación con otros términos del glosario / Relation to other glossary terms</h3>\n<ul>\n<li><strong>XML</strong> — HTML is less versatile than XML, which allows users to define their own tags and structures.</li>\n<li><strong>SGML</strong> — HTML is based on the SGML standard, which provides the foundational rules for markup languages.</li>\n<li><strong>metadata</strong> — HTML can include metadata elements that provide information about the content of the document.</li>\n<li><strong>markup language</strong> — HTML is a specific type of markup language used primarily for web documents.</li>\n<li><strong>plain text</strong> — HTML documents can be converted to plain text, losing their formatting but retaining the core content.</li>\n<li><strong>HTML</strong> — HTML incorporates hyperlinks, which are essential for navigating between different web documents.</li>\n</ul>\n<h3>Fuentes del corpus (EN) / Corpus sources (EN)</h3>\n<ul>\n<li>\"HTML itself defines a rather limited set of options for specifying structural properties of documents, such as elements for paragraphs (<p>), different levels of headings (<h1> – <h6>), larger textual divisions (<div>), smaller – inline – textual sequences (<span>), different types of lists...\" <em>(source)</em></li>\n<li>\"HTML itself is largely standardised and also technically extensible via CSS to some extent, so that it’s already quite useful for the presentation and visualisation of some linguistic content.\" <em>(source)</em></li>\n<li>\"The option to include dynamic content via client-side scripting, which can be achieved with relative ease, can also be seen as an advantage...\" <em>(source)</em></li>\n</ul>\n<h3>Fuentes del corpus (ES) / Corpus sources (ES)</h3>\n<ul>\n<li>\"HTML incorporates los hiperenlaces o vínculos, a fin de navegar entre distintos documentos con información relacionada.\" <em>(fuente)</em></li>\n<li>\"Este lenguaje de marcado específico para compartir documentos en Internet contiene un conjunto de elementos y atributos fijos a los cuales hay que sujetarse.\" <em>(fuente)</em></li>\n<li>\"HTML creció de una manera descontrolada y no cubrió todos los problemas que planteaba la sociedad global de Internet.\" <em>(fuente)</em></li>\n<li>\"Los textos codificados en HTML (prensa digital, blogs, etc.) están mucho más cerca de lo que se necesita en un corpus...\" <em>(fuente)</em></li>\n</ul>\n<h3>Nota terminológica / Terminological note</h3>\n<p>HTML is widely used in web development and is essential for creating structured documents on the internet. Its limitations in extensibility compared to XML have led to the development of more flexible markup languages, but its foundational role in web content remains significant. </p>\n<p>HTML es ampliamente utilizado en el desarrollo web y es esencial para crear documentos estructurados en Internet. Sus limitaciones en extensibilidad en comparación con XML han llevado al desarrollo de lenguajes de marcado más flexibles, pero su papel fundamental en el contenido web sigue siendo significativo.</p>",
     "freq": {
       "en": {
         "abs": "226",
@@ -10772,16 +10772,16 @@
   },
   {
     "slug": "lesk_algorithm",
-    "term_en": "Lesk algorithm",
-    "term_es": "algoritmo de Lesk",
-    "category": "Procesamiento lingüístico",
-    "category_en": "Linguistic processing",
-    "type": "term",
+    "term_en": "Lesk",
+    "term_es": "Lesk",
+    "category": "Anotación y procesamiento lingüístico",
+    "category_en": "Annotation and language processing",
+    "type": "entity",
     "url": "",
     "model": "claude",
     "origin": "es",
     "letter": "L",
-    "html": "<h2>Lesk algorithm</h2>\n<p><strong>Category / Categoría:</strong> Procesamiento lingüístico</p>\n<h3>Definition (EN)</h3>\n<p>Word sense disambiguation algorithm that selects, for an ambiguous word, the sense whose dictionary definition shares the most words with the definitions of the surrounding words or with the context. It is one of the classic knowledge-based methods of disambiguation.</p>\n<h3>Definición (ES)</h3>\n<p>Algoritmo de desambiguación del sentido de las palabras que selecciona, para una palabra ambigua, el sentido cuya definición en el diccionario comparte más palabras con las definiciones de las palabras del entorno o con el contexto. Es uno de los métodos clásicos de desambiguación basados en conocimiento.</p>\n<h3>Relación con otros términos del glosario / Relation to other glossary terms</h3>\n<ul>\n<li><strong>word sense disambiguation</strong> — The Lesk algorithm is a method of word sense disambiguation.</li>\n<li><strong>UKB</strong> — UKB is another knowledge-based disambiguation algorithm.</li>\n<li><strong>WordNet</strong> — Lexical resources such as WordNet provide the definitions it compares.</li>\n<li><strong>semantic annotation</strong> — It supports semantic annotation.</li>\n</ul>\n<h3>Fuentes del corpus (EN) / Corpus sources (EN)</h3>\n<ul>\n<li><em>Term not attested in the English subcorpus.</em></li>\n</ul>\n<h3>Fuentes del corpus (ES) / Corpus sources (ES)</h3>\n<ul>\n<li>\n<p>El método estándar es el llamado algoritmo de Lesk (1986), que compara las palabras del contexto donde aparece una palabra ambigua con la definición de cada sentido (la “glosa” en WordNet) y finalmente selecciona como significado correcto aquél cuya definición sea más similar al contexto. <em>(2022_Martí, M. A., Taulé, M._Desarrollos tecnológicos de la lingüística de corpus en español)</em></p>\n</li>\n<li>\n<p>El método estándar es el llamado algoritmo de Lesk (1986), que compara las palabras del contexto donde aparece una palabra ambigua con la definición de cada sentido (la “glosa” en WordNet) y finalmente selecciona como significado correcto aquél cuya definición sea más similar al contexto. <em>(2022_Navarro Colorado, B._Sistemas de anotación semántica para corpus de español)</em></p>\n</li>\n</ul>\n<h3>Nota terminológica / Terminological note</h3>\n<p>Not attested in the English subcorpus.</p>\n<p>No aparece en el subcorpus inglés.</p>",
+    "html": "<h2>Lesk</h2>\n<p><strong>Category / Categoría:</strong> Anotación y procesamiento lingüístico</p>\n<h3>Definition (EN)</h3>\n<p>Word sense disambiguation algorithm that selects, for an ambiguous word, the sense whose dictionary definition shares the most words with the definitions of the surrounding words or with the context. It is one of the classic knowledge-based methods of disambiguation.</p>\n<h3>Definición (ES)</h3>\n<p>Algoritmo de desambiguación del sentido de las palabras que selecciona, para una palabra ambigua, el sentido cuya definición en el diccionario comparte más palabras con las definiciones de las palabras del entorno o con el contexto. Es uno de los métodos clásicos de desambiguación basados en conocimiento.</p>\n<h3>Relación con otros términos del glosario / Relation to other glossary terms</h3>\n<ul>\n<li><strong>word sense disambiguation</strong> — The Lesk algorithm is a method of word sense disambiguation.</li>\n<li><strong>UKB</strong> — UKB is another knowledge-based disambiguation algorithm.</li>\n<li><strong>WordNet</strong> — Lexical resources such as WordNet provide the definitions it compares.</li>\n<li><strong>semantic annotation</strong> — It supports semantic annotation.</li>\n</ul>\n<h3>Fuentes del corpus (EN) / Corpus sources (EN)</h3>\n<ul>\n<li><em>Term not attested in the English subcorpus.</em></li>\n</ul>\n<h3>Fuentes del corpus (ES) / Corpus sources (ES)</h3>\n<ul>\n<li>\n<p>El método estándar es el llamado algoritmo de Lesk (1986), que compara las palabras del contexto donde aparece una palabra ambigua con la definición de cada sentido (la “glosa” en WordNet) y finalmente selecciona como significado correcto aquél cuya definición sea más similar al contexto. <em>(2022_Martí, M. A., Taulé, M._Desarrollos tecnológicos de la lingüística de corpus en español)</em></p>\n</li>\n<li>\n<p>El método estándar es el llamado algoritmo de Lesk (1986), que compara las palabras del contexto donde aparece una palabra ambigua con la definición de cada sentido (la “glosa” en WordNet) y finalmente selecciona como significado correcto aquél cuya definición sea más similar al contexto. <em>(2022_Navarro Colorado, B._Sistemas de anotación semántica para corpus de español)</em></p>\n</li>\n</ul>\n<h3>Nota terminológica / Terminological note</h3>\n<p>Not attested in the English subcorpus.</p>\n<p>No aparece en el subcorpus inglés.</p>",
     "freq": {
       "en": null,
       "es": {
@@ -10790,8 +10790,8 @@
         "pmw": "4.19"
       }
     },
-    "equiv_es": "algoritmo de Lesk",
-    "equiv_en": "Lesk algorithm",
+    "equiv_es": "Lesk",
+    "equiv_en": "Lesk",
     "aliases": [],
     "norm": "sinonimia",
     "docs": {
@@ -10805,10 +10805,23 @@
     "forms": {
       "en": [
         {
-          "form": "Lesk algorithm",
+          "form": "Lesk",
           "rel": "lema",
           "n": 0,
           "docs": 0,
+          "strings": [
+            [
+              "Lesk",
+              0
+            ]
+          ]
+        },
+        {
+          "form": "Lesk algorithm",
+          "rel": "variante_denominativa",
+          "n": 0,
+          "docs": 0,
+          "consolidated": false,
           "strings": [
             [
               "Lesk algorithm",
@@ -10823,20 +10836,8 @@
       ],
       "es": [
         {
-          "form": "algoritmo de Lesk",
-          "rel": "sinonimo",
-          "n": 2,
-          "docs": 2,
-          "strings": [
-            [
-              "algoritmo de Lesk",
-              2
-            ]
-          ]
-        },
-        {
           "form": "Lesk",
-          "rel": "reduccion",
+          "rel": "lema",
           "n": 2,
           "docs": 2,
           "strings": [
@@ -10845,11 +10846,24 @@
               2
             ]
           ]
+        },
+        {
+          "form": "algoritmo de Lesk",
+          "rel": "variante_denominativa",
+          "n": 2,
+          "docs": 2,
+          "consolidated": true,
+          "strings": [
+            [
+              "algoritmo de Lesk",
+              2
+            ]
+          ]
         }
       ]
     },
     "gap": {
-      "en": "propuesta",
+      "en": null,
       "es": null
     }
   },
@@ -12662,105 +12676,6 @@
     }
   },
   {
-    "slug": "must",
-    "term_en": "MUltilingual Student Translation",
-    "term_es": "MUST",
-    "category": "Recursos y corpus",
-    "category_en": "Resources and corpora",
-    "type": "entity",
-    "url": "",
-    "model": "claude",
-    "origin": "es",
-    "letter": "M",
-    "html": "<h2>MUST</h2>\n<p><strong>Category / Categoría:</strong> Recursos y corpus</p>\n<h3>Definition (EN)</h3>\n<p>Multilingual pedagogical project of the University of Louvain that compiles a large corpus of student translations in many language pairs, with a search interface, standard metadata and an error annotation system.</p>\n<h3>Definición (ES)</h3>\n<p>Proyecto pedagógico multilingüe de la Universidad de Lovaina que compila un amplio corpus de traducciones de estudiantes en muchas combinaciones de lenguas, con una interfaz de búsqueda, metadatos estándar y un sistema de anotación de errores.</p>\n<h3>Relación con otros términos del glosario / Relation to other glossary terms</h3>\n<ul>\n<li><strong>learner corpus</strong> — It is a learner translator corpus.</li>\n<li><strong>MeLLANGE</strong> — MeLLANGE is an earlier learner translator corpus.</li>\n<li><strong>corpus-based translation studies</strong> — It serves corpus-based translation teaching.</li>\n</ul>\n<h3>Fuentes del corpus (EN) / Corpus sources (EN)</h3>\n<ul>\n<li>The first LTC emerged in the early 2000s (Uzar, 2002; Bowker &amp; Bennison, 2003) and have been followed by several similar initiatives, such as the MeLLANGE corpus (Castagnoli et al., 2011), the English-Catalan UPF LTC (Espunya, 2014), the Russian Learner Translator Corpus (Kutuzov &amp; Kunilovskaya, 2014), and the Multilingual Student Translation corpus3. <em>(2020_Lefer, M. A._Parallel corpora)</em></li>\n</ul>\n<h3>Fuentes del corpus (ES) / Corpus sources (ES)</h3>\n<ul>\n<li>\n<p>Ya más reciente es el proyecto pedagógico multilingüe MUST de la Universidad de Lovaina (con veinticinco lenguas), cuyos objetivos principales son cuatro: compilar un amplio corpus de traducciones de estudiantes en distintas combinaciones lingüísticas; desarrollar una interfaz de búsqueda; diseñar metadatos estándar y crear un sistema de etiquetado de traducciones estándar para las lenguas traducidas (Maroto y Andrades 2019). <em>(2022_Martí, M. A., Taulé, M._Desarrollos tecnológicos de la lingüística de corpus en español)</em></p>\n</li>\n<li>\n<p>Ya más reciente es el proyecto pedagógico multilingüe MUST de la Universidad de Lovaina (con veinticinco lenguas), cuyos objetivos principales son cuatro: compilar un amplio corpus de traducciones de estudiantes en distintas combinaciones lingüísticas; desarrollar una interfaz de búsqueda; diseñar metadatos estándar y crear un sistema de etiquetado de traducciones estándar para las lenguas traducidas (Maroto y Andrades 2019). <em>(2022_Molina Plaza, S._Herramientas, recursos y metodologías de análisis para la traducción mediante corpus lingüísticos del español)</em></p>\n</li>\n</ul>\n<h3>Nota terminológica / Terminological note</h3>\n<p>Entry written by Claude from corpus contexts.</p>",
-    "freq": {
-      "en": {
-        "abs": "1",
-        "rel": "0.000001",
-        "pmw": "0.64"
-      },
-      "es": {
-        "abs": "4",
-        "rel": "0.000004",
-        "pmw": "4.19"
-      }
-    },
-    "equiv_es": "MUST",
-    "equiv_en": "MUltilingual Student Translation",
-    "aliases": [],
-    "norm": "variante_formal",
-    "docs": {
-      "en": 1,
-      "es": 2
-    },
-    "proposed": {
-      "en": false,
-      "es": false
-    },
-    "forms": {
-      "en": [
-        {
-          "form": "MUltilingual Student Translation",
-          "rel": "forma_desarrollada",
-          "n": 1,
-          "docs": 1,
-          "strings": [
-            [
-              "MUltilingual Student Translation",
-              1
-            ]
-          ]
-        },
-        {
-          "form": "MUST",
-          "rel": "sigla",
-          "n": 0,
-          "docs": 0,
-          "strings": [
-            [
-              "MUST",
-              0
-            ]
-          ]
-        }
-      ],
-      "es": [
-        {
-          "form": "MUST",
-          "rel": "sigla",
-          "n": 4,
-          "docs": 2,
-          "strings": [
-            [
-              "MUST",
-              4
-            ]
-          ]
-        },
-        {
-          "form": "MUltilingual Student Translation",
-          "rel": "forma_desarrollada",
-          "n": 0,
-          "docs": 0,
-          "strings": [
-            [
-              "MUltilingual Student Translation",
-              0
-            ]
-          ]
-        }
-      ]
-    },
-    "gap": {
-      "en": null,
-      "es": null
-    },
-    "expansion": {
-      "es": "MUltilingual Student Translation",
-      "en": "MUltilingual Student Translation"
-    }
-  },
-  {
     "slug": "multimodal_corpus",
     "term_en": "multimodal corpus",
     "term_es": "corpus multimodal",
@@ -13090,6 +13005,101 @@
             [
               "unidades pluriverbales",
               4
+            ]
+          ]
+        }
+      ]
+    },
+    "gap": {
+      "en": null,
+      "es": null
+    }
+  },
+  {
+    "slug": "must",
+    "term_en": "MUST",
+    "term_es": "MUST",
+    "category": "Recursos y corpus",
+    "category_en": "Resources and corpora",
+    "type": "entity",
+    "url": "",
+    "model": "claude",
+    "origin": "es",
+    "letter": "M",
+    "html": "<h2>MUST</h2>\n<p><strong>Category / Categoría:</strong> Recursos y corpus</p>\n<h3>Definition (EN)</h3>\n<p>Multilingual pedagogical project of the University of Louvain that compiles a large corpus of student translations in many language pairs, with a search interface, standard metadata and an error annotation system.</p>\n<h3>Definición (ES)</h3>\n<p>Proyecto pedagógico multilingüe de la Universidad de Lovaina que compila un amplio corpus de traducciones de estudiantes en muchas combinaciones de lenguas, con una interfaz de búsqueda, metadatos estándar y un sistema de anotación de errores.</p>\n<h3>Relación con otros términos del glosario / Relation to other glossary terms</h3>\n<ul>\n<li><strong>learner corpus</strong> — It is a learner translator corpus.</li>\n<li><strong>MeLLANGE</strong> — MeLLANGE is an earlier learner translator corpus.</li>\n<li><strong>corpus-based translation studies</strong> — It serves corpus-based translation teaching.</li>\n</ul>\n<h3>Fuentes del corpus (EN) / Corpus sources (EN)</h3>\n<ul>\n<li>The first LTC emerged in the early 2000s (Uzar, 2002; Bowker &amp; Bennison, 2003) and have been followed by several similar initiatives, such as the MeLLANGE corpus (Castagnoli et al., 2011), the English-Catalan UPF LTC (Espunya, 2014), the Russian Learner Translator Corpus (Kutuzov &amp; Kunilovskaya, 2014), and the Multilingual Student Translation corpus3. <em>(2020_Lefer, M. A._Parallel corpora)</em></li>\n</ul>\n<h3>Fuentes del corpus (ES) / Corpus sources (ES)</h3>\n<ul>\n<li>\n<p>Ya más reciente es el proyecto pedagógico multilingüe MUST de la Universidad de Lovaina (con veinticinco lenguas), cuyos objetivos principales son cuatro: compilar un amplio corpus de traducciones de estudiantes en distintas combinaciones lingüísticas; desarrollar una interfaz de búsqueda; diseñar metadatos estándar y crear un sistema de etiquetado de traducciones estándar para las lenguas traducidas (Maroto y Andrades 2019). <em>(2022_Martí, M. A., Taulé, M._Desarrollos tecnológicos de la lingüística de corpus en español)</em></p>\n</li>\n<li>\n<p>Ya más reciente es el proyecto pedagógico multilingüe MUST de la Universidad de Lovaina (con veinticinco lenguas), cuyos objetivos principales son cuatro: compilar un amplio corpus de traducciones de estudiantes en distintas combinaciones lingüísticas; desarrollar una interfaz de búsqueda; diseñar metadatos estándar y crear un sistema de etiquetado de traducciones estándar para las lenguas traducidas (Maroto y Andrades 2019). <em>(2022_Molina Plaza, S._Herramientas, recursos y metodologías de análisis para la traducción mediante corpus lingüísticos del español)</em></p>\n</li>\n</ul>\n<h3>Nota terminológica / Terminological note</h3>\n<p>Entry written by Claude from corpus contexts.</p>",
+    "freq": {
+      "en": {
+        "abs": "1",
+        "rel": "0.000001",
+        "pmw": "0.64"
+      },
+      "es": {
+        "abs": "4",
+        "rel": "0.000004",
+        "pmw": "4.19"
+      }
+    },
+    "equiv_es": "MUST",
+    "equiv_en": "MUST",
+    "aliases": [],
+    "norm": "variante_formal",
+    "docs": {
+      "en": 1,
+      "es": 2
+    },
+    "proposed": {
+      "en": false,
+      "es": false
+    },
+    "forms": {
+      "en": [
+        {
+          "form": "MUST",
+          "rel": "sigla",
+          "n": 0,
+          "docs": 0,
+          "strings": [
+            [
+              "MUST",
+              0
+            ]
+          ]
+        },
+        {
+          "form": "Multilingual Student Translation",
+          "rel": "forma_desarrollada",
+          "n": 1,
+          "docs": 1,
+          "strings": [
+            [
+              "Multilingual Student Translation",
+              1
+            ]
+          ]
+        }
+      ],
+      "es": [
+        {
+          "form": "MUST",
+          "rel": "sigla",
+          "n": 4,
+          "docs": 2,
+          "strings": [
+            [
+              "MUST",
+              4
+            ]
+          ]
+        },
+        {
+          "form": "MUltilingual Student Translation",
+          "rel": "forma_desarrollada",
+          "n": 0,
+          "docs": 0,
+          "strings": [
+            [
+              "MUltilingual Student Translation",
+              0
             ]
           ]
         }
@@ -16962,14 +16972,14 @@
     "slug": "sgml",
     "term_en": "SGML",
     "term_es": "SGML",
-    "category": "Tecnología y formatos",
-    "category_en": "Technology and formats",
-    "type": "term",
-    "url": "",
+    "category": "Estándares y formatos técnicos",
+    "category_en": "Technical standards and formats",
+    "type": "entity",
+    "url": "https://www.iso.org/standard/16387.html",
     "model": "gpt-4o-mini",
     "origin": "en",
     "letter": "S",
-    "html": "<h2>SGML</h2>\n<p><strong>Category / Categoría:</strong> Tecnología y formatos</p>\n<h3>Definition (EN)</h3>\n<p>A markup format that requires a Document Type Definition (DTD) to specify its structure, enabling serious processing of annotated data. SGML is characterized by its complexity and the necessity for strict adherence to its coding standards, which can lead to errors if not properly managed. Compared to HTML and XML, SGML is less flexible and not widely supported by standard browser software, making it more challenging for corpus annotation tasks.</p>\n<h3>Definición (ES)</h3>\n<p>Un formato de marcado que requiere una Definición de Tipo de Documento (DTD) para especificar su estructura, lo que permite un procesamiento serio de los datos anotados. SGML se caracteriza por su complejidad y la necesidad de cumplir estrictamente con sus estándares de codificación, lo que puede dar lugar a errores si no se gestiona adecuadamente. En comparación con HTML y XML, SGML es menos flexible y no está ampliamente soportado por software de navegador estándar, lo que lo hace más desafiante para las tareas de anotación de corpus.</p>\n<h3>Relación con otros términos del glosario / Relation to other glossary terms</h3>\n<ul>\n<li><strong>XML</strong> — SGML is a predecessor of XML, providing a more complex markup structure that XML simplifies.</li>\n<li><strong>HTML</strong> — While SGML is more complex and requires a DTD, HTML offers a limited set of tags that are easier to learn and use.</li>\n<li><strong>TEI</strong> — The Text Encoding Initiative originally designed a set of tag definitions for SGML, which have been adapted for XML.</li>\n<li><strong>metadata</strong> — SGML is often used for encoding metadata in linguistic corpora, enhancing the structural information of texts.</li>\n<li><strong>annotation</strong> — SGML facilitates the annotation of linguistic data, although its complexity can introduce errors in the process.</li>\n<li><strong>markup language</strong> — SGML is a type of markup language that defines the structure and presentation of text data.</li>\n</ul>\n<h3>Fuentes del corpus (EN) / Corpus sources (EN)</h3>\n<ul>\n<li>The original SGML (Standard Generalized Markup Language) markup format of the ICE spoken data was defined in Nelson (1991), and later revised in Nelson (2002). <em>(source)</em></li>\n<li>SGML also has two other major disadvantages compared to HTML or XML, the first being that it absolutely requires a DTD (Document Type Definition) specifying its structure, in order to allow any type of serious processing. <em>(source)</em></li>\n<li>One big advantage, at least in comparison to HTML, is that a large set of tag definitions/DTDs for linguistic purposes, such as for the TEI (Text Encoding Initiative), were originally designed for SGML. <em>(source)</em></li>\n<li>This type of ‘shortcut’ makes processing SGML much more difficult than it needs be, and also much more error-prone. <em>(source)</em></li>\n<li>The lack of any explicit attribute inside the <w> elements, indicating words, however, fails to clearly label the attribute name for the values specified inside each tag. <em>(source)</em></li>\n</ul>\n<h3>Fuentes del corpus (ES) / Corpus sources (ES)</h3>\n<ul>\n<li>La codificación del corpus debe ser UTF-8. <em>(fuente)</em></li>\n<li>Con la elección del lenguaje de marcado y el estándar, se da comienzo al proceso de etiquetado o marcado de metadatos. <em>(fuente)</em></li>\n<li>La inserción de estas etiquetas y un mayor número de datos externos registrados facilitan las búsquedas cruzadas y con una cobertura de más variables. <em>(fuente)</em></li>\n<li>La anotación lingüística corresponde al proceso de etiquetado de las palabras pertenecientes a los textos, con el fin de incluir información lingüística adicional. <em>(fuente)</em></li>\n<li>La inclusión de estos metadatos en el lugar adecuado permite hacer luego la recuperación selectiva de los casos que interesen. <em>(fuente)</em></li>\n</ul>\n<h3>Nota terminológica / Terminological note</h3>\n<p>SGML has been largely superseded by XML due to its complexity and the need for a DTD, which can complicate the annotation process. Its use in corpus linguistics is primarily historical, as modern practices have shifted towards more user-friendly markup languages that facilitate easier data processing and analysis.</p>\n<p>SGML ha sido en gran medida superado por XML debido a su complejidad y la necesidad de una DTD, lo que puede complicar el proceso de anotación. Su uso en la lingüística de corpus es principalmente histórico, ya que las prácticas modernas se han desplazado hacia lenguajes de marcado más amigables que facilitan un procesamiento y análisis de datos más sencillo.</p>",
+    "html": "<h2>SGML</h2>\n<p><strong>Category / Categoría:</strong> Estándares y formatos técnicos</p>\n<h3>Definition (EN)</h3>\n<p>A markup format that requires a Document Type Definition (DTD) to specify its structure, enabling serious processing of annotated data. SGML is characterized by its complexity and the necessity for strict adherence to its coding standards, which can lead to errors if not properly managed. Compared to HTML and XML, SGML is less flexible and not widely supported by standard browser software, making it more challenging for corpus annotation tasks.</p>\n<h3>Definición (ES)</h3>\n<p>Un formato de marcado que requiere una Definición de Tipo de Documento (DTD) para especificar su estructura, lo que permite un procesamiento serio de los datos anotados. SGML se caracteriza por su complejidad y la necesidad de cumplir estrictamente con sus estándares de codificación, lo que puede dar lugar a errores si no se gestiona adecuadamente. En comparación con HTML y XML, SGML es menos flexible y no está ampliamente soportado por software de navegador estándar, lo que lo hace más desafiante para las tareas de anotación de corpus.</p>\n<h3>Relación con otros términos del glosario / Relation to other glossary terms</h3>\n<ul>\n<li><strong>XML</strong> — SGML is a predecessor of XML, providing a more complex markup structure that XML simplifies.</li>\n<li><strong>HTML</strong> — While SGML is more complex and requires a DTD, HTML offers a limited set of tags that are easier to learn and use.</li>\n<li><strong>TEI</strong> — The Text Encoding Initiative originally designed a set of tag definitions for SGML, which have been adapted for XML.</li>\n<li><strong>metadata</strong> — SGML is often used for encoding metadata in linguistic corpora, enhancing the structural information of texts.</li>\n<li><strong>annotation</strong> — SGML facilitates the annotation of linguistic data, although its complexity can introduce errors in the process.</li>\n<li><strong>markup language</strong> — SGML is a type of markup language that defines the structure and presentation of text data.</li>\n</ul>\n<h3>Fuentes del corpus (EN) / Corpus sources (EN)</h3>\n<ul>\n<li>The original SGML (Standard Generalized Markup Language) markup format of the ICE spoken data was defined in Nelson (1991), and later revised in Nelson (2002). <em>(source)</em></li>\n<li>SGML also has two other major disadvantages compared to HTML or XML, the first being that it absolutely requires a DTD (Document Type Definition) specifying its structure, in order to allow any type of serious processing. <em>(source)</em></li>\n<li>One big advantage, at least in comparison to HTML, is that a large set of tag definitions/DTDs for linguistic purposes, such as for the TEI (Text Encoding Initiative), were originally designed for SGML. <em>(source)</em></li>\n<li>This type of ‘shortcut’ makes processing SGML much more difficult than it needs be, and also much more error-prone. <em>(source)</em></li>\n<li>The lack of any explicit attribute inside the <w> elements, indicating words, however, fails to clearly label the attribute name for the values specified inside each tag. <em>(source)</em></li>\n</ul>\n<h3>Fuentes del corpus (ES) / Corpus sources (ES)</h3>\n<ul>\n<li>La codificación del corpus debe ser UTF-8. <em>(fuente)</em></li>\n<li>Con la elección del lenguaje de marcado y el estándar, se da comienzo al proceso de etiquetado o marcado de metadatos. <em>(fuente)</em></li>\n<li>La inserción de estas etiquetas y un mayor número de datos externos registrados facilitan las búsquedas cruzadas y con una cobertura de más variables. <em>(fuente)</em></li>\n<li>La anotación lingüística corresponde al proceso de etiquetado de las palabras pertenecientes a los textos, con el fin de incluir información lingüística adicional. <em>(fuente)</em></li>\n<li>La inclusión de estos metadatos en el lugar adecuado permite hacer luego la recuperación selectiva de los casos que interesen. <em>(fuente)</em></li>\n</ul>\n<h3>Nota terminológica / Terminological note</h3>\n<p>SGML has been largely superseded by XML due to its complexity and the need for a DTD, which can complicate the annotation process. Its use in corpus linguistics is primarily historical, as modern practices have shifted towards more user-friendly markup languages that facilitate easier data processing and analysis.</p>\n<p>SGML ha sido en gran medida superado por XML debido a su complejidad y la necesidad de una DTD, lo que puede complicar el proceso de anotación. Su uso en la lingüística de corpus es principalmente histórico, ya que las prácticas modernas se han desplazado hacia lenguajes de marcado más amigables que facilitan un procesamiento y análisis de datos más sencillo.</p>",
     "freq": {
       "en": {
         "abs": "73",
@@ -19037,14 +19047,14 @@
     "slug": "tei",
     "term_en": "TEI",
     "term_es": "TEI",
-    "category": "Tecnología y formatos",
-    "category_en": "Technology and formats",
-    "type": "term",
-    "url": "",
+    "category": "Estándares y formatos técnicos",
+    "category_en": "Technical standards and formats",
+    "type": "entity",
+    "url": "https://tei-c.org/release/doc/tei-p5-doc/en/html/",
     "model": "gpt-4o-mini",
     "origin": "en",
     "letter": "T",
-    "html": "<h2>TEI</h2>\n<p><strong>Category / Categoría:</strong> Tecnología y formatos</p>\n<h3>Definition (EN)</h3>\n<p>A standardized markup language designed for the representation of texts in digital form, facilitating the encoding of linguistic and structural information. The TEI provides guidelines that emphasize semantic rather than presentational markup, allowing for a more meaningful representation of textual elements. This approach contrasts with simpler markup systems that may prioritize visual formatting over content description.</p>\n<h3>Definición (ES)</h3>\n<p>Un lenguaje de marcado estandarizado destinado a la representación de textos en formato digital, que facilita la codificación de información lingüística y estructural. La TEI ofrece directrices que enfatizan el marcado semántico en lugar del marcado presentacional, permitiendo una representación más significativa de los elementos textuales. Este enfoque contrasta con sistemas de marcado más simples que pueden priorizar el formato visual sobre la descripción del contenido.</p>\n<h3>Relación con otros términos del glosario / Relation to other glossary terms</h3>\n<ul>\n<li><strong>metadata</strong> — TEI is a framework that enhances the richness of metadata by providing structured tags for various text attributes.</li>\n<li><strong>annotation</strong> — The TEI guidelines support complex linguistic annotation, allowing for detailed linguistic information to be embedded within texts.</li>\n<li><strong>markup language</strong> — TEI is a specific type of markup language that focuses on the semantic representation of texts.</li>\n<li><strong>SGML</strong> — TEI is built upon principles established by SGML, which provides a foundation for structured document representation.</li>\n<li><strong>HTML</strong> — While HTML is primarily for web presentation, TEI focuses on the semantic content of texts, making it more suitable for linguistic analysis.</li>\n</ul>\n<h3>Fuentes del corpus (EN) / Corpus sources (EN)</h3>\n<ul>\n<li>\"The annotation scheme(s) proposed by the TEI are too ‘element-heavy’, i.e. introduce especially container elements, i.e. those that contain textual content, far too readily...\" <em>(2017_Weisser, M.)</em></li>\n<li>\"Using separate elements suggest that they are not a part of the flow and somehow interrupt the speaker’s turn, which may or may not actually be the case.\" <em>(2017_Weisser, M.)</em></li>\n<li>\"The TEI provides guidelines that emphasize semantic rather than presentational markup...\" <em>(2018_Sekhar Dash, N.)</em></li>\n<li>\"TEI = Text encoding initiative.\" <em>(2024_del Rey Quesada, S.)</em></li>\n</ul>\n<h3>Fuentes del corpus (ES) / Corpus sources (ES)</h3>\n<ul>\n<li>\"La inserción de estas etiquetas y un mayor número de datos externos registrados facilitan las búsquedas cruzadas...\" <em>(2018_Bernal Chávez, J. A.)</em></li>\n<li>\"Quizá uno de los niveles más altos y estandarizados a los que ha llegado el etiquetado son las marcas a partir de la TEI...\" <em>(2023_Lázaro, J.)</em></li>\n<li>\"El marcado de metadatos con la elección del lenguaje de marcado y el estándar, se da comienzo al proceso de etiquetado...\" <em>(2018_Bernal Chávez, J. A.)</em></li>\n<li>\"Las herramientas informáticas más representativas para todas estas tareas se enumeran en el capítulo 13 del presente volumen.\" <em>(2022_Molina Plaza, S.)</em></li>\n</ul>\n<h3>Nota terminológica / Terminological note</h3>\n<p>The TEI is widely recognized in digital humanities and linguistics for its robust framework for text encoding, though its complexity can lead to varied interpretations among practitioners. Its emphasis on semantic markup has established it as a critical tool for researchers seeking to analyze textual data beyond mere presentation.</p>\n<p>La TEI es ampliamente reconocida en las humanidades digitales y la lingüística por su sólido marco para la codificación de textos, aunque su complejidad puede llevar a interpretaciones variadas entre los practicantes. Su énfasis en el marcado semántico la ha establecido como una herramienta crítica para los investigadores que buscan analizar datos textuales más allá de la mera presentación.</p>",
+    "html": "<h2>TEI</h2>\n<p><strong>Category / Categoría:</strong> Estándares y formatos técnicos</p>\n<h3>Definition (EN)</h3>\n<p>A standardized markup language designed for the representation of texts in digital form, facilitating the encoding of linguistic and structural information. The TEI provides guidelines that emphasize semantic rather than presentational markup, allowing for a more meaningful representation of textual elements. This approach contrasts with simpler markup systems that may prioritize visual formatting over content description.</p>\n<h3>Definición (ES)</h3>\n<p>Un lenguaje de marcado estandarizado destinado a la representación de textos en formato digital, que facilita la codificación de información lingüística y estructural. La TEI ofrece directrices que enfatizan el marcado semántico en lugar del marcado presentacional, permitiendo una representación más significativa de los elementos textuales. Este enfoque contrasta con sistemas de marcado más simples que pueden priorizar el formato visual sobre la descripción del contenido.</p>\n<h3>Relación con otros términos del glosario / Relation to other glossary terms</h3>\n<ul>\n<li><strong>metadata</strong> — TEI is a framework that enhances the richness of metadata by providing structured tags for various text attributes.</li>\n<li><strong>annotation</strong> — The TEI guidelines support complex linguistic annotation, allowing for detailed linguistic information to be embedded within texts.</li>\n<li><strong>markup language</strong> — TEI is a specific type of markup language that focuses on the semantic representation of texts.</li>\n<li><strong>SGML</strong> — TEI is built upon principles established by SGML, which provides a foundation for structured document representation.</li>\n<li><strong>HTML</strong> — While HTML is primarily for web presentation, TEI focuses on the semantic content of texts, making it more suitable for linguistic analysis.</li>\n</ul>\n<h3>Fuentes del corpus (EN) / Corpus sources (EN)</h3>\n<ul>\n<li>\"The annotation scheme(s) proposed by the TEI are too ‘element-heavy’, i.e. introduce especially container elements, i.e. those that contain textual content, far too readily...\" <em>(2017_Weisser, M.)</em></li>\n<li>\"Using separate elements suggest that they are not a part of the flow and somehow interrupt the speaker’s turn, which may or may not actually be the case.\" <em>(2017_Weisser, M.)</em></li>\n<li>\"The TEI provides guidelines that emphasize semantic rather than presentational markup...\" <em>(2018_Sekhar Dash, N.)</em></li>\n<li>\"TEI = Text encoding initiative.\" <em>(2024_del Rey Quesada, S.)</em></li>\n</ul>\n<h3>Fuentes del corpus (ES) / Corpus sources (ES)</h3>\n<ul>\n<li>\"La inserción de estas etiquetas y un mayor número de datos externos registrados facilitan las búsquedas cruzadas...\" <em>(2018_Bernal Chávez, J. A.)</em></li>\n<li>\"Quizá uno de los niveles más altos y estandarizados a los que ha llegado el etiquetado son las marcas a partir de la TEI...\" <em>(2023_Lázaro, J.)</em></li>\n<li>\"El marcado de metadatos con la elección del lenguaje de marcado y el estándar, se da comienzo al proceso de etiquetado...\" <em>(2018_Bernal Chávez, J. A.)</em></li>\n<li>\"Las herramientas informáticas más representativas para todas estas tareas se enumeran en el capítulo 13 del presente volumen.\" <em>(2022_Molina Plaza, S.)</em></li>\n</ul>\n<h3>Nota terminológica / Terminological note</h3>\n<p>The TEI is widely recognized in digital humanities and linguistics for its robust framework for text encoding, though its complexity can lead to varied interpretations among practitioners. Its emphasis on semantic markup has established it as a critical tool for researchers seeking to analyze textual data beyond mere presentation.</p>\n<p>La TEI es ampliamente reconocida en las humanidades digitales y la lingüística por su sólido marco para la codificación de textos, aunque su complejidad puede llevar a interpretaciones variadas entre los practicantes. Su énfasis en el marcado semántico la ha establecido como una herramienta crítica para los investigadores que buscan analizar datos textuales más allá de la mera presentación.</p>",
     "freq": {
       "en": {
         "abs": "78",
@@ -20589,14 +20599,14 @@
     "slug": "universal_dependencies",
     "term_en": "Universal Dependencies",
     "term_es": "Universal Dependencies",
-    "category": "Tecnología y formatos",
-    "category_en": "Technology and formats",
-    "type": "term",
-    "url": "",
+    "category": "Estándares y formatos técnicos",
+    "category_en": "Technical standards and formats",
+    "type": "entity",
+    "url": "https://universaldependencies.org/",
     "model": "claude",
     "origin": "es",
     "letter": "U",
-    "html": "<h2>Universal Dependencies</h2>\n<p><strong>Category / Categoría:</strong> Tecnología y formatos</p>\n<h3>Definition (EN)</h3>\n<p>Cross-linguistically consistent framework for the grammatical annotation of corpora, which defines a common set of part-of-speech tags, morphological features and syntactic dependency relations, and a collection of treebanks annotated with it.</p>\n<h3>Definición (ES)</h3>\n<p>Marco de anotación gramatical de corpus coherente entre lenguas, que define un conjunto común de categorías gramaticales, rasgos morfológicos y relaciones de dependencia sintáctica, y una colección de corpus anotados sintácticamente con él.</p>\n<h3>Relación con otros términos del glosario / Relation to other glossary terms</h3>\n<ul>\n<li><strong>dependency parsing</strong> — Universal Dependencies annotates syntactic dependencies.</li>\n<li><strong>treebank</strong> — It includes a collection of treebanks.</li>\n<li><strong>Universal POS</strong> — Universal POS tags are its part-of-speech layer.</li>\n<li><strong>annotation scheme</strong> — It is a cross-linguistic annotation scheme.</li>\n</ul>\n<h3>Fuentes del corpus (EN) / Corpus sources (EN)</h3>\n<ul>\n<li>\n<p>Proceedings of the Third Workshop on Universal Dependencies (UDW, SyntaxFest 2019), 124–131. <em>(2021_Levisha, N._Corpus-based typology. Applications, challenges and some solutions)</em></p>\n</li>\n<li>\n<p>This is why Universal Dependencies (UD; Nivre et al. 2016) was introduced, as a standard for consistent annotation of morphology and syntax across many languages. <em>(2021_Cermakova, A., Jantunen, J., et al._The International Comparable Corpus. Challenges in building multilingual spoken and written comparable corpora_Research in Corpus Linguistics)</em></p>\n</li>\n<li>\n<p>(2022). 'Corpus-based Language Universals Analysis using Universal Dependencies', Quasy (Quantitative Syntax), SyntaxFest, March, Sofia, Bulgaria, https://hal.inria.fr/hal -03501774 Chomsky, N. <em>(2022_McEnery_ T., Brezina, V._Fundamental Principles of Corpus Linguistics)</em></p>\n</li>\n<li>\n<p>Chapter 3): • Universal Dependencies (UD) (cf. 7.3.1) provide a system of consistent, crosslinguistic annotation of grammar (parts of speech, morphological features, and syntactic dependencies). <em>(2023_Barth, D., Schnell, S._Understanding Corpus Linguistics)</em></p>\n</li>\n<li>\n<p>Bojar et al., 2012; Volk et al., 2015; Augustinus et al., 2016 on parallel treebanks; see also the Universal Dependencies project10). 12.2.4.2 Issues and Challenges Specific to the Analysis of Parallel Corpora Clearly, compared with monolingual corpora, parallel corpora are lagging behind in terms of size (representativeness is also an issue, as small corpora tend to represent relatively few authors and translators/interpreters). <em>(2020_Lefer, M. A._Parallel corpora)</em></p>\n</li>\n</ul>\n<h3>Fuentes del corpus (ES) / Corpus sources (ES)</h3>\n<ul>\n<li>\n<p>“Universal Decompositional Semantics on Universal Dependencies”. <em>(2022_Martí, M. A., Taulé, M._Desarrollos tecnológicos de la lingüística de corpus en español)</em></p>\n</li>\n<li>\n<p>“Universal Decompositional Semantics on Universal Dependencies”. <em>(2022_Navarro Colorado, B._Sistemas de anotación semántica para corpus de español)</em></p>\n</li>\n<li>\n<p>Para la parte anotada del español, tanto spaCy como Stanza han sido entrenados con el corpus Universal Dependencies AnCora. <em>(2022_Moreno Sandoval, A._Etiquetadores morfosintácticos para corpus en español)</em></p>\n</li>\n</ul>\n<h3>Nota terminológica / Terminological note</h3>\n<p>Entry written by Claude from corpus contexts.</p>",
+    "html": "<h2>Universal Dependencies</h2>\n<p><strong>Category / Categoría:</strong> Estándares y formatos técnicos</p>\n<h3>Definition (EN)</h3>\n<p>Cross-linguistically consistent framework for the grammatical annotation of corpora, which defines a common set of part-of-speech tags, morphological features and syntactic dependency relations, and a collection of treebanks annotated with it.</p>\n<h3>Definición (ES)</h3>\n<p>Marco de anotación gramatical de corpus coherente entre lenguas, que define un conjunto común de categorías gramaticales, rasgos morfológicos y relaciones de dependencia sintáctica, y una colección de corpus anotados sintácticamente con él.</p>\n<h3>Relación con otros términos del glosario / Relation to other glossary terms</h3>\n<ul>\n<li><strong>dependency parsing</strong> — Universal Dependencies annotates syntactic dependencies.</li>\n<li><strong>treebank</strong> — It includes a collection of treebanks.</li>\n<li><strong>Universal POS</strong> — Universal POS tags are its part-of-speech layer.</li>\n<li><strong>annotation scheme</strong> — It is a cross-linguistic annotation scheme.</li>\n</ul>\n<h3>Fuentes del corpus (EN) / Corpus sources (EN)</h3>\n<ul>\n<li>\n<p>Proceedings of the Third Workshop on Universal Dependencies (UDW, SyntaxFest 2019), 124–131. <em>(2021_Levisha, N._Corpus-based typology. Applications, challenges and some solutions)</em></p>\n</li>\n<li>\n<p>This is why Universal Dependencies (UD; Nivre et al. 2016) was introduced, as a standard for consistent annotation of morphology and syntax across many languages. <em>(2021_Cermakova, A., Jantunen, J., et al._The International Comparable Corpus. Challenges in building multilingual spoken and written comparable corpora_Research in Corpus Linguistics)</em></p>\n</li>\n<li>\n<p>(2022). 'Corpus-based Language Universals Analysis using Universal Dependencies', Quasy (Quantitative Syntax), SyntaxFest, March, Sofia, Bulgaria, https://hal.inria.fr/hal -03501774 Chomsky, N. <em>(2022_McEnery_ T., Brezina, V._Fundamental Principles of Corpus Linguistics)</em></p>\n</li>\n<li>\n<p>Chapter 3): • Universal Dependencies (UD) (cf. 7.3.1) provide a system of consistent, crosslinguistic annotation of grammar (parts of speech, morphological features, and syntactic dependencies). <em>(2023_Barth, D., Schnell, S._Understanding Corpus Linguistics)</em></p>\n</li>\n<li>\n<p>Bojar et al., 2012; Volk et al., 2015; Augustinus et al., 2016 on parallel treebanks; see also the Universal Dependencies project10). 12.2.4.2 Issues and Challenges Specific to the Analysis of Parallel Corpora Clearly, compared with monolingual corpora, parallel corpora are lagging behind in terms of size (representativeness is also an issue, as small corpora tend to represent relatively few authors and translators/interpreters). <em>(2020_Lefer, M. A._Parallel corpora)</em></p>\n</li>\n</ul>\n<h3>Fuentes del corpus (ES) / Corpus sources (ES)</h3>\n<ul>\n<li>\n<p>“Universal Decompositional Semantics on Universal Dependencies”. <em>(2022_Martí, M. A., Taulé, M._Desarrollos tecnológicos de la lingüística de corpus en español)</em></p>\n</li>\n<li>\n<p>“Universal Decompositional Semantics on Universal Dependencies”. <em>(2022_Navarro Colorado, B._Sistemas de anotación semántica para corpus de español)</em></p>\n</li>\n<li>\n<p>Para la parte anotada del español, tanto spaCy como Stanza han sido entrenados con el corpus Universal Dependencies AnCora. <em>(2022_Moreno Sandoval, A._Etiquetadores morfosintácticos para corpus en español)</em></p>\n</li>\n</ul>\n<h3>Nota terminológica / Terminological note</h3>\n<p>Entry written by Claude from corpus contexts.</p>",
     "freq": {
       "en": {
         "abs": "28",
@@ -20658,14 +20668,14 @@
     "slug": "universal_pos",
     "term_en": "Universal POS",
     "term_es": "Universal POS",
-    "category": "Tecnología y formatos",
-    "category_en": "Technology and formats",
-    "type": "term",
-    "url": "",
+    "category": "Estándares y formatos técnicos",
+    "category_en": "Technical standards and formats",
+    "type": "entity",
+    "url": "https://universaldependencies.org/u/pos/index.html",
     "model": "claude",
     "origin": "es",
     "letter": "U",
-    "html": "<h2>Universal POS</h2>\n<p><strong>Category / Categoría:</strong> Tecnología y formatos</p>\n<h3>Definition (EN)</h3>\n<p>Reduced set of coarse part-of-speech tags designed to be applicable to any language, used as the part-of-speech layer of Universal Dependencies. It aims to make annotation comparable across languages and taggers.</p>\n<h3>Definición (ES)</h3>\n<p>Conjunto reducido de categorías gramaticales generales, pensado para poder aplicarse a cualquier lengua, que constituye la capa de categorías de Universal Dependencies. Busca que la anotación sea comparable entre lenguas y etiquetadores.</p>\n<h3>Relación con otros términos del glosario / Relation to other glossary terms</h3>\n<ul>\n<li><strong>tagset</strong> — Universal POS is a cross-linguistic tagset.</li>\n<li><strong>Universal Dependencies</strong> — It is the part-of-speech layer of Universal Dependencies.</li>\n<li><strong>POS tagging</strong> — It is used in POS tagging.</li>\n<li><strong>EAGLES</strong> — EAGLES tags are an earlier standardisation proposal.</li>\n</ul>\n<h3>Fuentes del corpus (EN) / Corpus sources (EN)</h3>\n<ul>\n<li>\n<p>Therefore, according to the universal part-of-speech tagset (UPS) proposed by Petrov et al. <em>(2017_Doval, I._POS-tagging a bilingual parallel corpus. Methods and challenges_Research in Corpus Linguistics)</em></p>\n</li>\n<li>\n<p>We relied on the Universal Parts of Speech (UPOS) in order to distinguish function words from content words.18 If a word had one of the UPOS tags below, it was counted as a function word, and 1 was added to the sum score: – determiners (DET), – pronouns (PRON), – auxiliaries and copulas (AUX), – adpositions, including case particles (CASE), – particles (PART), – subordinate (SCONJ) and coordinate (CCONJ) conjunctions. <em>(2021_Levisha, N._Corpus-based typology. Applications, challenges and some solutions)</em></p>\n</li>\n<li>\n<p>The fourth column hosts the universal PoS tag followed by a language-specific PoS tag, followed, in turn, by a list of language-specific grammatical features of the word form. <em>(2023_Barth, D., Schnell, S._Understanding Corpus Linguistics)</em></p>\n</li>\n</ul>\n<h3>Fuentes del corpus (ES) / Corpus sources (ES)</h3>\n<ul>\n<li>\n<p>Sin embargo, hay que Antonio Moreno-Sandoval Figura 27.1 Ejemplo analizado por Grampal. destacar dos intentos importantes: las etiquetas recomendadas por EAGLES8 (implementadas en FreeLing) y recientemente la propuesta de universal PoS (ver Tabla 27.2). <em>(2022_Martí, M. A., Taulé, M._Desarrollos tecnológicos de la lingüística de corpus en español)</em></p>\n</li>\n<li>\n<p>Sin embargo, hay que Antonio Moreno-Sandoval Figura 27.1 Ejemplo analizado por Grampal. destacar dos intentos importantes: las etiquetas recomendadas por EAGLES8 (implementadas en FreeLing) y recientemente la propuesta de universal PoS (ver Tabla 27.2). <em>(2022_Moreno Sandoval, A._Etiquetadores morfosintácticos para corpus en español)</em></p>\n</li>\n</ul>\n<h3>Nota terminológica / Terminological note</h3>\n<p>Entry written by Claude from corpus contexts.</p>",
+    "html": "<h2>Universal POS</h2>\n<p><strong>Category / Categoría:</strong> Estándares y formatos técnicos</p>\n<h3>Definition (EN)</h3>\n<p>Reduced set of coarse part-of-speech tags designed to be applicable to any language, used as the part-of-speech layer of Universal Dependencies. It aims to make annotation comparable across languages and taggers.</p>\n<h3>Definición (ES)</h3>\n<p>Conjunto reducido de categorías gramaticales generales, pensado para poder aplicarse a cualquier lengua, que constituye la capa de categorías de Universal Dependencies. Busca que la anotación sea comparable entre lenguas y etiquetadores.</p>\n<h3>Relación con otros términos del glosario / Relation to other glossary terms</h3>\n<ul>\n<li><strong>tagset</strong> — Universal POS is a cross-linguistic tagset.</li>\n<li><strong>Universal Dependencies</strong> — It is the part-of-speech layer of Universal Dependencies.</li>\n<li><strong>POS tagging</strong> — It is used in POS tagging.</li>\n<li><strong>EAGLES</strong> — EAGLES tags are an earlier standardisation proposal.</li>\n</ul>\n<h3>Fuentes del corpus (EN) / Corpus sources (EN)</h3>\n<ul>\n<li>\n<p>Therefore, according to the universal part-of-speech tagset (UPS) proposed by Petrov et al. <em>(2017_Doval, I._POS-tagging a bilingual parallel corpus. Methods and challenges_Research in Corpus Linguistics)</em></p>\n</li>\n<li>\n<p>We relied on the Universal Parts of Speech (UPOS) in order to distinguish function words from content words.18 If a word had one of the UPOS tags below, it was counted as a function word, and 1 was added to the sum score: – determiners (DET), – pronouns (PRON), – auxiliaries and copulas (AUX), – adpositions, including case particles (CASE), – particles (PART), – subordinate (SCONJ) and coordinate (CCONJ) conjunctions. <em>(2021_Levisha, N._Corpus-based typology. Applications, challenges and some solutions)</em></p>\n</li>\n<li>\n<p>The fourth column hosts the universal PoS tag followed by a language-specific PoS tag, followed, in turn, by a list of language-specific grammatical features of the word form. <em>(2023_Barth, D., Schnell, S._Understanding Corpus Linguistics)</em></p>\n</li>\n</ul>\n<h3>Fuentes del corpus (ES) / Corpus sources (ES)</h3>\n<ul>\n<li>\n<p>Sin embargo, hay que Antonio Moreno-Sandoval Figura 27.1 Ejemplo analizado por Grampal. destacar dos intentos importantes: las etiquetas recomendadas por EAGLES8 (implementadas en FreeLing) y recientemente la propuesta de universal PoS (ver Tabla 27.2). <em>(2022_Martí, M. A., Taulé, M._Desarrollos tecnológicos de la lingüística de corpus en español)</em></p>\n</li>\n<li>\n<p>Sin embargo, hay que Antonio Moreno-Sandoval Figura 27.1 Ejemplo analizado por Grampal. destacar dos intentos importantes: las etiquetas recomendadas por EAGLES8 (implementadas en FreeLing) y recientemente la propuesta de universal PoS (ver Tabla 27.2). <em>(2022_Moreno Sandoval, A._Etiquetadores morfosintácticos para corpus en español)</em></p>\n</li>\n</ul>\n<h3>Nota terminológica / Terminological note</h3>\n<p>Entry written by Claude from corpus contexts.</p>",
     "freq": {
       "en": {
         "abs": "7",
@@ -20753,14 +20763,14 @@
     "slug": "utf_8",
     "term_en": "UTF-8",
     "term_es": "UTF-8",
-    "category": "Tecnología y formatos",
-    "category_en": "Technology and formats",
-    "type": "term",
-    "url": "",
+    "category": "Estándares y formatos técnicos",
+    "category_en": "Technical standards and formats",
+    "type": "entity",
+    "url": "https://www.unicode.org/faq/utf_bom.html",
     "model": "gpt-4o-mini",
     "origin": "en",
     "letter": "U",
-    "html": "<h2>UTF-8</h2>\n<p><strong>Category / Categoría:</strong> Tecnología y formatos</p>\n<h3>Definition (EN)</h3>\n<p>A character encoding that uses a variable number of bytes to represent characters, allowing for the inclusion of a vast array of symbols from multiple languages. This format is particularly significant in corpus linguistics as it maintains compatibility with ASCII while enabling the processing of multilingual texts, thus facilitating the creation of diverse corpora. Its adoption is increasingly becoming the standard for text processing in various computational applications.</p>\n<h3>Definición (ES)</h3>\n<p>Un formato de codificación de caracteres que utiliza un número variable de bytes para representar caracteres, permitiendo la inclusión de una amplia gama de símbolos de múltiples lenguas. Este formato es especialmente relevante en la lingüística de corpus, ya que mantiene la compatibilidad con ASCII y permite el procesamiento de textos multilingües, facilitando así la creación de corpora diversos. Su adopción se está convirtiendo en el estándar para el procesamiento de texto en diversas aplicaciones computacionales.</p>\n<h3>Relación con otros términos del glosario / Relation to other glossary terms</h3>\n<ul>\n<li><strong>metadata</strong> — UTF-8 is a type of metadata that specifies how text data is encoded, impacting data retrieval and processing.</li>\n<li><strong>encoding</strong> — UTF-8 is a specific encoding format that allows for the representation of characters from various languages in a standardized way.</li>\n<li><strong>plain text</strong> — UTF-8 is often used to encode plain text files, ensuring that they can be read correctly across different systems.</li>\n<li><strong>XML</strong> — UTF-8 is commonly utilized in XML documents to ensure that text is properly encoded and displayed, especially in multilingual contexts.</li>\n<li><strong>tokenisation</strong> — Proper tokenisation of text data requires knowledge of the encoding format, such as UTF-8, to accurately process characters.</li>\n<li><strong>corpus design</strong> — The choice of UTF-8 in corpus design affects how texts are stored and retrieved, influencing the overall usability of the corpus.</li>\n<li><strong>HTML</strong> — UTF-8 is the recommended encoding for HTML documents, ensuring that web pages display correctly across different browsers and devices.</li>\n</ul>\n<h3>Fuentes del corpus (EN) / Corpus sources (EN)</h3>\n<ul>\n<li>Because modern corpus linguistics involves electronic data interchange in an increasingly globalizing environment, ASCII is being replaced by Unicode (“Unification Code”). Among the three formats that have been proposed—UTF-32, UTF-16, and UTF-8—the latter is becoming the norm in corpus linguistics. <em>(source: 2017_Desagulier, G._Corpus Linguistics and Statistics with R)</em></li>\n<li>One reason for this is that UTF-8 maximizes backward compatibility with ASCII. <em>(source: 2017_Desagulier, G._Corpus Linguistics and Statistics with R)</em></li>\n<li>This character set is also well supported by many different programs, including browsers, so that it makes information exchange including characters from many different languages, as well as special characters, such as phonetic symbols, etc., much easier. <em>(source: 2016_Weisser, M._Practical Corpus Linguistics. An Introduction to Corpus-Based Language Analysis)</em></li>\n<li>The particular flavour we’ll want to use for this course is a variable byte encoding called UTF-8, which stores characters in up to six bytes. <em>(source: 2016_Weisser, M._Practical Corpus Linguistics. An Introduction to Corpus-Based Language Analysis)</em></li>\n</ul>\n<h3>Fuentes del corpus (ES) / Corpus sources (ES)</h3>\n<ul>\n<li>Para su procesamiento hemos generado ocho etiquetas metatextuales que responden a los siguientes parámetros: La primera etiqueta, <BIBLIOTHECA>, hace referencia a las diferentes bibliotecas electrónicas de las que hemos extraído los textos del CLARE. <em>(fuente: 2016_García Ferrer, M._Diseño y construcción de un corpus de referencia de latín_Methodos)</em></li>\n<li>jEdit trabaja tanto con UTF-8 como con otros formatos de codificación del texto. <em>(fuente: 2016_García Ferrer, M._Diseño y construcción de un corpus de referencia de latín_Methodos)</em></li>\n<li>La inclusión de estos metadatos en el lugar adecuado (habitualmente la cabecera de un documento XML) permite hacer luego la recuperación selectiva de los casos que interesen. <em>(fuente: 2022_Rojo, G., Palacios, I._Los corpus de aprendientes de español como L2)</em></li>\n<li>La capa adicional siguiente introduce información gramatical. <em>(fuente: 2022_Rojo, G., Palacios, I._Los corpus de aprendientes de español como L2)</em></li>\n</ul>\n<h3>Nota terminológica / Terminological note</h3>\n<p>The term UTF-8 is widely recognized in computational linguistics and is often contrasted with other encoding formats such as UTF-16 and UTF-32. Its significance lies in its ability to support a wide range of characters while maintaining compatibility with older systems, making it a preferred choice for modern text processing applications. </p>\n<p>El término UTF-8 es ampliamente reconocido en la lingüística computacional y a menudo se contrasta con otros formatos de codificación como UTF-16 y UTF-32. Su importancia radica en su capacidad para soportar una amplia gama de caracteres mientras mantiene la compatibilidad con sistemas más antiguos, lo que lo convierte en una opción preferida para las aplicaciones modernas de procesamiento de texto.</p>",
+    "html": "<h2>UTF-8</h2>\n<p><strong>Category / Categoría:</strong> Estándares y formatos técnicos</p>\n<h3>Definition (EN)</h3>\n<p>A character encoding that uses a variable number of bytes to represent characters, allowing for the inclusion of a vast array of symbols from multiple languages. This format is particularly significant in corpus linguistics as it maintains compatibility with ASCII while enabling the processing of multilingual texts, thus facilitating the creation of diverse corpora. Its adoption is increasingly becoming the standard for text processing in various computational applications.</p>\n<h3>Definición (ES)</h3>\n<p>Un formato de codificación de caracteres que utiliza un número variable de bytes para representar caracteres, permitiendo la inclusión de una amplia gama de símbolos de múltiples lenguas. Este formato es especialmente relevante en la lingüística de corpus, ya que mantiene la compatibilidad con ASCII y permite el procesamiento de textos multilingües, facilitando así la creación de corpora diversos. Su adopción se está convirtiendo en el estándar para el procesamiento de texto en diversas aplicaciones computacionales.</p>\n<h3>Relación con otros términos del glosario / Relation to other glossary terms</h3>\n<ul>\n<li><strong>metadata</strong> — UTF-8 is a type of metadata that specifies how text data is encoded, impacting data retrieval and processing.</li>\n<li><strong>encoding</strong> — UTF-8 is a specific encoding format that allows for the representation of characters from various languages in a standardized way.</li>\n<li><strong>plain text</strong> — UTF-8 is often used to encode plain text files, ensuring that they can be read correctly across different systems.</li>\n<li><strong>XML</strong> — UTF-8 is commonly utilized in XML documents to ensure that text is properly encoded and displayed, especially in multilingual contexts.</li>\n<li><strong>tokenisation</strong> — Proper tokenisation of text data requires knowledge of the encoding format, such as UTF-8, to accurately process characters.</li>\n<li><strong>corpus design</strong> — The choice of UTF-8 in corpus design affects how texts are stored and retrieved, influencing the overall usability of the corpus.</li>\n<li><strong>HTML</strong> — UTF-8 is the recommended encoding for HTML documents, ensuring that web pages display correctly across different browsers and devices.</li>\n</ul>\n<h3>Fuentes del corpus (EN) / Corpus sources (EN)</h3>\n<ul>\n<li>Because modern corpus linguistics involves electronic data interchange in an increasingly globalizing environment, ASCII is being replaced by Unicode (“Unification Code”). Among the three formats that have been proposed—UTF-32, UTF-16, and UTF-8—the latter is becoming the norm in corpus linguistics. <em>(source: 2017_Desagulier, G._Corpus Linguistics and Statistics with R)</em></li>\n<li>One reason for this is that UTF-8 maximizes backward compatibility with ASCII. <em>(source: 2017_Desagulier, G._Corpus Linguistics and Statistics with R)</em></li>\n<li>This character set is also well supported by many different programs, including browsers, so that it makes information exchange including characters from many different languages, as well as special characters, such as phonetic symbols, etc., much easier. <em>(source: 2016_Weisser, M._Practical Corpus Linguistics. An Introduction to Corpus-Based Language Analysis)</em></li>\n<li>The particular flavour we’ll want to use for this course is a variable byte encoding called UTF-8, which stores characters in up to six bytes. <em>(source: 2016_Weisser, M._Practical Corpus Linguistics. An Introduction to Corpus-Based Language Analysis)</em></li>\n</ul>\n<h3>Fuentes del corpus (ES) / Corpus sources (ES)</h3>\n<ul>\n<li>Para su procesamiento hemos generado ocho etiquetas metatextuales que responden a los siguientes parámetros: La primera etiqueta, <BIBLIOTHECA>, hace referencia a las diferentes bibliotecas electrónicas de las que hemos extraído los textos del CLARE. <em>(fuente: 2016_García Ferrer, M._Diseño y construcción de un corpus de referencia de latín_Methodos)</em></li>\n<li>jEdit trabaja tanto con UTF-8 como con otros formatos de codificación del texto. <em>(fuente: 2016_García Ferrer, M._Diseño y construcción de un corpus de referencia de latín_Methodos)</em></li>\n<li>La inclusión de estos metadatos en el lugar adecuado (habitualmente la cabecera de un documento XML) permite hacer luego la recuperación selectiva de los casos que interesen. <em>(fuente: 2022_Rojo, G., Palacios, I._Los corpus de aprendientes de español como L2)</em></li>\n<li>La capa adicional siguiente introduce información gramatical. <em>(fuente: 2022_Rojo, G., Palacios, I._Los corpus de aprendientes de español como L2)</em></li>\n</ul>\n<h3>Nota terminológica / Terminological note</h3>\n<p>The term UTF-8 is widely recognized in computational linguistics and is often contrasted with other encoding formats such as UTF-16 and UTF-32. Its significance lies in its ability to support a wide range of characters while maintaining compatibility with older systems, making it a preferred choice for modern text processing applications. </p>\n<p>El término UTF-8 es ampliamente reconocido en la lingüística computacional y a menudo se contrasta con otros formatos de codificación como UTF-16 y UTF-32. Su importancia radica en su capacidad para soportar una amplia gama de caracteres mientras mantiene la compatibilidad con sistemas más antiguos, lo que lo convierte en una opción preferida para las aplicaciones modernas de procesamiento de texto.</p>",
     "freq": {
       "en": {
         "abs": "76",
@@ -22320,14 +22330,14 @@
     "slug": "xml",
     "term_en": "XML",
     "term_es": "XML",
-    "category": "Tecnología y formatos",
-    "category_en": "Technology and formats",
-    "type": "term",
-    "url": "",
+    "category": "Estándares y formatos técnicos",
+    "category_en": "Technical standards and formats",
+    "type": "entity",
+    "url": "https://www.w3.org/TR/xml/",
     "model": "gpt-4o-mini",
     "origin": "en",
     "letter": "X",
-    "html": "<h2>XML</h2>\n<p><strong>Category / Categoría:</strong> Tecnología y formatos</p>\n<h3>Definition (EN)</h3>\n<p>A markup language that allows users to define their own tags, facilitating the creation of structured documents. XML enhances the separation of content from presentation, enabling better organization and retrieval of information within corpora. It is often contrasted with HTML, which is more rigid in its predefined tags and structure.</p>\n<h3>Definición (ES)</h3>\n<p>Un lenguaje de marcado que permite a los usuarios definir sus propias etiquetas, facilitando la creación de documentos estructurados. XML mejora la separación entre contenido y presentación, lo que permite una mejor organización y recuperación de información dentro de los corpus. A menudo se contrasta con HTML, que es más rígido en sus etiquetas y estructura predefinidas.</p>\n<h3>Relación con otros términos del glosario / Relation to other glossary terms</h3>\n<ul>\n<li><strong>HTML</strong> — XML is often contrasted with HTML, which has a fixed set of tags and is primarily designed for web page formatting.</li>\n<li><strong>SGML</strong> — XML was developed as a simplified version of SGML, addressing its complexity while retaining its core functionalities.</li>\n<li><strong>XML</strong> — XML can be used in conjunction with XSL, which provides advanced formatting and transformation capabilities beyond those of CSS.</li>\n<li><strong>SGML</strong> — A Document Type Definition (DTD) is essential for validating XML documents, ensuring they adhere to a specified structure.</li>\n<li><strong>Annotation</strong> — XML is frequently used for linguistic annotation, allowing for the inclusion of metadata and structural information in corpora.</li>\n<li><strong>Corpus</strong> — XML facilitates the organization of corpus data, enabling efficient management and retrieval of linguistic resources.</li>\n</ul>\n<h3>Fuentes del corpus (EN) / Corpus sources (EN)</h3>\n<ul>\n<li>\"XML (eXtensible Markup Language) Version 1.0, was eventually created and released by the W3C (World Wide Web Consortium) in 1998.\" <em>(2016_Weisser, M._Practical Corpus Linguistics. An Introduction to Corpus-Based Language Analysis)</em></li>\n<li>\"XML allows users to create their own extended markup frameworks, and thereby makes it possible to increase the separation of form from content even further than was already possible by using HTML and CSS.\" <em>(2016_Weisser, M._Practical Corpus Linguistics. An Introduction to Corpus-Based Language Analysis)</em></li>\n<li>\"This paper outlines a modest approach to XPath and XQuery, tools allowing the navigation and exploitation of XML-encoded texts.\" <em>(2015_Ruhlemann, C., Bagoutdinov, A., O'Donnell, M. B._Modest XPath and XQuery for corpora. Exploiting deep XML annotation_ICAME)</em></li>\n<li>\"Markup helps to structure information, for example, in separating documents into appropriate sections/divisions with headings, sub-headings, paragraphs, etc.\" <em>(2016_Weisser, M._Practical Corpus Linguistics. An Introduction to Corpus-Based Language Analysis)</em></li>\n</ul>\n<h3>Fuentes del corpus (ES) / Corpus sources (ES)</h3>\n<ul>\n<li>\"A document is valid if it complies with the structure predefined in the DTD, that is, if the incoming data has been structured correctly according to the defined norms.\" <em>(2020_Marín Morales, M. I. y Molina, J_Un método de etiquetado semiautomático de corpus lingüísticos_Investigación e Innovación en Ingeniería de Software)</em></li>\n<li>\"El etiquetado en XML crea una estructura bien definida de los textos y presentada en forma de árbol.\" <em>(2015_Sierra Martínez, G. E._Introducción a los corpus lingüísticos)</em></li>\n<li>\"Un documento bien formado es aquel que es sintácticamente correcto, esto es, que sus etiquetas están escritas conforme a las normas XML.\" <em>(2015_Sierra Martínez, G. E._Introducción a los corpus lingüísticos)</em></li>\n<li>\"La DTD permite la verificación y la validación de dichos documentos con el fin de que contengan, efectivamente, todos los elementos que se necesitan.\" <em>(2020_Marín Morales, M. I. y Molina, J_Un método de etiquetado semiautomático de corpus lingüísticos_Investigación e Innovación en Ingeniería de Software)</em></li>\n<li>\"La validación de XML se acostumbra usar un editor estructurado con un analizador sintáctico para ir validando e indicando las inconsistencias de las etiquetas.\" <em>(2015_Sierra Martínez, G. E._Introducción a los corpus lingüísticos)</em></li>\n<li>\"El encabezado contiene la información extralingüística sobre el documento.\" <em>(2015_Sierra Martínez, G. E._Introducción a los corpus lingüísticos)</em></li>\n</ul>\n<h3>Nota terminológica / Terminological note</h3>\n<p>The term XML has become a standard in the field of digital text processing and corpus linguistics, allowing for flexible data structuring and annotation. Its use is prevalent in various applications, from web development to linguistic research, reflecting its versatility and adaptability.</p>\n<p>El término XML se ha convertido en un estándar en el campo del procesamiento de textos digitales y la lingüística de corpus, permitiendo una estructuración y anotación de datos flexibles. Su uso es prevalente en diversas aplicaciones, desde el desarrollo web hasta la investigación lingüística, reflejando su versatilidad y adaptabilidad.</p>",
+    "html": "<h2>XML</h2>\n<p><strong>Category / Categoría:</strong> Estándares y formatos técnicos</p>\n<h3>Definition (EN)</h3>\n<p>A markup language that allows users to define their own tags, facilitating the creation of structured documents. XML enhances the separation of content from presentation, enabling better organization and retrieval of information within corpora. It is often contrasted with HTML, which is more rigid in its predefined tags and structure.</p>\n<h3>Definición (ES)</h3>\n<p>Un lenguaje de marcado que permite a los usuarios definir sus propias etiquetas, facilitando la creación de documentos estructurados. XML mejora la separación entre contenido y presentación, lo que permite una mejor organización y recuperación de información dentro de los corpus. A menudo se contrasta con HTML, que es más rígido en sus etiquetas y estructura predefinidas.</p>\n<h3>Relación con otros términos del glosario / Relation to other glossary terms</h3>\n<ul>\n<li><strong>HTML</strong> — XML is often contrasted with HTML, which has a fixed set of tags and is primarily designed for web page formatting.</li>\n<li><strong>SGML</strong> — XML was developed as a simplified version of SGML, addressing its complexity while retaining its core functionalities.</li>\n<li><strong>XML</strong> — XML can be used in conjunction with XSL, which provides advanced formatting and transformation capabilities beyond those of CSS.</li>\n<li><strong>SGML</strong> — A Document Type Definition (DTD) is essential for validating XML documents, ensuring they adhere to a specified structure.</li>\n<li><strong>Annotation</strong> — XML is frequently used for linguistic annotation, allowing for the inclusion of metadata and structural information in corpora.</li>\n<li><strong>Corpus</strong> — XML facilitates the organization of corpus data, enabling efficient management and retrieval of linguistic resources.</li>\n</ul>\n<h3>Fuentes del corpus (EN) / Corpus sources (EN)</h3>\n<ul>\n<li>\"XML (eXtensible Markup Language) Version 1.0, was eventually created and released by the W3C (World Wide Web Consortium) in 1998.\" <em>(2016_Weisser, M._Practical Corpus Linguistics. An Introduction to Corpus-Based Language Analysis)</em></li>\n<li>\"XML allows users to create their own extended markup frameworks, and thereby makes it possible to increase the separation of form from content even further than was already possible by using HTML and CSS.\" <em>(2016_Weisser, M._Practical Corpus Linguistics. An Introduction to Corpus-Based Language Analysis)</em></li>\n<li>\"This paper outlines a modest approach to XPath and XQuery, tools allowing the navigation and exploitation of XML-encoded texts.\" <em>(2015_Ruhlemann, C., Bagoutdinov, A., O'Donnell, M. B._Modest XPath and XQuery for corpora. Exploiting deep XML annotation_ICAME)</em></li>\n<li>\"Markup helps to structure information, for example, in separating documents into appropriate sections/divisions with headings, sub-headings, paragraphs, etc.\" <em>(2016_Weisser, M._Practical Corpus Linguistics. An Introduction to Corpus-Based Language Analysis)</em></li>\n</ul>\n<h3>Fuentes del corpus (ES) / Corpus sources (ES)</h3>\n<ul>\n<li>\"A document is valid if it complies with the structure predefined in the DTD, that is, if the incoming data has been structured correctly according to the defined norms.\" <em>(2020_Marín Morales, M. I. y Molina, J_Un método de etiquetado semiautomático de corpus lingüísticos_Investigación e Innovación en Ingeniería de Software)</em></li>\n<li>\"El etiquetado en XML crea una estructura bien definida de los textos y presentada en forma de árbol.\" <em>(2015_Sierra Martínez, G. E._Introducción a los corpus lingüísticos)</em></li>\n<li>\"Un documento bien formado es aquel que es sintácticamente correcto, esto es, que sus etiquetas están escritas conforme a las normas XML.\" <em>(2015_Sierra Martínez, G. E._Introducción a los corpus lingüísticos)</em></li>\n<li>\"La DTD permite la verificación y la validación de dichos documentos con el fin de que contengan, efectivamente, todos los elementos que se necesitan.\" <em>(2020_Marín Morales, M. I. y Molina, J_Un método de etiquetado semiautomático de corpus lingüísticos_Investigación e Innovación en Ingeniería de Software)</em></li>\n<li>\"La validación de XML se acostumbra usar un editor estructurado con un analizador sintáctico para ir validando e indicando las inconsistencias de las etiquetas.\" <em>(2015_Sierra Martínez, G. E._Introducción a los corpus lingüísticos)</em></li>\n<li>\"El encabezado contiene la información extralingüística sobre el documento.\" <em>(2015_Sierra Martínez, G. E._Introducción a los corpus lingüísticos)</em></li>\n</ul>\n<h3>Nota terminológica / Terminological note</h3>\n<p>The term XML has become a standard in the field of digital text processing and corpus linguistics, allowing for flexible data structuring and annotation. Its use is prevalent in various applications, from web development to linguistic research, reflecting its versatility and adaptability.</p>\n<p>El término XML se ha convertido en un estándar en el campo del procesamiento de textos digitales y la lingüística de corpus, permitiendo una estructuración y anotación de datos flexibles. Su uso es prevalente en diversas aplicaciones, desde el desarrollo web hasta la investigación lingüística, reflejando su versatilidad y adaptabilidad.</p>",
     "freq": {
       "en": {
         "abs": "580",
