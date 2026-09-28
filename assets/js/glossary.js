@@ -63,11 +63,29 @@ const RESOURCE_GROUPS = [
   { id: 'corpora', es: 'Corpus y colecciones', en: 'Corpora and collections', slugs: 'actres bank_of_english bidtea bnc bncweb brown_corpus c_oral_rom caes cate cde_now cde_web cdh cedel2 cemc charta cleae cobuild coca codea coha corane corde corespi corlec corlexin corpes_xxi cows_l2h crea ecpc eleactar estenten europarl fono_ele gentt global_voices glowbe helsinki_corpus international_corpus_of_english iula langsnap letrac llc lob mellange micase must multinot now_corpus ode opus penn_treebank preseea seu splloc spt sse valesco'.split(' ') },
   { id: 'lexical', es: 'Recursos léxicos', en: 'Lexical resources', slugs: ['wordnet'] },
   { id: 'query', es: 'Consulta y análisis de corpus', en: 'Corpus querying and analysis', slugs: 'antconc antpconc chorus concgram cqp cqpweb cwb gdex genex sketch_engine wmatrix wordsmith_tools'.split(' ') },
-  { id: 'nlp', es: 'Anotación y procesamiento lingüístico', en: 'Annotation and language processing', slugs: 'claws freeling grampal ixa_pipes mallet nltk pencil stanford_parser stanza tagant treetagger ukb'.split(' ') },
+  { id: 'nlp', es: 'Anotación y procesamiento lingüístico', en: 'Annotation and language processing', slugs: 'claws freeling grampal ixa_pipes lesk_algorithm mallet nltk pencil stanford_parser stanza tagant treetagger ukb'.split(' ') },
+  { id: 'standards', es: 'Estándares y formatos técnicos', en: 'Technical standards and formats', slugs: 'eagles html sgml tei universal_dependencies universal_pos utf_8 xml'.split(' ') },
   { id: 'collection', es: 'Recopilación y construcción', en: 'Corpus collection and building', slugs: 'bootcat dmi_tcat rtweet t_hoarder tweepy'.split(' ') },
   { id: 'translation', es: 'Traducción y alineación', en: 'Translation and alignment', slugs: 'bitext2tmx lf_aligner multitrans plus_align stingray trados transit wordfast xbench'.split(' ') },
   { id: 'development', es: 'Programación y bibliotecas', en: 'Programming and libraries', slugs: 'gensim gephi ixa_pipes mallet nltk notepad_plus_plus perl rtweet stanza tweepy'.split(' ') },
 ];
+const CONCEPT_NETWORK_BY_TERM = {
+  frequency: 'frequencies', raw_frequency: 'frequencies', relative_frequency: 'frequencies',
+  normalized_frequency: 'frequencies', word_frequency: 'frequencies',
+  frequency_per_million_words: 'frequencies', frequency_list: 'frequencies',
+  corpus: 'corpora', general_corpus: 'corpora', specialised_corpus: 'corpora',
+  reference_corpus: 'corpora', speech_corpus: 'corpora', written_corpus: 'corpora',
+  parallel_corpus: 'corpora', learner_corpus: 'corpora', historical_corpus: 'corpora',
+  monolingual_corpus: 'corpora', bilingual_corpus: 'corpora', multilingual_corpus: 'corpora',
+  comparable_corpus: 'corpora', annotated_corpus: 'corpora', diachronic_corpus: 'corpora',
+  alignment: 'corpora', annotation: 'annotation', annotation_scheme: 'annotation',
+  annotation_tool: 'annotation', dependency_parsing: 'annotation', inline_annotation: 'annotation',
+  inter_annotator_agreement: 'annotation', lemmatisation: 'annotation',
+  morphological_annotation: 'annotation', named_entity_recognition: 'annotation',
+  parsing: 'annotation', word_class: 'annotation', pos_tagging: 'annotation',
+  pragmatic_annotation: 'annotation', semantic_annotation: 'annotation',
+  syntactic_annotation: 'annotation', tagger: 'annotation', treebank: 'annotation',
+};
 
 let lang = localStorage.getItem('glicor-lang') || 'es';
 let ALL_ENTRIES = [];      // solo las de esta vista
@@ -110,9 +128,14 @@ function isConsolidated(v) {
   return v.consolidated === true;
 }
 
-function relationLabel(v) {
+function relationLabel(v, isEntity = false) {
   if (isConsolidated(v)) return lang === 'es' ? 'variante denominativa' : 'denominative variant';
-  if (v.rel === 'variante_denominativa') return lang === 'es' ? 'sinónimo' : 'synonym';
+  if (isEntity && ['variante_denominativa', 'sinonimo'].includes(v.rel)) {
+    return lang === 'es' ? 'variante' : 'variant';
+  }
+  if (v.rel === 'variante_denominativa') {
+    return lang === 'es' ? 'sinónimo' : 'synonym';
+  }
   return ((NORM.relaciones || {})[v.rel] || {})[lang] || v.rel.replace(/_/g, ' ');
 }
 
@@ -365,26 +388,27 @@ function renderEntries(list) {
     const esSrcM = cleanHtml.match(/<h3[^>]*>Fuentes del corpus \(ES\) \/ Corpus sources \(ES\)<\/h3>\s*(<ul>[\s\S]*?<\/ul>)/);
     cleanHtml = cleanHtml.replace(/<h3[^>]*>Fuentes del corpus \((?:EN|ES)\) \/ Corpus sources \((?:EN|ES)\)<\/h3>\s*<ul>[\s\S]*?<\/ul>/g, '');
 
+    const parseSource = source => {
+      const parts = String(source || '').split('_');
+      const year = parts[0] || '';
+      const authors = parts[1] || '';
+      const title = parts.slice(2).join(': ');
+      return `${authors}${year ? ` (${year})` : ''}${title ? `. <em>${title}</em>` : ''}`;
+    };
     const parseBiblio = (ulHtml) => {
       const refs = [], seen = new Set();
       ulHtml.replace(/<li>([\s\S]*?)<\/li>/g, (_, li) => {
         const attrM = li.match(/<em>\(([^)]+)\)<\/em>/);
-        if (!attrM || seen.has(attrM[1])) return;
+        if (!attrM || /^(?:source|fuente)$/i.test(attrM[1].trim()) || seen.has(attrM[1])) return;
         seen.add(attrM[1]);
-        const parts = attrM[1].split('_');
-        const authors = parts[1] || '', year = parts[0] || '', title = parts.slice(2).join(': ') || '';
-        let entry = authors ? `${authors} (${year})` : `(${year})`;
-        if (title) entry += `. <em>${title}</em>`;
-        refs.push(`<li>${entry}</li>`);
+        refs.push(`<li>${parseSource(attrM[1])}</li>`);
       });
       return refs;
     };
-    const biblioItems = [
+    let biblioItems = [
       ...(enSrcM ? parseBiblio(enSrcM[1]) : []),
       ...(esSrcM ? parseBiblio(esSrcM[1]) : []),
     ];
-    // Deduplicar por texto completo
-    const biblioUniq = [...new Map(biblioItems.map(x => [x, x])).values()];
 
     // 4. Concordancias KWIC desde concordances.json
     const activeLang = searchMode === 'en' ? 'en' : 'es';
@@ -393,15 +417,31 @@ function renderEntries(list) {
       .flatMap(s => (ALL_CONCORDANCES[s] || {})[activeLang] || [])
       .filter(c => { const k = c.left + c.keyword + c.right; if (concSeen.has(k)) return false; concSeen.add(k); return true; });
 
+    // Si la ficha no incluye referencias bibliográficas, usar las fuentes de sus
+    // concordancias. Para recursos, el sitio oficial también documenta la ficha.
+    if (!biblioItems.length) {
+      const sourceSlugs = [e.slug, ...(e.aliases || [])];
+      const corpusSources = [...new Set(sourceSlugs.flatMap(s => ['en', 'es']
+        .flatMap(lng => (ALL_CONCORDANCES[s] || {})[lng] || [])
+        .map(c => c.source).filter(Boolean)))];
+      biblioItems = corpusSources.map(source => `<li>${parseSource(source)}</li>`);
+    }
+    if (!biblioItems.length && e.url) {
+      biblioItems = [`<li><a href="${e.url}" target="_blank" rel="noopener">${e.url}</a></li>`];
+    }
+    const biblioUniq = [...new Map(biblioItems.map(x => [x, x])).values()];
+
     const makeConcItem = c =>
       `<li><span class="kwic-line">${c.left}<strong class="kwic-key">${c.keyword}</strong>${c.right}</span><br><span class="src-attr">${c.source}</span></li>`;
 
     const uid          = e.slug;
-    const fuentesLabel = lang === 'es' ? 'Fuentes de la definición' : 'Definition sources';
+    const isEntity = (e.type || 'term') === 'entity';
+    const fuentesLabel = isEntity
+      ? (lang === 'es' ? 'Fuentes de la ficha' : 'Entry sources')
+      : (lang === 'es' ? 'Fuentes de la definición' : 'Definition sources');
     const concordLabel = lang === 'es' ? 'Concordancias' : 'Concordances';
 
-    const isEntity = (e.type || 'term') === 'entity';
-    if (biblioUniq.length > 0 && !isEntity) {
+    if (biblioUniq.length > 0) {
       cleanHtml += `<details class="sources-details" id="biblio-${uid}">
         <summary class="sources-summary">${fuentesLabel}</summary>
         <div class="sources-inner"><ul class="src-panel">${biblioUniq.join('')}</ul></div>
@@ -439,7 +479,7 @@ function renderEntries(list) {
 
     // ── Tabla de frecuencias ──
     let freqHtml = '';
-    if (e.freq && (e.freq.en || e.freq.es)) {
+    if (!isEntity && e.freq && (e.freq.en || e.freq.es)) {
       const freqTitle = lang === 'es' ? 'Frecuencia en corpus' : 'Corpus frequency';
       const colAbs = lang === 'es' ? 'Frec. abs.' : 'Abs. freq.';
       const colRel = lang === 'es' ? 'Frec. rel.' : 'Rel. freq.';
@@ -475,21 +515,23 @@ function renderEntries(list) {
       const hit = vars.find(v => v.form.toLowerCase().includes(q));
       if (hit) {
         foundByHtml = lang === 'es'
-          ? `<p class="found-by">Has buscado «${hit.form}» (${relationLabel(hit)}): remite a esta entrada.</p>`
-          : `<p class="found-by">You searched for «${hit.form}» (${relationLabel(hit)}): it points to this entry.</p>`;
+          ? `<p class="found-by">Has buscado «${hit.form}» (${relationLabel(hit, isEntity)}): remite a esta entrada.</p>`
+          : `<p class="found-by">You searched for «${hit.form}» (${relationLabel(hit, isEntity)}): it points to this entry.</p>`;
       }
     }
 
     // ── Variantes y sinónimos unificados en esta entrada ──
     let variantsHtml = '';
     if (vars.length) {
-      const title = lang === 'es' ? 'Variantes y sinónimos' : 'Variants and synonyms';
+      const title = isEntity
+        ? (lang === 'es' ? 'Variantes' : 'Variants')
+        : (lang === 'es' ? 'Variantes y sinónimos' : 'Variants and synonyms');
       const docsLbl = lang === 'es' ? 'doc.' : 'docs';
       const undocumented = lang === 'es' ? 'no documentada en el corpus' : 'not attested in the corpus';
       variantsHtml = `<div class="variants-section">
         <span class="equiv-label">${title}</span>
-        <div class="variant-list">${vars.map(v => `<button type="button" class="variant-chip${isConsolidated(v) ? ' consolidated' : ''}" onclick="searchForVariant('${encodeURIComponent(v.form).replace(/'/g, '%27')}')">${v.form} <span class="variant-rel">${relationLabel(v)} · ${
-          v.n ? `${fmtNum(v.n)} · ${v.docs} ${docsLbl}` : undocumented}</span></button>`).join('')}
+        <div class="variant-list">${vars.map(v => `<button type="button" class="variant-chip${isConsolidated(v) ? ' consolidated' : ''}" onclick="searchForVariant('${encodeURIComponent(v.form).replace(/'/g, '%27')}')">${v.form} <span class="variant-rel">${relationLabel(v, isEntity)}${isEntity ? '' : ` · ${
+          v.n ? `${fmtNum(v.n)} · ${v.docs} ${docsLbl}` : undocumented}`}</span></button>`).join('')}
         </div>
       </div>`;
     }
@@ -517,7 +559,12 @@ function renderEntries(list) {
           : 'Terminological gap: only the loanword is attested in the Spanish corpus.'}</p>`
       : '';
 
-    cleanHtml = foundByHtml + loanGapHtml + expansionHtml + linkHtml + equivHtml + variantsHtml + notesHtml + cleanHtml + freqHtml;
+    const networkId = CONCEPT_NETWORK_BY_TERM[e.slug];
+    const conceptNetworkHtml = networkId
+      ? `<p class="concept-network-link"><a href="redes.html#${networkId}">${lang === 'es' ? 'Ver en la red conceptual' : 'View in concept network'} ↗</a></p>`
+      : '';
+
+    cleanHtml = foundByHtml + loanGapHtml + expansionHtml + linkHtml + equivHtml + conceptNetworkHtml + variantsHtml + notesHtml + cleanHtml + freqHtml;
 
     const cleanEquiv = cleanTerm(e, equivTerm);
     const equivInHeader = showEquiv ? `<span class="entry-translation">${cleanEquiv}</span>` : '';

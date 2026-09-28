@@ -1,7 +1,0 @@
-lengua,tipo_de_texto,n_doc,tokens,media,desv_tipica,pct_tokens,tokens_tesis,diferencia
-en,Capítulos de libro,6,85224,14204,4897.6,5.5,83815,1409
-en,Libros/manuales,7,1103371,157624.4,37058.4,71.0,1007533,95838
-en,Artículos de revista,37,364634,9855.0,4835.4,23.5,356935,7699
-es,Capítulos de libro,28,385955,13784.1,19774.7,40.4,385955,0
-es,Libros/manuales,4,367325,91831.2,102450.8,38.5,367326,-1
-es,Artículos de revista,18,201662,11203.4,3475.3,21.1,201662,0

@@ -2325,8 +2325,15 @@
       "formas": {
         "en": [
           {
-            "forma": "Lesk algorithm",
+            "forma": "Lesk",
             "relacion": "lema",
+            "cuenta": [
+              "Lesk"
+            ]
+          },
+          {
+            "forma": "Lesk algorithm",
+            "relacion": "variante_denominativa",
             "cuenta": [
               "Lesk algorithm",
               "Lesk's algorithm"
@@ -2335,23 +2342,31 @@
         ],
         "es": [
           {
-            "forma": "algoritmo de Lesk",
-            "relacion": "sinonimo",
+            "forma": "Lesk",
+            "relacion": "lema",
             "cuenta": [
-              "algoritmo de Lesk"
+              "Lesk"
             ]
           },
           {
-            "forma": "Lesk",
-            "relacion": "reduccion",
+            "forma": "algoritmo de Lesk",
+            "relacion": "variante_denominativa",
             "cuenta": [
-              "Lesk"
+              "algoritmo de Lesk"
             ]
           }
         ]
       },
       "origen": "es",
-      "redaccion": "claude"
+      "redaccion": "claude",
+      "principal": {
+        "en": "Lesk",
+        "es": "Lesk"
+      },
+      "motivo_principal": {
+        "es": "Decisión expresa de la autora: el recurso se cita por el nombre propio «Lesk».",
+        "en": "Explicit decision by the author: the resource is cited by the proper name «Lesk»."
+      }
     },
     {
       "slug": "frequency_per_million_words",
@@ -3637,10 +3652,10 @@
             ]
           },
           {
-            "forma": "MUltilingual Student Translation",
+            "forma": "Multilingual Student Translation",
             "relacion": "forma_desarrollada",
             "cuenta": [
-              "MUltilingual Student Translation"
+              "Multilingual Student Translation"
             ]
           }
         ],
@@ -3662,7 +3677,14 @@
         ]
       },
       "origen": "es",
-      "redaccion": "claude"
+      "redaccion": "claude",
+      "principal": {
+        "en": "MUST"
+      },
+      "motivo_principal": {
+        "es": "Decisión expresa de la autora: la sigla es la forma principal también en inglés.",
+        "en": "Explicit decision by the author: the acronym is the main form in English too."
+      }
     },
     {
       "slug": "ode",
@@ -6258,9 +6280,6 @@
     "splloc": [
       "Spanish Learner Language Oral Corpora"
     ],
-    "must": [
-      "MUltilingual Student Translation"
-    ],
     "ode": [
       "Oralia Diacrónica del Español"
     ],
@@ -6416,6 +6435,18 @@
         "de": "término (PROC-LIN)",
         "a": "entidad (Herramientas y software)",
         "motivo": "Es el nombre propio de un programa (algoritmo implementado en una herramienta), como las demás herramientas del índice de recursos."
+      },
+      {
+        "tesis": "EAGLES, HTML, SGML, TEI, UTF-8, XML, Universal Dependencies, Universal POS",
+        "de": "término (Tecnología y formatos)",
+        "a": "entidad (Estándares y formatos técnicos)",
+        "motivo": "Decisión de la autora: son nombres propios de estándares y formatos, no conceptos."
+      },
+      {
+        "tesis": "algoritmo de Lesk",
+        "de": "término (Procesamiento lingüístico)",
+        "a": "entidad (Anotación y procesamiento lingüístico), con «Lesk» como forma principal",
+        "motivo": "Decisión de la autora: se trata como recurso con nombre propio."
       }
     ],
     "descartadas": [
@@ -6436,6 +6467,21 @@
         ],
         "motivo": "Parecen variantes, pero el corpus las distingue expresamente (Bernal Chávez y Hincapié): dos entradas."
       }
+    ],
+    "anadidas": [
+      {
+        "glosario": "corpus query language",
+        "motivo": "No está en el Apéndice III, pero se documenta en el corpus (lenguaje de consulta, Corpus Query Language): se mantiene."
+      },
+      {
+        "glosario": "NOW Corpus",
+        "motivo": "No está en el Apéndice III, pero se documenta en el corpus (NOW, News on the Web): se mantiene."
+      }
     ]
+  },
+  "categorias_entidades_autora": {
+    "_nota": "Categorías de entidades que no están en la tesis, añadidas por la autora en septiembre de 2026.",
+    "Estándares y formatos técnicos": "Technical standards and formats",
+    "Anotación y procesamiento lingüístico": "Annotation and language processing"
   }
 }
