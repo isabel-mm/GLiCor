@@ -146,10 +146,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "El modelo contiene varios parámetros de los cuales depende la exactitud de clasificación.",
-      "source": "2022_Martí, M. A., Taulé, M._Desarrollos tecnológicos de la lingüística de corpus en español"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "El modelo contiene varios parámetros de los cuales depende la exactitud de clasificación.",
+        "source": "2022_Martí, M. A., Taulé, M._Desarrollos tecnológicos de la lingüística de corpus en español"
+      },
+      "en": {
+        "type": "uso",
+        "text": "Our preliminary evaluation results show that the reported accuracy of TT, where punctuation marks are included, is only achieved under ideal conditions and is contingent upon high quality annotations and extensive training data of the same genre as the corpus.",
+        "source": "2017_Doval, I._POS-tagging a bilingual parallel corpus. Methods and challenges_Research in Corpus Linguistics"
+      }
     }
   },
   {
@@ -371,10 +378,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Este tipo de alineación sirve, por ejemplo, para comparar el original y la traducción de un texto.",
-      "source": "2015_Sierra Martínez, G. E._Introducción a los corpus lingüísticos"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Este tipo de alineación sirve, por ejemplo, para comparar el original y la traducción de un texto.",
+        "source": "2015_Sierra Martínez, G. E._Introducción a los corpus lingüísticos"
+      },
+      "en": {
+        "type": "uso",
+        "text": "If a translated corpus demands a high level of faithfulness to the original source text, as happens in the case of technical and legal texts, the point of departure is a close alignment of the two corpora, considering sentences or even the words as the basic translation units.",
+        "source": "2018_Sekhar Dash, N., Arulmozi, S._History, Features, and Typology of Language Corpora"
+      }
     }
   },
   {
@@ -464,10 +478,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "En términos generales, cada palabra de un corpus anotado tiene una o varias etiquetas que indican sus características.",
-      "source": "2018_Bernal Chávez, J. A. . Hincapié Moreno, D. A._Lingüística de corpus"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "En términos generales, cada palabra de un corpus anotado tiene una o varias etiquetas que indican sus características.",
+        "source": "2018_Bernal Chávez, J. A. . Hincapié Moreno, D. A._Lingüística de corpus"
+      },
+      "en": {
+        "type": "uso",
+        "text": "In general, an annotated corpus is a reformed version of a written or spoken corpus in which additional information, which is not directly available from the text itself, is encoded with text from outside.",
+        "source": "2018_Sekhar Dash, N., Arulmozi, S._History, Features, and Typology of Language Corpora"
+      }
     }
   },
   {
@@ -602,10 +623,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "La anotación consiste en la anexación de información adicional, generalmente gramatical, a las palabras que componen el corpus.",
-      "source": "2016_Zulaica Hernández, I._Lingüística de corpus"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "La anotación consiste en la anexación de información adicional, generalmente gramatical, a las palabras que componen el corpus.",
+        "source": "2016_Zulaica Hernández, I._Lingüística de corpus"
+      },
+      "en": {
+        "type": "uso",
+        "text": "IGT may contain other kinds of annotation as well, such as part of speech tagging, grammatical or constituency analysis, and prosodic information.",
+        "source": "2017_Gries, S. T., Berez, A. L._Linguistic Annotation in or for Corpus Linguistics"
+      }
     }
   },
   {
@@ -690,10 +718,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "La eficacia de un proceso automático de anotación dependerá pues del esquema de anotación y de la cantidad y calidad del corpus de entrenamiento; y de si ha sido posible una ulterior revisión manual de la anotación automática.",
-      "source": "2022_García Miguel J. M._Linguistica de corpus De los datos textuales a la teoría lingüística_Estudios de Lingüística del Español"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "La eficacia de un proceso automático de anotación dependerá pues del esquema de anotación y de la cantidad y calidad del corpus de entrenamiento; y de si ha sido posible una ulterior revisión manual de la anotación automática.",
+        "source": "2022_García Miguel J. M._Linguistica de corpus De los datos textuales a la teoría lingüística_Estudios de Lingüística del Español"
+      },
+      "en": {
+        "type": "uso",
+        "text": "In the context of corpus linguistics, this means annotating them according to an annotation scheme containing the operational definitions.",
+        "source": "2020_Stefanowitsch, A._Corpus Linguistics A guide to the methodology"
+      }
     }
   },
   {
@@ -787,10 +822,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Normalmente las herramientas de anotación son editores que permiten visualizar el texto y disponen de una lista de etiquetas predefinida.",
-      "source": "2022_Martí, M. A., Taulé, M._Desarrollos tecnológicos de la lingüística de corpus en español"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Normalmente las herramientas de anotación son editores que permiten visualizar el texto y disponen de una lista de etiquetas predefinida.",
+        "source": "2022_Martí, M. A., Taulé, M._Desarrollos tecnológicos de la lingüística de corpus en español"
+      },
+      "en": {
+        "type": "uso",
+        "text": "In the language-specific approach, researchers rely either on separate annotation tools (one per language involved) or on one single tool that is available for several languages, such as the TreeTagger (Schmid, 1994) or FreeLing (Padró & Stanilovsky, 2012) POS taggers.",
+        "source": "2020_Lefer, M. A._Parallel corpora"
+      }
     }
   },
   {
@@ -1029,10 +1071,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Por otro lado, la herramienta ofrece información sobre las agrupaciones frecuentes de palabras con base en varias medidas de asociación (información mutua, Z score, Log-likelihood).",
-      "source": "2015_Sierra Martínez, G. E._Introducción a los corpus lingüísticos"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Por otro lado, la herramienta ofrece información sobre las agrupaciones frecuentes de palabras con base en varias medidas de asociación (información mutua, Z score, Log-likelihood).",
+        "source": "2015_Sierra Martínez, G. E._Introducción a los corpus lingüísticos"
+      },
+      "en": {
+        "type": "uso",
+        "text": "A wide range of such association measures has been proposed and investigated.",
+        "source": "2020_Stefanowitsch, A._Corpus Linguistics A guide to the methodology"
+      }
     }
   },
   {
@@ -1118,10 +1167,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "La representatividad tiene relación directa con el equilibrio en la medida de que un corpus es capaz de reproducir las diferencias de las variables que se supone representa, en la proporción en la que ocurren en el estado natural de la lengua.",
-      "source": "2015_Molina Salinas, C., Sierra Martínez, G. E._Hacia una normalización de la frecuencia de los corpus CREA y CORDE_Signos"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "La representatividad tiene relación directa con el equilibrio en la medida de que un corpus es capaz de reproducir las diferencias de las variables que se supone representa, en la proporción en la que ocurren en el estado natural de la lengua.",
+        "source": "2015_Molina Salinas, C., Sierra Martínez, G. E._Hacia una normalización de la frecuencia de los corpus CREA y CORDE_Signos"
+      },
+      "en": {
+        "type": "uso",
+        "text": "One of the prime objectives of the ACE was to find a balance of genres represented in the Brown Corpus and the LOB Corpus, as well as to create a more or less equivalent set of 2,000 word samples for each of the text categories.",
+        "source": "2018_Sekhar Dash, N., Arulmozi, S._History, Features, and Typology of Language Corpora"
+      }
     },
     "term_note": {
       "es": "En los dos subcorpus la palabra también se usa en su sentido general, así que su frecuencia está inflada.",
@@ -1213,10 +1269,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Un corpus equilibrado contiene una variedad de documentos que se encuentran distribuidos en proporciones parecidas para cada uno de los tipos de documentos.",
-      "source": "2015_Sierra Martínez, G. E._Introducción a los corpus lingüísticos"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Un corpus equilibrado contiene una variedad de documentos que se encuentran distribuidos en proporciones parecidas para cada uno de los tipos de documentos.",
+        "source": "2015_Sierra Martínez, G. E._Introducción a los corpus lingüísticos"
+      },
+      "en": {
+        "type": "uso",
+        "text": "A large corpus does not necessarily imply representation of a language or language variety any better than a small but properly balanced corpus.",
+        "source": "2018_Sekhar Dash, N., Arulmozi, S._History, Features, and Typology of Language Corpora"
+      }
     }
   },
   {
@@ -1489,10 +1552,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Los corpus bilingües recogen muestras de dos lenguas que no necesariamente comparten criterios de selección o son traducciones.",
-      "source": "2018_Bernal Chávez, J. A. . Hincapié Moreno, D. A._Lingüística de corpus"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Los corpus bilingües recogen muestras de dos lenguas que no necesariamente comparten criterios de selección o son traducciones.",
+        "source": "2018_Bernal Chávez, J. A. . Hincapié Moreno, D. A._Lingüística de corpus"
+      },
+      "en": {
+        "type": "uso",
+        "text": "A befitting example of a bilingual corpus is the combination of the LOB Corpus and the Brown Corpus since both the corpora have followed the same design principles and have included the similar text samples published in the same year.",
+        "source": "2018_Sekhar Dash, N., Arulmozi, S._History, Features, and Typology of Language Corpora"
+      }
     }
   },
   {
@@ -2969,6 +3039,18 @@
     "gap": {
       "en": null,
       "es": null
+    },
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "En investigación humanística hay varias pruebas estadísticas especialmente comunes: aquellas que permiten comparar frecuencias de aparición o detectar correlaciones entre determinados fenómenos (Chi-cuadrado); […]",
+        "source": "2021_Cabedo Nebot, A., Recio Fernández, I._El hablar y la lingüística empírica"
+      },
+      "en": {
+        "type": "uso",
+        "text": "A chi-squared test compares expected and observed frequencies; greater value of the chi-squared statistic indicates an overall greater difference.",
+        "source": "2023_Barth, D., Schnell, S._Understanding Corpus Linguistics"
+      }
     }
   },
   {
@@ -3368,10 +3450,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Una rama de creciente importancia dentro de los estudios de corpus es el análisis de grupos o clustering, que se puede utilizar para la exploración de datos, así como también en los modelos de regresión.",
-      "source": "2022_Martí, M. A., Taulé, M._Desarrollos tecnológicos de la lingüística de corpus en español"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Una rama de creciente importancia dentro de los estudios de corpus es el análisis de grupos o clustering, que se puede utilizar para la exploración de datos, así como también en los modelos de regresión.",
+        "source": "2022_Martí, M. A., Taulé, M._Desarrollos tecnológicos de la lingüística de corpus en español"
+      },
+      "en": {
+        "type": "uso",
+        "text": "If so, you may want to partition the data points into classes with a method known as k-means clustering.",
+        "source": "2017_Desagulier, G._Corpus Linguistics and Statistics with R"
+      }
     }
   },
   {
@@ -3919,10 +4008,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "La coligación, por su parte, señala la ocurrencia entre una palabra y una categoría gramatical; es el caso de ella + verbo.",
-      "source": "2018_Bernal Chávez, J. A. . Hincapié Moreno, D. A._Lingüística de corpus"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "La coligación, por su parte, señala la ocurrencia entre una palabra y una categoría gramatical; es el caso de ella + verbo.",
+        "source": "2018_Bernal Chávez, J. A. . Hincapié Moreno, D. A._Lingüística de corpus"
+      },
+      "en": {
+        "type": "uso",
+        "text": "If you're interested in identifying the 'neighbours' of individual specific words, that is, potential collocations or colligations, it's far more useful to be able to specify the search term and investigate its behaviour with regard to other words that may surround it.",
+        "source": "2016_Weisser, M._Practical Corpus Linguistics. An Introduction to Corpus-Based Language Analysis"
+      }
     }
   },
   {
@@ -4011,10 +4107,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "En cambio, una palabra como timidez tiene más probabilidades de aparecer en el entorno de vencer que en otras partes del corpus, por lo que podemos decir que vencer la atrae y que timidez es un colocado de este verbo.",
-      "source": "2022_García Miguel J. M._Linguistica de corpus De los datos textuales a la teoría lingüística_Estudios de Lingüística del Español"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "En cambio, una palabra como timidez tiene más probabilidades de aparecer en el entorno de vencer que en otras partes del corpus, por lo que podemos decir que vencer la atrae y que timidez es un colocado de este verbo.",
+        "source": "2022_García Miguel J. M._Linguistica de corpus De los datos textuales a la teoría lingüística_Estudios de Lingüística del Español"
+      },
+      "en": {
+        "type": "uso",
+        "text": "What concordances, collocate lists and frequency lists have in common is that they are all ways of studying the distribution of linguistic elements in a corpus.",
+        "source": "2020_Stefanowitsch, A._Corpus Linguistics A guide to the methodology"
+      }
     }
   },
   {
@@ -4103,10 +4206,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "definitorio",
-      "text": "Sin embargo, las colocaciones, entendidas como en lingüística de corpus como coapariciones más frecuentes de lo esperable por el azar, son imprescindibles para conocer el significado y uso de las palabras.",
-      "source": "2022_García Miguel J. M._Linguistica de corpus De los datos textuales a la teoría lingüística_Estudios de Lingüística del Español"
+    "contexts": {
+      "es": {
+        "type": "definitorio",
+        "text": "Sin embargo, las colocaciones, entendidas como en lingüística de corpus como coapariciones más frecuentes de lo esperable por el azar, son imprescindibles para conocer el significado y uso de las palabras.",
+        "source": "2022_García Miguel J. M._Linguistica de corpus De los datos textuales a la teoría lingüística_Estudios de Lingüística del Español"
+      },
+      "en": {
+        "type": "uso",
+        "text": "Of particular prominence in corpus linguistics is the contexts of words, and related to this the corpus linguistic concepts of collocations.",
+        "source": "2023_Barth, D., Schnell, S._Understanding Corpus Linguistics"
+      }
     }
   },
   {
@@ -4215,10 +4325,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "En el estudio de colocaciones, la información mutua mide la fuerza de asociación entre dos palabras.",
-      "source": "2015_Sierra Martínez, G. E._Introducción a los corpus lingüísticos"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "En el estudio de colocaciones, la información mutua mide la fuerza de asociación entre dos palabras.",
+        "source": "2015_Sierra Martínez, G. E._Introducción a los corpus lingüísticos"
+      },
+      "en": {
+        "type": "uso",
+        "text": "Collocational strength is particularly relevant in corpus-based studies of lexical relations, for example, where collocations point to semantic differences between lexemes that are often thought of as synonyms […].",
+        "source": "2023_Barth, D., Schnell, S._Understanding Corpus Linguistics"
+      }
     }
   },
   {
@@ -4307,10 +4424,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "El corpus comparable por excelencia lo constituye el Translational English Corpus, que contiene más de seis millones de palabras de textos traducidos al inglés.",
-      "source": "2015_Sierra Martínez, G. E._Introducción a los corpus lingüísticos"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "El corpus comparable por excelencia lo constituye el Translational English Corpus, que contiene más de seis millones de palabras de textos traducidos al inglés.",
+        "source": "2015_Sierra Martínez, G. E._Introducción a los corpus lingüísticos"
+      },
+      "en": {
+        "type": "uso",
+        "text": "A comparable corpus does not contain translations of texts, but rather texts collected in a number of languages, and based on the same communicative function (Kenning 2010), much like the BACKBONE corpus discussed later.",
+        "source": "2016_Murphy, B., Riordan, E._Corpus types and uses"
+      }
     }
   },
   {
@@ -4383,10 +4507,15 @@
       "en": "propuesta",
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Es común encontrar los términos lingüística de corpus computacional y lingüística computacional de corpus, y es más común aún creer que se refieren a lo mismo, y si bien están altamente relacionados y ambas lingüísticas hacen uso la una de la otra, son términos diferentes.",
-      "source": "2018_Bernal Chávez, J. A. . Hincapié Moreno, D. A._Lingüística de corpus"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Es común encontrar los términos lingüística de corpus computacional y lingüística computacional de corpus, y es más común aún creer que se refieren a lo mismo, y si bien están altamente relacionados y ambas lingüísticas hacen uso la una de la otra, son términos diferentes.",
+        "source": "2018_Bernal Chávez, J. A. . Hincapié Moreno, D. A._Lingüística de corpus"
+      },
+      "en": {
+        "type": "no_documentado"
+      }
     },
     "term_note": {
       "es": "Distinción documentada en Bernal Chávez y Hincapié; no aparece en el subcorpus inglés.",
@@ -4468,10 +4597,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "La lingüística computacional toma los corpus como insumo para la creación de herramientas computacionales que permiten la búsqueda, la recuperación, el análisis y la explotación de datos contenidos en textos electrónicos.",
-      "source": "2018_Bernal Chávez, J. A. . Hincapié Moreno, D. A._Lingüística de corpus"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "La lingüística computacional toma los corpus como insumo para la creación de herramientas computacionales que permiten la búsqueda, la recuperación, el análisis y la explotación de datos contenidos en textos electrónicos.",
+        "source": "2018_Bernal Chávez, J. A. . Hincapié Moreno, D. A._Lingüística de corpus"
+      },
+      "en": {
+        "type": "uso",
+        "text": "The Brazilian Portuguese Corpus provides a large language database for Brazilian Portuguese as well as a set of software and tools for processing the corpus in various computational linguistics works.",
+        "source": "2018_Sekhar Dash, N., Arulmozi, S._History, Features, and Typology of Language Corpora"
+      }
     }
   },
   {
@@ -4677,10 +4813,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "definitorio",
-      "text": "En este sentido, uno de los usos más comunes de un corpus es la obtención de concordancias, que consisten en un listado de ocurrencias, presentado típicamente con una línea para cada ocurrencia, con la unidad buscada en el centro precedida y seguida Estudios de Lingüística del Español 45 (2022), pp. 11-42 © Estudios de Lingüística del Español 2022.",
-      "source": "2022_García Miguel J. M._Linguistica de corpus De los datos textuales a la teoría lingüística_Estudios de Lingüística del Español"
+    "contexts": {
+      "es": {
+        "type": "definitorio",
+        "text": "En este sentido, uno de los usos más comunes de un corpus es la obtención de concordancias, que consisten en un listado de ocurrencias, presentado típicamente con una línea para cada ocurrencia, con la unidad buscada en el centro precedida y seguida Estudios de Lingüística del Español 45 (2022), pp. 11-42 © Estudios de Lingüística del Español 2022.",
+        "source": "2022_García Miguel J. M._Linguistica de corpus De los datos textuales a la teoría lingüística_Estudios de Lingüística del Español"
+      },
+      "en": {
+        "type": "uso",
+        "text": "In corpus linguistics lingo, a concordance is also known as a KWIC display, where the acronym stands for 'Key Word(s) In Context'.",
+        "source": "2017_Desagulier, G._Corpus Linguistics and Statistics with R"
+      }
     }
   },
   {
@@ -4793,10 +4936,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Los programas de concordancias corresponden a herramientas computacionales de análisis textual, que generan listas de ocurrencias de palabras que generalmente van juntas.",
-      "source": "2018_Bernal Chávez, J. A. . Hincapié Moreno, D. A._Lingüística de corpus"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Los programas de concordancias corresponden a herramientas computacionales de análisis textual, que generan listas de ocurrencias de palabras que generalmente van juntas.",
+        "source": "2018_Bernal Chávez, J. A. . Hincapié Moreno, D. A._Lingüística de corpus"
+      },
+      "en": {
+        "type": "uso",
+        "text": "Most concordancers are also stream-based, which means that they 'suppress' line breaks by replacing them with spaces, so that the text is essentially read as a continuous stream of words.",
+        "source": "2016_Weisser, M._Practical Corpus Linguistics. An Introduction to Corpus-Based Language Analysis"
+      }
     }
   },
   {
@@ -4875,6 +5025,16 @@
     "gap": {
       "en": null,
       "es": "propuesta"
+    },
+    "contexts": {
+      "es": {
+        "type": "no_documentado"
+      },
+      "en": {
+        "type": "uso",
+        "text": "The confidence interval is the window within which we can be 95% certain that the true population mean falls.",
+        "source": "2022_Egbert_ J. Biber_ D. y Gray_ B._Designing and Evaluating Language Corpora"
+      }
     }
   },
   {
@@ -4963,10 +5123,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Con el empleo de una stoplist, aplicado a un corpus técnico, se puede conocer la terminología mediante la comparación de las palabras de contenido de ese corpus contra las de un corpus de otro tema ajeno.",
-      "source": "2015_Sierra Martínez, G. E._Introducción a los corpus lingüísticos"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Con el empleo de una stoplist, aplicado a un corpus técnico, se puede conocer la terminología mediante la comparación de las palabras de contenido de ese corpus contra las de un corpus de otro tema ajeno.",
+        "source": "2015_Sierra Martínez, G. E._Introducción a los corpus lingüísticos"
+      },
+      "en": {
+        "type": "uso",
+        "text": "The same thing happens with our use of function words and content words: the highly frequent function words create coherence in the discourse, while the less frequent content words make the writing flexible and precise.",
+        "source": "2021_Kretzschmar, W. A._Complex systems for corpus linguists_ICAME"
+      }
     }
   },
   {
@@ -5681,10 +5848,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Los corpus electrónicos modernos incluyen interfaces de búsqueda que permiten al usuario acceder rápidamente a los datos de interés para su estudio, pudiendo aplicar filtros de búsqueda por palabras, categoría gramatical, etc.",
-      "source": "2016_Zulaica Hernández, I._Lingüística de corpus"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Los corpus electrónicos modernos incluyen interfaces de búsqueda que permiten al usuario acceder rápidamente a los datos de interés para su estudio, pudiendo aplicar filtros de búsqueda por palabras, categoría gramatical, etc.",
+        "source": "2016_Zulaica Hernández, I._Lingüística de corpus"
+      },
+      "en": {
+        "type": "uso",
+        "text": "A corpus is a collection of a fairly large number of examples (or, in corpus terms texts) that share similar contextual or situational characteristics.",
+        "source": "2022_Egbert_ J. Biber_ D. y Gray_ B._Designing and Evaluating Language Corpora"
+      }
     }
   },
   {
@@ -5794,10 +5968,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Como vemos, BootCaT permite seguir un método rápido, efectivo y versátil para la construcción de corpus, aplicable tanto a pequeños corpus especializados como a corpus generales de mayor dimensión y número de idiomas (Kilgarriff y otros, 2011).",
-      "source": "2022_Flores Acuña, E._Compilación de un corpus de especialidad con BootCat para la traducción jurídica italiano-español. El caso de un contrato de agencia_Onomázein"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Como vemos, BootCaT permite seguir un método rápido, efectivo y versátil para la construcción de corpus, aplicable tanto a pequeños corpus especializados como a corpus generales de mayor dimensión y número de idiomas (Kilgarriff y otros, 2011).",
+        "source": "2022_Flores Acuña, E._Compilación de un corpus de especialidad con BootCat para la traducción jurídica italiano-español. El caso de un contrato de agencia_Onomázein"
+      },
+      "en": {
+        "type": "uso",
+        "text": "For any of these types, corpus building involves the selection and/or collection of texts or text excerpts and their inclusion in some form of data infrastructure.",
+        "source": "2023_Barth, D., Schnell, S._Understanding Corpus Linguistics"
+      }
     }
   },
   {
@@ -5886,10 +6067,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Atkins, Clear y Ostler (1992), en su guía para la elaboración y el diseño de corpus, tampoco precisan el tamaño más conveniente para estos y puntualizan que se trata de una cuestión que todavía está esperando a ser resuelta.",
-      "source": "2017_González Fernández, A._La web como corpus. Un esbozo_LENGUA Y HABLA"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Atkins, Clear y Ostler (1992), en su guía para la elaboración y el diseño de corpus, tampoco precisan el tamaño más conveniente para estos y puntualizan que se trata de una cuestión que todavía está esperando a ser resuelta.",
+        "source": "2017_González Fernández, A._La web como corpus. Un esbozo_LENGUA Y HABLA"
+      },
+      "en": {
+        "type": "uso",
+        "text": "The documentation about the corpus design and contents as well as the demonstration materials for using the corpus in English Language Teaching are provided in a separate database for general access and utilization.",
+        "source": "2018_Sekhar Dash, N., Arulmozi, S._History, Features, and Typology of Language Corpora"
+      }
     }
   },
   {
@@ -5971,10 +6159,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "La lingüística de corpus actual es una mezcla de conocimiento lingüístico y conocimiento sobre procesamiento de lenguaje natural.",
-      "source": "2023_Lázaro, J._Los corpus como fuente de datos lexicográficos"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "La lingüística de corpus actual es una mezcla de conocimiento lingüístico y conocimiento sobre procesamiento de lenguaje natural.",
+        "source": "2023_Lázaro, J._Los corpus como fuente de datos lexicográficos"
+      },
+      "en": {
+        "type": "uso",
+        "text": "As corpus linguistics is a methodology that allows us to develop insights into how language works by 'consulting' real-life data, it should be fairly obvious that we cannot learn how to do corpus research on a purely theoretical basis.",
+        "source": "2016_Weisser, M._Practical Corpus Linguistics. An Introduction to Corpus-Based Language Analysis"
+      }
     }
   },
   {
@@ -6116,10 +6311,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "CWB posee un lenguaje de consulta específico y usa un formato de entrada en forma vertical.",
-      "source": "2016_Molés-Cases, T._Compilación y análisis de un corpus paralelo para la investigación en traducción_Revista de Lingüística teórica y aplicada"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "CWB posee un lenguaje de consulta específico y usa un formato de entrada en forma vertical.",
+        "source": "2016_Molés-Cases, T._Compilación y análisis de un corpus paralelo para la investigación en traducción_Revista de Lingüística teórica y aplicada"
+      },
+      "en": {
+        "type": "uso",
+        "text": "The two programs just mentioned share a query syntax called CQP (for “Corpus Query Processor”) in the Corpus Workbench and CQL (for “Corpus Query Language”) in the (No)Sketch Engine.",
+        "source": "2020_Stefanowitsch, A._Corpus Linguistics A guide to the methodology"
+      }
     }
   },
   {
@@ -6207,10 +6409,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Dado que la importancia de esa cifra depende también del tamaño del corpus, es habitual trabajar con la que se llama frecuencia normalizada o bien frecuencia relativa.",
-      "source": "2021_Rojo, G._Introducción a la lingüística de corpus en español"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Dado que la importancia de esa cifra depende también del tamaño del corpus, es habitual trabajar con la que se llama frecuencia normalizada o bien frecuencia relativa.",
+        "source": "2021_Rojo, G._Introducción a la lingüística de corpus en español"
+      },
+      "en": {
+        "type": "uso",
+        "text": "On the one hand, corpus size correlates with representativeness only to the extent that we take corpus diversity into account.",
+        "source": "2020_Stefanowitsch, A._Corpus Linguistics A guide to the methodology"
+      }
     }
   },
   {
@@ -6324,10 +6533,17 @@
         "en": "Not all authors distinguish the two approaches. In the strict sense they are opposed: the corpus-based approach tests prior hypotheses or categories against the data, whereas the corpus-driven approach lets categories emerge from the data. But «corpus-based» is also used as a hypernym for any research that uses corpora, and in that use it covers the corpus-driven approach."
       }
     ],
-    "context": {
-      "type": "uso",
-      "text": "En primer lugar, se exponen los antecedentes previos sobre la investigación basada en corpus lingüísticos en la ciudad de Málaga y se reflexiona sobre las ventajas que pueden ofrecer en la actualidad los corpus creados a partir de datos de inmediatez oral como los que nos ofrece WhatsApp.",
-      "source": "2024_Molina García, A., Ávila Muñoz, A. M._Propuesta de construcción de nuevos corpus. Los mensajes de voz de WhatsApp como fuente de datos lingüísticos_Oralia"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "En primer lugar, se exponen los antecedentes previos sobre la investigación basada en corpus lingüísticos en la ciudad de Málaga y se reflexiona sobre las ventajas que pueden ofrecer en la actualidad los corpus creados a partir de datos de inmediatez oral como los que nos ofrece WhatsApp.",
+        "source": "2024_Molina García, A., Ávila Muñoz, A. M._Propuesta de construcción de nuevos corpus. Los mensajes de voz de WhatsApp como fuente de datos lingüísticos_Oralia"
+      },
+      "en": {
+        "type": "uso",
+        "text": "The corpus-based approach allows us to incorporate the information about the frequencies of particular functions, since some functions and meanings are common and some are rare.",
+        "source": "2021_Levisha, N._Corpus-based typology. Applications, challenges and some solutions"
+      }
     }
   },
   {
@@ -6406,10 +6622,15 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Es común encontrar los términos lingüística de corpus computacional y lingüística computacional de corpus, y es más común aún creer que se refieren a lo mismo, y si bien están altamente relacionados y ambas lingüísticas hacen uso la una de la otra, son términos diferentes.",
-      "source": "2018_Bernal Chávez, J. A. . Hincapié Moreno, D. A._Lingüística de corpus"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Es común encontrar los términos lingüística de corpus computacional y lingüística computacional de corpus, y es más común aún creer que se refieren a lo mismo, y si bien están altamente relacionados y ambas lingüísticas hacen uso la una de la otra, son términos diferentes.",
+        "source": "2018_Bernal Chávez, J. A. . Hincapié Moreno, D. A._Lingüística de corpus"
+      },
+      "en": {
+        "type": "solo_titulos"
+      }
     },
     "term_note": {
       "es": "Distinción documentada en Bernal Chávez y Hincapié.",
@@ -6530,10 +6751,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "definitorio",
-      "text": "La confluencia de ambas áreas, los estudios descriptivos sobre traducción y la lingüística de corpus ha dado lugar a los Estudios de la Traducción basados en Corpus (ETBC) según Laviosa (2002) o también denominados “Estudios de Traducción con Corpus” (Corpas Pastor 2008).",
-      "source": "2022_Molina Plaza, S._Herramientas, recursos y metodologías de análisis para la traducción mediante corpus lingüísticos del español"
+    "contexts": {
+      "es": {
+        "type": "definitorio",
+        "text": "La confluencia de ambas áreas, los estudios descriptivos sobre traducción y la lingüística de corpus ha dado lugar a los Estudios de la Traducción basados en Corpus (ETBC) según Laviosa (2002) o también denominados “Estudios de Traducción con Corpus” (Corpas Pastor 2008).",
+        "source": "2022_Molina Plaza, S._Herramientas, recursos y metodologías de análisis para la traducción mediante corpus lingüísticos del español"
+      },
+      "en": {
+        "type": "uso",
+        "text": "As is often the case in corpus-based translation studies, parallel data are used with a view to identifying the source-text items/structures that have triggered the use of a given item/structure in the translations (in this case, the presence of a trigger term in the English source texts, such as unit, job, or team).",
+        "source": "2020_Lefer, M. A._Parallel corpora"
+      }
     },
     "term_note": {
       "es": "En español la sigla ETBC se introduce a partir de la forma desarrollada; «estudios de traducción con corpus» es la denominación alternativa de Corpas Pastor. Se mantiene como principal la forma desarrollada, como en «relación entre types y tokens».",
@@ -6672,10 +6900,17 @@
         "en": "Not all authors distinguish the two approaches. In the strict sense they are opposed: the corpus-based approach tests prior hypotheses or categories against the data, whereas the corpus-driven approach lets categories emerge from the data. But «corpus-based» is also used as a hypernym for any research that uses corpora, and in that use it covers the corpus-driven approach."
       }
     ],
-    "context": {
-      "type": "uso",
-      "text": "Por otro lado, una actitud distinta frente a los datos empíricos se refleja en la aproximación “corpus-driven”: en este caso, la teoría se construye a partir de los datos que contiene el corpus.",
-      "source": "2022_Martí, M. A., Taulé, M._Desarrollos tecnológicos de la lingüística de corpus en español"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Por otro lado, una actitud distinta frente a los datos empíricos se refleja en la aproximación “corpus-driven”: en este caso, la teoría se construye a partir de los datos que contiene el corpus.",
+        "source": "2022_Martí, M. A., Taulé, M._Desarrollos tecnológicos de la lingüística de corpus en español"
+      },
+      "en": {
+        "type": "uso",
+        "text": "By way of contrast, corpus-driven studies, in which it is claimed that corpus data are explored in a theory free, naive fashion, are to all intents and purposes impossible.",
+        "source": "2022_McEnery_ T., Brezina, V._Fundamental Principles of Corpus Linguistics"
+      }
     }
   },
   {
@@ -7288,10 +7523,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Por lo tanto, los conjuntos de datos obtenidos consisten en producciones de estudiantes que han adquirido el idioma de destino en diferentes contextos.",
-      "source": "2023_Rapún Mombiela, V._CLEAE. Corpus Longitudinal de Español de Aprendientes Estonios"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Por lo tanto, los conjuntos de datos obtenidos consisten en producciones de estudiantes que han adquirido el idioma de destino en diferentes contextos.",
+        "source": "2023_Rapún Mombiela, V._CLEAE. Corpus Longitudinal de Español de Aprendientes Estonios"
+      },
+      "en": {
+        "type": "uso",
+        "text": "A dataset, on the other hand, is a collection of data of any kind either from language or from any other domain for that matter.",
+        "source": "2018_Sekhar Dash, N., Arulmozi, S._History, Features, and Typology of Language Corpora"
+      }
     }
   },
   {
@@ -7383,10 +7625,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Se tratan de paquetes de diferentes aplicaciones de procesamiento del lenguaje natural que incluyen desde lematización y categorización sintáctica hasta análisis sintáctico de dependencias.",
-      "source": "2022_Martí, M. A., Taulé, M._Desarrollos tecnológicos de la lingüística de corpus en español"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Se tratan de paquetes de diferentes aplicaciones de procesamiento del lenguaje natural que incluyen desde lematización y categorización sintáctica hasta análisis sintáctico de dependencias.",
+        "source": "2022_Martí, M. A., Taulé, M._Desarrollos tecnológicos de la lingüística de corpus en español"
+      },
+      "en": {
+        "type": "uso",
+        "text": "Last but not least, the accuracy of dependency parsing is now such that grammatical function identification can also be by and large carried out automatically.",
+        "source": "2016_Poesio, M., Pradhan, S., Recasens, M., Rodríguez, K., Versley, Y._Annotated Corpora and Annotation Tools"
+      }
     }
   },
   {
@@ -7466,10 +7715,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Las estadísticas descriptivas como las sumas, los promedios y la desviación estándar permiten un análisis objetivo mediante el uso de múltiples observaciones.",
-      "source": "2022_Martí, M. A., Taulé, M._Desarrollos tecnológicos de la lingüística de corpus en español"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Las estadísticas descriptivas como las sumas, los promedios y la desviación estándar permiten un análisis objetivo mediante el uso de múltiples observaciones.",
+        "source": "2022_Martí, M. A., Taulé, M._Desarrollos tecnológicos de la lingüística de corpus en español"
+      },
+      "en": {
+        "type": "uso",
+        "text": "In this chapter, we review two kinds of descriptive statistics: measures of central tendency and measures of dispersion.",
+        "source": "2017_Desagulier, G._Corpus Linguistics and Statistics with R"
+      }
     }
   },
   {
@@ -7541,6 +7797,16 @@
     "gap": {
       "en": null,
       "es": "propuesta"
+    },
+    "contexts": {
+      "es": {
+        "type": "no_documentado"
+      },
+      "en": {
+        "type": "uso",
+        "text": "Gries (2008: 415–19) introduced the 'deviation of proportions' (dp) as a dispersion index.",
+        "source": "2025_Sonnig, L._Advancing our understanding ofdispersion measures in corpus research_Corpora"
+      }
     }
   },
   {
@@ -7628,10 +7894,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Por una parte, un corpus diacrónico es un conjunto de textos de diferentes épocas, diseñado para poder observar distintos aspectos de la evolución de una lengua, en nuestro caso el español.",
-      "source": "2022_Sánchez Lancis, C._Corpus diacrónicos del español de España"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Por una parte, un corpus diacrónico es un conjunto de textos de diferentes épocas, diseñado para poder observar distintos aspectos de la evolución de una lengua, en nuestro caso el español.",
+        "source": "2022_Sánchez Lancis, C._Corpus diacrónicos del español de España"
+      },
+      "en": {
+        "type": "uso",
+        "text": "In fact, scientific analysis of diachronic corpora can show important findings of the use of a language across centuries, which is not possible for even the generative linguists to show.",
+        "source": "2018_Sekhar Dash, N., Arulmozi, S._History, Features, and Typology of Language Corpora"
+      }
     }
   },
   {
@@ -7710,10 +7983,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Un aspecto importante para la investigación lingüística del corpus, y que a menudo se pasa por alto, es la dispersión (Gries por publicar).",
-      "source": "2022_Martí, M. A., Taulé, M._Desarrollos tecnológicos de la lingüística de corpus en español"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Un aspecto importante para la investigación lingüística del corpus, y que a menudo se pasa por alto, es la dispersión (Gries por publicar).",
+        "source": "2022_Martí, M. A., Taulé, M._Desarrollos tecnológicos de la lingüística de corpus en español"
+      },
+      "en": {
+        "type": "uso",
+        "text": "The aim of this paper is to contribute to our ongoing efforts to understand dispersion and its measurement, and to support an informed and constructive discourse on this area of corpus-linguistic methodology.",
+        "source": "2025_Sonnig, L._Advancing our understanding ofdispersion measures in corpus research_Corpora"
+      }
     }
   },
   {
@@ -8110,6 +8390,16 @@
     "gap": {
       "en": null,
       "es": "propuesta"
+    },
+    "contexts": {
+      "es": {
+        "type": "no_documentado"
+      },
+      "en": {
+        "type": "uso",
+        "text": "Statistical measures that focus on effect size try to show how big, or otherwise, an observed effect is.",
+        "source": "2022_McEnery_ T., Brezina, V._Fundamental Principles of Corpus Linguistics"
+      }
     }
   },
   {
@@ -8298,10 +8588,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Si los textos que componen el corpus reciben la codificación externa necesaria y, sobre todo, si las aplicaciones de consulta permiten la recuperación selectiva de la información, el problema se reduce en gran medida.",
-      "source": "2021_Rojo, G._Introducción a la lingüística de corpus en español"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Si los textos que componen el corpus reciben la codificación externa necesaria y, sobre todo, si las aplicaciones de consulta permiten la recuperación selectiva de la información, el problema se reduce en gran medida.",
+        "source": "2021_Rojo, G._Introducción a la lingüística de corpus en español"
+      },
+      "en": {
+        "type": "uso",
+        "text": "In general, annotating intralinguistic information involves encoding words, terms, phrases, and other items used in a corpus with part-of-speech or grammatical information.",
+        "source": "2018_Sekhar Dash, N., Arulmozi, S._History, Features, and Typology of Language Corpora"
+      }
     }
   },
   {
@@ -8673,6 +8970,16 @@
     "gap": {
       "en": null,
       "es": "propuesta"
+    },
+    "contexts": {
+      "es": {
+        "type": "no_documentado"
+      },
+      "en": {
+        "type": "uso",
+        "text": "Even if this kind of support were not available, it should at least already be possible to model DMs, terms of address, or other short formulaic sequences, such as greetings or farewells, as these can often be found relatively easily in phrase or text books.",
+        "source": "2017_Weisser, M._Annotating the ICE corpora pragmatically. Preliminary issues and steps_ICAME"
+      }
     }
   },
   {
@@ -8840,10 +9147,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "El CORPES, por ejemplo, permite obtener los términos que aparecen con una cierta frecuencia en el entorno de otro (cinco palabras a la izquierda y otras tantas a la derecha), y añade la valoración estadística del peso de la asociación.",
-      "source": "2021_Rojo, G._Introducción a la lingüística de corpus en español"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "El CORPES, por ejemplo, permite obtener los términos que aparecen con una cierta frecuencia en el entorno de otro (cinco palabras a la izquierda y otras tantas a la derecha), y añade la valoración estadística del peso de la asociación.",
+        "source": "2021_Rojo, G._Introducción a la lingüística de corpus en español"
+      },
+      "en": {
+        "type": "uso",
+        "text": "Low-frequency linguistic phenomena may be hard to analyze on the basis of parallel corpora, for sheer lack of sufficient data that would allow reliable generalizations.",
+        "source": "2020_Lefer, M. A._Parallel corpora"
+      }
     }
   },
   {
@@ -8953,10 +9267,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "La frecuencia por millón de palabras (fpmw, por sus siglas en inglés) se calcula dividiendo la frecuencia absoluta del hecho o fenómeno lingüístico cuantificado (nt) entre el número total de palabras en el corpus o recogidas en la partición estudiada de este (nw), resultado que después se multiplica por 1 millón.",
-      "source": "2015_Molina Salinas, C., Sierra Martínez, G. E._Hacia una normalización de la frecuencia de los corpus CREA y CORDE_Signos"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "La frecuencia por millón de palabras (fpmw, por sus siglas en inglés) se calcula dividiendo la frecuencia absoluta del hecho o fenómeno lingüístico cuantificado (nt) entre el número total de palabras en el corpus o recogidas en la partición estudiada de este (nw), resultado que después se multiplica por 1 millón.",
+        "source": "2015_Molina Salinas, C., Sierra Martínez, G. E._Hacia una normalización de la frecuencia de los corpus CREA y CORDE_Signos"
+      },
+      "en": {
+        "type": "uso",
+        "text": "We examine frequencies per million words (pmw) as well as proportional use.",
+        "source": "2018_Smith, N., Waters, C._From broadcast archive to language corpus. Designing and investigating a sociohistorical corpus from Desert Island Discs_ICAME"
+      }
     },
     "term_note": {
       "es": "La sigla pmw es frecuente en inglés pero se concentra en pocos documentos; se mantiene como principal la forma desarrollada, como en type-token ratio.",
@@ -9045,10 +9366,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "En primer lugar, las palabras funcionales en general contienen menos información que las palabras léxicas.",
-      "source": "2015_Sierra Martínez, G. E._Introducción a los corpus lingüísticos"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "En primer lugar, las palabras funcionales en general contienen menos información que las palabras léxicas.",
+        "source": "2015_Sierra Martínez, G. E._Introducción a los corpus lingüísticos"
+      },
+      "en": {
+        "type": "uso",
+        "text": "The lists included all the major content words as well as function words and collocations, the analysis of which enabled scholars to shed new light on the linguistic nature of the scripture.",
+        "source": "2018_Sekhar Dash, N., Arulmozi, S._History, Features, and Typology of Language Corpora"
+      }
     }
   },
   {
@@ -9237,10 +9565,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Un corpus general recoge muestras diversas y equilibradas, para así poder representar una lengua o variedad en su totalidad y en las situaciones comunicativas más frecuentes.",
-      "source": "2018_Bernal Chávez, J. A. . Hincapié Moreno, D. A._Lingüística de corpus"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Un corpus general recoge muestras diversas y equilibradas, para así poder representar una lengua o variedad en su totalidad y en las situaciones comunicativas más frecuentes.",
+        "source": "2018_Bernal Chávez, J. A. . Hincapié Moreno, D. A._Lingüística de corpus"
+      },
+      "en": {
+        "type": "uso",
+        "text": "One sub-type is a reference corpus: a general corpus taken to be a standard reference for corpus-based research on a given language.",
+        "source": "2023_Barth, D., Schnell, S._Understanding Corpus Linguistics"
+      }
     }
   },
   {
@@ -9405,10 +9740,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "El tipo o género de texto incorporado es el segundo factor que hay que tomar en cuenta para la tipología de los corpus.",
-      "source": "2022_Rojo, G., Palacios, I._Los corpus de aprendientes de español como L2"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "El tipo o género de texto incorporado es el segundo factor que hay que tomar en cuenta para la tipología de los corpus.",
+        "source": "2022_Rojo, G., Palacios, I._Los corpus de aprendientes de español como L2"
+      },
+      "en": {
+        "type": "uso",
+        "text": "Text genres are defined not by their situational features but by specific linguistic features that are conventionally used and not clearly motivated by communicative functions.",
+        "source": "2023_Barth, D., Schnell, S._Understanding Corpus Linguistics"
+      }
     }
   },
   {
@@ -9946,10 +10288,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "definitorio",
-      "text": "La segunda generación de analizadores parte de esta idea del contexto precedente, pero se basa en el recuento de casos en un corpus anotado y revisado por lingüistas (lo que se conoce como gold standard (GS) véase el apartado 4 más adelante).",
-      "source": "2022_Martí, M. A., Taulé, M._Desarrollos tecnológicos de la lingüística de corpus en español"
+    "contexts": {
+      "es": {
+        "type": "definitorio",
+        "text": "La segunda generación de analizadores parte de esta idea del contexto precedente, pero se basa en el recuento de casos en un corpus anotado y revisado por lingüistas (lo que se conoce como gold standard (GS) véase el apartado 4 más adelante).",
+        "source": "2022_Martí, M. A., Taulé, M._Desarrollos tecnológicos de la lingüística de corpus en español"
+      },
+      "en": {
+        "type": "uso",
+        "text": "A further asset of the corpus is that it contains both gold-standard and automatically predicted morphosyntactic and semantic information.",
+        "source": "2016_Poesio, M., Pradhan, S., Recasens, M., Rodríguez, K., Versley, Y._Annotated Corpora and Annotation Tools"
+      }
     },
     "term_note": {
       "es": "En español, un texto usa también la sigla GS; no se cuenta porque es ambigua.",
@@ -10042,10 +10391,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Esta gramática se basa en un corpus que contiene cuatro registros o tipos de textos: textos académicos (ACAD), transcripción de conversaciones (CONV), textos de ficción (FICT) y textos de noticias (NEWS).",
-      "source": "2015_Bolaños Cuellar, S._La Linguistica de corpus. Perspectivas para la investigacion linguistica contemporanea_Forma y Función"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Esta gramática se basa en un corpus que contiene cuatro registros o tipos de textos: textos académicos (ACAD), transcripción de conversaciones (CONV), textos de ficción (FICT) y textos de noticias (NEWS).",
+        "source": "2015_Bolaños Cuellar, S._La Linguistica de corpus. Perspectivas para la investigacion linguistica contemporanea_Forma y Función"
+      },
+      "en": {
+        "type": "uso",
+        "text": "The idea of grammar being represented as a mental corpus originates from outside corpus linguistics per se.",
+        "source": "2017_Desagulier, G._Corpus Linguistics and Statistics with R"
+      }
     }
   },
   {
@@ -10252,10 +10608,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Por último, resulta también de interés comprobar que el porcentaje de hápax muestra oscilaciones según la clase de palabras.",
-      "source": "2017_Rojo, G._Sobre la configuración estadística de los corpus textuales_Lingüística"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Por último, resulta también de interés comprobar que el porcentaje de hápax muestra oscilaciones según la clase de palabras.",
+        "source": "2017_Rojo, G._Sobre la configuración estadística de los corpus textuales_Lingüística"
+      },
+      "en": {
+        "type": "uso",
+        "text": "The idea of using hapax legomena is, essentially, that a word like mageship, which is a hapax in the fiction sample, but not in the Google Books archive, somehow stands for a word like Johnship, which is a true hapax in the English language.",
+        "source": "2020_Stefanowitsch, A._Corpus Linguistics A guide to the methodology"
+      }
     }
   },
   {
@@ -10342,10 +10705,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Los encabezados de los documentos contienen información sobre la fuente de extracción, la fecha en la que el documento fue etiquetado e integrado al corpus, el verbo definitorio y el tipo de definición.",
-      "source": "2015_Sierra Martínez, G. E._Introducción a los corpus lingüísticos"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Los encabezados de los documentos contienen información sobre la fuente de extracción, la fecha en la que el documento fue etiquetado e integrado al corpus, el verbo definitorio y el tipo de definición.",
+        "source": "2015_Sierra Martínez, G. E._Introducción a los corpus lingüísticos"
+      },
+      "en": {
+        "type": "uso",
+        "text": "The header files are minimal, although they contain fairly complete information concerning domain, sub-domain, subject, audience and mediums of text samples.",
+        "source": "2018_Sekhar Dash, N., Arulmozi, S._History, Features, and Typology of Language Corpora"
+      }
     }
   },
   {
@@ -10516,10 +10886,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Mención aparte merecen los corpus históricos, en los que la representatividad del corpus no es ya complicada sino directamente imposible (por ejemplo, prácticamente no existen registros orales antes del siglo XX).",
-      "source": "2016_Zulaica Hernández, I._Lingüística de corpus"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Mención aparte merecen los corpus históricos, en los que la representatividad del corpus no es ya complicada sino directamente imposible (por ejemplo, prácticamente no existen registros orales antes del siglo XX).",
+        "source": "2016_Zulaica Hernández, I._Lingüística de corpus"
+      },
+      "en": {
+        "type": "uso",
+        "text": "This risk is particularly acute with a historical corpus as we are not intuitively aware of its limitations in the same way we are with corpora containing present-day language.",
+        "source": "2018_Rissanen, M._Three problems connected with the use of diachronic corpora_ICAME"
+      }
     }
   },
   {
@@ -10721,10 +11098,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Para minimizar efectos indeseados, se busca obtener un número mínimo de observaciones en los experimentos; finalmente, la estadística inferencial arroja luz sobre las posibilidades de representación de la muestra sobre el conjunto de la población.",
-      "source": "2021_Cabedo Nebot, A., Recio Fernández, I._El hablar y la lingüística empírica"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Para minimizar efectos indeseados, se busca obtener un número mínimo de observaciones en los experimentos; finalmente, la estadística inferencial arroja luz sobre las posibilidades de representación de la muestra sobre el conjunto de la población.",
+        "source": "2021_Cabedo Nebot, A., Recio Fernández, I._El hablar y la lingüística empírica"
+      },
+      "en": {
+        "type": "uso",
+        "text": "What we do know is that we must take on trust the statistics reported in the paper, including the inferential statistics provided, because we cannot, at least without considerable difficulty, repeat them.",
+        "source": "2022_McEnery_ T., Brezina, V._Fundamental Principles of Corpus Linguistics"
+      }
     }
   },
   {
@@ -10805,6 +11189,16 @@
     "gap": {
       "en": null,
       "es": "propuesta"
+    },
+    "contexts": {
+      "es": {
+        "type": "no_documentado"
+      },
+      "en": {
+        "type": "uso",
+        "text": "A final example that combines the rarer cases of phonetic and non-inline annotation is the Up corpus based on the “Up” series of documentary films by director Michael Apted, containing data on a set of individuals at seven-year intervals over a period of 42 years and exemplified in Fig.19 representing the annotation of “give me” spoken by a male speaker.",
+        "source": "2017_Gries, S. T., Berez, A. L._Linguistic Annotation in or for Corpus Linguistics"
+      }
     }
   },
   {
@@ -10972,10 +11366,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Siempre se etiqueta al menos por dos especialistas y se mide el acuerdo entre anotadores, usando habitualmente la medida estadística Kappa.",
-      "source": "2022_Martí, M. A., Taulé, M._Desarrollos tecnológicos de la lingüística de corpus en español"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Siempre se etiqueta al menos por dos especialistas y se mide el acuerdo entre anotadores, usando habitualmente la medida estadística Kappa.",
+        "source": "2022_Martí, M. A., Taulé, M._Desarrollos tecnológicos de la lingüística de corpus en español"
+      },
+      "en": {
+        "type": "uso",
+        "text": "The relatively low level of agreement between the annotators led us to a broader discussion of discourse annotation, inter-annotator agreement measurements and what is considered to be an acceptable agreement level that ensures the reliability of the annotated data.",
+        "source": "2023_Simaki, V., Seitanidi, E., Paradis, C._Evaluating stance annotation on Twitter data_Research in Corpus Linguistics"
+      }
     }
   },
   {
@@ -11326,10 +11727,17 @@
       "en": null,
       "es": "prestamo"
     },
-    "context": {
-      "type": "uso",
-      "text": "Ambas autoras defienden que los ETBC van a conformar un “nuevo paradigma” ya que las herramientas informáticas permiten estudiar a fondo elementos fundamentales para la producción de traducciones de calidad, tales como la extracción de palabras clave (keyness), que aportan indicios significativos sobre la temática de un texto, la presentación de la escritura e ideas o la puntuación.",
-      "source": "2022_Molina Plaza, S._Herramientas, recursos y metodologías de análisis para la traducción mediante corpus lingüísticos del español"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Ambas autoras defienden que los ETBC van a conformar un “nuevo paradigma” ya que las herramientas informáticas permiten estudiar a fondo elementos fundamentales para la producción de traducciones de calidad, tales como la extracción de palabras clave (keyness), que aportan indicios significativos sobre la temática de un texto, la presentación de la escritura e ideas o la puntuación.",
+        "source": "2022_Molina Plaza, S._Herramientas, recursos y metodologías de análisis para la traducción mediante corpus lingüísticos del español"
+      },
+      "en": {
+        "type": "uso",
+        "text": "In particular, they state: We hypothesised that keyness could be measured without making any reference to word frequency by focussing entirely on the text dispersion of words.",
+        "source": "2021_Gries, S. T._A new approach to key keywords analysis. Using frequency, and now also dispersion_Research in Corpus Linguistics"
+      }
     }
   },
   {
@@ -11440,10 +11848,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "La comparación resulta en la generación de la lista de palabras clave, es decir, aquellas palabras cuyas frecuencias de aparición en el corpus de estudio son significativamente diferentes de sus frecuencias de aparición en el corpus de referencia.",
-      "source": "2015_Sierra Martínez, G. E._Introducción a los corpus lingüísticos"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "La comparación resulta en la generación de la lista de palabras clave, es decir, aquellas palabras cuyas frecuencias de aparición en el corpus de estudio son significativamente diferentes de sus frecuencias de aparición en el corpus de referencia.",
+        "source": "2015_Sierra Martínez, G. E._Introducción a los corpus lingüísticos"
+      },
+      "en": {
+        "type": "uso",
+        "text": "For example, a quick search through the Contemporary Corpus of American English (coca) shows that 'keyword' is often used in statements like 'I performed a keyword search', where a keyword is something a person is looking for (e.g., in a search engine).",
+        "source": "2025_Batchelor, J., Lee-Laminack, H._An evaluation of the use of keyword analysis forkeyword-assisted topic modelling_Corpora"
+      }
     }
   },
   {
@@ -11523,6 +11938,16 @@
     "gap": {
       "en": null,
       "es": null
+    },
+    "contexts": {
+      "es": {
+        "type": "solo_titulos"
+      },
+      "en": {
+        "type": "uso",
+        "text": "Applying keyword analysis to each text or collection of texts allows us to identify the words that differ most significantly in frequency from the reference corpus, telling us how the text in question differs lexically from the (written) language of its time as a whole.",
+        "source": "2020_Stefanowitsch, A._Corpus Linguistics A guide to the methodology"
+      }
     }
   },
   {
@@ -11648,10 +12073,17 @@
       "es": "Key Word in Context",
       "en": "Key Word in Context"
     },
-    "context": {
-      "type": "definitorio",
-      "text": "En estos casos, el concordador muestra la(s) palabra(s) de la búsqueda alineada en la parte central de la pantalla, es decir, la palabra clave en contexto; en inglés se denomina Key Word in Context (kwic).",
-      "source": "2015_Bolaños Cuellar, S._La Linguistica de corpus. Perspectivas para la investigacion linguistica contemporanea_Forma y Función"
+    "contexts": {
+      "es": {
+        "type": "definitorio",
+        "text": "En estos casos, el concordador muestra la(s) palabra(s) de la búsqueda alineada en la parte central de la pantalla, es decir, la palabra clave en contexto; en inglés se denomina Key Word in Context (kwic).",
+        "source": "2015_Bolaños Cuellar, S._La Linguistica de corpus. Perspectivas para la investigacion linguistica contemporanea_Forma y Función"
+      },
+      "en": {
+        "type": "uso",
+        "text": "If you need more or less context for your KWIC display, then you can also adjust the options by the 'Search Window Size' as shown here.",
+        "source": "2016_Weisser, M._Practical Corpus Linguistics. An Introduction to Corpus-Based Language Analysis"
+      }
     }
   },
   {
@@ -11848,10 +12280,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Hay dos corpus que deben resaltarse en esta sección: en primer lugar, el corpus de aprendientes longitudinal LANGSNAP contiene datos escritos y orales de estudiantes de francés y español cuya L1 es el inglés.",
-      "source": "2023_Rapún Mombiela, V._CLEAE. Corpus Longitudinal de Español de Aprendientes Estonios"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Hay dos corpus que deben resaltarse en esta sección: en primer lugar, el corpus de aprendientes longitudinal LANGSNAP contiene datos escritos y orales de estudiantes de francés y español cuya L1 es el inglés.",
+        "source": "2023_Rapún Mombiela, V._CLEAE. Corpus Longitudinal de Español de Aprendientes Estonios"
+      },
+      "en": {
+        "type": "uso",
+        "text": "For example, the Texas Association of School Administrators has generated a learner corpus, namely, the TASA Corpus, which contains learner-produced texts of 10 million words of unmarked high-school level English texts on language, the arts, health, home economics, industrial arts, science, social studies and business.",
+        "source": "2018_Sekhar Dash, N., Arulmozi, S._History, Features, and Typology of Language Corpora"
+      }
     }
   },
   {
@@ -11943,10 +12382,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Unos segundos después aparece la indicación de que el corpus contiene 13 165 lemas distintos y se muestran en pantalla los primeros, con indicación de su frecuencia general y la frecuencia normalizada.",
-      "source": "2021_Rojo, G._Introducción a la lingüística de corpus en español"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Unos segundos después aparece la indicación de que el corpus contiene 13 165 lemas distintos y se muestran en pantalla los primeros, con indicación de su frecuencia general y la frecuencia normalizada.",
+        "source": "2021_Rojo, G._Introducción a la lingüística de corpus en español"
+      },
+      "en": {
+        "type": "uso",
+        "text": "The import of this hinges on the definition of lemma adopted, implicitly or explicitly, in corpus annotation, which is that a lemma is a set of inflectionally related forms.",
+        "source": "2021_Culpeper, J., Hardie, A., Demmen, J., Hughes, J., Timperley, M._Supporting the corpus-based study of Shakespeare’s language. Enhancing a corpus of the First Folio_ICAME"
+      }
     }
   },
   {
@@ -12049,10 +12495,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "En su formulación básica, consiste en la lematización y anotación morfosintáctica de las formas del texto para producir los elementos gramaticales correspondientes.",
-      "source": "2022_Rojo, G., Palacios, I._Los corpus de aprendientes de español como L2"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "En su formulación básica, consiste en la lematización y anotación morfosintáctica de las formas del texto para producir los elementos gramaticales correspondientes.",
+        "source": "2022_Rojo, G., Palacios, I._Los corpus de aprendientes de español como L2"
+      },
+      "en": {
+        "type": "uso",
+        "text": "The annotation (pos-tagging and lemmatisation) is provided by TreeTagger (Schmid 1994), integrated in #LancsBox.",
+        "source": "2022_McEnery_ T., Brezina, V._Fundamental Principles of Corpus Linguistics"
+      }
     }
   },
   {
@@ -12084,7 +12537,7 @@
     "equiv_es": "Lesk",
     "equiv_en": "Lesk",
     "aliases": [],
-    "norm": "sinonimia",
+    "norm": "variante_formal",
     "docs": {
       "en": 0,
       "es": 2
@@ -12109,10 +12562,9 @@
         },
         {
           "form": "Lesk algorithm",
-          "rel": "variante_denominativa",
+          "rel": "forma_con_nucleo",
           "n": 0,
           "docs": 0,
-          "consolidated": false,
           "strings": [
             [
               "Lesk algorithm",
@@ -12140,10 +12592,9 @@
         },
         {
           "form": "algoritmo de Lesk",
-          "rel": "variante_denominativa",
+          "rel": "forma_con_nucleo",
           "n": 2,
           "docs": 2,
-          "consolidated": true,
           "strings": [
             [
               "algoritmo de Lesk",
@@ -12344,10 +12795,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "El uso de diferente cajas de búsqueda permite la combinación de los distintos tipos de búsquedas, que puede ayudar a acotar estas (por ejemplo, se podría buscar la forma fueron en combinación con el lexema ir, con el objetivo de evitar los casos en que fueron es una forma del verbo ser).",
-      "source": "2019_de Benito, C._Los corpus del español desde la perspectiva del usuario lingüista_Scriptum digital"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "El uso de diferente cajas de búsqueda permite la combinación de los distintos tipos de búsquedas, que puede ayudar a acotar estas (por ejemplo, se podría buscar la forma fueron en combinación con el lexema ir, con el objetivo de evitar los casos en que fueron es una forma del verbo ser).",
+        "source": "2019_de Benito, C._Los corpus del español desde la perspectiva del usuario lingüista_Scriptum digital"
+      },
+      "en": {
+        "type": "uso",
+        "text": "The term collocation refers to the co-occurrence of multiple lexemes, often two lexemes, called a bigram and a cooccurrence of three lexemes is called a trigram.",
+        "source": "2023_Barth, D., Schnell, S._Understanding Corpus Linguistics"
+      }
     }
   },
   {
@@ -12437,6 +12895,16 @@
     "gap": {
       "en": null,
       "es": null
+    },
+    "contexts": {
+      "es": {
+        "type": "solo_titulos"
+      },
+      "en": {
+        "type": "uso",
+        "text": "Lexical bundles are prefabricated, often more formulaic, constructions that may in fact span across separate syntactic phrases, such as for example the beginnings of some questions like would you like X, do you want X, can I have X, certain types of hedging expressions, such as I think that X, I believe that X, to name but a few.",
+        "source": "2016_Weisser, M._Practical Corpus Linguistics. An Introduction to Corpus-Based Language Analysis"
+      }
     }
   },
   {
@@ -12519,6 +12987,16 @@
     "gap": {
       "en": null,
       "es": "propuesta"
+    },
+    "contexts": {
+      "es": {
+        "type": "no_documentado"
+      },
+      "en": {
+        "type": "uso",
+        "text": "Within a broader frame of language pedagogy, earlier handmade language corpora were compiled and analyzed to study various aspects of the lexico-grammar with some definite pedagogical purposes.",
+        "source": "2018_Sekhar Dash, N., Arulmozi, S._History, Features, and Typology of Language Corpora"
+      }
     },
     "term_note": {
       "es": "En español solo se documenta el adjetivo «léxico-gramatical».",
@@ -12993,10 +13471,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "La aplicación devuelve los lemas que coaparecen con violeta, su clase gramatical, la frecuencia con que se localizan en ese contexto (por defecto, cinco posiciones a cada lado) y el valor que resulta al aplicar tres pruebas estadísticas diferentes (la información mutua, la log-verosimilitud y la puntuación t).",
-      "source": "2021_Rojo, G._Introducción a la lingüística de corpus en español"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "La aplicación devuelve los lemas que coaparecen con violeta, su clase gramatical, la frecuencia con que se localizan en ese contexto (por defecto, cinco posiciones a cada lado) y el valor que resulta al aplicar tres pruebas estadísticas diferentes (la información mutua, la log-verosimilitud y la puntuación t).",
+        "source": "2021_Rojo, G._Introducción a la lingüística de corpus en español"
+      },
+      "en": {
+        "type": "uso",
+        "text": "In much previous work, this has been done with one or more chi-squared tests or the conceptually very similar log-likelihood test.",
+        "source": "2025_Gries, S. T._Against level-3-only analyses in corpus linguistics_ICAME"
+      }
     }
   },
   {
@@ -13185,10 +13670,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Una etiqueta corresponde a una secuencia de caracteres de algún tipo de lenguaje de marcado (xml, html, sgml), la cual contiene información acerca de los elementos del corpus, de un documento o del corpus en general.",
-      "source": "2018_Bernal Chávez, J. A. . Hincapié Moreno, D. A._Lingüística de corpus"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Una etiqueta corresponde a una secuencia de caracteres de algún tipo de lenguaje de marcado (xml, html, sgml), la cual contiene información acerca de los elementos del corpus, de un documento o del corpus en general.",
+        "source": "2018_Bernal Chávez, J. A. . Hincapié Moreno, D. A._Lingüística de corpus"
+      },
+      "en": {
+        "type": "uso",
+        "text": "This first official type of markup language, however, as we'll see further below, was relatively complex and also had a number of serious drawbacks.",
+        "source": "2016_Weisser, M._Practical Corpus Linguistics. An Introduction to Corpus-Based Language Analysis"
+      }
     }
   },
   {
@@ -13311,10 +13803,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Para cada texto, se calcula la media aritmética de estos cinco números de orden.",
-      "source": "2016_Torruella, J._Tres propuestas en el ámbito de la lingüística de corpus"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Para cada texto, se calcula la media aritmética de estos cinco números de orden.",
+        "source": "2016_Torruella, J._Tres propuestas en el ámbito de la lingüística de corpus"
+      },
+      "en": {
+        "type": "uso",
+        "text": "A large enough corpus would ensure a reliable estimate of the mean score of the target linguistic feature, because the corpus would likely include texts of the required style or topic.",
+        "source": "2022_Egbert_ J. Biber_ D. y Gray_ B._Designing and Evaluating Language Corpora"
+      }
     }
   },
   {
@@ -13431,10 +13930,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Mega-corpus/mini-web: se trata de la postura más radical en cuanto a la utilización de la web como corpus y se refieren los autores (Baroni y Bernardini, 2006) a este tipo de corpus como un intento de crear un nuevo corpus en forma de mini-web o de megacorpus que se adapte a la investigación lingüística.",
-      "source": "2017_González Fernández, A._La web como corpus. Un esbozo_LENGUA Y HABLA"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Mega-corpus/mini-web: se trata de la postura más radical en cuanto a la utilización de la web como corpus y se refieren los autores (Baroni y Bernardini, 2006) a este tipo de corpus como un intento de crear un nuevo corpus en forma de mini-web o de megacorpus que se adapte a la investigación lingüística.",
+        "source": "2017_González Fernández, A._La web como corpus. Un esbozo_LENGUA Y HABLA"
+      },
+      "en": {
+        "type": "uso",
+        "text": "The “Web As Corpus” movement has given rise to many of the “mega-corpora” already discussed, such as the TenTen corpus family and the Timestamped JSI Corpus.",
+        "source": "2022_Egbert_ J. Biber_ D. y Gray_ B._Designing and Evaluating Language Corpora"
+      }
     }
   },
   {
@@ -13625,10 +14131,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "El segundo grupo de metadatos, conocidos como la anotación del corpus, contiene la información lingüística de los textos incluidos en el corpus, la cual ha sido ingresada utilizando los etiquetadores (taggers), los analizadores sintácticos (parsers) y demás herramientas diseñadas para este fin.",
-      "source": "2015_Bolaños Cuellar, S._La Linguistica de corpus. Perspectivas para la investigacion linguistica contemporanea_Forma y Función"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "El segundo grupo de metadatos, conocidos como la anotación del corpus, contiene la información lingüística de los textos incluidos en el corpus, la cual ha sido ingresada utilizando los etiquetadores (taggers), los analizadores sintácticos (parsers) y demás herramientas diseñadas para este fin.",
+        "source": "2015_Bolaños Cuellar, S._La Linguistica de corpus. Perspectivas para la investigacion linguistica contemporanea_Forma y Función"
+      },
+      "en": {
+        "type": "uso",
+        "text": "We then examined the metadata provided with the YAD to identify variables that may reflect structure in the population - that is, variables where different levels of the variable may be associated with different linguistic items.",
+        "source": "2022_Egbert_ J. Biber_ D. y Gray_ B._Designing and Evaluating Language Corpora"
+      }
     }
   },
   {
@@ -13827,10 +14340,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Se trata de los corpus dinámicos o monitor, que se caracterizan por permanecer abiertos a seguir aumentando de tamaño conforme se ingresen más textos.",
-      "source": "2015_Bolaños Cuellar, S._La Linguistica de corpus. Perspectivas para la investigacion linguistica contemporanea_Forma y Función"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Se trata de los corpus dinámicos o monitor, que se caracterizan por permanecer abiertos a seguir aumentando de tamaño conforme se ingresen más textos.",
+        "source": "2015_Bolaños Cuellar, S._La Linguistica de corpus. Perspectivas para la investigacion linguistica contemporanea_Forma y Función"
+      },
+      "en": {
+        "type": "uso",
+        "text": "A genuine monitor corpus, as pointed out above, makes it possible to continually compare a language in its different stages of development, including the most recent changes, in and through one single corpus.",
+        "source": "2016_Weisser, M._Practical Corpus Linguistics. An Introduction to Corpus-Based Language Analysis"
+      }
     }
   },
   {
@@ -13916,10 +14436,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "De acuerdo con la “lengua” del corpus, distinguimos entre corpus monolingües, construidos solo con muestras en español y corpus bilingües y multilingües, que incluyen otras lenguas además del español.",
-      "source": "2022_Bosio, I. V., Cubo, L._Corpus académicos orales del español"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "De acuerdo con la “lengua” del corpus, distinguimos entre corpus monolingües, construidos solo con muestras en español y corpus bilingües y multilingües, que incluyen otras lenguas además del español.",
+        "source": "2022_Bosio, I. V., Cubo, L._Corpus académicos orales del español"
+      },
+      "en": {
+        "type": "uso",
+        "text": "The normal practice of designing a monolingual corpus tends to include text samples from the so-called 'standard variety' (of both speech and writing) rather than including texts samples from dialects and non-standard varieties.",
+        "source": "2018_Sekhar Dash, N., Arulmozi, S._History, Features, and Typology of Language Corpora"
+      }
     }
   },
   {
@@ -14004,10 +14531,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "La anotación morfológica permite conocer cómo están constituidas las palabras y consiste en la identificación de los morfemas de una palabra y de sus rasgos como género, número, persona y modo.",
-      "source": "2015_Sierra Martínez, G. E._Introducción a los corpus lingüísticos"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "La anotación morfológica permite conocer cómo están constituidas las palabras y consiste en la identificación de los morfemas de una palabra y de sus rasgos como género, número, persona y modo.",
+        "source": "2015_Sierra Martínez, G. E._Introducción a los corpus lingüísticos"
+      },
+      "en": {
+        "type": "uso",
+        "text": "It will, therefore, make sense for corpus developers and users, including in language documentation contexts, to carefully weigh costs and yields before embarking on a painstaking morphological annotation project.",
+        "source": "2023_Barth, D., Schnell, S._Understanding Corpus Linguistics"
+      }
     }
   },
   {
@@ -14087,10 +14621,15 @@
       "en": "propuesta",
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Los pasos seguidos en la normalización de frecuencias son los mismos que en el ejemplo de 'país', a saber, primero, calcular las medias móviles de 'agora' y 'ahora', para los siglos representados.",
-      "source": "2015_Molina Salinas, C., Sierra Martínez, G. E._Hacia una normalización de la frecuencia de los corpus CREA y CORDE_Signos"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Los pasos seguidos en la normalización de frecuencias son los mismos que en el ejemplo de 'país', a saber, primero, calcular las medias móviles de 'agora' y 'ahora', para los siglos representados.",
+        "source": "2015_Molina Salinas, C., Sierra Martínez, G. E._Hacia una normalización de la frecuencia de los corpus CREA y CORDE_Signos"
+      },
+      "en": {
+        "type": "no_documentado"
+      }
     },
     "term_note": {
       "es": "Documentado en un solo texto español (Molina Salinas y Sierra Martínez); no aparece en el subcorpus inglés.",
@@ -14182,10 +14721,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Se trata de un corpus multilingüe, puesto que los hablantes recurren a otras lenguas además del español (entre ellas el inglés), con muestras de uso espontáneo de la lengua en un contexto informal.",
-      "source": "2022_Gironzetti, E._Corpus y español como lengua de herencia"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Se trata de un corpus multilingüe, puesto que los hablantes recurren a otras lenguas además del español (entre ellas el inglés), con muestras de uso espontáneo de la lengua en un contexto informal.",
+        "source": "2022_Gironzetti, E._Corpus y español como lengua de herencia"
+      },
+      "en": {
+        "type": "uso",
+        "text": "With the emergence of multilingual corpora, one can measure the word order preferences directly (e.g. Östling 2015) and provide more precise numeric estimates instead of categorical labels, avoiding loss of information.",
+        "source": "2021_Levisha, N._Corpus-based typology. Applications, challenges and some solutions"
+      }
     }
   },
   {
@@ -14270,10 +14816,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "De la misma manera, los corpus multimodales permiten el estudio de diferentes aspectos de la lengua situados en un discurso concreto, facilitando el análisis de cómo los hablantes integran diferentes recursos semióticos y modalidades de comunicación para crear sus significados o interpretar el discurso de otros.",
-      "source": "2022_Gironzetti, E._Corpus y español como lengua de herencia"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "De la misma manera, los corpus multimodales permiten el estudio de diferentes aspectos de la lengua situados en un discurso concreto, facilitando el análisis de cómo los hablantes integran diferentes recursos semióticos y modalidades de comunicación para crear sus significados o interpretar el discurso de otros.",
+        "source": "2022_Gironzetti, E._Corpus y español como lengua de herencia"
+      },
+      "en": {
+        "type": "uso",
+        "text": "A more recent shift in corpus linguistics is the development of multimodal corpora, outlined below.",
+        "source": "2016_Murphy, B., Riordan, E._Corpus types and uses"
+      }
     }
   },
   {
@@ -14565,10 +15118,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Un caso particular son las expresiones multipalabras, que son tratadas de maneras diferentes en cada etiquetador.",
-      "source": "2022_Martí, M. A., Taulé, M._Desarrollos tecnológicos de la lingüística de corpus en español"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Un caso particular son las expresiones multipalabras, que son tratadas de maneras diferentes en cada etiquetador.",
+        "source": "2022_Martí, M. A., Taulé, M._Desarrollos tecnológicos de la lingüística de corpus en español"
+      },
+      "en": {
+        "type": "uso",
+        "text": "The next step consists in identifying all cases where the search term(s) occur in a multi-word expression referring to some domain other than emotions.",
+        "source": "2020_Stefanowitsch, A._Corpus Linguistics A guide to the methodology"
+      }
     }
   },
   {
@@ -14751,10 +15311,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "La información mutua es una medida de gran importancia en la teoría de la información, que consiste en la información aportada por una variable aleatoria sobre la otra.",
-      "source": "2015_Sierra Martínez, G. E._Introducción a los corpus lingüísticos"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "La información mutua es una medida de gran importancia en la teoría de la información, que consiste en la información aportada por una variable aleatoria sobre la otra.",
+        "source": "2015_Sierra Martínez, G. E._Introducción a los corpus lingüísticos"
+      },
+      "en": {
+        "type": "uso",
+        "text": "A brief consideration of what happens when we subject frequency data to analysis shows the importance of this observation to corpus linguistics - if we apply a simple mutual information score to word co-occurrence data, we will gain one view of collocation.",
+        "source": "2022_McEnery_ T., Brezina, V._Fundamental Principles of Corpus Linguistics"
+      }
     }
   },
   {
@@ -14893,10 +15460,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "definitorio",
-      "text": "Los números representan palabras o segmentos de dos o más palabras consecutivas denominados n-gramas, donde n es un número entero: si n es 1, se trata de unigramas o palabras, si n es 2, son bigramas, si n es 3, son trigramas, etc.",
-      "source": "2022_Martí, M. A., Taulé, M._Desarrollos tecnológicos de la lingüística de corpus en español"
+    "contexts": {
+      "es": {
+        "type": "definitorio",
+        "text": "Los números representan palabras o segmentos de dos o más palabras consecutivas denominados n-gramas, donde n es un número entero: si n es 1, se trata de unigramas o palabras, si n es 2, son bigramas, si n es 3, son trigramas, etc.",
+        "source": "2022_Martí, M. A., Taulé, M._Desarrollos tecnológicos de la lingüística de corpus en español"
+      },
+      "en": {
+        "type": "uso",
+        "text": "When we talk of units larger than a single word, we can also refer to them collectively as n-grams, word clusters, lexical phrases, or lexical bundles, although these expressions carry slightly different connotations, depending on the context they're used in or the research conducted on them.",
+        "source": "2016_Weisser, M._Practical Corpus Linguistics. An Introduction to Corpus-Based Language Analysis"
+      }
     }
   },
   {
@@ -14973,6 +15547,18 @@
     "gap": {
       "en": null,
       "es": null
+    },
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Llevar a cabo esta serie de tareas es un proceso complejo que requiere no solo el uso de clasificadores de sentimiento que sean diseñados ad hoc y combinen distintas técnicas y herramientas; también implica, por ejemplo, el uso de técnicas de reconocimiento de entidades nombradas (NER, Named Entity Recognition) y de análisis de corpus para la extracción de n-gramas y palabras clave.",
+        "source": "2022_Martí, M. A., Taulé, M._Desarrollos tecnológicos de la lingüística de corpus en español"
+      },
+      "en": {
+        "type": "uso",
+        "text": "In some cases, this involves an additional step called named entity recognition, which serves to determine the units in the corpus that are proper names.",
+        "source": "2017_Gries, S. T., Berez, A. L._Linguistic Annotation in or for Corpus Linguistics"
+      }
     }
   },
   {
@@ -15059,10 +15645,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Ignorar la variación individual aumenta el riesgo de producir falsos positivos para los datos del corpus, como se muestra en Brezina y Meyerhoff (2014), donde analizan seis características lingüísticas del Corpus Nacional Británico.",
-      "source": "2022_Martí, M. A., Taulé, M._Desarrollos tecnológicos de la lingüística de corpus en español"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Ignorar la variación individual aumenta el riesgo de producir falsos positivos para los datos del corpus, como se muestra en Brezina y Meyerhoff (2014), donde analizan seis características lingüísticas del Corpus Nacional Británico.",
+        "source": "2022_Martí, M. A., Taulé, M._Desarrollos tecnológicos de la lingüística de corpus en español"
+      },
+      "en": {
+        "type": "uso",
+        "text": "The goal of designing a national corpus such as the BNC is to make it as far as possible representative of the full range of variation in the language.",
+        "source": "2022_Egbert_ J. Biber_ D. y Gray_ B._Designing and Evaluating Language Corpora"
+      }
     }
   },
   {
@@ -15141,10 +15734,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Dentro de la Lingüística Computacional, el Procesamiento del Lenguaje Natural (PNL), la recuperación de la información, la minería de textos y las tecnologías del lenguaje en general son los campos que más están avanzando en esta línea.",
-      "source": "2017_González Fernández, A._La web como corpus. Un esbozo_LENGUA Y HABLA"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Dentro de la Lingüística Computacional, el Procesamiento del Lenguaje Natural (PNL), la recuperación de la información, la minería de textos y las tecnologías del lenguaje en general son los campos que más están avanzando en esta línea.",
+        "source": "2017_González Fernández, A._La web como corpus. Un esbozo_LENGUA Y HABLA"
+      },
+      "en": {
+        "type": "uso",
+        "text": "For example, it allows us to generally characterise the different practices in corpus use and tool development in corpus linguistics and natural language processing (NLP).",
+        "source": "2022_McEnery_ T., Brezina, V._Fundamental Principles of Corpus Linguistics"
+      }
     }
   },
   {
@@ -15339,10 +15939,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Los corpus y sistemas de consulta más difundidos (incluyendo el procedimiento de elaboración de “word sketches” por parte de la plataforma Sketch Engine, más sofisticado de lo habitual pero basado en una gramática algo rudimentaria) nos ofrecen un sucedáneo basado en la categoría morfosintáctica de las palabras a la derecha y a la izquierda de la palabra nodo.",
-      "source": "2022_García Miguel J. M._Linguistica de corpus De los datos textuales a la teoría lingüística_Estudios de Lingüística del Español"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Los corpus y sistemas de consulta más difundidos (incluyendo el procedimiento de elaboración de “word sketches” por parte de la plataforma Sketch Engine, más sofisticado de lo habitual pero basado en una gramática algo rudimentaria) nos ofrecen un sucedáneo basado en la categoría morfosintáctica de las palabras a la derecha y a la izquierda de la palabra nodo.",
+        "source": "2022_García Miguel J. M._Linguistica de corpus De los datos textuales a la teoría lingüística_Estudios de Lingüística del Español"
+      },
+      "en": {
+        "type": "uso",
+        "text": "All collocational analyses have to be conducted by running a query on the node word first.",
+        "source": "2016_Weisser, M._Practical Corpus Linguistics. An Introduction to Corpus-Based Language Analysis"
+      }
     }
   },
   {
@@ -15418,10 +16025,15 @@
       "en": "propuesta",
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "El 'índice normalizado de dispersión' (Ci) considera el tamaño relativo del género en el que aparece el vocablo (rj) y un índice de dispersión de este entre géneros (Si).",
-      "source": "2015_Molina Salinas, C., Sierra Martínez, G. E._Hacia una normalización de la frecuencia de los corpus CREA y CORDE_Signos"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "El 'índice normalizado de dispersión' (Ci) considera el tamaño relativo del género en el que aparece el vocablo (rj) y un índice de dispersión de este entre géneros (Si).",
+        "source": "2015_Molina Salinas, C., Sierra Martínez, G. E._Hacia una normalización de la frecuencia de los corpus CREA y CORDE_Signos"
+      },
+      "en": {
+        "type": "no_documentado"
+      }
     },
     "term_note": {
       "es": "Documentado en un solo texto español (Molina Salinas y Sierra Martínez).",
@@ -15532,10 +16144,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Como se indica en el apartado 1.2.5 , en el corpus ESLORA la palabra fútbol presenta una frecuencia normalizada de 458 casos por millón en los textos producidos por hombres y de solo noventa y nueve casos por millón entre los producidos por mujeres.",
-      "source": "2021_Rojo, G._Introducción a la lingüística de corpus en español"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Como se indica en el apartado 1.2.5 , en el corpus ESLORA la palabra fútbol presenta una frecuencia normalizada de 458 casos por millón en los textos producidos por hombres y de solo noventa y nueve casos por millón entre los producidos por mujeres.",
+        "source": "2021_Rojo, G._Introducción a la lingüística de corpus en español"
+      },
+      "en": {
+        "type": "uso",
+        "text": "The horizontal axis shows the (log-scaled) normalised frequency and the vertical axis shows the (log-scaled) additional parameter of the negative binomial distribution, which describes the variation of word rates across texts.",
+        "source": "2025_Sonnig, L._Advancing our understanding ofdispersion measures in corpus research_Corpora"
+      }
     }
   },
   {
@@ -15830,10 +16449,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Una colocación se define como la ocurrencia de dos o más palabras que se encuentran cercanas en un texto y que tienden a ocurrir cercanas en ciertos contextos.",
-      "source": "2015_Sierra Martínez, G. E._Introducción a los corpus lingüísticos"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Una colocación se define como la ocurrencia de dos o más palabras que se encuentran cercanas en un texto y que tienden a ocurrir cercanas en ciertos contextos.",
+        "source": "2015_Sierra Martínez, G. E._Introducción a los corpus lingüísticos"
+      },
+      "en": {
+        "type": "uso",
+        "text": "A rate of occurrence measures how many Distribution Considerations linguistic tokens of a particular linguistic feature occur within a particular span of running text (e.g., the number of nouns per 1,000 words of text).",
+        "source": "2022_Egbert_ J. Biber_ D. y Gray_ B._Designing and Evaluating Language Corpora"
+      }
     }
   },
   {
@@ -16024,10 +16650,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Aquí radica uno de los problemas más fuertes de los corpus oportunistas, que se construyen mediante la descarga de todo aquello que, en caso de cumplir ciertas condiciones, es importado de la red e integrado.",
-      "source": "2021_Rojo, G._Introducción a la lingüística de corpus en español"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Aquí radica uno de los problemas más fuertes de los corpus oportunistas, que se construyen mediante la descarga de todo aquello que, en caso de cumplir ciertas condiciones, es importado de la red e integrado.",
+        "source": "2021_Rojo, G._Introducción a la lingüística de corpus en español"
+      },
+      "en": {
+        "type": "uso",
+        "text": "That means an opportunistic corpus is a kind of 'virtual corpus' in the sense that the selection of texts from an opportunistic corpus is largely based on the requirements of a particular project of study (Sinclair 1995).",
+        "source": "2018_Sekhar Dash, N., Arulmozi, S._History, Features, and Typology of Language Corpora"
+      }
     }
   },
   {
@@ -16199,10 +16832,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "definitorio",
-      "text": "El análisis comparativo mediante los corpus paralelos Según McEnery y Hardie, los corpus paralelos son los que consisten en textos de una lengua (L1) y sus traducciones (Lx) (2012, 20).",
-      "source": "2022_Martí, M. A., Taulé, M._Desarrollos tecnológicos de la lingüística de corpus en español"
+    "contexts": {
+      "es": {
+        "type": "definitorio",
+        "text": "El análisis comparativo mediante los corpus paralelos Según McEnery y Hardie, los corpus paralelos son los que consisten en textos de una lengua (L1) y sus traducciones (Lx) (2012, 20).",
+        "source": "2022_Martí, M. A., Taulé, M._Desarrollos tecnológicos de la lingüística de corpus en español"
+      },
+      "en": {
+        "type": "uso",
+        "text": "The vast majority of directional parallel corpora contain translations produced by human translators (in some cases, with the help of computer-aided translation tools).",
+        "source": "2020_Lefer, M. A._Parallel corpora"
+      }
     }
   },
   {
@@ -16282,10 +16922,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Recursos que contienen análisis sintáctico y semántico de corpus, tales como ADESSE y BDS, AnCorA, SenSem o el IULA Spanish Treebank, han sido elaborados a mano en su totalidad o en un porcentaje significativo, aunque lógicamente han contado con asistencia informática.",
-      "source": "2022_García Miguel J. M._Linguistica de corpus De los datos textuales a la teoría lingüística_Estudios de Lingüística del Español"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Recursos que contienen análisis sintáctico y semántico de corpus, tales como ADESSE y BDS, AnCorA, SenSem o el IULA Spanish Treebank, han sido elaborados a mano en su totalidad o en un porcentaje significativo, aunque lógicamente han contado con asistencia informática.",
+        "source": "2022_García Miguel J. M._Linguistica de corpus De los datos textuales a la teoría lingüística_Estudios de Lingüística del Español"
+      },
+      "en": {
+        "type": "uso",
+        "text": "The first corpora featuring parse trees were the Gothenburg Corpus, the SUSANNE Corpus, and the Lancaster Parsed Corpus [88, 760], which involved either completely manual annotation, or the manual checking of the results of automatic parsing.",
+        "source": "2017_Gries, S. T., Berez, A. L._Linguistic Annotation in or for Corpus Linguistics"
+      }
     }
   },
   {
@@ -16416,10 +17063,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "De entrada, aunque todos contienen, lo mismo que en las ediciones impresas, indicación de la clase de palabras a la que pertenece cada acepción, solo algunos ofrecen la posibilidad de hacer búsquedas o recuentos a partir de la clase de palabras.",
-      "source": "2021_Rojo, G._Introducción a la lingüística de corpus en español"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "De entrada, aunque todos contienen, lo mismo que en las ediciones impresas, indicación de la clase de palabras a la que pertenece cada acepción, solo algunos ofrecen la posibilidad de hacer búsquedas o recuentos a partir de la clase de palabras.",
+        "source": "2021_Rojo, G._Introducción a la lingüística de corpus en español"
+      },
+      "en": {
+        "type": "uso",
+        "text": "Most commonly, they contain information about the word class of each word, represented in the form of a so-called “part-of-speech (or POS) tags”.",
+        "source": "2020_Stefanowitsch, A._Corpus Linguistics A guide to the methodology"
+      }
     }
   },
   {
@@ -16724,10 +17378,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Las opciones pueden ser diversas, de un corpus se pueden extraer terminología específica, fraseología, colocaciones, patrones sintagmáticos (léxico-gramaticales), equivalentes, entre otros ejemplos.",
-      "source": "2022_Liendo, P. J._Introducción a la Lingüística de corpus, sus usos y aplicaciones"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Las opciones pueden ser diversas, de un corpus se pueden extraer terminología específica, fraseología, colocaciones, patrones sintagmáticos (léxico-gramaticales), equivalentes, entre otros ejemplos.",
+        "source": "2022_Liendo, P. J._Introducción a la Lingüística de corpus, sus usos y aplicaciones"
+      },
+      "en": {
+        "type": "uso",
+        "text": "They also revealed five major clusters of CL research in their citation analysis, including (English) cognitive linguistics, pragmatics, phraseology, academic English, and translation studies.",
+        "source": "2022_Crosthwaite, P., Ningrum, S., Scweinberger, M._Research trends in corpus linguistics_International Journal of Corpus Linguistics"
+      }
     }
   },
   {
@@ -16808,10 +17469,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Los editores de texto permiten manejar los archivos que constan de texto plano, esto es, sin formato alguno y sin imágenes, salvo los saltos de línea, la tabulación horizontal y los retornos de carro.",
-      "source": "2015_Sierra Martínez, G. E._Introducción a los corpus lingüísticos"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Los editores de texto permiten manejar los archivos que constan de texto plano, esto es, sin formato alguno y sin imágenes, salvo los saltos de línea, la tabulación horizontal y los retornos de carro.",
+        "source": "2015_Sierra Martínez, G. E._Introducción a los corpus lingüísticos"
+      },
+      "en": {
+        "type": "uso",
+        "text": "In most cases, this should not be a problem, though, because, as pointed out earlier, most corpus data is stored in some form of plain text, so you can always try opening these files in your editor first.",
+        "source": "2016_Weisser, M._Practical Corpus Linguistics. An Introduction to Corpus-Based Language Analysis"
+      }
     }
   },
   {
@@ -16899,10 +17567,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "En la medida en que esos corpus estén bien construidos y sean representativos, lo que se encuentra en la muestra puede ser proyectado a la población, es decir, a la lengua.",
-      "source": "2021_Rojo, G._Introducción a la lingüística de corpus en español"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "En la medida en que esos corpus estén bien construidos y sean representativos, lo que se encuentra en la muestra puede ser proyectado a la población, es decir, a la lengua.",
+        "source": "2021_Rojo, G._Introducción a la lingüística de corpus en español"
+      },
+      "en": {
+        "type": "uso",
+        "text": "If corpora are designed to be samples of a target population, readers are only able to evaluate the representativeness of that sample when they know what method of sampling has been used.",
+        "source": "2025_Hashimoto, B., Nelson, K._Recent trends in corpus design and reporting. A methodological synthesis_Research in Corpus Linguistics"
+      }
     }
   },
   {
@@ -16993,6 +17668,16 @@
     "gap": {
       "en": null,
       "es": null
+    },
+    "contexts": {
+      "es": {
+        "type": "solo_titulos"
+      },
+      "en": {
+        "type": "uso",
+        "text": "Tagging therefore consists of two steps: (a) tag assignment: each token is assigned the corresponding set of possible tags for a particular tagset; and (b) tag disambiguation: using different procedures, the number of tags per token is reduced to the correct one for the specific context.",
+        "source": "2017_Doval, I._POS-tagging a bilingual parallel corpus. Methods and challenges_Research in Corpus Linguistics"
+      }
     }
   },
   {
@@ -17110,10 +17795,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "En el nivel de etiquetado morfosintáctico se obtienen etiquetas como las de nombre, verbo, adjetivo, etc., para las categorías gramaticales, y las de género, número, persona, tiempo, modo y aspecto, etc., que acompañan a las mencionadas categorías gramaticales.",
-      "source": "2020_Marín Morales, M. I. y Molina, J_Un método de etiquetado semiautomático de corpus lingüísticos_Investigación e Innovación en Ingeniería de Software"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "En el nivel de etiquetado morfosintáctico se obtienen etiquetas como las de nombre, verbo, adjetivo, etc., para las categorías gramaticales, y las de género, número, persona, tiempo, modo y aspecto, etc., que acompañan a las mencionadas categorías gramaticales.",
+        "source": "2020_Marín Morales, M. I. y Molina, J_Un método de etiquetado semiautomático de corpus lingüísticos_Investigación e Innovación en Ingeniería de Software"
+      },
+      "en": {
+        "type": "uso",
+        "text": "PoS tagging has been applied to corpora other than from English; a famous tagset for German is the Stuttgart-Tübingen tagset (STTS) (Theilen & Schiller 1996) applied to many German corpora.",
+        "source": "2023_Barth, D., Schnell, S._Understanding Corpus Linguistics"
+      }
     }
   },
   {
@@ -17202,10 +17894,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Las marcas de actos de habla, entonación, pausas e, inclusive, la intensidad y los gestos con que se produjo cierta muestra lingüística son ejemplos de anotación pragmática.",
-      "source": "2015_Sierra Martínez, G. E._Introducción a los corpus lingüísticos"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Las marcas de actos de habla, entonación, pausas e, inclusive, la intensidad y los gestos con que se produjo cierta muestra lingüística son ejemplos de anotación pragmática.",
+        "source": "2015_Sierra Martínez, G. E._Introducción a los corpus lingüísticos"
+      },
+      "en": {
+        "type": "uso",
+        "text": "A third issue that will only be mentioned here is that not all the corpora are currently available in any (plain-text) form that would make them amenable to the type of pragmatic annotation proposed here.",
+        "source": "2017_Weisser, M._Annotating the ICE corpora pragmatically. Preliminary issues and steps_ICAME"
+      }
     }
   },
   {
@@ -17403,10 +18102,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "El tomar en cuenta las dependencias entre las probabilidades de las palabras en el contexto en ciertos casos mejora la clasificación porque las palabras en los textos no se usan aleatoriamente sino se seleccionan dependiendo del contexto.",
-      "source": "2022_Martí, M. A., Taulé, M._Desarrollos tecnológicos de la lingüística de corpus en español"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "El tomar en cuenta las dependencias entre las probabilidades de las palabras en el contexto en ciertos casos mejora la clasificación porque las palabras en los textos no se usan aleatoriamente sino se seleccionan dependiendo del contexto.",
+        "source": "2022_Martí, M. A., Taulé, M._Desarrollos tecnológicos de la lingüística de corpus en español"
+      },
+      "en": {
+        "type": "uso",
+        "text": "So, rather than looking at a word and asking the question 'what is the probability of that word occurring' we ask instead 'what is the propensity for that word to occur given the set of circumstances in which it is being produced'.",
+        "source": "2022_McEnery_ T., Brezina, V._Fundamental Principles of Corpus Linguistics"
+      }
     }
   },
   {
@@ -17531,10 +18237,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Pero el análisis de los usos que se puede realizar mediante la consulta de los corpus textuales nos permite ir más allá y explorar, por ejemplo, si la preferencia por una de estas dos formas se puede relacionar con el tipo de texto.",
-      "source": "2021_Rojo, G._Introducción a la lingüística de corpus en español"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Pero el análisis de los usos que se puede realizar mediante la consulta de los corpus textuales nos permite ir más allá y explorar, por ejemplo, si la preferencia por una de estas dos formas se puede relacionar con el tipo de texto.",
+        "source": "2021_Rojo, G._Introducción a la lingüística de corpus en español"
+      },
+      "en": {
+        "type": "uso",
+        "text": "The results of proximity queries are a little more 'vague' than those of the other searches we've conducted before, especially because BNCweb only highlights the first term specified in the search.",
+        "source": "2016_Weisser, M._Practical Corpus Linguistics. An Introduction to Corpus-Based Language Analysis"
+      }
     }
   },
   {
@@ -17611,6 +18324,16 @@
     "gap": {
       "en": null,
       "es": "propuesta"
+    },
+    "contexts": {
+      "es": {
+        "type": "no_documentado"
+      },
+      "en": {
+        "type": "uso",
+        "text": "Vander Beke (1932) carried out similar work on French and went as far as ranking words primarily according to dispersion. His word book lists 6,067 items based on 'range' (r) – that is, the number of texts (eighty-eight in total, drawn from five different genres) in which they appeared.",
+        "source": "2025_Sonnig, L._Advancing our understanding ofdispersion measures in corpus research_Corpora"
+      }
     },
     "term_note": {
       "es": "En inglés, «range» también es una palabra general muy frecuente (a wide range of), así que su frecuencia está muy inflada, como en el Apéndice III. No se documenta ninguna denominación española de esta medida.",
@@ -17741,10 +18464,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Por este motivo, estos resultados van acompañados de su frecuencia absoluta en ambos corpus, pero también de su frecuencia por millón, pues es la que realmente permite conocer la relevancia que tienen las unidades extraídas en el corpus especializado.",
-      "source": "2024_Jiménez-Navarro, E. L._Consideraciones para la compilación y exploración de un corpus lingüístico"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Por este motivo, estos resultados van acompañados de su frecuencia absoluta en ambos corpus, pero también de su frecuencia por millón, pues es la que realmente permite conocer la relevancia que tienen las unidades extraídas en el corpus especializado.",
+        "source": "2024_Jiménez-Navarro, E. L._Consideraciones para la compilación y exploración de un corpus lingüístico"
+      },
+      "en": {
+        "type": "uso",
+        "text": "The same applies to sorting the data by frequency if we wanted to compare raw frequencies for whatever reason, or simply identify non-occurring types in either corpus.",
+        "source": "2016_Weisser, M._Practical Corpus Linguistics. An Introduction to Corpus-Based Language Analysis"
+      }
     }
   },
   {
@@ -17823,10 +18553,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "definitorio",
-      "text": "Una propiedad destacable de la lingüística de corpus es la exhaustividad, entendida como la obligación de intentar un examen de todos los casos contenidos en el corpus.",
-      "source": "2022_García Miguel J. M._Linguistica de corpus De los datos textuales a la teoría lingüística_Estudios de Lingüística del Español"
+    "contexts": {
+      "es": {
+        "type": "definitorio",
+        "text": "Una propiedad destacable de la lingüística de corpus es la exhaustividad, entendida como la obligación de intentar un examen de todos los casos contenidos en el corpus.",
+        "source": "2022_García Miguel J. M._Linguistica de corpus De los datos textuales a la teoría lingüística_Estudios de Lingüística del Español"
+      },
+      "en": {
+        "type": "uso",
+        "text": "The recall of this query will be close to 100 percent, as all words containing the suffix -ness end in the string ness, optionally followed by the string es in the case of plurals.",
+        "source": "2020_Stefanowitsch, A._Corpus Linguistics A guide to the methodology"
+      }
     }
   },
   {
@@ -17909,10 +18646,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Un criterio común que se ha utilizado para corpus de referencia es la selección aleatoria de muestras, pero también se ha discutido si las características lingüísticas se encuentran distribuidas uniformemente en los textos.",
-      "source": "2015_Sierra Martínez, G. E._Introducción a los corpus lingüísticos"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Un criterio común que se ha utilizado para corpus de referencia es la selección aleatoria de muestras, pero también se ha discutido si las características lingüísticas se encuentran distribuidas uniformemente en los textos.",
+        "source": "2015_Sierra Martínez, G. E._Introducción a los corpus lingüísticos"
+      },
+      "en": {
+        "type": "uso",
+        "text": "The recent effort of the Commission of the European Community for developing a comparable reference corpus of 50 million words each for all the official languages of the European Union is an excellent example of a comparable corpus.",
+        "source": "2018_Sekhar Dash, N., Arulmozi, S._History, Features, and Typology of Language Corpora"
+      }
     }
   },
   {
@@ -18000,10 +18744,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "definitorio",
-      "text": "En consultas un poco más complejas, se pueden buscar patrones de cadenas de caracteres con comodines o lo que se conoce como expresiones regulares (es decir, una especie de fórmulas en las que ciertos símbolos pueden representar clases de caracteres).",
-      "source": "2022_García Miguel J. M._Linguistica de corpus De los datos textuales a la teoría lingüística_Estudios de Lingüística del Español"
+    "contexts": {
+      "es": {
+        "type": "definitorio",
+        "text": "En consultas un poco más complejas, se pueden buscar patrones de cadenas de caracteres con comodines o lo que se conoce como expresiones regulares (es decir, una especie de fórmulas en las que ciertos símbolos pueden representar clases de caracteres).",
+        "source": "2022_García Miguel J. M._Linguistica de corpus De los datos textuales a la teoría lingüística_Estudios de Lingüística del Español"
+      },
+      "en": {
+        "type": "uso",
+        "text": "One fairly standardized way of achieving this is by using so-called regular expressions – strings that may contain not just simple characters, but also symbols referring to classes of characters or symbols affecting the interpretation of characters.",
+        "source": "2020_Stefanowitsch, A._Corpus Linguistics A guide to the methodology"
+      }
     }
   },
   {
@@ -18090,10 +18841,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Adicionalmente se puede acompañar de la frecuencia relativa, que es el número de veces que ocurre la palabra en relación con el total de palabras en el corpus.",
-      "source": "2015_Sierra Martínez, G. E._Introducción a los corpus lingüísticos"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Adicionalmente se puede acompañar de la frecuencia relativa, que es el número de veces que ocurre la palabra en relación con el total de palabras en el corpus.",
+        "source": "2015_Sierra Martínez, G. E._Introducción a los corpus lingüísticos"
+      },
+      "en": {
+        "type": "uso",
+        "text": "We investigated the relative frequency (percentages) of each category for all six journals in our time period of eleven years as dependent variable.",
+        "source": "2024_Buschfeld, S., Leuckert, S., Weihs, C., Weilinghoff, A._How real is the quantitative turn. Investigating statistics as the new normal in linguistics_ICAME"
+      }
     }
   },
   {
@@ -18172,10 +18930,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Por un lado, la representatividad de un corpus tiene que ver con el hecho de hasta qué punto se puede considerar que el número de textos incluidos representa, realmente, al lenguaje contenido en esos textos.",
-      "source": "2024_Jiménez-Navarro, E. L._Consideraciones para la compilación y exploración de un corpus lingüístico"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Por un lado, la representatividad de un corpus tiene que ver con el hecho de hasta qué punto se puede considerar que el número de textos incluidos representa, realmente, al lenguaje contenido en esos textos.",
+        "source": "2024_Jiménez-Navarro, E. L._Consideraciones para la compilación y exploración de un corpus lingüístico"
+      },
+      "en": {
+        "type": "uso",
+        "text": "For example, As noted in the previous section, the representativeness of a corpus, especially a general corpus, depends primarily upon how balanced the corpus is, in other words, the range of text categories included in the corpus.",
+        "source": "2022_Egbert_ J. Biber_ D. y Gray_ B._Designing and Evaluating Language Corpora"
+      }
     }
   },
   {
@@ -18331,10 +19096,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Su valor reside principalmente en contar con una diversa y rica muestra de textos producidos por hablantes de diversas lenguas maternas y clasificados por nivel de competencia lingüística.",
-      "source": "2018_Parodi, G., Burdiles, G._Corpus y bases de datos"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Su valor reside principalmente en contar con una diversa y rica muestra de textos producidos por hablantes de diversas lenguas maternas y clasificados por nivel de competencia lingüística.",
+        "source": "2018_Parodi, G., Burdiles, G._Corpus y bases de datos"
+      },
+      "en": {
+        "type": "uso",
+        "text": "A corpus will contain not only the samples of spoken text but also the samples of written text, in equal proportion, if possible.",
+        "source": "2018_Sekhar Dash, N., Arulmozi, S._History, Features, and Typology of Language Corpora"
+      }
     }
   },
   {
@@ -18464,10 +19236,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Esto también va a determinar el tamaño de la muestra, ya que cuando creamos un corpus, no tenemos acceso a todos los textos existentes.",
-      "source": "2022_Liendo, P. J._Introducción a la Lingüística de corpus, sus usos y aplicaciones"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Esto también va a determinar el tamaño de la muestra, ya que cuando creamos un corpus, no tenemos acceso a todos los textos existentes.",
+        "source": "2022_Liendo, P. J._Introducción a la Lingüística de corpus, sus usos y aplicaciones"
+      },
+      "en": {
+        "type": "uso",
+        "text": "In Chapter 5, we presented the results of several experimental studies showing how sample size directly influences the precision of linguistic measures, which in turn provides direct evidence that sample size clearly matters for the accuracy of quantitativelinguistic analyses.",
+        "source": "2022_Egbert_ J. Biber_ D. y Gray_ B._Designing and Evaluating Language Corpora"
+      }
     }
   },
   {
@@ -18546,6 +19325,16 @@
     "gap": {
       "en": null,
       "es": "propuesta"
+    },
+    "contexts": {
+      "es": {
+        "type": "no_documentado"
+      },
+      "en": {
+        "type": "uso",
+        "text": "In many cases, the operationalized domain can be used to create an itemized list of all texts that are available for sampling, referred to as a sampling frame (see Biber 1993: 244).",
+        "source": "2022_Egbert_ J. Biber_ D. y Gray_ B._Designing and Evaluating Language Corpora"
+      }
     }
   },
   {
@@ -18631,10 +19420,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Este recurso presenta algunas limitaciones en términos de tamaño, unidad de muestra y representatividad, que condicionan sus resultados y, por tanto, las descripciones de cualquier fenómeno lingüístico estudiado.",
-      "source": "2015_Molina Salinas, C., Sierra Martínez, G. E._Hacia una normalización de la frecuencia de los corpus CREA y CORDE_Signos"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Este recurso presenta algunas limitaciones en términos de tamaño, unidad de muestra y representatividad, que condicionan sus resultados y, por tanto, las descripciones de cualquier fenómeno lingüístico estudiado.",
+        "source": "2015_Molina Salinas, C., Sierra Martínez, G. E._Hacia una normalización de la frecuencia de los corpus CREA y CORDE_Signos"
+      },
+      "en": {
+        "type": "uso",
+        "text": "The sampling unit is usually the type of text that will be included in the corpus, often self-evident even in the title of the domain.",
+        "source": "2022_Egbert_ J. Biber_ D. y Gray_ B._Designing and Evaluating Language Corpora"
+      }
     },
     "term_note": {
       "es": "Los dos subcorpus concentran el término en un solo documento.",
@@ -18718,10 +19514,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "La segmentación morfológica es la descomposición de la palabra en unidades morfológicas.",
-      "source": "2015_Sierra Martínez, G. E._Introducción a los corpus lingüísticos"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "La segmentación morfológica es la descomposición de la palabra en unidades morfológicas.",
+        "source": "2015_Sierra Martínez, G. E._Introducción a los corpus lingüísticos"
+      },
+      "en": {
+        "type": "uso",
+        "text": "This kind of annotation requires an initial segmentation process called tokenization, which aims to determine and delineate the units in the corpus that will be annotated – words, numbers, punctuation marks, etc.",
+        "source": "2017_Gries, S. T., Berez, A. L._Linguistic Annotation in or for Corpus Linguistics"
+      }
     }
   },
   {
@@ -18807,10 +19610,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "A pesar de lo anterior, si se toman en cuenta características muy generales de los diferentes tipos de anotación semántica existentes es posible ubicarlos en tres grandes grupos: características semánticas, anotación ontológica y anotación de relaciones semánticas.",
-      "source": "2015_Sierra Martínez, G. E._Introducción a los corpus lingüísticos"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "A pesar de lo anterior, si se toman en cuenta características muy generales de los diferentes tipos de anotación semántica existentes es posible ubicarlos en tres grandes grupos: características semánticas, anotación ontológica y anotación de relaciones semánticas.",
+        "source": "2015_Sierra Martínez, G. E._Introducción a los corpus lingüísticos"
+      },
+      "en": {
+        "type": "uso",
+        "text": "So far, the techniques and systems used for annotating a corpus include orthographic annotation, prosodic annotation, grammatical annotation, semantic annotation, syntactic annotation, anaphoric annotation, and discourse annotation and some other types discussed elsewhere.",
+        "source": "2018_Sekhar Dash, N., Arulmozi, S._History, Features, and Typology of Language Corpora"
+      }
     }
   },
   {
@@ -18897,10 +19707,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "definitorio",
-      "text": "La preferencia semántica hace referencia a la coaparición de palabras con determinadas selecciones semánticas (Corpas Pastor, 2008), mientras que la prosodia semántica se refiere al significado pragmático y funcional, que forma parte inherente de la unidad léxica (Sinclair, 2004).",
-      "source": "2021_Piccioni, S., Pontrandolfo, G._WebLesp. Corpus de comunicación digital especializada en español. Arquitectura. Compilación y usos_Revista de lingüística teórica y aplicada"
+    "contexts": {
+      "es": {
+        "type": "definitorio",
+        "text": "La preferencia semántica hace referencia a la coaparición de palabras con determinadas selecciones semánticas (Corpas Pastor, 2008), mientras que la prosodia semántica se refiere al significado pragmático y funcional, que forma parte inherente de la unidad léxica (Sinclair, 2004).",
+        "source": "2021_Piccioni, S., Pontrandolfo, G._WebLesp. Corpus de comunicación digital especializada en español. Arquitectura. Compilación y usos_Revista de lingüística teórica y aplicada"
+      },
+      "en": {
+        "type": "uso",
+        "text": "semantic preference: a term used to indicate the particular words a node word collocates with in its immediate environment",
+        "source": "2016_Weisser, M._Practical Corpus Linguistics. An Introduction to Corpus-Based Language Analysis"
+      }
     }
   },
   {
@@ -18987,10 +19804,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "La preferencia semántica hace referencia a la coaparición de palabras con determinadas selecciones semánticas (Corpas Pastor, 2008), mientras que la prosodia semántica se refiere al significado pragmático y funcional, que forma parte inherente de la unidad léxica (Sinclair, 2004).",
-      "source": "2021_Piccioni, S., Pontrandolfo, G._WebLesp. Corpus de comunicación digital especializada en español. Arquitectura. Compilación y usos_Revista de lingüística teórica y aplicada"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "La preferencia semántica hace referencia a la coaparición de palabras con determinadas selecciones semánticas (Corpas Pastor, 2008), mientras que la prosodia semántica se refiere al significado pragmático y funcional, que forma parte inherente de la unidad léxica (Sinclair, 2004).",
+        "source": "2021_Piccioni, S., Pontrandolfo, G._WebLesp. Corpus de comunicación digital especializada en español. Arquitectura. Compilación y usos_Revista de lingüística teórica y aplicada"
+      },
+      "en": {
+        "type": "uso",
+        "text": "The real question is, again, whether it is the specific expression [cause NP] that has the semantic prosody in question, or whether this prosody is found in an entire semantic domain – perhaps speakers of English have a generally negative view of causation.",
+        "source": "2020_Stefanowitsch, A._Corpus Linguistics A guide to the methodology"
+      }
     }
   },
   {
@@ -19404,10 +20228,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "La creación de corpus especializados con términos avalados es un tema de importancia vital para las sociedades.",
-      "source": "2022_Martí, M. A., Taulé, M._Desarrollos tecnológicos de la lingüística de corpus en español"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "La creación de corpus especializados con términos avalados es un tema de importancia vital para las sociedades.",
+        "source": "2022_Martí, M. A., Taulé, M._Desarrollos tecnológicos de la lingüística de corpus en español"
+      },
+      "en": {
+        "type": "uso",
+        "text": "The EMMA corpus fills a gap by being a large-scale specialized corpus that allows for the in-depth analysis of individuals' language use against the backdrop of community-level usage.",
+        "source": "2019_Petre, P., Anthonissen, L., et al._Early Modern Multiloquent Authors. EMMA. Designin a large-scale corpus of individuals languages_ICAME"
+      }
     }
   },
   {
@@ -19619,10 +20450,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Permite analizar, sintetizar y manipular corpus orales para hacer análisis acústico, síntesis articulatoria, procesamiento estadístico de los datos, edición y manipulación de señales de audio, entre muchas otras.",
-      "source": "2015_Sierra Martínez, G. E._Introducción a los corpus lingüísticos"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Permite analizar, sintetizar y manipular corpus orales para hacer análisis acústico, síntesis articulatoria, procesamiento estadístico de los datos, edición y manipulación de señales de audio, entre muchas otras.",
+        "source": "2015_Sierra Martínez, G. E._Introducción a los corpus lingüísticos"
+      },
+      "en": {
+        "type": "uso",
+        "text": "In principle, a speech corpus is a collection of spoken text data typically recorded in specific settings, used for specific purposes, and produced by specific language users.",
+        "source": "2018_Sekhar Dash, N., Arulmozi, S._History, Features, and Typology of Language Corpora"
+      }
     }
   },
   {
@@ -19933,10 +20771,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "La estandarización z implica reescalar una variable para que tenga una media de cero y una desviación estándar de uno.",
-      "source": "2022_Martí, M. A., Taulé, M._Desarrollos tecnológicos de la lingüística de corpus en español"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "La estandarización z implica reescalar una variable para que tenga una media de cero y una desviación estándar de uno.",
+        "source": "2022_Martí, M. A., Taulé, M._Desarrollos tecnológicos de la lingüística de corpus en español"
+      },
+      "en": {
+        "type": "uso",
+        "text": "The standard deviation is an indicator of the amount of variation in a sample (or sub-sample) that is frequently reported; it is good practice to report standard deviations whenever we report means.",
+        "source": "2020_Stefanowitsch, A._Corpus Linguistics A guide to the methodology"
+      }
     }
   },
   {
@@ -20166,10 +21011,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Por ejemplo, el Brown Corpus, compilado en la década de los 60, es un corpus estático, mientras que el Corpus of Contemporary American English se actualiza regularmente.",
-      "source": "2024_Jiménez-Navarro, E. L._Consideraciones para la compilación y exploración de un corpus lingüístico"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Por ejemplo, el Brown Corpus, compilado en la década de los 60, es un corpus estático, mientras que el Corpus of Contemporary American English se actualiza regularmente.",
+        "source": "2024_Jiménez-Navarro, E. L._Consideraciones para la compilación y exploración de un corpus lingüístico"
+      },
+      "en": {
+        "type": "uso",
+        "text": "An alternative solution to tracking change diachronically is to use static corpora, such as the LOB and the FLOB, which were designed to reflect the same categories of language, but using samples whose production dates were 30 years apart.",
+        "source": "2016_Weisser, M._Practical Corpus Linguistics. An Introduction to Corpus-Based Language Analysis"
+      }
     }
   },
   {
@@ -20276,10 +21128,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Para establecer la significación estadística de las diferencias se utilizan dos técnicas: el test de la χ2 o de Pearson y la prueba de verosimilitud log-likelihood.",
-      "source": "2015_Sierra Martínez, G. E._Introducción a los corpus lingüísticos"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Para establecer la significación estadística de las diferencias se utilizan dos técnicas: el test de la χ2 o de Pearson y la prueba de verosimilitud log-likelihood.",
+        "source": "2015_Sierra Martínez, G. E._Introducción a los corpus lingüísticos"
+      },
+      "en": {
+        "type": "uso",
+        "text": "A cursory examination of the corpus linguistics literature will swiftly show that, by convention, corpus linguists often appeal to statistical significance in a way not dissimilar to other disciplines.",
+        "source": "2022_McEnery_ T., Brezina, V._Fundamental Principles of Corpus Linguistics"
+      }
     }
   },
   {
@@ -20382,10 +21241,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Atendiendo únicamente a las variantes en la raíz, la consulta al CORDE de la secuencias cocodr* o crocod* devuelve 733 casos, el más antiguo de los cuales es el ya mencionado procedente del Calila e Dimna.",
-      "source": "2021_Rojo, G._Introducción a la lingüística de corpus en español"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Atendiendo únicamente a las variantes en la raíz, la consulta al CORDE de la secuencias cocodr* o crocod* devuelve 733 casos, el más antiguo de los cuales es el ya mencionado procedente del Calila e Dimna.",
+        "source": "2021_Rojo, G._Introducción a la lingüística de corpus en español"
+      },
+      "en": {
+        "type": "uso",
+        "text": "Each line contains several words or word stems in one or the other of the languages.",
+        "source": "2018_Sekhar Dash, N., Arulmozi, S._History, Features, and Typology of Language Corpora"
+      }
     }
   },
   {
@@ -20541,10 +21407,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Además, se pueden cambiar otros parámetros adicionales de la herramienta como: incorporar una lista de palabras vacías (stopwords) para filtrarlas, modificar el número de iteraciones, especificar la cantidad de palabras que incluirá cada topic (la cantidad por defecto es 20), etc.",
-      "source": "2022_Martí, M. A., Taulé, M._Desarrollos tecnológicos de la lingüística de corpus en español"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Además, se pueden cambiar otros parámetros adicionales de la herramienta como: incorporar una lista de palabras vacías (stopwords) para filtrarlas, modificar el número de iteraciones, especificar la cantidad de palabras que incluirá cada topic (la cantidad por defecto es 20), etc.",
+        "source": "2022_Martí, M. A., Taulé, M._Desarrollos tecnológicos de la lingüística de corpus en español"
+      },
+      "en": {
+        "type": "uso",
+        "text": "The smaller the corpora compared are, the easier it'll of course become to narrow down such selections, but essentially, the technique itself is similar to creating basic stopword lists, only that, in this case, a word list from a whole corpus is used as a stopword list.",
+        "source": "2016_Weisser, M._Practical Corpus Linguistics. An Introduction to Corpus-Based Language Analysis"
+      }
     }
   },
   {
@@ -20632,6 +21505,16 @@
     "gap": {
       "en": null,
       "es": "propuesta"
+    },
+    "contexts": {
+      "es": {
+        "type": "no_documentado"
+      },
+      "en": {
+        "type": "uso",
+        "text": "For instance, Biber (1993) points out that stratified samples are almost always more representative than non-stratified samples because all identified strata can be represented rather than simply relying on random selection methods.",
+        "source": "2025_Hashimoto, B., Nelson, K._Recent trends in corpus design and reporting. A methodological synthesis_Research in Corpus Linguistics"
+      }
     }
   },
   {
@@ -20718,10 +21601,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Al tratarse de un corpus diacrónico implica que está formado por diferentes subcorpus históricos (conjuntos de textos de distintas épocas), entendidos estos como sincronías, que, al contrastarse, permiten observar la evolución de la lengua.",
-      "source": "2022_Sánchez Lancis, C._Corpus diacrónicos del español de España"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Al tratarse de un corpus diacrónico implica que está formado por diferentes subcorpus históricos (conjuntos de textos de distintas épocas), entendidos estos como sincronías, que, al contrastarse, permiten observar la evolución de la lengua.",
+        "source": "2022_Sánchez Lancis, C._Corpus diacrónicos del español de España"
+      },
+      "en": {
+        "type": "uso",
+        "text": "The language subcorpora included in EUCLCORP (currently British English, German and French) constitute valuable resources for cross-linguistic research into judicial language.",
+        "source": "2023_Rodríguez-Puente, P., Hernández, D._The Corpus of Contemporary English Legal Decisions_ICAME"
+      }
     }
   },
   {
@@ -20812,10 +21702,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Los sincrónicos contienen elementos del lenguaje de un momento específico en el tiempo, y pueden ser de dos tipos: contemporáneos e históricos.",
-      "source": "2015_Sierra Martínez, G. E._Introducción a los corpus lingüísticos"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Los sincrónicos contienen elementos del lenguaje de un momento específico en el tiempo, y pueden ser de dos tipos: contemporáneos e históricos.",
+        "source": "2015_Sierra Martínez, G. E._Introducción a los corpus lingüísticos"
+      },
+      "en": {
+        "type": "uso",
+        "text": "A synchronic corpus is mostly used for the study of a synchronic state of a language, including variation.",
+        "source": "2017_Desagulier, G._Corpus Linguistics and Statistics with R"
+      }
     }
   },
   {
@@ -20909,10 +21806,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "El CREA es un ejemplo de corpus sincrónico contemporáneo, y el CORDE, por su parte, es un ejemplo de corpus diacrónico cronológico.",
-      "source": "2015_Sierra Martínez, G. E._Introducción a los corpus lingüísticos"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "El CREA es un ejemplo de corpus sincrónico contemporáneo, y el CORDE, por su parte, es un ejemplo de corpus diacrónico cronológico.",
+        "source": "2015_Sierra Martínez, G. E._Introducción a los corpus lingüísticos"
+      },
+      "en": {
+        "type": "uso",
+        "text": "A synchronic corpus, by regular augmentation of texts across domains, can achieve the status of a diachronic corpus.",
+        "source": "2018_Sekhar Dash, N., Arulmozi, S._History, Features, and Typology of Language Corpora"
+      }
     }
   },
   {
@@ -20998,10 +21902,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Para otros niveles de análisis, como la anotación sintáctica o la desambiguación de significados léxicos, el porcentaje de acierto de los programas existentes es menor y por eso son mucho más raros los corpus disponibles con ese tipo de anotación.",
-      "source": "2022_García Miguel J. M._Linguistica de corpus De los datos textuales a la teoría lingüística_Estudios de Lingüística del Español"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Para otros niveles de análisis, como la anotación sintáctica o la desambiguación de significados léxicos, el porcentaje de acierto de los programas existentes es menor y por eso son mucho más raros los corpus disponibles con ese tipo de anotación.",
+        "source": "2022_García Miguel J. M._Linguistica de corpus De los datos textuales a la teoría lingüística_Estudios de Lingüística del Español"
+      },
+      "en": {
+        "type": "uso",
+        "text": "The syntactic annotation scheme that is applied on this corpus is similar to that applied on PPCME as far as possible taking into account the salient morphological and syntactic differences between Old English and Middle English texts.",
+        "source": "2018_Sekhar Dash, N., Arulmozi, S._History, Features, and Typology of Language Corpora"
+      }
     }
   },
   {
@@ -21157,10 +22068,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "La aplicación devuelve los lemas que coaparecen con violeta, su clase gramatical, la frecuencia con que se localizan en ese contexto (por defecto, cinco posiciones a cada lado) y el valor que resulta al aplicar tres pruebas estadísticas diferentes (la información mutua, la log-verosimilitud y la puntuación t).",
-      "source": "2021_Rojo, G._Introducción a la lingüística de corpus en español"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "La aplicación devuelve los lemas que coaparecen con violeta, su clase gramatical, la frecuencia con que se localizan en ese contexto (por defecto, cinco posiciones a cada lado) y el valor que resulta al aplicar tres pruebas estadísticas diferentes (la información mutua, la log-verosimilitud y la puntuación t).",
+        "source": "2021_Rojo, G._Introducción a la lingüística de corpus en español"
+      },
+      "en": {
+        "type": "uso",
+        "text": "The t-score, on the other hand, mainly takes into account the frequency of cooccurrence of node and collocate.",
+        "source": "2016_Weisser, M._Practical Corpus Linguistics. An Introduction to Corpus-Based Language Analysis"
+      }
     }
   },
   {
@@ -21323,10 +22241,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "definitorio",
-      "text": "Para ello, los corpus son sometidos a un procesamiento que incluye, entre otras, la posibilidad de dividirlo en la unidad más pequeña ―el token― sobre la cual se aplica una etiqueta de carácter lingüístico mediante un programa denominado etiquetador.",
-      "source": "2018_Bernal Chávez, J. A. . Hincapié Moreno, D. A._Lingüística de corpus"
+    "contexts": {
+      "es": {
+        "type": "definitorio",
+        "text": "Para ello, los corpus son sometidos a un procesamiento que incluye, entre otras, la posibilidad de dividirlo en la unidad más pequeña ―el token― sobre la cual se aplica una etiqueta de carácter lingüístico mediante un programa denominado etiquetador.",
+        "source": "2018_Bernal Chávez, J. A. . Hincapié Moreno, D. A._Lingüística de corpus"
+      },
+      "en": {
+        "type": "uso",
+        "text": "As we intended to use the same tagger for the German and Spanish texts, TT seemed to be the best option, as it is adaptable to different languages on the basis of a lexicon and a manually-tagged training corpus.",
+        "source": "2017_Doval, I._POS-tagging a bilingual parallel corpus. Methods and challenges_Research in Corpus Linguistics"
+      }
     }
   },
   {
@@ -21447,10 +22372,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "El rendimiento de los etiquetadores automáticos depende básicamente del etiquetario (conjunto de etiquetas descriptivas empleado) y del dominio temático o registro lingüístico para el que esté entrenado el modelo de desambiguación.",
-      "source": "2022_Martí, M. A., Taulé, M._Desarrollos tecnológicos de la lingüística de corpus en español"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "El rendimiento de los etiquetadores automáticos depende básicamente del etiquetario (conjunto de etiquetas descriptivas empleado) y del dominio temático o registro lingüístico para el que esté entrenado el modelo de desambiguación.",
+        "source": "2022_Martí, M. A., Taulé, M._Desarrollos tecnológicos de la lingüística de corpus en español"
+      },
+      "en": {
+        "type": "uso",
+        "text": "The Spanish tagset comprises the same basic word classes and also includes a tag for foreign words and another for acronyms.",
+        "source": "2017_Doval, I._POS-tagging a bilingual parallel corpus. Methods and challenges_Research in Corpus Linguistics"
+      }
     }
   },
   {
@@ -21637,10 +22569,15 @@
       "en": "propuesta",
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "De nuevo, la facilidad e inmediatez de actualización de datos que el corpus telemático ofrece permite obtener información sociológica del informante con un bajo coste temporal.",
-      "source": "2024_Molina García, A., Ávila Muñoz, A. M._Propuesta de construcción de nuevos corpus. Los mensajes de voz de WhatsApp como fuente de datos lingüísticos_Oralia"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "De nuevo, la facilidad e inmediatez de actualización de datos que el corpus telemático ofrece permite obtener información sociológica del informante con un bajo coste temporal.",
+        "source": "2024_Molina García, A., Ávila Muñoz, A. M._Propuesta de construcción de nuevos corpus. Los mensajes de voz de WhatsApp como fuente de datos lingüísticos_Oralia"
+      },
+      "en": {
+        "type": "no_documentado"
+      }
     },
     "term_note": {
       "es": "Término documentado en un solo texto español (Molina García y Ávila Muñoz); no se documenta equivalente inglés.",
@@ -21749,10 +22686,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "T-LAB incluye un conjunto de herramientas lingüísticas y estadísticas para el análisis de contenido, el análisis del discurso y la minería de textos.",
-      "source": "2015_Sierra Martínez, G. E._Introducción a los corpus lingüísticos"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "T-LAB incluye un conjunto de herramientas lingüísticas y estadísticas para el análisis de contenido, el análisis del discurso y la minería de textos.",
+        "source": "2015_Sierra Martínez, G. E._Introducción a los corpus lingüísticos"
+      },
+      "en": {
+        "type": "uso",
+        "text": "From a Text Mining perspective, classification experiments based on the feature set analysed in the present study could be performed, as well as other NLP tasks in text analysis of stanced discourse.",
+        "source": "2018_Simaki, V., Paradis, C., Kerren, A._Evaluating stance-annotated sentences from the Brexit Blog Corpus. A quantitative linguistic analysis_ICAME"
+      }
     }
   },
   {
@@ -21838,10 +22782,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "En una primera aproximación se distingue si el corpus incluye una amplia diversidad de tipos de texto (o géneros/dominios), en cuyo caso se hablará de corpus generales o balanceados o si se trata, más bien, de corpus especializados.",
-      "source": "2015_Bolaños Cuellar, S._La Linguistica de corpus. Perspectivas para la investigacion linguistica contemporanea_Forma y Función"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "En una primera aproximación se distingue si el corpus incluye una amplia diversidad de tipos de texto (o géneros/dominios), en cuyo caso se hablará de corpus generales o balanceados o si se trata, más bien, de corpus especializados.",
+        "source": "2015_Bolaños Cuellar, S._La Linguistica de corpus. Perspectivas para la investigacion linguistica contemporanea_Forma y Función"
+      },
+      "en": {
+        "type": "uso",
+        "text": "The homogeneity of structure, diversity of text types, and uniformity in text representation are the rudiments of a monolingual corpus, which becomes indispensable in the compilation of generalized lexicon as well as for language description and analysis.",
+        "source": "2018_Sekhar Dash, N., Arulmozi, S._History, Features, and Typology of Language Corpora"
+      }
     }
   },
   {
@@ -21930,10 +22881,17 @@
       "en": null,
       "es": "prestamo"
     },
-    "context": {
-      "type": "uso",
-      "text": "El token al cual se refiere Baquero corresponde, en lenguaje computacional, a cada una de las cadenas de caracteres dividida por espacios; en otras palabras, un token es igual a una palabra.",
-      "source": "2018_Bernal Chávez, J. A. . Hincapié Moreno, D. A._Lingüística de corpus"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "El token al cual se refiere Baquero corresponde, en lenguaje computacional, a cada una de las cadenas de caracteres dividida por espacios; en otras palabras, un token es igual a una palabra.",
+        "source": "2018_Bernal Chávez, J. A. . Hincapié Moreno, D. A._Lingüística de corpus"
+      },
+      "en": {
+        "type": "uso",
+        "text": "The Analysis of this corpus produces a large list of non-lemmatized tokens; and these are used to compile lexical resources including the Croatian National Dictionary and Croatian language teaching materials.",
+        "source": "2018_Sekhar Dash, N., Arulmozi, S._History, Features, and Typology of Language Corpora"
+      }
     }
   },
   {
@@ -22038,10 +22996,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "La tokenización también permite distinguir entre las búsquedas de palabras enteras o las búsquedas por fragmentos de palabras.",
-      "source": "2019_de Benito, C._Los corpus del español desde la perspectiva del usuario lingüista_Scriptum digital"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "La tokenización también permite distinguir entre las búsquedas de palabras enteras o las búsquedas por fragmentos de palabras.",
+        "source": "2019_de Benito, C._Los corpus del español desde la perspectiva del usuario lingüista_Scriptum digital"
+      },
+      "en": {
+        "type": "uso",
+        "text": "The first answer is that the theories of tokenization and word classes are (usually) explicitly described in the corpus manual itself or in a guide as to how to apply the tag set.",
+        "source": "2020_Stefanowitsch, A._Corpus Linguistics A guide to the methodology"
+      }
     }
   },
   {
@@ -22241,10 +23206,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Más recientemente destaca la irrupción de los corpus de entrenamiento en el ámbito del procesamiento del lenguaje natural —donde normalmente se refiere a ellos como datasets—, ampliamente utilizados para tareas como la traducción automática o la clasificación de textos.",
-      "source": "2025_Moyano Moreno, I._Antecedentes de la lingüística de corpus y algunas apreciaciones terminológicas"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Más recientemente destaca la irrupción de los corpus de entrenamiento en el ámbito del procesamiento del lenguaje natural —donde normalmente se refiere a ellos como datasets—, ampliamente utilizados para tareas como la traducción automática o la clasificación de textos.",
+        "source": "2025_Moyano Moreno, I._Antecedentes de la lingüística de corpus y algunas apreciaciones terminológicas"
+      },
+      "en": {
+        "type": "uso",
+        "text": "When the study on the training corpus is complete, the study is repeated on the test corpus, thus allowing some insight into how generalisable the inductive reasoning arising from the analysis of the training corpus may be.",
+        "source": "2022_McEnery_ T., Brezina, V._Fundamental Principles of Corpus Linguistics"
+      }
     }
   },
   {
@@ -22335,10 +23307,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Cuando el informante usa formas contrarias al canon, por ejemplo, 'haiga', el transcriptor registrará la forma 'haya', con el alfabeto que se emplea corrientemente en la lengua con la que esté trabajando.",
-      "source": "2015_Sierra Martínez, G. E._Introducción a los corpus lingüísticos"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Cuando el informante usa formas contrarias al canon, por ejemplo, 'haiga', el transcriptor registrará la forma 'haya', con el alfabeto que se emplea corrientemente en la lengua con la que esté trabajando.",
+        "source": "2015_Sierra Martínez, G. E._Introducción a los corpus lingüísticos"
+      },
+      "en": {
+        "type": "uso",
+        "text": "The transcriber is asserting that what is written is an accurate representation in orthography of the speech produced.",
+        "source": "2022_McEnery_ T., Brezina, V._Fundamental Principles of Corpus Linguistics"
+      }
     }
   },
   {
@@ -22576,10 +23555,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Cabe mencionar que ARTHUS no es un corpus anotado sintácticamente en el sentido tradicional del término, ya que consiste en una codificación del análisis realizado manualmente.",
-      "source": "2015_Sierra Martínez, G. E._Introducción a los corpus lingüísticos"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Cabe mencionar que ARTHUS no es un corpus anotado sintácticamente en el sentido tradicional del término, ya que consiste en una codificación del análisis realizado manualmente.",
+        "source": "2015_Sierra Martínez, G. E._Introducción a los corpus lingüísticos"
+      },
+      "en": {
+        "type": "uso",
+        "text": "The 1992 release of the Penn Treebank contained what is known as 'skeletal bracketing' where the annotations are confined to phrase structure nodes, as shown in (7.7).",
+        "source": "2023_Barth, D., Schnell, S._Understanding Corpus Linguistics"
+      }
     }
   },
   {
@@ -22852,10 +23838,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Por ejemplo, reconvertir la distinción habitual entre types y tokens y aplicarla no a formas, sino a lemas proporciona una visión bastante más adecuada de la variedad léxica que puede encontrarse en un texto.",
-      "source": "2017_Rojo, G._Sobre la configuración estadística de los corpus textuales_Lingüística"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Por ejemplo, reconvertir la distinción habitual entre types y tokens y aplicarla no a formas, sino a lemas proporciona una visión bastante más adecuada de la variedad léxica que puede encontrarse en un texto.",
+        "source": "2017_Rojo, G._Sobre la configuración estadística de los corpus textuales_Lingüística"
+      },
+      "en": {
+        "type": "uso",
+        "text": "For example, the word types included in the fifth frequency band of the BNC occur on average in only 17 percent of the texts, and the word types included in the sixth frequency band occur on average in only 14 percent of the texts.",
+        "source": "2022_Egbert_ J. Biber_ D. y Gray_ B._Designing and Evaluating Language Corpora"
+      }
     },
     "term_note": {
       "es": "En inglés, «type» también es una palabra general muy frecuente (text type, type of corpus), así que su frecuencia está muy inflada. En español, el par se expresa sobre todo con los préstamos (types y tokens) o en «tipo-token».",
@@ -23056,10 +24049,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "definitorio",
-      "text": "Su formulación básica, realizada por Templin a finales de los años cincuenta, es el índice conocido como type-token ratio (TTR), consiste en dividir el número de formas distintas entre el número total de formas, de modo que el resultado oscila entre 0 y 1 y se considera que el texto es más 'rico' desde el punto de vista léxico cuanto más cerca de 1 esté el TTR.",
-      "source": "2017_Rojo, G._Sobre la configuración estadística de los corpus textuales_Lingüística"
+    "contexts": {
+      "es": {
+        "type": "definitorio",
+        "text": "Su formulación básica, realizada por Templin a finales de los años cincuenta, es el índice conocido como type-token ratio (TTR), consiste en dividir el número de formas distintas entre el número total de formas, de modo que el resultado oscila entre 0 y 1 y se considera que el texto es más 'rico' desde el punto de vista léxico cuanto más cerca de 1 esté el TTR.",
+        "source": "2017_Rojo, G._Sobre la configuración estadística de los corpus textuales_Lingüística"
+      },
+      "en": {
+        "type": "uso",
+        "text": "Type frequencies are then lower than token frequencies, and the type/token ratio can reveal interesting insights into properties of texts, essentially telling us how lexically variable a text or corpus is.",
+        "source": "2023_Barth, D., Schnell, S._Understanding Corpus Linguistics"
+      }
     }
   },
   {
@@ -23210,10 +24210,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Los sistemas utilizados mayoritariamente en la actualidad se engloban en el proyecto Unicode (básicamente UTF-8) y trabajan con dieciséis bits, lo cual permite 65 536 (216) opciones y pueden evolucionar hasta veintiuno o incluso treinta y un bits.",
-      "source": "2021_Rojo, G._Introducción a la lingüística de corpus en español"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Los sistemas utilizados mayoritariamente en la actualidad se engloban en el proyecto Unicode (básicamente UTF-8) y trabajan con dieciséis bits, lo cual permite 65 536 (216) opciones y pueden evolucionar hasta veintiuno o incluso treinta y un bits.",
+        "source": "2021_Rojo, G._Introducción a la lingüística de corpus en español"
+      },
+      "en": {
+        "type": "uso",
+        "text": "XML has been designed to be Unicode-aware right from the very beginning, so as to allow for markup using different character sets, also within one and the same document.",
+        "source": "2016_Weisser, M._Practical Corpus Linguistics. An Introduction to Corpus-Based Language Analysis"
+      }
     }
   },
   {
@@ -23727,10 +24734,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Dado que este recurso permite también crear corpus virtuales en función de, por ejemplo, el tipo de texto, podemos intentar averiguar si es posible que la mayor o menor frecuencia de alguna(s) de estas clases de palabras esté influida por la tipología textual.",
-      "source": "2021_Rojo, G._Introducción a la lingüística de corpus en español"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Dado que este recurso permite también crear corpus virtuales en función de, por ejemplo, el tipo de texto, podemos intentar averiguar si es posible que la mayor o menor frecuencia de alguna(s) de estas clases de palabras esté influida por la tipología textual.",
+        "source": "2021_Rojo, G._Introducción a la lingüística de corpus en español"
+      },
+      "en": {
+        "type": "uso",
+        "text": "That means an opportunistic corpus is a kind of 'virtual corpus' in the sense that the selection of texts from an opportunistic corpus is largely based on the requirements of a particular project of study (Sinclair 1995).",
+        "source": "2018_Sekhar Dash, N., Arulmozi, S._History, Features, and Typology of Language Corpora"
+      }
     }
   },
   {
@@ -23835,10 +24849,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Las posibilidades de poder retomar datos para un nuevo estudio dependen, no obstante, de la forma concreta en la que se materialice la utilización de la web como corpus, que, como veremos a continuación, es un concepto genérico que engloba distintos enfoques.",
-      "source": "2017_González Fernández, A._La web como corpus. Un esbozo_LENGUA Y HABLA"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Las posibilidades de poder retomar datos para un nuevo estudio dependen, no obstante, de la forma concreta en la que se materialice la utilización de la web como corpus, que, como veremos a continuación, es un concepto genérico que engloba distintos enfoques.",
+        "source": "2017_González Fernández, A._La web como corpus. Un esbozo_LENGUA Y HABLA"
+      },
+      "en": {
+        "type": "uso",
+        "text": "The “Web As Corpus” movement has given rise to many of the “mega-corpora” already discussed, such as the TenTen corpus family and the Timestamped JSI Corpus.",
+        "source": "2022_Egbert_ J. Biber_ D. y Gray_ B._Designing and Evaluating Language Corpora"
+      }
     },
     "term_note": {
       "es": "En el subcorpus español la denominación inglesa convive con la traducción «la web como corpus».",
@@ -23926,10 +24947,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Además, en el WordAndPhrase.info/Span, profesores y estudiantes pueden examinar 40 000 lemas en el Corpus Web/Dialects y observar abundante información de cada palabra —frecuencia, distribución de género, sinónimos, colocaciones, tópicos relacionados y líneas de concordancia.",
-      "source": "2022_Davies, M., Parodi, G._Constitución de corpus crecientes del español"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Además, en el WordAndPhrase.info/Span, profesores y estudiantes pueden examinar 40 000 lemas en el Corpus Web/Dialects y observar abundante información de cada palabra —frecuencia, distribución de género, sinónimos, colocaciones, tópicos relacionados y líneas de concordancia.",
+        "source": "2022_Davies, M., Parodi, G._Constitución de corpus crecientes del español"
+      },
+      "en": {
+        "type": "uso",
+        "text": "Web corpora are another example of special corpora whose texts would also be included in general corpora.",
+        "source": "2023_Barth, D., Schnell, S._Understanding Corpus Linguistics"
+      }
     }
   },
   {
@@ -24040,10 +25068,17 @@
       "en": null,
       "es": "prestamo"
     },
-    "context": {
-      "type": "uso",
-      "text": "Precisamente en el desarrollo de esta herramienta de web-crawling para la compilación automática de corpus especializados de la web se basan los trabajos de de Groc (2011), de Suchomel y Pomikálek (2012) o de Schäfer et al. (2014).",
-      "source": "2017_González Fernández, A._La web como corpus. Un esbozo_LENGUA Y HABLA"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Precisamente en el desarrollo de esta herramienta de web-crawling para la compilación automática de corpus especializados de la web se basan los trabajos de de Groc (2011), de Suchomel y Pomikálek (2012) o de Schäfer et al. (2014).",
+        "source": "2017_González Fernández, A._La web como corpus. Un esbozo_LENGUA Y HABLA"
+      },
+      "en": {
+        "type": "uso",
+        "text": "The texts in COCA Academic are accessed and downloaded through automated web crawling and scraping.",
+        "source": "2022_Egbert_ J. Biber_ D. y Gray_ B._Designing and Evaluating Language Corpora"
+      }
     },
     "term_note": {
       "es": "En español solo se documenta el préstamo; «rastreo» aparece en su sentido general.",
@@ -24143,10 +25178,15 @@
       "en": "propuesta",
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Por el contrario, the web for corpus o, lo que es lo mismo, la web para la construcción de corpus, puede ser utilizada como fuente de información adecuada y útil para la elaboración de corpus offline.",
-      "source": "2017_González Fernández, A._La web como corpus. Un esbozo_LENGUA Y HABLA"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Por el contrario, the web for corpus o, lo que es lo mismo, la web para la construcción de corpus, puede ser utilizada como fuente de información adecuada y útil para la elaboración de corpus offline.",
+        "source": "2017_González Fernández, A._La web como corpus. Un esbozo_LENGUA Y HABLA"
+      },
+      "en": {
+        "type": "no_documentado"
+      }
     },
     "term_note": {
       "es": "La distinción entre web como corpus y web para corpus aparece en el subcorpus español; el subcorpus inglés no usa la segunda denominación.",
@@ -24255,10 +25295,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "En los tres primeros, que están tokenizados y permiten el uso de comodines, estos se pueden emplear para indicar las distancias a las que deben estar los distintos términos insertados, pero no ocurre lo mismo en PRESEEA.",
-      "source": "2019_de Benito, C._Los corpus del español desde la perspectiva del usuario lingüista_Scriptum digital"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "En los tres primeros, que están tokenizados y permiten el uso de comodines, estos se pueden emplear para indicar las distancias a las que deben estar los distintos términos insertados, pero no ocurre lo mismo en PRESEEA.",
+        "source": "2019_de Benito, C._Los corpus del español desde la perspectiva del usuario lingüista_Scriptum digital"
+      },
+      "en": {
+        "type": "uso",
+        "text": "One other important thing about wildcards in BNCweb is that they can also represent word slots, if separated from other words in a phrase query.",
+        "source": "2016_Weisser, M._Practical Corpus Linguistics. An Introduction to Corpus-Based Language Analysis"
+      }
     }
   },
   {
@@ -24434,10 +25481,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "En nuestro caso, con AntConc hemos generado listados de frecuencias de palabras y sintagmas, hemos extraído concordancias y colocaciones, a raíz de las cuales hemos podido acceder a fragmentos más amplios que permiten aclarar conceptos clave y alcanzar familiaridad con el género textual del TO.",
-      "source": "2022_Flores Acuña, E._Compilación de un corpus de especialidad con BootCat para la traducción jurídica italiano-español. El caso de un contrato de agencia_Onomázein"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "En nuestro caso, con AntConc hemos generado listados de frecuencias de palabras y sintagmas, hemos extraído concordancias y colocaciones, a raíz de las cuales hemos podido acceder a fragmentos más amplios que permiten aclarar conceptos clave y alcanzar familiaridad con el género textual del TO.",
+        "source": "2022_Flores Acuña, E._Compilación de un corpus de especialidad con BootCat para la traducción jurídica italiano-español. El caso de un contrato de agencia_Onomázein"
+      },
+      "en": {
+        "type": "uso",
+        "text": "For word frequency data, the event of interest is the occurrence of the item in question, and the period of observation is the length of the text, measured in the number of running words.",
+        "source": "2025_Sonnig, L._Advancing our understanding ofdispersion measures in corpus research_Corpora"
+      }
     }
   },
   {
@@ -24596,10 +25650,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Segundo, se puede realizar una búsqueda por frecuencia, la cual permite obtener una lista de frecuencias de unidades (formas, lemas o etiquetas de partes de la oración) o secuencias de unidades de todo el corpus.",
-      "source": "2018_Sierra, G. E._Corpus lingüísticos"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Segundo, se puede realizar una búsqueda por frecuencia, la cual permite obtener una lista de frecuencias de unidades (formas, lemas o etiquetas de partes de la oración) o secuencias de unidades de todo el corpus.",
+        "source": "2018_Sierra, G. E._Corpus lingüísticos"
+      },
+      "en": {
+        "type": "uso",
+        "text": "A frequency list is a two-column table with all word types occurring in the corpus in one column and their type frequency in the other column.",
+        "source": "2017_Desagulier, G._Corpus Linguistics and Statistics with R"
+      }
     }
   },
   {
@@ -24723,10 +25784,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "definitorio",
-      "text": "La resolución computacional de este problema se denomina Word Sense Disambiguation y es uno de los problemas más trabajados en la lingüística computacional.",
-      "source": "2022_Martí, M. A., Taulé, M._Desarrollos tecnológicos de la lingüística de corpus en español"
+    "contexts": {
+      "es": {
+        "type": "definitorio",
+        "text": "La resolución computacional de este problema se denomina Word Sense Disambiguation y es uno de los problemas más trabajados en la lingüística computacional.",
+        "source": "2022_Martí, M. A., Taulé, M._Desarrollos tecnológicos de la lingüística de corpus en español"
+      },
+      "en": {
+        "type": "uso",
+        "text": "Word sense disambiguation is often largely automatic and consists of an algorithm assigning to each word form a sense from an inventory of possible senses that best matches the context in which the word form is used.",
+        "source": "2017_Gries, S. T., Berez, A. L._Linguistic Annotation in or for Corpus Linguistics"
+      }
     }
   },
   {
@@ -24817,10 +25885,17 @@
       "en": null,
       "es": "prestamo"
     },
-    "context": {
-      "type": "uso",
-      "text": "La función Word Sketch es la que da nombre al software y se utiliza para conocer las propiedades combinatorias de las palabras.",
-      "source": "2024_Jiménez-Navarro, E. L._Consideraciones para la compilación y exploración de un corpus lingüístico"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "La función Word Sketch es la que da nombre al software y se utiliza para conocer las propiedades combinatorias de las palabras.",
+        "source": "2024_Jiménez-Navarro, E. L._Consideraciones para la compilación y exploración de un corpus lingüístico"
+      },
+      "en": {
+        "type": "uso",
+        "text": "The bilingual Word Sketch makes it possible, among other things, to detect equivalent verbal collocates of the English and French nouns under scrutiny, such as jeopardize/menacer and ensure/assurer.",
+        "source": "2020_Lefer, M. A._Parallel corpora"
+      }
     },
     "term_note": {
       "es": "La denominación inglesa se usa como préstamo en español.",
@@ -25144,10 +26219,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "Es claro que resulta mucho más expedito el trabajo con corpus escritos que con corpus orales, puesto que el procesamiento de la información oral, con todas las marcaciones de énfasis, acento, entonación, pausa, etc., constituye un reto para el lingüista computacional.",
-      "source": "2015_Bolaños Cuellar, S._La Linguistica de corpus. Perspectivas para la investigacion linguistica contemporanea_Forma y Función"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "Es claro que resulta mucho más expedito el trabajo con corpus escritos que con corpus orales, puesto que el procesamiento de la información oral, con todas las marcaciones de énfasis, acento, entonación, pausa, etc., constituye un reto para el lingüista computacional.",
+        "source": "2015_Bolaños Cuellar, S._La Linguistica de corpus. Perspectivas para la investigacion linguistica contemporanea_Forma y Función"
+      },
+      "en": {
+        "type": "uso",
+        "text": "In written corpora, there is one level other than the lexical that is (or can be) directly represented: the text.",
+        "source": "2020_Stefanowitsch, A._Corpus Linguistics A guide to the methodology"
+      }
     }
   },
   {
@@ -25427,6 +26509,16 @@
     "gap": {
       "en": null,
       "es": "propuesta"
+    },
+    "contexts": {
+      "es": {
+        "type": "no_documentado"
+      },
+      "en": {
+        "type": "uso",
+        "text": "The mismatch of assumptions for use of Gaussian statistics on language data in corpora means that we cannot use inferential statistics, those that claim significant results based on z-scores.",
+        "source": "2021_Kretzschmar, W. A._Complex systems for corpus linguists_ICAME"
+      }
     }
   },
   {
@@ -25515,10 +26607,17 @@
       "en": null,
       "es": null
     },
-    "context": {
-      "type": "uso",
-      "text": "La proyección más interesante de la ley de Zipf se aplica a la configuración general de las frecuencias y se manifiesta en tres aspectos diferentes.",
-      "source": "2021_Rojo, G._Introducción a la lingüística de corpus en español"
+    "contexts": {
+      "es": {
+        "type": "uso",
+        "text": "La proyección más interesante de la ley de Zipf se aplica a la configuración general de las frecuencias y se manifiesta en tres aspectos diferentes.",
+        "source": "2021_Rojo, G._Introducción a la lingüística de corpus en español"
+      },
+      "en": {
+        "type": "uso",
+        "text": "Zipf's law is a powerful generalisation observable in wordlists: the frequency of a word and its rank are in an inverse relationship in such a way that frequency times rank is, broadly, a constant (Brezina 2018: 44).",
+        "source": "2022_McEnery_ T., Brezina, V._Fundamental Principles of Corpus Linguistics"
+      }
     }
   }
 ]

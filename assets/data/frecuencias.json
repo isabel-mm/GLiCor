@@ -3845,7 +3845,7 @@
      },
      {
       "forma": "Lesk algorithm",
-      "relacion": "variante_denominativa",
+      "relacion": "forma_con_nucleo",
       "n": 0,
       "docs": 0,
       "cadenas": [
@@ -3857,8 +3857,7 @@
         "cadena": "Lesk's algorithm",
         "n": 0
        }
-      ],
-      "consolidada": false
+      ]
      }
     ]
    },
@@ -3882,7 +3881,7 @@
      },
      {
       "forma": "algoritmo de Lesk",
-      "relacion": "variante_denominativa",
+      "relacion": "forma_con_nucleo",
       "n": 2,
       "docs": 2,
       "cadenas": [
@@ -3890,8 +3889,7 @@
         "cadena": "algoritmo de Lesk",
         "n": 2
        }
-      ],
-      "consolidada": true
+      ]
      }
     ]
    }
