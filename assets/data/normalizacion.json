@@ -60,6 +60,10 @@
     "forma_completa": {
       "es": "forma completa",
       "en": "full form"
+    },
+    "forma_con_nucleo": {
+      "es": "forma con núcleo",
+      "en": "form with head noun"
     }
   },
   "entradas": [
@@ -2316,7 +2320,7 @@
       "slug": "lesk_algorithm",
       "fuente": "lesk_algorithm",
       "absorbe": [],
-      "tipo": "sinonimia",
+      "tipo": "variante_formal",
       "criterio": "No aparece en el subcorpus inglés.",
       "criterio_en": "Not attested in the English subcorpus.",
       "formas": {
@@ -2330,7 +2334,7 @@
           },
           {
             "forma": "Lesk algorithm",
-            "relacion": "variante_denominativa",
+            "relacion": "forma_con_nucleo",
             "cuenta": [
               "Lesk algorithm",
               "Lesk's algorithm"
@@ -2347,7 +2351,7 @@
           },
           {
             "forma": "algoritmo de Lesk",
-            "relacion": "variante_denominativa",
+            "relacion": "forma_con_nucleo",
             "cuenta": [
               "algoritmo de Lesk"
             ]

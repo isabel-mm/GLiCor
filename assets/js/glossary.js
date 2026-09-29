@@ -153,17 +153,43 @@ function fullReference(source) {
   const parts = String(source || '').split('_');
   return `${parts[1] || ''}${parts[0] ? ` (${parts[0]})` : ''}${parts.length > 2 ? `. <em>${parts.slice(2).join(': ')}</em>` : ''}`;
 }
-// Contexto del subcorpus español: definitorio (validado) o de uso, con su fuente
-function contextHtml(e, lang) {
-  const c = e.context;
-  if (!c) return '';
-  const label = c.type === 'definitorio'
+// Contexto de cada subcorpus: definitorio (validado) o de uso, con su fuente; si no
+// lo hay, el motivo (término no documentado en ese subcorpus o solo en títulos)
+function contextBody(c, cl, lang) {
+  const sub = {
+    es: { es: 'el subcorpus español', en: 'the Spanish subcorpus' },
+    en: { es: 'el subcorpus inglés', en: 'the English subcorpus' },
+  }[cl][lang];
+  if (c.type === 'no_documentado') {
+    return `<p class="entry-context entry-context-none">${lang === 'es' ? `No documentado en ${sub}.` : `Not attested in ${sub}.`}</p>`;
+  }
+  if (c.type === 'solo_titulos') {
+    return `<p class="entry-context entry-context-none">${lang === 'es'
+      ? `En ${sub} solo aparece en títulos de obras.` : `Only attested in titles of works in ${sub}.`}</p>`;
+  }
+  const ref = fullReference(c.source).replace(/<[^>]+>/g, '').replace(/"/g, '&quot;');
+  return `<p class="entry-context">«${c.text}»
+    <span class="context-src" title="${ref}">— ${shortCite(c.source)}</span></p>`;
+}
+
+function contextLabel(c, lang) {
+  return c.type === 'definitorio'
     ? (lang === 'es' ? 'Contexto definitorio' : 'Defining context')
     : (lang === 'es' ? 'Contexto de uso' : 'Usage context');
-  const note = lang === 'es' ? '' : ' <span class="context-lang">(Spanish subcorpus)</span>';
-  const ref = fullReference(c.source).replace(/<[^>]+>/g, '').replace(/"/g, '&quot;');
-  return `<h3>${label}${note}</h3><p class="entry-context">«${c.text}»
-    <span class="context-src" title="${ref}">— ${shortCite(c.source)}</span></p>`;
+}
+
+function contextHtml(e, lang, searchMode) {
+  const cs = e.contexts;
+  if (!cs) return '';
+  const main = searchMode === 'en' ? 'en' : 'es';
+  const other = main === 'en' ? 'es' : 'en';
+  const langName = { es: { es: 'español', en: 'Spanish' }, en: { es: 'inglés', en: 'English' } };
+  const tag = cl => ` <span class="context-lang">(${lang === 'es' ? 'subcorpus ' + langName[cl].es : langName[cl].en + ' subcorpus'})</span>`;
+  const otherLbl = lang === 'es' ? `Ver el contexto en ${langName[other].es}` : `Show the ${langName[other].en} context`;
+  return `<h3>${contextLabel(cs[main], lang)}${tag(main)}</h3>${contextBody(cs[main], main, lang)}
+    <details class="context-other"><summary>${otherLbl}</summary>
+      <p class="context-other-label">${contextLabel(cs[other], lang)}${tag(other)}</p>${contextBody(cs[other], other, lang)}
+    </details>`;
 }
 
 // Nota terminológica sobre el uso del término en el corpus
@@ -395,7 +421,7 @@ function renderEntries(list) {
           : `<h3>Definición (ES)</h3>${esMatch[1]}`;
         cleanHtml = before
             + definitionHtml
-            + contextHtml(e, lang)
+            + contextHtml(e, lang, searchMode)
             + termNoteHtml(e, lang, searchMode)
             + afterEs;
     }
