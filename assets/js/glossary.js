@@ -161,8 +161,9 @@ function contextHtml(e, lang) {
     ? (lang === 'es' ? 'Contexto definitorio' : 'Defining context')
     : (lang === 'es' ? 'Contexto de uso' : 'Usage context');
   const note = lang === 'es' ? '' : ' <span class="context-lang">(Spanish subcorpus)</span>';
-  return `<h3>${label}${note}</h3><blockquote class="entry-context">«${c.text}»
-    <footer>${fullReference(c.source)}</footer></blockquote>`;
+  const ref = fullReference(c.source).replace(/<[^>]+>/g, '').replace(/"/g, '&quot;');
+  return `<h3>${label}${note}</h3><p class="entry-context">«${c.text}»
+    <span class="context-src" title="${ref}">— ${shortCite(c.source)}</span></p>`;
 }
 
 // Nota terminológica sobre el uso del término en el corpus
