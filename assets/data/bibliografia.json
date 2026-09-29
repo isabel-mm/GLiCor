@@ -1,0 +1,402 @@
+{
+ "2016_McEnery, T._Keywords": {
+  "ref": "McEnery, T. (2016): Keywords, P. Baker y J. Egbert (eds.), <em>Triangulating Methodological Approaches in Corpus Linguistic Research</em> (pp. 20-32), Routeledge.",
+  "cita": "McEnery (2016)"
+ },
+ "2016_Murphy, B., Riordan, E._Corpus types and uses": {
+  "ref": "Murphy, B. y Riordan, E. (2016): Corpus types and uses, F. Farr y L. Murray (eds.), <em>The Routledge Handbook of Language Learning and Technology</em> (pp. 388-403). Routledge. <a href=\"https://doi.org/10.4324/9781315657899\" target=\"_blank\" rel=\"noopener\">https://doi.org/10.4324/9781315657899</a>.",
+  "cita": "Murphy y Riordan (2016)"
+ },
+ "2016_Poesio, M., Pradhan, S., Recasens, M., Rodríguez, K., Versley, Y._Annotated Corpora and Annotation Tools": {
+  "ref": "Poesio, M., Pradhan, S., Recasens, M., Rodriguez, K., y Versley, Y. (2016): Annotated Corpora and Annotation Tools, Poesio, M., Stuckardt, R., Versley, Y. (eds.) <em>Anaphora Resolution. Theory and Applications of Natural Language Processing</em> (pp. 97-140). Springer. <a href=\"https://doi.org/10.1007/978-3-662-47909-4_4\" target=\"_blank\" rel=\"noopener\">https://doi.org/10.1007/978-3-662-47909-4_4</a>.",
+  "cita": "Poesio et al. (2016)"
+ },
+ "2017_Gries, S. T., Berez, A. L._Linguistic Annotation in or for Corpus Linguistics": {
+  "ref": "Gries, S. T. y Berez, A. (2017): Linguistic Annotation in/for Corpus Linguistics, N. Ide y J. Pustejovsky (eds.), <em>Handbook of Linguistic Annotation</em> (pp. 379-409), Springer. <a href=\"http://dx.doi.org/10.1007/978-94-024-0881-2_15\" target=\"_blank\" rel=\"noopener\">http://dx.doi.org/10.1007/978-94-024-0881-2_15</a>.",
+  "cita": "Gries y Berez (2017)"
+ },
+ "2020_Lefer, M. A._Parallel corpora": {
+  "ref": "Lefer, M. A. (2020): Parallel corpora, M. Paquot, S. T. Gries (eds.), A <em>Practical Handbook of Corpus Linguistics</em> (pp.2 57-282), Springer <a href=\"http://dx.doi.org/10.1007/978-3-030-46216-1_12\" target=\"_blank\" rel=\"noopener\">http://dx.doi.org/10.1007/978-3-030-46216-1_12</a>.",
+  "cita": "Lefer (2020)"
+ },
+ "2021_Levisha, N._Corpus-based typology. Applications, challenges and some solutions": {
+  "ref": "Levisha, N. (2021): Corpus-based typology: applications, challenges and some solutions. Linguistic Typology, 26(1), 129-160. <a href=\"https://doi.org/10.1515/lingty-2020-0118\" target=\"_blank\" rel=\"noopener\">https://doi.org/10.1515/lingty-2020-0118</a>.",
+  "cita": "Levisha (2021)"
+ },
+ "2016_Weisser, M._Practical Corpus Linguistics. An Introduction to Corpus-Based Language Analysis": {
+  "ref": "Weisser, M. (2016): Practical Corpus Linguistics. An Introduction to Corpus-Based Language Analysis.",
+  "cita": "Weisser (2016)"
+ },
+ "2017_Desagulier, G._Corpus Linguistics and Statistics with R": {
+  "ref": "Desagulier, G. (2017): Corpus Linguistics and Statistics with R.",
+  "cita": "Desagulier (2017)"
+ },
+ "2018_Sekhar Dash, N., Arulmozi, S._History, Features, and Typology of Language Corpora": {
+  "ref": "Sekhar Dash, N. (2018): History, Features, and Typology of Language Corpora.",
+  "cita": "Sekhar Dash (2018)"
+ },
+ "2020_Stefanowitsch, A._Corpus Linguistics A guide to the methodology": {
+  "ref": "Stefanowitsch, A. (2020): Corpus Linguistics A guide to the methodology.",
+  "cita": "Stefanowitsch (2020)"
+ },
+ "2022_Egbert_ J. Biber_ D. y Gray_ B._Designing and Evaluating Language Corpora": {
+  "ref": "Egbert, J. Biber D. y Gray B. (2022). Designing and evaluating language corpora.",
+  "cita": "Egbert et al. (2022)"
+ },
+ "2022_McEnery_ T., Brezina, V._Fundamental Principles of Corpus Linguistics": {
+  "ref": "McEnery, T. y Brezina, V. (2022): Fundamental Principles of Corpus Linguistics.",
+  "cita": "McEnery y Brezina (2022)"
+ },
+ "2023_Barth, D., Schnell, S._Understanding Corpus Linguistics": {
+  "ref": "Barth, D. (2023): Understanding Corpus Linguistics.",
+  "cita": "Barth (2023)"
+ },
+ "2015_Archer, D., Kyto, M., Baron, A., Rayson, P._Guidelines for normalising Early Modern English_ICAME": {
+  "ref": "Archer, D. (2015): Guidelines for normalising Early Modern English. <em>ICAME Journal</em>, <em>39</em>(1), 5-24. <a href=\"https://doi.org/10.1515/icame-2015-0001\" target=\"_blank\" rel=\"noopener\">https://doi.org/10.1515/icame-2015-0001</a>.",
+  "cita": "Archer (2015)"
+ },
+ "2015_Ruhlemann, C., Bagoutdinov, A., O'Donnell, M. B._Modest XPath and XQuery for corpora. Exploiting deep XML annotation_ICAME": {
+  "ref": "Ruhlemann, C. (2015): Modest XPath and XQuery for corpora. Exploiting deep XML annotation. <em>ICAME Journal</em>, <em>39</em>(1), 2015. 47-84. <a href=\"https://doi.org/10.1515/icame-2015-0003\" target=\"_blank\" rel=\"noopener\">https://doi.org/10.1515/icame-2015-0003</a>.",
+  "cita": "Ruhlemann (2015)"
+ },
+ "2016_Hoglund, M., Syrjanen, K._Corpus of Early American Literature_ICAME": {
+  "ref": "Hoglund, M. (2016): Corpus of Early American Literature. <em>ICAME Journal</em>, <em>40</em>(1), 17-38. <a href=\"https://doi.org/10.1515/icame-2016-0003\" target=\"_blank\" rel=\"noopener\">https://doi.org/10.1515/icame-2016-0003</a>.",
+  "cita": "Hoglund (2016)"
+ },
+ "2016_Nevlainen, T., Vartianen, T., Saily, T., Kesaniemi, J., Dominowska, A., Ohman, E._Language Change Database. A new online resource_ICAME": {
+  "ref": "Nevalainen, T., Vartiainen, T., Säily, T., Kesäniemi, J., Dominowska, A. y Öhman, E. (2016): Language Change Database: A new online resource. <em>ICAME Journal</em>, <em>40</em>(1), 77-94. <a href=\"https://doi.org/10.1515/icame-2016-0006\" target=\"_blank\" rel=\"noopener\">https://doi.org/10.1515/icame-2016-0006</a>.",
+  "cita": "Nevalainen et al. (2016)"
+ },
+ "2017_Allen, W._Making corpus data visible. Visualising text with research intermediaries_Corpora": {
+  "ref": "Allen, W. (2017): Making corpus data visible. Visualising text with research intermediaries. <em>Corpora</em>, <em>12</em>(3), 459-482. <a href=\"http://dx.doi.org/10.3366/cor.2017.0128\" target=\"_blank\" rel=\"noopener\">http://dx.doi.org/10.3366/cor.2017.0128</a>.",
+  "cita": "Allen (2017)"
+ },
+ "2017_Doval, I._POS-tagging a bilingual parallel corpus. Methods and challenges_Research in Corpus Linguistics": {
+  "ref": "Doval, I. (2017): POS-tagging a bilingual parallel corpus. Methods and challenges. <em>Research in Corpus Linguistics</em>, <em>5</em>, 35-46. <a href=\"https://doi.org/10.32714/ricl.05.03\" target=\"_blank\" rel=\"noopener\">https://doi.org/10.32714/ricl.05.03</a>.",
+  "cita": "Doval (2017)"
+ },
+ "2017_Fanego, T., Rodríguez-Puente, et al._The Corpus of Historical English Law Reports.  A resource for analysis the development of English_ICAME": {
+  "ref": "Fanego, T., Rodríguez-Puente, P., López-Couso, M. J., Méndez-Naya, B., Núñez-Pertejo, P., Blanco-García, C., y Tamaredo, I. (2017): The Corpus of Historical English Law Reports 1535–1999 (CHELAR): A resource for analysing the development of English legal discourse. <em>ICAME Journal</em>, <em>41</em>(1), 53-82.",
+  "cita": "Fanego et al. (2017)"
+ },
+ "2017_Weisser, M._Annotating the ICE corpora pragmatically. Preliminary issues and steps_ICAME": {
+  "ref": "Weisser, M. (2017): Annotating the ICE corpora pragmatically. Preliminary issues &amp; steps. <em>ICAME Journal</em>, <em>41</em>(1), 181-214. <a href=\"https://doi.org/10.1515/icame-2017-0008\" target=\"_blank\" rel=\"noopener\">https://doi.org/10.1515/icame-2017-0008</a>.",
+  "cita": "Weisser (2017)"
+ },
+ "2018_Rissanen, M._Three problems connected with the use of diachronic corpora_ICAME": {
+  "ref": "Rissanen, M. (2018): Three problems connected with the use of diachronic corpora. <em>ICAME Journal</em>, <em>42</em>(1), 2018. 9-12. <a href=\"https://doi.org/10.1515/icame-2018-0002\" target=\"_blank\" rel=\"noopener\">https://doi.org/10.1515/icame-2018-0002</a>.",
+  "cita": "Rissanen (2018)"
+ },
+ "2018_Simaki, V., Paradis, C., Kerren, A._Evaluating stance-annotated sentences from the Brexit Blog Corpus. A quantitative linguistic analysis_ICAME": {
+  "ref": "Simaki, V., Paradis, C. y Kerren, A. (2018): Evaluating stance-annotated sentences from the Brexit Blog Corpus: A quantitative linguistic analysis. <em>ICAME Journal</em>, <em>42</em>(1), 133-166. <a href=\"https://doi.org/10.1515/icame-2018-0007\" target=\"_blank\" rel=\"noopener\">https://doi.org/10.1515/icame-2018-0007</a>.",
+  "cita": "Simaki et al. (2018)"
+ },
+ "2018_Smith, N., Waters, C._From broadcast archive to language corpus. Designing and investigating a sociohistorical corpus from Desert Island Discs_ICAME": {
+  "ref": "Smith, N. y Waters, C. (2018): From broadcast archive to language corpus: Designing and investigating a sociohistorical corpus from Desert Island Discs. <em>ICAME Journal</em>, <em>42</em>(1), 167-190. <a href=\"https://doi.org/10.1515/icame-2018-0008\" target=\"_blank\" rel=\"noopener\">https://doi.org/10.1515/icame-2018-0008</a>.",
+  "cita": "Smith y Waters (2018)"
+ },
+ "2019_Alamri, B._ Baker and Egbert (eds). 2016.Triangulating Methodological Approaches in Corpus Linguistic Research_Corpora": {
+  "ref": "Alamri, B. (2019): Reseña de P. Baker y J. Egbert (eds.) (2016), <em>Triangulating Methodological Approaches in Corpus Linguistic Research</em>. Londres: Routledge. <em>Corpora</em>.",
+  "cita": "Alamri (2019)"
+ },
+ "2019_Collins, P., Yao, X._AusBrown. A new diachronic corpus of Australian English_ICAME": {
+  "ref": "Collins, P. (2019): AusBrown. A new diachronic corpus of Australian English.<em>ICAME Journal</em>, <em>43</em>(1), 5-21. <a href=\"https://doi.org/10.2478/icame-2019-0001\" target=\"_blank\" rel=\"noopener\">https://doi.org/10.2478/icame-2019-0001</a>.",
+  "cita": "Collins (2019)"
+ },
+ "2019_Petre, P., Anthonissen, L., et al._Early Modern Multiloquent Authors. EMMA. Designin a large-scale corpus of individuals languages_ICAME": {
+  "ref": "Petré, P., Anthonissen, L., Budts, S., Manjavacas, E., Silva, E.L., Standing, W. y Strik, O.A.O. (2019): Early Modern Multiloquent Authors (EMMA): Designing a large-scale corpus of individuals’ languages. <em>ICAME Journal</em>, <em>43</em>(1), 83-122. <a href=\"https://doi.org/10.2478/icame-2019-0004\" target=\"_blank\" rel=\"noopener\">https://doi.org/10.2478/icame-2019-0004</a>.",
+  "cita": "Petré et al. (2019)"
+ },
+ "2020_Fernández-Montraveta, A., Curell, H., Vázquez, G., Castellón, I._The TAGFACT annotator and editor. A versatile tool_Research in Corpus Linguistics": {
+  "ref": "Fernández-Montraveta, A. (2020): The TAGFACT annotator and editor. A versatile tool. <em>Research in Corpus Linguistics</em>, <em>8</em>(1), 131–146. <a href=\"https://doi.org/10.32714/ricl.08.01.08\" target=\"_blank\" rel=\"noopener\">https://doi.org/10.32714/ricl.08.01.08</a>.",
+  "cita": "Fernández-Montraveta (2020)"
+ },
+ "2021_Cermakova, A., Jantunen, J., et al._The International Comparable Corpus. Challenges in building multilingual spoken and written comparable corpora_Research in Corpus Linguistics": {
+  "ref": "Čermáková, A., Jantunen, J., Jauhiainen, T., Kirk, J., Křen, M., Kupietz, M., y Uí Dhonnchadha, E. (2021): The International Comparable Corpus: Challenges in building multilingual spoken and written comparable corpora. <em>Research in Corpus Linguistics</em>, <em>9</em>(1), 89–103. <a href=\"https://doi.org/10.32714/ricl.09.01.06\" target=\"_blank\" rel=\"noopener\">https://doi.org/10.32714/ricl.09.01.06</a>.",
+  "cita": "Čermáková et al. (2021)"
+ },
+ "2021_Culpeper, J., Hardie, A., Demmen, J., Hughes, J., Timperley, M._Supporting the corpus-based study of Shakespeare’s language. Enhancing a corpus of the First Folio_ICAME": {
+  "ref": "Culpeper, J., Hardie, A., Demmen, J., Hughes, J., y Timperley, M. (2021): Supporting the corpus-based study of Shakespeare’s language: Enhancing a corpus of the First Folio. <em>ICAME Journal</em>, <em>45</em>(1), 37-86. <a href=\"http://dx.doi.org/10.2478/icame-2021-0002\" target=\"_blank\" rel=\"noopener\">http://dx.doi.org/10.2478/icame-2021-0002</a>.",
+  "cita": "Culpeper et al. (2021)"
+ },
+ "2021_Gries, S. T._A new approach to key keywords analysis. Using frequency, and now also dispersion_Research in Corpus Linguistics": {
+  "ref": "Gries, S. T. (2021): A new approach to key keywords analysis. Using frequency, and now also dispersion. <em>Research in Corpus Linguistics</em>, <em>9</em>(2), 1–33. <a href=\"https://doi.org/10.32714/ricl.09.02.02\" target=\"_blank\" rel=\"noopener\">https://doi.org/10.32714/ricl.09.02.02</a>.",
+  "cita": "Gries (2021)"
+ },
+ "2021_Hoffmann, S., Arndt-Lappe, S._Better data for more researchers, using the audio features of BNCweb_ICAME": {
+  "ref": "Hoffmann, S. (2021): Better data for more researchers, using the audio features of BNCweb. <em>ICAME Journal</em>, <em>45</em>(1), 125-154. <a href=\"http://dx.doi.org/10.2478/icame-2021-0004\" target=\"_blank\" rel=\"noopener\">http://dx.doi.org/10.2478/icame-2021-0004</a>.",
+  "cita": "Hoffmann (2021)"
+ },
+ "2021_Kretzschmar, W. A._Complex systems for corpus linguists_ICAME": {
+  "ref": "Kretzschmar, W. A. (2021): Complex systems for corpus linguists. <em>ICAME Journal</em>, <em>45</em>(1), 2021. 155-177. <a href=\"https://doi.org/10.2478/icame-2021-0005\" target=\"_blank\" rel=\"noopener\">https://doi.org/10.2478/icame-2021-0005</a>.",
+  "cita": "Kretzschmar (2021)"
+ },
+ "2022_Crosthwaite, P., Ningrum, S., Scweinberger, M._Research trends in corpus linguistics_International Journal of Corpus Linguistics": {
+  "ref": "Crosthwaite, P., Ningrum, S., y Schweinberger, M. (2023): Research trends in corpus linguistics: A bibliometric analysis of two decades of Scopus-indexed corpus linguistics research in arts and humanities. <em>International Journal of Corpus Linguistics</em>, <em>28</em>(3), 344-377. <a href=\"http://dx.doi.org/10.1075/ijcl.21072.cro\" target=\"_blank\" rel=\"noopener\">http://dx.doi.org/10.1075/ijcl.21072.cro</a>.",
+  "cita": "Crosthwaite et al. (2023)"
+ },
+ "2022_Vosiljonov, A._Basic theoretical principles of corpus linguistics_Academicia Globe": {
+  "ref": "Vosiljonov, A. (2022): Basic theoretical principles of corpus linguistics. A<em>cademicia Globe: Inderscience Research</em>, <em>3</em>(2), 173-175. <a href=\"https://doi.org/10.17605/OSF.IO/36RWP\" target=\"_blank\" rel=\"noopener\">https://doi.org/10.17605/OSF.IO/36RWP</a>.",
+  "cita": "Vosiljonov (2022)"
+ },
+ "2023_Egbert, J., Biber, D._Key feature analysis. A simple, yet powerful method for comparing text varieties_Corpora": {
+  "ref": "Egbert, J., y Biber, D. (2023): Key feature analysis: A simple, yet powerful method for comparing text varieties. <em>Corpora</em>, <em>18</em>(1), 121-133. <a href=\"https://doi.org/10.3366/cor.2023.0275\" target=\"_blank\" rel=\"noopener\">https://doi.org/10.3366/cor.2023.0275</a>.",
+  "cita": "Egbert y Biber (2023)"
+ },
+ "2023_Fernández-Martínez, N. J._The FGLOCTweet Corpus. An ENglish tweet-based corpus for fine-grained location-detection tasks_Research in Corpus Linguistics": {
+  "ref": "Fernández-Martínez, N. J. (2023): The FGLOCTweet Corpus. An ENglish tweet-based corpus for fine-grained location-detection tasks. <em>Research in Corpus Linguistics</em>, <em>10</em>(1), 117-133. <a href=\"https://doi.org/10.32714/ricl.10.01.06\" target=\"_blank\" rel=\"noopener\">https://doi.org/10.32714/ricl.10.01.06</a>.",
+  "cita": "Fernández-Martínez (2023)"
+ },
+ "2023_Hashimoto, B._Corpus of Founding Era American English_Corpora": {
+  "ref": "Hashimoto, B. (2023): Corpus of Founding Era American English. <em>Corpora</em>, <em>18</em>(1), 1-14. <a href=\"https://doi.org/10.3366/cor.2023.0270\" target=\"_blank\" rel=\"noopener\">https://doi.org/10.3366/cor.2023.0270</a>.",
+  "cita": "Hashimoto (2023)"
+ },
+ "2023_Rodríguez-Puente, P., Hernández, D._The Corpus of Contemporary English Legal Decisions_ICAME": {
+  "ref": "Rodríguez-Puente, P. u Hernández-Coalla, D. (2023): The Corpus of Contemporary English Legal Decisions, 1950–2021 (CoCELD): A new tool for analysing recent changes in English legal discourse. <em>ICAME Journal</em>, <em>47</em>(1), 2023. 109-117. <a href=\"https://doi.org/10.2478/icame-2023-0006\" target=\"_blank\" rel=\"noopener\">https://doi.org/10.2478/icame-2023-0006</a>.",
+  "cita": "Rodríguez-Puente y Hernández-Coalla (2023)"
+ },
+ "2023_Simaki, V., Seitanidi, E., Paradis, C._Evaluating stance annotation on Twitter data_Research in Corpus Linguistics": {
+  "ref": "Simaki, V., Seitanidi, E. y Paradis, C. (2022): Evaluating stance annotation of Twitter data. <em>Research in Corpus Linguistics</em>, <em>11</em>(1), 53–80. <a href=\"https://doi.org/10.32714/ricl.11.01.03\" target=\"_blank\" rel=\"noopener\">https://doi.org/10.32714/ricl.11.01.03</a>.",
+  "cita": "Simaki et al. (2022)"
+ },
+ "2024_Buschfeld, S., Leuckert, S., Weihs, C., Weilinghoff, A._How real is the quantitative turn. Investigating statistics as the new normal in linguistics_ICAME": {
+  "ref": "Buschfeld, S. (2024): How real is the quantitative turn? Investigating statistics as the new normal in linguistics. <em>ICAME Journal</em>, <em>48</em>(1), 1-22. <a href=\"https://doi.org/10.2478/icame-2024-0001\" target=\"_blank\" rel=\"noopener\">https://doi.org/10.2478/icame-2024-0001</a>.",
+  "cita": "Buschfeld (2024)"
+ },
+ "2024_McEnery, T., Brookes, G._Corpus linguistics and the social sciences_Corpus Linguistics and Linguistic Theory": {
+  "ref": "McEnery, T. (2024): Corpus linguistics and the social sciences. <em>Corpus Linguistics and Linguistic Theory</em>, <em>20</em>(3), 591-613. <a href=\"https://doi.org/10.1515/cllt-2024-0036\" target=\"_blank\" rel=\"noopener\">https://doi.org/10.1515/cllt-2024-0036</a>.",
+  "cita": "McEnery (2024)"
+ },
+ "2024_Misir, H._Design and construction of a social media corpus. Influencers speech in vlog_Research in Corpus Linguistics": {
+  "ref": "Misir, H. (2024): Design and construction of a social media corpus. Influencers speech in vlog. <em>Research in Corpus Linguistics</em>, <em>12</em>(2), 203–219. <a href=\"https://doi.org/10.32714/ricl.12.02.09\" target=\"_blank\" rel=\"noopener\">https://doi.org/10.32714/ricl.12.02.09</a>.",
+  "cita": "Misir (2024)"
+ },
+ "2024_Troiani, G., Du Bois, J. W., Filchenko, A._Corpus as a slice of life. Representing naturally occuring language and its speakers_Research in Corpus Linguistics": {
+  "ref": "Troiani, G. (2024): Corpus as a slice of life. Representing naturally occuring language and its speakers. <em>Research in Corpus Linguistics</em>, <em>12</em>(2), 174–202. <a href=\"https://doi.org/10.32714/ricl.12.02.08\" target=\"_blank\" rel=\"noopener\">https://doi.org/10.32714/ricl.12.02.08</a>.",
+  "cita": "Troiani (2024)"
+ },
+ "2025_Batchelor, J., Lee-Laminack, H._An evaluation of the use of keyword analysis forkeyword-assisted topic modelling_Corpora": {
+  "ref": "Batchelor, J. (2025): An evaluation of the use of keyword analysis forkeyword-assisted topic modelling. <em>Corpora</em>, <em>20</em>(2), 239-267. <a href=\"http://dx.doi.org/10.3366/cor.2025.0337\" target=\"_blank\" rel=\"noopener\">http://dx.doi.org/10.3366/cor.2025.0337</a>.",
+  "cita": "Batchelor (2025)"
+ },
+ "2025_Carcelén-Guerrero, A., Posio, P., Kachel, S., Uclés-Ramada, G._CoLaGe. Corpus for the Study of Language and Gender in two varieties of spoken Spanish_Corpora": {
+  "ref": "Carcelén-Guerrero, A. (2025): CoLaGe. Corpus for the Study of Language and Gender in two varieties of spoken Spanish. <em>Corpora</em>, <em>20</em>(2), 269-285.",
+  "cita": "Carcelén-Guerrero (2025)"
+ },
+ "2025_Gries, S. T._Against level-3-only analyses in corpus linguistics_ICAME": {
+  "ref": "Gries, S. T. (2025): Against level-3-only analyses in corpus linguistics. <em>ICAME Journal</em>, <em>48</em>(1), 2024. 23-47. <a href=\"https://doi.org/10.2478/icame-2024-0002\" target=\"_blank\" rel=\"noopener\">https://doi.org/10.2478/icame-2024-0002</a>.",
+  "cita": "Gries (2025)"
+ },
+ "2025_Hashimoto, B., Nelson, K._Recent trends in corpus design and reporting. A methodological synthesis_Research in Corpus Linguistics": {
+  "ref": "Hashimoto, B. (2025): Recent trends in corpus design and reporting. A methodological synthesis. <em>Research in Corpus Linguistics</em>, <em>12</em>(1), 59–88. <a href=\"https://doi.org/10.32714/ricl.12.01.03\" target=\"_blank\" rel=\"noopener\">https://doi.org/10.32714/ricl.12.01.03</a>.",
+  "cita": "Hashimoto (2025)"
+ },
+ "2025_McEnery, T._Twenty years of Corpora_Corpora": {
+  "ref": "McEnery, T. (2025): Twenty years of Corpora. <em>Corpora</em>, <em>20</em>(1), 1-2.",
+  "cita": "McEnery (2025)"
+ },
+ "2025_Sonnig, L._Advancing our understanding ofdispersion measures in corpus research_Corpora": {
+  "ref": "Sonnig, L. (2025): Advancing our understanding ofdispersion measures in corpus research. <em>Corpora</em>, <em>20</em>(1), 3-35. <a href=\"https://doi.org/10.3366/cor.2025.0326\" target=\"_blank\" rel=\"noopener\">https://doi.org/10.3366/cor.2025.0326</a>.",
+  "cita": "Sonnig (2025)"
+ },
+ "2016_Enrique-Arias, A._Sobre la noción de perspectiva en lingüística de corpus. Algunas ventajas de los corpus paralelos": {
+  "ref": "Enrique-Arias, A. (2016): Sobre la noción de perspectiva en lingüística de corpus. Algunas ventajas de los corpus paralelos.",
+  "cita": "Enrique-Arias (2016)"
+ },
+ "2016_Nieuwenhuijsen, D._Notas sobre la aportación del análisis estadístico a la lingüística de corpus": {
+  "ref": "Nieuwenhuijsen, D. (2016): Notas sobre la aportación del análisis estadístico a la lingüística de corpus.",
+  "cita": "Nieuwenhuijsen (2016)"
+ },
+ "2016_Rojo, G._Citius, maius, melius. Del CREA al CORPES XXI": {
+  "ref": "Rojo, G. (2016): Citius, maius, melius. Del CREA al CORPES XXI.",
+  "cita": "Rojo (2016a)"
+ },
+ "2016_Rojo, G._Los corpus textuales del español_Enciclopedia de Lingüística hispánica": {
+  "ref": "Rojo, G. (2016): Los corpus textuales del español. ENCICLOPEDIA DE LINGÜÍSTICA HISPÁNICA.",
+  "cita": "Rojo (2016b)"
+ },
+ "2016_Torruella, J._Tres propuestas en el ámbito de la lingüística de corpus": {
+  "ref": "Torruella Casañas, J. (2016): Tres propuestas en el ámbito de la lingüística de corpus, J. Kabatek (coord.) y C. de Benito Moreno (col.), <em>Lingüística de corpus y lingüística histórica iberorrománica</em> (pp. 90-112). De Gruyter Mouton.",
+  "cita": "Torruella Casañas (2016)"
+ },
+ "2016_Zulaica Hernández, I._Lingüística de corpus": {
+  "ref": "Zulaica Hernández, I. (2016): Lingüística de corpus.",
+  "cita": "Zulaica Hernández (2016)"
+ },
+ "2017_Rojas Curieux, T._A propósito de la lingüística de corpus, fundamentos y discrepancias. A manera de introducción": {
+  "ref": "Rojas Curieux, T. (2017): A propósito de la lingüística de corpus, fundamentos y discrepancias. A manera de introducción.",
+  "cita": "Rojas Curieux (2017)"
+ },
+ "2018_Parodi, G., Burdiles, G._Corpus y bases de datos": {
+  "ref": "Parodi, G. (2018): Corpus y bases de datos.",
+  "cita": "Parodi (2018)"
+ },
+ "2018_Sierra, G. E._Corpus lingüísticos": {
+  "ref": "Sierra, G. E. (2018): Corpus lingüísticos.",
+  "cita": "Sierra (2018)"
+ },
+ "2020_Buyse, K._Qué tipo de corpus para qué tipo de texto. De la teoría a la práctica": {
+  "ref": "Buyse, K. (2020): Qué tipo de corpus para qué tipo de texto. De la teoría a la práctica.",
+  "cita": "Buyse (2020)"
+ },
+ "2021_Cabedo Nebot, A., Recio Fernández, I._El hablar y la lingüística empírica": {
+  "ref": "Cabedo Nebot, A. (2021): El hablar y la lingüística empírica.",
+  "cita": "Cabedo Nebot (2021)"
+ },
+ "2022_Bertolotti, V., Company Company, C._Corpus diacrónicos del español en las Américas": {
+  "ref": "Bertolotti, V. (2022): Corpus diacrónicos del español en las Américas.",
+  "cita": "Bertolotti (2022)"
+ },
+ "2022_Bosio, I. V., Cubo, L._Corpus académicos orales del español": {
+  "ref": "Bosio, I. V. (2022): Corpus académicos orales del español.",
+  "cita": "Bosio (2022)"
+ },
+ "2022_Carrió-Pastor, M. L., Alonso-Almeida, F._Corpus paralelos español-inglés": {
+  "ref": "Carrió-Pastor, M. L. (2022): Corpus paralelos español-inglés.",
+  "cita": "Carrió-Pastor (2022)"
+ },
+ "2022_Davies, M., Parodi, G._Constitución de corpus crecientes del español": {
+  "ref": "Davies, M. (2022): Constitución de corpus crecientes del español.",
+  "cita": "Davies (2022)"
+ },
+ "2022_Gironzetti, E._Corpus y español como lengua de herencia": {
+  "ref": "Gironzetti, E. (2022): Corpus y español como lengua de herencia.",
+  "cita": "Gironzetti (2022)"
+ },
+ "2022_Martí, M. A., Taulé, M._Desarrollos tecnológicos de la lingüística de corpus en español": {
+  "ref": "Martí, M. A. (2022): Desarrollos tecnológicos de la lingüística de corpus en español.",
+  "cita": "Martí (2022)"
+ },
+ "2022_Molina Plaza, S._Herramientas, recursos y metodologías de análisis para la traducción mediante corpus lingüísticos del español": {
+  "ref": "Molina Plaza, S. (2022): Herramientas, recursos y metodologías de análisis para la traducción mediante corpus lingüísticos del español.",
+  "cita": "Molina Plaza (2022)"
+ },
+ "2022_Moreno Sandoval, A._Etiquetadores morfosintácticos para corpus en español": {
+  "ref": "Moreno Sandoval, A. (2022): Etiquetadores morfosintácticos para corpus en español.",
+  "cita": "Moreno Sandoval (2022)"
+ },
+ "2022_Navarro Colorado, B._Sistemas de anotación semántica para corpus de español": {
+  "ref": "Navarro Colorado, B. (2022): Sistemas de anotación semántica para corpus de español.",
+  "cita": "Navarro Colorado (2022)"
+ },
+ "2022_Rojo, G., Palacios, I._Los corpus de aprendientes de español como L2": {
+  "ref": "Rojo, G. (2022): Los corpus de aprendientes de español como L2.",
+  "cita": "Rojo (2022)"
+ },
+ "2022_Sánchez Lancis, C._Corpus diacrónicos del español de España": {
+  "ref": "Sánchez Lancis, C. (2022): Corpus diacrónicos del español de España, G. Parodi, P. Cantos Gómez, y C. Howe (eds.), <em>Lingüística de corpus en español/The Routledge Handbook of Spanish Corpus Linguistics</em>. Routeledge.",
+  "cita": "Sánchez Lancis (2022)"
+ },
+ "2022_Sánchez-Saus Laserna, M._Las redes sociales como corpus para el estudio lingüístico. Revisión bibliográfica y catálogo de herramientas digitales": {
+  "ref": "Sánchez-Saus Laserna, M. (2022): Las redes sociales como corpus para el estudio lingüístico. Revisión bibliográfica y catálogo de herramientas digitales, I. Sacaluga Rodríguez y S. Mariscal Vega (coords.), <em>Manifestaciones del humanismo en el siglo XXI</em> (pp. 453-462). Tirant lo Blanch (2021).",
+  "cita": "Sánchez-Saus Laserna (2022)"
+ },
+ "2022_de Benito Moreno, C._Uso de los medios digitales de comunicación como corpus de español": {
+  "ref": "de Benito Moreno, C. (2022): Uso de los medios digitales de comunicación como corpus de español.",
+  "cita": "de Benito Moreno (2022)"
+ },
+ "2023_Lázaro, J._Los corpus como fuente de datos lexicográficos": {
+  "ref": "Lázaro, J. (2023): Los corpus como fuente de datos lexicográficos.",
+  "cita": "Lázaro (2023)"
+ },
+ "2023_Rapún Mombiela, V._CLEAE. Corpus Longitudinal de Español de Aprendientes Estonios": {
+  "ref": "Rapún Mombiela, V. (2023): CLEAE. Corpus Longitudinal de Español de Aprendientes Estonios.",
+  "cita": "Rapún Mombiela (2023)"
+ },
+ "2024_Jiménez-Navarro, E. L._Consideraciones para la compilación y exploración de un corpus lingüístico": {
+  "ref": "Jiménez-Navarro, E. L. (2024): Consideraciones para la compilación y exploración de un corpus lingüístico.",
+  "cita": "Jiménez-Navarro (2024)"
+ },
+ "2025_Moyano Moreno, I._Antecedentes de la lingüística de corpus y algunas apreciaciones terminológicas": {
+  "ref": "Moyano Moreno, I. (2025): Antecedentes de la lingüística de corpus y algunas apreciaciones terminológicas, S. A. Flores Borjabad y J. A. Nisa Ávila (coords.), <em>Un viaje a través de la lengua y la literatura: identidad, memoria y enseñanza</em> (pp. 553-572). Dykinson.",
+  "cita": "Moyano Moreno (2025)"
+ },
+ "2015_Sierra Martínez, G. E._Introducción a los corpus lingüísticos": {
+  "ref": "Sierra Martínez, G. E. (2015): <em>Introducción a los corpus lingüísticos</em>, Universidad Nacional Autónoma de México, Instituto de Ingeniería.",
+  "cita": "Sierra Martínez (2015)"
+ },
+ "2018_Bernal Chávez, J. A. . Hincapié Moreno, D. A._Lingüística de corpus": {
+  "ref": "Bernal Chávez, J. A. . Hincapié Moreno (2018): <em>Lingüística de corpus</em>, Instituto Caro y Cuervo.",
+  "cita": "Bernal Chávez y Hincapié Moreno (2018)"
+ },
+ "2021_Rojo, G._Introducción a la lingüística de corpus en español": {
+  "ref": "Rojo, G. (2021): <em>Introducción a la lingüística de corpus en español</em>, Routeledge.",
+  "cita": "Rojo (2021)"
+ },
+ "2022_Liendo, P. J._Introducción a la Lingüística de corpus, sus usos y aplicaciones": {
+  "ref": "Liendo, P. J. (2022): <em>Introducción a la Lingüística de corpus, sus usos y aplicaciones</em>, Biblioteca Digital de Lenguas.",
+  "cita": "Liendo (2022)"
+ },
+ "2015_Bolaños Cuellar, S._La Linguistica de corpus. Perspectivas para la investigacion linguistica contemporanea_Forma y Función": {
+  "ref": "Bolaños Cuellar, S. (2015): La lingüística de corpus: Perspectivas para la investigacion linguistica contemporanea. <em>Forma y Función</em>, <em>28</em>(1), 31-54. <a href=\"http://dx.doi.org/10.15446/fyf.v28n1.51970\" target=\"_blank\" rel=\"noopener\">http://dx.doi.org/10.15446/fyf.v28n1.51970</a>.",
+  "cita": "Bolaños Cuellar (2015)"
+ },
+ "2015_Fernández Martín, P._La creación de corpus lingüísticos diacrónicos. La perspectiva del transcriptor_ENLACE": {
+  "ref": "Fernández Martín, P. (2015): La creación de corpus lingüísticos diacrónicos. La perspectiva del transcriptor. <em>Enl@ce: Revista Venezolana de Información, Tecnología y Conocimiento</em>, <em>12</em>(3), 23-47.",
+  "cita": "Fernández Martín (2015)"
+ },
+ "2015_Molina Salinas, C., Sierra Martínez, G. E._Hacia una normalización de la frecuencia de los corpus CREA y CORDE_Signos": {
+  "ref": "Molina Salinas, C. y Sierra Martínez, G. E. (2015): Hacia una normalización de la frecuencia de los corpus CREA y CORDE. <em>Signos</em>, <em>48</em>(89), 307-331. <a href=\"https://dx.doi.org/10.4067/S0718-09342015000300002\" target=\"_blank\" rel=\"noopener\">https://dx.doi.org/10.4067/S0718-09342015000300002</a>.",
+  "cita": "Molina Salinas y Sierra Martínez (2015)"
+ },
+ "2015_Rojo, G._Sobre los antecedentes de la lingüística de corpus_Studium Gramaticae": {
+  "ref": "Rojo, G. (2015): Sobre los antecedentes de la lingüística de corpus. STUDIUM GRAMATICAE.",
+  "cita": "Rojo (2015)"
+ },
+ "2016_García Ferrer, M._Diseño y construcción de un corpus de referencia de latín_Methodos": {
+  "ref": "García Ferrer, M. (2016): Diseño y construcción de un corpus de referencia de latín. <em>Methodos</em>, (3), 93-105.",
+  "cita": "García Ferrer (2016)"
+ },
+ "2016_Molés-Cases, T._Compilación y análisis de un corpus paralelo para la investigación en traducción_Revista de Lingüística teórica y aplicada": {
+  "ref": "Molés-Cases, T. (2016): Compilación y análisis de un corpus paralelo para la investigación en traducción. <em>Revista de Lingüística teórica y aplicada</em>, <em>54</em>(1), 149-174. <a href=\"http://dx.doi.org/10.4067/S0718-48832016000100008\" target=\"_blank\" rel=\"noopener\">http://dx.doi.org/10.4067/S0718-48832016000100008</a>.",
+  "cita": "Molés-Cases (2016)"
+ },
+ "2017_González Fernández, A._La web como corpus. Un esbozo_LENGUA Y HABLA": {
+  "ref": "González Fernández, A. (2017): La web como corpus. Un esbozo. <em>Lengua y Habla</em>, (21), 126-150.",
+  "cita": "González Fernández (2017)"
+ },
+ "2017_Rojo, G._Sobre la configuración estadística de los corpus textuales_Lingüística": {
+  "ref": "Rojo, G. (2017): Sobre la configuración estadística de los corpus textuales. <em>Lingüística</em>, <em>33</em>(1), 121-234. <a href=\"https://doi.org/10.5935/2079-312x.20170008\" target=\"_blank\" rel=\"noopener\">https://doi.org/10.5935/2079-312x.20170008</a>.",
+  "cita": "Rojo (2017)"
+ },
+ "2018_Leiva Rojo, J._Diseño y compilación de corpus paralelos alineados. Dificultades y algunas soluciones_Revista de Lingüística y Lenguas Aplicadas": {
+  "ref": "Leiva Rojo, J. (2018): Diseño y compilación de corpus paralelos alineados: dificultades y (algunas) soluciones en el ejemplo de un corpus de textos museísticos traducidos (inglés-español). <em>Revista de Lingüística y Lenguas Aplicadas</em>, 13, 59-73. <a href=\"http://dx.doi.org/10.4995/rlyla.2018.7912\" target=\"_blank\" rel=\"noopener\">http://dx.doi.org/10.4995/rlyla.2018.7912</a>.",
+  "cita": "Leiva Rojo (2018)"
+ },
+ "2019_de Benito, C._Los corpus del español desde la perspectiva del usuario lingüista_Scriptum digital": {
+  "ref": "de Benito, C. (2019): Los corpus del español desde la perspectiva del usuario lingüista. <em>Scriptum digital. Revista de corpus diacrònics i edició digital en llengües iberoromàniques</em>, (8), 1-21.",
+  "cita": "de Benito (2019)"
+ },
+ "2020_Marín Morales, M. I. y Molina, J_Un método de etiquetado semiautomático de corpus lingüísticos_Investigación e Innovación en Ingeniería de Software": {
+  "ref": "Marín Morales, M. I. y Molina (2020): Un método de etiquetado semiautomático de corpus lingüísticos. INVESTIGACIÓN E INNOVACIÓN EN INGENIERÍA DE SOFTWARE.",
+  "cita": "Marín Morales y Molina (2020)"
+ },
+ "2021_Piccioni, S., Pontrandolfo, G._WebLesp. Corpus de comunicación digital especializada en español. Arquitectura. Compilación y usos_Revista de lingüística teórica y aplicada": {
+  "ref": "Piccioni, S. (2021): WebLesp. Corpus de comunicación digital especializada en español. Arquitectura. Compilación y usos. <em>Revista de Lingüística teórica y aplicada</em>, <em>59</em>(1), 13-37. <a href=\"https://dx.doi.org/10.29393/rla59-1wdsg20001\" target=\"_blank\" rel=\"noopener\">https://dx.doi.org/10.29393/rla59-1wdsg20001</a>.",
+  "cita": "Piccioni (2021)"
+ },
+ "2022_Flores Acuña, E._Compilación de un corpus de especialidad con BootCat para la traducción jurídica italiano-español. El caso de un contrato de agencia_Onomázein": {
+  "ref": "Flores Acuña, E. (2022): Compilación de un corpus de especialidad con BootCat para la traducción jurídica italiano-español. El caso de un contrato de agencia. <em>Onomázein</em>, (57), 167-214. <a href=\"https://doi.org/10.7764/ONOMAZEIN.57.09\" target=\"_blank\" rel=\"noopener\">https://doi.org/10.7764/ONOMAZEIN.57.09</a>.",
+  "cita": "Flores Acuña (2022)"
+ },
+ "2022_García Miguel J. M._Linguistica de corpus De los datos textuales a la teoría lingüística_Estudios de Lingüística del Español": {
+  "ref": "García-Miguel, J. M. (2022): Lingüística de corpus: de los datos textuales a la teoría lingüística. <em>Estudios de lingüística del español</em>, 45, 11-42. <a href=\"https://doi.org/10.36950/elies.2022.45.8848\" target=\"_blank\" rel=\"noopener\">https://doi.org/10.36950/elies.2022.45.8848</a>.",
+  "cita": "García-Miguel (2022)"
+ },
+ "2023_Hernández García, V._Tipología de corpus. Hacia una propuesta integradora_Alfinge": {
+  "ref": "Hernández García, V. (2023): Tipología de corpus. Hacia una propuesta integradora. <em>Alfinge. Revista de Filología</em>, 35, 188-213. <a href=\"https://doi.org/10.21071/arf.v35i.16346\" target=\"_blank\" rel=\"noopener\">https://doi.org/10.21071/arf.v35i.16346</a>.",
+  "cita": "Hernández García (2023)"
+ },
+ "2024_Molina García, A., Ávila Muñoz, A. M._Propuesta de construcción de nuevos corpus. Los mensajes de voz de WhatsApp como fuente de datos lingüísticos_Oralia": {
+  "ref": "Molina García, A. y Ávila Muñoz, A. (2024): Propuesta de construcción de nuevos corpus. Los mensajes de voz de WhatsApp como fuente de datos lingüísticos. <em>Oralia</em>, <em>27</em>(2), 135-166. <a href=\"https://doi.org/10.25115/oralia.v27i2.9510\" target=\"_blank\" rel=\"noopener\">https://doi.org/10.25115/oralia.v27i2.9510</a>.",
+  "cita": "Molina García y Ávila Muñoz (2024)"
+ },
+ "2024_Rojo, G._El futuro de los corpus de referencia_Studia linguistica romanica": {
+  "ref": "Rojo, G. (2024): El futuro de los corpus de referencia.<em>Studia Linguistica Romanica</em>, 12, 18-33. <a href=\"https://doi.org/10.25364/19.2024.12.2\" target=\"_blank\" rel=\"noopener\">https://doi.org/10.25364/19.2024.12.2</a>.",
+  "cita": "Rojo (2024)"
+ },
+ "2024_del Rey Quesada, S., Carmona Yanes, E._Los corpus digitales en el proyecto DiacOralEs_Studia linguistica romanica": {
+  "ref": "del Rey Quesada, S. (2024): Los corpus digitales en el proyecto DiacOralEs. <em>Studia Linguistica Romanica</em>, (12), 86-106. <a href=\"https://doi.org/10.25364/19.2024.12.5\" target=\"_blank\" rel=\"noopener\">https://doi.org/10.25364/19.2024.12.5</a>.",
+  "cita": "del Rey Quesada (2024)"
+ }
+}

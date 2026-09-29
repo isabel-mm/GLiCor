@@ -2220,8 +2220,7 @@
           }
         ]
       },
-      "origen": "es",
-      "redaccion": "claude"
+      "origen": "es"
     },
     {
       "slug": "web_for_corpus",
@@ -2259,8 +2258,7 @@
           }
         ]
       },
-      "origen": "es",
-      "redaccion": "claude"
+      "origen": "es"
     },
     {
       "slug": "corpus_based_translation_studies",
@@ -2306,7 +2304,6 @@
         ]
       },
       "origen": "es",
-      "redaccion": "claude",
       "principal": {
         "es": "estudios de la traducción basados en corpus"
       },
@@ -2358,7 +2355,6 @@
         ]
       },
       "origen": "es",
-      "redaccion": "claude",
       "principal": {
         "en": "Lesk",
         "es": "Lesk"
@@ -2406,7 +2402,6 @@
         ]
       },
       "origen": "es",
-      "redaccion": "claude",
       "principal": {
         "en": "frequency per million words"
       },
@@ -2453,7 +2448,6 @@
         ]
       },
       "origen": "es",
-      "redaccion": "claude",
       "principal": {
         "en": "Universal POS"
       },
@@ -2502,8 +2496,7 @@
           }
         ]
       },
-      "origen": "en",
-      "redaccion": "claude"
+      "origen": "en"
     },
     {
       "slug": "web_crawling",
@@ -2542,8 +2535,7 @@
           }
         ]
       },
-      "origen": "en",
-      "redaccion": "claude"
+      "origen": "en"
     },
     {
       "slug": "gold_standard",
@@ -2581,8 +2573,7 @@
           }
         ]
       },
-      "origen": "en",
-      "redaccion": "claude"
+      "origen": "en"
     },
     {
       "slug": "concordancer",
@@ -2621,8 +2612,7 @@
           }
         ]
       },
-      "origen": "en",
-      "redaccion": "claude"
+      "origen": "en"
     },
     {
       "slug": "word_sense_disambiguation",
@@ -2673,7 +2663,6 @@
         ]
       },
       "origen": "en",
-      "redaccion": "claude",
       "principal": {
         "en": "word sense disambiguation"
       },
@@ -2717,8 +2706,7 @@
           }
         ]
       },
-      "origen": "en",
-      "redaccion": "claude"
+      "origen": "en"
     },
     {
       "slug": "range",
@@ -2747,8 +2735,7 @@
           }
         ]
       },
-      "origen": "en",
-      "redaccion": "claude"
+      "origen": "en"
     },
     {
       "slug": "formulaic_language",
@@ -2785,8 +2772,7 @@
           }
         ]
       },
-      "origen": "en",
-      "redaccion": "claude"
+      "origen": "en"
     },
     {
       "slug": "multiword_expression",
@@ -2836,8 +2822,7 @@
           }
         ]
       },
-      "origen": "en",
-      "redaccion": "claude"
+      "origen": "en"
     },
     {
       "slug": "crea",
@@ -2880,8 +2865,7 @@
           }
         ]
       },
-      "origen": "es",
-      "redaccion": "claude"
+      "origen": "es"
     },
     {
       "slug": "corde",
@@ -2924,8 +2908,7 @@
           }
         ]
       },
-      "origen": "es",
-      "redaccion": "claude"
+      "origen": "es"
     },
     {
       "slug": "cdh",
@@ -2969,8 +2952,7 @@
           }
         ]
       },
-      "origen": "es",
-      "redaccion": "claude"
+      "origen": "es"
     },
     {
       "slug": "preseea",
@@ -3013,8 +2995,7 @@
           }
         ]
       },
-      "origen": "es",
-      "redaccion": "claude"
+      "origen": "es"
     },
     {
       "slug": "caes",
@@ -3057,8 +3038,7 @@
           }
         ]
       },
-      "origen": "es",
-      "redaccion": "claude"
+      "origen": "es"
     },
     {
       "slug": "corpes_xxi",
@@ -3103,8 +3083,7 @@
           }
         ]
       },
-      "origen": "es",
-      "redaccion": "claude"
+      "origen": "es"
     },
     {
       "slug": "iula",
@@ -3149,8 +3128,7 @@
           }
         ]
       },
-      "origen": "es",
-      "redaccion": "claude"
+      "origen": "es"
     },
     {
       "slug": "valesco",
@@ -3194,8 +3172,7 @@
           }
         ]
       },
-      "origen": "es",
-      "redaccion": "claude"
+      "origen": "es"
     },
     {
       "slug": "cemc",
@@ -3238,8 +3215,7 @@
           }
         ]
       },
-      "origen": "es",
-      "redaccion": "claude"
+      "origen": "es"
     },
     {
       "slug": "cobuild",
@@ -3282,8 +3258,7 @@
           }
         ]
       },
-      "origen": "es",
-      "redaccion": "claude"
+      "origen": "es"
     },
     {
       "slug": "charta",
@@ -3326,8 +3301,7 @@
           }
         ]
       },
-      "origen": "es",
-      "redaccion": "claude"
+      "origen": "es"
     },
     {
       "slug": "corlec",
@@ -3370,8 +3344,7 @@
           }
         ]
       },
-      "origen": "es",
-      "redaccion": "claude"
+      "origen": "es"
     },
     {
       "slug": "seu",
@@ -3414,8 +3387,7 @@
           }
         ]
       },
-      "origen": "es",
-      "redaccion": "claude"
+      "origen": "es"
     },
     {
       "slug": "cedel2",
@@ -3460,8 +3432,7 @@
           }
         ]
       },
-      "origen": "es",
-      "redaccion": "claude"
+      "origen": "es"
     },
     {
       "slug": "codea",
@@ -3500,8 +3471,7 @@
           }
         ]
       },
-      "origen": "es",
-      "redaccion": "claude"
+      "origen": "es"
     },
     {
       "slug": "cleae",
@@ -3544,8 +3514,7 @@
           }
         ]
       },
-      "origen": "es",
-      "redaccion": "claude"
+      "origen": "es"
     },
     {
       "slug": "europarl",
@@ -3588,8 +3557,7 @@
           }
         ]
       },
-      "origen": "es",
-      "redaccion": "claude"
+      "origen": "es"
     },
     {
       "slug": "splloc",
@@ -3632,8 +3600,7 @@
           }
         ]
       },
-      "origen": "es",
-      "redaccion": "claude"
+      "origen": "es"
     },
     {
       "slug": "must",
@@ -3677,7 +3644,6 @@
         ]
       },
       "origen": "es",
-      "redaccion": "claude",
       "principal": {
         "en": "MUST"
       },
@@ -3727,8 +3693,7 @@
           }
         ]
       },
-      "origen": "es",
-      "redaccion": "claude"
+      "origen": "es"
     },
     {
       "slug": "llc",
@@ -3775,8 +3740,7 @@
           }
         ]
       },
-      "origen": "es",
-      "redaccion": "claude"
+      "origen": "es"
     },
     {
       "slug": "sse",
@@ -3819,8 +3783,7 @@
           }
         ]
       },
-      "origen": "es",
-      "redaccion": "claude"
+      "origen": "es"
     },
     {
       "slug": "spt",
@@ -3865,8 +3828,7 @@
           }
         ]
       },
-      "origen": "es",
-      "redaccion": "claude"
+      "origen": "es"
     },
     {
       "slug": "corlexin",
@@ -3909,8 +3871,7 @@
           }
         ]
       },
-      "origen": "es",
-      "redaccion": "claude"
+      "origen": "es"
     },
     {
       "slug": "ecpc",
@@ -3953,8 +3914,7 @@
           }
         ]
       },
-      "origen": "es",
-      "redaccion": "claude"
+      "origen": "es"
     },
     {
       "slug": "gentt",
@@ -3997,8 +3957,7 @@
           }
         ]
       },
-      "origen": "es",
-      "redaccion": "claude"
+      "origen": "es"
     },
     {
       "slug": "mellange",
@@ -4041,8 +4000,7 @@
           }
         ]
       },
-      "origen": "es",
-      "redaccion": "claude"
+      "origen": "es"
     },
     {
       "slug": "bidtea",
@@ -4085,8 +4043,7 @@
           }
         ]
       },
-      "origen": "es",
-      "redaccion": "claude"
+      "origen": "es"
     },
     {
       "slug": "cate",
@@ -4129,8 +4086,7 @@
           }
         ]
       },
-      "origen": "es",
-      "redaccion": "claude"
+      "origen": "es"
     },
     {
       "slug": "letrac",
@@ -4173,8 +4129,7 @@
           }
         ]
       },
-      "origen": "es",
-      "redaccion": "claude"
+      "origen": "es"
     },
     {
       "slug": "corane",
@@ -4217,8 +4172,7 @@
           }
         ]
       },
-      "origen": "es",
-      "redaccion": "claude"
+      "origen": "es"
     },
     {
       "slug": "cows_l2h",
@@ -4261,8 +4215,7 @@
           }
         ]
       },
-      "origen": "es",
-      "redaccion": "claude"
+      "origen": "es"
     },
     {
       "slug": "langsnap",
@@ -4305,8 +4258,7 @@
           }
         ]
       },
-      "origen": "es",
-      "redaccion": "claude"
+      "origen": "es"
     },
     {
       "slug": "corespi",
@@ -4349,8 +4301,7 @@
           }
         ]
       },
-      "origen": "es",
-      "redaccion": "claude"
+      "origen": "es"
     },
     {
       "slug": "eleactar",
@@ -4393,8 +4344,7 @@
           }
         ]
       },
-      "origen": "es",
-      "redaccion": "claude"
+      "origen": "es"
     },
     {
       "slug": "trados",
@@ -4441,8 +4391,7 @@
           }
         ]
       },
-      "origen": "es",
-      "redaccion": "claude"
+      "origen": "es"
     },
     {
       "slug": "mallet",
@@ -4485,8 +4434,7 @@
           }
         ]
       },
-      "origen": "es",
-      "redaccion": "claude"
+      "origen": "es"
     },
     {
       "slug": "cqp",
@@ -4529,8 +4477,7 @@
           }
         ]
       },
-      "origen": "es",
-      "redaccion": "claude"
+      "origen": "es"
     },
     {
       "slug": "transit",
@@ -4575,8 +4522,7 @@
           }
         ]
       },
-      "origen": "es",
-      "redaccion": "claude"
+      "origen": "es"
     },
     {
       "slug": "gdex",
@@ -4619,8 +4565,7 @@
           }
         ]
       },
-      "origen": "es",
-      "redaccion": "claude"
+      "origen": "es"
     }
   ],
   "no_unificados": [
@@ -4692,8 +4637,8 @@
     }
   ],
   "criterio_variante_denominativa": {
-    "es": "Una denominación alternativa se marca como variante denominativa (consolidada en la comunidad experta) cuando su frecuencia es al menos la mitad de la de la denominación principal, o cuando la usan al menos 5 de los 50 documentos de su subcorpus (10 %). Si no, se mantiene su relación (sinónimo, préstamo…).",
-    "en": "An alternative name is marked as a denominative variant (consolidated in the expert community) when its frequency is at least half that of the main form, or when it is used in at least 5 of the 50 documents in its subcorpus (10%). Otherwise it keeps its relation (synonym, loanword…).",
+    "es": "Un sinónimo o préstamo se marca como consolidado en la comunidad experta cuando su frecuencia es al menos la mitad de la de la denominación principal, o cuando lo usan al menos 5 de los 50 documentos de su subcorpus (10 %). Siguiendo DOCUTERM, la variación denominativa se reserva para las variantes formales de contenido idéntico (siglas, formas desarrolladas, variantes ortográficas).",
+    "en": "A synonym or loanword is marked as established in the expert community when its frequency is at least half that of the main form, or when at least 5 of the 50 documents in its subcorpus use it (10%). Following DOCUTERM, denominative variation is reserved for formal variants with identical content (acronyms, full forms, spelling variants).",
     "umbral_ratio": 0.5,
     "umbral_documentos": 5,
     "aplica_a": [
@@ -6379,13 +6324,6 @@
       "UPOS"
     ]
   },
-  "desarrollos_mostrados": {
-    "_nota": "Desarrollo que se muestra en la ficha pero no se cuenta, porque la forma desarrollada designa otra cosa.",
-    "cqpweb": {
-      "es": "interfaz web de CQP (Corpus Query Processor)",
-      "en": "web interface to CQP (Corpus Query Processor)"
-    }
-  },
   "equivalentes_descartados": [
     {
       "slug": "inline_annotation",
@@ -6401,7 +6339,7 @@
     "excluye": "Las siglas internacionales, los nombres propios de estándares y los términos latinos compartidos por las dos lenguas (corpus, subcorpus, KWIC, XML, HTML, SGML, TEI, UTF-8, unicode, EAGLES, Universal Dependencies, Universal POS) no se consideran préstamos."
   },
   "inventario_tesis": {
-    "_nota": "Cómo se incorporan al glosario las unidades del Apéndice III que no tenían ficha (septiembre de 2026). Las fichas nuevas las redactó Claude a partir de los contextos del corpus (campo model: claude).",
+    "_nota": "Cómo se incorporan al glosario las unidades del Apéndice III que no tenían ficha (septiembre de 2026).",
     "unificadas": [
       {
         "tesis": "monitor",

@@ -158,8 +158,8 @@ table.decisions tr:target td { background: #fdf4ff; }
         <span class="lang-en" hidden>This criterion allows asymmetries between languages: <em>raw frequency</em> prevails in English and <em>frecuencia absoluta</em> in Spanish.</span>
       </li>
       <li>
-        <span class="lang-es">La denominación principal es solo el punto de entrada de la ficha, no una recomendación. Cuando la otra denominación también está consolidada en la comunidad experta, se marca como <strong>variante denominativa</strong> y aparece junto a la principal, en la cabecera de la ficha (<em>part of speech · word class</em>). Se considera consolidada si su frecuencia es al menos la mitad de la de la principal o si la usan al menos 5 de los 50 documentos de su subcorpus (10 %). Si no, se muestra como sinónimo o préstamo.</span>
-        <span class="lang-en" hidden>The main form is only the entry point of the entry, not a recommendation. When the other name is also consolidated in the expert community, it is marked as a <strong>denominative variant</strong> and shown next to the main form in the entry header (<em>part of speech · word class</em>). It counts as consolidated if its frequency is at least half that of the main form, or if at least 5 of the 50 documents in its subcorpus use it (10%). Otherwise it is shown as a synonym or loanword.</span>
+        <span class="lang-es">La denominación principal es solo el punto de entrada de la ficha, no una recomendación. Cuando un sinónimo o un préstamo tiene una frecuencia alta o parecida a la de la principal, se entiende que está consolidado en la comunidad experta y se marca como <strong>consolidado</strong> (por ejemplo, <em>word class</em> en la ficha de <em>part of speech</em>). Se considera consolidado si su frecuencia es al menos la mitad de la de la principal o si lo usan al menos 5 de los 50 documentos de su subcorpus (10 %). Siguiendo el modelo DOCUTERM, la denominación <em>variación denominativa</em> se reserva para las variantes formales de contenido idéntico (siglas, formas desarrolladas, variantes ortográficas), que se presentan con su tipo; los sinónimos y préstamos tienen su propio campo en la ficha.</span>
+        <span class="lang-en" hidden>The main form is only the entry point of the entry, not a recommendation. When a synonym or loanword has a frequency that is high or close to that of the main form, it is considered established in the expert community and marked as <strong>established</strong> (for instance, <em>word class</em> in the entry for <em>part of speech</em>). It counts as established if its frequency is at least half that of the main form, or if at least 5 of the 50 documents in its subcorpus use it (10%). Following the DOCUTERM model, the label <em>denominative variation</em> is reserved for formal variants with identical content (acronyms, full forms, spelling variants), which are shown with their type; synonyms and loanwords have their own field in the entry.</span>
       </li>
       <li>
         <span class="lang-es"><strong>Equivalentes propuestos.</strong> Cuando ninguna denominación de una lengua aparece en el corpus, el equivalente es una propuesta del glosario y se marca como tal en la ficha (<em>anotación en línea</em>). Las formas alternativas que no aparecen en el corpus se marcan como <em>no documentadas</em>. Todo lo que se da por no documentado se ha comprobado con búsquedas ampliadas (con artículo, en plural, con o sin guion, siglas, préstamos y reformulaciones).</span>
@@ -251,7 +251,9 @@ function formsList(slug, lng) {
   const counted = ((((FREQ || {}).entradas || {})[slug] || {})[lng] || {}).formas || [];
   const rel = c => {
     if (c.principal) return (lang === 'es' ? 'denominación principal' : 'main form') + (c.forzada ? (lang === 'es' ? ' (decisión expresa)' : ' (explicit decision)') : '');
-    if (c.consolidada) return lang === 'es' ? 'variante denominativa' : 'denominative variant';
+    if (c.consolidada) return c.relacion === 'prestamo'
+      ? (lang === 'es' ? 'préstamo consolidado' : 'established loanword')
+      : (lang === 'es' ? 'sinónimo consolidado' : 'established synonym');
     return (NORM.relaciones[c.relacion] || {})[lang] || c.relacion;
   };
   const docs = lang === 'es' ? 'doc.' : 'docs';

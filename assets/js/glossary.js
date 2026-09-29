@@ -91,6 +91,7 @@ let lang = localStorage.getItem('glicor-lang') || 'es';
 let ALL_ENTRIES = [];      // solo las de esta vista
 let EVERY_ENTRY = [];      // todas (términos + entidades), para enlaces cruzados
 let ALL_CONCORDANCES = {};
+let BIB = {};              // bibliografia.json: referencia completa y cita breve de cada documento del corpus
 let NORM = { tipos: {}, relaciones: {} };   // normalizacion.json: etiquetas de variantes
 let SLUG_INDEX = {};       // nombre, slug antiguo o variante → slug canónico
 
@@ -123,20 +124,56 @@ function variantForms(e, lng) {
   return variantsOf(e, lng).map(v => v.form);
 }
 
-// Variante denominativa consolidada: se muestra junto a la forma principal
+// Sinónimo o préstamo consolidado en la comunidad experta (frecuencia alta o parecida a la principal)
 function isConsolidated(v) {
   return v.consolidated === true;
 }
 
+// Sinónimos y préstamos frente a variación denominativa (variantes formales:
+// siglas, formas desarrolladas, variantes ortográficas…), como en DOCUTERM
+const SYNONYM_RELS = ['sinonimo', 'prestamo'];
+function isSynonym(v) {
+  return SYNONYM_RELS.includes(v.rel);
+}
+
 function relationLabel(v, isEntity = false) {
-  if (isConsolidated(v)) return lang === 'es' ? 'variante denominativa' : 'denominative variant';
   if (isEntity && ['variante_denominativa', 'sinonimo'].includes(v.rel)) {
     return lang === 'es' ? 'variante' : 'variant';
   }
-  if (v.rel === 'variante_denominativa') {
-    return lang === 'es' ? 'sinónimo' : 'synonym';
+  if (isConsolidated(v)) {
+    if (v.rel === 'prestamo') return lang === 'es' ? 'préstamo consolidado' : 'established loanword';
+    return lang === 'es' ? 'sinónimo consolidado' : 'established synonym';
   }
   return ((NORM.relaciones || {})[v.rel] || {})[lang] || v.rel.replace(/_/g, ' ');
+}
+
+// Referencia completa y cita breve de un documento del corpus (Apéndice I)
+function fullReference(source) {
+  if (BIB[source]) return BIB[source].ref;
+  const parts = String(source || '').split('_');
+  return `${parts[1] || ''}${parts[0] ? ` (${parts[0]})` : ''}${parts.length > 2 ? `. <em>${parts.slice(2).join(': ')}</em>` : ''}`;
+}
+// Contexto del subcorpus español: definitorio (validado) o de uso, con su fuente
+function contextHtml(e, lang) {
+  const c = e.context;
+  if (!c) return '';
+  const label = c.type === 'definitorio'
+    ? (lang === 'es' ? 'Contexto definitorio' : 'Defining context')
+    : (lang === 'es' ? 'Contexto de uso' : 'Usage context');
+  const note = lang === 'es' ? '' : ' <span class="context-lang">(Spanish subcorpus)</span>';
+  return `<h3>${label}${note}</h3><blockquote class="entry-context">«${c.text}»
+    <footer>${fullReference(c.source)}</footer></blockquote>`;
+}
+
+// Nota terminológica sobre el uso del término en el corpus
+function termNoteHtml(e, lang, searchMode) {
+  const n = e.term_note;
+  if (!n) return '';
+  return `<div class="term-note"><strong>${lang === 'es' ? 'Nota terminológica' : 'Terminological note'}.</strong> ${n[searchMode === 'en' ? 'en' : 'es']}</div>`;
+}
+
+function shortCite(source) {
+  return BIB[source] ? BIB[source].cita : source;
 }
 
 function fmtNum(n) {
@@ -185,15 +222,17 @@ function sortEntries(list) {
 async function loadGlossary() {
   try {
     const v = Date.now();
-    const [entriesRes, concRes, normData] = await Promise.all([
+    const [entriesRes, concRes, normData, bibData] = await Promise.all([
       fetch('assets/data/entries.json?v=' + v),
       fetch('assets/data/concordances.json?v=' + v),
       fetch('assets/data/normalizacion.json?v=' + v).then(r => r.ok ? r.json() : null).catch(() => null),
+      fetch('assets/data/bibliografia.json?v=' + v).then(r => r.ok ? r.json() : {}).catch(() => ({})),
     ]);
     EVERY_ENTRY       = await entriesRes.json();
     ALL_ENTRIES       = EVERY_ENTRY.filter(e => (e.type || 'term') === VIEW);
     ALL_CONCORDANCES  = await concRes.json();
     if (normData) NORM = normData;
+    BIB = bibData || {};
     buildSlugIndex();
     applyLang();
     openFromHash();
@@ -355,6 +394,8 @@ function renderEntries(list) {
           : `<h3>Definición (ES)</h3>${esMatch[1]}`;
         cleanHtml = before
             + definitionHtml
+            + contextHtml(e, lang)
+            + termNoteHtml(e, lang, searchMode)
             + afterEs;
     }
 
@@ -383,32 +424,15 @@ function renderEntries(list) {
         }
     }
 
-    // 3. Fuentes de la definición (extraídas del HTML de la entrada)
-    const enSrcM = cleanHtml.match(/<h3[^>]*>Fuentes del corpus \(EN\) \/ Corpus sources \(EN\)<\/h3>\s*(<ul>[\s\S]*?<\/ul>)/);
-    const esSrcM = cleanHtml.match(/<h3[^>]*>Fuentes del corpus \(ES\) \/ Corpus sources \(ES\)<\/h3>\s*(<ul>[\s\S]*?<\/ul>)/);
+    // 3. Fuentes de la definición (las citas del HTML se sustituyen por la lista de documentos)
     cleanHtml = cleanHtml.replace(/<h3[^>]*>Fuentes del corpus \((?:EN|ES)\) \/ Corpus sources \((?:EN|ES)\)<\/h3>\s*<ul>[\s\S]*?<\/ul>/g, '');
 
-    const parseSource = source => {
-      const parts = String(source || '').split('_');
-      const year = parts[0] || '';
-      const authors = parts[1] || '';
-      const title = parts.slice(2).join(': ');
-      return `${authors}${year ? ` (${year})` : ''}${title ? `. <em>${title}</em>` : ''}`;
-    };
-    const parseBiblio = (ulHtml) => {
-      const refs = [], seen = new Set();
-      ulHtml.replace(/<li>([\s\S]*?)<\/li>/g, (_, li) => {
-        const attrM = li.match(/<em>\(([^)]+)\)<\/em>/);
-        if (!attrM || /^(?:source|fuente)$/i.test(attrM[1].trim()) || seen.has(attrM[1])) return;
-        seen.add(attrM[1]);
-        refs.push(`<li>${parseSource(attrM[1])}</li>`);
-      });
-      return refs;
-    };
-    let biblioItems = [
-      ...(enSrcM ? parseBiblio(enSrcM[1]) : []),
-      ...(esSrcM ? parseBiblio(esSrcM[1]) : []),
-    ];
+    // Documentos del corpus en que se basa la definición de la lengua de la ficha
+    // (o, si no los hay, de la otra lengua), con su referencia completa
+    const fichaLang = searchMode === 'en' ? 'en' : 'es';
+    const otherLang = fichaLang === 'en' ? 'es' : 'en';
+    const srcList = ((e.sources || {})[fichaLang] || []).length ? e.sources[fichaLang] : ((e.sources || {})[otherLang] || []);
+    let biblioItems = srcList.map(s => `<li>${fullReference(s)}</li>`);
 
     // 4. Concordancias KWIC desde concordances.json
     const activeLang = searchMode === 'en' ? 'en' : 'es';
@@ -424,7 +448,7 @@ function renderEntries(list) {
       const corpusSources = [...new Set(sourceSlugs.flatMap(s => ['en', 'es']
         .flatMap(lng => (ALL_CONCORDANCES[s] || {})[lng] || [])
         .map(c => c.source).filter(Boolean)))];
-      biblioItems = corpusSources.map(source => `<li>${parseSource(source)}</li>`);
+      biblioItems = corpusSources.map(source => `<li>${fullReference(source)}</li>`);
     }
     if (!biblioItems.length && e.url) {
       biblioItems = [`<li><a href="${e.url}" target="_blank" rel="noopener">${e.url}</a></li>`];
@@ -432,19 +456,19 @@ function renderEntries(list) {
     const biblioUniq = [...new Map(biblioItems.map(x => [x, x])).values()];
 
     const makeConcItem = c =>
-      `<li><span class="kwic-line">${c.left}<strong class="kwic-key">${c.keyword}</strong>${c.right}</span><br><span class="src-attr">${c.source}</span></li>`;
+      `<li><span class="kwic-line">${c.left}<strong class="kwic-key">${c.keyword}</strong>${c.right}</span><br><span class="src-attr" title="${fullReference(c.source).replace(/<[^>]+>/g, '').replace(/"/g, '&quot;')}">${shortCite(c.source)}</span></li>`;
 
     const uid          = e.slug;
     const isEntity = (e.type || 'term') === 'entity';
-    const fuentesLabel = isEntity
-      ? (lang === 'es' ? 'Fuentes de la ficha' : 'Entry sources')
-      : (lang === 'es' ? 'Fuentes de la definición' : 'Definition sources');
+    const fuentesLabel = lang === 'es' ? 'Fuente de la definición' : 'Definition source';
+    const fuentesIntro = srcList.length
+      ? `<p class="sources-intro">${lang === 'es' ? 'Propia, elaborada a partir de:' : 'Own definition, based on:'}</p>` : '';
     const concordLabel = lang === 'es' ? 'Concordancias' : 'Concordances';
 
     if (biblioUniq.length > 0) {
       cleanHtml += `<details class="sources-details" id="biblio-${uid}">
         <summary class="sources-summary">${fuentesLabel}</summary>
-        <div class="sources-inner"><ul class="src-panel">${biblioUniq.join('')}</ul></div>
+        <div class="sources-inner">${fuentesIntro}<ul class="src-panel">${biblioUniq.join('')}</ul></div>
       </details>`;
     }
     if (concData.length > 0 && !isEntity) {
@@ -458,7 +482,7 @@ function renderEntries(list) {
     const primary   = cleanTerm(e, searchMode === 'en' ? e.term_en : e.term_es);
     const equivTerm = searchMode === 'en' ? (e.equiv_es || '') : (e.equiv_en || '');
     const equivLang = searchMode === 'en' ? 'es' : 'en';
-    const showEquiv = equivTerm && equivTerm.toLowerCase() !== primary.toLowerCase();
+    const showEquiv = equivTerm && cleanTerm(e, equivTerm).toLowerCase() !== primary.toLowerCase();
     const proposed = l => (e.proposed || {})[l];
     const proposedLbl = lang === 'es' ? 'propuesta' : 'proposed';
     const proposedTitle = lang === 'es'
@@ -481,18 +505,18 @@ function renderEntries(list) {
     let freqHtml = '';
     if (!isEntity && e.freq && (e.freq.en || e.freq.es)) {
       const freqTitle = lang === 'es' ? 'Frecuencia en corpus' : 'Corpus frequency';
-      const colAbs = lang === 'es' ? 'Frec. abs.' : 'Abs. freq.';
-      const colRel = lang === 'es' ? 'Frec. rel.' : 'Rel. freq.';
+      const colAbs = lang === 'es' ? 'Frec. absoluta' : 'Abs. freq.';
       const colPmw = lang === 'es' ? 'Por millón' : 'Per million';
-      const row = (label, d) => d
-        ? `<tr><td>${label}</td><td>${d.abs}</td><td>${d.rel}</td><td>${d.pmw}</td></tr>`
+      const colDocs = lang === 'es' ? 'Documentos' : 'Documents';
+      const row = (label, d, docs) => d
+        ? `<tr><td>${label}</td><td>${d.abs}</td><td>${d.pmw}</td><td>${docs ?? '—'}</td></tr>`
         : '';
       freqHtml = `<details class="sources-details frequency-details">
         <summary class="sources-summary">${freqTitle}</summary>
         <div class="sources-inner">
         <table class="freq-table">
-          <thead><tr><th>Subcorpus</th><th>${colAbs}</th><th>${colRel}</th><th>${colPmw}</th></tr></thead>
-          <tbody>${row('EN', e.freq.en)}${row('ES', e.freq.es)}</tbody>
+          <thead><tr><th>Subcorpus</th><th>${colAbs}</th><th>${colPmw}</th><th>${colDocs}</th></tr></thead>
+          <tbody>${row('EN', e.freq.en, (e.docs || {}).en)}${row('ES', e.freq.es, (e.docs || {}).es)}</tbody>
         </table>`;
     }
 
@@ -520,20 +544,21 @@ function renderEntries(list) {
       }
     }
 
-    // ── Variantes y sinónimos unificados en esta entrada ──
+    // ── Variación denominativa y sinónimos y préstamos (campos de DOCUTERM) ──
     let variantsHtml = '';
     if (vars.length) {
-      const title = isEntity
-        ? (lang === 'es' ? 'Variantes' : 'Variants')
-        : (lang === 'es' ? 'Variantes y sinónimos' : 'Variants and synonyms');
       const docsLbl = lang === 'es' ? 'doc.' : 'docs';
-      const undocumented = lang === 'es' ? 'no documentada en el corpus' : 'not attested in the corpus';
-      variantsHtml = `<div class="variants-section">
+      const undocumented = lang === 'es' ? 'no documentado en el corpus' : 'not attested in the corpus';
+      const chip = v => `<button type="button" class="variant-chip${isConsolidated(v) ? ' consolidated' : ''}" onclick="searchForVariant('${encodeURIComponent(v.form).replace(/'/g, '%27')}')">${v.form} <span class="variant-rel">${relationLabel(v, isEntity)}${isEntity ? '' : ` · ${
+        v.n ? `${fmtNum(v.n)} · ${v.docs} ${docsLbl}` : undocumented}`}</span></button>`;
+      const block = (title, list) => list.length ? `<div class="variants-section">
         <span class="equiv-label">${title}</span>
-        <div class="variant-list">${vars.map(v => `<button type="button" class="variant-chip${isConsolidated(v) ? ' consolidated' : ''}" onclick="searchForVariant('${encodeURIComponent(v.form).replace(/'/g, '%27')}')">${v.form} <span class="variant-rel">${relationLabel(v, isEntity)}${isEntity ? '' : ` · ${
-          v.n ? `${fmtNum(v.n)} · ${v.docs} ${docsLbl}` : undocumented}`}</span></button>`).join('')}
-        </div>
-      </div>`;
+        <div class="variant-list">${list.map(chip).join('')}</div>
+      </div>` : '';
+      variantsHtml = isEntity
+        ? block(lang === 'es' ? 'Variantes' : 'Variants', vars)
+        : block(lang === 'es' ? 'Variación denominativa' : 'Denominative variation', vars.filter(v => !isSynonym(v)))
+          + block(lang === 'es' ? 'Sinónimos y préstamos' : 'Synonyms and loanwords', vars.filter(isSynonym));
     }
 
     // ── Notas conceptuales ──
