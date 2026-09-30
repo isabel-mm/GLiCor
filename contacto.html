@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contacto | GLiCor</title>
+
+<style>
+:root {
+  --primary-gradient: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #f43f5e 100%);
+  --bg-page: #fdfcfe;
+  --surface: #ffffff;
+  --text-main: #1e1b4b;
+  --text-muted: #64748b;
+  --border: #e2e8f0;
+  --radius-lg: 16px;
+  --radius-md: 12px;
+  --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --font-main: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: var(--font-main); background-color: var(--bg-page); color: var(--text-main); line-height: 1.7; }
+
+.hero {
+  background: #1e1b4b;
+  background-image: radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.15) 0px, transparent 50%), radial-gradient(at 100% 100%, rgba(244, 63, 94, 0.1) 0px, transparent 50%);
+  color: #fff; padding: 7rem 1.5rem 4rem; text-align: center;
+  border-bottom: 4px solid; border-image: var(--primary-gradient) 1;
+}
+.hero h1 { font-size: 2.5rem; font-weight: 800; margin-bottom: 0.5rem; }
+
+.content-container {
+  max-width: 850px;
+  margin: -2rem auto 3rem;
+  padding: 3rem 2.5rem;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  border-radius: var(--radius-lg);
+  position: relative;
+  z-index: 10;
+}
+
+.panel {
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  scroll-margin-top: 5rem;
+}
+
+p { margin-bottom: 1rem; color: #334155; }
+p:last-child { margin-bottom: 0; }
+a { color: #4f46e5; font-weight: 700; text-decoration: none; }
+a:hover { color: #f43f5e; }
+
+.section-title {
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #a855f7;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.highlight-box {
+  background: #f5f3ff; border-radius: var(--radius-md); padding: 1.2rem 1.5rem;
+  margin-top: 1rem; font-size: 0.92rem; color: #5b21b6; border: 1px solid #ddd6fe;
+}
+
+/* ── Formulario ── */
+form { display: grid; gap: 1.1rem; margin-top: 1.5rem; }
+.row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+label { display: block; font-size: 0.82rem; font-weight: 700; color: var(--text-main); margin-bottom: 0.35rem; }
+label .optional { font-weight: 500; color: var(--text-muted); }
+input, select, textarea {
+  width: 100%; padding: 0.7rem 0.85rem; border: 1px solid var(--border); border-radius: 10px;
+  font: inherit; font-size: 0.95rem; color: var(--text-main); background: #fff; transition: border-color 0.2s, box-shadow 0.2s;
+}
+input:focus, select:focus, textarea:focus { outline: none; border-color: #a855f7; box-shadow: 0 0 0 3px rgba(168, 85, 247, 0.15); }
+textarea { resize: vertical; min-height: 5.5rem; }
+
+.type-options { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.type-options input { position: absolute; opacity: 0; pointer-events: none; }
+.type-options label {
+  margin: 0; padding: 0.45rem 0.9rem; border: 1px solid var(--border); border-radius: 999px;
+  font-size: 0.85rem; font-weight: 600; color: #475569; cursor: pointer; transition: 0.2s;
+}
+.type-options input:checked + label { background: #1e1b4b; border-color: #1e1b4b; color: #fff; }
+.type-options input:focus-visible + label { box-shadow: 0 0 0 3px rgba(168, 85, 247, 0.3); }
+
+.existing {
+  display: none; padding: 0.8rem 1rem; border-radius: 10px; font-size: 0.88rem;
+  background: #fff7ed; border: 1px solid #fed7aa; color: #9a3412;
+}
+.existing.show { display: block; }
+.existing a { color: #c2410c; }
+
+.form-error { display: none; color: #be123c; font-size: 0.88rem; font-weight: 600; }
+.form-error.show { display: block; }
+
+.actions { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; }
+button {
+  font: inherit; font-size: 0.9rem; font-weight: 700; border-radius: 999px; padding: 0.7rem 1.4rem; cursor: pointer; transition: 0.2s;
+}
+.btn-primary { border: 0; color: #fff; background: var(--primary-gradient); }
+.btn-primary:hover { filter: brightness(1.08); }
+.btn-secondary { border: 1px solid var(--border); background: #fff; color: var(--text-main); }
+.btn-secondary:hover { border-color: #a855f7; }
+.copied { font-size: 0.85rem; color: #15803d; font-weight: 600; }
+.form-note { font-size: 0.82rem; color: var(--text-muted); }
+
+/* ── Contacto ── */
+.contact-list { list-style: none; display: grid; gap: 0.7rem; margin-top: 0.5rem; }
+.contact-list li { display: grid; grid-template-columns: 8.5rem 1fr; gap: 1rem; font-size: 0.95rem; color: #334155; }
+.contact-list .key { font-size: 0.78rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); padding-top: 0.15rem; }
+.citation { margin-top: 0.4rem; font-size: 0.9rem; color: #334155; }
+
+@media (max-width: 680px) {
+  .hero h1 { font-size: 2rem; }
+  .content-container { padding: 2rem 1rem; }
+  .panel { padding: 1.4rem; }
+  .row { grid-template-columns: 1fr; }
+  .contact-list li { grid-template-columns: 1fr; gap: 0; }
+}
+</style>
+</head>
+
+<body data-page="contacto">
+<script src="assets/js/navbar.js?v=20260930p"></script>
+
+<header class="hero">
+  <h1 data-es="Propuestas y contacto" data-en="Suggestions and contact">Propuestas y contacto</h1>
+</header>
+
+<main class="content-container">
+
+  <section class="panel" id="propuestas">
+    <span class="section-title">
+      <span class="lang-es">Propón un término</span>
+      <span class="lang-en" hidden>Suggest a term</span>
+    </span>
+    <p>
+      <span class="lang-es">GLiCor es un recurso vivo. Si echas en falta un término o un recurso (un corpus, una herramienta, un estándar), o crees que una entrada se puede mejorar, cuéntanoslo. Todas las propuestas se revisan con los mismos criterios que el resto del glosario: documentación en el corpus y una sola entrada por concepto.</span>
+      <span class="lang-en" hidden>GLiCor is a living resource. If you miss a term or a resource (a corpus, a tool, a standard), or think an entry could be improved, let us know. Every suggestion is reviewed with the same criteria as the rest of the glossary: documentation in the corpus and a single entry per concept.</span>
+    </p>
+
+    <form id="proposal-form" novalidate>
+      <div>
+        <label>
+          <span class="lang-es">Tipo de propuesta</span>
+          <span class="lang-en" hidden>Type of suggestion</span>
+        </label>
+        <div class="type-options" role="radiogroup">
+          <input type="radio" name="tipo" id="tipo-termino" value="termino" checked>
+          <label for="tipo-termino" data-es="Término que falta" data-en="Missing term">Término que falta</label>
+          <input type="radio" name="tipo" id="tipo-recurso" value="recurso">
+          <label for="tipo-recurso" data-es="Recurso que falta" data-en="Missing resource">Recurso que falta</label>
+          <input type="radio" name="tipo" id="tipo-correccion" value="correccion">
+          <label for="tipo-correccion" data-es="Corrección de una entrada" data-en="Correction to an entry">Corrección de una entrada</label>
+          <input type="radio" name="tipo" id="tipo-otra" value="otra">
+          <label for="tipo-otra" data-es="Otra sugerencia" data-en="Other suggestion">Otra sugerencia</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div>
+          <label for="term-es">
+            <span class="lang-es">Término en español</span>
+            <span class="lang-en" hidden>Spanish term</span>
+          </label>
+          <input type="text" id="term-es" name="term_es" autocomplete="off" data-ph-es="p. ej. palabra clave" data-ph-en="e.g. palabra clave">
+        </div>
+        <div>
+          <label for="term-en">
+            <span class="lang-es">Término en inglés</span>
+            <span class="lang-en" hidden>English term</span>
+          </label>
+          <input type="text" id="term-en" name="term_en" autocomplete="off" data-ph-es="p. ej. keyword" data-ph-en="e.g. keyword">
+        </div>
+      </div>
+
+      <div class="existing" id="existing" aria-live="polite"></div>
+
+      <div>
+        <label for="definition">
+          <span class="lang-es" data-field="definition">Definición o explicación</span>
+          <span class="lang-en" hidden data-field="definition">Definition or explanation</span>
+          <span class="optional" data-es="(opcional)" data-en="(optional)">(opcional)</span>
+        </label>
+        <textarea id="definition" name="definition" rows="4"></textarea>
+      </div>
+
+      <div>
+        <label for="source">
+          <span class="lang-es">Fuente o ejemplo de uso</span>
+          <span class="lang-en" hidden>Source or usage example</span>
+          <span class="optional" data-es="(opcional)" data-en="(optional)">(opcional)</span>
+        </label>
+        <textarea id="source" name="source" rows="3" data-ph-es="Referencia bibliográfica, enlace o frase en la que aparece" data-ph-en="Bibliographic reference, link or sentence where it appears"></textarea>
+      </div>
+
+      <div>
+        <label for="name">
+          <span class="lang-es">Nombre y afiliación</span>
+          <span class="lang-en" hidden>Name and affiliation</span>
+          <span class="optional" data-es="(opcional, por si quieres que te citemos o respondamos)" data-en="(optional, in case you want to be credited or answered)">(opcional, por si quieres que te citemos o respondamos)</span>
+        </label>
+        <input type="text" id="name" name="name" autocomplete="name">
+      </div>
+
+      <p class="form-error" id="form-error" aria-live="polite"></p>
+
+      <div class="actions">
+        <button type="submit" class="btn-primary" data-es="Enviar por correo" data-en="Send by email">Enviar por correo</button>
+        <button type="button" class="btn-secondary" id="copy-btn" data-es="Copiar texto" data-en="Copy text">Copiar texto</button>
+        <span class="copied" id="copied" hidden></span>
+      </div>
+      <p class="form-note">
+        <span class="lang-es">Al pulsar «Enviar por correo» se abre tu programa de correo con el mensaje ya redactado; nada se envía ni se guarda desde esta página. Si no tienes un programa de correo configurado, copia el texto y envíalo a <a href="mailto:isabel.moyano@uca.es">isabel.moyano@uca.es</a>.</span>
+        <span class="lang-en" hidden>Clicking “Send by email” opens your email program with the message already written; nothing is sent or stored from this page. If you have no email program set up, copy the text and send it to <a href="mailto:isabel.moyano@uca.es">isabel.moyano@uca.es</a>.</span>
+      </p>
+    </form>
+  </section>
+
+  <section class="panel" id="contacto">
+    <span class="section-title">
+      <span class="lang-es">Contacto</span>
+      <span class="lang-en" hidden>Contact</span>
+    </span>
+    <p>
+      <span class="lang-es">Para dudas sobre el glosario, colaboraciones, usos docentes o de investigación, escribe directamente a la autora.</span>
+      <span class="lang-en" hidden>For questions about the glossary, collaborations, or teaching and research uses, write directly to the author.</span>
+    </p>
+    <ul class="contact-list">
+      <li><span class="key" data-es="Autora" data-en="Author">Autora</span><span>Isabel Moyano Moreno</span></li>
+      <li><span class="key" data-es="Institución" data-en="Institution">Institución</span><span>Universidad de Cádiz</span></li>
+      <li><span class="key" data-es="Correo" data-en="Email">Correo</span><span><a href="mailto:isabel.moyano@uca.es">isabel.moyano@uca.es</a></span></li>
+      <li><span class="key">ORCID</span><span><a href="https://orcid.org/0000-0003-4284-8897" target="_blank" rel="noopener">0000-0003-4284-8897</a></span></li>
+    </ul>
+    <div class="highlight-box">
+      <strong data-es="Cómo citar GLiCor" data-en="How to cite GLiCor">Cómo citar GLiCor</strong>
+      <p class="citation">Moyano Moreno, I. (2026). <em>GLiCor: Glosario de Lingüística de Corpus</em>. Universidad de Cádiz.</p>
+    </div>
+  </section>
+
+</main>
+
+<script>
+const EMAIL = 'isabel.moyano@uca.es';
+let lang = localStorage.getItem('glicor-lang') || 'es';
+let ENTRIES = [];
+
+const STRINGS = {
+  es: {
+    types: { termino: 'Término que falta', recurso: 'Recurso que falta', correccion: 'Corrección de una entrada', otra: 'Otra sugerencia' },
+    definition: { termino: 'Definición o explicación', recurso: 'Descripción del recurso (y enlace, si lo tiene)', correccion: 'Qué habría que corregir', otra: 'Tu sugerencia' },
+    needTerm: 'Indica al menos el término en una de las dos lenguas.',
+    needText: 'Escribe tu sugerencia.',
+    existing: (links, isCorrection) => isCorrection
+      ? `Entrada que quieres corregir: ${links}.`
+      : `Ya está en el glosario: ${links}. Si quieres proponer un cambio en esa entrada, elige «Corrección de una entrada».`,
+    copied: 'Texto copiado',
+    labels: { type: 'Tipo', es: 'Término (ES)', en: 'Término (EN)', def: 'Definición / explicación', source: 'Fuente o ejemplo', name: 'Nombre y afiliación' },
+    subject: 'Propuesta',
+  },
+  en: {
+    types: { termino: 'Missing term', recurso: 'Missing resource', correccion: 'Correction to an entry', otra: 'Other suggestion' },
+    definition: { termino: 'Definition or explanation', recurso: 'Description of the resource (and link, if any)', correccion: 'What should be corrected', otra: 'Your suggestion' },
+    needTerm: 'Please give the term in at least one of the two languages.',
+    needText: 'Please write your suggestion.',
+    existing: (links, isCorrection) => isCorrection
+      ? `Entry you want to correct: ${links}.`
+      : `Already in the glossary: ${links}. To suggest a change to that entry, choose “Correction to an entry”.`,
+    copied: 'Text copied',
+    labels: { type: 'Type', es: 'Term (ES)', en: 'Term (EN)', def: 'Definition / explanation', source: 'Source or example', name: 'Name and affiliation' },
+    subject: 'Suggestion',
+  },
+};
+
+const form = document.getElementById('proposal-form');
+const termEs = document.getElementById('term-es');
+const termEn = document.getElementById('term-en');
+const existingBox = document.getElementById('existing');
+const errorBox = document.getElementById('form-error');
+
+const selectedType = () => form.querySelector('input[name="tipo"]:checked').value;
+
+// Misma idea que nameKey() en glossary.js, pero sin tildes para tolerar erratas
+function key(s) {
+  return String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
+    .replace(/[^a-z0-9ñ]+/g, ' ').trim();
+}
+
+function entryNames(e) {
+  const forms = Object.values(e.forms || {}).flat().map(f => f.form);
+  return [e.term_es, e.term_en, e.equiv_es, e.equiv_en, ...(e.aliases || []), ...forms].filter(Boolean).map(key);
+}
+
+function findExisting() {
+  const queries = [termEs.value, termEn.value].map(key).filter(q => q.length >= 2);
+  if (!queries.length) return [];
+  return ENTRIES.filter(e => entryNames(e).some(n => queries.includes(n)));
+}
+
+function renderExisting() {
+  const found = findExisting();
+  existingBox.classList.toggle('show', found.length > 0);
+  if (!found.length) { existingBox.innerHTML = ''; return; }
+  const links = found.map(e => {
+    const page = e.type === 'entity' ? 'recursos.html' : 'index.html';
+    const name = lang === 'es' ? e.term_es : e.term_en;
+    const a = document.createElement('a');
+    a.href = `${page}#${encodeURIComponent(e.slug)}`;
+    a.textContent = name;
+    return a.outerHTML;
+  }).join(', ');
+  existingBox.innerHTML = STRINGS[lang].existing(links, selectedType() === 'correccion');
+}
+
+function updateDefinitionLabel() {
+  const type = selectedType();
+  document.querySelectorAll('[data-field="definition"]').forEach(el => {
+    el.textContent = STRINGS[el.classList.contains('lang-es') ? 'es' : 'en'].definition[type];
+  });
+}
+
+function buildMessage() {
+  const s = STRINGS[lang];
+  const type = selectedType();
+  const fields = [
+    [s.labels.type, s.types[type]],
+    [s.labels.es, termEs.value.trim()],
+    [s.labels.en, termEn.value.trim()],
+    [s.labels.def, form.definition.value.trim()],
+    [s.labels.source, form.source.value.trim()],
+    [s.labels.name, form.name.value.trim()],
+  ].filter(([, v]) => v);
+  const body = fields.map(([k, v]) => `${k}:\n${v}`).join('\n\n');
+  const term = termEs.value.trim() || termEn.value.trim();
+  const subject = `[GLiCor] ${s.subject}${term ? ': ' + term : ''} (${s.types[type].toLowerCase()})`;
+  return { subject, body };
+}
+
+function validate() {
+  const s = STRINGS[lang];
+  const type = selectedType();
+  let msg = '';
+  if (type === 'otra') {
+    if (!form.definition.value.trim()) msg = s.needText;
+  } else if (!termEs.value.trim() && !termEn.value.trim()) {
+    msg = s.needTerm;
+  }
+  errorBox.textContent = msg;
+  errorBox.classList.toggle('show', !!msg);
+  return !msg;
+}
+
+form.addEventListener('submit', event => {
+  event.preventDefault();
+  if (!validate()) return;
+  const { subject, body } = buildMessage();
+  window.location.href = `mailto:${EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+});
+
+document.getElementById('copy-btn').addEventListener('click', async () => {
+  if (!validate()) return;
+  const { subject, body } = buildMessage();
+  const text = `Para: ${EMAIL}\n${subject}\n\n${body}`;
+  const copied = document.getElementById('copied');
+  try {
+    await navigator.clipboard.writeText(text);
+    copied.textContent = STRINGS[lang].copied;
+    copied.hidden = false;
+    setTimeout(() => { copied.hidden = true; }, 2500);
+  } catch (error) {
+    window.prompt('', text);
+  }
+});
+
+form.querySelectorAll('input[name="tipo"]').forEach(r => r.addEventListener('change', () => {
+  updateDefinitionLabel();
+  renderExisting();
+}));
+[termEs, termEn].forEach(input => input.addEventListener('input', renderExisting));
+
+// Viene de «¿Falta este término?» en el glosario: ?tipo=termino&lengua=es&q=...
+function prefillFromUrl() {
+  const params = new URLSearchParams(window.location.search);
+  const tipo = params.get('tipo');
+  const radio = tipo && document.getElementById(`tipo-${tipo}`);
+  if (radio) radio.checked = true;
+  const q = params.get('q');
+  if (q) (params.get('lengua') === 'en' ? termEn : termEs).value = q;
+}
+
+function applyLang() {
+  document.documentElement.lang = lang;
+  document.querySelectorAll('.lang-es').forEach(el => el.hidden = (lang === 'en'));
+  document.querySelectorAll('.lang-en').forEach(el => el.hidden = (lang === 'es'));
+  document.querySelectorAll('[data-es][data-en]').forEach(el => {
+    if (!el.closest('.navbar')) el.textContent = el.dataset[lang];
+  });
+  document.querySelectorAll('[data-ph-es]').forEach(el => {
+    el.placeholder = el.dataset[lang === 'es' ? 'phEs' : 'phEn'];
+  });
+  if (window.syncNavbar) window.syncNavbar(lang);
+  updateDefinitionLabel();
+  renderExisting();
+  if (errorBox.classList.contains('show')) validate();
+}
+
+function toggleLang() {
+  lang = lang === 'es' ? 'en' : 'es';
+  localStorage.setItem('glicor-lang', lang);
+  applyLang();
+}
+
+prefillFromUrl();
+applyLang();
+
+fetch('assets/data/entries.json')
+  .then(r => r.json())
+  .then(data => { ENTRIES = data; renderExisting(); })
+  .catch(() => {});
+</script>
+<script src="assets/js/footer.js?v=20260930p"></script>
+</body>
+</html>

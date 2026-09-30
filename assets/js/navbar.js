@@ -2,25 +2,24 @@
   const page = document.body.dataset.page || '';
   const lang = localStorage.getItem('glicor-lang') || 'es';
 
+  // children: entradas del desplegable; la primera va separada del resto por una línea
   const items = [
     { key: 'index', href: 'index.html', es: 'Inicio', en: 'Home' },
-    { key: 'about', href: 'about.html', es: 'Acerca de', en: 'About' },
     { key: 'recursos', href: 'recursos.html', es: 'Recursos', en: 'Resources' },
     { key: 'redes', href: 'redes.html', es: 'Redes', en: 'Networks' },
-    { key: 'corpus', href: 'corpus.html', es: 'Corpus', en: 'Corpus' },
+    {
+      key: 'about', href: 'about.html', es: 'Acerca de', en: 'About',
+      menuLabel: { es: 'Abrir páginas sobre el proyecto', en: 'Open project pages' },
+      // Páginas fuera del menú que siguen marcando «Acerca de» como sección activa
+      activeOn: ['normalizacion'],
+      children: [
+        { key: 'about', href: 'about.html', es: 'Sobre GLiCor', en: 'About GLiCor' },
+        { key: 'corpus', href: 'corpus.html', es: 'Corpus', en: 'Corpus' },
+        { key: 'stats', href: 'stats.html', es: 'Estadísticas', en: 'Stats' },
+      ],
+    },
     { key: 'guide', href: 'guide.html', es: 'Guía', en: 'Guide' },
-    { key: 'stats', href: 'stats.html', es: 'Estadísticas', en: 'Stats' }
-  ];
-  const resourceGroups = [
-    { id: 'all', es: 'Todos los recursos', en: 'All resources' },
-    { id: 'corpora', es: 'Corpus y colecciones', en: 'Corpora and collections' },
-    { id: 'lexical', es: 'Recursos léxicos', en: 'Lexical resources' },
-    { id: 'query', es: 'Consulta y análisis de corpus', en: 'Corpus querying and analysis' },
-    { id: 'nlp', es: 'Anotación y procesamiento lingüístico', en: 'Annotation and language processing' },
-    { id: 'standards', es: 'Estándares y formatos técnicos', en: 'Technical standards and formats' },
-    { id: 'collection', es: 'Recopilación y construcción', en: 'Corpus collection and building' },
-    { id: 'translation', es: 'Traducción y alineación', en: 'Translation and alignment' },
-    { id: 'development', es: 'Programación y bibliotecas', en: 'Programming and libraries' },
+    { key: 'contacto', href: 'contacto.html', es: 'Contacto', en: 'Contact' }
   ];
 
   const style = document.createElement('style');
@@ -47,6 +46,7 @@
     .nav-menu.open .nav-dropdown-panel { display: block; }
     .navbar .nav-dropdown-panel a { display: block; padding: 0.7rem 0.8rem; border: 0; border-radius: 8px; color: #cbd5e1; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.01em; line-height: 1.35; text-transform: none; white-space: normal; }
     .navbar .nav-dropdown-panel a:hover { color: white; background: rgba(255,255,255,0.1); }
+    .navbar .nav-dropdown-panel a.current { color: white; background: rgba(255,255,255,0.1); }
     .nav-dropdown-divider { height: 1px; margin: 0.35rem 0; background: rgba(255,255,255,0.14); }
     @media (max-width: 720px) { .nav-dropdown-panel { left: auto; right: -0.5rem; } }
     @media (max-width: 850px) {
@@ -63,15 +63,17 @@
 
   const nav = document.createElement('nav');
   nav.className = 'navbar';
+  const isActive = item => item.key === page || (item.activeOn || []).includes(page)
+    || (item.children || []).some(child => child.key === page);
   nav.innerHTML = `
     ${items.map(item => {
-      if (item.key !== 'recursos') return `<a href="${item.key === page ? '#' : item.href}" class="${item.key === page ? 'active' : ''}" data-es="${item.es}" data-en="${item.en}">${item[lang]}</a>`;
-      const resourceHref = item.key === page ? '#' : item.href;
-      return `<div class="nav-menu" id="resource-nav-menu">
-        <a href="${resourceHref}" class="${item.key === page ? 'active' : ''}" data-es="${item.es}" data-en="${item.en}">${item[lang]}</a>
-        <button type="button" class="nav-menu-toggle" aria-expanded="false" data-label-es="Abrir grupos de recursos" data-label-en="Open resource groups" aria-label="${lang === 'es' ? 'Abrir grupos de recursos' : 'Open resource groups'}">▾</button>
+      const link = `<a href="${item.key === page ? '#' : item.href}" class="${isActive(item) ? 'active' : ''}" data-es="${item.es}" data-en="${item.en}">${item[lang]}</a>`;
+      if (!item.children) return link;
+      return `<div class="nav-menu">
+        ${link}
+        <button type="button" class="nav-menu-toggle" aria-expanded="false" data-label-es="${item.menuLabel.es}" data-label-en="${item.menuLabel.en}" aria-label="${item.menuLabel[lang]}">▾</button>
         <div class="nav-dropdown-panel">
-          ${resourceGroups.map((group, index) => `${index === 1 ? '<div class="nav-dropdown-divider"></div>' : ''}<a href="recursos.html#group-${group.id}" data-es="${group.es}" data-en="${group.en}">${group[lang]}</a>`).join('')}
+          ${item.children.map((child, index) => `${index === 1 ? '<div class="nav-dropdown-divider"></div>' : ''}<a href="${child.href}" class="${child.key && child.key === page ? 'current' : ''}" data-es="${child.es}" data-en="${child.en}">${child[lang]}</a>`).join('')}
         </div>
       </div>`;
     }).join('')}
@@ -84,8 +86,9 @@
     document.querySelectorAll('.navbar [data-es][data-en]').forEach(el => {
       el.textContent = el.dataset[nextLang];
     });
-    const menuToggle = document.querySelector('.nav-menu-toggle');
-    if (menuToggle) menuToggle.setAttribute('aria-label', menuToggle.dataset[`label${nextLang === 'es' ? 'Es' : 'En'}`]);
+    document.querySelectorAll('.nav-menu-toggle').forEach(menuToggle => {
+      menuToggle.setAttribute('aria-label', menuToggle.dataset[`label${nextLang === 'es' ? 'Es' : 'En'}`]);
+    });
     const button = document.getElementById('lang-toggle');
     if (button) button.textContent = nextLang === 'es' ? 'EN' : 'ES';
   };
@@ -97,27 +100,29 @@
     });
   }
 
-  const resourceMenu = document.getElementById('resource-nav-menu');
-  const menuToggle = resourceMenu && resourceMenu.querySelector('.nav-menu-toggle');
-  if (menuToggle) {
+  const menus = [...document.querySelectorAll('.nav-menu')];
+  const closeMenu = menu => {
+    menu.classList.remove('open');
+    menu.querySelector('.nav-menu-toggle').setAttribute('aria-expanded', 'false');
+  };
+  menus.forEach(menu => {
+    const menuToggle = menu.querySelector('.nav-menu-toggle');
     menuToggle.addEventListener('click', () => {
-      const open = resourceMenu.classList.toggle('open');
+      menus.filter(other => other !== menu).forEach(closeMenu);
+      const open = menu.classList.toggle('open');
       menuToggle.setAttribute('aria-expanded', String(open));
     });
-    document.addEventListener('click', event => {
-      if (!resourceMenu.contains(event.target)) {
-        resourceMenu.classList.remove('open');
-        menuToggle.setAttribute('aria-expanded', 'false');
-      }
-    });
-    document.addEventListener('keydown', event => {
-      if (event.key === 'Escape') {
-        resourceMenu.classList.remove('open');
-        menuToggle.setAttribute('aria-expanded', 'false');
-        menuToggle.focus();
-      }
-    });
-  }
+  });
+  document.addEventListener('click', event => {
+    menus.filter(menu => !menu.contains(event.target)).forEach(closeMenu);
+  });
+  document.addEventListener('keydown', event => {
+    if (event.key !== 'Escape') return;
+    const openMenu = menus.find(menu => menu.classList.contains('open'));
+    if (!openMenu) return;
+    closeMenu(openMenu);
+    openMenu.querySelector('.nav-menu-toggle').focus();
+  });
 
   document.querySelectorAll('.navbar a[href]').forEach(link => {
     const href = link.getAttribute('href');
