@@ -10706,13 +10706,13 @@
     "docs": 10,
     "formas": [
      {
-      "forma": "unicode",
+      "forma": "Unicode",
       "relacion": "lema",
       "n": 59,
       "docs": 10,
       "cadenas": [
        {
-        "cadena": "unicode",
+        "cadena": "Unicode",
         "n": 59
        }
       ],
@@ -10725,13 +10725,13 @@
     "docs": 5,
     "formas": [
      {
-      "forma": "unicode",
+      "forma": "Unicode",
       "relacion": "lema",
       "n": 9,
       "docs": 5,
       "cadenas": [
        {
-        "cadena": "unicode",
+        "cadena": "Unicode",
         "n": 9
        }
       ],

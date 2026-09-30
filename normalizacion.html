@@ -70,39 +70,16 @@ ul.plain li { margin-bottom: 0.4rem; }
   margin-top: 1rem; font-size: 0.92rem; color: #5b21b6; border: 1px solid #ddd6fe;
 }
 
-.group-title { font-size: 1.05rem; font-weight: 800; margin: 1.8rem 0 0.8rem; color: #1e1b4b; }
-.group-title:first-child { margin-top: 0; }
-
-.table-wrap { overflow-x: auto; }
-table.decisions { width: 100%; border-collapse: collapse; font-size: 0.86rem; }
-table.decisions th {
-  text-align: left; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.06em;
-  color: #64748b; border-bottom: 2px solid var(--border); padding: 0.5rem 0.6rem;
-}
-table.decisions td { border-bottom: 1px solid var(--border); padding: 0.7rem 0.6rem; vertical-align: top; color: #334155; }
-table.decisions tr:target td { background: #fdf4ff; }
-.entry-link { font-weight: 700; color: #4f46e5; text-decoration: none; }
-.entry-link:hover { text-decoration: underline; }
-.forms { list-style: none; }
-.forms li { white-space: nowrap; }
-.forms .main { font-weight: 700; }
-.forms .rel { color: #94a3b8; font-size: 0.75rem; }
-.forms .n { color: #6366f1; font-weight: 700; font-variant-numeric: tabular-nums; }
-.total { font-size: 0.75rem; color: #64748b; margin-top: 0.2rem; }
-.old-slugs { font-size: 0.72rem; color: #94a3b8; margin-top: 0.3rem; }
-.loading { text-align: center; color: #64748b; padding: 2rem; }
-
 @media (max-width: 680px) {
   .hero h1 { font-size: 2rem; }
   .content-container { padding: 2rem 1rem; }
   .panel { padding: 1.4rem; }
-  .forms li { white-space: normal; }
 }
 </style>
 </head>
 
 <body data-page="normalizacion">
-<script src="assets/js/navbar.js"></script>
+<script src="assets/js/navbar.js?v=20260930p"></script>
 
 <header class="hero">
   <h1 data-es="Criterios de normalización" data-en="Normalisation criteria">Criterios de normalización</h1>
@@ -150,8 +127,8 @@ table.decisions tr:target td { background: #fdf4ff; }
         <span class="lang-en" hidden>The main form is chosen automatically in each language. First, reduced forms (<em>hapax</em>) and unattested forms are excluded. In Spanish, an attested Spanish form is preferred over loanwords (<em>guiado por corpus</em> over <em>corpus-driven</em>); if only the loanword is attested, the loanword is used (<em>token</em>); and if no form is attested, the glossary's proposal is used (<em>puntuación z</em>). Between an acronym and its full form, the acronym is preferred, as the lexicalised form used in citation (<em>BNC</em>, <em>XML</em>). Among the rest, <strong>the one used in the most documents of the subcorpus</strong> is chosen, because dispersion reflects consensus among authors better than repetition within a single text; with equal documents, the most frequent.</span>
       </li>
       <li>
-        <span class="lang-es">Las excepciones son decisiones expresas y se justifican en el registro: <em>type-token ratio</em> en lugar de <em>TTR</em>, por ser más transparente, y <em>hápax</em> en español, que es la única forma documentada y la forma académica.</span>
-        <span class="lang-en" hidden>Exceptions are explicit decisions, justified in the log: <em>type-token ratio</em> instead of <em>TTR</em>, because it is more transparent, and <em>hápax</em> in Spanish, the only attested form and the academic one.</span>
+        <span class="lang-es">Hay dos excepciones, que son decisiones expresas: <em>type-token ratio</em> en lugar de <em>TTR</em>, por ser más transparente, y <em>hápax</em> en español, que es la única forma documentada y la forma académica.</span>
+        <span class="lang-en" hidden>There are two exceptions, both explicit decisions: <em>type-token ratio</em> instead of <em>TTR</em>, because it is more transparent, and <em>hápax</em> in Spanish, the only attested form and the academic one.</span>
       </li>
       <li>
         <span class="lang-es">Por este criterio puede haber asimetrías entre lenguas: <em>raw frequency</em> predomina en inglés y <em>frecuencia absoluta</em> en español.</span>
@@ -180,141 +157,10 @@ table.decisions tr:target td { background: #fdf4ff; }
     </ul>
   </section>
 
-  <section class="panel">
-    <span class="section-title">
-      <span class="lang-es">Registro de decisiones</span>
-      <span class="lang-en" hidden>Decision log</span>
-    </span>
-    <div id="decisions"><div class="loading">…</div></div>
-  </section>
-
-  <section class="panel">
-    <span class="section-title">
-      <span class="lang-es">Notas conceptuales</span>
-      <span class="lang-en" hidden>Conceptual notes</span>
-    </span>
-    <p>
-      <span class="lang-es">Relaciones entre conceptos que no justifican unificar las entradas, pero que conviene hacer explícitas. Se muestran también en las fichas afectadas.</span>
-      <span class="lang-en" hidden>Relations between concepts that do not justify merging the entries but are worth making explicit. They are also shown in the affected entries.</span>
-    </p>
-    <div id="notes"></div>
-  </section>
-
-  <section class="panel">
-    <span class="section-title">
-      <span class="lang-es">Relacionados, pero no unificados</span>
-      <span class="lang-en" hidden>Related but not merged</span>
-    </span>
-    <p>
-      <span class="lang-es">Estos términos son cercanos, pero se mantienen como entradas separadas, enlazadas entre sí, porque no designan exactamente el mismo concepto:</span>
-      <span class="lang-en" hidden>These terms are close, but they are kept as separate, cross-linked entries because they do not name exactly the same concept:</span>
-    </p>
-    <div id="not-merged"></div>
-  </section>
-
 </main>
 
 <script>
 let lang = localStorage.getItem('glicor-lang') || 'es';
-let NORM = null;
-let FREQ = null;
-let ENTRIES = {};
-
-const L = {
-  es: { entry: 'Entrada', forms: 'Formas y frecuencia', criterion: 'Criterio', terms: 'Términos', reason: 'Motivo',
-        total: 'Total del lema', old: 'Antes', error: 'No se pudo cargar el registro.' },
-  en: { entry: 'Entry', forms: 'Forms and frequency', criterion: 'Criterion', terms: 'Terms', reason: 'Reason',
-        total: 'Lemma total', old: 'Formerly', error: 'The log could not be loaded.' },
-};
-
-function esc(s) {
-  return String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-}
-
-function fmt(n) {
-  return new Intl.NumberFormat(lang === 'es' ? 'es-ES' : 'en-US').format(n);
-}
-
-function entryHref(slug) {
-  const e = ENTRIES[slug];
-  const page = e && e.type === 'entity' ? 'recursos.html' : 'index.html';
-  return `${page}#${slug}`;
-}
-
-function entryName(slug) {
-  const e = ENTRIES[slug];
-  if (!e) return slug.replace(/_/g, ' ');
-  return lang === 'es' ? e.term_es : e.term_en;
-}
-
-function formsList(slug, lng) {
-  const counted = ((((FREQ || {}).entradas || {})[slug] || {})[lng] || {}).formas || [];
-  const rel = c => {
-    if (c.principal) return (lang === 'es' ? 'denominación principal' : 'main form') + (c.forzada ? (lang === 'es' ? ' (decisión expresa)' : ' (explicit decision)') : '');
-    if (c.consolidada) return c.relacion === 'prestamo'
-      ? (lang === 'es' ? 'préstamo consolidado' : 'established loanword')
-      : (lang === 'es' ? 'sinónimo consolidado' : 'established synonym');
-    return (NORM.relaciones[c.relacion] || {})[lang] || c.relacion;
-  };
-  const docs = lang === 'es' ? 'doc.' : 'docs';
-  return `<ul class="forms">${counted.map(c => {
-    const num = c.n ? `${fmt(c.n)} <span class="rel">(${c.docs} ${docs})</span>` : `<span class="rel">${lang === 'es' ? 'no documentada' : 'not attested'}</span>`;
-    return `<li><span class="${c.principal ? 'main' : ''}">${esc(c.forma)}</span>
-      <span class="rel">· ${esc(rel(c))}</span> <span class="n">${num}</span></li>`;
-  }).join('')}</ul>`;
-}
-
-function total(slug, lng) {
-  const r = ((((FREQ || {}).entradas || {})[slug] || {})[lng]);
-  return r ? fmt(r.total) : '—';
-}
-
-function renderDecisions() {
-  const t = L[lang];
-  const box = document.getElementById('decisions');
-  box.innerHTML = Object.keys(NORM.tipos).map(tipo => {
-    const rows = NORM.entradas.filter(e => e.tipo === tipo);
-    if (!rows.length) return '';
-    return `<h3 class="group-title">${esc(NORM.tipos[tipo][lang])} (${rows.length})</h3>
-      <div class="table-wrap"><table class="decisions">
-        <thead><tr><th>${t.entry}</th><th>EN</th><th>ES</th><th>${t.criterion}</th></tr></thead>
-        <tbody>${rows.map(r => {
-          const old = [r.fuente, ...r.absorbe].filter(s => s !== r.slug);
-          return `<tr id="${r.slug}">
-            <td><a class="entry-link" href="${entryHref(r.slug)}">${esc(entryName(r.slug))}</a>
-              ${old.length ? `<div class="old-slugs">${t.old}: ${old.map(esc).join(', ')}</div>` : ''}</td>
-            <td>${formsList(r.slug, 'en')}<div class="total">${t.total}: ${total(r.slug, 'en')}</div></td>
-            <td>${formsList(r.slug, 'es')}<div class="total">${t.total}: ${total(r.slug, 'es')}</div></td>
-            <td>${esc(lang === 'es' ? r.criterio : (r.criterio_en || r.criterio))}${r.motivo_principal ? `<br><em>${esc(r.motivo_principal[lang] || r.motivo_principal.es)}</em>` : ''}</td>
-          </tr>`;
-        }).join('')}</tbody>
-      </table></div>`;
-  }).join('');
-
-  document.getElementById('notes').innerHTML = (NORM.notas || []).map(n => `<p>
-      ${n.slugs.map(s => `<a class="entry-link" href="${entryHref(s)}">${esc(entryName(s))}</a>`).join(' · ')}:
-      ${esc(n[lang])}</p>`).join('');
-
-  document.getElementById('not-merged').innerHTML = `<div class="table-wrap"><table class="decisions">
-    <thead><tr><th>${t.terms}</th><th>${t.reason}</th></tr></thead>
-    <tbody>${NORM.no_unificados.map(u => `<tr>
-      <td>${u.slugs.map(s => `<a class="entry-link" href="${entryHref(s)}">${esc(entryName(s))}</a>`).join(' · ')}</td>
-      <td>${esc(lang === 'es' ? u.motivo : (u.motivo_en || u.motivo))}</td>
-    </tr>`).join('')}</tbody></table></div>`;
-
-  if (FREQ && FREQ.tokens) {
-    ['', '-en'].forEach(suf => {
-      const en = document.getElementById('tok-en' + suf), es = document.getElementById('tok-es' + suf);
-      if (en) en.textContent = fmt(FREQ.tokens.en);
-      if (es) es.textContent = fmt(FREQ.tokens.es);
-    });
-  }
-
-  if (location.hash) {
-    const row = document.getElementById(decodeURIComponent(location.hash.slice(1)));
-    if (row) row.scrollIntoView({ block: 'center' });
-  }
-}
 
 function applyLang() {
   document.querySelectorAll('.lang-es').forEach(el => el.hidden = (lang === 'en'));
@@ -322,7 +168,6 @@ function applyLang() {
   if (window.syncNavbar) window.syncNavbar(lang);
   const h1 = document.querySelector('.hero h1');
   h1.textContent = h1.dataset[lang];
-  if (NORM) renderDecisions();
 }
 
 function toggleLang() {
@@ -331,26 +176,8 @@ function toggleLang() {
   applyLang();
 }
 
-async function load() {
-  try {
-    const v = Date.now();
-    const [n, e, f] = await Promise.all([
-      fetch('assets/data/normalizacion.json?v=' + v).then(r => r.json()),
-      fetch('assets/data/entries.json?v=' + v).then(r => r.json()),
-      fetch('assets/data/frecuencias.json?v=' + v).then(r => r.json()),
-    ]);
-    NORM = n;
-    FREQ = f;
-    e.forEach(x => { ENTRIES[x.slug] = x; });
-    renderDecisions();
-  } catch (err) {
-    document.getElementById('decisions').innerHTML = `<div class="loading">${L[lang].error}</div>`;
-  }
-}
-
 applyLang();
-load();
 </script>
-<script src="assets/js/footer.js"></script>
+<script src="assets/js/footer.js?v=20260930p"></script>
 </body>
 </html>

@@ -2154,8 +2154,8 @@
       "fuente": "monitor_corpus",
       "absorbe": [],
       "tipo": "variante_formal",
-      "criterio": "En español, «monitor» se usa también solo, como reducción de «corpus monitor» («corpus abierto o monitor»). El Apéndice III recoge «monitor» y «corpus monitor» como términos distintos del subcorpus español; aquí son la misma entrada.",
-      "criterio_en": "In Spanish, «monitor» is also used alone as a reduction of «corpus monitor» («corpus abierto o monitor»). Appendix III lists «monitor» and «corpus monitor» as separate terms of the Spanish subcorpus; here they are the same entry.",
+      "criterio": "En español, «monitor» se usa también solo, como reducción de «corpus monitor» («corpus abierto o monitor»). Por eso el Apéndice III recoge solo «corpus monitor».",
+      "criterio_en": "In Spanish, «monitor» is also used alone as a reduction of «corpus monitor» («corpus abierto o monitor»). This is why Appendix III lists only «corpus monitor».",
       "formas": {
         "en": [
           {
@@ -5346,10 +5346,10 @@
     },
     "unicode": {
       "en": [
-        "unicode"
+        "Unicode"
       ],
       "es": [
-        "unicode"
+        "Unicode"
       ]
     },
     "utf_8": {
@@ -6340,7 +6340,7 @@
     "es": "Hay laguna terminológica en una lengua cuando en su subcorpus no se documenta ninguna denominación propia del concepto: o no aparece ninguna forma (el glosario da entonces una propuesta, marcada como tal) o solo aparece el préstamo de la otra lengua. Es un criterio de uso: se aplica sobre el corpus, no sobre el inventario de términos validados.",
     "en": "There is a terminological gap in a language when its subcorpus attests no native name for the concept: either no form appears (the glossary then gives a proposal, marked as such) or only the loanword from the other language appears. It is a usage criterion: it is applied to the corpus, not to the inventory of validated terms.",
     "fecha": "2026-09-23",
-    "excluye": "Las siglas internacionales, los nombres propios de estándares y los términos latinos compartidos por las dos lenguas (corpus, subcorpus, KWIC, XML, HTML, SGML, TEI, UTF-8, unicode, EAGLES, Universal Dependencies, Universal POS) no se consideran préstamos."
+    "excluye": "Las siglas internacionales, los nombres propios de estándares y los términos latinos compartidos por las dos lenguas (corpus, subcorpus, KWIC, XML, HTML, SGML, TEI, UTF-8, Unicode, EAGLES, Universal Dependencies, Universal POS) no se consideran préstamos."
   },
   "inventario_tesis": {
     "_nota": "Cómo se incorporan al glosario las unidades del Apéndice III que no tenían ficha (septiembre de 2026).",
