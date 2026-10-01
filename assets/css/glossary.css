@@ -11,7 +11,9 @@
   --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   --font-main: 'Avenir Next', Avenir, system-ui, -apple-system, sans-serif;
   /* Colores de categoría: puntos de la red conceptual y etiquetas de las fichas */
-  --c-met: #6366f1; --c-est: #f43f5e; --c-proc: #a855f7; --c-tec: #f59e0b; --c-rec: #0d9488;
+  --c-met: #6366f1; --c-est: #f43f5e; --c-proc: #a855f7; --c-tec: #f59e0b;
+  /* Recursos: corpus, herramientas y estándares */
+  --c-cor: #0d9488; --c-her: #0284c7; --c-std: #65a30d; --c-rec: var(--c-cor);
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -192,12 +194,16 @@ summary.entry-header::-webkit-details-marker { display: none; }
 .cat-badge.cat-est  { background: #fff1f2; color: #be123c; border-color: #fecdd3; }
 .cat-badge.cat-proc { background: #faf5ff; color: #7e22ce; border-color: #e9d5ff; }
 .cat-badge.cat-tec  { background: #fffbeb; color: #b45309; border-color: #fde68a; }
-.cat-badge.cat-rec  { background: #f0fdfa; color: #0f766e; border-color: #99f6e4; }
+.cat-badge.cat-rec, .cat-badge.cat-cor { background: #f0fdfa; color: #0f766e; border-color: #99f6e4; }
+.cat-badge.cat-her  { background: #f0f9ff; color: #0369a1; border-color: #bae6fd; }
+.cat-badge.cat-std  { background: #f7fee7; color: #4d7c0f; border-color: #d9f99d; }
 .cat-badge.cat-met::before  { background: var(--c-met); }
 .cat-badge.cat-est::before  { background: var(--c-est); }
 .cat-badge.cat-proc::before { background: var(--c-proc); }
 .cat-badge.cat-tec::before  { background: var(--c-tec); }
-.cat-badge.cat-rec::before  { background: var(--c-rec); }
+.cat-badge.cat-rec::before, .cat-badge.cat-cor::before  { background: var(--c-cor); }
+.cat-badge.cat-her::before  { background: var(--c-her); }
+.cat-badge.cat-std::before  { background: var(--c-std); }
 
 .entry-body { padding: 1.5rem 2rem 2rem; border-top: 1px solid rgba(255,255,255,0.9); font-size: 0.95rem; color: #475569; }
 .entry-body h3 { font-size: 0.75rem; color: #a855f7; text-transform: uppercase; letter-spacing: 0.05em; margin: 1rem 0 0.5rem; border-bottom: 2px solid #f3e8ff; padding-bottom: 4px; }
@@ -214,17 +220,20 @@ summary.entry-header::-webkit-details-marker { display: none; }
 #no-results .propose-link:hover { color: #f43f5e; }
 
 /* ── Botón volver arriba ── */
+/* Centrado abajo, grande y oscuro para que se vea sobre el fondo; sube al llegar al pie para no taparlo (glossary.js) */
 #back-to-top {
-  position: fixed; bottom: 2rem; right: 2rem; z-index: 999;
-  width: 42px; height: 42px; border-radius: 50%;
-  background: var(--primary-gradient); color: white;
-  border: none; cursor: pointer; font-size: 1.1rem;
-  box-shadow: var(--shadow); opacity: 0; pointer-events: none;
-  transition: opacity 0.3s, transform 0.3s;
+  position: fixed; bottom: 1.6rem; left: 50%; z-index: 999;
+  width: 54px; height: 54px; border-radius: 50%;
+  background: #1e1b4b; color: #fff;
+  border: 3px solid #fff; cursor: pointer; font-size: 1.45rem; font-weight: 800; line-height: 1;
+  box-shadow: 0 0 0 3px #a855f7, 0 10px 24px -6px rgba(30,27,75,0.55);
+  opacity: 0; pointer-events: none; transform: translate(-50%, 10px);
+  transition: opacity 0.3s, transform 0.3s, bottom 0.2s, background 0.2s;
   display: flex; align-items: center; justify-content: center;
 }
-#back-to-top.visible { opacity: 1; pointer-events: auto; }
-#back-to-top:hover { transform: translateY(-3px); }
+#back-to-top.visible { opacity: 1; pointer-events: auto; transform: translateX(-50%); }
+#back-to-top:hover { background: #f43f5e; transform: translate(-50%, -3px); }
+#back-to-top:focus-visible { outline: 3px solid #f43f5e; outline-offset: 3px; }
 
 /* ── Equivalente en otra lengua ── */
 .equiv-section { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 0.5rem; }
@@ -350,3 +359,76 @@ summary.entry-header::-webkit-details-marker { display: none; }
 .mini-net .net-hover { position: absolute; inset: 0; display: grid; place-items: center; padding: 1rem; text-align: center; background: rgba(30,27,75,0.74); color: #fff; font-size: 0.85rem; font-weight: 700; opacity: 0; transition: opacity 0.2s; }
 .mini-net:hover .net-hover, .mini-net:focus-visible .net-hover { opacity: 1; }
 
+/* ── Denominaciones (C5): desplegable con barras y comparador en ventana ── */
+.dni > summary { cursor: pointer; font-size: 0.8rem; font-weight: 700; color: #7c3aed; list-style: none; }
+.dni > summary::-webkit-details-marker { display: none; }
+.dni > summary:hover { color: #db2777; }
+.dnl-tag { font: 800 0.66rem 'JetBrains Mono', monospace; color: #fff; background: #a855f7; border-radius: 6px; padding: 0.1rem 0.35rem; }
+.dnbc { display: grid; gap: 0.5rem; margin-top: 0.45rem; }
+.dnbc-lang { display: grid; gap: 0.15rem; }
+.dnbc-lang .dnl-tag { justify-self: start; margin-bottom: 0.1rem; }
+.dnbc-es .dnl-tag { background: #db2777; } .dnbc-en .dnl-tag { background: #6366f1; }
+.dnbc-row { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr) 2.6rem; gap: 0.45rem; align-items: center; border: 0; background: none; font: inherit; text-align: left; padding: 0.15rem 0.1rem; cursor: pointer; border-radius: 6px; }
+.dnbc-row:hover { background: #faf8ff; }
+.dnbc-form { font-size: 0.8rem; font-weight: 600; color: #1e1b4b; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.dnb-main .dnbc-form { font-family: 'JetBrains Mono', monospace; font-weight: 800; }
+.dnb-cons .dnbc-form { color: #5b21b6; }
+.dnbc-n { font: 700 0.72rem 'JetBrains Mono', monospace; color: #475569; text-align: right; }
+.dnb-bar { height: 10px; background: #f1f5f9; border-radius: 99px; overflow: hidden; }
+.dnb-bar i { display: block; height: 100%; background: #c4b5fd; border-radius: 99px; }
+.dnb-main .dnb-bar i { background: #1e1b4b; } .dnb-cons .dnb-bar i { background: #a855f7; }
+.dn-link { display: inline-block; margin-top: 0.5rem; border: 0; background: none; padding: 0; font: inherit; font-size: 0.8rem; font-weight: 700; color: #4f46e5; cursor: pointer; }
+.dn-link:hover { color: #db2777; }
+.dn-modal { display: none; position: fixed; inset: 0; z-index: 2000; background: rgba(15,13,46,0.55); padding: 10vh 4vw; }
+.dn-modal.open { display: block; }
+.dn-modal-box { max-width: 860px; margin: 0 auto; background: #fff; border-radius: 16px; padding: 1rem 1.2rem 1.2rem; box-shadow: 0 30px 60px -20px rgba(0,0,0,0.5); max-height: 80vh; overflow: auto; }
+.dn-modal-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.7rem; }
+.dn-modal-top b { font: 800 1.1rem 'JetBrains Mono', monospace; color: #1e1b4b; }
+.dn-modal-top button { border: 1px solid #e2e8f0; background: #fff; border-radius: 999px; padding: 0.3rem 0.8rem; font: inherit; font-size: 0.8rem; cursor: pointer; }
+.dn-h3 { font-size: 0.75rem; color: #a855f7; text-transform: uppercase; letter-spacing: 0.05em; margin: 1.2rem 0 0.6rem; border-bottom: 2px solid #f3e8ff; padding-bottom: 4px; }
+.dnb { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.dnb-card { background: #fbfaff; border: 1px solid #ede9fe; border-radius: 14px; padding: 0.7rem 0.9rem; }
+.dnb-lang { font: 800 0.7rem 'JetBrains Mono', monospace; letter-spacing: 0.06em; text-transform: uppercase; color: #db2777; margin-bottom: 0.4rem; }
+.dnb-en .dnb-lang { color: #6366f1; }
+.dnb-row { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr) 4.2rem; gap: 0.6rem; align-items: center; width: 100%; border: 0; background: none; font: inherit; text-align: left; padding: 0.35rem 0.2rem; border-top: 1px solid #f5f3ff; cursor: pointer; }
+.dnb-row:hover { background: #f5f3ff; }
+.dnb-form b { display: block; font-size: 0.88rem; color: #1e1b4b; } .dnb-form small { font-size: 0.7rem; color: #94a3b8; }
+.dnb-main .dnb-form b { font-family: 'JetBrains Mono', monospace; }
+.dnb-cons .dnb-form b { color: #5b21b6; }
+.dnb-n { font: 700 0.8rem 'JetBrains Mono', monospace; color: #1e1b4b; text-align: right; } .dnb-n small { display: block; font: 500 0.66rem var(--font-main); color: #94a3b8; }
+@media (max-width: 760px) { .dnb { grid-template-columns: 1fr; } .dn-modal { padding: 4vh 3vw; } }
+
+/* Tabla de denominaciones ES/EN */
+.denom-table { width: 100%; border-collapse: collapse; background: rgba(255,255,255,0.8); border: 1px solid #ede9fe; border-radius: 12px; overflow: hidden; font-size: 0.86rem; }
+.denom-table thead th { background: #faf8ff; color: #7c3aed; font-size: 0.68rem; letter-spacing: 0.06em; text-transform: uppercase; padding: 0.5rem 0.7rem; text-align: left; }
+.denom-table tbody th { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 0.74rem; color: #1e1b4b; text-align: left; padding: 0.6rem 0.7rem; width: 10.5rem; vertical-align: top; font-weight: 700; border-top: 1px solid #f5f3ff; }
+.denom-table td { padding: 0.5rem 0.7rem; border-top: 1px solid #f5f3ff; vertical-align: top; }
+.dn { display: inline-flex; flex-direction: column; align-items: flex-start; margin: 0 0.4rem 0.35rem 0; padding: 0.3rem 0.65rem; border: 1px solid #e2e8f0; border-radius: 10px; background: #fff; font: inherit; text-align: left; cursor: pointer; transition: border-color 0.2s, background 0.2s; }
+.dn:hover { border-color: #a5b4fc; }
+.dn b { color: #1e1b4b; font-size: 0.88rem; }
+.dn small { color: #94a3b8; font-size: 0.72rem; }
+/* Principal: destacada, como el término del centro de la red */
+.dn.dn-main { background: #1e1b4b; border-color: #1e1b4b; }
+.dn.dn-main b { color: #fff; font-family: 'JetBrains Mono', ui-monospace, monospace; letter-spacing: -0.02em; }
+.dn.dn-main small { color: #c7d2fe; }
+.dn.dn-main:hover { background: #312e81; }
+.dn.dn-cons { background: #f5f3ff; border-color: #c4b5fd; }
+.dn.dn-cons b { color: #5b21b6; }
+.dn-none { color: #cbd5e1; }
+.dn-legend { font-size: 0.74rem; color: #94a3b8; margin-top: 0.45rem; }
+@media (max-width: 620px) {
+  .denom-table thead { display: none; }
+  .denom-table tr { display: block; border-top: 1px solid #f5f3ff; padding: 0.3rem 0; }
+  .denom-table tbody th, .denom-table td { display: block; width: auto; border: 0; padding: 0.2rem 0.7rem; }
+  .denom-table td:nth-of-type(1)::before { content: 'ES · '; font: 700 0.68rem 'JetBrains Mono', monospace; color: #db2777; }
+  .denom-table td:nth-of-type(2)::before { content: 'EN · '; font: 700 0.68rem 'JetBrains Mono', monospace; color: #6366f1; }
+}
+
+/* Términos del glosario enlazados dentro de la definición */
+.term-link { color: inherit; text-decoration: underline; text-decoration-style: dotted; text-decoration-color: #a855f7; text-underline-offset: 3px; text-decoration-thickness: 1.5px; }
+.term-link:hover { color: #6d28d9; text-decoration-style: solid; }
+
+/* Botón «Ver todos los términos» en la página de inicio */
+.show-all-btn { display: block; margin: 1.1rem auto 0; border: 0; border-radius: 999px; padding: 0.7rem 1.4rem; font: inherit; font-size: 0.92rem; font-weight: 700; font-style: normal; color: #fff; background: var(--primary-gradient); cursor: pointer; opacity: 1; box-shadow: 0 8px 20px -10px rgba(99,102,241,0.6); }
+.show-all-btn:hover { filter: brightness(1.08); }
+.placeholder-msg:has(.show-all-btn) { opacity: 1; }

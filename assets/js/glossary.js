@@ -179,9 +179,13 @@ function contextHtml(e, lang, searchMode) {
   if (!cs) return '';
   const main = searchMode === 'en' ? 'en' : 'es';
   const other = main === 'en' ? 'es' : 'en';
+  // «sin_contexto»: aún no hay contexto elegido; no se muestra nada
+  const usable = c => c && c.type !== 'sin_contexto';
+  if (!usable(cs[main])) return '';
   const langName = { es: { es: 'español', en: 'Spanish' }, en: { es: 'inglés', en: 'English' } };
   const tag = cl => ` <span class="context-lang">(${lang === 'es' ? 'subcorpus ' + langName[cl].es : langName[cl].en + ' subcorpus'})</span>`;
   const otherLbl = lang === 'es' ? `Ver el contexto en ${langName[other].es}` : `Show the ${langName[other].en} context`;
+  if (!usable(cs[other])) return `<h3>${contextLabel(cs[main], lang)}${tag(main)}</h3>${contextBody(cs[main], main, lang, e)}`;
   return `<h3>${contextLabel(cs[main], lang)}${tag(main)}</h3>${contextBody(cs[main], main, lang, e)}
     <details class="context-other"><summary>${otherLbl}</summary>
       <p class="context-other-label">${contextLabel(cs[other], lang)}${tag(other)}</p>${contextBody(cs[other], other, lang, e)}
@@ -212,8 +216,20 @@ const catMenu = document.getElementById('cat-nav');
 
 function t(key) { return STRINGS[lang][key]; }
 
+// En la vista de términos, la página empieza vacía; «Ver todos» (o «Todas» en el
+// filtro de categorías) muestra el glosario completo
+let showAll = false;
 function getMsgEmpty() {
-  return `<div class="placeholder-msg">${t('emptyMsg')}</div>`;
+  const all = VIEW === 'entity' ? '' : `<button type="button" class="show-all-btn" onclick="showAllTerms()">${
+    lang === 'es' ? `Ver los ${ALL_ENTRIES.length} términos` : `See all ${ALL_ENTRIES.length} terms`}</button>`;
+  return `<div class="placeholder-msg">${t('emptyMsg')}${all}</div>`;
+}
+
+function showAllTerms() {
+  searchInput.value = '';
+  currentLetter = null;
+  document.querySelectorAll('.alpha-btn').forEach(b => b.classList.remove('active'));
+  filterCat('All');
 }
 
 function showDefault() {
@@ -257,6 +273,7 @@ async function loadGlossary() {
     if (normData) NORM = normData;
     BIB = bibData || {};
     buildSlugIndex();
+    buildLinkIndex();
     applyLang();
     openFromHash();
   } catch (error) {
@@ -306,7 +323,7 @@ function renderCategoryButtons() {
         option.className = `cat-option${cat === currentCat ? ' active' : ''}`;
         option.dataset.value = cat;
         const resourceGroup = VIEW === 'entity' && RESOURCE_GROUPS.find(group => group.id === cat);
-        option.textContent = cat === 'All' ? t('allCategories') : resourceGroup ? resourceGroup[lang] : cat;
+        option.textContent = cat === 'All' ? `${t('allCategories')} (${ALL_ENTRIES.length})` : resourceGroup ? resourceGroup[lang] : cat;
         option.addEventListener('click', () => {
           filterCat(cat);
           closeCategoryMenu();
@@ -318,6 +335,7 @@ function renderCategoryButtons() {
 
 function filterCat(cat) {
     currentCat = cat;
+    if (cat === 'All') showAll = true;
     updateCategoryTrigger();
     renderCategoryButtons();
     applyFilters();
@@ -353,7 +371,7 @@ function applyFilters() {
     }
 
     // Si no hay búsqueda ni categoría activa, volvemos al estado vacío del glosario.
-    if (VIEW !== 'entity' && query === '' && currentCat === 'All' && !currentLetter) {
+    if (VIEW !== 'entity' && query === '' && currentCat === 'All' && !currentLetter && !showAll) {
         showDefault();
         document.querySelectorAll('.alpha-btn').forEach(b => b.classList.remove('active'));
         return;
@@ -417,9 +435,140 @@ function nextExample(slug) {
   box.innerHTML = exampleHtml(slug, i);
 }
 
+// ── Enlaces a otros términos dentro de la definición ──
+// Se reconocen los nombres de las entradas y sus formas documentadas; las siglas y los
+// nombres propios, solo con su grafía exacta. Cada término se enlaza una sola vez y nunca
+// la propia entrada. «corpus» no se enlaza: aparece en casi todas las definiciones.
+const NO_LINK = new Set(['corpus']);
+// Formas que en las definiciones son casi siempre palabras generales («este tipo de corpus»)
+const NO_LINK_STRINGS = new Set(['tipo', 'tipos', 'type', 'types']);
+// Usos generales reconocibles por el contexto inmediato (antes / después de la forma)
+const LINK_SKIP = [
+  [/^ra[ií]z$/i, (before, after) => /^\s+cuadrada/i.test(after)],
+  [/^g[ée]neros?$/i, (before, after) => /^\s+(gramatical|y el tiempo|y n[úu]mero|masculino|femenino)/i.test(after)
+    || /(estudios|perspectiva|identidad|violencia|igualdad) de\s+$/i.test(before)],
+  [/^muestras?$/i, (before, after) => /^\s+(sus|las|los|el|la|que|c[óo]mo|un|una|tambi[ée]n)\b/i.test(after)
+    && !/\b(una|la|las|de|cada|esta|esa|su|sus|dicha)\s+$/i.test(before)],
+];
+const LINK_INDEX = { es: null, en: null };
+function buildLinkIndex() {
+  for (const l of ['es', 'en']) {
+    const owner = new Map();
+    EVERY_ENTRY.forEach(e => {
+      if (NO_LINK.has(e.slug)) return;
+      const strings = [l === 'es' ? e.term_es : e.term_en,
+        ...((e.forms || {})[l] || []).flatMap(f => [f.form, ...(f.strings || []).filter(x => x[1] > 0).map(x => x[0])])];
+      strings.filter(s => s && s.length >= 3 && !NO_LINK_STRINGS.has(s.toLowerCase())).forEach(s => {
+        const exact = /[A-Z]/.test(s.slice(1)) || /^[A-Z]/.test(s) && e.type === 'entity';
+        const key = exact ? s : s.toLowerCase();
+        if (!owner.has(key)) owner.set(key, { slug: e.slug, exact });
+      });
+    });
+    const esc = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const keys = [...owner.keys()].sort((a, b) => b.length - a.length);
+    const make = (list, flags) => list.length ? new RegExp(`(?<![\\p{L}\\p{N}])(?:${list.map(esc).join('|')})(?![\\p{L}\\p{N}])`, flags) : null;
+    LINK_INDEX[l] = {
+      owner,
+      ci: make(keys.filter(k => !owner.get(k).exact), 'giu'),
+      cs: make(keys.filter(k => owner.get(k).exact), 'gu'),
+    };
+  }
+}
+
+function linkTerms(html, selfSlug, l) {
+  const idx = LINK_INDEX[l];
+  if (!idx) return html;
+  const used = new Set([selfSlug]);
+  return html.split(/(<[^>]+>)/).map(part => {
+    if (part.startsWith('<')) return part;
+    // Candidatos de los dos patrones; a igualdad de posición, el más largo
+    const found = [];
+    for (const [re, exact] of [[idx.ci, false], [idx.cs, true]]) {
+      if (!re) continue;
+      re.lastIndex = 0;
+      let m;
+      while ((m = re.exec(part))) {
+        const info = idx.owner.get(exact ? m[0] : m[0].toLowerCase());
+        if (info) found.push({ a: m.index, b: m.index + m[0].length, slug: info.slug });
+      }
+    }
+    found.sort((x, y) => x.a - y.a || (y.b - y.a) - (x.b - x.a));
+    let out = '', pos = 0;
+    for (const f of found) {
+      if (f.a < pos || used.has(f.slug)) continue;
+      const text = part.slice(f.a, f.b);
+      if (LINK_SKIP.some(([re, skip]) => re.test(text) && skip(part.slice(Math.max(0, f.a - 25), f.a), part.slice(f.b, f.b + 20)))) continue;
+      used.add(f.slug);
+      out += part.slice(pos, f.a) + `<a class="term-link" href="#${f.slug}" onclick="goToTerm('${f.slug}'); return false;">${part.slice(f.a, f.b)}</a>`;
+      pos = f.b;
+    }
+    return out + part.slice(pos);
+  }).join('');
+}
+
+// ── Denominaciones: barras de frecuencia por forma (pequeñas y en el comparador) ──
+function dnGroups(e, l) {
+  const fs = (e.forms || {})[l] || [];
+  return { all: fs, main: fs[0], rest: fs.slice(1) };
+}
+const dnNum = f => f.n ? `${fmtNum(f.n)} · ${f.docs} ${lang === 'es' ? 'doc.' : 'docs'}` : (lang === 'es' ? 'no documentada' : 'not attested');
+const dnSearch = f => `searchForVariant('${encodeURIComponent(f.form).replace(/'/g, '%27')}')`;
+const dnLangName = l => l === 'es' ? (lang === 'es' ? 'Español' : 'Spanish') : (lang === 'es' ? 'Inglés' : 'English');
+
+// En pequeño, para la columna de datos: una lengua debajo de otra
+function denomBarsCompact(e, isEntity) {
+  const part = l => {
+    const g = dnGroups(e, l); if (!g.main) return '';
+    const max = Math.max(1, ...g.all.map(f => f.n || 0));
+    return `<div class="dnbc-lang dnbc-${l}"><span class="dnl-tag">${l.toUpperCase()}</span>
+      ${g.all.map((f, i) => `<button type="button" class="dnbc-row${i === 0 ? ' dnb-main' : ''}${isConsolidated(f) ? ' dnb-cons' : ''}" onclick="${dnSearch(f)}" title="${i === 0 ? (lang === 'es' ? 'principal' : 'main') : relationLabel(f, isEntity)} · ${dnNum(f)}">
+        <span class="dnbc-form">${f.form}</span><span class="dnb-bar"><i style="width:${(f.n || 0) / max * 100}%"></i></span><span class="dnbc-n">${f.n ? fmtNum(f.n) : '—'}</span></button>`).join('')}</div>`;
+  };
+  return `<div class="dnbc">${part('es')}${part('en')}</div>`;
+}
+
+// Comparador ES/EN de la ventana
+function denomBars(e, isEntity) {
+  const card = l => {
+    const g = dnGroups(e, l); if (!g.main) return '';
+    const max = Math.max(1, ...g.all.map(f => f.n || 0));
+    return `<div class="dnb-card dnb-${l}"><p class="dnb-lang">${dnLangName(l)}</p>
+      ${g.all.map((f, i) => `<button type="button" class="dnb-row${i === 0 ? ' dnb-main' : ''}${isConsolidated(f) ? ' dnb-cons' : ''}" onclick="${dnSearch(f)}">
+        <span class="dnb-form"><b>${f.form}</b><small>${i === 0 ? (lang === 'es' ? 'principal' : 'main') : relationLabel(f, isEntity)}</small></span>
+        <span class="dnb-bar"><i style="width:${(f.n || 0) / max * 100}%"></i></span><span class="dnb-n">${f.n ? fmtNum(f.n) : '—'}<small>${f.docs || 0} ${lang === 'es' ? 'doc.' : 'docs'}</small></span></button>`).join('')}</div>`;
+  };
+  return `<div class="dnb">${card('es')}${card('en')}</div>`;
+}
+
+// Denominaciones en español e inglés, con los grupos de la ficha de la tesis. Cada forma
+// lleva su frecuencia y documentos; la principal va destacada y las consolidadas, resaltadas.
+// Al pulsar una forma, se busca (como hacían las etiquetas de variantes).
+const FORMAL_RELS = ['sigla', 'forma_desarrollada', 'forma_completa', 'forma_extendida', 'variante_ortografica', 'reduccion', 'forma_con_nucleo', 'traduccion'];
+function denominationsTable(e, isEntity) {
+  const L = lang === 'es';
+  const cell = (fs, main) => fs.length ? fs.map(f => `<button type="button" class="dn${main ? ' dn-main' : ''}${isConsolidated(f) ? ' dn-cons' : ''}"
+      onclick="searchForVariant('${encodeURIComponent(f.form).replace(/'/g, '%27')}')">
+      <b>${f.form}</b><small>${main ? (L ? 'principal' : 'main') + ' · ' : relationLabel(f, isEntity) + ' · '}${f.n ? `${fmtNum(f.n)} · ${f.docs} ${L ? 'doc.' : 'docs'}` : (L ? 'no documentada' : 'not attested')}</small></button>`).join('') : '<span class="dn-none">—</span>';
+  const groups = l => {
+    const fs = (e.forms || {})[l] || [];
+    return { main: fs.slice(0, 1), formal: fs.slice(1).filter(f => FORMAL_RELS.includes(f.rel)),
+      syn: fs.slice(1).filter(f => ['sinonimo', 'variante_denominativa'].includes(f.rel)), loan: fs.slice(1).filter(f => f.rel === 'prestamo') };
+  };
+  const es = groups('es'), en = groups('en');
+  const row = (lbl, a, b, main) => (a.length || b.length) ? `<tr><th scope="row">${lbl}</th><td>${cell(a, main)}</td><td>${cell(b, main)}</td></tr>` : '';
+  return `<table class="denom-table"><thead><tr><th></th><th>${L ? 'Español' : 'Spanish'}</th><th>${L ? 'Inglés' : 'English'}</th></tr></thead><tbody>
+    ${row(L ? 'Principal' : 'Main', es.main, en.main, true)}
+    ${row(L ? 'Variación denominativa' : 'Denominative variation', es.formal, en.formal)}
+    ${row(L ? 'Sinónimos y parasinónimos' : 'Synonyms and near-synonyms', es.syn, en.syn)}
+    ${row(L ? 'Préstamos' : 'Loanwords', es.loan, en.loan)}
+  </tbody></table>
+  <p class="dn-legend">${L ? 'Frecuencia · documentos del subcorpus. La principal va destacada; las consolidadas, resaltadas en lila. Pulsa una forma para buscarla.' : 'Frequency · documents in the subcorpus. The main name is highlighted in dark; established ones in lilac. Click a form to search for it.'}</p>`;
+}
+
 // Mini-red de la ficha: el término en el centro y sus relacionados alrededor;
 // toda la miniatura enlaza con la red completa (el aviso aparece al pasar el cursor)
-const CATEGORY_VAR = { 'cat-met': '--c-met', 'cat-est': '--c-est', 'cat-proc': '--c-proc', 'cat-tec': '--c-tec', 'cat-rec': '--c-rec' };
+const CATEGORY_VAR = { 'cat-met': '--c-met', 'cat-est': '--c-est', 'cat-proc': '--c-proc', 'cat-tec': '--c-tec',
+  'cat-cor': '--c-cor', 'cat-her': '--c-her', 'cat-std': '--c-std' };
 function miniNetHtml(e, centerLabel, slugs) {
   if (!slugs.length) return '';
   const cut = (s, n) => s.length > n ? s.slice(0, n - 1) + '…' : s;
@@ -446,9 +595,14 @@ const CATEGORY_CLASS = {
   'Estadística y léxico': 'cat-est',
   'Procesamiento lingüístico': 'cat-proc',
   'Tecnología y formatos': 'cat-tec',
+  // Recursos: un color por tipo (Lesk, algoritmo, va con las herramientas)
+  'Recursos y corpus': 'cat-cor',
+  'Herramientas y software': 'cat-her',
+  'Anotación y procesamiento lingüístico': 'cat-her',
+  'Estándares y formatos técnicos': 'cat-std',
 };
 function categoryClass(e) {
-  return e.type === 'entity' ? 'cat-rec' : (CATEGORY_CLASS[e.category] || '');
+  return CATEGORY_CLASS[e.category] || (e.type === 'entity' ? 'cat-cor' : '');
 }
 
 function renderNoResults(show) {
@@ -644,23 +798,6 @@ function renderEntries(list) {
       }
     }
 
-    // ── Variación denominativa y sinónimos y préstamos (campos de DOCUTERM) ──
-    let variantsHtml = '';
-    if (vars.length) {
-      const docsLbl = lang === 'es' ? 'doc.' : 'docs';
-      const undocumented = lang === 'es' ? 'no documentado en el corpus' : 'not attested in the corpus';
-      const chip = v => `<button type="button" class="variant-chip${isConsolidated(v) ? ' consolidated' : ''}" onclick="searchForVariant('${encodeURIComponent(v.form).replace(/'/g, '%27')}')">${v.form} <span class="variant-rel">${relationLabel(v, isEntity)}${isEntity ? '' : ` · ${
-        v.n ? `${fmtNum(v.n)} · ${v.docs} ${docsLbl}` : undocumented}`}</span></button>`;
-      const block = (title, list) => list.length ? `<div class="variants-section">
-        <span class="equiv-label">${title}</span>
-        <div class="variant-list">${list.map(chip).join('')}</div>
-      </div>` : '';
-      variantsHtml = isEntity
-        ? block(lang === 'es' ? 'Variantes' : 'Variants', vars)
-        : block(lang === 'es' ? 'Variación denominativa' : 'Denominative variation', vars.filter(v => !isSynonym(v)))
-          + block(lang === 'es' ? 'Sinónimos y préstamos' : 'Synonyms and loanwords', vars.filter(isSynonym));
-    }
-
     // ── Notas conceptuales ──
     const notesHtml = (e.notes || []).map(n => `<div class="concept-note"><strong>${lang === 'es' ? 'Nota' : 'Note'}.</strong> ${n[lang]}</div>`).join('');
 
@@ -702,10 +839,25 @@ function renderEntries(list) {
     }
 
     const mainHtml = foundByHtml + loanGapHtml + expansionHtml
-      + (definitionText ? `<div class="def-head"><h3>${definitionLabel}</h3>${sourcesInfo}</div>${definitionText}` : '')
+      + (definitionText ? `<div class="def-head"><h3>${definitionLabel}</h3>${sourcesInfo}</div>${linkTerms(definitionText, e.slug, searchMode === 'en' ? 'en' : 'es')}` : '')
       + contextPart + notePart + exampleBlock + notesHtml + cleanHtml;
-    const asideHtml = equivHtml + linkHtml + variantsHtml + freqHtml + relatedHtml;
-    cleanHtml = `<div class="ficha-grid"><div class="ficha-main">${mainHtml}</div><aside class="ficha-aside">${asideHtml}</aside></div>`;
+    // Denominaciones (C5): si hay variación, un desplegable bajo el equivalente con barras de
+    // frecuencia de cada forma y un botón que abre el comparador completo en una ventana
+    const L = lang === 'es';
+    const nVar = ['es', 'en'].reduce((k, l) => k + Math.max(0, ((e.forms || {})[l] || []).length - 1), 0);
+    let denomBlock = '', denomModal = '';
+    if (nVar) {
+      const modalId = `dnm-${e.slug}`;
+      const more = L ? `+ ${nVar} ${nVar === 1 ? 'denominación más' : 'denominaciones más'}` : `+ ${nVar} ${nVar === 1 ? 'more name' : 'more names'}`;
+      denomBlock = `<details class="dni"><summary>${more}</summary>${denomBarsCompact(e, isEntity)}
+          <button type="button" class="dn-link" onclick="document.getElementById('${modalId}').classList.add('open')">${L ? 'Ampliar' : 'Expand'} ↗</button></details>`;
+      denomModal = `<div class="dn-modal" id="${modalId}" role="dialog" aria-modal="true" onclick="if(event.target===this)this.classList.remove('open')">
+          <div class="dn-modal-box"><div class="dn-modal-top"><b>[${primary}]</b>
+            <button type="button" onclick="this.closest('.dn-modal').classList.remove('open')">${L ? 'Cerrar' : 'Close'} ✕</button></div>
+          ${denomBars(e, isEntity)}<h3 class="dn-h3">${L ? 'Tabla' : 'Table'}</h3>${denominationsTable(e, isEntity)}</div></div>`;
+    }
+    const asideHtml = equivHtml + denomBlock + linkHtml + freqHtml + relatedHtml;
+    cleanHtml = `<div class="ficha-grid"><div class="ficha-main">${mainHtml}</div><aside class="ficha-aside">${asideHtml}</aside></div>${denomModal}`;
 
     const cleanEquiv = cleanTerm(e, equivTerm);
     const equivInHeader = showEquiv ? `<span class="entry-translation">${cleanEquiv}</span>` : '';
@@ -720,6 +872,7 @@ function renderEntries(list) {
 }
 
 function searchForVariant(encodedForm) {
+    document.querySelectorAll('.dn-modal.open').forEach(m => m.classList.remove('open'));
     searchInput.value = decodeURIComponent(encodedForm);
     applyFilters();
 }
@@ -807,9 +960,15 @@ document.addEventListener('keydown', e => {
 
 // Botón volver arriba
 const backToTop = document.getElementById('back-to-top');
-window.addEventListener('scroll', () => {
+// Al llegar al pie, el botón sube para quedar siempre por encima de él
+function placeBackToTop() {
   backToTop.classList.toggle('visible', window.scrollY > 400);
-});
+  const footer = document.querySelector('footer');
+  const overlap = footer ? window.innerHeight - footer.getBoundingClientRect().top : 0;
+  backToTop.style.bottom = overlap > 0 ? `calc(${overlap}px + 1.6rem)` : '';
+}
+window.addEventListener('scroll', placeBackToTop, { passive: true });
+window.addEventListener('resize', placeBackToTop);
 backToTop.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });

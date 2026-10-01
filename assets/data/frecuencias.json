@@ -654,44 +654,6 @@
       "principal": true
      },
      {
-      "forma": "acuerdo interanotador",
-      "relacion": "sinonimo",
-      "n": 0,
-      "docs": 0,
-      "cadenas": [
-       {
-        "cadena": "acuerdo interanotador",
-        "n": 0
-       },
-       {
-        "cadena": "acuerdo inter-anotador",
-        "n": 0
-       },
-       {
-        "cadena": "acuerdo interanotadores",
-        "n": 0
-       }
-      ],
-      "consolidada": false
-     },
-     {
-      "forma": "fiabilidad interevaluador",
-      "relacion": "sinonimo",
-      "n": 0,
-      "docs": 0,
-      "cadenas": [
-       {
-        "cadena": "fiabilidad interevaluador",
-        "n": 0
-       },
-       {
-        "cadena": "fiabilidad entre evaluadores",
-        "n": 0
-       }
-      ],
-      "consolidada": false
-     },
-     {
       "forma": "inter-annotator agreement",
       "relacion": "prestamo",
       "n": 3,
@@ -1112,6 +1074,10 @@
         "cadena": "hapaxes",
         "n": 42
        }
+      ],
+      "excluye": [
+       "hapax dislegomena",
+       "hapax dislegomenon"
       ]
      }
     ]
@@ -1134,6 +1100,11 @@
         "cadena": "hapax",
         "n": 0
        }
+      ],
+      "excluye": [
+       "hapax dislegómena",
+       "hapax dislegomena",
+       "hápax dislegómena"
       ],
       "principal": true,
       "forzada": true
@@ -1781,100 +1752,83 @@
        }
       ],
       "consolidada": true
-     },
-     {
-      "forma": "dirigido por corpus",
-      "relacion": "sinonimo",
-      "n": 0,
-      "docs": 0,
-      "cadenas": [
-       {
-        "cadena": "dirigido por corpus",
-        "n": 0
-       },
-       {
-        "cadena": "dirigida por corpus",
-        "n": 0
-       },
-       {
-        "cadena": "dirigidos por corpus",
-        "n": 0
-       },
-       {
-        "cadena": "dirigidas por corpus",
-        "n": 0
-       }
-      ],
-      "consolidada": false
      }
     ]
    }
   },
   "keyword": {
    "en": {
-    "total": 785,
-    "docs": 36,
+    "total": 739,
+    "docs": 22,
     "formas": [
      {
       "forma": "keyword",
       "relacion": "lema",
-      "n": 785,
-      "docs": 36,
+      "n": 739,
+      "docs": 22,
       "cadenas": [
        {
         "cadena": "keyword",
-        "n": 337
+        "n": 332
        },
        {
         "cadena": "keywords",
-        "n": 448
+        "n": 407
        }
+      ],
+      "excluye": [
+       "keyword in context",
+       "keywords in context"
       ],
       "principal": true
      }
     ]
    },
    "es": {
-    "total": 176,
-    "docs": 39,
+    "total": 96,
+    "docs": 20,
     "formas": [
      {
       "forma": "palabra clave",
       "relacion": "sinonimo",
-      "n": 125,
-      "docs": 39,
+      "n": 75,
+      "docs": 20,
       "cadenas": [
        {
         "cadena": "palabra clave",
-        "n": 16
+        "n": 13
        },
        {
         "cadena": "palabras clave",
-        "n": 106
+        "n": 59
        },
        {
         "cadena": "palabras claves",
         "n": 3
        }
       ],
+      "excluye": [
+       "palabra clave en contexto",
+       "palabras clave en contexto"
+      ],
       "principal": true
      },
      {
       "forma": "keyword",
       "relacion": "prestamo",
-      "n": 51,
-      "docs": 24,
+      "n": 21,
+      "docs": 4,
       "cadenas": [
        {
         "cadena": "keyword",
-        "n": 6
+        "n": 4
        },
        {
         "cadena": "keywords",
-        "n": 45
+        "n": 17
        }
       ],
-      "consolidada": true
+      "consolidada": false
      }
     ]
    }
@@ -2531,6 +2485,9 @@
         "n": 1
        }
       ],
+      "excluye": [
+       "agrupamiento humano"
+      ],
       "principal": true
      },
      {
@@ -2644,23 +2601,6 @@
        }
       ],
       "consolidada": false
-     },
-     {
-      "forma": "tamaño de muestra",
-      "relacion": "sinonimo",
-      "n": 0,
-      "docs": 0,
-      "cadenas": [
-       {
-        "cadena": "tamaño de muestra",
-        "n": 0
-       },
-       {
-        "cadena": "tamaños de muestra",
-        "n": 0
-       }
-      ],
-      "consolidada": false
      }
     ]
    }
@@ -2714,19 +2654,6 @@
        }
       ],
       "consolidada": true
-     },
-     {
-      "forma": "significancia estadística",
-      "relacion": "sinonimo",
-      "n": 0,
-      "docs": 0,
-      "cadenas": [
-       {
-        "cadena": "significancia estadística",
-        "n": 0
-       }
-      ],
-      "consolidada": false
      }
     ]
    }
@@ -2790,6 +2717,10 @@
         "cadena": "alineamientos",
         "n": 0
        }
+      ],
+      "excluye": [
+       "alineamiento dinámico en el tiempo",
+       "alineamiento dinámico"
       ],
       "consolidada": true
      }
@@ -2947,69 +2878,59 @@
        }
       ],
       "consolidada": true
-     },
-     {
-      "forma": "banco de árboles",
-      "relacion": "sinonimo",
-      "n": 0,
-      "docs": 0,
-      "cadenas": [
-       {
-        "cadena": "banco de árboles",
-        "n": 0
-       },
-       {
-        "cadena": "bancos de árboles",
-        "n": 0
-       }
-      ],
-      "consolidada": false
      }
     ]
    }
   },
   "stem": {
    "en": {
-    "total": 126,
-    "docs": 17,
+    "total": 108,
+    "docs": 8,
     "formas": [
      {
       "forma": "stem",
       "relacion": "lema",
-      "n": 126,
-      "docs": 17,
+      "n": 108,
+      "docs": 8,
       "cadenas": [
        {
         "cadena": "stem",
-        "n": 40
+        "n": 33
        },
        {
         "cadena": "stems",
-        "n": 86
+        "n": 75
        }
+      ],
+      "excluye": [
+       "stem from",
+       "stems from"
       ],
       "principal": true
      }
     ]
    },
    "es": {
-    "total": 57,
-    "docs": 18,
+    "total": 52,
+    "docs": 14,
     "formas": [
      {
       "forma": "raíz",
       "relacion": "sinonimo",
-      "n": 56,
-      "docs": 18,
+      "n": 51,
+      "docs": 14,
       "cadenas": [
        {
         "cadena": "raíz",
-        "n": 39
+        "n": 34
        },
        {
         "cadena": "raíces",
         "n": 17
        }
+      ],
+      "excluye": [
+       "a raíz de"
       ],
       "principal": true
      },
@@ -3027,6 +2948,10 @@
         "cadena": "stems",
         "n": 0
        }
+      ],
+      "excluye": [
+       "stem from",
+       "stems from"
       ],
       "consolidada": false
      }
@@ -3304,23 +3229,6 @@
        }
       ],
       "principal": true
-     },
-     {
-      "forma": "z-score",
-      "relacion": "prestamo",
-      "n": 0,
-      "docs": 0,
-      "cadenas": [
-       {
-        "cadena": "z-score",
-        "n": 0
-       },
-       {
-        "cadena": "z-scores",
-        "n": 0
-       }
-      ],
-      "consolidada": false
      }
     ]
    }
@@ -3375,19 +3283,6 @@
        {
         "cadena": "grado de asociación",
         "n": 2
-       }
-      ],
-      "consolidada": false
-     },
-     {
-      "forma": "fuerza colocacional",
-      "relacion": "sinonimo",
-      "n": 0,
-      "docs": 0,
-      "cadenas": [
-       {
-        "cadena": "fuerza colocacional",
-        "n": 0
        }
       ],
       "consolidada": false
@@ -3460,23 +3355,6 @@
        }
       ],
       "consolidada": true
-     },
-     {
-      "forma": "lenguaje de consulta de corpus",
-      "relacion": "sinonimo",
-      "n": 0,
-      "docs": 0,
-      "cadenas": [
-       {
-        "cadena": "lenguaje de consulta de corpus",
-        "n": 0
-       },
-       {
-        "cadena": "lenguajes de consulta de corpus",
-        "n": 0
-       }
-      ],
-      "consolidada": false
      },
      {
       "forma": "Corpus Query Language",
@@ -3555,23 +3433,6 @@
        }
       ],
       "consolidada": true
-     },
-     {
-      "forma": "puntuación media",
-      "relacion": "sinonimo",
-      "n": 0,
-      "docs": 0,
-      "cadenas": [
-       {
-        "cadena": "puntuación media",
-        "n": 0
-       },
-       {
-        "cadena": "puntuaciones medias",
-        "n": 0
-       }
-      ],
-      "consolidada": false
      }
     ]
    }
@@ -3627,6 +3488,10 @@
         "cadena": "monitor",
         "n": 19
        }
+      ],
+      "excluye": [
+       "monitor corpus",
+       "monitor corpora"
       ]
      }
     ]
@@ -4026,23 +3891,42 @@
   },
   "type": {
    "en": {
-    "total": 2255,
-    "docs": 46,
+    "total": 210,
+    "docs": 16,
     "formas": [
      {
       "forma": "type",
       "relacion": "lema",
-      "n": 2255,
-      "docs": 46,
+      "n": 210,
+      "docs": 16,
       "cadenas": [
        {
         "cadena": "type",
-        "n": 1048
+        "n": 77
        },
        {
         "cadena": "types",
-        "n": 1207
+        "n": 133
        }
+      ],
+      "excluye_si": [
+       "(?i)\\btypes?\\s+of\\b",
+       "(?i)\\b(?:this|that|these|those|same|different|various|other|particular|specific|certain|each|every|any|all|new|one|two|three|four|several|many|what|which|whatever|some|main|major|basic|similar|another)\\s+types?\\b",
+       "(?i)\\b(?:text|data|document|corpus|corpora|file|register|genre|sentence|font|personality|structure|construction|clause|verb|noun|speech|discourse|error|question|task|study|annotation|tag|interaction|source)\\s+types?\\b",
+       "(?i)\\btypes?\\s*[-/]\\s*tokens?\\b",
+       "(?i)\\b(?:you|we|then|simply|just|to|can)\\s+type\\b",
+       "(?i)\\btype\\s+(?:in|into)\\b",
+       "\\b[Tt]ype\\s+(?:I|II)\\b",
+       "(?i)\\btypes?\\s+tokens?\\s+ratios?\\b"
+      ],
+      "solo_si": [
+       "(?i)\\btypes?\\b[^.]{0,80}\\btokens?\\b",
+       "(?i)\\btokens?\\b[^.]{0,80}\\btypes?\\b",
+       "(?i)\\bword\\s+types?\\b",
+       "(?i)\\btype\\s+frequenc\\w*",
+       "(?i)\\b(?:number|numbers|count|counts)\\s+of\\s+(?:word\\s+)?types\\b",
+       "(?i)\\btype\\s+counts?\\b",
+       "(?i)\\b(?:new|distinct|unique)\\s+types\\b"
       ],
       "principal": true
      }
@@ -4145,23 +4029,6 @@
        }
       ],
       "principal": true
-     },
-     {
-      "forma": "rastreo web",
-      "relacion": "sinonimo",
-      "n": 0,
-      "docs": 0,
-      "cadenas": [
-       {
-        "cadena": "rastreo web",
-        "n": 0
-       },
-       {
-        "cadena": "rastreo de la web",
-        "n": 0
-       }
-      ],
-      "consolidada": false
      }
     ]
    }
@@ -4271,23 +4138,6 @@
        }
       ],
       "principal": true
-     },
-     {
-      "forma": "concordanciador",
-      "relacion": "sinonimo",
-      "n": 0,
-      "docs": 0,
-      "cadenas": [
-       {
-        "cadena": "concordanciador",
-        "n": 0
-       },
-       {
-        "cadena": "concordanciadores",
-        "n": 0
-       }
-      ],
-      "consolidada": false
      }
     ]
    }
@@ -4424,46 +4274,6 @@
        }
       ],
       "consolidada": false
-     }
-    ]
-   }
-  },
-  "range": {
-   "en": {
-    "total": 584,
-    "docs": 37,
-    "formas": [
-     {
-      "forma": "range",
-      "relacion": "lema",
-      "n": 584,
-      "docs": 37,
-      "cadenas": [
-       {
-        "cadena": "range",
-        "n": 584
-       }
-      ],
-      "principal": true
-     }
-    ]
-   },
-   "es": {
-    "total": 0,
-    "docs": 0,
-    "formas": [
-     {
-      "forma": "rango",
-      "relacion": "sinonimo",
-      "n": 0,
-      "docs": 0,
-      "cadenas": [
-       {
-        "cadena": "rango de dispersión",
-        "n": 0
-       }
-      ],
-      "principal": true
      }
     ]
    }
@@ -7272,6 +7082,389 @@
     ]
    }
   },
+  "kwic": {
+   "en": {
+    "total": 47,
+    "docs": 6,
+    "formas": [
+     {
+      "forma": "KWIC",
+      "relacion": "sigla",
+      "n": 41,
+      "docs": 6,
+      "cadenas": [
+       {
+        "cadena": "KWIC",
+        "n": 41
+       }
+      ],
+      "principal": true
+     },
+     {
+      "forma": "Key Word in Context",
+      "relacion": "forma_desarrollada",
+      "n": 6,
+      "docs": 3,
+      "cadenas": [
+       {
+        "cadena": "Key Word in Context",
+        "n": 1
+       },
+       {
+        "cadena": "Keyword in Context",
+        "n": 1
+       },
+       {
+        "cadena": "Key-Word-In-Context",
+        "n": 1
+       },
+       {
+        "cadena": "Key Words in Context",
+        "n": 0
+       },
+       {
+        "cadena": "Keywords in Context",
+        "n": 3
+       }
+      ]
+     }
+    ]
+   },
+   "es": {
+    "total": 27,
+    "docs": 8,
+    "formas": [
+     {
+      "forma": "KWIC",
+      "relacion": "sigla",
+      "n": 8,
+      "docs": 7,
+      "cadenas": [
+       {
+        "cadena": "KWIC",
+        "n": 8
+       }
+      ],
+      "principal": true
+     },
+     {
+      "forma": "Key Word in Context",
+      "relacion": "forma_desarrollada",
+      "n": 7,
+      "docs": 6,
+      "cadenas": [
+       {
+        "cadena": "Key Word in Context",
+        "n": 5
+       },
+       {
+        "cadena": "Keyword in Context",
+        "n": 0
+       },
+       {
+        "cadena": "Key-Word-In-Context",
+        "n": 0
+       },
+       {
+        "cadena": "Key Words in Context",
+        "n": 2
+       },
+       {
+        "cadena": "Keywords in Context",
+        "n": 0
+       }
+      ]
+     },
+     {
+      "forma": "palabra clave en contexto",
+      "relacion": "sinonimo",
+      "n": 9,
+      "docs": 4,
+      "cadenas": [
+       {
+        "cadena": "palabra clave en contexto",
+        "n": 3
+       },
+       {
+        "cadena": "palabras clave en contexto",
+        "n": 6
+       }
+      ],
+      "consolidada": true
+     },
+     {
+      "forma": "PCEC",
+      "relacion": "sigla",
+      "n": 3,
+      "docs": 1,
+      "cadenas": [
+       {
+        "cadena": "PCEC",
+        "n": 3
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "stemming": {
+   "en": {
+    "total": 6,
+    "docs": 2,
+    "formas": [
+     {
+      "forma": "stemming",
+      "relacion": "lema",
+      "n": 6,
+      "docs": 2,
+      "cadenas": [
+       {
+        "cadena": "stemming",
+        "n": 6
+       }
+      ],
+      "excluye": [
+       "stemming from",
+       "stemming its"
+      ],
+      "principal": true
+     }
+    ]
+   },
+   "es": {
+    "total": 4,
+    "docs": 1,
+    "formas": [
+     {
+      "forma": "stemming",
+      "relacion": "prestamo",
+      "n": 4,
+      "docs": 1,
+      "cadenas": [
+       {
+        "cadena": "stemming",
+        "n": 4
+       }
+      ],
+      "principal": true
+     }
+    ]
+   }
+  },
+  "sample": {
+   "en": {
+    "total": 1790,
+    "docs": 35,
+    "formas": [
+     {
+      "forma": "sample",
+      "relacion": "lema",
+      "n": 1790,
+      "docs": 35,
+      "cadenas": [
+       {
+        "cadena": "sample",
+        "n": 1129
+       },
+       {
+        "cadena": "samples",
+        "n": 661
+       }
+      ],
+      "principal": true
+     }
+    ]
+   },
+   "es": {
+    "total": 558,
+    "docs": 45,
+    "formas": [
+     {
+      "forma": "muestra",
+      "relacion": "lema",
+      "n": 558,
+      "docs": 45,
+      "cadenas": [
+       {
+        "cadena": "muestra",
+        "n": 206
+       },
+       {
+        "cadena": "muestras",
+        "n": 352
+       }
+      ],
+      "excluye_si": [
+       "(?i)\\b(?:se|lo|la|le|les|nos|me|te)\\s+muestra\\b",
+       "(?i)(?<!\\bla )(?<!\\buna )(?<!\\besta )(?<!\\besa )(?<!\\bcada )(?<!\\bnuestra )(?<!\\bsu )(?<!\\bdicha )(?<!\\bmisma )\\bmuestra\\s+(?:que|como|cuan|cual|el|los|las|un|unos|unas|tambien|claramente|ademas|aqui|esto|ello|sus|bien|mejor|hasta|solo|algunos|algunas|dos|tres|diferencias|resultados)\\b",
+       "(?i)\\bcomo\\s+muestra\\b"
+      ],
+      "principal": true
+     }
+    ]
+   }
+  },
+  "recall": {
+   "en": {
+    "total": 64,
+    "docs": 11,
+    "formas": [
+     {
+      "forma": "recall",
+      "relacion": "lema",
+      "n": 64,
+      "docs": 11,
+      "cadenas": [
+       {
+        "cadena": "recall",
+        "n": 64
+       }
+      ],
+      "excluye_si": [
+       "(?i)\\b(?:I|we|you|they|he|she|to|can|may|might|will|would|should|could|cannot|reader|readers|participants|subjects|easily|also)\\s+recall\\b",
+       "(?i)\\brecall\\s+(?:that|how|what|when|where|why|our|their|his|her|this|these|those)\\b",
+       "ReCALL",
+       "(?i)\\brecall\\s+(?:recognise|recognize|recollect)\\b",
+       "(?i)\\b(?:rational|read|realise|realistic|realize|reasonable)\\s+recall\\b"
+      ],
+      "principal": true
+     }
+    ]
+   },
+   "es": {
+    "total": 16,
+    "docs": 7,
+    "formas": [
+     {
+      "forma": "exhaustividad",
+      "relacion": "lema",
+      "n": 16,
+      "docs": 7,
+      "cadenas": [
+       {
+        "cadena": "exhaustividad",
+        "n": 16
+       }
+      ],
+      "principal": true
+     }
+    ]
+   }
+  },
+  "population": {
+   "en": {
+    "total": 300,
+    "docs": 17,
+    "formas": [
+     {
+      "forma": "population",
+      "relacion": "lema",
+      "n": 300,
+      "docs": 17,
+      "cadenas": [
+       {
+        "cadena": "population",
+        "n": 279
+       },
+       {
+        "cadena": "populations",
+        "n": 21
+       }
+      ],
+      "excluye_si": [
+       "(?i)\\b(?:world|general|human|urban|rural|immigrant|indigenous|local|native|elderly|student)\\s+populations?\\b",
+       "(?i)\\bpopulation\\s+growth\\b",
+       "(?i)\\bpopulations?\\s+of\\s+(?:the\\s+)?(?:world|country|countries|city|cities|region|state|nation)\\b"
+      ],
+      "principal": true
+     }
+    ]
+   },
+   "es": {
+    "total": 100,
+    "docs": 21,
+    "formas": [
+     {
+      "forma": "población",
+      "relacion": "lema",
+      "n": 100,
+      "docs": 21,
+      "cadenas": [
+       {
+        "cadena": "población",
+        "n": 96
+       },
+       {
+        "cadena": "poblaciones",
+        "n": 4
+       }
+      ],
+      "excluye_si": [
+       "(?i)\\bpoblacion(?:es)?\\s+(?:espanola|indigena|urbana|rural|mundial|mexicana|total del pais|joven|activa|inmigrante|hispanohablante|de\\s+origen)\\b",
+       "(?i)\\bel\\s+20\\s*%\\s+de\\s+la\\s+poblacion\\b",
+       "(?i)\\b(?:habitantes|censo)\\b[^.]{0,40}\\bpoblacion\\b"
+      ],
+      "principal": true
+     }
+    ]
+   }
+  },
+  "genre": {
+   "en": {
+    "total": 494,
+    "docs": 43,
+    "formas": [
+     {
+      "forma": "genre",
+      "relacion": "lema",
+      "n": 494,
+      "docs": 43,
+      "cadenas": [
+       {
+        "cadena": "genre",
+        "n": 296
+       },
+       {
+        "cadena": "genres",
+        "n": 198
+       }
+      ],
+      "principal": true
+     }
+    ]
+   },
+   "es": {
+    "total": 407,
+    "docs": 40,
+    "formas": [
+     {
+      "forma": "género",
+      "relacion": "lema",
+      "n": 407,
+      "docs": 40,
+      "cadenas": [
+       {
+        "cadena": "género",
+        "n": 209
+       },
+       {
+        "cadena": "géneros",
+        "n": 198
+       }
+      ],
+      "excluye_si": [
+       "(?i)\\bgeneros?\\s+(?:gramatical(?:es)?|masculino|femenino|neutro|humano)\\b",
+       "(?i)\\b(?:identidad|violencia|igualdad|perspectiva|estudios|brecha|marcas?|concordancia|flexion|morfemas?)\\s+de\\s+genero\\b",
+       "(?i)\\bgenero\\s+y\\s+(?:numero|edad|sexo)\\b",
+       "(?i)\\b(?:sexo|edad|numero)\\s+y\\s+genero\\b",
+       "Genero/hist",
+       "(?i)\\bgenero\\s*:\\s*(?:hombre|mujer|masculino|femenino)"
+      ],
+      "principal": true
+     }
+    ]
+   }
+  },
   "accuracy": {
    "en": {
     "total": 167,
@@ -8248,54 +8441,6 @@
     ]
    }
   },
-  "genre": {
-   "en": {
-    "total": 494,
-    "docs": 43,
-    "formas": [
-     {
-      "forma": "genre",
-      "relacion": "lema",
-      "n": 494,
-      "docs": 43,
-      "cadenas": [
-       {
-        "cadena": "genre",
-        "n": 296
-       },
-       {
-        "cadena": "genres",
-        "n": 198
-       }
-      ],
-      "principal": true
-     }
-    ]
-   },
-   "es": {
-    "total": 425,
-    "docs": 40,
-    "formas": [
-     {
-      "forma": "género",
-      "relacion": "lema",
-      "n": 425,
-      "docs": 40,
-      "cadenas": [
-       {
-        "cadena": "género",
-        "n": 227
-       },
-       {
-        "cadena": "géneros",
-        "n": 198
-       }
-      ],
-      "principal": true
-     }
-    ]
-   }
-  },
   "grammar": {
    "en": {
     "total": 492,
@@ -8640,86 +8785,6 @@
        }
       ],
       "principal": true
-     }
-    ]
-   }
-  },
-  "kwic": {
-   "en": {
-    "total": 44,
-    "docs": 6,
-    "formas": [
-     {
-      "forma": "KWIC",
-      "relacion": "sigla",
-      "n": 41,
-      "docs": 6,
-      "cadenas": [
-       {
-        "cadena": "KWIC",
-        "n": 41
-       }
-      ],
-      "principal": true
-     },
-     {
-      "forma": "Key Word in Context",
-      "relacion": "forma_desarrollada",
-      "n": 3,
-      "docs": 3,
-      "cadenas": [
-       {
-        "cadena": "Key Word in Context",
-        "n": 1
-       },
-       {
-        "cadena": "Keyword in Context",
-        "n": 1
-       },
-       {
-        "cadena": "Key-Word-In-Context",
-        "n": 1
-       }
-      ]
-     }
-    ]
-   },
-   "es": {
-    "total": 13,
-    "docs": 7,
-    "formas": [
-     {
-      "forma": "KWIC",
-      "relacion": "sigla",
-      "n": 8,
-      "docs": 7,
-      "cadenas": [
-       {
-        "cadena": "KWIC",
-        "n": 8
-       }
-      ],
-      "principal": true
-     },
-     {
-      "forma": "Key Word in Context",
-      "relacion": "forma_desarrollada",
-      "n": 5,
-      "docs": 5,
-      "cadenas": [
-       {
-        "cadena": "Key Word in Context",
-        "n": 5
-       },
-       {
-        "cadena": "Keyword in Context",
-        "n": 0
-       },
-       {
-        "cadena": "Key-Word-In-Context",
-        "n": 0
-       }
-      ]
      }
     ]
    }
@@ -9536,54 +9601,6 @@
     ]
    }
   },
-  "population": {
-   "en": {
-    "total": 307,
-    "docs": 17,
-    "formas": [
-     {
-      "forma": "population",
-      "relacion": "lema",
-      "n": 307,
-      "docs": 17,
-      "cadenas": [
-       {
-        "cadena": "population",
-        "n": 286
-       },
-       {
-        "cadena": "populations",
-        "n": 21
-       }
-      ],
-      "principal": true
-     }
-    ]
-   },
-   "es": {
-    "total": 111,
-    "docs": 21,
-    "formas": [
-     {
-      "forma": "población",
-      "relacion": "lema",
-      "n": 111,
-      "docs": 21,
-      "cadenas": [
-       {
-        "cadena": "población",
-        "n": 107
-       },
-       {
-        "cadena": "poblaciones",
-        "n": 4
-       }
-      ],
-      "principal": true
-     }
-    ]
-   }
-  },
   "probability": {
    "en": {
     "total": 501,
@@ -9625,46 +9642,6 @@
        {
         "cadena": "probabilidades",
         "n": 34
-       }
-      ],
-      "principal": true
-     }
-    ]
-   }
-  },
-  "recall": {
-   "en": {
-    "total": 107,
-    "docs": 17,
-    "formas": [
-     {
-      "forma": "recall",
-      "relacion": "lema",
-      "n": 107,
-      "docs": 17,
-      "cadenas": [
-       {
-        "cadena": "recall",
-        "n": 107
-       }
-      ],
-      "principal": true
-     }
-    ]
-   },
-   "es": {
-    "total": 16,
-    "docs": 7,
-    "formas": [
-     {
-      "forma": "exhaustividad",
-      "relacion": "lema",
-      "n": 16,
-      "docs": 7,
-      "cadenas": [
-       {
-        "cadena": "exhaustividad",
-        "n": 16
        }
       ],
       "principal": true
@@ -9845,54 +9822,6 @@
        {
         "cadena": "representatividad",
         "n": 229
-       }
-      ],
-      "principal": true
-     }
-    ]
-   }
-  },
-  "sample": {
-   "en": {
-    "total": 1790,
-    "docs": 35,
-    "formas": [
-     {
-      "forma": "sample",
-      "relacion": "lema",
-      "n": 1790,
-      "docs": 35,
-      "cadenas": [
-       {
-        "cadena": "sample",
-        "n": 1129
-       },
-       {
-        "cadena": "samples",
-        "n": 661
-       }
-      ],
-      "principal": true
-     }
-    ]
-   },
-   "es": {
-    "total": 792,
-    "docs": 49,
-    "formas": [
-     {
-      "forma": "muestra",
-      "relacion": "lema",
-      "n": 792,
-      "docs": 49,
-      "cadenas": [
-       {
-        "cadena": "muestra",
-        "n": 440
-       },
-       {
-        "cadena": "muestras",
-        "n": 352
        }
       ],
       "principal": true

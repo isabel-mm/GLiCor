@@ -454,23 +454,6 @@
             ]
           },
           {
-            "forma": "acuerdo interanotador",
-            "relacion": "sinonimo",
-            "cuenta": [
-              "acuerdo interanotador",
-              "acuerdo inter-anotador",
-              "acuerdo interanotadores"
-            ]
-          },
-          {
-            "forma": "fiabilidad interevaluador",
-            "relacion": "sinonimo",
-            "cuenta": [
-              "fiabilidad interevaluador",
-              "fiabilidad entre evaluadores"
-            ]
-          },
-          {
             "forma": "inter-annotator agreement",
             "relacion": "prestamo",
             "cuenta": [
@@ -1116,16 +1099,6 @@
               "guiados por corpus",
               "guiadas por corpus"
             ]
-          },
-          {
-            "forma": "dirigido por corpus",
-            "relacion": "sinonimo",
-            "cuenta": [
-              "dirigido por corpus",
-              "dirigida por corpus",
-              "dirigidos por corpus",
-              "dirigidas por corpus"
-            ]
           }
         ]
       }
@@ -1145,6 +1118,10 @@
             "cuenta": [
               "keyword",
               "keywords"
+            ],
+            "excluye": [
+              "keyword in context",
+              "keywords in context"
             ]
           }
         ],
@@ -1156,6 +1133,10 @@
               "palabra clave",
               "palabras clave",
               "palabras claves"
+            ],
+            "excluye": [
+              "palabra clave en contexto",
+              "palabras clave en contexto"
             ]
           },
           {
@@ -1614,14 +1595,6 @@
               "tamaño muestral",
               "tamaños muestrales"
             ]
-          },
-          {
-            "forma": "tamaño de muestra",
-            "relacion": "sinonimo",
-            "cuenta": [
-              "tamaño de muestra",
-              "tamaños de muestra"
-            ]
           }
         ]
       }
@@ -1656,13 +1629,6 @@
             "relacion": "sinonimo",
             "cuenta": [
               "significación estadística"
-            ]
-          },
-          {
-            "forma": "significancia estadística",
-            "relacion": "sinonimo",
-            "cuenta": [
-              "significancia estadística"
             ]
           }
         ]
@@ -1792,14 +1758,6 @@
               "treebank",
               "treebanks"
             ]
-          },
-          {
-            "forma": "banco de árboles",
-            "relacion": "sinonimo",
-            "cuenta": [
-              "banco de árboles",
-              "bancos de árboles"
-            ]
           }
         ]
       }
@@ -1819,6 +1777,10 @@
             "cuenta": [
               "stem",
               "stems"
+            ],
+            "excluye": [
+              "stem from",
+              "stems from"
             ]
           }
         ],
@@ -1829,6 +1791,9 @@
             "cuenta": [
               "raíz",
               "raíces"
+            ],
+            "excluye": [
+              "a raíz de"
             ]
           },
           {
@@ -1837,6 +1802,10 @@
             "cuenta": [
               "stem",
               "stems"
+            ],
+            "excluye": [
+              "stem from",
+              "stems from"
             ]
           }
         ]
@@ -1994,14 +1963,6 @@
               "puntuación z",
               "puntuaciones z"
             ]
-          },
-          {
-            "forma": "z-score",
-            "relacion": "prestamo",
-            "cuenta": [
-              "z-score",
-              "z-scores"
-            ]
           }
         ]
       }
@@ -2037,13 +1998,6 @@
             "relacion": "sinonimo",
             "cuenta": [
               "grado de asociación"
-            ]
-          },
-          {
-            "forma": "fuerza colocacional",
-            "relacion": "sinonimo",
-            "cuenta": [
-              "fuerza colocacional"
             ]
           }
         ]
@@ -2083,14 +2037,6 @@
               "lenguaje de búsqueda de corpus",
               "lenguaje de búsqueda",
               "lenguajes de búsqueda"
-            ]
-          },
-          {
-            "forma": "lenguaje de consulta de corpus",
-            "relacion": "sinonimo",
-            "cuenta": [
-              "lenguaje de consulta de corpus",
-              "lenguajes de consulta de corpus"
             ]
           },
           {
@@ -2136,14 +2082,6 @@
             "cuenta": [
               "valor medio",
               "valores medios"
-            ]
-          },
-          {
-            "forma": "puntuación media",
-            "relacion": "sinonimo",
-            "cuenta": [
-              "puntuación media",
-              "puntuaciones medias"
             ]
           }
         ]
@@ -2465,7 +2403,7 @@
       "fuente": "type",
       "absorbe": [],
       "tipo": "sinonimia",
-      "criterio": "En inglés, «type» también es una palabra general muy frecuente (text type, type of corpus), así que su frecuencia está muy inflada. En español, el par se expresa sobre todo con los préstamos (types y tokens) o en «tipo-token».",
+      "criterio": "En inglés, «type» es sobre todo una palabra general («types of», «text types», «this type»). Solo se cuenta en el sentido de type frente a token: cerca de «token», en «word type(s)», «type frequency», «number of types»…; no se cuenta «type-token», que pertenece a la relación entre types y tokens.",
       "criterio_en": "In English, «type» is also a very frequent general word (text type, type of corpus), so its frequency is highly inflated. In Spanish, the pair is usually expressed with the loanwords (types y tokens) or in «tipo-token».",
       "formas": {
         "en": [
@@ -2475,6 +2413,25 @@
             "cuenta": [
               "type",
               "types"
+            ],
+            "excluye_si": [
+              "(?i)\\btypes?\\s+of\\b",
+              "(?i)\\b(?:this|that|these|those|same|different|various|other|particular|specific|certain|each|every|any|all|new|one|two|three|four|several|many|what|which|whatever|some|main|major|basic|similar|another)\\s+types?\\b",
+              "(?i)\\b(?:text|data|document|corpus|corpora|file|register|genre|sentence|font|personality|structure|construction|clause|verb|noun|speech|discourse|error|question|task|study|annotation|tag|interaction|source)\\s+types?\\b",
+              "(?i)\\btypes?\\s*[-/]\\s*tokens?\\b",
+              "(?i)\\b(?:you|we|then|simply|just|to|can)\\s+type\\b",
+              "(?i)\\btype\\s+(?:in|into)\\b",
+              "\\b[Tt]ype\\s+(?:I|II)\\b",
+              "(?i)\\btypes?\\s+tokens?\\s+ratios?\\b"
+            ],
+            "solo_si": [
+              "(?i)\\btypes?\\b[^.]{0,80}\\btokens?\\b",
+              "(?i)\\btokens?\\b[^.]{0,80}\\btypes?\\b",
+              "(?i)\\bword\\s+types?\\b",
+              "(?i)\\btype\\s+frequenc\\w*",
+              "(?i)\\b(?:number|numbers|count|counts)\\s+of\\s+(?:word\\s+)?types\\b",
+              "(?i)\\btype\\s+counts?\\b",
+              "(?i)\\b(?:new|distinct|unique)\\s+types\\b"
             ]
           }
         ],
@@ -2527,14 +2484,6 @@
             "cuenta": [
               "web crawling",
               "crawling"
-            ]
-          },
-          {
-            "forma": "rastreo web",
-            "relacion": "sinonimo",
-            "cuenta": [
-              "rastreo web",
-              "rastreo de la web"
             ]
           }
         ]
@@ -2604,14 +2553,6 @@
             "cuenta": [
               "programa de concordancias",
               "programas de concordancias"
-            ]
-          },
-          {
-            "forma": "concordanciador",
-            "relacion": "sinonimo",
-            "cuenta": [
-              "concordanciador",
-              "concordanciadores"
             ]
           }
         ]
@@ -2706,35 +2647,6 @@
             "relacion": "prestamo",
             "cuenta": [
               "text mining"
-            ]
-          }
-        ]
-      },
-      "origen": "en"
-    },
-    {
-      "slug": "range",
-      "fuente": "range",
-      "absorbe": [],
-      "tipo": "sinonimia",
-      "criterio": "En inglés, «range» también es una palabra general muy frecuente (a wide range of), así que su frecuencia está muy inflada, como en el Apéndice III. No se documenta ninguna denominación española de esta medida.",
-      "criterio_en": "In English, «range» is also a very frequent general word (a wide range of), so its frequency is highly inflated, as in Appendix III. No Spanish name for this measure is attested.",
-      "formas": {
-        "en": [
-          {
-            "forma": "range",
-            "relacion": "lema",
-            "cuenta": [
-              "range"
-            ]
-          }
-        ],
-        "es": [
-          {
-            "forma": "rango",
-            "relacion": "sinonimo",
-            "cuenta": [
-              "rango de dispersión"
             ]
           }
         ]
@@ -4570,6 +4482,251 @@
         ]
       },
       "origen": "es"
+    },
+    {
+      "slug": "kwic",
+      "fuente": "kwic",
+      "absorbe": [],
+      "tipo": "variante_formal",
+      "criterio": "Sigla y forma desarrollada inglesas, que se usan también en español. En el subcorpus español aparece además el equivalente «palabra clave en contexto», con su sigla «PCEC» (un solo documento).",
+      "criterio_en": "English acronym and full form, also used in Spanish. The Spanish subcorpus also has the equivalent «palabra clave en contexto», with its acronym «PCEC» (a single document).",
+      "formas": {
+        "en": [
+          {
+            "forma": "KWIC",
+            "relacion": "sigla",
+            "cuenta": [
+              "KWIC"
+            ]
+          },
+          {
+            "forma": "Key Word in Context",
+            "relacion": "forma_desarrollada",
+            "cuenta": [
+              "Key Word in Context",
+              "Keyword in Context",
+              "Key-Word-In-Context",
+              "Key Words in Context",
+              "Keywords in Context"
+            ]
+          }
+        ],
+        "es": [
+          {
+            "forma": "KWIC",
+            "relacion": "sigla",
+            "cuenta": [
+              "KWIC"
+            ]
+          },
+          {
+            "forma": "Key Word in Context",
+            "relacion": "forma_desarrollada",
+            "cuenta": [
+              "Key Word in Context",
+              "Keyword in Context",
+              "Key-Word-In-Context",
+              "Key Words in Context",
+              "Keywords in Context"
+            ]
+          },
+          {
+            "forma": "palabra clave en contexto",
+            "relacion": "sinonimo",
+            "cuenta": [
+              "palabra clave en contexto",
+              "palabras clave en contexto"
+            ]
+          },
+          {
+            "forma": "PCEC",
+            "relacion": "sigla",
+            "cuenta": [
+              "PCEC"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "slug": "stemming",
+      "fuente": "stemming",
+      "absorbe": [],
+      "tipo": "sinonimia",
+      "criterio": "Entrada añadida en el glosario (no está en el Apéndice III). En español solo se documenta el préstamo «stemming» (Martí y Taulé, 2022). En inglés se excluyen los usos del verbo («stemming from», «stemming its decline»).",
+      "criterio_en": "Entry added in the glossary (not in Appendix III). In Spanish only the loanword «stemming» is attested (Martí and Taulé, 2022). In English, uses of the verb («stemming from», «stemming its decline») are excluded.",
+      "formas": {
+        "en": [
+          {
+            "forma": "stemming",
+            "relacion": "lema",
+            "cuenta": [
+              "stemming"
+            ],
+            "excluye": [
+              "stemming from",
+              "stemming its"
+            ]
+          }
+        ],
+        "es": [
+          {
+            "forma": "stemming",
+            "relacion": "prestamo",
+            "cuenta": [
+              "stemming"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "slug": "sample",
+      "fuente": "sample",
+      "absorbe": [],
+      "tipo": "lema_singular",
+      "criterio": "En español no se cuenta el verbo «mostrar» («Hoffmann muestra que…», «como muestra»).",
+      "criterio_en": "",
+      "formas": {
+        "en": [
+          {
+            "forma": "sample",
+            "relacion": "lema",
+            "cuenta": [
+              "sample",
+              "samples"
+            ]
+          }
+        ],
+        "es": [
+          {
+            "forma": "muestra",
+            "relacion": "lema",
+            "cuenta": [
+              "muestra",
+              "muestras"
+            ],
+            "excluye_si": [
+              "(?i)\\b(?:se|lo|la|le|les|nos|me|te)\\s+muestra\\b",
+              "(?i)(?<!\\bla )(?<!\\buna )(?<!\\besta )(?<!\\besa )(?<!\\bcada )(?<!\\bnuestra )(?<!\\bsu )(?<!\\bdicha )(?<!\\bmisma )\\bmuestra\\s+(?:que|como|cuan|cual|el|los|las|un|unos|unas|tambien|claramente|ademas|aqui|esto|ello|sus|bien|mejor|hasta|solo|algunos|algunas|dos|tres|diferencias|resultados)\\b",
+              "(?i)\\bcomo\\s+muestra\\b"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "slug": "recall",
+      "fuente": "recall",
+      "absorbe": [],
+      "tipo": "lema_singular",
+      "criterio": "En inglés no se cuenta el verbo «recall» («we recall that…»), la revista ReCALL ni las listas de palabras.",
+      "criterio_en": "",
+      "formas": {
+        "en": [
+          {
+            "forma": "recall",
+            "relacion": "lema",
+            "cuenta": [
+              "recall"
+            ],
+            "excluye_si": [
+              "(?i)\\b(?:I|we|you|they|he|she|to|can|may|might|will|would|should|could|cannot|reader|readers|participants|subjects|easily|also)\\s+recall\\b",
+              "(?i)\\brecall\\s+(?:that|how|what|when|where|why|our|their|his|her|this|these|those)\\b",
+              "ReCALL",
+              "(?i)\\brecall\\s+(?:recognise|recognize|recollect)\\b",
+              "(?i)\\b(?:rational|read|realise|realistic|realize|reasonable)\\s+recall\\b"
+            ]
+          }
+        ],
+        "es": [
+          {
+            "forma": "exhaustividad",
+            "relacion": "lema",
+            "cuenta": [
+              "exhaustividad"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "slug": "population",
+      "fuente": "population",
+      "absorbe": [],
+      "tipo": "lema_singular",
+      "criterio": "No se cuenta el sentido demográfico («la población española», «world population»).",
+      "criterio_en": "",
+      "formas": {
+        "en": [
+          {
+            "forma": "population",
+            "relacion": "lema",
+            "cuenta": [
+              "population",
+              "populations"
+            ],
+            "excluye_si": [
+              "(?i)\\b(?:world|general|human|urban|rural|immigrant|indigenous|local|native|elderly|student)\\s+populations?\\b",
+              "(?i)\\bpopulation\\s+growth\\b",
+              "(?i)\\bpopulations?\\s+of\\s+(?:the\\s+)?(?:world|country|countries|city|cities|region|state|nation)\\b"
+            ]
+          }
+        ],
+        "es": [
+          {
+            "forma": "población",
+            "relacion": "lema",
+            "cuenta": [
+              "población",
+              "poblaciones"
+            ],
+            "excluye_si": [
+              "(?i)\\bpoblacion(?:es)?\\s+(?:espanola|indigena|urbana|rural|mundial|mexicana|total del pais|joven|activa|inmigrante|hispanohablante|de\\s+origen)\\b",
+              "(?i)\\bel\\s+20\\s*%\\s+de\\s+la\\s+poblacion\\b",
+              "(?i)\\b(?:habitantes|censo)\\b[^.]{0,40}\\bpoblacion\\b"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "slug": "genre",
+      "fuente": "genre",
+      "absorbe": [],
+      "tipo": "lema_singular",
+      "criterio": "En español no se cuentan el género gramatical, la identidad de género ni los nombres de corpus («Género/histórico»).",
+      "criterio_en": "",
+      "formas": {
+        "en": [
+          {
+            "forma": "genre",
+            "relacion": "lema",
+            "cuenta": [
+              "genre",
+              "genres"
+            ]
+          }
+        ],
+        "es": [
+          {
+            "forma": "género",
+            "relacion": "lema",
+            "cuenta": [
+              "género",
+              "géneros"
+            ],
+            "excluye_si": [
+              "(?i)\\bgeneros?\\s+(?:gramatical(?:es)?|masculino|femenino|neutro|humano)\\b",
+              "(?i)\\b(?:identidad|violencia|igualdad|perspectiva|estudios|brecha|marcas?|concordancia|flexion|morfemas?)\\s+de\\s+genero\\b",
+              "(?i)\\bgenero\\s+y\\s+(?:numero|edad|sexo)\\b",
+              "(?i)\\b(?:sexo|edad|numero)\\s+y\\s+genero\\b",
+              "Genero/hist",
+              "(?i)\\bgenero\\s*:\\s*(?:hombre|mujer|masculino|femenino)"
+            ]
+          }
+        ]
+      }
     }
   ],
   "no_unificados": [
@@ -4659,6 +4816,22 @@
       ],
       "es": "No todos los autores distinguen los dos enfoques. En sentido estricto se oponen: el enfoque basado en corpus contrasta con los datos hipótesis o categorías previas, mientras que el guiado por corpus deja que las categorías emerjan de los datos. Pero «basado en corpus» también se usa como hiperónimo de cualquier investigación que emplea corpus, y en ese uso abarca el enfoque guiado por corpus.",
       "en": "Not all authors distinguish the two approaches. In the strict sense they are opposed: the corpus-based approach tests prior hypotheses or categories against the data, whereas the corpus-driven approach lets categories emerge from the data. But «corpus-based» is also used as a hypernym for any research that uses corpora, and in that use it covers the corpus-driven approach."
+    },
+    {
+      "slugs": [
+        "stopword",
+        "function_word"
+      ],
+      "es": "Las listas de palabras vacías se componen sobre todo de palabras funcionales (artículos, preposiciones, conjunciones), y en el subcorpus español el filtrado de palabras vacías se describe a veces como «omitir las palabras funcionales» (Sierra Martínez, 2015). No son sinónimos: las palabras vacías son una lista operativa, que puede incluir también palabras de contenido muy frecuentes; las palabras funcionales, una clase gramatical.",
+      "en": "Stopword lists consist mostly of function words (articles, prepositions, conjunctions), and in the Spanish subcorpus stopword filtering is sometimes described as «omitting function words» (Sierra Martínez, 2015). They are not synonyms: stopwords are an operational list, which may also include very frequent content words; function words are a grammatical class."
+    },
+    {
+      "slugs": [
+        "computational_corpus_linguistics",
+        "corpus_based_computational_linguistics"
+      ],
+      "es": "Distinción propia de algunos autores, no de uso general: procede de Parodi (2008, 2010) y solo se documenta en 2 de los 50 documentos del subcorpus español (Fernández Martín, 2015; Bernal Chávez y Hincapié Moreno, 2018), que advierten de que ambas denominaciones suelen confundirse. En el subcorpus inglés no se documenta.",
+      "en": "A distinction made by some authors, not in general use: it goes back to Parodi (2008, 2010) and is attested in only 2 of the 50 documents of the Spanish subcorpus (Fernández Martín, 2015; Bernal Chávez and Hincapié Moreno, 2018), who warn that the two names are often confused. It is not attested in the English subcorpus."
     }
   ],
   "formas_contadas": {
@@ -4865,16 +5038,6 @@
         "corpus generales"
       ]
     },
-    "genre": {
-      "en": [
-        "genre",
-        "genres"
-      ],
-      "es": [
-        "género",
-        "géneros"
-      ]
-    },
     "grammar": {
       "en": [
         "grammar",
@@ -4938,14 +5101,6 @@
       ],
       "es": [
         "análisis de palabras clave"
-      ]
-    },
-    "kwic": {
-      "en": [
-        "KWIC"
-      ],
-      "es": [
-        "KWIC"
       ]
     },
     "lemma": {
@@ -5115,16 +5270,6 @@
         "texto plano"
       ]
     },
-    "population": {
-      "en": [
-        "population",
-        "populations"
-      ],
-      "es": [
-        "población",
-        "poblaciones"
-      ]
-    },
     "probability": {
       "en": [
         "probability",
@@ -5133,14 +5278,6 @@
       "es": [
         "probabilidad",
         "probabilidades"
-      ]
-    },
-    "recall": {
-      "en": [
-        "recall"
-      ],
-      "es": [
-        "exhaustividad"
       ]
     },
     "reference_corpus": {
@@ -5178,16 +5315,6 @@
       ],
       "es": [
         "representatividad"
-      ]
-    },
-    "sample": {
-      "en": [
-        "sample",
-        "samples"
-      ],
-      "es": [
-        "muestra",
-        "muestras"
       ]
     },
     "sampling_frame": {
@@ -6425,5 +6552,12 @@
     "_nota": "Categorías de entidades que no están en la tesis, añadidas por la autora en septiembre de 2026.",
     "Estándares y formatos técnicos": "Technical standards and formats",
     "Anotación y procesamiento lingüístico": "Annotation and language processing"
+  },
+  "retirados": {
+    "_nota": "Entradas retiradas del glosario, con el motivo (no se recuentan ni se publican).",
+    "range": {
+      "fecha": "2026-10-01",
+      "motivo": "«range» es en inglés sobre todo una palabra general («a wide range of», «ranges from»); no se documenta su sentido técnico de medida de dispersión, ni ninguna denominación española («rango de dispersión»: 0). El concepto queda recogido en la definición de «dispersión» y en las fichas de la desviación de proporciones y del índice normalizado de dispersión."
+    }
   }
 }
