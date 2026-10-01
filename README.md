@@ -1,42 +1,56 @@
-# GLiCor — Glosario de Lingüística de Corpus
+# GLiCor
 
-A bilingual (Spanish/English) specialised glossary of corpus linguistics terminology, built from a corpus-based analysis of academic literature in both languages.
+**Glosario de Lingüística de Corpus · Corpus Linguistics Glossary**
 
-**Live site:** [isabel-mm.github.io/GLiCor](https://isabel-mm.github.io/GLiCor)
+[**Abrir GLiCor**](https://isabel-mm.github.io/GLiCor) · Español e inglés
 
----
+GLiCor es un glosario bilingüe especializado que reúne terminología de lingüística de corpus a partir del análisis de literatura académica en español e inglés. Cada ficha incluye definiciones, equivalentes, variantes, relaciones entre términos y ejemplos documentados en el corpus.
 
-## What it is
+## Explorar el sitio
 
-GLiCor brings together the core terminology of corpus linguistics in Spanish and English. Each entry includes:
+| Sección | Contenido |
+| --- | --- |
+| [Glosario](https://isabel-mm.github.io/GLiCor) | Búsqueda de términos en español e inglés |
+| [Guía](https://isabel-mm.github.io/GLiCor/guide.html) | Cómo consultar las fichas y usar el glosario |
+| [Corpus](https://isabel-mm.github.io/GLiCor/corpus.html) | Composición y criterios del corpus |
+| [Recursos](https://isabel-mm.github.io/GLiCor/recursos.html) | Corpus, herramientas y estándares citados |
+| [Criterios de normalización](https://isabel-mm.github.io/GLiCor/normalizacion.html) | Variantes, equivalentes y decisiones terminológicas |
+| [Estadísticas](https://isabel-mm.github.io/GLiCor/stats.html) | Cobertura y distribución de los términos |
+| [Acerca de GLiCor](https://isabel-mm.github.io/GLiCor/about.html) | Descripción y contexto del proyecto |
 
-- Definition in the selected language
-- Equivalent, variants and synonyms, with their corpus frequency
-- Related terms (clickable)
-- Corpus citations and concordances documenting real academic use
+## Organización del repositorio
 
-A separate resource index lists the corpora, tools and standards cited in the corpus. Normalisation criteria are explained on the site (`normalizacion.html`).
+El sitio es una web estática publicada mediante **GitHub Pages**. Sus archivos están agrupados en `docs/`; la raíz del repositorio conserva esta portada y la documentación. Para que GitHub Pages publique desde esa carpeta, selecciona `main` y `/docs` en **Settings → Pages → Build and deployment → Deploy from a branch**.
 
-The glossary is designed for researchers, students, and anyone working with corpus linguistics concepts across languages.
+```text
+.
+├── README.md                 # Portada del repositorio
+└── docs/                     # Sitio publicado por GitHub Pages
+    ├── index.html            # Glosario
+    ├── about.html            # Acerca de GLiCor
+    ├── guide.html            # Guía de uso
+    ├── corpus.html           # Descripción del corpus
+    ├── recursos.html         # Índice de recursos
+    ├── normalizacion.html    # Criterios de normalización
+    ├── stats.html            # Estadísticas
+    ├── redes.html            # Red de términos
+    ├── contacto.html         # Contacto
+    └── assets/               # Estilos, datos, imágenes y JavaScript
+```
 
-## Running locally
+## Previsualización local (opcional)
 
-The site is static. Serve the root folder with any static server (the data are loaded with `fetch()`, so opening the HTML files directly will not work):
+La versión publicada está disponible en [GitHub Pages](https://isabel-mm.github.io/GLiCor). Para previsualizar una copia de los archivos en local, inicia un servidor estático desde la carpeta `docs/`:
 
 ```bash
 python3 -m http.server 8000
 ```
 
-Then visit `http://localhost:8000`.
+Abre después <http://localhost:8000>. El servidor es necesario porque el glosario carga sus datos JSON mediante `fetch()`.
 
-## Author
+## Autoría y cita
 
-**Isabel Moyano Moreno**  
-Universidad de Cádiz  
+**Isabel Moyano Moreno** · Universidad de Cádiz<br>
 [isabel.moyano@uca.es](mailto:isabel.moyano@uca.es) · [ORCID 0000-0003-4284-8897](https://orcid.org/0000-0003-4284-8897)
 
-## Citation
-
-```
-Moyano Moreno, I. (2026). GLiCor: Glosario de Lingüística de Corpus. Universidad de Cádiz.
-```
+> Moyano Moreno, I. (2026). *GLiCor: Glosario de Lingüística de Corpus*. Universidad de Cádiz.
