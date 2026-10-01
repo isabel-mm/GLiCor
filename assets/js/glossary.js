@@ -399,21 +399,16 @@ function setSearchMode(mode, btn) {
 }
 
 // Sin resultados: enlaza con el formulario de propuestas y le pasa lo buscado
-// ── Ejemplo del corpus (K1): una cita cada vez, con «Otro ejemplo» ──
+// ── Contextos del corpus (K1): una cita cada vez ──
 const EXAMPLES = {};   // slug → [{ html, cite }]
 const escHtml = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 
-// Recorta la concordancia a la oración que contiene el término; «…» si empieza o acaba fuera del fragmento
+// Muestra toda la ventana de concordancia disponible, sin cortar oraciones.
 function exampleSentence(c) {
-  const l = c.left.replace(/^…\s*/, ''), r = c.right.replace(/\s*…$/, '');
-  const ls = l.split(/(?<=[.!?:])\s+/);
-  const left = ls[ls.length - 1];
-  const rm = r.match(/^[^.!?]*[.!?]?/);
-  let right = rm ? rm[0] : r;
-  const pre = ls.length === 1 ? '…' : '';
-  const post = /[.!?]$/.test(right.trim()) ? '' : '…';
-  if (post) right = right.replace(/\s+\S*$/, '');
-  return `${pre}${escHtml(left)}<mark class="ctx-mark">${escHtml(c.keyword)}</mark>${escHtml(right)}${post}`;
+  // Los fragmentos de concordancia pueden empezar o acabar dentro de una palabra.
+  const left = c.left.replace(/^…\S*/, '…').replace(/^…\s*/, '');
+  const right = c.right.replace(/\s*\S*…$/, '…').replace(/\s*…$/, '');
+  return `${/^…/.test(c.left) ? '… ' : ''}${escHtml(left)}<mark class="ctx-mark">${escHtml(c.keyword)}</mark>${escHtml(right)}${/…$/.test(c.right) ? '…' : ''}`;
 }
 
 function exampleHtml(slug, i) {
@@ -421,9 +416,8 @@ function exampleHtml(slug, i) {
   const ex = list[i];
   return `<p class="example-q">«${ex.html}»</p>
     <div class="example-foot">
-      <span class="example-cite">${ex.cite}${list.length > 1 ? ` · ${i + 1}/${list.length}` : ''}</span>
-      ${list.length > 1 ? `<span class="example-nav"><span class="example-dots">${list.map((_, j) => `<i class="${j === i ? 'on' : ''}"></i>`).join('')}</span>
-        <button type="button" class="example-next" onclick="nextExample('${slug}')">${lang === 'es' ? 'Otro ejemplo' : 'Another example'} ↻</button></span>` : ''}
+      <span class="example-cite">${ex.cite}</span>
+      ${list.length > 1 ? `<button type="button" class="example-next" onclick="nextExample('${slug}')">${lang === 'es' ? 'Otro contexto' : 'Another context'} ↻</button>` : ''}
     </div>`;
 }
 
@@ -655,7 +649,8 @@ function renderEntries(list) {
         definitionText = searchMode === 'en' ? enMatch[1] : esMatch[1];
         cleanHtml = before + afterEs;
     }
-    const contextPart = contextHtml(e, lang, searchMode);
+    // La tarjeta de concordancia es el único contexto de uso que se muestra.
+    const contextPart = '';
     const notePart = termNoteHtml(e, lang, searchMode);
 
     // 2. Términos relacionados como tags clicables
@@ -701,12 +696,24 @@ function renderEntries(list) {
     // Ejemplos del corpus: de la lengua de búsqueda o, si no hay, de la otra
     const examplesFor = lng => {
       const seen = new Set();
-      return [e.slug, ...(e.aliases || [])].flatMap(s => (ALL_CONCORDANCES[s] || {})[lng] || [])
-        .filter(c => { const k = c.left + c.keyword + c.right; if (seen.has(k)) return false; seen.add(k); return true; });
+      const selected = (e.contexts || {})[lng];
+      const contexts = [];
+      if (selected && ['definitorio', 'uso'].includes(selected.type) && selected.text) {
+        contexts.push({ text: selected.text, source: selected.source });
+        seen.add(selected.text.replace(/\s+/g, ' ').trim());
+      }
+      const concordances = [e.slug, ...(e.aliases || [])].flatMap(s => (ALL_CONCORDANCES[s] || {})[lng] || []);
+      concordances.forEach(c => {
+        const text = `${c.left}${c.keyword}${c.right}`.replace(/[.…]+/g, ' ').replace(/\s+/g, ' ').trim();
+        if (seen.has(text)) return;
+        seen.add(text);
+        contexts.push(c);
+      });
+      return contexts;
     };
-    let exampleLang = activeLang;
-    let exampleData = examplesFor(activeLang);
-    if (!exampleData.length) { exampleLang = activeLang === 'es' ? 'en' : 'es'; exampleData = examplesFor(exampleLang); }
+    const examplesByLang = { es: examplesFor('es'), en: examplesFor('en') };
+    const exampleLang = examplesByLang[activeLang].length ? activeLang : (activeLang === 'es' ? 'en' : 'es');
+    const exampleData = examplesByLang[exampleLang];
 
     // Si la ficha no incluye referencias bibliográficas, usar las fuentes de sus
     // concordancias. Para recursos, el sitio oficial también documenta la ficha.
@@ -830,11 +837,17 @@ function renderEntries(list) {
     const definitionLabel = lang === 'es' ? 'Definición' : 'Definition';
     let exampleBlock = '';
     if (exampleData.length && !isEntity) {
-      EXAMPLES[e.slug] = exampleData.map(c => ({ html: exampleSentence(c), cite: shortCite(c.source) }));
-      const subName = lang === 'es'
-        ? (exampleLang === 'es' ? 'subcorpus español' : 'subcorpus inglés')
-        : (exampleLang === 'es' ? 'Spanish subcorpus' : 'English subcorpus');
-      exampleBlock = `<h3>${lang === 'es' ? 'Ejemplo del corpus' : 'Corpus example'} <span class="context-lang">(${subName})</span></h3>
+      EXAMPLES[e.slug] = exampleData.map(c => ({
+        html: c.text ? markForms(escHtml(c.text), e, exampleLang) : exampleSentence(c),
+        cite: shortCite(c.source),
+      }));
+      const contextInfoLabel = lang === 'es' ? 'Información sobre los contextos' : 'About the contexts';
+      const contextInfo = lang === 'es'
+        ? 'Se priorizan los contextos definitorios y, si no los hay, se muestran contextos de uso.'
+        : 'Defining contexts are prioritized; if none are available, usage contexts are shown.';
+      exampleBlock = `<div class="def-head"><h3>${lang === 'es' ? 'Contextos de uso' : 'Usage contexts'}</h3>
+          <span class="def-info"><button type="button" class="info-btn" aria-label="${contextInfoLabel}" onclick="this.parentElement.classList.toggle('open')">i</button>
+            <span class="info-pop">${contextInfo}</span></span></div>
         <div class="example-box" id="example-${e.slug}" data-i="0">${exampleHtml(e.slug, 0)}</div>`;
     }
 
