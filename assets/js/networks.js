@@ -12,13 +12,23 @@ const CATEGORY_CLASS = {
   'Estadística y léxico': 'cat-est',
   'Procesamiento lingüístico': 'cat-proc',
   'Tecnología y formatos': 'cat-tec',
+  'Recursos y corpus': 'cat-cor',
+  'Herramientas y software': 'cat-her',
+  'Anotación y procesamiento lingüístico': 'cat-her',
+  'Estándares y formatos técnicos': 'cat-std',
 };
+// Colores de la leyenda (términos y los tres tipos de recurso)
 const CATEGORY_COLORS = {
   'Metodología y diseño': 'var(--c-met)',
   'Estadística y léxico': 'var(--c-est)',
   'Procesamiento lingüístico': 'var(--c-proc)',
   'Tecnología y formatos': 'var(--c-tec)',
+  'Recursos y corpus': 'var(--c-cor)',
+  'Herramientas y software': 'var(--c-her)',
+  'Estándares y formatos técnicos': 'var(--c-std)',
 };
+const COLOR_OF_CLASS = { 'cat-met': 'var(--c-met)', 'cat-est': 'var(--c-est)', 'cat-proc': 'var(--c-proc)', 'cat-tec': 'var(--c-tec)',
+  'cat-cor': 'var(--c-cor)', 'cat-her': 'var(--c-her)', 'cat-std': 'var(--c-std)' };
 const T = {
   es: {
     search: 'Buscar término o recurso…', open: 'Abrir ficha ↗', relations: 'Se relaciona con', mentioned: 'También la mencionan',
@@ -47,7 +57,8 @@ const $ = id => document.getElementById(id);
 const nameKey = s => String(s).toLowerCase().replace(/[^a-z0-9áéíóúüñ]+/g, '_').replace(/^_+|_+$/g, '');
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const label = slug => { const e = BY_SLUG[slug]; return e ? (networkLang === 'es' ? e.term_es : e.term_en) : slug; };
-const color = slug => { const e = BY_SLUG[slug]; return e.type === 'entity' ? 'var(--c-rec)' : (CATEGORY_COLORS[e.category] || '#94a3b8'); };
+const catClass = e => CATEGORY_CLASS[e.category] || (e.type === 'entity' ? 'cat-cor' : '');
+const color = slug => COLOR_OF_CLASS[catClass(BY_SLUG[slug])] || '#94a3b8';
 const category = slug => { const e = BY_SLUG[slug]; return networkLang === 'es' ? e.category : e.category_en; };
 
 function buildGraph(entries) {
@@ -172,7 +183,7 @@ function renderSide(hiddenIn) {
   const outSet = new Set(OUT[center].map(r => r.to));
   const incoming = IN[center].filter(r => !outSet.has(r.from));
   $('network-side').innerHTML = `
-    <span class="cat-badge ${e.type === 'entity' ? 'cat-rec' : (CATEGORY_CLASS[e.category] || '')}">${esc(category(center))}</span>
+    <span class="cat-badge ${catClass(e)}">${esc(category(center))}</span>
     <h2><span class="br">[</span>${esc(label(center))}<span class="br">]</span></h2>
     <p class="equiv">${other && other !== label(center) ? esc(other) : ''}</p>
     <p class="def">${esc(definition(center))}</p>
@@ -210,7 +221,6 @@ function renderLegend() {
     return `<span><i style="background:${c}"></i>${esc(networkLang === 'es' ? es : (sample ? sample.category_en : es))}</span>`;
   }).join('');
   $('network-legend').innerHTML = cats
-    + `<span><i style="background:var(--c-rec)"></i>${t.legendRes}</span>`
     + `<span><i class="line"></i>${t.legendOut}</span><span><i class="line dash"></i>${t.legendIn}</span>`;
 }
 
@@ -268,11 +278,14 @@ function exportSvg() {
   const legend = Object.entries(CATEGORY_COLORS).map(([es, c]) => {
     const sample = Object.values(BY_SLUG).find(e => e.category === es);
     return [networkLang === 'es' ? es : (sample ? sample.category_en : es), root.getPropertyValue(c.slice(4, -1)).trim()];
-  }).concat([[t.legendRes, root.getPropertyValue('--c-rec').trim()]]);
-  let x = 40;
+  });
+  // La leyenda pasa a una segunda fila si no cabe en una
+  let x = 40, y = 744;
   const legendSvg = legend.map(([name, col]) => {
-    const item = `<circle cx="${x + 6}" cy="752" r="6" fill="${col}"/><text x="${x + 18}" y="757" font-family="Avenir Next, Helvetica, Arial, sans-serif" font-size="14" fill="#475569">${esc(name)}</text>`;
-    x += 32 + name.length * 7.6;
+    const w = 32 + name.length * 7.6;
+    if (x + w > 1160) { x = 40; y += 20; }
+    const item = `<circle cx="${x + 6}" cy="${y}" r="6" fill="${col}"/><text x="${x + 18}" y="${y + 5}" font-family="Avenir Next, Helvetica, Arial, sans-serif" font-size="14" fill="#475569">${esc(name)}</text>`;
+    x += w;
     return item;
   }).join('');
   const url = location.href.split('#')[0] + '#' + center;
@@ -283,7 +296,7 @@ function exportSvg() {
   <g transform="translate(26 74) scale(0.956)">${clone.innerHTML}</g>
   <line x1="40" y1="725" x2="1160" y2="725" stroke="#e2e8f0"/>
   ${legendSvg}
-  <text x="40" y="784" font-family="Avenir Next, Helvetica, Arial, sans-serif" font-size="12" fill="#94a3b8">GLiCor: Glosario de Lingüística de Corpus · Isabel Moyano Moreno, Universidad de Cádiz · ${esc(url)}</text>
+  <text x="40" y="792" font-family="Avenir Next, Helvetica, Arial, sans-serif" font-size="12" fill="#94a3b8">GLiCor: Glosario de Lingüística de Corpus · Isabel Moyano Moreno, Universidad de Cádiz · ${esc(url)}</text>
 </svg>`;
 }
 
