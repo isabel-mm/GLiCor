@@ -275,6 +275,15 @@ async function loadGlossary() {
     buildSlugIndex();
     buildLinkIndex();
     applyLang();
+    // Permite llegar desde el glosario al índice conservando lo que se buscó.
+    if (VIEW === 'entity') {
+      const params = new URLSearchParams(window.location.search);
+      const initialQuery = params.get('q');
+      if (initialQuery) {
+        searchInput.value = initialQuery;
+        applyFilters();
+      }
+    }
     openFromHash();
   } catch (error) {
     container.innerHTML = "<p style='text-align:center'>Error al cargar datos.</p>";
@@ -388,6 +397,19 @@ function applyFilters() {
         return matchesSearch && matchesCat && matchesLetter;
     });
     renderEntries(sortEntries(filtered));
+    if (VIEW === 'term' && query.trim() && filtered.length === 0 && currentCat === 'All' && !currentLetter) {
+      const resourceMatches = EVERY_ENTRY.filter(e => (e.type || 'term') === 'entity' &&
+        [searchMode === 'es' ? e.term_es : e.term_en, ...variantForms(e, searchMode)]
+          .some(n => cleanTerm(e, n).toLowerCase().includes(query.replace(/^\s*\+\s*/, ''))));
+      if (resourceMatches.length) {
+        const msg = document.getElementById('no-results');
+        const resourceLabel = lang === 'es' ? 'recurso' : 'resource';
+        const linkLabel = lang === 'es' ? 'Buscar en el índice de recursos' : 'Search the resource index';
+        const count = resourceMatches.length;
+        msg.innerHTML = `${t('noResults')} ${lang === 'es' ? `Sí aparece como ${count} ${resourceLabel}${count === 1 ? '' : 's'}.` : `Found as ${count} ${resourceLabel}${count === 1 ? '' : 's'}.`} <a href="recursos.html?q=${encodeURIComponent(searchInput.value.trim())}">${linkLabel} →</a>`;
+        msg.style.display = 'block';
+      }
+    }
 }
 
 function setSearchMode(mode, btn) {
