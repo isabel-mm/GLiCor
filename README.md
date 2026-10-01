@@ -8,15 +8,15 @@ GLiCor es un glosario bilingüe especializado que reúne terminología de lingü
 
 ## Explorar el sitio
 
-| Sección | Contenido |
-| --- | --- |
-| [Glosario](https://isabel-mm.github.io/GLiCor) | Búsqueda de términos en español e inglés |
-| [Guía](https://isabel-mm.github.io/GLiCor/guide.html) | Cómo consultar las fichas y usar el glosario |
-| [Corpus](https://isabel-mm.github.io/GLiCor/corpus.html) | Composición y criterios del corpus |
-| [Recursos](https://isabel-mm.github.io/GLiCor/recursos.html) | Corpus, herramientas y estándares citados |
+| Sección                                                                            | Contenido                                            |
+| ----------------------------------------------------------------------------------- | ---------------------------------------------------- |
+| [Glosario](https://isabel-mm.github.io/GLiCor)                                       | Búsqueda de términos en español e inglés         |
+| [Guía](https://isabel-mm.github.io/GLiCor/guide.html)                               | Cómo consultar las fichas y usar el glosario        |
+| [Corpus](https://isabel-mm.github.io/GLiCor/corpus.html)                             | Composición y criterios del corpus                  |
+| [Recursos](https://isabel-mm.github.io/GLiCor/recursos.html)                         | Corpus, herramientas y estándares citados           |
 | [Criterios de normalización](https://isabel-mm.github.io/GLiCor/normalizacion.html) | Variantes, equivalentes y decisiones terminológicas |
-| [Estadísticas](https://isabel-mm.github.io/GLiCor/stats.html) | Cobertura y distribución de los términos |
-| [Acerca de GLiCor](https://isabel-mm.github.io/GLiCor/about.html) | Descripción y contexto del proyecto |
+| [Estadísticas](https://isabel-mm.github.io/GLiCor/stats.html)                       | Cobertura y distribución de los términos           |
+| [Acerca de GLiCor](https://isabel-mm.github.io/GLiCor/about.html)                    | Descripción y contexto del proyecto                 |
 
 ## Organización del repositorio
 
@@ -38,19 +38,9 @@ El sitio es una web estática publicada mediante **GitHub Pages**. Sus archivos 
     └── assets/               # Estilos, datos, imágenes y JavaScript
 ```
 
-## Previsualización local (opcional)
-
-La versión publicada está disponible en [GitHub Pages](https://isabel-mm.github.io/GLiCor). Para previsualizar una copia de los archivos en local, inicia un servidor estático desde la carpeta `docs/`:
-
-```bash
-python3 -m http.server 8000
-```
-
-Abre después <http://localhost:8000>. El servidor es necesario porque el glosario carga sus datos JSON mediante `fetch()`.
-
 ## Autoría y cita
 
-**Isabel Moyano Moreno** · Universidad de Cádiz<br>
+**Isabel Moyano Moreno** · Universidad de Cádiz
 [isabel.moyano@uca.es](mailto:isabel.moyano@uca.es) · [ORCID 0000-0003-4284-8897](https://orcid.org/0000-0003-4284-8897)
 
 > Moyano Moreno, I. (2026). *GLiCor: Glosario de Lingüística de Corpus*. Universidad de Cádiz.
