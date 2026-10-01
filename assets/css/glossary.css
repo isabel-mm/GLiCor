@@ -341,8 +341,8 @@ summary.entry-header::-webkit-details-marker { display: none; }
 .ctx-mark { background: linear-gradient(transparent 55%, #fbcfe8 55%); color: inherit; font-weight: 700; padding: 0 0.1rem; }
 
 /* K1: ejemplo del corpus, una cita cada vez */
-.example-box { background: rgba(255,255,255,0.7); border: 1px solid #ede9fe; border-radius: 14px; padding: 0.85rem 1.05rem; }
-.example-q { margin: 0; font-size: 0.97rem; line-height: 1.7; color: #334155; }
+.example-box { background: rgba(255,255,255,0.7); border: 1px solid #ede9fe; border-radius: 14px; padding: 1rem 1.2rem; }
+.example-q { margin: 0; font-size: 1rem; line-height: 1.8; color: #334155; }
 .example-foot { display: flex; justify-content: space-between; align-items: center; gap: 0.8rem; flex-wrap: wrap; margin-top: 0.55rem; }
 .example-cite { font-size: 0.8rem; font-weight: 600; color: #7c3aed; }
 .example-nav { display: inline-flex; align-items: center; gap: 0.6rem; }
