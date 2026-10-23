@@ -768,10 +768,10 @@ function renderEntries(list) {
     const equivLang = searchMode === 'en' ? 'es' : 'en';
     const showEquiv = equivTerm && cleanTerm(e, equivTerm).toLowerCase() !== primary.toLowerCase();
     const proposed = l => (e.proposed || {})[l];
-    const proposedLbl = lang === 'es' ? 'propuesta' : 'proposed';
+    const proposedLbl = lang === 'es' ? 'no documentado' : 'not attested';
     const proposedTitle = lang === 'es'
-      ? 'Equivalente propuesto en el glosario: no aparece en el corpus'
-      : 'Equivalent proposed by the glossary: not attested in the corpus';
+      ? 'Denominación habitual, no documentada en el corpus'
+      : 'Usual name, not attested in the corpus';
     const proposedBadge = l => proposed(l) ? ` <span class="proposed-badge" title="${proposedTitle}">${proposedLbl}</span>` : '';
     let equivHtml = '';
     if (showEquiv) {
