@@ -1943,7 +1943,7 @@
       "absorbe": [],
       "tipo": "sinonimia",
       "criterio": "No se documenta ninguna forma en el subcorpus español. Se propone «puntuación z», calco habitual en la bibliografía estadística en español; el préstamo «z-score» tampoco aparece.",
-      "criterio_en": "No form is attested in the Spanish subcorpus. «Puntuación z», the usual calque in Spanish statistical literature, is proposed; the loanword «z-score» is not attested either.",
+      "criterio_en": "No form is attested in the Spanish subcorpus. «Puntuación z», the usual calque in Spanish statistical literature, is given, marked as not attested in the corpus; the loanword «z-score» is not attested either.",
       "formas": {
         "en": [
           {
@@ -6235,8 +6235,8 @@
     }
   },
   "criterio_principal": {
-    "es": "La denominación principal de cada lengua se elige de forma automática: (1) se descartan las formas reducidas y las no documentadas; (2) en español, si hay una forma española documentada se prefiere a los préstamos; si solo está documentado el préstamo, se usa el préstamo; y si no hay ninguna forma documentada, se usa la propuesta del glosario; (3) entre una sigla y su forma desarrollada, se prefiere la sigla, que es la forma lexicalizada con la que se cita; (4) entre las demás, la que aparece en más documentos del subcorpus (dispersión, indicador de consenso entre autores); a igualdad de documentos, la más frecuente. Las excepciones se declaran en cada entrada con su motivo.",
-    "en": "The main form in each language is chosen automatically: (1) reduced and unattested forms are excluded; (2) in Spanish, an attested Spanish form is preferred over loanwords; if only the loanword is attested, the loanword is used; and if no form is attested, the glossary's proposal is used; (3) between an acronym and its full form, the acronym is preferred, as the lexicalised form used in citation; (4) among the rest, the one used in the most documents of the subcorpus (dispersion, an indicator of consensus among authors); with equal documents, the most frequent. Exceptions are declared in each entry with their reason."
+    "es": "La denominación principal de cada lengua se elige de forma automática: (1) se descartan las formas reducidas y las no documentadas; (2) en español, si hay una forma española documentada se prefiere a los préstamos; si solo está documentado el préstamo, se usa el préstamo; y si no hay ninguna forma documentada, se usa la denominación habitual, marcada como no documentada; (3) entre una sigla y su forma desarrollada, se prefiere la sigla, que es la forma lexicalizada con la que se cita; (4) entre las demás, la que aparece en más documentos del subcorpus (dispersión, indicador de consenso entre autores); a igualdad de documentos, la más frecuente. Las excepciones se declaran en cada entrada con su motivo.",
+    "en": "The main form in each language is chosen automatically: (1) reduced and unattested forms are excluded; (2) in Spanish, an attested Spanish form is preferred over loanwords; if only the loanword is attested, the loanword is used; and if no form is attested, the usual name is used, marked as not attested; (3) between an acronym and its full form, the acronym is preferred, as the lexicalised form used in citation; (4) among the rest, the one used in the most documents of the subcorpus (dispersion, an indicator of consensus among authors); with equal documents, the most frequent. Exceptions are declared in each entry with their reason."
   },
   "siglas": {
     "_nota": "Desarrollo de las siglas. Se muestra en la ficha («Sigla de…») y se cuenta como forma desarrollada. Por el criterio de la denominación principal, la sigla se mantiene como entrada.",
@@ -6459,13 +6459,13 @@
     {
       "slug": "inline_annotation",
       "forma": "codificación interna",
-      "motivo": "Aparece dos veces en Rojo («la codificación interna de los textos»), pero no está claro que designe la anotación insertada en el texto frente a la anotación externa. Se descarta; se mantiene la propuesta «anotación en línea».",
-      "motivo_en": "It appears twice in Rojo («la codificación interna de los textos»), but it is not clear that it refers to annotation embedded in the text as opposed to stand-off annotation. Discarded; the proposal «anotación en línea» is kept."
+      "motivo": "Aparece dos veces en Rojo («la codificación interna de los textos»), pero no está claro que designe la anotación insertada en el texto frente a la anotación externa. Se descarta; se mantiene «anotación en línea», marcada como no documentada.",
+      "motivo_en": "It appears twice in Rojo («la codificación interna de los textos»), but it is not clear that it refers to annotation embedded in the text as opposed to stand-off annotation. Discarded; «anotación en línea» is kept, marked as not attested."
     }
   ],
   "criterio_laguna": {
-    "es": "Hay laguna terminológica en una lengua cuando en su subcorpus no se documenta ninguna denominación propia del concepto: o no aparece ninguna forma (el glosario da entonces una propuesta, marcada como tal) o solo aparece el préstamo de la otra lengua. Es un criterio de uso: se aplica sobre el corpus, no sobre el inventario de términos validados.",
-    "en": "There is a terminological gap in a language when its subcorpus attests no native name for the concept: either no form appears (the glossary then gives a proposal, marked as such) or only the loanword from the other language appears. It is a usage criterion: it is applied to the corpus, not to the inventory of validated terms.",
+    "es": "Hay laguna terminológica en una lengua cuando en su subcorpus no se documenta ninguna denominación propia del concepto: o no aparece ninguna forma (la ficha da entonces la denominación habitual, marcada como no documentada) o solo aparece el préstamo de la otra lengua. Es un criterio de uso: se aplica sobre el corpus, no sobre el inventario de términos validados, e indica que el corpus no documenta una denominación propia, no que la lengua carezca de ella.",
+    "en": "There is a terminological gap in a language when its subcorpus attests no native name for the concept: either no form appears (the entry then gives the usual name, marked as not attested) or only the loanword from the other language appears. It is a usage criterion: it is applied to the corpus, not to the inventory of validated terms, and it shows that the corpus attests no native name, not that the language lacks one.",
     "fecha": "2026-09-23",
     "excluye": "Las siglas internacionales, los nombres propios de estándares y los términos latinos compartidos por las dos lenguas (corpus, subcorpus, KWIC, XML, HTML, SGML, TEI, UTF-8, Unicode, EAGLES, Universal Dependencies, Universal POS) no se consideran préstamos."
   },
