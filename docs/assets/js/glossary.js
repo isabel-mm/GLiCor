@@ -879,7 +879,8 @@ function renderEntries(list) {
     // Denominaciones (C5): si hay variación, un desplegable bajo el equivalente con barras de
     // frecuencia de cada forma y un botón que abre el comparador completo en una ventana
     const L = lang === 'es';
-    const nVar = ['es', 'en'].reduce((k, l) => k + Math.max(0, ((e.forms || {})[l] || []).length - 1), 0);
+    // los recursos son nombres propios: sin variación denominativa (la sigla se desarrolla aparte)
+    const nVar = isEntity ? 0 : ['es', 'en'].reduce((k, l) => k + Math.max(0, ((e.forms || {})[l] || []).length - 1), 0);
     let denomBlock = '', denomModal = '';
     if (nVar) {
       const modalId = `dnm-${e.slug}`;
