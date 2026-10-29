@@ -44,3 +44,7 @@ El sitio es una web estática publicada mediante **GitHub Pages**. Sus archivos 
 [isabel.moyano@uca.es](mailto:isabel.moyano@uca.es) · [ORCID 0000-0003-4284-8897](https://orcid.org/0000-0003-4284-8897)
 
 > Moyano Moreno, I. (2026). *GLiCor: Glosario de Lingüística de Corpus*. Universidad de Cádiz.
+
+## Licencia
+
+El contenido del glosario se publica con licencia [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.es), y el código, con licencia MIT. Los contextos y las concordancias son citas breves de las obras del corpus, cuyos derechos corresponden a sus autores. Véase [`LICENSE.md`](LICENSE.md).
