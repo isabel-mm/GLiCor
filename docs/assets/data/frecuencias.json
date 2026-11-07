@@ -2,24 +2,24 @@
  "descripcion": "Frecuencias de cada entrada, generadas por _dev/recount_variants.py. No editar a mano. En cada lengua, la primera forma es la denominación principal.",
  "metodo": "Coincidencia exacta, sin distinguir mayúsculas (ni tildes en español), con límites de palabra, saltos de línea normalizados y sin solapamientos dentro de cada entrada. Tamaño del subcorpus: tokens de spaCy sin espacios.",
  "tokens": {
-  "en": 1448282,
-  "es": 954942
+  "en": 1332485,
+  "es": 851916
  },
  "entradas": {
   "bnc": {
    "en": {
-    "total": 877,
-    "docs": 25,
+    "total": 812,
+    "docs": 23,
     "formas": [
      {
       "forma": "BNC",
       "relacion": "sigla",
-      "n": 765,
+      "n": 732,
       "docs": 21,
       "cadenas": [
        {
         "cadena": "BNC",
-        "n": 765
+        "n": 732
        }
       ],
       "principal": true
@@ -27,30 +27,30 @@
      {
       "forma": "British National Corpus",
       "relacion": "forma_desarrollada",
-      "n": 112,
-      "docs": 23,
+      "n": 80,
+      "docs": 19,
       "cadenas": [
        {
         "cadena": "British National Corpus",
-        "n": 112
+        "n": 80
        }
       ]
      }
     ]
    },
    "es": {
-    "total": 60,
-    "docs": 14,
+    "total": 53,
+    "docs": 13,
     "formas": [
      {
       "forma": "BNC",
       "relacion": "sigla",
-      "n": 39,
-      "docs": 11,
+      "n": 35,
+      "docs": 10,
       "cadenas": [
        {
         "cadena": "BNC",
-        "n": 39
+        "n": 35
        }
       ],
       "principal": true
@@ -58,12 +58,12 @@
      {
       "forma": "British National Corpus",
       "relacion": "forma_desarrollada",
-      "n": 20,
-      "docs": 10,
+      "n": 17,
+      "docs": 8,
       "cadenas": [
        {
         "cadena": "British National Corpus",
-        "n": 20
+        "n": 17
        }
       ]
      },
@@ -84,18 +84,18 @@
   },
   "coca": {
    "en": {
-    "total": 303,
+    "total": 284,
     "docs": 12,
     "formas": [
      {
       "forma": "COCA",
       "relacion": "sigla",
-      "n": 259,
+      "n": 253,
       "docs": 12,
       "cadenas": [
        {
         "cadena": "COCA",
-        "n": 259
+        "n": 253
        }
       ],
       "principal": true
@@ -103,12 +103,12 @@
      {
       "forma": "Corpus of Contemporary American English",
       "relacion": "forma_desarrollada",
-      "n": 44,
+      "n": 31,
       "docs": 9,
       "cadenas": [
        {
         "cadena": "Corpus of Contemporary American English",
-        "n": 44
+        "n": 31
        }
       ]
      }
@@ -164,18 +164,18 @@
   },
   "lob": {
    "en": {
-    "total": 302,
+    "total": 289,
     "docs": 12,
     "formas": [
      {
       "forma": "LOB",
       "relacion": "sigla",
-      "n": 170,
+      "n": 165,
       "docs": 11,
       "cadenas": [
        {
         "cadena": "LOB",
-        "n": 170
+        "n": 165
        }
       ],
       "principal": true
@@ -183,24 +183,24 @@
      {
       "forma": "LOB Corpus",
       "relacion": "forma_extendida",
-      "n": 115,
-      "docs": 7,
+      "n": 111,
+      "docs": 6,
       "cadenas": [
        {
         "cadena": "LOB Corpus",
-        "n": 115
+        "n": 111
        }
       ]
      },
      {
       "forma": "Lancaster-Oslo/Bergen Corpus",
       "relacion": "forma_desarrollada",
-      "n": 17,
-      "docs": 9,
+      "n": 13,
+      "docs": 8,
       "cadenas": [
        {
         "cadena": "Lancaster-Oslo/Bergen Corpus",
-        "n": 8
+        "n": 4
        },
        {
         "cadena": "Lancaster-Oslo/Bergen",
@@ -235,18 +235,18 @@
     ]
    },
    "es": {
-    "total": 25,
+    "total": 22,
     "docs": 8,
     "formas": [
      {
       "forma": "LOB",
       "relacion": "sigla",
-      "n": 13,
+      "n": 11,
       "docs": 7,
       "cadenas": [
        {
         "cadena": "LOB",
-        "n": 13
+        "n": 11
        },
        {
         "cadena": "LOB Corpus",
@@ -258,12 +258,12 @@
      {
       "forma": "Lancaster-Oslo/Bergen",
       "relacion": "forma_desarrollada",
-      "n": 12,
+      "n": 11,
       "docs": 8,
       "cadenas": [
        {
         "cadena": "Lancaster-Oslo/Bergen Corpus",
-        "n": 3
+        "n": 2
        },
        {
         "cadena": "Lancaster-Oslo/Bergen",
@@ -300,18 +300,18 @@
   },
   "pos_tagging": {
    "en": {
-    "total": 165,
-    "docs": 20,
+    "total": 146,
+    "docs": 19,
     "formas": [
      {
       "forma": "POS tagging",
       "relacion": "sigla",
-      "n": 90,
-      "docs": 16,
+      "n": 87,
+      "docs": 15,
       "cadenas": [
        {
         "cadena": "POS tagging",
-        "n": 70
+        "n": 67
        },
        {
         "cadena": "POS-tagging",
@@ -323,16 +323,16 @@
      {
       "forma": "part-of-speech tagging",
       "relacion": "forma_desarrollada",
-      "n": 75,
-      "docs": 15,
+      "n": 59,
+      "docs": 12,
       "cadenas": [
        {
         "cadena": "part-of-speech tagging",
-        "n": 70
+        "n": 55
        },
        {
         "cadena": "part of speech tagging",
-        "n": 5
+        "n": 4
        }
       ]
      }
@@ -372,22 +372,22 @@
   },
   "speech_corpus": {
    "en": {
-    "total": 305,
-    "docs": 20,
+    "total": 284,
+    "docs": 19,
     "formas": [
      {
       "forma": "spoken corpus",
       "relacion": "sinonimo",
-      "n": 116,
-      "docs": 20,
+      "n": 101,
+      "docs": 19,
       "cadenas": [
        {
         "cadena": "spoken corpus",
-        "n": 58
+        "n": 49
        },
        {
         "cadena": "spoken corpora",
-        "n": 58
+        "n": 52
        }
       ],
       "principal": true
@@ -395,16 +395,16 @@
      {
       "forma": "speech corpus",
       "relacion": "sinonimo",
-      "n": 189,
-      "docs": 6,
+      "n": 183,
+      "docs": 5,
       "cadenas": [
        {
         "cadena": "speech corpus",
-        "n": 120
+        "n": 117
        },
        {
         "cadena": "speech corpora",
-        "n": 69
+        "n": 66
        }
       ],
       "consolidada": true
@@ -412,22 +412,22 @@
     ]
    },
    "es": {
-    "total": 236,
-    "docs": 23,
+    "total": 210,
+    "docs": 22,
     "formas": [
      {
       "forma": "corpus oral",
       "relacion": "lema",
-      "n": 236,
-      "docs": 23,
+      "n": 210,
+      "docs": 22,
       "cadenas": [
        {
         "cadena": "corpus oral",
-        "n": 117
+        "n": 98
        },
        {
         "cadena": "corpus orales",
-        "n": 119
+        "n": 112
        }
       ],
       "principal": true
@@ -437,18 +437,18 @@
   },
   "corpus_building": {
    "en": {
-    "total": 127,
+    "total": 123,
     "docs": 17,
     "formas": [
      {
       "forma": "corpus compilation",
       "relacion": "sinonimo",
-      "n": 41,
-      "docs": 16,
+      "n": 37,
+      "docs": 15,
       "cadenas": [
        {
         "cadena": "corpus compilation",
-        "n": 41
+        "n": 37
        }
       ],
       "principal": true
@@ -469,18 +469,18 @@
     ]
    },
    "es": {
-    "total": 59,
-    "docs": 22,
+    "total": 55,
+    "docs": 20,
     "formas": [
      {
       "forma": "construcción de corpus",
       "relacion": "sinonimo",
-      "n": 36,
-      "docs": 15,
+      "n": 35,
+      "docs": 14,
       "cadenas": [
        {
         "cadena": "construcción de corpus",
-        "n": 36
+        "n": 35
        }
       ],
       "principal": true
@@ -488,12 +488,12 @@
      {
       "forma": "compilación de corpus",
       "relacion": "sinonimo",
-      "n": 23,
-      "docs": 12,
+      "n": 20,
+      "docs": 9,
       "cadenas": [
        {
         "cadena": "compilación de corpus",
-        "n": 23
+        "n": 20
        }
       ],
       "consolidada": true
@@ -503,18 +503,18 @@
   },
   "raw_frequency": {
    "en": {
-    "total": 51,
+    "total": 50,
     "docs": 8,
     "formas": [
      {
       "forma": "raw frequency",
       "relacion": "sinonimo",
-      "n": 35,
+      "n": 34,
       "docs": 7,
       "cadenas": [
        {
         "cadena": "raw frequency",
-        "n": 10
+        "n": 9
        },
        {
         "cadena": "raw frequencies",
@@ -543,18 +543,18 @@
     ]
    },
    "es": {
-    "total": 58,
+    "total": 57,
     "docs": 11,
     "formas": [
      {
       "forma": "frecuencia absoluta",
       "relacion": "sinonimo",
-      "n": 53,
+      "n": 52,
       "docs": 10,
       "cadenas": [
        {
         "cadena": "frecuencia absoluta",
-        "n": 36
+        "n": 35
        },
        {
         "cadena": "frecuencias absolutas",
@@ -585,7 +585,7 @@
   },
   "inter_annotator_agreement": {
    "en": {
-    "total": 36,
+    "total": 33,
     "docs": 6,
     "formas": [
      {
@@ -612,12 +612,12 @@
      {
       "forma": "inter-rater reliability",
       "relacion": "sinonimo",
-      "n": 14,
+      "n": 11,
       "docs": 2,
       "cadenas": [
        {
         "cadena": "inter-rater reliability",
-        "n": 1
+        "n": 0
        },
        {
         "cadena": "inter rater reliability",
@@ -625,7 +625,7 @@
        },
        {
         "cadena": "interrater reliability",
-        "n": 13
+        "n": 11
        }
       ],
       "consolidada": true
@@ -633,7 +633,7 @@
     ]
    },
    "es": {
-    "total": 9,
+    "total": 7,
     "docs": 3,
     "formas": [
      {
@@ -656,37 +656,37 @@
      {
       "forma": "inter-annotator agreement",
       "relacion": "prestamo",
-      "n": 3,
-      "docs": 2,
+      "n": 1,
+      "docs": 1,
       "cadenas": [
        {
         "cadena": "inter-annotator agreement",
-        "n": 3
+        "n": 1
        }
       ],
-      "consolidada": true
+      "consolidada": false
      }
     ]
    }
   },
   "word_class": {
    "en": {
-    "total": 163,
-    "docs": 19,
+    "total": 160,
+    "docs": 18,
     "formas": [
      {
       "forma": "part of speech",
       "relacion": "sinonimo",
-      "n": 76,
-      "docs": 16,
+      "n": 73,
+      "docs": 15,
       "cadenas": [
        {
         "cadena": "part of speech",
-        "n": 38
+        "n": 37
        },
        {
         "cadena": "parts of speech",
-        "n": 38
+        "n": 36
        }
       ],
       "principal": true
@@ -711,13 +711,13 @@
     ]
    },
    "es": {
-    "total": 227,
+    "total": 225,
     "docs": 19,
     "formas": [
      {
       "forma": "categoría gramatical",
       "relacion": "sinonimo",
-      "n": 91,
+      "n": 89,
       "docs": 15,
       "cadenas": [
        {
@@ -726,7 +726,7 @@
        },
        {
         "cadena": "categorías gramaticales",
-        "n": 55
+        "n": 53
        }
       ],
       "principal": true
@@ -761,22 +761,22 @@
   },
   "frequency_list": {
    "en": {
-    "total": 312,
+    "total": 299,
     "docs": 23,
     "formas": [
      {
       "forma": "word list",
       "relacion": "sinonimo",
-      "n": 117,
+      "n": 108,
       "docs": 18,
       "cadenas": [
        {
         "cadena": "word list",
-        "n": 48
+        "n": 44
        },
        {
         "cadena": "word lists",
-        "n": 40
+        "n": 36
        },
        {
         "cadena": "wordlist",
@@ -784,7 +784,7 @@
        },
        {
         "cadena": "wordlists",
-        "n": 17
+        "n": 16
        }
       ],
       "principal": true
@@ -792,16 +792,16 @@
      {
       "forma": "frequency list",
       "relacion": "sinonimo",
-      "n": 195,
+      "n": 191,
       "docs": 15,
       "cadenas": [
        {
         "cadena": "frequency list",
-        "n": 99
+        "n": 96
        },
        {
         "cadena": "frequency lists",
-        "n": 96
+        "n": 95
        }
       ],
       "consolidada": true
@@ -809,18 +809,18 @@
     ]
    },
    "es": {
-    "total": 140,
+    "total": 139,
     "docs": 23,
     "formas": [
      {
       "forma": "lista de frecuencias",
       "relacion": "sinonimo",
-      "n": 83,
+      "n": 82,
       "docs": 17,
       "cadenas": [
        {
         "cadena": "lista de frecuencias",
-        "n": 25
+        "n": 24
        },
        {
         "cadena": "listas de frecuencias",
@@ -876,22 +876,22 @@
   },
   "query": {
    "en": {
-    "total": 559,
+    "total": 551,
     "docs": 19,
     "formas": [
      {
       "forma": "query",
       "relacion": "sinonimo",
-      "n": 503,
+      "n": 496,
       "docs": 17,
       "cadenas": [
        {
         "cadena": "query",
-        "n": 390
+        "n": 384
        },
        {
         "cadena": "queries",
-        "n": 113
+        "n": 112
        }
       ],
       "principal": true
@@ -899,12 +899,12 @@
      {
       "forma": "corpus query",
       "relacion": "sinonimo",
-      "n": 56,
+      "n": 55,
       "docs": 8,
       "cadenas": [
        {
         "cadena": "corpus query",
-        "n": 20
+        "n": 19
        },
        {
         "cadena": "corpus queries",
@@ -916,22 +916,22 @@
     ]
    },
    "es": {
-    "total": 422,
+    "total": 402,
     "docs": 34,
     "formas": [
      {
       "forma": "consulta",
       "relacion": "sinonimo",
-      "n": 413,
+      "n": 393,
       "docs": 33,
       "cadenas": [
        {
         "cadena": "consulta",
-        "n": 342
+        "n": 323
        },
        {
         "cadena": "consultas",
-        "n": 71
+        "n": 70
        }
       ],
       "principal": true
@@ -958,22 +958,22 @@
   },
   "concordance": {
    "en": {
-    "total": 228,
+    "total": 214,
     "docs": 22,
     "formas": [
      {
       "forma": "concordance",
       "relacion": "sinonimo",
-      "n": 212,
+      "n": 198,
       "docs": 21,
       "cadenas": [
        {
         "cadena": "concordance",
-        "n": 137
+        "n": 126
        },
        {
         "cadena": "concordances",
-        "n": 75
+        "n": 72
        }
       ],
       "principal": true
@@ -998,22 +998,22 @@
     ]
    },
    "es": {
-    "total": 352,
+    "total": 345,
     "docs": 32,
     "formas": [
      {
       "forma": "concordancia",
       "relacion": "sinonimo",
-      "n": 346,
+      "n": 339,
       "docs": 32,
       "cadenas": [
        {
         "cadena": "concordancia",
-        "n": 64
+        "n": 58
        },
        {
         "cadena": "concordancias",
-        "n": 282
+        "n": 281
        }
       ],
       "principal": true
@@ -1040,13 +1040,13 @@
   },
   "hapax_legomenon": {
    "en": {
-    "total": 158,
+    "total": 156,
     "docs": 8,
     "formas": [
      {
       "forma": "hapax legomenon",
       "relacion": "forma_completa",
-      "n": 75,
+      "n": 73,
       "docs": 7,
       "cadenas": [
        {
@@ -1055,7 +1055,7 @@
        },
        {
         "cadena": "hapax legomena",
-        "n": 66
+        "n": 64
        }
       ],
       "principal": true
@@ -1083,18 +1083,18 @@
     ]
    },
    "es": {
-    "total": 30,
+    "total": 29,
     "docs": 2,
     "formas": [
      {
       "forma": "hápax",
       "relacion": "reduccion",
-      "n": 30,
+      "n": 29,
       "docs": 2,
       "cadenas": [
        {
         "cadena": "hápax",
-        "n": 30
+        "n": 29
        },
        {
         "cadena": "hapax",
@@ -1262,13 +1262,13 @@
   },
   "lexical_bundle": {
    "en": {
-    "total": 46,
+    "total": 42,
     "docs": 5,
     "formas": [
      {
       "forma": "lexical bundle",
       "relacion": "lema",
-      "n": 46,
+      "n": 42,
       "docs": 5,
       "cadenas": [
        {
@@ -1277,7 +1277,7 @@
        },
        {
         "cadena": "lexical bundles",
-        "n": 43
+        "n": 39
        }
       ],
       "principal": true
@@ -1285,14 +1285,14 @@
     ]
    },
    "es": {
-    "total": 1,
-    "docs": 1,
+    "total": 0,
+    "docs": 0,
     "formas": [
      {
       "forma": "grupo léxico",
       "relacion": "lema",
-      "n": 1,
-      "docs": 1,
+      "n": 0,
+      "docs": 0,
       "cadenas": [
        {
         "cadena": "grupo léxico",
@@ -1300,7 +1300,7 @@
        },
        {
         "cadena": "grupos léxicos",
-        "n": 1
+        "n": 0
        }
       ],
       "principal": true
@@ -1310,13 +1310,13 @@
   },
   "association_measure": {
    "en": {
-    "total": 97,
+    "total": 92,
     "docs": 6,
     "formas": [
      {
       "forma": "association measure",
       "relacion": "lema",
-      "n": 97,
+      "n": 92,
       "docs": 6,
       "cadenas": [
        {
@@ -1325,7 +1325,7 @@
        },
        {
         "cadena": "association measures",
-        "n": 76
+        "n": 71
        }
       ],
       "principal": true
@@ -1358,22 +1358,22 @@
   },
   "annotation_tool": {
    "en": {
-    "total": 51,
-    "docs": 8,
+    "total": 47,
+    "docs": 7,
     "formas": [
      {
       "forma": "annotation tool",
       "relacion": "lema",
-      "n": 51,
-      "docs": 8,
+      "n": 47,
+      "docs": 7,
       "cadenas": [
        {
         "cadena": "annotation tool",
-        "n": 12
+        "n": 11
        },
        {
         "cadena": "annotation tools",
-        "n": 39
+        "n": 36
        }
       ],
       "principal": true
@@ -1494,18 +1494,18 @@
   },
   "metadata": {
    "en": {
-    "total": 240,
+    "total": 238,
     "docs": 24,
     "formas": [
      {
       "forma": "metadata",
       "relacion": "lema",
-      "n": 240,
+      "n": 238,
       "docs": 24,
       "cadenas": [
        {
         "cadena": "metadata",
-        "n": 240
+        "n": 238
        }
       ],
       "principal": true
@@ -1513,13 +1513,13 @@
     ]
    },
    "es": {
-    "total": 96,
+    "total": 95,
     "docs": 21,
     "formas": [
      {
       "forma": "metadato",
       "relacion": "lema",
-      "n": 96,
+      "n": 95,
       "docs": 21,
       "cadenas": [
        {
@@ -1528,7 +1528,7 @@
        },
        {
         "cadena": "metadatos",
-        "n": 94
+        "n": 93
        }
       ],
       "principal": true
@@ -1538,22 +1538,22 @@
   },
   "annotation": {
    "en": {
-    "total": 1662,
-    "docs": 38,
+    "total": 1569,
+    "docs": 37,
     "formas": [
      {
       "forma": "annotation",
       "relacion": "sinonimo",
-      "n": 1543,
-      "docs": 38,
+      "n": 1466,
+      "docs": 37,
       "cadenas": [
        {
         "cadena": "annotation",
-        "n": 1332
+        "n": 1259
        },
        {
         "cadena": "annotations",
-        "n": 211
+        "n": 207
        }
       ],
       "principal": true
@@ -1561,12 +1561,12 @@
      {
       "forma": "corpus annotation",
       "relacion": "sinonimo",
-      "n": 119,
-      "docs": 16,
+      "n": 103,
+      "docs": 14,
       "cadenas": [
        {
         "cadena": "corpus annotation",
-        "n": 108
+        "n": 92
        },
        {
         "cadena": "corpus annotations",
@@ -1578,18 +1578,18 @@
     ]
    },
    "es": {
-    "total": 643,
-    "docs": 38,
+    "total": 617,
+    "docs": 36,
     "formas": [
      {
       "forma": "anotación",
       "relacion": "sinonimo",
-      "n": 606,
-      "docs": 37,
+      "n": 583,
+      "docs": 35,
       "cadenas": [
        {
         "cadena": "anotación",
-        "n": 545
+        "n": 522
        },
        {
         "cadena": "anotaciones",
@@ -1601,12 +1601,12 @@
      {
       "forma": "anotación de corpus",
       "relacion": "sinonimo",
-      "n": 37,
-      "docs": 13,
+      "n": 34,
+      "docs": 11,
       "cadenas": [
        {
         "cadena": "anotación de corpus",
-        "n": 27
+        "n": 24
        },
        {
         "cadena": "anotaciones de corpus",
@@ -1628,18 +1628,18 @@
   },
   "corpus_based": {
    "en": {
-    "total": 370,
-    "docs": 38,
+    "total": 262,
+    "docs": 33,
     "formas": [
      {
       "forma": "corpus-based",
       "relacion": "lema",
-      "n": 370,
-      "docs": 38,
+      "n": 262,
+      "docs": 33,
       "cadenas": [
        {
         "cadena": "corpus-based",
-        "n": 370
+        "n": 262
        }
       ],
       "principal": true
@@ -1647,30 +1647,30 @@
     ]
    },
    "es": {
-    "total": 215,
-    "docs": 36,
+    "total": 143,
+    "docs": 30,
     "formas": [
      {
       "forma": "basado en corpus",
       "relacion": "sinonimo",
-      "n": 120,
-      "docs": 28,
+      "n": 108,
+      "docs": 27,
       "cadenas": [
        {
         "cadena": "basado en corpus",
-        "n": 28
+        "n": 22
        },
        {
         "cadena": "basada en corpus",
-        "n": 35
+        "n": 33
        },
        {
         "cadena": "basados en corpus",
-        "n": 46
+        "n": 44
        },
        {
         "cadena": "basadas en corpus",
-        "n": 11
+        "n": 9
        }
       ],
       "principal": true
@@ -1678,12 +1678,12 @@
      {
       "forma": "corpus-based",
       "relacion": "prestamo",
-      "n": 95,
-      "docs": 27,
+      "n": 35,
+      "docs": 14,
       "cadenas": [
        {
         "cadena": "corpus-based",
-        "n": 95
+        "n": 35
        }
       ],
       "consolidada": true
@@ -1693,18 +1693,18 @@
   },
   "corpus_driven": {
    "en": {
-    "total": 29,
-    "docs": 8,
+    "total": 15,
+    "docs": 6,
     "formas": [
      {
       "forma": "corpus-driven",
       "relacion": "lema",
-      "n": 29,
-      "docs": 8,
+      "n": 15,
+      "docs": 6,
       "cadenas": [
        {
         "cadena": "corpus-driven",
-        "n": 29
+        "n": 15
        }
       ],
       "principal": true
@@ -1712,13 +1712,13 @@
     ]
    },
    "es": {
-    "total": 19,
-    "docs": 7,
+    "total": 14,
+    "docs": 6,
     "formas": [
      {
       "forma": "guiado por corpus",
       "relacion": "sinonimo",
-      "n": 8,
+      "n": 7,
       "docs": 3,
       "cadenas": [
        {
@@ -1727,7 +1727,7 @@
        },
        {
         "cadena": "guiada por corpus",
-        "n": 3
+        "n": 2
        },
        {
         "cadena": "guiados por corpus",
@@ -1743,12 +1743,12 @@
      {
       "forma": "corpus-driven",
       "relacion": "prestamo",
-      "n": 11,
-      "docs": 7,
+      "n": 7,
+      "docs": 6,
       "cadenas": [
        {
         "cadena": "corpus-driven",
-        "n": 11
+        "n": 7
        }
       ],
       "consolidada": true
@@ -1758,22 +1758,22 @@
   },
   "keyword": {
    "en": {
-    "total": 686,
-    "docs": 22,
+    "total": 668,
+    "docs": 21,
     "formas": [
      {
       "forma": "keyword",
       "relacion": "lema",
-      "n": 686,
-      "docs": 22,
+      "n": 668,
+      "docs": 21,
       "cadenas": [
        {
         "cadena": "keyword",
-        "n": 293
+        "n": 282
        },
        {
         "cadena": "keywords",
-        "n": 393
+        "n": 386
        }
       ],
       "excluye": [
@@ -1785,22 +1785,22 @@
     ]
    },
    "es": {
-    "total": 96,
-    "docs": 20,
+    "total": 92,
+    "docs": 18,
     "formas": [
      {
       "forma": "palabra clave",
       "relacion": "sinonimo",
-      "n": 75,
-      "docs": 20,
+      "n": 71,
+      "docs": 18,
       "cadenas": [
        {
         "cadena": "palabra clave",
-        "n": 13
+        "n": 12
        },
        {
         "cadena": "palabras clave",
-        "n": 59
+        "n": 56
        },
        {
         "cadena": "palabras claves",
@@ -1835,18 +1835,18 @@
   },
   "ttr": {
    "en": {
-    "total": 94,
+    "total": 92,
     "docs": 5,
     "formas": [
      {
       "forma": "type-token ratio",
       "relacion": "forma_desarrollada",
-      "n": 20,
+      "n": 19,
       "docs": 5,
       "cadenas": [
        {
         "cadena": "type-token ratio",
-        "n": 9
+        "n": 8
        },
        {
         "cadena": "type-token ratios",
@@ -1867,12 +1867,12 @@
      {
       "forma": "TTR",
       "relacion": "sigla",
-      "n": 74,
+      "n": 73,
       "docs": 2,
       "cadenas": [
        {
         "cadena": "TTR",
-        "n": 61
+        "n": 60
        },
        {
         "cadena": "TTRs",
@@ -1883,7 +1883,7 @@
     ]
    },
    "es": {
-    "total": 51,
+    "total": 50,
     "docs": 6,
     "formas": [
      {
@@ -1939,12 +1939,12 @@
      {
       "forma": "type-token ratio",
       "relacion": "prestamo",
-      "n": 14,
+      "n": 13,
       "docs": 4,
       "cadenas": [
        {
         "cadena": "type-token ratio",
-        "n": 14
+        "n": 13
        },
        {
         "cadena": "type/token ratio",
@@ -1994,18 +1994,18 @@
   },
   "lemmatisation": {
    "en": {
-    "total": 47,
+    "total": 45,
     "docs": 8,
     "formas": [
      {
       "forma": "lemmatisation",
       "relacion": "variante_ortografica",
-      "n": 33,
+      "n": 32,
       "docs": 5,
       "cadenas": [
        {
         "cadena": "lemmatisation",
-        "n": 33
+        "n": 32
        },
        {
         "cadena": "lemmatisations",
@@ -2017,12 +2017,12 @@
      {
       "forma": "lemmatization",
       "relacion": "variante_ortografica",
-      "n": 14,
+      "n": 13,
       "docs": 4,
       "cadenas": [
        {
         "cadena": "lemmatization",
-        "n": 14
+        "n": 13
        },
        {
         "cadena": "lemmatizations",
@@ -2033,18 +2033,18 @@
     ]
    },
    "es": {
-    "total": 102,
+    "total": 100,
     "docs": 23,
     "formas": [
      {
       "forma": "lematización",
       "relacion": "lema",
-      "n": 102,
+      "n": 100,
       "docs": 23,
       "cadenas": [
        {
         "cadena": "lematización",
-        "n": 102
+        "n": 100
        },
        {
         "cadena": "lematizaciones",
@@ -2058,18 +2058,18 @@
   },
   "tokenization": {
    "en": {
-    "total": 59,
+    "total": 56,
     "docs": 15,
     "formas": [
      {
       "forma": "tokenization",
       "relacion": "variante_ortografica",
-      "n": 35,
-      "docs": 11,
+      "n": 33,
+      "docs": 10,
       "cadenas": [
        {
         "cadena": "tokenization",
-        "n": 35
+        "n": 33
        },
        {
         "cadena": "tokenizations",
@@ -2081,12 +2081,12 @@
      {
       "forma": "tokenisation",
       "relacion": "variante_ortografica",
-      "n": 24,
+      "n": 23,
       "docs": 5,
       "cadenas": [
        {
         "cadena": "tokenisation",
-        "n": 24
+        "n": 23
        },
        {
         "cadena": "tokenisations",
@@ -2097,18 +2097,18 @@
     ]
    },
    "es": {
-    "total": 13,
+    "total": 12,
     "docs": 6,
     "formas": [
      {
       "forma": "tokenización",
       "relacion": "lema",
-      "n": 13,
+      "n": 12,
       "docs": 6,
       "cadenas": [
        {
         "cadena": "tokenización",
-        "n": 13
+        "n": 12
        },
        {
         "cadena": "tokenizaciones",
@@ -2161,18 +2161,18 @@
     ]
    },
    "es": {
-    "total": 263,
+    "total": 260,
     "docs": 8,
     "formas": [
      {
       "forma": "frecuencia normalizada",
       "relacion": "lema",
-      "n": 263,
+      "n": 260,
       "docs": 8,
       "cadenas": [
        {
         "cadena": "frecuencia normalizada",
-        "n": 125
+        "n": 122
        },
        {
         "cadena": "frecuencias normalizadas",
@@ -2186,30 +2186,13 @@
   },
   "specialised_corpus": {
    "en": {
-    "total": 72,
-    "docs": 15,
+    "total": 67,
+    "docs": 14,
     "formas": [
-     {
-      "forma": "specialised corpus",
-      "relacion": "variante_ortografica",
-      "n": 39,
-      "docs": 8,
-      "cadenas": [
-       {
-        "cadena": "specialised corpus",
-        "n": 11
-       },
-       {
-        "cadena": "specialised corpora",
-        "n": 28
-       }
-      ],
-      "principal": true
-     },
      {
       "forma": "specialized corpus",
       "relacion": "variante_ortografica",
-      "n": 33,
+      "n": 32,
       "docs": 8,
       "cadenas": [
        {
@@ -2218,29 +2201,46 @@
        },
        {
         "cadena": "specialized corpora",
-        "n": 18
+        "n": 17
+       }
+      ],
+      "principal": true
+     },
+     {
+      "forma": "specialised corpus",
+      "relacion": "variante_ortografica",
+      "n": 35,
+      "docs": 7,
+      "cadenas": [
+       {
+        "cadena": "specialised corpus",
+        "n": 9
+       },
+       {
+        "cadena": "specialised corpora",
+        "n": 26
        }
       ]
      }
     ]
    },
    "es": {
-    "total": 74,
-    "docs": 18,
+    "total": 66,
+    "docs": 17,
     "formas": [
      {
       "forma": "corpus especializado",
       "relacion": "lema",
-      "n": 74,
-      "docs": 18,
+      "n": 66,
+      "docs": 17,
       "cadenas": [
        {
         "cadena": "corpus especializado",
-        "n": 33
+        "n": 30
        },
        {
         "cadena": "corpus especializados",
-        "n": 41
+        "n": 36
        }
       ],
       "principal": true
@@ -2250,18 +2250,18 @@
   },
   "chi_squared": {
    "en": {
-    "total": 79,
-    "docs": 13,
+    "total": 75,
+    "docs": 11,
     "formas": [
      {
       "forma": "chi-square",
       "relacion": "variante_ortografica",
-      "n": 38,
-      "docs": 9,
+      "n": 37,
+      "docs": 8,
       "cadenas": [
        {
         "cadena": "chi-square",
-        "n": 35
+        "n": 34
        },
        {
         "cadena": "chi square",
@@ -2273,12 +2273,12 @@
      {
       "forma": "chi-squared",
       "relacion": "variante_ortografica",
-      "n": 41,
-      "docs": 7,
+      "n": 38,
+      "docs": 5,
       "cadenas": [
        {
         "cadena": "chi-squared",
-        "n": 41
+        "n": 38
        }
       ]
      }
@@ -2338,22 +2338,22 @@
   },
   "learner_corpus": {
    "en": {
-    "total": 89,
-    "docs": 11,
+    "total": 62,
+    "docs": 10,
     "formas": [
      {
       "forma": "learner corpus",
       "relacion": "lema",
-      "n": 89,
-      "docs": 11,
+      "n": 62,
+      "docs": 10,
       "cadenas": [
        {
         "cadena": "learner corpus",
-        "n": 62
+        "n": 45
        },
        {
         "cadena": "learner corpora",
-        "n": 27
+        "n": 17
        }
       ],
       "principal": true
@@ -2361,18 +2361,18 @@
     ]
    },
    "es": {
-    "total": 111,
-    "docs": 13,
+    "total": 95,
+    "docs": 10,
     "formas": [
      {
       "forma": "corpus de aprendices",
       "relacion": "sinonimo",
-      "n": 43,
-      "docs": 12,
+      "n": 34,
+      "docs": 10,
       "cadenas": [
        {
         "cadena": "corpus de aprendices",
-        "n": 43
+        "n": 34
        }
       ],
       "principal": true
@@ -2380,12 +2380,12 @@
      {
       "forma": "corpus de aprendientes",
       "relacion": "sinonimo",
-      "n": 68,
-      "docs": 6,
+      "n": 61,
+      "docs": 5,
       "cadenas": [
        {
         "cadena": "corpus de aprendientes",
-        "n": 68
+        "n": 61
        }
       ],
       "consolidada": true
@@ -2395,18 +2395,18 @@
   },
   "dependency_parsing": {
    "en": {
-    "total": 4,
-    "docs": 4,
+    "total": 3,
+    "docs": 3,
     "formas": [
      {
       "forma": "dependency parsing",
       "relacion": "lema",
-      "n": 4,
-      "docs": 4,
+      "n": 3,
+      "docs": 3,
       "cadenas": [
        {
         "cadena": "dependency parsing",
-        "n": 4
+        "n": 3
        }
       ],
       "principal": true
@@ -2448,18 +2448,18 @@
   },
   "clustering": {
    "en": {
-    "total": 64,
-    "docs": 4,
+    "total": 60,
+    "docs": 3,
     "formas": [
      {
       "forma": "clustering",
       "relacion": "lema",
-      "n": 64,
-      "docs": 4,
+      "n": 60,
+      "docs": 3,
       "cadenas": [
        {
         "cadena": "clustering",
-        "n": 64
+        "n": 60
        }
       ],
       "principal": true
@@ -2467,18 +2467,18 @@
     ]
    },
    "es": {
-    "total": 36,
-    "docs": 5,
+    "total": 30,
+    "docs": 4,
     "formas": [
      {
       "forma": "agrupamiento",
       "relacion": "sinonimo",
-      "n": 14,
+      "n": 13,
       "docs": 2,
       "cadenas": [
        {
         "cadena": "agrupamiento",
-        "n": 13
+        "n": 12
        },
        {
         "cadena": "agrupamientos",
@@ -2493,12 +2493,12 @@
      {
       "forma": "clustering",
       "relacion": "prestamo",
-      "n": 12,
-      "docs": 3,
+      "n": 7,
+      "docs": 2,
       "cadenas": [
        {
         "cadena": "clustering",
-        "n": 12
+        "n": 7
        }
       ],
       "consolidada": true
@@ -2534,18 +2534,18 @@
   },
   "sample_size": {
    "en": {
-    "total": 208,
+    "total": 207,
     "docs": 9,
     "formas": [
      {
       "forma": "sample size",
       "relacion": "lema",
-      "n": 208,
+      "n": 207,
       "docs": 9,
       "cadenas": [
        {
         "cadena": "sample size",
-        "n": 189
+        "n": 188
        },
        {
         "cadena": "sample sizes",
@@ -2607,18 +2607,18 @@
   },
   "statistical_significance": {
    "en": {
-    "total": 40,
-    "docs": 11,
+    "total": 37,
+    "docs": 10,
     "formas": [
      {
       "forma": "statistical significance",
       "relacion": "lema",
-      "n": 40,
-      "docs": 11,
+      "n": 37,
+      "docs": 10,
       "cadenas": [
        {
         "cadena": "statistical significance",
-        "n": 40
+        "n": 37
        }
       ],
       "principal": true
@@ -2660,22 +2660,22 @@
   },
   "alignment": {
    "en": {
-    "total": 145,
+    "total": 123,
     "docs": 16,
     "formas": [
      {
       "forma": "alignment",
       "relacion": "lema",
-      "n": 145,
+      "n": 123,
       "docs": 16,
       "cadenas": [
        {
         "cadena": "alignment",
-        "n": 141
+        "n": 120
        },
        {
         "cadena": "alignments",
-        "n": 4
+        "n": 3
        }
       ],
       "principal": true
@@ -2683,18 +2683,18 @@
     ]
    },
    "es": {
-    "total": 109,
+    "total": 108,
     "docs": 15,
     "formas": [
      {
       "forma": "alineación",
       "relacion": "sinonimo",
-      "n": 101,
+      "n": 100,
       "docs": 14,
       "cadenas": [
        {
         "cadena": "alineación",
-        "n": 97
+        "n": 96
        },
        {
         "cadena": "alineaciones",
@@ -2729,22 +2729,22 @@
   },
   "tagset": {
    "en": {
-    "total": 187,
+    "total": 183,
     "docs": 15,
     "formas": [
      {
       "forma": "tagset",
       "relacion": "lema",
-      "n": 187,
+      "n": 183,
       "docs": 15,
       "cadenas": [
        {
         "cadena": "tagset",
-        "n": 139
+        "n": 138
        },
        {
         "cadena": "tagsets",
-        "n": 48
+        "n": 45
        }
       ],
       "principal": true
@@ -2811,22 +2811,22 @@
   },
   "treebank": {
    "en": {
-    "total": 110,
-    "docs": 14,
+    "total": 91,
+    "docs": 13,
     "formas": [
      {
       "forma": "treebank",
       "relacion": "lema",
-      "n": 110,
-      "docs": 14,
+      "n": 91,
+      "docs": 13,
       "cadenas": [
        {
         "cadena": "treebank",
-        "n": 89
+        "n": 74
        },
        {
         "cadena": "treebanks",
-        "n": 21
+        "n": 17
        }
       ],
       "principal": true
@@ -2834,8 +2834,8 @@
     ]
    },
    "es": {
-    "total": 56,
-    "docs": 11,
+    "total": 46,
+    "docs": 9,
     "formas": [
      {
       "forma": "corpus anotado sintácticamente",
@@ -2865,16 +2865,16 @@
      {
       "forma": "treebank",
       "relacion": "prestamo",
-      "n": 50,
-      "docs": 11,
+      "n": 40,
+      "docs": 9,
       "cadenas": [
        {
         "cadena": "treebank",
-        "n": 46
+        "n": 38
        },
        {
         "cadena": "treebanks",
-        "n": 4
+        "n": 2
        }
       ],
       "consolidada": true
@@ -2884,18 +2884,18 @@
   },
   "stem": {
    "en": {
-    "total": 106,
+    "total": 105,
     "docs": 8,
     "formas": [
      {
       "forma": "stem",
       "relacion": "lema",
-      "n": 106,
+      "n": 105,
       "docs": 8,
       "cadenas": [
        {
         "cadena": "stem",
-        "n": 32
+        "n": 31
        },
        {
         "cadena": "stems",
@@ -3025,22 +3025,22 @@
   },
   "n_gram": {
    "en": {
-    "total": 91,
+    "total": 85,
     "docs": 9,
     "formas": [
      {
       "forma": "n-gram",
       "relacion": "variante_ortografica",
-      "n": 77,
+      "n": 72,
       "docs": 9,
       "cadenas": [
        {
         "cadena": "n-gram",
-        "n": 36
+        "n": 33
        },
        {
         "cadena": "n-grams",
-        "n": 41
+        "n": 39
        }
       ],
       "principal": true
@@ -3048,12 +3048,12 @@
      {
       "forma": "ngram",
       "relacion": "variante_ortografica",
-      "n": 14,
+      "n": 13,
       "docs": 3,
       "cadenas": [
        {
         "cadena": "ngram",
-        "n": 13
+        "n": 12
        },
        {
         "cadena": "ngrams",
@@ -3064,8 +3064,8 @@
     ]
    },
    "es": {
-    "total": 50,
-    "docs": 11,
+    "total": 48,
+    "docs": 10,
     "formas": [
      {
       "forma": "n-grama",
@@ -3095,16 +3095,16 @@
      {
       "forma": "n-gram",
       "relacion": "prestamo",
-      "n": 14,
-      "docs": 5,
+      "n": 12,
+      "docs": 3,
       "cadenas": [
        {
         "cadena": "n-gram",
-        "n": 4
+        "n": 3
        },
        {
         "cadena": "n-grams",
-        "n": 7
+        "n": 6
        },
        {
         "cadena": "ngram",
@@ -3115,20 +3115,20 @@
         "n": 0
        }
       ],
-      "consolidada": true
+      "consolidada": false
      }
     ]
    }
   },
   "wildcard": {
    "en": {
-    "total": 34,
+    "total": 33,
     "docs": 2,
     "formas": [
      {
       "forma": "wildcard",
       "relacion": "lema",
-      "n": 34,
+      "n": 33,
       "docs": 2,
       "cadenas": [
        {
@@ -3137,7 +3137,7 @@
        },
        {
         "cadena": "wildcards",
-        "n": 18
+        "n": 17
        }
       ],
       "principal": true
@@ -3145,13 +3145,13 @@
     ]
    },
    "es": {
-    "total": 26,
+    "total": 25,
     "docs": 10,
     "formas": [
      {
       "forma": "comodín",
       "relacion": "sinonimo",
-      "n": 24,
+      "n": 23,
       "docs": 10,
       "cadenas": [
        {
@@ -3160,7 +3160,7 @@
        },
        {
         "cadena": "comodines",
-        "n": 17
+        "n": 16
        }
       ],
       "principal": true
@@ -3439,22 +3439,22 @@
   },
   "monitor_corpus": {
    "en": {
-    "total": 47,
+    "total": 42,
     "docs": 8,
     "formas": [
      {
       "forma": "monitor corpus",
       "relacion": "lema",
-      "n": 47,
+      "n": 42,
       "docs": 8,
       "cadenas": [
        {
         "cadena": "monitor corpus",
-        "n": 40
+        "n": 36
        },
        {
         "cadena": "monitor corpora",
-        "n": 7
+        "n": 6
        }
       ],
       "principal": true
@@ -3462,18 +3462,18 @@
     ]
    },
    "es": {
-    "total": 30,
+    "total": 29,
     "docs": 10,
     "formas": [
      {
       "forma": "corpus monitor",
       "relacion": "forma_completa",
-      "n": 11,
+      "n": 10,
       "docs": 6,
       "cadenas": [
        {
         "cadena": "corpus monitor",
-        "n": 11
+        "n": 10
        }
       ],
       "principal": true
@@ -3499,18 +3499,18 @@
   },
   "web_as_corpus": {
    "en": {
-    "total": 13,
-    "docs": 4,
+    "total": 9,
+    "docs": 3,
     "formas": [
      {
       "forma": "web as corpus",
       "relacion": "lema",
-      "n": 13,
-      "docs": 4,
+      "n": 9,
+      "docs": 3,
       "cadenas": [
        {
         "cadena": "web as corpus",
-        "n": 13
+        "n": 9
        },
        {
         "cadena": "web-as-corpus",
@@ -3522,18 +3522,18 @@
     ]
    },
    "es": {
-    "total": 96,
+    "total": 76,
     "docs": 14,
     "formas": [
      {
       "forma": "web como corpus",
       "relacion": "sinonimo",
-      "n": 52,
+      "n": 51,
       "docs": 11,
       "cadenas": [
        {
         "cadena": "web como corpus",
-        "n": 52
+        "n": 51
        }
       ],
       "principal": true
@@ -3541,12 +3541,12 @@
      {
       "forma": "web as corpus",
       "relacion": "prestamo",
-      "n": 44,
-      "docs": 9,
+      "n": 25,
+      "docs": 7,
       "cadenas": [
        {
         "cadena": "web as corpus",
-        "n": 44
+        "n": 25
        }
       ],
       "consolidada": true
@@ -3579,7 +3579,7 @@
     ]
    },
    "es": {
-    "total": 8,
+    "total": 7,
     "docs": 2,
     "formas": [
      {
@@ -3602,12 +3602,12 @@
      {
       "forma": "web for corpus",
       "relacion": "prestamo",
-      "n": 5,
+      "n": 4,
       "docs": 2,
       "cadenas": [
        {
         "cadena": "web for corpus",
-        "n": 5
+        "n": 4
        }
       ],
       "consolidada": true
@@ -3617,18 +3617,18 @@
   },
   "corpus_based_translation_studies": {
    "en": {
-    "total": 7,
-    "docs": 2,
+    "total": 5,
+    "docs": 1,
     "formas": [
      {
       "forma": "corpus-based translation studies",
       "relacion": "lema",
-      "n": 7,
-      "docs": 2,
+      "n": 5,
+      "docs": 1,
       "cadenas": [
        {
         "cadena": "corpus-based translation studies",
-        "n": 7
+        "n": 5
        },
        {
         "cadena": "corpus-based translation study",
@@ -3727,18 +3727,18 @@
     ]
    },
    "es": {
-    "total": 4,
+    "total": 2,
     "docs": 2,
     "formas": [
      {
       "forma": "Lesk",
       "relacion": "lema",
-      "n": 2,
-      "docs": 2,
+      "n": 0,
+      "docs": 0,
       "cadenas": [
        {
         "cadena": "Lesk",
-        "n": 2
+        "n": 0
        }
       ],
       "principal": true,
@@ -3891,18 +3891,18 @@
   },
   "type": {
    "en": {
-    "total": 202,
+    "total": 201,
     "docs": 16,
     "formas": [
      {
       "forma": "type",
       "relacion": "lema",
-      "n": 202,
+      "n": 201,
       "docs": 16,
       "cadenas": [
        {
         "cadena": "type",
-        "n": 74
+        "n": 73
        },
        {
         "cadena": "types",
@@ -3933,8 +3933,8 @@
     ]
    },
    "es": {
-    "total": 8,
-    "docs": 6,
+    "total": 35,
+    "docs": 9,
     "formas": [
      {
       "forma": "tipo",
@@ -3960,8 +3960,8 @@
      {
       "forma": "type",
       "relacion": "prestamo",
-      "n": 7,
-      "docs": 5,
+      "n": 34,
+      "docs": 8,
       "cadenas": [
        {
         "cadena": "types y tokens",
@@ -3972,13 +3972,42 @@
         "n": 1
        },
        {
+        "cadena": "types/tokens",
+        "n": 1
+       },
+       {
         "cadena": "type/token",
         "n": 1
        },
        {
-        "cadena": "types/tokens",
-        "n": 1
+        "cadena": "types",
+        "n": 22
+       },
+       {
+        "cadena": "type",
+        "n": 5
        }
+      ],
+      "excluye_si": [
+       "(?i)\\btypes?\\s+of\\b",
+       "(?i)\\b(?:this|that|these|those|same|different|various|other|particular|specific|certain|each|every|any|all|new|one|two|three|four|several|many|what|which|whatever|some|main|major|basic|similar|another)\\s+types?\\b",
+       "(?i)\\b(?:text|data|document|corpus|corpora|file|register|genre|sentence|font|personality|structure|construction|clause|verb|noun|speech|discourse|error|question|task|study|annotation|tag|interaction|source)\\s+types?\\b",
+       "(?i)\\b(?:you|we|then|simply|just|to|can)\\s+type\\b",
+       "(?i)\\btype\\s+(?:in|into)\\b",
+       "\\b[Tt]ype\\s+(?:I|II)\\b",
+       "(?i)\\bdocument\\s+type\\b",
+       "\\btype\\s*=",
+       "(?i)\\btypes?\\s+(?:definition|declaration)\\b",
+       "(?i)\\btypes?\\s*-\\s*tokens?\\b"
+      ],
+      "solo_si": [
+       "(?i)\\btypes?\\b[^.]{0,80}\\btokens?\\b",
+       "(?i)\\btokens?\\b[^.]{0,80}\\btypes?\\b",
+       "(?i)\\bword\\s+types?\\b",
+       "(?i)\\btype\\s+frequenc\\w*",
+       "(?i)\\b(?:number|numbers|count|counts)\\s+of\\s+(?:word\\s+)?types\\b",
+       "(?i)\\btype\\s+counts?\\b",
+       "(?i)\\b(?:new|distinct|unique)\\s+types\\b"
       ],
       "consolidada": true
      }
@@ -3987,22 +4016,22 @@
   },
   "web_crawling": {
    "en": {
-    "total": 15,
-    "docs": 6,
+    "total": 12,
+    "docs": 5,
     "formas": [
      {
       "forma": "web crawling",
       "relacion": "lema",
-      "n": 15,
-      "docs": 6,
+      "n": 12,
+      "docs": 5,
       "cadenas": [
        {
         "cadena": "web crawling",
-        "n": 6
+        "n": 4
        },
        {
         "cadena": "crawling",
-        "n": 9
+        "n": 8
        }
       ],
       "principal": true
@@ -4010,22 +4039,22 @@
     ]
    },
    "es": {
-    "total": 8,
-    "docs": 3,
+    "total": 3,
+    "docs": 2,
     "formas": [
      {
       "forma": "web crawling",
       "relacion": "prestamo",
-      "n": 8,
-      "docs": 3,
+      "n": 3,
+      "docs": 2,
       "cadenas": [
        {
         "cadena": "web crawling",
-        "n": 4
+        "n": 0
        },
        {
         "cadena": "crawling",
-        "n": 4
+        "n": 3
        }
       ],
       "principal": true
@@ -4096,13 +4125,13 @@
   },
   "concordancer": {
    "en": {
-    "total": 36,
+    "total": 35,
     "docs": 8,
     "formas": [
      {
       "forma": "concordancer",
       "relacion": "lema",
-      "n": 36,
+      "n": 35,
       "docs": 8,
       "cadenas": [
        {
@@ -4111,7 +4140,7 @@
        },
        {
         "cadena": "concordancers",
-        "n": 15
+        "n": 14
        }
       ],
       "principal": true
@@ -4144,18 +4173,18 @@
   },
   "word_sense_disambiguation": {
    "en": {
-    "total": 16,
+    "total": 15,
     "docs": 4,
     "formas": [
      {
       "forma": "word sense disambiguation",
       "relacion": "lema",
-      "n": 12,
+      "n": 11,
       "docs": 4,
       "cadenas": [
        {
         "cadena": "word sense disambiguation",
-        "n": 12
+        "n": 11
        }
       ],
       "principal": true,
@@ -4176,8 +4205,8 @@
     ]
    },
    "es": {
-    "total": 13,
-    "docs": 6,
+    "total": 10,
+    "docs": 5,
     "formas": [
      {
       "forma": "desambiguación semántica",
@@ -4208,12 +4237,12 @@
      {
       "forma": "word sense disambiguation",
       "relacion": "prestamo",
-      "n": 6,
-      "docs": 4,
+      "n": 3,
+      "docs": 3,
       "cadenas": [
        {
         "cadena": "word sense disambiguation",
-        "n": 6
+        "n": 3
        }
       ],
       "consolidada": true
@@ -4223,18 +4252,18 @@
   },
   "text_mining": {
    "en": {
-    "total": 12,
-    "docs": 6,
+    "total": 9,
+    "docs": 5,
     "formas": [
      {
       "forma": "text mining",
       "relacion": "lema",
-      "n": 12,
-      "docs": 6,
+      "n": 9,
+      "docs": 5,
       "cadenas": [
        {
         "cadena": "text mining",
-        "n": 12
+        "n": 9
        }
       ],
       "principal": true
@@ -4242,7 +4271,7 @@
     ]
    },
    "es": {
-    "total": 29,
+    "total": 28,
     "docs": 5,
     "formas": [
      {
@@ -4265,12 +4294,12 @@
      {
       "forma": "text mining",
       "relacion": "prestamo",
-      "n": 3,
+      "n": 2,
       "docs": 1,
       "cadenas": [
        {
         "cadena": "text mining",
-        "n": 3
+        "n": 2
        }
       ],
       "consolidada": false
@@ -4280,18 +4309,18 @@
   },
   "formulaic_language": {
    "en": {
-    "total": 9,
-    "docs": 5,
+    "total": 5,
+    "docs": 4,
     "formas": [
      {
       "forma": "formulaic language",
       "relacion": "lema",
-      "n": 7,
+      "n": 4,
       "docs": 3,
       "cadenas": [
        {
         "cadena": "formulaic language",
-        "n": 7
+        "n": 4
        }
       ],
       "principal": true
@@ -4299,8 +4328,8 @@
      {
       "forma": "formulaic sequence",
       "relacion": "sinonimo",
-      "n": 2,
-      "docs": 2,
+      "n": 1,
+      "docs": 1,
       "cadenas": [
        {
         "cadena": "formulaic sequence",
@@ -4308,7 +4337,7 @@
        },
        {
         "cadena": "formulaic sequences",
-        "n": 2
+        "n": 1
        }
       ],
       "consolidada": false
@@ -4368,7 +4397,7 @@
     ]
    },
    "es": {
-    "total": 18,
+    "total": 17,
     "docs": 5,
     "formas": [
      {
@@ -4395,7 +4424,7 @@
      {
       "forma": "unidad multipalabra",
       "relacion": "sinonimo",
-      "n": 8,
+      "n": 7,
       "docs": 3,
       "cadenas": [
        {
@@ -4404,7 +4433,7 @@
        },
        {
         "cadena": "unidades multipalabra",
-        "n": 8
+        "n": 7
        }
       ],
       "consolidada": true
@@ -4462,18 +4491,18 @@
     ]
    },
    "es": {
-    "total": 383,
-    "docs": 31,
+    "total": 352,
+    "docs": 28,
     "formas": [
      {
       "forma": "CREA",
       "relacion": "sigla",
-      "n": 337,
-      "docs": 30,
+      "n": 316,
+      "docs": 27,
       "cadenas": [
        {
         "cadena": "CREA",
-        "n": 337
+        "n": 316
        }
       ],
       "principal": true
@@ -4481,12 +4510,12 @@
      {
       "forma": "Corpus de Referencia del Español Actual",
       "relacion": "forma_desarrollada",
-      "n": 46,
-      "docs": 24,
+      "n": 36,
+      "docs": 20,
       "cadenas": [
        {
         "cadena": "Corpus de Referencia del Español Actual",
-        "n": 46
+        "n": 36
        }
       ]
      }
@@ -4526,18 +4555,18 @@
     ]
    },
    "es": {
-    "total": 360,
-    "docs": 26,
+    "total": 317,
+    "docs": 25,
     "formas": [
      {
       "forma": "CORDE",
       "relacion": "sigla",
-      "n": 310,
-      "docs": 24,
+      "n": 281,
+      "docs": 23,
       "cadenas": [
        {
         "cadena": "CORDE",
-        "n": 310
+        "n": 281
        }
       ],
       "principal": true
@@ -4545,12 +4574,12 @@
      {
       "forma": "Corpus Diacrónico del Español",
       "relacion": "forma_desarrollada",
-      "n": 50,
-      "docs": 21,
+      "n": 36,
+      "docs": 18,
       "cadenas": [
        {
         "cadena": "Corpus Diacrónico del Español",
-        "n": 50
+        "n": 36
        }
       ]
      }
@@ -4590,18 +4619,18 @@
     ]
    },
    "es": {
-    "total": 114,
-    "docs": 13,
+    "total": 110,
+    "docs": 12,
     "formas": [
      {
       "forma": "CDH",
       "relacion": "sigla",
-      "n": 100,
-      "docs": 11,
+      "n": 97,
+      "docs": 10,
       "cadenas": [
        {
         "cadena": "CDH",
-        "n": 100
+        "n": 97
        }
       ],
       "principal": true
@@ -4609,12 +4638,12 @@
      {
       "forma": "Corpus del Nuevo Diccionario Histórico",
       "relacion": "forma_desarrollada",
-      "n": 14,
-      "docs": 10,
+      "n": 13,
+      "docs": 9,
       "cadenas": [
        {
         "cadena": "Corpus del Nuevo Diccionario Histórico",
-        "n": 5
+        "n": 4
        },
        {
         "cadena": "Corpus del nuevo diccionario histórico del español",
@@ -4627,18 +4656,18 @@
   },
   "preseea": {
    "en": {
-    "total": 9,
+    "total": 5,
     "docs": 1,
     "formas": [
      {
       "forma": "PRESEEA",
       "relacion": "sigla",
-      "n": 7,
+      "n": 5,
       "docs": 1,
       "cadenas": [
        {
         "cadena": "PRESEEA",
-        "n": 7
+        "n": 5
        }
       ],
       "principal": true
@@ -4646,30 +4675,30 @@
      {
       "forma": "Proyecto para el Estudio Sociolingüístico del Español de España y de América",
       "relacion": "forma_desarrollada",
-      "n": 2,
-      "docs": 1,
+      "n": 0,
+      "docs": 0,
       "cadenas": [
        {
         "cadena": "Proyecto para el Estudio Sociolingüístico del Español de España y de América",
-        "n": 2
+        "n": 0
        }
       ]
      }
     ]
    },
    "es": {
-    "total": 100,
+    "total": 86,
     "docs": 14,
     "formas": [
      {
       "forma": "PRESEEA",
       "relacion": "sigla",
-      "n": 87,
+      "n": 77,
       "docs": 14,
       "cadenas": [
        {
         "cadena": "PRESEEA",
-        "n": 87
+        "n": 77
        }
       ],
       "principal": true
@@ -4677,12 +4706,12 @@
      {
       "forma": "Proyecto para el Estudio Sociolingüístico del Español de España y de América",
       "relacion": "forma_desarrollada",
-      "n": 13,
-      "docs": 9,
+      "n": 9,
+      "docs": 7,
       "cadenas": [
        {
         "cadena": "Proyecto para el Estudio Sociolingüístico del Español de España y de América",
-        "n": 13
+        "n": 9
        }
       ]
      }
@@ -4722,18 +4751,18 @@
     ]
    },
    "es": {
-    "total": 102,
+    "total": 88,
     "docs": 8,
     "formas": [
      {
       "forma": "CAES",
       "relacion": "sigla",
-      "n": 80,
+      "n": 73,
       "docs": 8,
       "cadenas": [
        {
         "cadena": "CAES",
-        "n": 80
+        "n": 73
        }
       ],
       "principal": true
@@ -4741,12 +4770,12 @@
      {
       "forma": "Corpus de Aprendices de Español",
       "relacion": "forma_desarrollada",
-      "n": 22,
-      "docs": 8,
+      "n": 15,
+      "docs": 7,
       "cadenas": [
        {
         "cadena": "Corpus de Aprendices de Español",
-        "n": 22
+        "n": 15
        }
       ]
      }
@@ -4755,34 +4784,34 @@
   },
   "corpes_xxi": {
    "en": {
-    "total": 3,
+    "total": 1,
     "docs": 1,
     "formas": [
      {
-      "forma": "CORPES XXI",
-      "relacion": "sigla",
+      "forma": "Corpus del Español del Siglo XXI",
+      "relacion": "forma_desarrollada",
       "n": 1,
       "docs": 1,
       "cadenas": [
        {
-        "cadena": "CORPES XXI",
+        "cadena": "Corpus del Español del Siglo XXI",
         "n": 1
+       },
+       {
+        "cadena": "Corpus del Español del siglo XXI",
+        "n": 0
        }
       ],
       "principal": true
      },
      {
-      "forma": "Corpus del Español del Siglo XXI",
-      "relacion": "forma_desarrollada",
-      "n": 2,
-      "docs": 1,
+      "forma": "CORPES XXI",
+      "relacion": "sigla",
+      "n": 0,
+      "docs": 0,
       "cadenas": [
        {
-        "cadena": "Corpus del Español del Siglo XXI",
-        "n": 2
-       },
-       {
-        "cadena": "Corpus del Español del siglo XXI",
+        "cadena": "CORPES XXI",
         "n": 0
        }
       ]
@@ -4790,18 +4819,18 @@
     ]
    },
    "es": {
-    "total": 116,
-    "docs": 23,
+    "total": 94,
+    "docs": 21,
     "formas": [
      {
       "forma": "CORPES XXI",
       "relacion": "sigla",
-      "n": 77,
-      "docs": 15,
+      "n": 67,
+      "docs": 14,
       "cadenas": [
        {
         "cadena": "CORPES XXI",
-        "n": 77
+        "n": 67
        }
       ],
       "principal": true
@@ -4809,12 +4838,12 @@
      {
       "forma": "Corpus del Español del Siglo XXI",
       "relacion": "forma_desarrollada",
-      "n": 39,
-      "docs": 20,
+      "n": 27,
+      "docs": 15,
       "cadenas": [
        {
         "cadena": "Corpus del Español del Siglo XXI",
-        "n": 39
+        "n": 27
        },
        {
         "cadena": "Corpus del Español del siglo XXI",
@@ -4858,18 +4887,18 @@
     ]
    },
    "es": {
-    "total": 57,
+    "total": 46,
     "docs": 11,
     "formas": [
      {
       "forma": "IULA",
       "relacion": "sigla",
-      "n": 50,
-      "docs": 11,
+      "n": 39,
+      "docs": 10,
       "cadenas": [
        {
         "cadena": "IULA",
-        "n": 50
+        "n": 39
        }
       ],
       "principal": true
@@ -4899,18 +4928,18 @@
   },
   "valesco": {
    "en": {
-    "total": 4,
+    "total": 2,
     "docs": 1,
     "formas": [
      {
       "forma": "Val.Es.Co",
       "relacion": "sigla",
-      "n": 3,
+      "n": 2,
       "docs": 1,
       "cadenas": [
        {
         "cadena": "Val.Es.Co",
-        "n": 3
+        "n": 2
        }
       ],
       "principal": true
@@ -4918,34 +4947,34 @@
      {
       "forma": "Corpus de Conversaciones Coloquiales",
       "relacion": "forma_desarrollada",
-      "n": 1,
-      "docs": 1,
+      "n": 0,
+      "docs": 0,
       "cadenas": [
        {
         "cadena": "Corpus de Conversaciones Coloquiales",
-        "n": 1
+        "n": 0
        }
       ]
      }
     ]
    },
    "es": {
-    "total": 54,
+    "total": 44,
     "docs": 11,
     "formas": [
      {
       "forma": "Val.Es.Co",
       "relacion": "sigla",
-      "n": 51,
+      "n": 41,
       "docs": 11,
       "cadenas": [
        {
         "cadena": "Val.Es.Co",
-        "n": 46
+        "n": 39
        },
        {
         "cadena": "Val.Es.Co.",
-        "n": 5
+        "n": 2
        }
       ],
       "principal": true
@@ -4967,49 +4996,49 @@
   },
   "cemc": {
    "en": {
-    "total": 3,
+    "total": 1,
     "docs": 1,
     "formas": [
      {
-      "forma": "CEMC",
-      "relacion": "sigla",
+      "forma": "Corpus del Español Mexicano Contemporáneo",
+      "relacion": "forma_desarrollada",
       "n": 1,
       "docs": 1,
       "cadenas": [
        {
-        "cadena": "CEMC",
+        "cadena": "Corpus del Español Mexicano Contemporáneo",
         "n": 1
        }
       ],
       "principal": true
      },
      {
-      "forma": "Corpus del Español Mexicano Contemporáneo",
-      "relacion": "forma_desarrollada",
-      "n": 2,
-      "docs": 1,
+      "forma": "CEMC",
+      "relacion": "sigla",
+      "n": 0,
+      "docs": 0,
       "cadenas": [
        {
-        "cadena": "Corpus del Español Mexicano Contemporáneo",
-        "n": 2
+        "cadena": "CEMC",
+        "n": 0
        }
       ]
      }
     ]
    },
    "es": {
-    "total": 59,
+    "total": 57,
     "docs": 10,
     "formas": [
      {
       "forma": "CEMC",
       "relacion": "sigla",
-      "n": 34,
+      "n": 33,
       "docs": 10,
       "cadenas": [
        {
         "cadena": "CEMC",
-        "n": 34
+        "n": 33
        }
       ],
       "principal": true
@@ -5017,12 +5046,12 @@
      {
       "forma": "Corpus del Español Mexicano Contemporáneo",
       "relacion": "forma_desarrollada",
-      "n": 25,
+      "n": 24,
       "docs": 10,
       "cadenas": [
        {
         "cadena": "Corpus del Español Mexicano Contemporáneo",
-        "n": 25
+        "n": 24
        }
       ]
      }
@@ -5031,18 +5060,18 @@
   },
   "cobuild": {
    "en": {
-    "total": 18,
+    "total": 15,
     "docs": 5,
     "formas": [
      {
       "forma": "COBUILD",
       "relacion": "sigla",
-      "n": 17,
+      "n": 14,
       "docs": 5,
       "cadenas": [
        {
         "cadena": "COBUILD",
-        "n": 17
+        "n": 14
        }
       ],
       "principal": true
@@ -5062,18 +5091,18 @@
     ]
    },
    "es": {
-    "total": 38,
+    "total": 37,
     "docs": 15,
     "formas": [
      {
       "forma": "COBUILD",
       "relacion": "sigla",
-      "n": 33,
+      "n": 32,
       "docs": 15,
       "cadenas": [
        {
         "cadena": "COBUILD",
-        "n": 33
+        "n": 32
        }
       ],
       "principal": true
@@ -5126,18 +5155,18 @@
     ]
    },
    "es": {
-    "total": 42,
+    "total": 36,
     "docs": 10,
     "formas": [
      {
       "forma": "CHARTA",
       "relacion": "sigla",
-      "n": 29,
+      "n": 25,
       "docs": 10,
       "cadenas": [
        {
         "cadena": "CHARTA",
-        "n": 29
+        "n": 25
        }
       ],
       "principal": true
@@ -5145,12 +5174,12 @@
      {
       "forma": "Corpus Hispánico y Americano en la Red: Textos Antiguos",
       "relacion": "forma_desarrollada",
-      "n": 13,
+      "n": 11,
       "docs": 7,
       "cadenas": [
        {
         "cadena": "Corpus Hispánico y Americano en la Red: Textos Antiguos",
-        "n": 13
+        "n": 11
        }
       ]
      }
@@ -5190,18 +5219,18 @@
     ]
    },
    "es": {
-    "total": 35,
+    "total": 32,
     "docs": 10,
     "formas": [
      {
       "forma": "CORLEC",
       "relacion": "sigla",
-      "n": 25,
+      "n": 23,
       "docs": 10,
       "cadenas": [
        {
         "cadena": "CORLEC",
-        "n": 25
+        "n": 23
        }
       ],
       "principal": true
@@ -5209,12 +5238,12 @@
      {
       "forma": "Corpus Oral de Referencia de la Lengua Española Contemporánea",
       "relacion": "forma_desarrollada",
-      "n": 10,
+      "n": 9,
       "docs": 6,
       "cadenas": [
        {
         "cadena": "Corpus Oral de Referencia de la Lengua Española Contemporánea",
-        "n": 10
+        "n": 9
        }
       ]
      }
@@ -5223,8 +5252,8 @@
   },
   "seu": {
    "en": {
-    "total": 37,
-    "docs": 7,
+    "total": 35,
+    "docs": 6,
     "formas": [
      {
       "forma": "SEU",
@@ -5242,30 +5271,30 @@
      {
       "forma": "Survey of English Usage",
       "relacion": "forma_desarrollada",
-      "n": 20,
-      "docs": 7,
+      "n": 18,
+      "docs": 6,
       "cadenas": [
        {
         "cadena": "Survey of English Usage",
-        "n": 20
+        "n": 18
        }
       ]
      }
     ]
    },
    "es": {
-    "total": 64,
+    "total": 62,
     "docs": 10,
     "formas": [
      {
       "forma": "SEU",
       "relacion": "sigla",
-      "n": 47,
+      "n": 46,
       "docs": 10,
       "cadenas": [
        {
         "cadena": "SEU",
-        "n": 47
+        "n": 46
        }
       ],
       "principal": true
@@ -5273,12 +5302,12 @@
      {
       "forma": "Survey of English Usage",
       "relacion": "forma_desarrollada",
-      "n": 17,
+      "n": 16,
       "docs": 9,
       "cadenas": [
        {
         "cadena": "Survey of English Usage",
-        "n": 17
+        "n": 16
        }
       ]
      }
@@ -5322,18 +5351,18 @@
     ]
    },
    "es": {
-    "total": 31,
+    "total": 25,
     "docs": 9,
     "formas": [
      {
       "forma": "CEDEL2",
       "relacion": "sigla",
-      "n": 22,
+      "n": 17,
       "docs": 9,
       "cadenas": [
        {
         "cadena": "CEDEL2",
-        "n": 22
+        "n": 17
        }
       ],
       "principal": true
@@ -5341,8 +5370,8 @@
      {
       "forma": "Corpus Escrito del Español como L2",
       "relacion": "forma_desarrollada",
-      "n": 9,
-      "docs": 7,
+      "n": 8,
+      "docs": 6,
       "cadenas": [
        {
         "cadena": "Corpus Escrito del Español como L2",
@@ -5350,7 +5379,7 @@
        },
        {
         "cadena": "Corpus Escrito de Español L2",
-        "n": 6
+        "n": 5
        }
       ]
      }
@@ -5394,22 +5423,22 @@
     ]
    },
    "es": {
-    "total": 61,
-    "docs": 10,
+    "total": 48,
+    "docs": 8,
     "formas": [
      {
       "forma": "CODEA+",
       "relacion": "sigla",
-      "n": 46,
-      "docs": 9,
+      "n": 37,
+      "docs": 7,
       "cadenas": [
        {
         "cadena": "CODEA+",
-        "n": 28
+        "n": 24
        },
        {
         "cadena": "CODEA",
-        "n": 18
+        "n": 13
        }
       ],
       "principal": true
@@ -5417,16 +5446,16 @@
      {
       "forma": "Corpus de Documentos Españoles Anteriores a 1800",
       "relacion": "forma_desarrollada",
-      "n": 15,
-      "docs": 8,
+      "n": 11,
+      "docs": 6,
       "cadenas": [
        {
         "cadena": "Corpus de Documentos Españoles Anteriores a 1800",
-        "n": 6
+        "n": 5
        },
        {
         "cadena": "Corpus de documentos españoles anteriores a 1700",
-        "n": 9
+        "n": 6
        }
       ]
      }
@@ -5499,18 +5528,18 @@
   },
   "europarl": {
    "en": {
-    "total": 17,
+    "total": 13,
     "docs": 3,
     "formas": [
      {
       "forma": "Europarl",
       "relacion": "sigla",
-      "n": 16,
-      "docs": 3,
+      "n": 12,
+      "docs": 2,
       "cadenas": [
        {
         "cadena": "Europarl",
-        "n": 16
+        "n": 12
        }
       ],
       "principal": true
@@ -5530,18 +5559,18 @@
     ]
    },
    "es": {
-    "total": 15,
-    "docs": 6,
+    "total": 12,
+    "docs": 5,
     "formas": [
      {
       "forma": "Europarl",
       "relacion": "sigla",
-      "n": 12,
-      "docs": 5,
+      "n": 9,
+      "docs": 4,
       "cadenas": [
        {
         "cadena": "Europarl",
-        "n": 12
+        "n": 9
        }
       ],
       "principal": true
@@ -5594,18 +5623,18 @@
     ]
    },
    "es": {
-    "total": 15,
+    "total": 12,
     "docs": 5,
     "formas": [
      {
       "forma": "SPLLOC",
       "relacion": "sigla",
-      "n": 10,
+      "n": 7,
       "docs": 4,
       "cadenas": [
        {
         "cadena": "SPLLOC",
-        "n": 10
+        "n": 7
        }
       ],
       "principal": true
@@ -5659,18 +5688,18 @@
     ]
    },
    "es": {
-    "total": 4,
+    "total": 2,
     "docs": 2,
     "formas": [
      {
       "forma": "MUST",
       "relacion": "sigla",
-      "n": 4,
+      "n": 2,
       "docs": 2,
       "cadenas": [
        {
         "cadena": "MUST",
-        "n": 4
+        "n": 2
        }
       ],
       "principal": true
@@ -5723,18 +5752,18 @@
     ]
    },
    "es": {
-    "total": 13,
+    "total": 9,
     "docs": 2,
     "formas": [
      {
       "forma": "ODE",
       "relacion": "sigla",
-      "n": 8,
+      "n": 6,
       "docs": 2,
       "cadenas": [
        {
         "cadena": "ODE",
-        "n": 8
+        "n": 6
        }
       ],
       "principal": true
@@ -5742,12 +5771,12 @@
      {
       "forma": "Oralia Diacrónica del Español",
       "relacion": "forma_desarrollada",
-      "n": 5,
-      "docs": 2,
+      "n": 3,
+      "docs": 1,
       "cadenas": [
        {
         "cadena": "Oralia Diacrónica del Español",
-        "n": 5
+        "n": 3
        }
       ]
      }
@@ -5756,18 +5785,18 @@
   },
   "llc": {
    "en": {
-    "total": 65,
+    "total": 63,
     "docs": 9,
     "formas": [
      {
       "forma": "LLC",
       "relacion": "sigla",
-      "n": 41,
+      "n": 40,
       "docs": 8,
       "cadenas": [
        {
         "cadena": "LLC",
-        "n": 41
+        "n": 40
        }
       ],
       "principal": true
@@ -5775,8 +5804,8 @@
      {
       "forma": "London-Lund Corpus",
       "relacion": "forma_desarrollada",
-      "n": 24,
-      "docs": 9,
+      "n": 23,
+      "docs": 8,
       "cadenas": [
        {
         "cadena": "London-Lund Corpus",
@@ -5784,7 +5813,7 @@
        },
        {
         "cadena": "London-Lund Corpus of Spoken English",
-        "n": 6
+        "n": 5
        },
        {
         "cadena": "London Lund Corpus",
@@ -5795,7 +5824,7 @@
     ]
    },
    "es": {
-    "total": 18,
+    "total": 16,
     "docs": 6,
     "formas": [
      {
@@ -5814,7 +5843,7 @@
      {
       "forma": "London-Lund Corpus",
       "relacion": "forma_desarrollada",
-      "n": 10,
+      "n": 8,
       "docs": 6,
       "cadenas": [
        {
@@ -5823,7 +5852,7 @@
        },
        {
         "cadena": "London-Lund Corpus of Spoken English",
-        "n": 7
+        "n": 5
        },
        {
         "cadena": "London Lund Corpus",
@@ -5935,7 +5964,7 @@
     ]
    },
    "es": {
-    "total": 15,
+    "total": 13,
     "docs": 3,
     "formas": [
      {
@@ -5954,12 +5983,12 @@
      {
       "forma": "Spanish Corpus Proficiency Level Training",
       "relacion": "forma_desarrollada",
-      "n": 8,
+      "n": 6,
       "docs": 3,
       "cadenas": [
        {
         "cadena": "Spanish Corpus Proficiency Level Training",
-        "n": 8
+        "n": 6
        },
        {
         "cadena": "Spanish Proficiency Training",
@@ -6003,18 +6032,18 @@
     ]
    },
    "es": {
-    "total": 12,
+    "total": 9,
     "docs": 2,
     "formas": [
      {
       "forma": "CorLexIn",
       "relacion": "sigla",
-      "n": 7,
+      "n": 5,
       "docs": 2,
       "cadenas": [
        {
         "cadena": "CorLexIn",
-        "n": 7
+        "n": 5
        }
       ],
       "principal": true
@@ -6022,12 +6051,12 @@
      {
       "forma": "Corpus Léxico de Inventarios",
       "relacion": "forma_desarrollada",
-      "n": 5,
+      "n": 4,
       "docs": 2,
       "cadenas": [
        {
         "cadena": "Corpus Léxico de Inventarios",
-        "n": 5
+        "n": 4
        }
       ]
      }
@@ -6131,18 +6160,18 @@
     ]
    },
    "es": {
-    "total": 6,
-    "docs": 4,
+    "total": 5,
+    "docs": 3,
     "formas": [
      {
       "forma": "GENTT",
       "relacion": "sigla",
-      "n": 4,
-      "docs": 4,
+      "n": 3,
+      "docs": 3,
       "cadenas": [
        {
         "cadena": "GENTT",
-        "n": 4
+        "n": 3
        }
       ],
       "principal": true
@@ -6195,7 +6224,7 @@
     ]
    },
    "es": {
-    "total": 8,
+    "total": 6,
     "docs": 2,
     "formas": [
      {
@@ -6214,12 +6243,12 @@
      {
       "forma": "Multilingual eLearning in LANGuage Engineering",
       "relacion": "forma_desarrollada",
-      "n": 4,
+      "n": 2,
       "docs": 2,
       "cadenas": [
        {
         "cadena": "Multilingual eLearning in LANGuage Engineering",
-        "n": 4
+        "n": 2
        }
       ]
      }
@@ -6259,18 +6288,18 @@
     ]
    },
    "es": {
-    "total": 16,
+    "total": 14,
     "docs": 4,
     "formas": [
      {
       "forma": "BiDTEA",
       "relacion": "sigla",
-      "n": 6,
+      "n": 5,
       "docs": 2,
       "cadenas": [
        {
         "cadena": "BiDTEA",
-        "n": 6
+        "n": 5
        }
       ],
       "principal": true
@@ -6278,12 +6307,12 @@
      {
       "forma": "Biblioteca Digital de Textos del Español Antiguo",
       "relacion": "forma_desarrollada",
-      "n": 10,
+      "n": 9,
       "docs": 4,
       "cadenas": [
        {
         "cadena": "Biblioteca Digital de Textos del Español Antiguo",
-        "n": 10
+        "n": 9
        }
       ]
      }
@@ -6292,18 +6321,18 @@
   },
   "cate": {
    "en": {
-    "total": 1,
-    "docs": 1,
+    "total": 0,
+    "docs": 0,
     "formas": [
      {
       "forma": "CATE",
       "relacion": "sigla",
-      "n": 1,
-      "docs": 1,
+      "n": 0,
+      "docs": 0,
       "cadenas": [
        {
         "cadena": "CATE",
-        "n": 1
+        "n": 0
        }
       ],
       "principal": true
@@ -6387,18 +6416,18 @@
     ]
    },
    "es": {
-    "total": 6,
+    "total": 2,
     "docs": 2,
     "formas": [
      {
       "forma": "LETRAC",
       "relacion": "sigla",
-      "n": 4,
+      "n": 2,
       "docs": 2,
       "cadenas": [
        {
         "cadena": "LETRAC",
-        "n": 4
+        "n": 2
        }
       ],
       "principal": true
@@ -6406,12 +6435,12 @@
      {
       "forma": "Language Engineering for Translators Curricula",
       "relacion": "forma_desarrollada",
-      "n": 2,
-      "docs": 2,
+      "n": 0,
+      "docs": 0,
       "cadenas": [
        {
         "cadena": "Language Engineering for Translators Curricula",
-        "n": 2
+        "n": 0
        }
       ]
      }
@@ -6451,18 +6480,18 @@
     ]
    },
    "es": {
-    "total": 6,
-    "docs": 2,
+    "total": 2,
+    "docs": 1,
     "formas": [
      {
       "forma": "CORANE",
       "relacion": "sigla",
-      "n": 3,
-      "docs": 2,
+      "n": 1,
+      "docs": 1,
       "cadenas": [
        {
         "cadena": "CORANE",
-        "n": 3
+        "n": 1
        }
       ],
       "principal": true
@@ -6470,12 +6499,12 @@
      {
       "forma": "Corpus para el Análisis de Errores de Aprendices de E/LE",
       "relacion": "forma_desarrollada",
-      "n": 3,
-      "docs": 2,
+      "n": 1,
+      "docs": 1,
       "cadenas": [
        {
         "cadena": "Corpus para el Análisis de Errores de Aprendices de E/LE",
-        "n": 3
+        "n": 1
        }
       ]
      }
@@ -6515,18 +6544,18 @@
     ]
    },
    "es": {
-    "total": 3,
+    "total": 2,
     "docs": 1,
     "formas": [
      {
       "forma": "COWS-L2H",
       "relacion": "sigla",
-      "n": 2,
+      "n": 1,
       "docs": 1,
       "cadenas": [
        {
         "cadena": "COWS-L2H",
-        "n": 2
+        "n": 1
        }
       ],
       "principal": true
@@ -6579,18 +6608,18 @@
     ]
    },
    "es": {
-    "total": 2,
+    "total": 1,
     "docs": 1,
     "formas": [
      {
       "forma": "LANGSNAP",
       "relacion": "sigla",
-      "n": 2,
+      "n": 1,
       "docs": 1,
       "cadenas": [
        {
         "cadena": "LANGSNAP",
-        "n": 2
+        "n": 1
        }
       ],
       "principal": true
@@ -6779,7 +6808,7 @@
     ]
    },
    "es": {
-    "total": 24,
+    "total": 22,
     "docs": 4,
     "formas": [
      {
@@ -6798,12 +6827,12 @@
      {
       "forma": "SDL Trados Studio",
       "relacion": "forma_extendida",
-      "n": 17,
+      "n": 15,
       "docs": 1,
       "cadenas": [
        {
         "cadena": "SDL Trados Studio",
-        "n": 16
+        "n": 14
        },
        {
         "cadena": "SDL Trados",
@@ -6851,18 +6880,18 @@
     ]
    },
    "es": {
-    "total": 16,
+    "total": 12,
     "docs": 2,
     "formas": [
      {
       "forma": "MALLET",
       "relacion": "sigla",
-      "n": 14,
+      "n": 12,
       "docs": 2,
       "cadenas": [
        {
         "cadena": "MALLET",
-        "n": 14
+        "n": 12
        }
       ],
       "principal": true
@@ -6870,12 +6899,12 @@
      {
       "forma": "MAchine Learning for LanguagE Toolkit",
       "relacion": "forma_desarrollada",
-      "n": 2,
-      "docs": 2,
+      "n": 0,
+      "docs": 0,
       "cadenas": [
        {
         "cadena": "MAchine Learning for LanguagE Toolkit",
-        "n": 2
+        "n": 0
        }
       ]
      }
@@ -6884,18 +6913,18 @@
   },
   "cqp": {
    "en": {
-    "total": 19,
+    "total": 18,
     "docs": 6,
     "formas": [
      {
       "forma": "CQP",
       "relacion": "sigla",
-      "n": 15,
+      "n": 14,
       "docs": 5,
       "cadenas": [
        {
         "cadena": "CQP",
-        "n": 15
+        "n": 14
        }
       ],
       "principal": true
@@ -6915,18 +6944,18 @@
     ]
    },
    "es": {
-    "total": 18,
+    "total": 15,
     "docs": 2,
     "formas": [
      {
       "forma": "CQP",
       "relacion": "sigla",
-      "n": 10,
+      "n": 8,
       "docs": 2,
       "cadenas": [
        {
         "cadena": "CQP",
-        "n": 10
+        "n": 8
        }
       ],
       "principal": true
@@ -6934,12 +6963,12 @@
      {
       "forma": "Corpus Query Processor",
       "relacion": "forma_desarrollada",
-      "n": 8,
+      "n": 7,
       "docs": 2,
       "cadenas": [
        {
         "cadena": "Corpus Query Processor",
-        "n": 8
+        "n": 7
        }
       ]
      }
@@ -7084,18 +7113,18 @@
   },
   "kwic": {
    "en": {
-    "total": 45,
-    "docs": 6,
+    "total": 42,
+    "docs": 5,
     "formas": [
      {
       "forma": "KWIC",
       "relacion": "sigla",
-      "n": 39,
-      "docs": 6,
+      "n": 36,
+      "docs": 5,
       "cadenas": [
        {
         "cadena": "KWIC",
-        "n": 39
+        "n": 36
        }
       ],
       "principal": true
@@ -7253,22 +7282,22 @@
   },
   "sample": {
    "en": {
-    "total": 1716,
+    "total": 1707,
     "docs": 35,
     "formas": [
      {
       "forma": "sample",
       "relacion": "lema",
-      "n": 1716,
+      "n": 1707,
       "docs": 35,
       "cadenas": [
        {
         "cadena": "sample",
-        "n": 1074
+        "n": 1070
        },
        {
         "cadena": "samples",
-        "n": 642
+        "n": 637
        }
       ],
       "principal": true
@@ -7276,13 +7305,13 @@
     ]
    },
    "es": {
-    "total": 558,
+    "total": 552,
     "docs": 45,
     "formas": [
      {
       "forma": "muestra",
       "relacion": "lema",
-      "n": 558,
+      "n": 552,
       "docs": 45,
       "cadenas": [
        {
@@ -7291,7 +7320,7 @@
        },
        {
         "cadena": "muestras",
-        "n": 352
+        "n": 346
        }
       ],
       "excluye_si": [
@@ -7353,18 +7382,18 @@
   },
   "population": {
    "en": {
-    "total": 289,
+    "total": 287,
     "docs": 17,
     "formas": [
      {
       "forma": "population",
       "relacion": "lema",
-      "n": 289,
+      "n": 287,
       "docs": 17,
       "cadenas": [
        {
         "cadena": "population",
-        "n": 269
+        "n": 267
        },
        {
         "cadena": "populations",
@@ -7411,22 +7440,22 @@
   },
   "genre": {
    "en": {
-    "total": 462,
-    "docs": 42,
+    "total": 424,
+    "docs": 39,
     "formas": [
      {
       "forma": "genre",
       "relacion": "lema",
-      "n": 462,
-      "docs": 42,
+      "n": 424,
+      "docs": 39,
       "cadenas": [
        {
         "cadena": "genre",
-        "n": 272
+        "n": 247
        },
        {
         "cadena": "genres",
-        "n": 190
+        "n": 177
        }
       ],
       "principal": true
@@ -7434,22 +7463,22 @@
     ]
    },
    "es": {
-    "total": 407,
+    "total": 387,
     "docs": 40,
     "formas": [
      {
       "forma": "género",
       "relacion": "lema",
-      "n": 407,
+      "n": 387,
       "docs": 40,
       "cadenas": [
        {
         "cadena": "género",
-        "n": 209
+        "n": 202
        },
        {
         "cadena": "géneros",
-        "n": 198
+        "n": 185
        }
       ],
       "excluye_si": [
@@ -7467,18 +7496,18 @@
   },
   "accuracy": {
    "en": {
-    "total": 161,
+    "total": 158,
     "docs": 29,
     "formas": [
      {
       "forma": "accuracy",
       "relacion": "lema",
-      "n": 161,
+      "n": 158,
       "docs": 29,
       "cadenas": [
        {
         "cadena": "accuracy",
-        "n": 161
+        "n": 158
        }
       ],
       "principal": true
@@ -7486,18 +7515,18 @@
     ]
    },
    "es": {
-    "total": 24,
+    "total": 23,
     "docs": 6,
     "formas": [
      {
       "forma": "exactitud",
       "relacion": "lema",
-      "n": 24,
+      "n": 23,
       "docs": 6,
       "cadenas": [
        {
         "cadena": "exactitud",
-        "n": 24
+        "n": 23
        }
       ],
       "principal": true
@@ -7507,22 +7536,22 @@
   },
   "annotated_corpus": {
    "en": {
-    "total": 114,
-    "docs": 14,
+    "total": 102,
+    "docs": 12,
     "formas": [
      {
       "forma": "annotated corpus",
       "relacion": "lema",
-      "n": 114,
-      "docs": 14,
+      "n": 102,
+      "docs": 12,
       "cadenas": [
        {
         "cadena": "annotated corpus",
-        "n": 52
+        "n": 48
        },
        {
         "cadena": "annotated corpora",
-        "n": 62
+        "n": 54
        }
       ],
       "principal": true
@@ -7530,22 +7559,22 @@
     ]
    },
    "es": {
-    "total": 81,
-    "docs": 17,
+    "total": 75,
+    "docs": 15,
     "formas": [
      {
       "forma": "corpus anotado",
       "relacion": "lema",
-      "n": 81,
-      "docs": 17,
+      "n": 75,
+      "docs": 15,
       "cadenas": [
        {
         "cadena": "corpus anotado",
-        "n": 44
+        "n": 40
        },
        {
         "cadena": "corpus anotados",
-        "n": 37
+        "n": 35
        }
       ],
       "principal": true
@@ -7555,22 +7584,22 @@
   },
   "annotation_scheme": {
    "en": {
-    "total": 125,
+    "total": 119,
     "docs": 15,
     "formas": [
      {
       "forma": "annotation scheme",
       "relacion": "lema",
-      "n": 125,
+      "n": 119,
       "docs": 15,
       "cadenas": [
        {
         "cadena": "annotation scheme",
-        "n": 89
+        "n": 86
        },
        {
         "cadena": "annotation schemes",
-        "n": 36
+        "n": 33
        }
       ],
       "principal": true
@@ -7651,18 +7680,18 @@
   },
   "colligation": {
    "en": {
-    "total": 31,
+    "total": 29,
     "docs": 4,
     "formas": [
      {
       "forma": "colligation",
       "relacion": "lema",
-      "n": 31,
+      "n": 29,
       "docs": 4,
       "cadenas": [
        {
         "cadena": "colligation",
-        "n": 13
+        "n": 11
        },
        {
         "cadena": "colligations",
@@ -7747,22 +7776,22 @@
   },
   "collocation": {
    "en": {
-    "total": 392,
-    "docs": 22,
+    "total": 347,
+    "docs": 21,
     "formas": [
      {
       "forma": "collocation",
       "relacion": "lema",
-      "n": 392,
-      "docs": 22,
+      "n": 347,
+      "docs": 21,
       "cadenas": [
        {
         "cadena": "collocation",
-        "n": 255
+        "n": 233
        },
        {
         "cadena": "collocations",
-        "n": 137
+        "n": 114
        }
       ],
       "principal": true
@@ -7770,22 +7799,22 @@
     ]
    },
    "es": {
-    "total": 188,
+    "total": 185,
     "docs": 18,
     "formas": [
      {
       "forma": "colocación",
       "relacion": "lema",
-      "n": 188,
+      "n": 185,
       "docs": 18,
       "cadenas": [
        {
         "cadena": "colocación",
-        "n": 43
+        "n": 41
        },
        {
         "cadena": "colocaciones",
-        "n": 145
+        "n": 144
        }
       ],
       "principal": true
@@ -7795,22 +7824,22 @@
   },
   "comparable_corpus": {
    "en": {
-    "total": 63,
-    "docs": 13,
+    "total": 57,
+    "docs": 12,
     "formas": [
      {
       "forma": "comparable corpus",
       "relacion": "lema",
-      "n": 63,
-      "docs": 13,
+      "n": 57,
+      "docs": 12,
       "cadenas": [
        {
         "cadena": "comparable corpus",
-        "n": 35
+        "n": 34
        },
        {
         "cadena": "comparable corpora",
-        "n": 28
+        "n": 23
        }
       ],
       "principal": true
@@ -7818,22 +7847,22 @@
     ]
    },
    "es": {
-    "total": 66,
+    "total": 64,
     "docs": 15,
     "formas": [
      {
       "forma": "corpus comparable",
       "relacion": "lema",
-      "n": 66,
+      "n": 64,
       "docs": 15,
       "cadenas": [
        {
         "cadena": "corpus comparable",
-        "n": 23
+        "n": 22
        },
        {
         "cadena": "corpus comparables",
-        "n": 43
+        "n": 42
        }
       ],
       "principal": true
@@ -7843,18 +7872,18 @@
   },
   "computational_linguistics": {
    "en": {
-    "total": 107,
-    "docs": 24,
+    "total": 34,
+    "docs": 14,
     "formas": [
      {
       "forma": "computational linguistics",
       "relacion": "lema",
-      "n": 107,
-      "docs": 24,
+      "n": 34,
+      "docs": 14,
       "cadenas": [
        {
         "cadena": "computational linguistics",
-        "n": 107
+        "n": 34
        }
       ],
       "principal": true
@@ -7862,18 +7891,18 @@
     ]
    },
    "es": {
-    "total": 105,
-    "docs": 19,
+    "total": 99,
+    "docs": 18,
     "formas": [
      {
       "forma": "lingüística computacional",
       "relacion": "lema",
-      "n": 105,
-      "docs": 19,
+      "n": 99,
+      "docs": 18,
       "cadenas": [
        {
         "cadena": "lingüística computacional",
-        "n": 105
+        "n": 99
        }
       ],
       "principal": true
@@ -7883,13 +7912,13 @@
   },
   "confidence_interval": {
    "en": {
-    "total": 49,
+    "total": 48,
     "docs": 7,
     "formas": [
      {
       "forma": "confidence interval",
       "relacion": "lema",
-      "n": 49,
+      "n": 48,
       "docs": 7,
       "cadenas": [
        {
@@ -7898,7 +7927,7 @@
        },
        {
         "cadena": "confidence intervals",
-        "n": 11
+        "n": 10
        }
       ],
       "principal": true
@@ -7931,22 +7960,22 @@
   },
   "corpus": {
    "en": {
-    "total": 16681,
+    "total": 15005,
     "docs": 50,
     "formas": [
      {
       "forma": "corpus",
       "relacion": "lema",
-      "n": 16681,
+      "n": 15005,
       "docs": 50,
       "cadenas": [
        {
         "cadena": "corpus",
-        "n": 12757
+        "n": 11443
        },
        {
         "cadena": "corpora",
-        "n": 3924
+        "n": 3562
        }
       ],
       "principal": true
@@ -7954,22 +7983,22 @@
     ]
    },
    "es": {
-    "total": 12222,
+    "total": 10510,
     "docs": 50,
     "formas": [
      {
       "forma": "corpus",
       "relacion": "lema",
-      "n": 12222,
+      "n": 10510,
       "docs": 50,
       "cadenas": [
        {
         "cadena": "corpus",
-        "n": 11666
+        "n": 10281
        },
        {
         "cadena": "córpora",
-        "n": 556
+        "n": 229
        }
       ],
       "principal": true
@@ -7979,18 +8008,18 @@
   },
   "corpus_design": {
    "en": {
-    "total": 302,
-    "docs": 20,
+    "total": 273,
+    "docs": 17,
     "formas": [
      {
       "forma": "corpus design",
       "relacion": "lema",
-      "n": 302,
-      "docs": 20,
+      "n": 273,
+      "docs": 17,
       "cadenas": [
        {
         "cadena": "corpus design",
-        "n": 300
+        "n": 271
        },
        {
         "cadena": "corpus designs",
@@ -8002,18 +8031,18 @@
     ]
    },
    "es": {
-    "total": 42,
-    "docs": 19,
+    "total": 22,
+    "docs": 11,
     "formas": [
      {
       "forma": "diseño de corpus",
       "relacion": "lema",
-      "n": 42,
-      "docs": 19,
+      "n": 22,
+      "docs": 11,
       "cadenas": [
        {
         "cadena": "diseño de corpus",
-        "n": 42
+        "n": 22
        },
        {
         "cadena": "diseños de corpus",
@@ -8027,18 +8056,18 @@
   },
   "corpus_linguistics": {
    "en": {
-    "total": 1633,
-    "docs": 47,
+    "total": 1162,
+    "docs": 43,
     "formas": [
      {
       "forma": "corpus linguistics",
       "relacion": "lema",
-      "n": 1633,
-      "docs": 47,
+      "n": 1162,
+      "docs": 43,
       "cadenas": [
        {
         "cadena": "corpus linguistics",
-        "n": 1633
+        "n": 1162
        }
       ],
       "principal": true
@@ -8046,18 +8075,18 @@
     ]
    },
    "es": {
-    "total": 728,
+    "total": 616,
     "docs": 48,
     "formas": [
      {
       "forma": "lingüística de corpus",
       "relacion": "lema",
-      "n": 728,
+      "n": 616,
       "docs": 48,
       "cadenas": [
        {
         "cadena": "lingüística de corpus",
-        "n": 728
+        "n": 616
        }
       ],
       "principal": true
@@ -8067,18 +8096,18 @@
   },
   "corpus_size": {
    "en": {
-    "total": 101,
+    "total": 98,
     "docs": 13,
     "formas": [
      {
       "forma": "corpus size",
       "relacion": "lema",
-      "n": 101,
+      "n": 98,
       "docs": 13,
       "cadenas": [
        {
         "cadena": "corpus size",
-        "n": 92
+        "n": 89
        },
        {
         "cadena": "corpus sizes",
@@ -8115,22 +8144,22 @@
   },
   "diachronic_corpus": {
    "en": {
-    "total": 56,
-    "docs": 13,
+    "total": 44,
+    "docs": 11,
     "formas": [
      {
       "forma": "diachronic corpus",
       "relacion": "lema",
-      "n": 56,
-      "docs": 13,
+      "n": 44,
+      "docs": 11,
       "cadenas": [
        {
         "cadena": "diachronic corpus",
-        "n": 29
+        "n": 24
        },
        {
         "cadena": "diachronic corpora",
-        "n": 27
+        "n": 20
        }
       ],
       "principal": true
@@ -8138,22 +8167,22 @@
     ]
    },
    "es": {
-    "total": 166,
-    "docs": 30,
+    "total": 136,
+    "docs": 28,
     "formas": [
      {
       "forma": "corpus diacrónico",
       "relacion": "lema",
-      "n": 166,
-      "docs": 30,
+      "n": 136,
+      "docs": 28,
       "cadenas": [
        {
         "cadena": "corpus diacrónico",
-        "n": 100
+        "n": 77
        },
        {
         "cadena": "corpus diacrónicos",
-        "n": 66
+        "n": 59
        }
       ],
       "principal": true
@@ -8163,18 +8192,18 @@
   },
   "dispersion": {
    "en": {
-    "total": 322,
+    "total": 303,
     "docs": 16,
     "formas": [
      {
       "forma": "dispersion",
       "relacion": "lema",
-      "n": 322,
+      "n": 303,
       "docs": 16,
       "cadenas": [
        {
         "cadena": "dispersion",
-        "n": 322
+        "n": 303
        }
       ],
       "principal": true
@@ -8182,18 +8211,18 @@
     ]
    },
    "es": {
-    "total": 36,
+    "total": 31,
     "docs": 7,
     "formas": [
      {
       "forma": "dispersión",
       "relacion": "lema",
-      "n": 36,
+      "n": 31,
       "docs": 7,
       "cadenas": [
        {
         "cadena": "dispersión",
-        "n": 36
+        "n": 31
        }
       ],
       "principal": true
@@ -8203,22 +8232,22 @@
   },
   "effect_size": {
    "en": {
-    "total": 57,
-    "docs": 8,
+    "total": 52,
+    "docs": 7,
     "formas": [
      {
       "forma": "effect size",
       "relacion": "lema",
-      "n": 57,
-      "docs": 8,
+      "n": 52,
+      "docs": 7,
       "cadenas": [
        {
         "cadena": "effect size",
-        "n": 44
+        "n": 43
        },
        {
         "cadena": "effect sizes",
-        "n": 13
+        "n": 9
        }
       ],
       "principal": true
@@ -8251,18 +8280,18 @@
   },
   "encoding": {
    "en": {
-    "total": 149,
+    "total": 132,
     "docs": 16,
     "formas": [
      {
       "forma": "encoding",
       "relacion": "lema",
-      "n": 149,
+      "n": 132,
       "docs": 16,
       "cadenas": [
        {
         "cadena": "encoding",
-        "n": 132
+        "n": 115
        },
        {
         "cadena": "encodings",
@@ -8274,18 +8303,18 @@
     ]
    },
    "es": {
-    "total": 259,
-    "docs": 29,
+    "total": 241,
+    "docs": 25,
     "formas": [
      {
       "forma": "codificación",
       "relacion": "lema",
-      "n": 259,
-      "docs": 29,
+      "n": 241,
+      "docs": 25,
       "cadenas": [
        {
         "cadena": "codificación",
-        "n": 255
+        "n": 237
        },
        {
         "cadena": "codificaciones",
@@ -8299,22 +8328,22 @@
   },
   "frequency": {
    "en": {
-    "total": 2143,
+    "total": 2064,
     "docs": 41,
     "formas": [
      {
       "forma": "frequency",
       "relacion": "lema",
-      "n": 2143,
+      "n": 2064,
       "docs": 41,
       "cadenas": [
        {
         "cadena": "frequency",
-        "n": 1608
+        "n": 1557
        },
        {
         "cadena": "frequencies",
-        "n": 535
+        "n": 507
        }
       ],
       "principal": true
@@ -8322,22 +8351,22 @@
     ]
    },
    "es": {
-    "total": 1610,
+    "total": 1572,
     "docs": 45,
     "formas": [
      {
       "forma": "frecuencia",
       "relacion": "lema",
-      "n": 1610,
+      "n": 1572,
       "docs": 45,
       "cadenas": [
        {
         "cadena": "frecuencia",
-        "n": 1023
+        "n": 996
        },
        {
         "cadena": "frecuencias",
-        "n": 587
+        "n": 576
        }
       ],
       "principal": true
@@ -8347,14 +8376,14 @@
   },
   "function_word": {
    "en": {
-    "total": 83,
-    "docs": 13,
+    "total": 81,
+    "docs": 12,
     "formas": [
      {
       "forma": "function word",
       "relacion": "lema",
-      "n": 83,
-      "docs": 13,
+      "n": 81,
+      "docs": 12,
       "cadenas": [
        {
         "cadena": "function word",
@@ -8362,7 +8391,7 @@
        },
        {
         "cadena": "function words",
-        "n": 75
+        "n": 73
        }
       ],
       "principal": true
@@ -8418,18 +8447,18 @@
     ]
    },
    "es": {
-    "total": 72,
+    "total": 71,
     "docs": 18,
     "formas": [
      {
       "forma": "corpus general",
       "relacion": "lema",
-      "n": 72,
+      "n": 71,
       "docs": 18,
       "cadenas": [
        {
         "cadena": "corpus general",
-        "n": 25
+        "n": 24
        },
        {
         "cadena": "corpus generales",
@@ -8443,22 +8472,22 @@
   },
   "grammar": {
    "en": {
-    "total": 450,
-    "docs": 29,
+    "total": 350,
+    "docs": 25,
     "formas": [
      {
       "forma": "grammar",
       "relacion": "lema",
-      "n": 450,
-      "docs": 29,
+      "n": 350,
+      "docs": 25,
       "cadenas": [
        {
         "cadena": "grammar",
-        "n": 391
+        "n": 302
        },
        {
         "cadena": "grammars",
-        "n": 59
+        "n": 48
        }
       ],
       "principal": true
@@ -8466,22 +8495,22 @@
     ]
    },
    "es": {
-    "total": 178,
-    "docs": 39,
+    "total": 143,
+    "docs": 37,
     "formas": [
      {
       "forma": "gramática",
       "relacion": "lema",
-      "n": 178,
-      "docs": 39,
+      "n": 143,
+      "docs": 37,
       "cadenas": [
        {
         "cadena": "gramática",
-        "n": 141
+        "n": 107
        },
        {
         "cadena": "gramáticas",
-        "n": 37
+        "n": 36
        }
       ],
       "principal": true
@@ -8491,18 +8520,18 @@
   },
   "header": {
    "en": {
-    "total": 89,
+    "total": 86,
     "docs": 7,
     "formas": [
      {
       "forma": "header",
       "relacion": "lema",
-      "n": 89,
+      "n": 86,
       "docs": 7,
       "cadenas": [
        {
         "cadena": "header",
-        "n": 75
+        "n": 72
        },
        {
         "cadena": "headers",
@@ -8539,22 +8568,22 @@
   },
   "historical_corpus": {
    "en": {
-    "total": 59,
-    "docs": 15,
+    "total": 45,
+    "docs": 13,
     "formas": [
      {
       "forma": "historical corpus",
       "relacion": "lema",
-      "n": 59,
-      "docs": 15,
+      "n": 45,
+      "docs": 13,
       "cadenas": [
        {
         "cadena": "historical corpus",
-        "n": 19
+        "n": 15
        },
        {
         "cadena": "historical corpora",
-        "n": 40
+        "n": 30
        }
       ],
       "principal": true
@@ -8562,22 +8591,22 @@
     ]
    },
    "es": {
-    "total": 41,
+    "total": 36,
     "docs": 9,
     "formas": [
      {
       "forma": "corpus histórico",
       "relacion": "lema",
-      "n": 41,
+      "n": 36,
       "docs": 9,
       "cadenas": [
        {
         "cadena": "corpus histórico",
-        "n": 26
+        "n": 22
        },
        {
         "cadena": "corpus históricos",
-        "n": 15
+        "n": 14
        }
       ],
       "principal": true
@@ -8587,18 +8616,18 @@
   },
   "html": {
    "en": {
-    "total": 85,
-    "docs": 8,
+    "total": 80,
+    "docs": 7,
     "formas": [
      {
       "forma": "HTML",
       "relacion": "sigla",
-      "n": 81,
-      "docs": 8,
+      "n": 77,
+      "docs": 7,
       "cadenas": [
        {
         "cadena": "HTML",
-        "n": 81
+        "n": 77
        }
       ],
       "principal": true
@@ -8606,12 +8635,12 @@
      {
       "forma": "HyperText Markup Language",
       "relacion": "forma_desarrollada",
-      "n": 4,
+      "n": 3,
       "docs": 2,
       "cadenas": [
        {
         "cadena": "HyperText Markup Language",
-        "n": 4
+        "n": 3
        },
        {
         "cadena": "Hypertext Markup Language",
@@ -8707,18 +8736,18 @@
   },
   "keyness": {
    "en": {
-    "total": 82,
+    "total": 78,
     "docs": 7,
     "formas": [
      {
       "forma": "keyness",
       "relacion": "lema",
-      "n": 82,
+      "n": 78,
       "docs": 7,
       "cadenas": [
        {
         "cadena": "keyness",
-        "n": 82
+        "n": 78
        }
       ],
       "principal": true
@@ -8747,22 +8776,22 @@
   },
   "keyword_analysis": {
    "en": {
-    "total": 124,
-    "docs": 11,
+    "total": 118,
+    "docs": 10,
     "formas": [
      {
       "forma": "keyword analysis",
       "relacion": "lema",
-      "n": 124,
-      "docs": 11,
+      "n": 118,
+      "docs": 10,
       "cadenas": [
        {
         "cadena": "keyword analysis",
-        "n": 112
+        "n": 110
        },
        {
         "cadena": "keyword analyses",
-        "n": 12
+        "n": 8
        }
       ],
       "principal": true
@@ -8770,18 +8799,18 @@
     ]
    },
    "es": {
-    "total": 2,
-    "docs": 1,
+    "total": 0,
+    "docs": 0,
     "formas": [
      {
       "forma": "análisis de palabras clave",
       "relacion": "lema",
-      "n": 2,
-      "docs": 1,
+      "n": 0,
+      "docs": 0,
       "cadenas": [
        {
         "cadena": "análisis de palabras clave",
-        "n": 2
+        "n": 0
        }
       ],
       "principal": true
@@ -8791,22 +8820,22 @@
   },
   "lemma": {
    "en": {
-    "total": 132,
-    "docs": 16,
+    "total": 129,
+    "docs": 15,
     "formas": [
      {
       "forma": "lemma",
       "relacion": "lema",
-      "n": 132,
-      "docs": 16,
+      "n": 129,
+      "docs": 15,
       "cadenas": [
        {
         "cadena": "lemma",
-        "n": 82
+        "n": 80
        },
        {
         "cadena": "lemmas",
-        "n": 50
+        "n": 49
        },
        {
         "cadena": "lemmata",
@@ -8891,18 +8920,18 @@
   },
   "log_likelihood": {
    "en": {
-    "total": 34,
+    "total": 32,
     "docs": 11,
     "formas": [
      {
       "forma": "log-likelihood",
       "relacion": "lema",
-      "n": 34,
+      "n": 32,
       "docs": 11,
       "cadenas": [
        {
         "cadena": "log-likelihood",
-        "n": 34
+        "n": 32
        }
       ],
       "principal": true
@@ -8931,18 +8960,18 @@
   },
   "markup_language": {
    "en": {
-    "total": 39,
+    "total": 33,
     "docs": 10,
     "formas": [
      {
       "forma": "markup language",
       "relacion": "lema",
-      "n": 39,
+      "n": 33,
       "docs": 10,
       "cadenas": [
        {
         "cadena": "markup language",
-        "n": 33
+        "n": 27
        },
        {
         "cadena": "markup languages",
@@ -9002,18 +9031,18 @@
     ]
    },
    "es": {
-    "total": 29,
+    "total": 28,
     "docs": 14,
     "formas": [
      {
       "forma": "corpus monolingüe",
       "relacion": "lema",
-      "n": 29,
+      "n": 28,
       "docs": 14,
       "cadenas": [
        {
         "cadena": "corpus monolingüe",
-        "n": 10
+        "n": 9
        },
        {
         "cadena": "corpus monolingües",
@@ -9075,22 +9104,22 @@
   },
   "multilingual_corpus": {
    "en": {
-    "total": 66,
+    "total": 54,
     "docs": 9,
     "formas": [
      {
       "forma": "multilingual corpus",
       "relacion": "lema",
-      "n": 66,
+      "n": 54,
       "docs": 9,
       "cadenas": [
        {
         "cadena": "multilingual corpus",
-        "n": 37
+        "n": 33
        },
        {
         "cadena": "multilingual corpora",
-        "n": 29
+        "n": 21
        }
       ],
       "principal": true
@@ -9098,22 +9127,22 @@
     ]
    },
    "es": {
-    "total": 53,
+    "total": 48,
     "docs": 16,
     "formas": [
      {
       "forma": "corpus multilingüe",
       "relacion": "lema",
-      "n": 53,
+      "n": 48,
       "docs": 16,
       "cadenas": [
        {
         "cadena": "corpus multilingüe",
-        "n": 28
+        "n": 25
        },
        {
         "cadena": "corpus multilingües",
-        "n": 25
+        "n": 23
        }
       ],
       "principal": true
@@ -9123,22 +9152,22 @@
   },
   "multimodal_corpus": {
    "en": {
-    "total": 56,
-    "docs": 4,
+    "total": 46,
+    "docs": 3,
     "formas": [
      {
       "forma": "multimodal corpus",
       "relacion": "lema",
-      "n": 56,
-      "docs": 4,
+      "n": 46,
+      "docs": 3,
       "cadenas": [
        {
         "cadena": "multimodal corpus",
-        "n": 28
+        "n": 24
        },
        {
         "cadena": "multimodal corpora",
-        "n": 28
+        "n": 22
        }
       ],
       "principal": true
@@ -9146,18 +9175,18 @@
     ]
    },
    "es": {
-    "total": 29,
+    "total": 27,
     "docs": 10,
     "formas": [
      {
       "forma": "corpus multimodal",
       "relacion": "lema",
-      "n": 29,
+      "n": 27,
       "docs": 10,
       "cadenas": [
        {
         "cadena": "corpus multimodal",
-        "n": 11
+        "n": 9
        },
        {
         "cadena": "corpus multimodales",
@@ -9171,18 +9200,18 @@
   },
   "mutual_information": {
    "en": {
-    "total": 31,
+    "total": 26,
     "docs": 9,
     "formas": [
      {
       "forma": "mutual information",
       "relacion": "lema",
-      "n": 31,
+      "n": 26,
       "docs": 9,
       "cadenas": [
        {
         "cadena": "mutual information",
-        "n": 31
+        "n": 26
        }
       ],
       "principal": true
@@ -9190,18 +9219,18 @@
     ]
    },
    "es": {
-    "total": 27,
+    "total": 24,
     "docs": 9,
     "formas": [
      {
       "forma": "información mutua",
       "relacion": "lema",
-      "n": 27,
+      "n": 24,
       "docs": 9,
       "cadenas": [
        {
         "cadena": "información mutua",
-        "n": 27
+        "n": 24
        }
       ],
       "principal": true
@@ -9211,18 +9240,18 @@
   },
   "named_entity_recognition": {
    "en": {
-    "total": 3,
-    "docs": 3,
+    "total": 2,
+    "docs": 2,
     "formas": [
      {
       "forma": "named entity recognition",
       "relacion": "lema",
-      "n": 3,
-      "docs": 3,
+      "n": 2,
+      "docs": 2,
       "cadenas": [
        {
         "cadena": "named entity recognition",
-        "n": 3
+        "n": 2
        }
       ],
       "principal": true
@@ -9251,18 +9280,18 @@
   },
   "national_corpus": {
    "en": {
-    "total": 184,
-    "docs": 26,
+    "total": 132,
+    "docs": 22,
     "formas": [
      {
       "forma": "national corpus",
       "relacion": "lema",
-      "n": 184,
-      "docs": 26,
+      "n": 132,
+      "docs": 22,
       "cadenas": [
        {
         "cadena": "national corpus",
-        "n": 178
+        "n": 126
        },
        {
         "cadena": "national corpora",
@@ -9299,18 +9328,18 @@
   },
   "natural_language_processing": {
    "en": {
-    "total": 78,
-    "docs": 24,
+    "total": 47,
+    "docs": 19,
     "formas": [
      {
       "forma": "natural language processing",
       "relacion": "lema",
-      "n": 78,
-      "docs": 24,
+      "n": 47,
+      "docs": 19,
       "cadenas": [
        {
         "cadena": "natural language processing",
-        "n": 78
+        "n": 47
        }
       ],
       "principal": true
@@ -9318,18 +9347,18 @@
     ]
    },
    "es": {
-    "total": 54,
-    "docs": 20,
+    "total": 32,
+    "docs": 15,
     "formas": [
      {
       "forma": "procesamiento del lenguaje natural",
       "relacion": "lema",
-      "n": 54,
-      "docs": 20,
+      "n": 32,
+      "docs": 15,
       "cadenas": [
        {
         "cadena": "procesamiento del lenguaje natural",
-        "n": 54
+        "n": 32
        }
       ],
       "principal": true
@@ -9387,22 +9416,22 @@
   },
   "occurrence": {
    "en": {
-    "total": 453,
+    "total": 451,
     "docs": 32,
     "formas": [
      {
       "forma": "occurrence",
       "relacion": "lema",
-      "n": 453,
+      "n": 451,
       "docs": 32,
       "cadenas": [
        {
         "cadena": "occurrence",
-        "n": 302
+        "n": 301
        },
        {
         "cadena": "occurrences",
-        "n": 151
+        "n": 150
        }
       ],
       "principal": true
@@ -9435,22 +9464,22 @@
   },
   "parallel_corpus": {
    "en": {
-    "total": 302,
-    "docs": 13,
+    "total": 263,
+    "docs": 12,
     "formas": [
      {
       "forma": "parallel corpus",
       "relacion": "lema",
-      "n": 302,
-      "docs": 13,
+      "n": 263,
+      "docs": 12,
       "cadenas": [
        {
         "cadena": "parallel corpus",
-        "n": 138
+        "n": 113
        },
        {
         "cadena": "parallel corpora",
-        "n": 164
+        "n": 150
        }
       ],
       "principal": true
@@ -9458,22 +9487,22 @@
     ]
    },
    "es": {
-    "total": 276,
-    "docs": 26,
+    "total": 260,
+    "docs": 24,
     "formas": [
      {
       "forma": "corpus paralelo",
       "relacion": "lema",
-      "n": 276,
-      "docs": 26,
+      "n": 260,
+      "docs": 24,
       "cadenas": [
        {
         "cadena": "corpus paralelo",
-        "n": 135
+        "n": 123
        },
        {
         "cadena": "corpus paralelos",
-        "n": 141
+        "n": 137
        }
       ],
       "principal": true
@@ -9483,18 +9512,18 @@
   },
   "parsing": {
    "en": {
-    "total": 46,
-    "docs": 17,
+    "total": 39,
+    "docs": 16,
     "formas": [
      {
       "forma": "parsing",
       "relacion": "lema",
-      "n": 46,
-      "docs": 17,
+      "n": 39,
+      "docs": 16,
       "cadenas": [
        {
         "cadena": "parsing",
-        "n": 46
+        "n": 39
        }
       ],
       "principal": true
@@ -9502,18 +9531,18 @@
     ]
    },
    "es": {
-    "total": 31,
+    "total": 30,
     "docs": 12,
     "formas": [
      {
       "forma": "análisis sintáctico",
       "relacion": "lema",
-      "n": 31,
+      "n": 30,
       "docs": 12,
       "cadenas": [
        {
         "cadena": "análisis sintáctico",
-        "n": 31
+        "n": 30
        }
       ],
       "principal": true
@@ -9523,18 +9552,18 @@
   },
   "phraseology": {
    "en": {
-    "total": 11,
-    "docs": 7,
+    "total": 10,
+    "docs": 6,
     "formas": [
      {
       "forma": "phraseology",
       "relacion": "lema",
-      "n": 11,
-      "docs": 7,
+      "n": 10,
+      "docs": 6,
       "cadenas": [
        {
         "cadena": "phraseology",
-        "n": 11
+        "n": 10
        }
       ],
       "principal": true
@@ -9542,18 +9571,18 @@
     ]
    },
    "es": {
-    "total": 9,
-    "docs": 6,
+    "total": 7,
+    "docs": 5,
     "formas": [
      {
       "forma": "fraseología",
       "relacion": "lema",
-      "n": 9,
-      "docs": 6,
+      "n": 7,
+      "docs": 5,
       "cadenas": [
        {
         "cadena": "fraseología",
-        "n": 9
+        "n": 7
        }
       ],
       "principal": true
@@ -9563,18 +9592,18 @@
   },
   "plain_text": {
    "en": {
-    "total": 34,
+    "total": 32,
     "docs": 10,
     "formas": [
      {
       "forma": "plain text",
       "relacion": "lema",
-      "n": 34,
+      "n": 32,
       "docs": 10,
       "cadenas": [
        {
         "cadena": "plain text",
-        "n": 34
+        "n": 32
        }
       ],
       "principal": true
@@ -9603,22 +9632,22 @@
   },
   "probability": {
    "en": {
-    "total": 481,
-    "docs": 19,
+    "total": 454,
+    "docs": 18,
     "formas": [
      {
       "forma": "probability",
       "relacion": "lema",
-      "n": 481,
-      "docs": 19,
+      "n": 454,
+      "docs": 18,
       "cadenas": [
        {
         "cadena": "probability",
-        "n": 375
+        "n": 349
        },
        {
         "cadena": "probabilities",
-        "n": 106
+        "n": 105
        }
       ],
       "principal": true
@@ -9651,22 +9680,22 @@
   },
   "reference_corpus": {
    "en": {
-    "total": 119,
-    "docs": 21,
+    "total": 106,
+    "docs": 20,
     "formas": [
      {
       "forma": "reference corpus",
       "relacion": "lema",
-      "n": 119,
-      "docs": 21,
+      "n": 106,
+      "docs": 20,
       "cadenas": [
        {
         "cadena": "reference corpus",
-        "n": 105
+        "n": 93
        },
        {
         "cadena": "reference corpora",
-        "n": 14
+        "n": 13
        }
       ],
       "principal": true
@@ -9674,18 +9703,18 @@
     ]
    },
    "es": {
-    "total": 207,
-    "docs": 32,
+    "total": 193,
+    "docs": 30,
     "formas": [
      {
       "forma": "corpus de referencia",
       "relacion": "lema",
-      "n": 207,
-      "docs": 32,
+      "n": 193,
+      "docs": 30,
       "cadenas": [
        {
         "cadena": "corpus de referencia",
-        "n": 207
+        "n": 193
        }
       ],
       "principal": true
@@ -9695,13 +9724,13 @@
   },
   "regular_expression": {
    "en": {
-    "total": 149,
+    "total": 147,
     "docs": 11,
     "formas": [
      {
       "forma": "regular expression",
       "relacion": "lema",
-      "n": 149,
+      "n": 147,
       "docs": 11,
       "cadenas": [
        {
@@ -9710,7 +9739,7 @@
        },
        {
         "cadena": "regular expressions",
-        "n": 95
+        "n": 93
        }
       ],
       "principal": true
@@ -9718,13 +9747,13 @@
     ]
    },
    "es": {
-    "total": 47,
+    "total": 46,
     "docs": 9,
     "formas": [
      {
       "forma": "expresión regular",
       "relacion": "lema",
-      "n": 47,
+      "n": 46,
       "docs": 9,
       "cadenas": [
        {
@@ -9733,7 +9762,7 @@
        },
        {
         "cadena": "expresiones regulares",
-        "n": 44
+        "n": 43
        }
       ],
       "principal": true
@@ -9766,18 +9795,18 @@
     ]
    },
    "es": {
-    "total": 46,
+    "total": 45,
     "docs": 9,
     "formas": [
      {
       "forma": "frecuencia relativa",
       "relacion": "lema",
-      "n": 46,
+      "n": 45,
       "docs": 9,
       "cadenas": [
        {
         "cadena": "frecuencia relativa",
-        "n": 28
+        "n": 27
        },
        {
         "cadena": "frecuencias relativas",
@@ -9791,18 +9820,18 @@
   },
   "representativeness": {
    "en": {
-    "total": 561,
-    "docs": 22,
+    "total": 539,
+    "docs": 21,
     "formas": [
      {
       "forma": "representativeness",
       "relacion": "lema",
-      "n": 561,
-      "docs": 22,
+      "n": 539,
+      "docs": 21,
       "cadenas": [
        {
         "cadena": "representativeness",
-        "n": 561
+        "n": 539
        }
       ],
       "principal": true
@@ -9810,18 +9839,18 @@
     ]
    },
    "es": {
-    "total": 229,
+    "total": 222,
     "docs": 34,
     "formas": [
      {
       "forma": "representatividad",
       "relacion": "lema",
-      "n": 229,
+      "n": 222,
       "docs": 34,
       "cadenas": [
        {
         "cadena": "representatividad",
-        "n": 229
+        "n": 222
        }
       ],
       "principal": true
@@ -9831,18 +9860,18 @@
   },
   "sampling_frame": {
    "en": {
-    "total": 89,
+    "total": 87,
     "docs": 5,
     "formas": [
      {
       "forma": "sampling frame",
       "relacion": "lema",
-      "n": 89,
+      "n": 87,
       "docs": 5,
       "cadenas": [
        {
         "cadena": "sampling frame",
-        "n": 77
+        "n": 75
        },
        {
         "cadena": "sampling frames",
@@ -9879,18 +9908,18 @@
   },
   "segmentation": {
    "en": {
-    "total": 28,
-    "docs": 14,
+    "total": 22,
+    "docs": 12,
     "formas": [
      {
       "forma": "segmentation",
       "relacion": "lema",
-      "n": 28,
-      "docs": 14,
+      "n": 22,
+      "docs": 12,
       "cadenas": [
        {
         "cadena": "segmentation",
-        "n": 28
+        "n": 22
        }
       ],
       "principal": true
@@ -9898,18 +9927,18 @@
     ]
    },
    "es": {
-    "total": 29,
+    "total": 28,
     "docs": 9,
     "formas": [
      {
       "forma": "segmentación",
       "relacion": "lema",
-      "n": 29,
+      "n": 28,
       "docs": 9,
       "cadenas": [
        {
         "cadena": "segmentación",
-        "n": 29
+        "n": 28
        }
       ],
       "principal": true
@@ -9919,18 +9948,18 @@
   },
   "semantic_annotation": {
    "en": {
-    "total": 31,
-    "docs": 12,
+    "total": 27,
+    "docs": 11,
     "formas": [
      {
       "forma": "semantic annotation",
       "relacion": "lema",
-      "n": 31,
-      "docs": 12,
+      "n": 27,
+      "docs": 11,
       "cadenas": [
        {
         "cadena": "semantic annotation",
-        "n": 31
+        "n": 27
        },
        {
         "cadena": "semantic annotations",
@@ -9942,18 +9971,18 @@
     ]
    },
    "es": {
-    "total": 36,
-    "docs": 8,
+    "total": 31,
+    "docs": 7,
     "formas": [
      {
       "forma": "anotación semántica",
       "relacion": "lema",
-      "n": 36,
-      "docs": 8,
+      "n": 31,
+      "docs": 7,
       "cadenas": [
        {
         "cadena": "anotación semántica",
-        "n": 36
+        "n": 31
        },
        {
         "cadena": "anotaciones semánticas",
@@ -9967,22 +9996,22 @@
   },
   "semantic_prosody": {
    "en": {
-    "total": 29,
-    "docs": 3,
+    "total": 25,
+    "docs": 2,
     "formas": [
      {
       "forma": "semantic prosody",
       "relacion": "lema",
-      "n": 29,
-      "docs": 3,
+      "n": 25,
+      "docs": 2,
       "cadenas": [
        {
         "cadena": "semantic prosody",
-        "n": 28
+        "n": 25
        },
        {
         "cadena": "semantic prosodies",
-        "n": 1
+        "n": 0
        }
       ],
       "principal": true
@@ -10015,18 +10044,18 @@
   },
   "sgml": {
    "en": {
-    "total": 70,
+    "total": 62,
     "docs": 9,
     "formas": [
      {
       "forma": "SGML",
       "relacion": "sigla",
-      "n": 62,
+      "n": 55,
       "docs": 9,
       "cadenas": [
        {
         "cadena": "SGML",
-        "n": 62
+        "n": 55
        }
       ],
       "principal": true
@@ -10034,12 +10063,12 @@
      {
       "forma": "Standard Generalized Markup Language",
       "relacion": "forma_desarrollada",
-      "n": 8,
+      "n": 7,
       "docs": 4,
       "cadenas": [
        {
         "cadena": "Standard Generalized Markup Language",
-        "n": 7
+        "n": 6
        },
        {
         "cadena": "Standard Generalised Markup Language",
@@ -10050,18 +10079,18 @@
     ]
    },
    "es": {
-    "total": 30,
+    "total": 28,
     "docs": 6,
     "formas": [
      {
       "forma": "SGML",
       "relacion": "sigla",
-      "n": 27,
+      "n": 25,
       "docs": 6,
       "cadenas": [
        {
         "cadena": "SGML",
-        "n": 27
+        "n": 25
        }
       ],
       "principal": true
@@ -10087,18 +10116,18 @@
   },
   "standard_deviation": {
    "en": {
-    "total": 118,
+    "total": 117,
     "docs": 14,
     "formas": [
      {
       "forma": "standard deviation",
       "relacion": "lema",
-      "n": 118,
+      "n": 117,
       "docs": 14,
       "cadenas": [
        {
         "cadena": "standard deviation",
-        "n": 97
+        "n": 96
        },
        {
         "cadena": "standard deviations",
@@ -10183,13 +10212,13 @@
   },
   "subcorpus": {
    "en": {
-    "total": 164,
+    "total": 163,
     "docs": 21,
     "formas": [
      {
       "forma": "subcorpus",
       "relacion": "lema",
-      "n": 164,
+      "n": 163,
       "docs": 21,
       "cadenas": [
        {
@@ -10198,7 +10227,7 @@
        },
        {
         "cadena": "subcorpora",
-        "n": 82
+        "n": 81
        }
       ],
       "principal": true
@@ -10206,18 +10235,18 @@
     ]
    },
    "es": {
-    "total": 189,
+    "total": 188,
     "docs": 34,
     "formas": [
      {
       "forma": "subcorpus",
       "relacion": "lema",
-      "n": 189,
+      "n": 188,
       "docs": 34,
       "cadenas": [
        {
         "cadena": "subcorpus",
-        "n": 188
+        "n": 187
        },
        {
         "cadena": "subcórpora",
@@ -10231,18 +10260,18 @@
   },
   "synchronic": {
    "en": {
-    "total": 88,
-    "docs": 16,
+    "total": 83,
+    "docs": 14,
     "formas": [
      {
       "forma": "synchronic",
       "relacion": "lema",
-      "n": 88,
-      "docs": 16,
+      "n": 83,
+      "docs": 14,
       "cadenas": [
        {
         "cadena": "synchronic",
-        "n": 88
+        "n": 83
        }
       ],
       "principal": true
@@ -10250,18 +10279,18 @@
     ]
    },
    "es": {
-    "total": 76,
+    "total": 75,
     "docs": 23,
     "formas": [
      {
       "forma": "sincrónico",
       "relacion": "lema",
-      "n": 76,
+      "n": 75,
       "docs": 23,
       "cadenas": [
        {
         "cadena": "sincrónico",
-        "n": 42
+        "n": 41
        },
        {
         "cadena": "sincrónica",
@@ -10283,18 +10312,18 @@
   },
   "syntactic_annotation": {
    "en": {
-    "total": 29,
-    "docs": 7,
+    "total": 28,
+    "docs": 6,
     "formas": [
      {
       "forma": "syntactic annotation",
       "relacion": "lema",
-      "n": 29,
-      "docs": 7,
+      "n": 28,
+      "docs": 6,
       "cadenas": [
        {
         "cadena": "syntactic annotation",
-        "n": 26
+        "n": 25
        },
        {
         "cadena": "syntactic annotations",
@@ -10306,18 +10335,18 @@
     ]
    },
    "es": {
-    "total": 13,
-    "docs": 9,
+    "total": 12,
+    "docs": 8,
     "formas": [
      {
       "forma": "anotación sintáctica",
       "relacion": "lema",
-      "n": 13,
-      "docs": 9,
+      "n": 12,
+      "docs": 8,
       "cadenas": [
        {
         "cadena": "anotación sintáctica",
-        "n": 13
+        "n": 12
        },
        {
         "cadena": "anotaciones sintácticas",
@@ -10331,18 +10360,18 @@
   },
   "t_score": {
    "en": {
-    "total": 16,
+    "total": 15,
     "docs": 3,
     "formas": [
      {
       "forma": "t-score",
       "relacion": "lema",
-      "n": 16,
+      "n": 15,
       "docs": 3,
       "cadenas": [
        {
         "cadena": "t-score",
-        "n": 15
+        "n": 14
        },
        {
         "cadena": "t-scores",
@@ -10354,18 +10383,18 @@
     ]
    },
    "es": {
-    "total": 6,
+    "total": 4,
     "docs": 1,
     "formas": [
      {
       "forma": "puntuación t",
       "relacion": "lema",
-      "n": 6,
+      "n": 4,
       "docs": 1,
       "cadenas": [
        {
         "cadena": "puntuación t",
-        "n": 6
+        "n": 4
        },
        {
         "cadena": "puntuaciones t",
@@ -10379,22 +10408,22 @@
   },
   "tagger": {
    "en": {
-    "total": 189,
+    "total": 172,
     "docs": 25,
     "formas": [
      {
       "forma": "tagger",
       "relacion": "lema",
-      "n": 189,
+      "n": 172,
       "docs": 25,
       "cadenas": [
        {
         "cadena": "tagger",
-        "n": 133
+        "n": 117
        },
        {
         "cadena": "taggers",
-        "n": 56
+        "n": 55
        }
       ],
       "principal": true
@@ -10427,18 +10456,18 @@
   },
   "tei": {
    "en": {
-    "total": 64,
+    "total": 58,
     "docs": 12,
     "formas": [
      {
       "forma": "TEI",
       "relacion": "sigla",
-      "n": 47,
+      "n": 43,
       "docs": 10,
       "cadenas": [
        {
         "cadena": "TEI",
-        "n": 47
+        "n": 43
        }
       ],
       "principal": true
@@ -10446,30 +10475,30 @@
      {
       "forma": "Text Encoding Initiative",
       "relacion": "forma_desarrollada",
-      "n": 17,
+      "n": 15,
       "docs": 9,
       "cadenas": [
        {
         "cadena": "Text Encoding Initiative",
-        "n": 17
+        "n": 15
        }
       ]
      }
     ]
    },
    "es": {
-    "total": 36,
+    "total": 32,
     "docs": 9,
     "formas": [
      {
       "forma": "TEI",
       "relacion": "sigla",
-      "n": 28,
+      "n": 25,
       "docs": 9,
       "cadenas": [
        {
         "cadena": "TEI",
-        "n": 28
+        "n": 25
        }
       ],
       "principal": true
@@ -10477,12 +10506,12 @@
      {
       "forma": "Text Encoding Initiative",
       "relacion": "forma_desarrollada",
-      "n": 8,
-      "docs": 8,
+      "n": 7,
+      "docs": 7,
       "cadenas": [
        {
         "cadena": "Text Encoding Initiative",
-        "n": 8
+        "n": 7
        }
       ]
      }
@@ -10491,22 +10520,22 @@
   },
   "text_type": {
    "en": {
-    "total": 247,
+    "total": 238,
     "docs": 23,
     "formas": [
      {
       "forma": "text type",
       "relacion": "lema",
-      "n": 247,
+      "n": 238,
       "docs": 23,
       "cadenas": [
        {
         "cadena": "text type",
-        "n": 70
+        "n": 68
        },
        {
         "cadena": "text types",
-        "n": 177
+        "n": 170
        }
       ],
       "principal": true
@@ -10514,18 +10543,18 @@
     ]
    },
    "es": {
-    "total": 140,
+    "total": 139,
     "docs": 27,
     "formas": [
      {
       "forma": "tipo de texto",
       "relacion": "lema",
-      "n": 140,
+      "n": 139,
       "docs": 27,
       "cadenas": [
        {
         "cadena": "tipo de texto",
-        "n": 76
+        "n": 75
        },
        {
         "cadena": "tipos de texto",
@@ -10539,22 +10568,22 @@
   },
   "token": {
    "en": {
-    "total": 630,
-    "docs": 30,
+    "total": 624,
+    "docs": 29,
     "formas": [
      {
       "forma": "token",
       "relacion": "lema",
-      "n": 630,
-      "docs": 30,
+      "n": 624,
+      "docs": 29,
       "cadenas": [
        {
         "cadena": "token",
-        "n": 269
+        "n": 265
        },
        {
         "cadena": "tokens",
-        "n": 361
+        "n": 359
        }
       ],
       "principal": true
@@ -10562,22 +10591,22 @@
     ]
    },
    "es": {
-    "total": 112,
-    "docs": 18,
+    "total": 109,
+    "docs": 17,
     "formas": [
      {
       "forma": "token",
       "relacion": "lema",
-      "n": 112,
-      "docs": 18,
+      "n": 109,
+      "docs": 17,
       "cadenas": [
        {
         "cadena": "token",
-        "n": 40
+        "n": 38
        },
        {
         "cadena": "tokens",
-        "n": 72
+        "n": 71
        }
       ],
       "principal": true
@@ -10587,18 +10616,18 @@
   },
   "training_corpus": {
    "en": {
-    "total": 35,
-    "docs": 7,
+    "total": 32,
+    "docs": 6,
     "formas": [
      {
       "forma": "training corpus",
       "relacion": "lema",
-      "n": 35,
-      "docs": 7,
+      "n": 32,
+      "docs": 6,
       "cadenas": [
        {
         "cadena": "training corpus",
-        "n": 31
+        "n": 28
        },
        {
         "cadena": "training corpora",
@@ -10610,18 +10639,18 @@
     ]
    },
    "es": {
-    "total": 18,
+    "total": 17,
     "docs": 8,
     "formas": [
      {
       "forma": "corpus de entrenamiento",
       "relacion": "lema",
-      "n": 18,
+      "n": 17,
       "docs": 8,
       "cadenas": [
        {
         "cadena": "corpus de entrenamiento",
-        "n": 18
+        "n": 17
        }
       ],
       "principal": true
@@ -10631,18 +10660,18 @@
   },
   "unicode": {
    "en": {
-    "total": 54,
+    "total": 52,
     "docs": 10,
     "formas": [
      {
       "forma": "Unicode",
       "relacion": "lema",
-      "n": 54,
+      "n": 52,
       "docs": 10,
       "cadenas": [
        {
         "cadena": "Unicode",
-        "n": 54
+        "n": 52
        }
       ],
       "principal": true
@@ -10671,18 +10700,18 @@
   },
   "utf_8": {
    "en": {
-    "total": 41,
+    "total": 40,
     "docs": 6,
     "formas": [
      {
       "forma": "UTF-8",
       "relacion": "sigla",
-      "n": 40,
+      "n": 39,
       "docs": 6,
       "cadenas": [
        {
         "cadena": "UTF-8",
-        "n": 40
+        "n": 39
        }
       ],
       "principal": true
@@ -10751,18 +10780,18 @@
   },
   "web_corpus": {
    "en": {
-    "total": 30,
-    "docs": 7,
+    "total": 27,
+    "docs": 5,
     "formas": [
      {
       "forma": "web corpus",
       "relacion": "lema",
-      "n": 30,
-      "docs": 7,
+      "n": 27,
+      "docs": 5,
       "cadenas": [
        {
         "cadena": "web corpus",
-        "n": 22
+        "n": 19
        },
        {
         "cadena": "web corpora",
@@ -10795,22 +10824,22 @@
   },
   "word_frequency": {
    "en": {
-    "total": 90,
-    "docs": 16,
+    "total": 71,
+    "docs": 15,
     "formas": [
      {
       "forma": "word frequency",
       "relacion": "lema",
-      "n": 90,
-      "docs": 16,
+      "n": 71,
+      "docs": 15,
       "cadenas": [
        {
         "cadena": "word frequency",
-        "n": 58
+        "n": 50
        },
        {
         "cadena": "word frequencies",
-        "n": 32
+        "n": 21
        }
       ],
       "principal": true
@@ -10866,18 +10895,18 @@
     ]
    },
    "es": {
-    "total": 46,
-    "docs": 19,
+    "total": 44,
+    "docs": 18,
     "formas": [
      {
       "forma": "corpus escrito",
       "relacion": "lema",
-      "n": 46,
-      "docs": 19,
+      "n": 44,
+      "docs": 18,
       "cadenas": [
        {
         "cadena": "corpus escrito",
-        "n": 21
+        "n": 19
        },
        {
         "cadena": "corpus escritos",
@@ -10891,18 +10920,18 @@
   },
   "xml": {
    "en": {
-    "total": 376,
+    "total": 347,
     "docs": 23,
     "formas": [
      {
       "forma": "XML",
       "relacion": "sigla",
-      "n": 363,
+      "n": 338,
       "docs": 23,
       "cadenas": [
        {
         "cadena": "XML",
-        "n": 363
+        "n": 338
        }
       ],
       "principal": true
@@ -10910,12 +10939,12 @@
      {
       "forma": "Extensible Markup Language",
       "relacion": "forma_desarrollada",
-      "n": 13,
-      "docs": 7,
+      "n": 9,
+      "docs": 6,
       "cadenas": [
        {
         "cadena": "Extensible Markup Language",
-        "n": 13
+        "n": 9
        },
        {
         "cadena": "eXtensible Markup Language",
@@ -10926,18 +10955,18 @@
     ]
    },
    "es": {
-    "total": 208,
+    "total": 199,
     "docs": 19,
     "formas": [
      {
       "forma": "XML",
       "relacion": "sigla",
-      "n": 201,
+      "n": 192,
       "docs": 19,
       "cadenas": [
        {
         "cadena": "XML",
-        "n": 201
+        "n": 192
        }
       ],
       "principal": true
@@ -10963,18 +10992,18 @@
   },
   "antconc": {
    "en": {
-    "total": 131,
-    "docs": 9,
+    "total": 125,
+    "docs": 8,
     "formas": [
      {
       "forma": "AntConc",
       "relacion": "lema",
-      "n": 131,
-      "docs": 9,
+      "n": 125,
+      "docs": 8,
       "cadenas": [
        {
         "cadena": "AntConc",
-        "n": 131
+        "n": 125
        }
       ],
       "principal": true
@@ -10982,18 +11011,18 @@
     ]
    },
    "es": {
-    "total": 33,
+    "total": 32,
     "docs": 10,
     "formas": [
      {
       "forma": "AntConc",
       "relacion": "lema",
-      "n": 33,
+      "n": 32,
       "docs": 10,
       "cadenas": [
        {
         "cadena": "AntConc",
-        "n": 33
+        "n": 32
        }
       ],
       "principal": true
@@ -11003,18 +11032,18 @@
   },
   "bank_of_english": {
    "en": {
-    "total": 44,
+    "total": 42,
     "docs": 5,
     "formas": [
      {
       "forma": "Bank of English",
       "relacion": "lema",
-      "n": 44,
+      "n": 42,
       "docs": 5,
       "cadenas": [
        {
         "cadena": "Bank of English",
-        "n": 44
+        "n": 42
        }
       ],
       "principal": true
@@ -11043,18 +11072,18 @@
   },
   "bncweb": {
    "en": {
-    "total": 183,
-    "docs": 3,
+    "total": 176,
+    "docs": 2,
     "formas": [
      {
       "forma": "BNCWeb",
       "relacion": "lema",
-      "n": 183,
-      "docs": 3,
+      "n": 176,
+      "docs": 2,
       "cadenas": [
        {
         "cadena": "BNCWeb",
-        "n": 183
+        "n": 176
        }
       ],
       "principal": true
@@ -11062,18 +11091,18 @@
     ]
    },
    "es": {
-    "total": 2,
-    "docs": 2,
+    "total": 0,
+    "docs": 0,
     "formas": [
      {
       "forma": "BNCWeb",
       "relacion": "lema",
-      "n": 2,
-      "docs": 2,
+      "n": 0,
+      "docs": 0,
       "cadenas": [
        {
         "cadena": "BNCWeb",
-        "n": 2
+        "n": 0
        }
       ],
       "principal": true
@@ -11083,18 +11112,18 @@
   },
   "brown_corpus": {
    "en": {
-    "total": 200,
+    "total": 185,
     "docs": 15,
     "formas": [
      {
       "forma": "Brown Corpus",
       "relacion": "lema",
-      "n": 200,
+      "n": 185,
       "docs": 15,
       "cadenas": [
        {
         "cadena": "Brown Corpus",
-        "n": 200
+        "n": 185
        }
       ],
       "principal": true
@@ -11102,18 +11131,18 @@
     ]
    },
    "es": {
-    "total": 65,
+    "total": 62,
     "docs": 17,
     "formas": [
      {
       "forma": "Brown Corpus",
       "relacion": "lema",
-      "n": 65,
+      "n": 62,
       "docs": 17,
       "cadenas": [
        {
         "cadena": "Brown Corpus",
-        "n": 55
+        "n": 52
        },
        {
         "cadena": "corpus Brown",
@@ -11131,18 +11160,18 @@
   },
   "claws": {
    "en": {
-    "total": 106,
+    "total": 99,
     "docs": 13,
     "formas": [
      {
       "forma": "CLAWS",
       "relacion": "sigla",
-      "n": 99,
+      "n": 92,
       "docs": 13,
       "cadenas": [
        {
         "cadena": "CLAWS",
-        "n": 99
+        "n": 92
        }
       ],
       "principal": true
@@ -11195,18 +11224,18 @@
   },
   "coha": {
    "en": {
-    "total": 74,
-    "docs": 10,
+    "total": 67,
+    "docs": 9,
     "formas": [
      {
       "forma": "COHA",
       "relacion": "sigla",
-      "n": 50,
+      "n": 49,
       "docs": 9,
       "cadenas": [
        {
         "cadena": "COHA",
-        "n": 50
+        "n": 49
        }
       ],
       "principal": true
@@ -11214,12 +11243,12 @@
      {
       "forma": "Corpus of Historical American English",
       "relacion": "forma_desarrollada",
-      "n": 24,
-      "docs": 10,
+      "n": 18,
+      "docs": 9,
       "cadenas": [
        {
         "cadena": "Corpus of Historical American English",
-        "n": 24
+        "n": 18
        }
       ]
      }
@@ -11259,18 +11288,18 @@
   },
   "cqpweb": {
    "en": {
-    "total": 19,
+    "total": 15,
     "docs": 6,
     "formas": [
      {
       "forma": "CQPweb",
       "relacion": "lema",
-      "n": 19,
+      "n": 15,
       "docs": 6,
       "cadenas": [
        {
         "cadena": "CQPweb",
-        "n": 19
+        "n": 15
        }
       ],
       "principal": true
@@ -11299,18 +11328,18 @@
   },
   "cwb": {
    "en": {
-    "total": 9,
-    "docs": 4,
+    "total": 6,
+    "docs": 3,
     "formas": [
      {
       "forma": "CWB",
       "relacion": "sigla",
-      "n": 3,
-      "docs": 3,
+      "n": 2,
+      "docs": 2,
       "cadenas": [
        {
         "cadena": "CWB",
-        "n": 3
+        "n": 2
        }
       ],
       "principal": true
@@ -11318,12 +11347,12 @@
      {
       "forma": "Corpus Workbench",
       "relacion": "forma_desarrollada",
-      "n": 6,
-      "docs": 3,
+      "n": 4,
+      "docs": 2,
       "cadenas": [
        {
         "cadena": "Corpus Workbench",
-        "n": 5
+        "n": 3
        },
        {
         "cadena": "IMS Open Corpus Workbench",
@@ -11338,18 +11367,18 @@
     ]
    },
    "es": {
-    "total": 52,
-    "docs": 4,
+    "total": 46,
+    "docs": 3,
     "formas": [
      {
       "forma": "CWB",
       "relacion": "sigla",
-      "n": 34,
+      "n": 32,
       "docs": 1,
       "cadenas": [
        {
         "cadena": "CWB",
-        "n": 34
+        "n": 32
        }
       ],
       "principal": true
@@ -11357,16 +11386,16 @@
      {
       "forma": "Corpus Workbench",
       "relacion": "forma_desarrollada",
-      "n": 18,
-      "docs": 4,
+      "n": 14,
+      "docs": 3,
       "cadenas": [
        {
         "cadena": "Corpus Workbench",
-        "n": 6
+        "n": 3
        },
        {
         "cadena": "IMS Open Corpus Workbench",
-        "n": 12
+        "n": 11
        },
        {
         "cadena": "Open Corpus Workbench",
@@ -11379,18 +11408,18 @@
   },
   "glowbe": {
    "en": {
-    "total": 42,
+    "total": 38,
     "docs": 4,
     "formas": [
      {
       "forma": "GloWbE",
       "relacion": "sigla",
-      "n": 33,
+      "n": 31,
       "docs": 4,
       "cadenas": [
        {
         "cadena": "GloWbE",
-        "n": 33
+        "n": 31
        }
       ],
       "principal": true
@@ -11398,34 +11427,34 @@
      {
       "forma": "Corpus of Global Web-Based English",
       "relacion": "forma_desarrollada",
-      "n": 9,
+      "n": 7,
       "docs": 4,
       "cadenas": [
        {
         "cadena": "Corpus of Global Web-Based English",
-        "n": 6
+        "n": 5
        },
        {
         "cadena": "Global Web-Based English",
-        "n": 3
+        "n": 2
        }
       ]
      }
     ]
    },
    "es": {
-    "total": 5,
+    "total": 3,
     "docs": 2,
     "formas": [
      {
       "forma": "GloWbE",
       "relacion": "sigla",
-      "n": 2,
-      "docs": 2,
+      "n": 1,
+      "docs": 1,
       "cadenas": [
        {
         "cadena": "GloWbE",
-        "n": 2
+        "n": 1
        }
       ],
       "principal": true
@@ -11433,7 +11462,7 @@
      {
       "forma": "Corpus of Global Web-Based English",
       "relacion": "forma_desarrollada",
-      "n": 3,
+      "n": 2,
       "docs": 2,
       "cadenas": [
        {
@@ -11442,7 +11471,7 @@
        },
        {
         "cadena": "Global Web-Based English",
-        "n": 3
+        "n": 2
        }
       ]
      }
@@ -11451,18 +11480,18 @@
   },
   "helsinki_corpus": {
    "en": {
-    "total": 45,
-    "docs": 10,
+    "total": 40,
+    "docs": 9,
     "formas": [
      {
       "forma": "Helsinki Corpus",
       "relacion": "lema",
-      "n": 45,
-      "docs": 10,
+      "n": 40,
+      "docs": 9,
       "cadenas": [
        {
         "cadena": "Helsinki Corpus",
-        "n": 45
+        "n": 40
        }
       ],
       "principal": true
@@ -11499,18 +11528,18 @@
   },
   "international_corpus_of_english": {
    "en": {
-    "total": 48,
-    "docs": 14,
+    "total": 34,
+    "docs": 12,
     "formas": [
      {
       "forma": "International Corpus of English",
       "relacion": "lema",
-      "n": 48,
-      "docs": 14,
+      "n": 34,
+      "docs": 12,
       "cadenas": [
        {
         "cadena": "International Corpus of English",
-        "n": 48
+        "n": 34
        }
       ],
       "principal": true
@@ -11518,18 +11547,18 @@
     ]
    },
    "es": {
-    "total": 6,
-    "docs": 4,
+    "total": 5,
+    "docs": 3,
     "formas": [
      {
       "forma": "International Corpus of English",
       "relacion": "lema",
-      "n": 6,
-      "docs": 4,
+      "n": 5,
+      "docs": 3,
       "cadenas": [
        {
         "cadena": "International Corpus of English",
-        "n": 6
+        "n": 5
        },
        {
         "cadena": "Corpus Internacional de Inglés",
@@ -11543,18 +11572,18 @@
   },
   "micase": {
    "en": {
-    "total": 28,
+    "total": 26,
     "docs": 5,
     "formas": [
      {
       "forma": "MICASE",
       "relacion": "sigla",
-      "n": 18,
+      "n": 17,
       "docs": 5,
       "cadenas": [
        {
         "cadena": "MICASE",
-        "n": 18
+        "n": 17
        }
       ],
       "principal": true
@@ -11562,12 +11591,12 @@
      {
       "forma": "Michigan Corpus of Academic Spoken English",
       "relacion": "forma_desarrollada",
-      "n": 10,
+      "n": 9,
       "docs": 5,
       "cadenas": [
        {
         "cadena": "Michigan Corpus of Academic Spoken English",
-        "n": 10
+        "n": 9
        }
       ]
      }
@@ -11642,7 +11671,7 @@
     ]
    },
    "es": {
-    "total": 7,
+    "total": 5,
     "docs": 3,
     "formas": [
      {
@@ -11661,12 +11690,12 @@
      {
       "forma": "Natural Language Toolkit",
       "relacion": "forma_desarrollada",
-      "n": 4,
+      "n": 2,
       "docs": 2,
       "cadenas": [
        {
         "cadena": "Natural Language Toolkit",
-        "n": 4
+        "n": 2
        }
       ]
      }
@@ -11714,13 +11743,13 @@
     ]
    },
    "es": {
-    "total": 19,
+    "total": 16,
     "docs": 4,
     "formas": [
      {
       "forma": "NOW Corpus",
       "relacion": "sigla",
-      "n": 15,
+      "n": 13,
       "docs": 4,
       "cadenas": [
        {
@@ -11733,7 +11762,7 @@
        },
        {
         "cadena": "NOW",
-        "n": 12
+        "n": 10
        }
       ],
       "principal": true
@@ -11741,8 +11770,8 @@
      {
       "forma": "News on the Web Corpus",
       "relacion": "forma_desarrollada",
-      "n": 4,
-      "docs": 4,
+      "n": 3,
+      "docs": 3,
       "cadenas": [
        {
         "cadena": "News on the Web Corpus",
@@ -11750,7 +11779,7 @@
        },
        {
         "cadena": "News on the Web",
-        "n": 4
+        "n": 3
        }
       ]
      }
@@ -11759,18 +11788,18 @@
   },
   "penn_treebank": {
    "en": {
-    "total": 36,
+    "total": 29,
     "docs": 9,
     "formas": [
      {
       "forma": "Penn Treebank",
       "relacion": "lema",
-      "n": 36,
+      "n": 29,
       "docs": 9,
       "cadenas": [
        {
         "cadena": "Penn Treebank",
-        "n": 36
+        "n": 29
        }
       ],
       "principal": true
@@ -11778,18 +11807,18 @@
     ]
    },
    "es": {
-    "total": 6,
+    "total": 5,
     "docs": 4,
     "formas": [
      {
       "forma": "Penn Treebank",
       "relacion": "lema",
-      "n": 6,
+      "n": 5,
       "docs": 4,
       "cadenas": [
        {
         "cadena": "Penn Treebank",
-        "n": 6
+        "n": 5
        }
       ],
       "principal": true
@@ -11799,18 +11828,18 @@
   },
   "perl": {
    "en": {
-    "total": 17,
+    "total": 16,
     "docs": 6,
     "formas": [
      {
       "forma": "Perl",
       "relacion": "lema",
-      "n": 17,
+      "n": 16,
       "docs": 6,
       "cadenas": [
        {
         "cadena": "Perl",
-        "n": 17
+        "n": 16
        }
       ],
       "principal": true
@@ -11839,18 +11868,18 @@
   },
   "sketch_engine": {
    "en": {
-    "total": 24,
+    "total": 19,
     "docs": 8,
     "formas": [
      {
       "forma": "Sketch Engine",
       "relacion": "lema",
-      "n": 24,
+      "n": 19,
       "docs": 8,
       "cadenas": [
        {
         "cadena": "Sketch Engine",
-        "n": 24
+        "n": 19
        }
       ],
       "principal": true
@@ -11858,18 +11887,18 @@
     ]
    },
    "es": {
-    "total": 118,
-    "docs": 16,
+    "total": 110,
+    "docs": 15,
     "formas": [
      {
       "forma": "Sketch Engine",
       "relacion": "lema",
-      "n": 118,
-      "docs": 16,
+      "n": 110,
+      "docs": 15,
       "cadenas": [
        {
         "cadena": "Sketch Engine",
-        "n": 118
+        "n": 110
        }
       ],
       "principal": true
@@ -11879,18 +11908,18 @@
   },
   "treetagger": {
    "en": {
-    "total": 36,
+    "total": 35,
     "docs": 6,
     "formas": [
      {
       "forma": "TreeTagger",
       "relacion": "lema",
-      "n": 36,
+      "n": 35,
       "docs": 6,
       "cadenas": [
        {
         "cadena": "TreeTagger",
-        "n": 36
+        "n": 35
        }
       ],
       "principal": true
@@ -11898,18 +11927,18 @@
     ]
    },
    "es": {
-    "total": 53,
-    "docs": 8,
+    "total": 52,
+    "docs": 7,
     "formas": [
      {
       "forma": "TreeTagger",
       "relacion": "lema",
-      "n": 53,
-      "docs": 8,
+      "n": 52,
+      "docs": 7,
       "cadenas": [
        {
         "cadena": "TreeTagger",
-        "n": 53
+        "n": 52
        }
       ],
       "principal": true
@@ -11919,18 +11948,18 @@
   },
   "wordsmith_tools": {
    "en": {
-    "total": 9,
-    "docs": 6,
+    "total": 6,
+    "docs": 5,
     "formas": [
      {
       "forma": "WordSmith Tools",
       "relacion": "lema",
-      "n": 9,
-      "docs": 6,
+      "n": 6,
+      "docs": 5,
       "cadenas": [
        {
         "cadena": "WordSmith Tools",
-        "n": 9
+        "n": 6
        }
       ],
       "principal": true
@@ -11938,18 +11967,18 @@
     ]
    },
    "es": {
-    "total": 28,
+    "total": 26,
     "docs": 6,
     "formas": [
      {
       "forma": "WordSmith Tools",
       "relacion": "lema",
-      "n": 28,
+      "n": 26,
       "docs": 6,
       "cadenas": [
        {
         "cadena": "WordSmith Tools",
-        "n": 28
+        "n": 26
        }
       ],
       "principal": true
@@ -11959,18 +11988,18 @@
   },
   "balance": {
    "en": {
-    "total": 114,
+    "total": 111,
     "docs": 23,
     "formas": [
      {
       "forma": "balance",
       "relacion": "lema",
-      "n": 114,
+      "n": 111,
       "docs": 23,
       "cadenas": [
        {
         "cadena": "balance",
-        "n": 114
+        "n": 111
        }
       ],
       "principal": true
@@ -11978,18 +12007,18 @@
     ]
    },
    "es": {
-    "total": 96,
+    "total": 95,
     "docs": 23,
     "formas": [
      {
       "forma": "equilibrio",
       "relacion": "lema",
-      "n": 96,
+      "n": 95,
       "docs": 23,
       "cadenas": [
        {
         "cadena": "equilibrio",
-        "n": 96
+        "n": 95
        }
       ],
       "principal": true
@@ -12039,18 +12068,18 @@
   },
   "corpus_based_computational_linguistics": {
    "en": {
-    "total": 1,
-    "docs": 1,
+    "total": 0,
+    "docs": 0,
     "formas": [
      {
       "forma": "corpus-based computational linguistics",
       "relacion": "lema",
-      "n": 1,
-      "docs": 1,
+      "n": 0,
+      "docs": 0,
       "cadenas": [
        {
         "cadena": "corpus-based computational linguistics",
-        "n": 1
+        "n": 0
        }
       ],
       "principal": true
@@ -12102,22 +12131,22 @@
     ]
    },
    "es": {
-    "total": 43,
+    "total": 41,
     "docs": 13,
     "formas": [
      {
       "forma": "corpus virtual",
       "relacion": "lema",
-      "n": 43,
+      "n": 41,
       "docs": 13,
       "cadenas": [
        {
         "cadena": "corpus virtual",
-        "n": 23
+        "n": 22
        },
        {
         "cadena": "corpus virtuales",
-        "n": 20
+        "n": 19
        }
       ],
       "principal": true
@@ -12127,22 +12156,22 @@
   },
   "bilingual_corpus": {
    "en": {
-    "total": 25,
-    "docs": 3,
+    "total": 20,
+    "docs": 2,
     "formas": [
      {
       "forma": "bilingual corpus",
       "relacion": "lema",
-      "n": 25,
-      "docs": 3,
+      "n": 20,
+      "docs": 2,
       "cadenas": [
        {
         "cadena": "bilingual corpus",
-        "n": 20
+        "n": 19
        },
        {
         "cadena": "bilingual corpora",
-        "n": 5
+        "n": 1
        }
       ],
       "principal": true
@@ -12150,22 +12179,22 @@
     ]
    },
    "es": {
-    "total": 30,
+    "total": 28,
     "docs": 11,
     "formas": [
      {
       "forma": "corpus bilingüe",
       "relacion": "lema",
-      "n": 30,
+      "n": 28,
       "docs": 11,
       "cadenas": [
        {
         "cadena": "corpus bilingüe",
-        "n": 16
+        "n": 15
        },
        {
         "cadena": "corpus bilingües",
-        "n": 14
+        "n": 13
        }
       ],
       "principal": true
@@ -12246,18 +12275,18 @@
     ]
    },
    "es": {
-    "total": 16,
+    "total": 15,
     "docs": 9,
     "formas": [
      {
       "forma": "corpus sincrónico",
       "relacion": "lema",
-      "n": 16,
+      "n": 15,
       "docs": 9,
       "cadenas": [
        {
         "cadena": "corpus sincrónico",
-        "n": 10
+        "n": 9
        },
        {
         "cadena": "corpus sincrónicos",
@@ -12415,18 +12444,18 @@
   },
   "transcriber": {
    "en": {
-    "total": 17,
-    "docs": 9,
+    "total": 16,
+    "docs": 8,
     "formas": [
      {
       "forma": "transcriber",
       "relacion": "lema",
-      "n": 17,
-      "docs": 9,
+      "n": 16,
+      "docs": 8,
       "cadenas": [
        {
         "cadena": "transcriber",
-        "n": 5
+        "n": 4
        },
        {
         "cadena": "transcribers",
@@ -12438,18 +12467,18 @@
     ]
    },
    "es": {
-    "total": 26,
+    "total": 23,
     "docs": 2,
     "formas": [
      {
       "forma": "transcriptor",
       "relacion": "lema",
-      "n": 26,
+      "n": 23,
       "docs": 2,
       "cadenas": [
        {
         "cadena": "transcriptor",
-        "n": 26
+        "n": 23
        },
        {
         "cadena": "transcriptores",
@@ -12463,18 +12492,18 @@
   },
   "pragmatic_annotation": {
    "en": {
-    "total": 17,
-    "docs": 4,
+    "total": 15,
+    "docs": 3,
     "formas": [
      {
       "forma": "pragmatic annotation",
       "relacion": "lema",
-      "n": 17,
-      "docs": 4,
+      "n": 15,
+      "docs": 3,
       "cadenas": [
        {
         "cadena": "pragmatic annotation",
-        "n": 17
+        "n": 15
        },
        {
         "cadena": "pragmatic annotations",
@@ -12486,18 +12515,18 @@
     ]
    },
    "es": {
-    "total": 10,
-    "docs": 5,
+    "total": 9,
+    "docs": 4,
     "formas": [
      {
       "forma": "anotación pragmática",
       "relacion": "lema",
-      "n": 10,
-      "docs": 5,
+      "n": 9,
+      "docs": 4,
       "cadenas": [
        {
         "cadena": "anotación pragmática",
-        "n": 10
+        "n": 9
        },
        {
         "cadena": "anotaciones pragmáticas",
@@ -12563,18 +12592,18 @@
   },
   "zipfs_law": {
    "en": {
-    "total": 10,
+    "total": 9,
     "docs": 6,
     "formas": [
      {
       "forma": "Zipf's law",
       "relacion": "lema",
-      "n": 10,
+      "n": 9,
       "docs": 6,
       "cadenas": [
        {
         "cadena": "Zipf's law",
-        "n": 10
+        "n": 9
        },
        {
         "cadena": "Zipf law",
@@ -12586,18 +12615,18 @@
     ]
    },
    "es": {
-    "total": 11,
+    "total": 10,
     "docs": 4,
     "formas": [
      {
       "forma": "ley de Zipf",
       "relacion": "lema",
-      "n": 11,
+      "n": 10,
       "docs": 4,
       "cadenas": [
        {
         "cadena": "ley de Zipf",
-        "n": 11
+        "n": 10
        }
       ],
       "principal": true
@@ -12747,18 +12776,49 @@
   },
   "eagles": {
    "en": {
-    "total": 7,
-    "docs": 4,
+    "total": 4,
+    "docs": 2,
     "formas": [
      {
       "forma": "EAGLES",
       "relacion": "sigla",
-      "n": 5,
-      "docs": 4,
+      "n": 3,
+      "docs": 2,
       "cadenas": [
        {
         "cadena": "EAGLES",
-        "n": 5
+        "n": 3
+       }
+      ],
+      "principal": true
+     },
+     {
+      "forma": "Expert Advisory Group on Language Engineering Standards",
+      "relacion": "forma_desarrollada",
+      "n": 1,
+      "docs": 1,
+      "cadenas": [
+       {
+        "cadena": "Expert Advisory Group on Language Engineering Standards",
+        "n": 1
+       }
+      ]
+     }
+    ]
+   },
+   "es": {
+    "total": 27,
+    "docs": 7,
+    "formas": [
+     {
+      "forma": "EAGLES",
+      "relacion": "sigla",
+      "n": 25,
+      "docs": 7,
+      "cadenas": [
+       {
+        "cadena": "EAGLES",
+        "n": 25
        }
       ],
       "principal": true
@@ -12776,53 +12836,22 @@
       ]
      }
     ]
-   },
-   "es": {
-    "total": 35,
-    "docs": 10,
-    "formas": [
-     {
-      "forma": "EAGLES",
-      "relacion": "sigla",
-      "n": 32,
-      "docs": 10,
-      "cadenas": [
-       {
-        "cadena": "EAGLES",
-        "n": 32
-       }
-      ],
-      "principal": true
-     },
-     {
-      "forma": "Expert Advisory Group on Language Engineering Standards",
-      "relacion": "forma_desarrollada",
-      "n": 3,
-      "docs": 3,
-      "cadenas": [
-       {
-        "cadena": "Expert Advisory Group on Language Engineering Standards",
-        "n": 3
-       }
-      ]
-     }
-    ]
    }
   },
   "universal_dependencies": {
    "en": {
-    "total": 21,
-    "docs": 5,
+    "total": 14,
+    "docs": 4,
     "formas": [
      {
       "forma": "Universal Dependencies",
       "relacion": "lema",
-      "n": 21,
-      "docs": 5,
+      "n": 14,
+      "docs": 4,
       "cadenas": [
        {
         "cadena": "Universal Dependencies",
-        "n": 21
+        "n": 14
        }
       ],
       "principal": true
@@ -12830,18 +12859,18 @@
     ]
    },
    "es": {
-    "total": 6,
-    "docs": 3,
+    "total": 4,
+    "docs": 2,
     "formas": [
      {
       "forma": "Universal Dependencies",
       "relacion": "lema",
-      "n": 6,
-      "docs": 3,
+      "n": 4,
+      "docs": 2,
       "cadenas": [
        {
         "cadena": "Universal Dependencies",
-        "n": 6
+        "n": 4
        }
       ],
       "principal": true
@@ -13043,18 +13072,18 @@
   },
   "wordnet": {
    "en": {
-    "total": 16,
+    "total": 12,
     "docs": 5,
     "formas": [
      {
       "forma": "WordNet",
       "relacion": "lema",
-      "n": 16,
+      "n": 12,
       "docs": 5,
       "cadenas": [
        {
         "cadena": "WordNet",
-        "n": 16
+        "n": 12
        }
       ],
       "principal": true
@@ -13062,18 +13091,18 @@
     ]
    },
    "es": {
-    "total": 36,
-    "docs": 5,
+    "total": 20,
+    "docs": 4,
     "formas": [
      {
       "forma": "WordNet",
       "relacion": "lema",
-      "n": 36,
-      "docs": 5,
+      "n": 20,
+      "docs": 4,
       "cadenas": [
        {
         "cadena": "WordNet",
-        "n": 36
+        "n": 20
        }
       ],
       "principal": true
@@ -13102,18 +13131,18 @@
     ]
    },
    "es": {
-    "total": 20,
+    "total": 15,
     "docs": 8,
     "formas": [
      {
       "forma": "C-ORAL-ROM",
       "relacion": "lema",
-      "n": 20,
+      "n": 15,
       "docs": 8,
       "cadenas": [
        {
         "cadena": "C-ORAL-ROM",
-        "n": 20
+        "n": 15
        }
       ],
       "principal": true
@@ -13123,18 +13152,18 @@
   },
   "opus": {
    "en": {
-    "total": 8,
-    "docs": 3,
+    "total": 4,
+    "docs": 2,
     "formas": [
      {
       "forma": "OPUS",
       "relacion": "lema",
-      "n": 8,
-      "docs": 3,
+      "n": 4,
+      "docs": 2,
       "cadenas": [
        {
         "cadena": "OPUS",
-        "n": 8
+        "n": 4
        }
       ],
       "principal": true
@@ -13142,18 +13171,18 @@
     ]
    },
    "es": {
-    "total": 11,
-    "docs": 5,
+    "total": 8,
+    "docs": 4,
     "formas": [
      {
       "forma": "OPUS",
       "relacion": "lema",
-      "n": 11,
-      "docs": 5,
+      "n": 8,
+      "docs": 4,
       "cadenas": [
        {
         "cadena": "OPUS",
-        "n": 11
+        "n": 8
        }
       ],
       "principal": true
@@ -13186,13 +13215,13 @@
     ]
    },
    "es": {
-    "total": 46,
+    "total": 41,
     "docs": 14,
     "formas": [
      {
       "forma": "esTenTen18",
       "relacion": "lema",
-      "n": 46,
+      "n": 41,
       "docs": 14,
       "cadenas": [
        {
@@ -13201,7 +13230,7 @@
        },
        {
         "cadena": "esTenTen",
-        "n": 32
+        "n": 27
        }
       ],
       "principal": true
@@ -13211,18 +13240,18 @@
   },
   "actres": {
    "en": {
-    "total": 2,
+    "total": 1,
     "docs": 1,
     "formas": [
      {
       "forma": "ACTRES",
       "relacion": "sigla",
-      "n": 2,
+      "n": 1,
       "docs": 1,
       "cadenas": [
        {
         "cadena": "ACTRES",
-        "n": 2
+        "n": 1
        },
        {
         "cadena": "P-ACTRES",
@@ -13302,18 +13331,18 @@
     ]
    },
    "es": {
-    "total": 8,
+    "total": 5,
     "docs": 3,
     "formas": [
      {
       "forma": "MULTINOT",
       "relacion": "lema",
-      "n": 8,
+      "n": 5,
       "docs": 3,
       "cadenas": [
        {
         "cadena": "MULTINOT",
-        "n": 8
+        "n": 5
        }
       ],
       "principal": true
@@ -13543,18 +13572,18 @@
   },
   "freeling": {
    "en": {
-    "total": 9,
+    "total": 8,
     "docs": 3,
     "formas": [
      {
       "forma": "FreeLing",
       "relacion": "lema",
-      "n": 9,
+      "n": 8,
       "docs": 3,
       "cadenas": [
        {
         "cadena": "FreeLing",
-        "n": 9
+        "n": 8
        }
       ],
       "principal": true
@@ -13562,18 +13591,18 @@
     ]
    },
    "es": {
-    "total": 110,
+    "total": 96,
     "docs": 12,
     "formas": [
      {
       "forma": "FreeLing",
       "relacion": "lema",
-      "n": 110,
+      "n": 96,
       "docs": 12,
       "cadenas": [
        {
         "cadena": "FreeLing",
-        "n": 110
+        "n": 96
        }
       ],
       "principal": true
@@ -13602,18 +13631,18 @@
     ]
    },
    "es": {
-    "total": 59,
+    "total": 56,
     "docs": 5,
     "formas": [
      {
       "forma": "BootCaT",
       "relacion": "lema",
-      "n": 59,
+      "n": 56,
       "docs": 5,
       "cadenas": [
        {
         "cadena": "BootCaT",
-        "n": 59
+        "n": 56
        }
       ],
       "principal": true
@@ -13730,18 +13759,18 @@
     ]
    },
    "es": {
-    "total": 16,
+    "total": 14,
     "docs": 2,
     "formas": [
      {
       "forma": "Stanza",
       "relacion": "lema",
-      "n": 16,
+      "n": 14,
       "docs": 2,
       "cadenas": [
        {
         "cadena": "Stanza",
-        "n": 16
+        "n": 14
        }
       ],
       "principal": true
@@ -13770,18 +13799,18 @@
     ]
    },
    "es": {
-    "total": 9,
+    "total": 8,
     "docs": 3,
     "formas": [
      {
       "forma": "TagAnt",
       "relacion": "lema",
-      "n": 9,
+      "n": 8,
       "docs": 3,
       "cadenas": [
        {
         "cadena": "TagAnt",
-        "n": 9
+        "n": 8
        }
       ],
       "principal": true
@@ -13858,18 +13887,18 @@
     ]
    },
    "es": {
-    "total": 8,
+    "total": 7,
     "docs": 1,
     "formas": [
      {
       "forma": "Xbench",
       "relacion": "lema",
-      "n": 8,
+      "n": 7,
       "docs": 1,
       "cadenas": [
        {
         "cadena": "Xbench",
-        "n": 8
+        "n": 7
        }
       ],
       "principal": true
@@ -13898,18 +13927,18 @@
     ]
    },
    "es": {
-    "total": 6,
+    "total": 5,
     "docs": 1,
     "formas": [
      {
       "forma": "rtweet",
       "relacion": "lema",
-      "n": 6,
+      "n": 5,
       "docs": 1,
       "cadenas": [
        {
         "cadena": "rtweet",
-        "n": 6
+        "n": 5
        }
       ],
       "principal": true
@@ -13919,6 +13948,29 @@
   },
   "wmatrix": {
    "en": {
+    "total": 4,
+    "docs": 3,
+    "formas": [
+     {
+      "forma": "Wmatrix",
+      "relacion": "lema",
+      "n": 4,
+      "docs": 3,
+      "cadenas": [
+       {
+        "cadena": "Wmatrix",
+        "n": 4
+       },
+       {
+        "cadena": "WMATRIX",
+        "n": 0
+       }
+      ],
+      "principal": true
+     }
+    ]
+   },
+   "es": {
     "total": 5,
     "docs": 3,
     "formas": [
@@ -13931,29 +13983,6 @@
        {
         "cadena": "Wmatrix",
         "n": 5
-       },
-       {
-        "cadena": "WMATRIX",
-        "n": 0
-       }
-      ],
-      "principal": true
-     }
-    ]
-   },
-   "es": {
-    "total": 6,
-    "docs": 3,
-    "formas": [
-     {
-      "forma": "Wmatrix",
-      "relacion": "lema",
-      "n": 6,
-      "docs": 3,
-      "cadenas": [
-       {
-        "cadena": "Wmatrix",
-        "n": 6
        },
        {
         "cadena": "WMATRIX",
@@ -14026,18 +14055,18 @@
     ]
    },
    "es": {
-    "total": 5,
+    "total": 4,
     "docs": 1,
     "formas": [
      {
       "forma": "T-Hoarder",
       "relacion": "lema",
-      "n": 5,
+      "n": 4,
       "docs": 1,
       "cadenas": [
        {
         "cadena": "T-Hoarder",
-        "n": 5
+        "n": 4
        }
       ],
       "principal": true
@@ -14118,18 +14147,18 @@
     ]
    },
    "es": {
-    "total": 3,
+    "total": 2,
     "docs": 1,
     "formas": [
      {
       "forma": "Chorus",
       "relacion": "lema",
-      "n": 3,
+      "n": 2,
       "docs": 1,
       "cadenas": [
        {
         "cadena": "Chorus",
-        "n": 3
+        "n": 2
        },
        {
         "cadena": "ChoRus",
@@ -14143,6 +14172,25 @@
   },
   "gephi": {
    "en": {
+    "total": 1,
+    "docs": 1,
+    "formas": [
+     {
+      "forma": "Gephi",
+      "relacion": "lema",
+      "n": 1,
+      "docs": 1,
+      "cadenas": [
+       {
+        "cadena": "Gephi",
+        "n": 1
+       }
+      ],
+      "principal": true
+     }
+    ]
+   },
+   "es": {
     "total": 2,
     "docs": 1,
     "formas": [
@@ -14155,25 +14203,6 @@
        {
         "cadena": "Gephi",
         "n": 2
-       }
-      ],
-      "principal": true
-     }
-    ]
-   },
-   "es": {
-    "total": 3,
-    "docs": 1,
-    "formas": [
-     {
-      "forma": "Gephi",
-      "relacion": "lema",
-      "n": 3,
-      "docs": 1,
-      "cadenas": [
-       {
-        "cadena": "Gephi",
-        "n": 3
        }
       ],
       "principal": true
@@ -14206,18 +14235,18 @@
     ]
    },
    "es": {
-    "total": 3,
+    "total": 2,
     "docs": 2,
     "formas": [
      {
       "forma": "ConcGram",
       "relacion": "lema",
-      "n": 3,
+      "n": 2,
       "docs": 2,
       "cadenas": [
        {
         "cadena": "ConcGram",
-        "n": 2
+        "n": 1
        },
        {
         "cadena": "ConcGramCore",
@@ -14559,18 +14588,18 @@
   },
   "notepad_plus_plus": {
    "en": {
-    "total": 15,
+    "total": 14,
     "docs": 4,
     "formas": [
      {
       "forma": "Notepad++",
       "relacion": "lema",
-      "n": 15,
+      "n": 14,
       "docs": 4,
       "cadenas": [
        {
         "cadena": "Notepad++",
-        "n": 15
+        "n": 14
        }
       ],
       "principal": true
@@ -14738,18 +14767,18 @@
     ]
    },
    "es": {
-    "total": 6,
+    "total": 4,
     "docs": 2,
     "formas": [
      {
       "forma": "UKB",
       "relacion": "lema",
-      "n": 6,
+      "n": 4,
       "docs": 2,
       "cadenas": [
        {
         "cadena": "UKB",
-        "n": 6
+        "n": 4
        }
       ],
       "principal": true

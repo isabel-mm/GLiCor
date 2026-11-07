@@ -2451,8 +2451,31 @@
             "cuenta": [
               "types y tokens",
               "type y token",
+              "types/tokens",
               "type/token",
-              "types/tokens"
+              "types",
+              "type"
+            ],
+            "excluye_si": [
+              "(?i)\\btypes?\\s+of\\b",
+              "(?i)\\b(?:this|that|these|those|same|different|various|other|particular|specific|certain|each|every|any|all|new|one|two|three|four|several|many|what|which|whatever|some|main|major|basic|similar|another)\\s+types?\\b",
+              "(?i)\\b(?:text|data|document|corpus|corpora|file|register|genre|sentence|font|personality|structure|construction|clause|verb|noun|speech|discourse|error|question|task|study|annotation|tag|interaction|source)\\s+types?\\b",
+              "(?i)\\b(?:you|we|then|simply|just|to|can)\\s+type\\b",
+              "(?i)\\btype\\s+(?:in|into)\\b",
+              "\\b[Tt]ype\\s+(?:I|II)\\b",
+              "(?i)\\bdocument\\s+type\\b",
+              "\\btype\\s*=",
+              "(?i)\\btypes?\\s+(?:definition|declaration)\\b",
+              "(?i)\\btypes?\\s*-\\s*tokens?\\b"
+            ],
+            "solo_si": [
+              "(?i)\\btypes?\\b[^.]{0,80}\\btokens?\\b",
+              "(?i)\\btokens?\\b[^.]{0,80}\\btypes?\\b",
+              "(?i)\\bword\\s+types?\\b",
+              "(?i)\\btype\\s+frequenc\\w*",
+              "(?i)\\b(?:number|numbers|count|counts)\\s+of\\s+(?:word\\s+)?types\\b",
+              "(?i)\\btype\\s+counts?\\b",
+              "(?i)\\b(?:new|distinct|unique)\\s+types\\b"
             ]
           }
         ]
